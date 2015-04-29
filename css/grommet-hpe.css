@@ -2436,7 +2436,8 @@ a.active > .label .label__icon.control-icon svg {
   margin: -24px; }
   .tiles > * {
     -webkit-flex: 0 0 192px;
-    flex: 0 0 192px; }
+    flex: 0 0 192px;
+    flex-grow: 1; }
   .tiles--small > * {
     -webkit-flex-basis: 96px;
     flex-basis: 96px; }

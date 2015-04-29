@@ -19699,8 +19699,8 @@ var Grommet =
 	 * Module dependencies.
 	 */
 
-	var Emitter = __webpack_require__(128);
-	var reduce = __webpack_require__(129);
+	var Emitter = __webpack_require__(129);
+	var reduce = __webpack_require__(130);
 
 	/**
 	 * Root reference for iframes.
@@ -21520,7 +21520,7 @@ var Grommet =
 
 	var React = __webpack_require__(48);
 	var IndexRouter = __webpack_require__(60);
-	var IndexAttribute = __webpack_require__(130);
+	var IndexAttribute = __webpack_require__(128);
 	var StatusIcon = __webpack_require__(40);
 	var Link = __webpack_require__(13);
 
@@ -21664,7 +21664,7 @@ var Grommet =
 	var IndexRouter = __webpack_require__(60);
 	var Tiles = __webpack_require__(24);
 	var Tile = __webpack_require__(25);
-	var IndexAttribute = __webpack_require__(130);
+	var IndexAttribute = __webpack_require__(128);
 
 	var IndexTiles = React.createClass({displayName: "IndexTiles",
 
@@ -23975,6 +23975,65 @@ var Grommet =
 /* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	var React = __webpack_require__(48);
+	var IndexActivity = __webpack_require__(147);
+	var StatusIcon = __webpack_require__(40);
+	var Timestamp = __webpack_require__(127);
+
+	var IndexAttribute = React.createClass({displayName: "IndexAttribute",
+
+	  render: function() {
+	    var member = this.props.member;
+	    var attribute = this.props.attribute;
+	    var content = (React.createElement("span", null, "'?'"));
+	    var value;
+
+	    //console.log('!!! IndexAttribute render', attribute.name, attribute);
+	    if (attribute.hasOwnProperty('render')) {
+
+	      content = attribute.render(member);
+
+	    } else {
+
+	      if (member.hasOwnProperty(attribute.name)) {
+	        value = member[attribute.name];
+	      } else if (member.attributes &&
+	        member.attributes.hasOwnProperty(attribute.name)) {
+	        value = member.attributes[attribute.name];
+	      }
+
+	      if ('status' === attribute.name) {
+	        content = (
+	          React.createElement(StatusIcon, {className: 'index-attribute__status-icon', 
+	            value: value.toLowerCase(), small: true})
+	        );
+	      } else if ('created' === attribute.name || 'modified' === attribute.name) {
+	        content = (
+	          React.createElement(Timestamp, {value: new Date(value), format: "MM/DD/YY h:mm:ss a"})
+	        );
+	      } else if ('_activity' === attribute.name) {
+	        content = (
+	          React.createElement(IndexActivity, {member: member})
+	        );
+	      } else {
+	        content = (React.createElement("span", null, value));
+	      }
+	    }
+
+	    return content;
+	  }
+
+	});
+
+	module.exports = IndexAttribute;
+
+
+/***/ },
+/* 129 */
+/***/ function(module, exports, __webpack_require__) {
+
 	
 	/**
 	 * Expose `Emitter`.
@@ -24142,7 +24201,7 @@ var Grommet =
 
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -24169,65 +24228,6 @@ var Grommet =
 	  
 	  return curr;
 	};
-
-/***/ },
-/* 130 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
-
-	var React = __webpack_require__(48);
-	var IndexActivity = __webpack_require__(147);
-	var StatusIcon = __webpack_require__(40);
-	var Timestamp = __webpack_require__(127);
-
-	var IndexAttribute = React.createClass({displayName: "IndexAttribute",
-
-	  render: function() {
-	    var member = this.props.member;
-	    var attribute = this.props.attribute;
-	    var content = (React.createElement("span", null, "'?'"));
-	    var value;
-
-	    //console.log('!!! IndexAttribute render', attribute.name, attribute);
-	    if (attribute.hasOwnProperty('render')) {
-
-	      content = attribute.render(member);
-
-	    } else {
-
-	      if (member.hasOwnProperty(attribute.name)) {
-	        value = member[attribute.name];
-	      } else if (member.attributes &&
-	        member.attributes.hasOwnProperty(attribute.name)) {
-	        value = member.attributes[attribute.name];
-	      }
-
-	      if ('status' === attribute.name) {
-	        content = (
-	          React.createElement(StatusIcon, {className: 'index-attribute__status-icon', 
-	            value: value.toLowerCase(), small: true})
-	        );
-	      } else if ('created' === attribute.name || 'modified' === attribute.name) {
-	        content = (
-	          React.createElement(Timestamp, {value: new Date(value), format: "MM/DD/YY h:mm:ss a"})
-	        );
-	      } else if ('_activity' === attribute.name) {
-	        content = (
-	          React.createElement(IndexActivity, {member: member})
-	        );
-	      } else {
-	        content = (React.createElement("span", null, value));
-	      }
-	    }
-
-	    return content;
-	  }
-
-	});
-
-	module.exports = IndexAttribute;
-
 
 /***/ },
 /* 131 */
