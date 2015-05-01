@@ -1,6 +1,6 @@
 {
   "name": "grommet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "grommet.js",
   "description": "The most advanced UI framework for enterprise applications.",
   "authors": [
@@ -15,6 +15,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/HewlettPackard/grommet.git"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "grommet": "./bin/grommet.js"
+  },
+  "engines": {
+    "node": ">= 0.9"
   },
   "dependencies": {
     "react": "^0.13.1",

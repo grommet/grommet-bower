@@ -501,18 +501,6 @@ img {
   /* [2] */
   max-width: none; }
 
-/*------------------------------------*\
-    #PARAGRAPHS
-\*------------------------------------*/
-/**
- * The `.lede` class is used to make the introductory text (usually a paragraph)
- * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
- */
-.i-lede {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.33333; }
-
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -740,75 +728,6 @@ html, body {
   overflow: hidden; }
 
 /*------------------------------------*\
-    #LIST-INLINE
-\*------------------------------------*/
-/**
- * The list-inline object simply displays a list of items in one line.
- */
-.i-list-inline {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-  .i-list-inline > li {
-    display: inline-block; }
-
-/**
-     * Comma delimited list to semantically mark up lists of tags, etc.
-     *
-     * N.B. This component requires that you remove the whitespace between LIs.
-     *      The simplest (and valid) way to achieve this is by omitting the
-     *      closing `</li>` tag.
-     */
-.i-list-inline--delimited > li + li:before {
-  content: ",\00A0"; }
-
-/*------------------------------------*\
-    #LIST-BLOCK
-\*------------------------------------*/
-/**
- * The list-block object creates blocky list items out of a `ul` or `ol`.
- */
-.i-list-block {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.i-list-block__item, .i-list-block > li {
-  padding: 24px; }
-
-/**
-     * Tiny list-blocks.
-     */
-.i-list-block--tiny > .i-list-block__item, .i-list-block.i-list-block--tiny > li {
-  padding: 6px; }
-
-/**
-     * Small list-blocks.
-     */
-.i-list-block--small > .i-list-block__item, .i-list-block.i-list-block--small > li {
-  padding: 12px; }
-
-/*------------------------------------*\
-    #LIST-UI
-\*------------------------------------*/
-/**
- * The UI list object creates blocky list items with a keyline separator out of
- * a `ul` or `ol`.
- */
-.i-list-ui, .i-list-ui__item, .i-list-ui > li {
-  border: 0 solid #ccc; }
-
-.i-list-ui {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-top-width: 1px; }
-
-.i-list-ui__item, .i-list-ui > li {
-  padding: 24px;
-  border-bottom-width: 1px; }
-
-/*------------------------------------*\
     #LIST-BARE
 \*------------------------------------*/
 /**
@@ -818,107 +737,6 @@ html, body {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-/*------------------------------------*\
-    #BOX
-\*------------------------------------*/
-/**
- * The box object simply boxes off content.
- */
-/**
- * 1. So we can apply the `.box` class to naturally-inline elements.
- */
-.i-box {
-  display: block;
-  /* [1] */
-  padding: 24px; }
-  .i-box > :last-child {
-    margin-bottom: 0; }
-
-/**
-     * Small box.
-     */
-.i-box--small {
-  padding: 12px; }
-
-/*------------------------------------*\
-    #PACK
-\*------------------------------------*/
-/**
- * The pack object simply causes any number of elements pack up horizontally to
- * automatically fill an equal, fluid width of their parent.
- */
-/**
- * 1. Fill all available space.
- * 2. Cause children to be automatically equally sized.
- */
-.i-pack {
-  width: 100%;
-  /* [1] */
-  display: table;
-  table-layout: fixed;
-  /* [2] */ }
-
-/**
-     * Cause children to adopt table-like structure.
-     */
-.i-pack__item {
-  display: table-cell; }
-
-/*------------------------------------*\
-    #LAYOUT
-\*------------------------------------*/
-/**
- * The inuitcss layout system uses `box-sizing: border-box;` and
- * `display: inline-block;` to create an extremely powerful, flexible
- * alternative to the traditional grid system. Combine the layout items with
- * the widths found in `trumps.widths`.
- */
-/**
- * Begin a layout group.
- */
-.i-layout {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-left: -24px; }
-
-/**
-     * 1. Cause columns to stack side-by-side.
-     * 2. Space columns apart.
-     * 3. Align columns to the tops of each other.
-     * 4. Full-width unless told to behave otherwise.
-     * 5. Required to combine fluid widths and fixed gutters.
-     */
-.i-layout__item {
-  display: inline-block;
-  /* [1] */
-  padding-left: 24px;
-  /* [2] */
-  vertical-align: top;
-  /* [3] */
-  width: 100%;
-  /* [4] */ }
-
-/**
-     * Make the layout items fill up from the center outward.
-     */
-.i-layout--center {
-  text-align: center; }
-  .i-layout--center > .i-layout__item {
-    text-align: left; }
-
-/*------------------------------------*\
-    #TABLES
-\*------------------------------------*/
-.i-table {
-  width: 100%; }
-
-/**
-     * Lightly packed cells.
-     */
-.i-table--cosy th, .i-table--cosy td {
-  padding: 12px; }
 
 #loading {
   position: absolute;
@@ -969,42 +787,179 @@ html, body {
       max-width: none; }
 
 .chart {
-  display: block; }
+  display: block;
+  text-align: right; }
   .chart__grid {
     stroke: #ccc; }
-  .chart__lines-line {
+  .chart__graphic {
+    width: 100%; }
+  .chart__values-line {
     stroke-width: 3px; }
-    .chart__lines-line.color-index-accent-1, .chart__lines-line.color-index-accent-8 {
+    .chart__values-line.color-index-error {
+      stroke: #dc442f; }
+    .chart__values-line.color-index-warning {
+      stroke: #f4b51e; }
+    .chart__values-line.color-index-ok {
+      stroke: #42a425; }
+    .chart__values-line.color-index-unknown {
+      stroke: #848484; }
+    .chart__values-line.color-index-disabled {
+      stroke: #848484; }
+    .chart__values-line.color-index-graph-1, .chart__values-line.color-index-graph-8 {
       stroke: #ff9e2c; }
-    .chart__lines-line.color-index-accent-2, .chart__lines-line.color-index-accent-9 {
+    .chart__values-line.color-index-graph-2, .chart__values-line.color-index-graph-9 {
       stroke: #00cee4; }
-    .chart__lines-line.color-index-accent-3, .chart__lines-line.color-index-accent-10 {
+    .chart__values-line.color-index-graph-3, .chart__values-line.color-index-graph-10 {
       stroke: #5b3eff; }
-    .chart__lines-line.color-index-accent-4, .chart__lines-line.color-index-accent-11 {
+    .chart__values-line.color-index-graph-4, .chart__values-line.color-index-graph-11 {
       stroke: #cc9933; }
-    .chart__lines-line.color-index-accent-5, .chart__lines-line.color-index-accent-12 {
+    .chart__values-line.color-index-graph-5, .chart__values-line.color-index-graph-12 {
       stroke: #d55af2; }
-    .chart__lines-line.color-index-accent-6, .chart__lines-line.color-index-accent-13 {
+    .chart__values-line.color-index-graph-6, .chart__values-line.color-index-graph-13 {
       stroke: #79a2bc; }
-    .chart__lines-line.color-index-accent-7, .chart__lines-line.color-index-accent-14 {
+    .chart__values-line.color-index-graph-7, .chart__values-line.color-index-graph-14 {
       stroke: #877b75; }
-  .chart__lines-area.color-index-accent-1, .chart__lines-area.color-index-accent-8 {
-    fill: rgba(255, 158, 44, 0.5); }
-  .chart__lines-area.color-index-accent-2, .chart__lines-area.color-index-accent-9 {
-    fill: rgba(0, 206, 228, 0.5); }
-  .chart__lines-area.color-index-accent-3, .chart__lines-area.color-index-accent-10 {
-    fill: rgba(91, 62, 255, 0.5); }
-  .chart__lines-area.color-index-accent-4, .chart__lines-area.color-index-accent-11 {
-    fill: rgba(204, 153, 51, 0.5); }
-  .chart__lines-area.color-index-accent-5, .chart__lines-area.color-index-accent-12 {
-    fill: rgba(213, 90, 242, 0.5); }
-  .chart__lines-area.color-index-accent-6, .chart__lines-area.color-index-accent-13 {
-    fill: rgba(121, 162, 188, 0.5); }
-  .chart__lines-area.color-index-accent-7, .chart__lines-area.color-index-accent-14 {
-    fill: rgba(135, 123, 117, 0.5); }
+  .chart__values-area.color-index-error {
+    fill: rgba(220, 68, 47, 0.7); }
+  .chart__values-area.color-index-warning {
+    fill: rgba(244, 181, 30, 0.7); }
+  .chart__values-area.color-index-ok {
+    fill: rgba(66, 164, 37, 0.7); }
+  .chart__values-area.color-index-unknown {
+    fill: rgba(132, 132, 132, 0.7); }
+  .chart__values-area.color-index-disabled {
+    fill: rgba(132, 132, 132, 0.7); }
+  .chart__values-area.color-index-graph-1, .chart__values-area.color-index-graph-8 {
+    fill: rgba(255, 158, 44, 0.7); }
+  .chart__values-area.color-index-graph-2, .chart__values-area.color-index-graph-9 {
+    fill: rgba(0, 206, 228, 0.7); }
+  .chart__values-area.color-index-graph-3, .chart__values-area.color-index-graph-10 {
+    fill: rgba(91, 62, 255, 0.7); }
+  .chart__values-area.color-index-graph-4, .chart__values-area.color-index-graph-11 {
+    fill: rgba(204, 153, 51, 0.7); }
+  .chart__values-area.color-index-graph-5, .chart__values-area.color-index-graph-12 {
+    fill: rgba(213, 90, 242, 0.7); }
+  .chart__values-area.color-index-graph-6, .chart__values-area.color-index-graph-13 {
+    fill: rgba(121, 162, 188, 0.7); }
+  .chart__values-area.color-index-graph-7, .chart__values-area.color-index-graph-14 {
+    fill: rgba(135, 123, 117, 0.7); }
+  .chart__values-bar.color-index-error {
+    fill: rgba(220, 68, 47, 0.7); }
+  .chart__values-bar.color-index-warning {
+    fill: rgba(244, 181, 30, 0.7); }
+  .chart__values-bar.color-index-ok {
+    fill: rgba(66, 164, 37, 0.7); }
+  .chart__values-bar.color-index-unknown {
+    fill: rgba(132, 132, 132, 0.7); }
+  .chart__values-bar.color-index-disabled {
+    fill: rgba(132, 132, 132, 0.7); }
+  .chart__values-bar.color-index-graph-1, .chart__values-bar.color-index-graph-8 {
+    fill: rgba(255, 158, 44, 0.7); }
+  .chart__values-bar.color-index-graph-2, .chart__values-bar.color-index-graph-9 {
+    fill: rgba(0, 206, 228, 0.7); }
+  .chart__values-bar.color-index-graph-3, .chart__values-bar.color-index-graph-10 {
+    fill: rgba(91, 62, 255, 0.7); }
+  .chart__values-bar.color-index-graph-4, .chart__values-bar.color-index-graph-11 {
+    fill: rgba(204, 153, 51, 0.7); }
+  .chart__values-bar.color-index-graph-5, .chart__values-bar.color-index-graph-12 {
+    fill: rgba(213, 90, 242, 0.7); }
+  .chart__values-bar.color-index-graph-6, .chart__values-bar.color-index-graph-13 {
+    fill: rgba(121, 162, 188, 0.7); }
+  .chart__values-bar.color-index-graph-7, .chart__values-bar.color-index-graph-14 {
+    fill: rgba(135, 123, 117, 0.7); }
+  .chart__values-bar--active.color-index-error {
+    fill: #dc442f; }
+  .chart__values-bar--active.color-index-warning {
+    fill: #f4b51e; }
+  .chart__values-bar--active.color-index-ok {
+    fill: #42a425; }
+  .chart__values-bar--active.color-index-unknown {
+    fill: #848484; }
+  .chart__values-bar--active.color-index-disabled {
+    fill: #848484; }
+  .chart__values-bar--active.color-index-graph-1, .chart__values-bar--active.color-index-graph-8 {
+    fill: #ff9e2c; }
+  .chart__values-bar--active.color-index-graph-2, .chart__values-bar--active.color-index-graph-9 {
+    fill: #00cee4; }
+  .chart__values-bar--active.color-index-graph-3, .chart__values-bar--active.color-index-graph-10 {
+    fill: #5b3eff; }
+  .chart__values-bar--active.color-index-graph-4, .chart__values-bar--active.color-index-graph-11 {
+    fill: #cc9933; }
+  .chart__values-bar--active.color-index-graph-5, .chart__values-bar--active.color-index-graph-12 {
+    fill: #d55af2; }
+  .chart__values-bar--active.color-index-graph-6, .chart__values-bar--active.color-index-graph-13 {
+    fill: #79a2bc; }
+  .chart__values-bar--active.color-index-graph-7, .chart__values-bar--active.color-index-graph-14 {
+    fill: #877b75; }
   .chart__threshold {
     stroke-width: 2px;
     stroke: #333333; }
+  .chart__legend {
+    margin: 24px 0 0;
+    display: inline-block;
+    text-align: left;
+    list-style-type: none; }
+    .chart__legend-label {
+      text-align: right;
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 12px; }
+  .chart__legend-item, .chart__legend-total {
+    white-space: nowrap; }
+    .chart__legend-item > *, .chart__legend-total > * {
+      vertical-align: top; }
+    .chart__legend-item-label, .chart__legend-total-label {
+      display: inline-block;
+      width: 96px;
+      color: #999; }
+    .chart__legend-item-value, .chart__legend-total-value {
+      display: inline-block;
+      width: 48px;
+      text-align: right; }
+    .chart__legend-item-units, .chart__legend-total-units {
+      margin-left: 6px; }
+  .chart__legend-item svg.chart__legend-item-swatch {
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    margin-right: 12px;
+    overflow: visible; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-error {
+      stroke: #dc442f; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-warning {
+      stroke: #f4b51e; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-ok {
+      stroke: #42a425; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-unknown {
+      stroke: #848484; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-disabled {
+      stroke: #848484; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-1, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-8 {
+      stroke: #ff9e2c; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-2, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-9 {
+      stroke: #00cee4; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-3, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-10 {
+      stroke: #5b3eff; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-4, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-11 {
+      stroke: #cc9933; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-5, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-12 {
+      stroke: #d55af2; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-6, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-13 {
+      stroke: #79a2bc; }
+    .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-7, .chart__legend-item svg.chart__legend-item-swatch.color-index-graph-14 {
+      stroke: #877b75; }
+    .chart__legend-item svg.chart__legend-item-swatch path {
+      stroke-width: 12px;
+      transition-property: stroke-width;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out; }
+  .chart__legend-total {
+    margin-top: 6px;
+    border-top: 1px dotted #ccc;
+    padding-top: 6px;
+    margin-left: 24px;
+    color: #999; }
 
 .check-box__input {
   opacity: 0;
@@ -1132,6 +1087,13 @@ html, body {
     margin-left: auto;
     margin-right: auto; }
 
+@media screen and (min-width: 45em) {
+  .dashboard {
+    height: calc(100vh - 96px); } }
+@media screen and (max-width: 44.9375em) {
+  .dashboard {
+    height: calc(100vh - 48px); } }
+
 .document {
   width: 100%; }
   .document--no-contents .document__content {
@@ -1198,107 +1160,150 @@ html, body {
   100% {
     stroke-dashoffset: 0; } }
 
-.donut {
-  display: inline-block; }
-  .donut.series-pre path {
-    stroke-dashoffset: 768px; }
-  .donut__graphic-container {
-    position: relative;
-    width: 192px;
-    height: 192px; }
-  .donut svg.donut__graphic {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    overflow: visible; }
-    .donut svg.donut__graphic path {
-      stroke-width: 24px;
-      stroke-linecap: butt;
-      stroke-dasharray: 768px 768px;
-      stroke-dashoffset: 0;
-      fill: none;
-      cursor: pointer;
-      -webkit-animation: draw-stroke 3s;
-      animation: draw-stroke 3s; }
-      .donut svg.donut__graphic path.donut__slice--active {
-        stroke-width: 36px; }
-  .donut__slice--color-index-error {
-    stroke: #dc442f; }
-  .donut__slice--color-index-warning {
-    stroke: #f4b51e; }
-  .donut__slice--color-index-ok {
-    stroke: #42a425; }
-  .donut__slice--color-index-unknown {
-    stroke: #848484; }
-  .donut__slice--color-index-disabled {
-    stroke: #848484; }
-  .donut__slice--color-index-1, .donut__slice--color-index-8 {
-    stroke: #ff9e2c; }
-  .donut__slice--color-index-2, .donut__slice--color-index-9 {
-    stroke: #00cee4; }
-  .donut__slice--color-index-3, .donut__slice--color-index-10 {
-    stroke: #5b3eff; }
-  .donut__slice--color-index-4, .donut__slice--color-index-11 {
-    stroke: #cc9933; }
-  .donut__slice--color-index-5, .donut__slice--color-index-12 {
-    stroke: #d55af2; }
-  .donut__slice--color-index-6, .donut__slice--color-index-13 {
-    stroke: #79a2bc; }
-  .donut__slice--color-index-7, .donut__slice--color-index-14 {
-    stroke: #877b75; }
-  .donut__active {
-    position: absolute;
-    width: 100%;
-    margin-top: 72px;
-    text-align: center;
-    pointer-events: none; }
-    .donut__active-value {
-      font-size: 36px;
-      font-size: 2.25rem;
-      line-height: 38px;
-      font-weight: bold; }
-    .donut__active-units {
-      font-size: 24px;
-      font-size: 1.5rem;
-      line-height: inherit;
-      margin-left: 6px;
-      color: #999;
-      font-weight: normal; }
-    .donut__active-label {
-      width: 60%;
-      margin: 0px auto; }
-  .donut__key {
-    margin-top: 24px;
+.donut.series-pre path {
+  stroke-dashoffset: 768px; }
+.donut__graphic-container {
+  position: relative;
+  width: 192px;
+  height: 192px; }
+.donut svg.donut__graphic {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: visible; }
+  .donut svg.donut__graphic path {
+    stroke-width: 24px;
+    stroke-linecap: butt;
+    stroke-dasharray: 768px 768px;
+    stroke-dashoffset: 0;
+    fill: none;
+    cursor: pointer;
+    -webkit-animation: draw-stroke 3s;
+    animation: draw-stroke 3s; }
+    .donut svg.donut__graphic path.donut__slice--active {
+      stroke-width: 36px; }
+.donut__slice.color-index-error {
+  stroke: #dc442f; }
+.donut__slice.color-index-warning {
+  stroke: #f4b51e; }
+.donut__slice.color-index-ok {
+  stroke: #42a425; }
+.donut__slice.color-index-unknown {
+  stroke: #848484; }
+.donut__slice.color-index-disabled {
+  stroke: #848484; }
+.donut__slice.color-index-graph-1, .donut__slice.color-index-graph-8 {
+  stroke: #ff9e2c; }
+.donut__slice.color-index-graph-2, .donut__slice.color-index-graph-9 {
+  stroke: #00cee4; }
+.donut__slice.color-index-graph-3, .donut__slice.color-index-graph-10 {
+  stroke: #5b3eff; }
+.donut__slice.color-index-graph-4, .donut__slice.color-index-graph-11 {
+  stroke: #cc9933; }
+.donut__slice.color-index-graph-5, .donut__slice.color-index-graph-12 {
+  stroke: #d55af2; }
+.donut__slice.color-index-graph-6, .donut__slice.color-index-graph-13 {
+  stroke: #79a2bc; }
+.donut__slice.color-index-graph-7, .donut__slice.color-index-graph-14 {
+  stroke: #877b75; }
+.donut__active {
+  position: absolute;
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+  white-space: normal;
+  pointer-events: none; }
+  .donut__active-value {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 38px;
+    font-weight: bold; }
+  .donut__active-units {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: inherit;
+    margin-left: 6px;
+    color: #999;
+    font-weight: normal; }
+  .donut__active-label {
+    width: 60%;
+    margin: 0px auto; }
+.donut__legend {
+  text-align: left;
+  list-style-type: none;
+  white-space: normal; }
+.donut__legend-item, .donut__legend-total {
+  color: #999; }
+  .donut__legend-item > *, .donut__legend-total > * {
+    vertical-align: top; }
+  .donut__legend-item-label, .donut__legend-total-label {
     display: inline-block;
-    text-align: left; }
-  .donut__key-item {
-    color: #999; }
-    .donut__key-item > * {
-      vertical-align: top; }
-    .donut__key-item svg.donut__key-item-swatch {
-      width: 12px;
-      height: 12px;
-      margin-top: 6px;
-      margin-right: 12px;
-      overflow: visible; }
-      .donut__key-item svg.donut__key-item-swatch path {
-        stroke-width: 6px;
-        transition-property: stroke-width;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-in-out; }
-    .donut__key-item-label {
-      display: inline-block;
-      width: 96px; }
-    .donut__key-item-value {
-      display: inline-block;
-      width: 48px;
-      text-align: right; }
-    .donut__key-item--active {
-      color: #333; }
-      .donut__key-item--active svg.donut__key-item-swatch path {
-        stroke-width: 12px; }
+    width: 96px; }
+  .donut__legend-item-value, .donut__legend-total-value {
+    display: inline-block;
+    width: 48px;
+    text-align: right; }
+.donut__legend-item svg.donut__legend-item-swatch {
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  margin-right: 12px;
+  overflow: visible; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-error {
+    stroke: #dc442f; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-warning {
+    stroke: #f4b51e; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-ok {
+    stroke: #42a425; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-unknown {
+    stroke: #848484; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-disabled {
+    stroke: #848484; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-1, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-8 {
+    stroke: #ff9e2c; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-2, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-9 {
+    stroke: #00cee4; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-3, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-10 {
+    stroke: #5b3eff; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-4, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-11 {
+    stroke: #cc9933; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-5, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-12 {
+    stroke: #d55af2; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-6, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-13 {
+    stroke: #79a2bc; }
+  .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-7, .donut__legend-item svg.donut__legend-item-swatch.color-index-graph-14 {
+    stroke: #877b75; }
+  .donut__legend-item svg.donut__legend-item-swatch path {
+    stroke-width: 12px;
+    transition-property: stroke-width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out; }
+.donut__legend-item--active {
+  color: #333;
+  font-weight: bold; }
+  .donut__legend-item--active svg.donut__legend-item-swatch path {
+    stroke-width: 12px; }
+.donut__legend-total {
+  margin-left: 24px; }
+  .donut__legend-total > * {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dotted #ccc; }
+.donut--landscape {
+  white-space: nowrap; }
+  .donut--landscape .donut__graphic-container, .donut--landscape .donut__legend {
+    display: inline-block;
+    vertical-align: middle; }
+  .donut--landscape .donut__legend {
+    margin: 0 0 0 24px; }
+.donut--portrait .donut__graphic-container, .donut--portrait .donut__legend {
+  display: block; }
+.donut--portrait .donut__legend {
+  margin: 24px 0 0; }
+.donut--small .donut__legend {
+  display: none; }
 
 .fixed-header {
   position: fixed;
@@ -1474,16 +1479,15 @@ html, body {
   .header {
     height: 72px; } }
 .header__wrapper {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 24px;
+  padding-right: 24px; }
   @media screen and (max-width: 44.9375em) {
     .header__wrapper {
       height: 48px; } }
   @media screen and (min-width: 45em) {
     .header__wrapper {
       height: 72px; } }
-  .layer__container > .form > .header .header__wrapper {
-    padding-left: 24px;
-    padding-right: 24px; }
 .header__content {
   display: -webkit-flex;
   display: flex;
@@ -1566,6 +1570,9 @@ html, body {
       left: 0px;
       right: 0px;
       z-index: 3; } }
+.header--flush .header__wrapper {
+  padding-left: 0px;
+  padding-right: 0px; }
 .tile > .header {
   height: 48px; }
   .tile > .header .header__wrapper {
@@ -1749,29 +1756,29 @@ a.active > .label .label__icon.control-icon svg {
     max-width: 100vw;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); }
   .layer--align-center {
-    background-image: radial-gradient(circle at top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(0, 128, 255, 0.6)); }
+    background-image: radial-gradient(circle at top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(128, 128, 128, 0.6)); }
     .layer--align-center .layer__container {
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
   .layer--align-left {
-    background-image: radial-gradient(circle at left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(0, 128, 255, 0.6)); }
+    background-image: radial-gradient(circle at left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(128, 128, 128, 0.6)); }
     .layer--align-left .layer__container {
       left: 0px;
       -webkit-animation: slide-right 0.2s ease-in-out forwards;
       animation: slide-right 0.2s ease-in-out forwards; }
   .layer--align-right {
-    background-image: radial-gradient(circle at right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(0, 128, 255, 0.6)); }
+    background-image: radial-gradient(circle at right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(128, 128, 128, 0.6)); }
     .layer--align-right .layer__container {
       right: 0px; }
   .layer--align-top {
-    background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(0, 128, 255, 0.6)); }
+    background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(128, 128, 128, 0.6)); }
     .layer--align-top .layer__container {
       top: 0px;
       -webkit-animation: slide-down 0.2s ease-in-out forwards;
       animation: slide-down 0.2s ease-in-out forwards; }
   .layer--align-bottom {
-    background-image: radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(0, 128, 255, 0.6)); }
+    background-image: radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95) 20%, rgba(128, 128, 128, 0.6)); }
     .layer--align-bottom .layer__container {
       bottom: 0px; }
 
@@ -2138,7 +2145,7 @@ a.active > .label .label__icon.control-icon svg {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(0, 128, 255, 0.6);
+  background-color: rgba(128, 128, 128, 0.6);
   z-index: 10; }
   .notifications__container {
     position: absolute;
@@ -2389,7 +2396,7 @@ a.active > .label .label__icon.control-icon svg {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(0, 128, 255, 0.6);
+  background-color: rgba(128, 128, 128, 0.6);
   z-index: 10; }
   .session__container {
     position: absolute;
@@ -2455,31 +2462,43 @@ a.active > .label .label__icon.control-icon svg {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-align-items: stretch;
-  align-items: stretch;
-  -webkit-align-content: stretch;
-  align-content: stretch;
-  margin: -24px; }
+  padding: 12px; }
   .tiles > * {
     -webkit-flex: 0 0 192px;
     flex: 0 0 192px;
     flex-grow: 1; }
+  .tiles--flush {
+    margin: -24px; }
   .tiles--small > * {
     -webkit-flex-basis: 96px;
     flex-basis: 96px; }
+  .tiles--fill {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    align-content: stretch; }
+    .tiles--fill > * {
+      -webkit-flex-grow: 1;
+      flex-grow: 1; }
 
 .tile {
-  padding: 24px; }
+  padding: 12px;
+  overflow: hidden; }
   @media screen and (max-width: 44.9375em) {
     .tile {
       margin: 0px;
       border-radius: none; } }
+  .tile > .header {
+    margin-bottom: 24px; }
   .tile > a {
     display: block;
     height: 100%;
     text-decoration: none;
     color: inherit;
     padding: 24px; }
+  .tile--wide {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%; }
 
 .title {
   overflow: hidden;
@@ -2525,7 +2544,7 @@ a.active > .label .label__icon.control-icon svg {
  * Extend the clearfix class with Sass to avoid the `.clearfix` class appearing
  * over and over in your markup.
  */
-.clearfix:after, .i-box:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both; }
