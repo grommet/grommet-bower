@@ -1,2 +1,2 @@
 # grommet-bower
-Bower version of Grommet Library
+Bower distribution of Grommet Library
