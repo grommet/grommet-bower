@@ -47,62 +47,70 @@ var Grommet =
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var Grommet = {
 	  // Components
-	  App: __webpack_require__(3),
-	  Button: __webpack_require__(44),
-	  CheckBox: __webpack_require__(45),
-	  Document: __webpack_require__(46),
-	  Donut: __webpack_require__(47),
-	  Footer: __webpack_require__(49),
-	  Form: __webpack_require__(51),
-	  FormField: __webpack_require__(52),
-	  Header: __webpack_require__(53),
-	  Label: __webpack_require__(54),
-	  Login: __webpack_require__(55),
-	  LoginForm: __webpack_require__(56),
-	  Menu: __webpack_require__(57),
-	  Meter: __webpack_require__(64),
-	  Panel: __webpack_require__(65),
-	  RadioButton: __webpack_require__(66),
-	  Search: __webpack_require__(67),
-	  SearchInput: __webpack_require__(69),
-	  Section: __webpack_require__(70),
-	  Table: __webpack_require__(71),
-	  Tiles: __webpack_require__(74),
-	  Tile: __webpack_require__(1),
-	  Title: __webpack_require__(75),
-	  Object: __webpack_require__(76),
-	  TBD: __webpack_require__(77),
+	  App: __webpack_require__(1),
+	  Article: __webpack_require__(78),
+	  Button: __webpack_require__(87),
+	  CheckBox: __webpack_require__(88),
+	  Document: __webpack_require__(89),
+	  Donut: __webpack_require__(90),
+	  Footer: __webpack_require__(92),
+	  Form: __webpack_require__(93),
+	  FormField: __webpack_require__(94),
+	  Header: __webpack_require__(95),
+	  Headline: __webpack_require__(96),
+	  Label: __webpack_require__(97),
+	  List: __webpack_require__(98),
+	  ListItem: __webpack_require__(100),
+	  Login: __webpack_require__(102),
+	  LoginForm: __webpack_require__(103),
+	  Menu: __webpack_require__(104),
+	  Meter: __webpack_require__(108),
+	  Panel: __webpack_require__(109),
+	  RadioButton: __webpack_require__(110),
+	  Search: __webpack_require__(111),
+	  SearchInput: __webpack_require__(113),
+	  Section: __webpack_require__(114),
+	  Table: __webpack_require__(115),
+	  Tiles: __webpack_require__(116),
+	  Tile: __webpack_require__(117),
+	  Title: __webpack_require__(118),
+	  Object: __webpack_require__(119),
+	  TBD: __webpack_require__(120),
 	  Icons: {
-	    Clear: __webpack_require__(78),
-	    DragHandle: __webpack_require__(79),
-	    Edit: __webpack_require__(80),
-	    Filter: __webpack_require__(81),
-	    Help: __webpack_require__(82),
-	    Left: __webpack_require__(83),
-	    More: __webpack_require__(62),
-	    Right: __webpack_require__(84),
-	    Search: __webpack_require__(68),
-	    SearchPlus: __webpack_require__(85),
-	    Spinning: __webpack_require__(72),
-	    Status: __webpack_require__(86)
+	    Calendar: __webpack_require__(121),
+	    Clear: __webpack_require__(122),
+	    DragHandle: __webpack_require__(123),
+	    Edit: __webpack_require__(124),
+	    Filter: __webpack_require__(125),
+	    Grommet: __webpack_require__(126),
+	    Help: __webpack_require__(127),
+	    Left: __webpack_require__(128),
+	    More: __webpack_require__(106),
+	    Right: __webpack_require__(129),
+	    Search: __webpack_require__(112),
+	    SearchPlus: __webpack_require__(130),
+	    Spinning: __webpack_require__(101),
+	    Status: __webpack_require__(131)
 	  },
 	  // Mixins
 	  Mixins: {
-	    KeyboardAccelerators: __webpack_require__(61),
-	    ReactLayeredComponent: __webpack_require__(60)
+	    KeyboardAccelerators: __webpack_require__(85),
+	    ReactLayeredComponent: __webpack_require__(138)
 	  },
 	  // Actions
-	  Actions: __webpack_require__(93),
+	  Actions: __webpack_require__(139),
 	  // Stores
-	  SessionStore: __webpack_require__(121),
+	  SessionStore: __webpack_require__(167),
 	  // Utils
-	  Rest: __webpack_require__(117)
+	  Rest: __webpack_require__(163),
+	  Validator: __webpack_require__(168)
 	};
 
 	module.exports = Grommet;
-
 
 /***/ },
 /* 1 */
@@ -110,48 +118,68 @@ var Grommet =
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var CLASS_ROOT = "tile";
+	var IntlMixin = __webpack_require__(3);
+	var Locale = __webpack_require__(43);
 
-	var Tile = React.createClass({displayName: "Tile",
+	var App = React.createClass({
+	  displayName: 'App',
+
+	  mixins: [IntlMixin],
 
 	  propTypes: {
-	    onClick: React.PropTypes.func,
-	    selected: React.PropTypes.bool,
-	    status: React.PropTypes.string,
-	    wide: React.PropTypes.bool
+	    centered: React.PropTypes.bool
 	  },
 
-	  render: function() {
-	    var classes = [CLASS_ROOT];
-	    if (this.props.status) {
-	      classes.push(CLASS_ROOT = "--status-" + this.props.status.toLowerCase());
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      centered: true
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = ['app'];
+	    if (this.props.centered) {
+	      classes.push('app--centered');
 	    }
-	    if (this.props.wide) {
-	      classes.push(CLASS_ROOT + "--wide");
+	    if (this.props.inline) {
+	      classes.push('app--inline');
 	    }
-	    if (this.props.onClick) {
-	      classes.push(CLASS_ROOT + "--selectable");
-	    }
-	    if (this.props.selected) {
-	      classes.push(CLASS_ROOT + "--selected");
-	    }
+
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 
-	    return (
-	      React.createElement("div", {className: classes.join(' '), onClick: this.props.onClick}, 
-	        this.props.children
-	      )
+	    var lang = Locale.getCurrentLocale();
+	    if (this.props.lang) {
+	      lang = this.props.lang;
+	    }
+
+	    //remove this when React 0.14 is released. This is required because context props are not being propagated to children.
+	    var children = React.Children.map(this.props.children, (function (child) {
+	      if (child) {
+	        return React.cloneElement(child, this.getChildContext());
+	      } else {
+	        return null;
+	      }
+	    }).bind(this));
+
+	    if (!document.documentElement.getAttribute('lang')) {
+	      document.documentElement.setAttribute('lang', lang);
+	    }
+
+	    return React.createElement(
+	      'div',
+	      { lang: lang, className: classes.join(' ') },
+	      children
 	    );
 	  }
-
 	});
 
-	module.exports = Tile;
-
+	module.exports = App;
 
 /***/ },
 /* 2 */
@@ -163,117 +191,60 @@ var Grommet =
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
-
-	var React = __webpack_require__(2);
-
-	var IntlMixin = __webpack_require__(4);
-
-	var App = React.createClass({displayName: "App",
-
-	  mixins: [IntlMixin],
-
-	  propTypes: {
-	    centered: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function () {
-	    return {
-	      centered: true
-	    };
-	  },
-
-	  render: function() {
-	    var classes = ["app"];
-	    if (this.props.centered) {
-	      classes.push("app--centered");
-	    }
-	    if (this.props.inline) {
-	      classes.push("app--inline");
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    //remove this when React 0.14 is released. This is required because context props are not being propagated to children.
-	    var children = React.Children.map(this.props.children, function(child) {
-	      if (child) {
-	        return React.cloneElement(child, this.getChildContext());
-	      } else {
-	        return null;
-	      }
-	    }.bind(this));
-
-	    return (
-	      React.createElement("div", {className: classes.join(' ')}, 
-	        children
-	      )
-	    );
-	  }
-	});
-
-	module.exports = App;
-
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
 	/* WEBPACK VAR INJECTION */(function(global) {// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
 
 	var supportedLocales = ['en-US', 'pt-BR'];
 
 	function localesSupported() {
 	  return global.Intl && supportedLocales.every(function (locale) {
-	    return Intl.NumberFormat.supportedLocalesOf(locale)[0] === locale &&
-	            Intl.DateTimeFormat.supportedLocalesOf(locale)[0] === locale;
+	    return Intl.NumberFormat.supportedLocalesOf(locale)[0] === locale && Intl.DateTimeFormat.supportedLocalesOf(locale)[0] === locale;
 	  });
 	}
 
-	if (! localesSupported()) {
-	  __webpack_require__(5);
+	if (!localesSupported()) {
+	  __webpack_require__(4);
+	  IntlPolyfill.__addLocaleData(__webpack_require__(5));
 	  IntlPolyfill.__addLocaleData(__webpack_require__(6));
-	  IntlPolyfill.__addLocaleData(__webpack_require__(7));
 	  Intl.NumberFormat = IntlPolyfill.NumberFormat;
 	  Intl.DateTimeFormat = IntlPolyfill.DateTimeFormat;
 	}
 
 	var React = __webpack_require__(2);
-	var ReactIntl = __webpack_require__(8);
+	var ReactIntl = __webpack_require__(7);
 	var IntlMixin = ReactIntl.IntlMixin;
 	var FormattedDate = ReactIntl.FormattedDate;
 
 	module.exports = {
 	  mixins: [IntlMixin],
 
-	  getChildContext: function () {
+	  getChildContext: function getChildContext() {
 	    if (!this.props.locales && !this.context.locales) {
 	      this.context.locales = 'en-US';
 	    }
 
 	    if (!this.props.messages && !this.context.messages) {
 	      try {
-	        this.context.messages = __webpack_require__(41)("./" + (this.props.locales || this.context.locales || 'en-US'));
+	        this.context.messages = __webpack_require__(40)("./" + (this.props.locales || this.context.locales || 'en-US'));
 	      } catch (e) {
-	        this.context.messages = __webpack_require__(42);
+	        this.context.messages = __webpack_require__(41);
 	      }
 	    }
 	  },
 
-	  getGrommetFormattedDate: function (date) {
-	    return (
-	      React.createElement(FormattedDate, {
-	        value: new Date(date), 
-	        day: "numeric", 
-	        month: "numeric", 
-	        year: "numeric", 
-	        hour: "numeric", 
-	        minute: "numeric", 
-	        second: "numeric"})
-	    );
+	  getGrommetFormattedDate: function getGrommetFormattedDate(date) {
+	    return React.createElement(FormattedDate, {
+	      value: new Date(date),
+	      day: 'numeric',
+	      month: 'numeric',
+	      year: 'numeric',
+	      hour: 'numeric',
+	      minute: 'numeric',
+	      second: 'numeric' });
 	  },
 
-	  getGrommetIntlMessage: function(messageKey) {
+	  getGrommetIntlMessage: function getGrommetIntlMessage(messageKey) {
 	    var message = messageKey;
 	    if (messageKey) {
 	      try {
@@ -285,11 +256,10 @@ var Grommet =
 	    return message;
 	  }
 	};
-
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -3365,7 +3335,7 @@ var Grommet =
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -4309,7 +4279,7 @@ var Grommet =
 	}
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -5406,7 +5376,7 @@ var Grommet =
 	}
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/* jshint node:true */
@@ -5418,8 +5388,8 @@ var Grommet =
 
 	// Require the lib and add all locale data to `ReactIntl`. This module will be
 	// ignored when bundling for the browser with Browserify/Webpack.
-	var ReactIntl = __webpack_require__(9);
-	__webpack_require__(40);
+	var ReactIntl = __webpack_require__(8);
+	__webpack_require__(39);
 
 	// Export the Mixin as the default export for back-compat with v1.0.0. This will
 	// be changed to simply re-exporting `ReactIntl` as the default export in v2.0.
@@ -5450,14 +5420,14 @@ var Grommet =
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext: true */
 
 	"use strict";
 	exports.__addLocaleData = __addLocaleData;
-	var intl$messageformat$$ = __webpack_require__(13), intl$relativeformat$$ = __webpack_require__(23), src$en$$ = __webpack_require__(33), src$mixin$$ = __webpack_require__(12), src$components$date$$ = __webpack_require__(34), src$components$time$$ = __webpack_require__(10), src$components$relative$$ = __webpack_require__(35), src$components$number$$ = __webpack_require__(36), src$components$message$$ = __webpack_require__(37), src$components$html$message$$ = __webpack_require__(38);
+	var intl$messageformat$$ = __webpack_require__(12), intl$relativeformat$$ = __webpack_require__(22), src$en$$ = __webpack_require__(32), src$mixin$$ = __webpack_require__(11), src$components$date$$ = __webpack_require__(33), src$components$time$$ = __webpack_require__(9), src$components$relative$$ = __webpack_require__(34), src$components$number$$ = __webpack_require__(35), src$components$message$$ = __webpack_require__(36), src$components$html$message$$ = __webpack_require__(37);
 	function __addLocaleData(data) {
 	    intl$messageformat$$["default"].__addLocaleData(data);
 	    intl$relativeformat$$["default"].__addLocaleData(data);
@@ -5469,14 +5439,14 @@ var Grommet =
 	//# sourceMappingURL=react-intl.js.map
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), src$mixin$$ = __webpack_require__(12);
+	var src$react$$ = __webpack_require__(10), src$mixin$$ = __webpack_require__(11);
 
 	var FormattedTime = src$react$$["default"].createClass({
 	    displayName: 'FormattedTime',
@@ -5511,7 +5481,7 @@ var Grommet =
 	//# sourceMappingURL=time.js.map
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports) {
 
 	/* global React */
@@ -5526,14 +5496,14 @@ var Grommet =
 	//# sourceMappingURL=react.js.map
 
 /***/ },
-/* 12 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), intl$messageformat$$ = __webpack_require__(13), intl$relativeformat$$ = __webpack_require__(23), intl$format$cache$$ = __webpack_require__(30);
+	var src$react$$ = __webpack_require__(10), intl$messageformat$$ = __webpack_require__(12), intl$relativeformat$$ = __webpack_require__(22), intl$format$cache$$ = __webpack_require__(29);
 
 	// -----------------------------------------------------------------------------
 
@@ -5692,18 +5662,18 @@ var Grommet =
 	//# sourceMappingURL=mixin.js.map
 
 /***/ },
-/* 13 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint node:true */
 
 	'use strict';
 
-	var IntlMessageFormat = __webpack_require__(14)['default'];
+	var IntlMessageFormat = __webpack_require__(13)['default'];
 
 	// Add all locale data to `IntlMessageFormat`. This module will be ignored when
 	// bundling for the browser with Browserify/Webpack.
-	__webpack_require__(22);
+	__webpack_require__(21);
 
 	// Re-export `IntlMessageFormat` as the CommonJS default exports with all the
 	// locale data registered, and with English set as the default locale. Define
@@ -5713,13 +5683,13 @@ var Grommet =
 
 
 /***/ },
-/* 14 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jslint esnext: true */
 
 	"use strict";
-	var src$core$$ = __webpack_require__(15), src$en$$ = __webpack_require__(21);
+	var src$core$$ = __webpack_require__(14), src$en$$ = __webpack_require__(20);
 
 	src$core$$["default"].__addLocaleData(src$en$$["default"]);
 	src$core$$["default"].defaultLocale = 'en';
@@ -5729,7 +5699,7 @@ var Grommet =
 	//# sourceMappingURL=main.js.map
 
 /***/ },
-/* 15 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -5741,7 +5711,7 @@ var Grommet =
 	/* jslint esnext: true */
 
 	"use strict";
-	var src$utils$$ = __webpack_require__(16), src$es5$$ = __webpack_require__(17), src$compiler$$ = __webpack_require__(18), intl$messageformat$parser$$ = __webpack_require__(19);
+	var src$utils$$ = __webpack_require__(15), src$es5$$ = __webpack_require__(16), src$compiler$$ = __webpack_require__(17), intl$messageformat$parser$$ = __webpack_require__(18);
 	exports["default"] = MessageFormat;
 
 	// -- MessageFormat --------------------------------------------------------
@@ -5998,7 +5968,7 @@ var Grommet =
 	//# sourceMappingURL=core.js.map
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports) {
 
 	/*
@@ -6035,7 +6005,7 @@ var Grommet =
 	//# sourceMappingURL=utils.js.map
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -6047,7 +6017,7 @@ var Grommet =
 	/* jslint esnext: true */
 
 	"use strict";
-	var src$utils$$ = __webpack_require__(16);
+	var src$utils$$ = __webpack_require__(15);
 
 	// Purposely using the same implementation as the Intl.js `Intl` polyfill.
 	// Copyright 2013 Andy Earnshaw, MIT License
@@ -6089,7 +6059,7 @@ var Grommet =
 	//# sourceMappingURL=es5.js.map
 
 /***/ },
-/* 18 */
+/* 17 */
 /***/ function(module, exports) {
 
 	/*
@@ -6303,17 +6273,17 @@ var Grommet =
 	//# sourceMappingURL=compiler.js.map
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports = module.exports = __webpack_require__(20)['default'];
+	exports = module.exports = __webpack_require__(19)['default'];
 	exports['default'] = exports;
 
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -7659,7 +7629,7 @@ var Grommet =
 	//# sourceMappingURL=parser.js.map
 
 /***/ },
-/* 21 */
+/* 20 */
 /***/ function(module, exports) {
 
 	// GENERATED FILE
@@ -7669,24 +7639,24 @@ var Grommet =
 	//# sourceMappingURL=en.js.map
 
 /***/ },
-/* 22 */
+/* 21 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 23 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint node:true */
 
 	'use strict';
 
-	var IntlRelativeFormat = __webpack_require__(24)['default'];
+	var IntlRelativeFormat = __webpack_require__(23)['default'];
 
 	// Add all locale data to `IntlRelativeFormat`. This module will be ignored when
 	// bundling for the browser with Browserify/Webpack.
-	__webpack_require__(29);
+	__webpack_require__(28);
 
 	// Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
 	// locale data registered, and with English set as the default locale. Define
@@ -7696,13 +7666,13 @@ var Grommet =
 
 
 /***/ },
-/* 24 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jslint esnext: true */
 
 	"use strict";
-	var src$core$$ = __webpack_require__(25), src$en$$ = __webpack_require__(28);
+	var src$core$$ = __webpack_require__(24), src$en$$ = __webpack_require__(27);
 
 	src$core$$["default"].__addLocaleData(src$en$$["default"]);
 	src$core$$["default"].defaultLocale = 'en';
@@ -7712,7 +7682,7 @@ var Grommet =
 	//# sourceMappingURL=main.js.map
 
 /***/ },
-/* 25 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -7724,7 +7694,7 @@ var Grommet =
 	/* jslint esnext: true */
 
 	"use strict";
-	var intl$messageformat$$ = __webpack_require__(13), src$diff$$ = __webpack_require__(26), src$es5$$ = __webpack_require__(27);
+	var intl$messageformat$$ = __webpack_require__(12), src$diff$$ = __webpack_require__(25), src$es5$$ = __webpack_require__(26);
 	exports["default"] = RelativeFormat;
 
 	// -----------------------------------------------------------------------------
@@ -8014,7 +7984,7 @@ var Grommet =
 	//# sourceMappingURL=core.js.map
 
 /***/ },
-/* 26 */
+/* 25 */
 /***/ function(module, exports) {
 
 	/*
@@ -8065,7 +8035,7 @@ var Grommet =
 	//# sourceMappingURL=diff.js.map
 
 /***/ },
-/* 27 */
+/* 26 */
 /***/ function(module, exports) {
 
 	/*
@@ -8145,7 +8115,7 @@ var Grommet =
 	//# sourceMappingURL=es5.js.map
 
 /***/ },
-/* 28 */
+/* 27 */
 /***/ function(module, exports) {
 
 	// GENERATED FILE
@@ -8155,27 +8125,27 @@ var Grommet =
 	//# sourceMappingURL=en.js.map
 
 /***/ },
-/* 29 */
+/* 28 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 30 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports = module.exports = __webpack_require__(31)['default'];
+	exports = module.exports = __webpack_require__(30)['default'];
 	exports['default'] = exports;
 
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var src$es5$$ = __webpack_require__(32);
+	var src$es5$$ = __webpack_require__(31);
 	exports["default"] = createFormatCache;
 
 	// -----------------------------------------------------------------------------
@@ -8252,7 +8222,7 @@ var Grommet =
 	//# sourceMappingURL=memoizer.js.map
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8299,7 +8269,7 @@ var Grommet =
 	//# sourceMappingURL=es5.js.map
 
 /***/ },
-/* 33 */
+/* 32 */
 /***/ function(module, exports) {
 
 	// GENERATED FILE
@@ -8309,14 +8279,14 @@ var Grommet =
 	//# sourceMappingURL=en.js.map
 
 /***/ },
-/* 34 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), src$mixin$$ = __webpack_require__(12);
+	var src$react$$ = __webpack_require__(10), src$mixin$$ = __webpack_require__(11);
 
 	var FormattedDate = src$react$$["default"].createClass({
 	    displayName: 'FormattedDate',
@@ -8351,14 +8321,14 @@ var Grommet =
 	//# sourceMappingURL=date.js.map
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), src$mixin$$ = __webpack_require__(12);
+	var src$react$$ = __webpack_require__(10), src$mixin$$ = __webpack_require__(11);
 
 	var FormattedRelative = src$react$$["default"].createClass({
 	    displayName: 'FormattedRelative',
@@ -8396,14 +8366,14 @@ var Grommet =
 	//# sourceMappingURL=relative.js.map
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), src$mixin$$ = __webpack_require__(12);
+	var src$react$$ = __webpack_require__(10), src$mixin$$ = __webpack_require__(11);
 
 	var FormattedNumber = src$react$$["default"].createClass({
 	    displayName: 'FormattedNumber',
@@ -8439,14 +8409,14 @@ var Grommet =
 	//# sourceMappingURL=number.js.map
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), src$mixin$$ = __webpack_require__(12);
+	var src$react$$ = __webpack_require__(10), src$mixin$$ = __webpack_require__(11);
 
 	var FormattedMessage = src$react$$["default"].createClass({
 	    displayName: 'FormattedMessage',
@@ -8527,14 +8497,14 @@ var Grommet =
 	//# sourceMappingURL=message.js.map
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* jshint esnext:true */
 
 	// TODO: Use `import React from "react";` when external modules are supported.
 	"use strict";
-	var src$react$$ = __webpack_require__(11), src$escape$$ = __webpack_require__(39), src$mixin$$ = __webpack_require__(12);
+	var src$react$$ = __webpack_require__(10), src$escape$$ = __webpack_require__(38), src$mixin$$ = __webpack_require__(11);
 
 	var FormattedHTMLMessage = src$react$$["default"].createClass({
 	    displayName: 'FormattedHTMLMessage',
@@ -8593,7 +8563,7 @@ var Grommet =
 	//# sourceMappingURL=html-message.js.map
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports) {
 
 	/* jshint esnext:true */
@@ -8628,20 +8598,20 @@ var Grommet =
 	//# sourceMappingURL=escape.js.map
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 41 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./en-US": 42,
-		"./en-US.js": 42,
-		"./pt-BR": 43,
-		"./pt-BR.js": 43
+		"./en-US": 41,
+		"./en-US.js": 41,
+		"./pt-BR": 42,
+		"./pt-BR.js": 42
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -8654,14 +8624,16 @@ var Grommet =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 41;
+	webpackContext.id = 40;
 
 
 /***/ },
-/* 42 */
+/* 41 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
 
 	module.exports = {
 	  IndexFilters: {
@@ -8700,12 +8672,13 @@ var Grommet =
 	  Warning: 'Warning'
 	};
 
-
 /***/ },
-/* 43 */
+/* 42 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
 
 	module.exports = {
 	  IndexFilters: {
@@ -8744,57 +8717,2145 @@ var Grommet =
 	  Warning: 'Alerta'
 	};
 
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+	'use strict';
+
+	var merge = __webpack_require__(44);
+	var Cookies = __webpack_require__(77);
+	var fallbackLocale = 'en-US';
+
+	function normalizeLocale(locale) {
+	  var locales = locale.replace(/_/g, '-').split('-');
+	  var normalizedLocale = locales[0];
+	  if (locales.length > 1) {
+	    normalizedLocale += '-' + locales[1].toUpperCase();
+	  }
+
+	  return normalizedLocale;
+	}
+
+	module.exports = {
+	  getCurrentLocale: function getCurrentLocale() {
+	    var cookieLanguages = Cookies.get('languages');
+	    var locale = cookieLanguages ? JSON.parse(cookieLanguages)[0] : undefined;
+	    if (!locale) {
+	      locale = window.navigator.languages ? window.navigator.languages[0] : window.navigator.language || window.navigator.userLanguage;
+	    }
+
+	    return normalizeLocale(locale || fallbackLocale);
+	  },
+
+	  getLocaleData: function getLocaleData(appLocale) {
+	    var locale = this.getCurrentLocale();
+	    var grommetMessages;
+	    try {
+	      grommetMessages = __webpack_require__(40)("./" + locale);
+	    } catch (e) {
+	      console.warn(locale + ' not supported, fallback to English has been applied.');
+	      locale = fallbackLocale;
+	      grommetMessages = __webpack_require__(41);
+	    }
+
+	    var messages = merge(grommetMessages, appLocale || {});
+
+	    return {
+	      locale: locale,
+	      messages: messages
+	    };
+	  }
+	};
 
 /***/ },
 /* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var baseMerge = __webpack_require__(45),
+	    createAssigner = __webpack_require__(72);
+
+	/**
+	 * Recursively merges own enumerable properties of the source object(s), that
+	 * don't resolve to `undefined` into the destination object. Subsequent sources
+	 * overwrite property assignments of previous sources. If `customizer` is
+	 * provided it is invoked to produce the merged values of the destination and
+	 * source properties. If `customizer` returns `undefined` merging is handled
+	 * by the method instead. The `customizer` is bound to `thisArg` and invoked
+	 * with five arguments: (objectValue, sourceValue, key, object, source).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The destination object.
+	 * @param {...Object} [sources] The source objects.
+	 * @param {Function} [customizer] The function to customize assigned values.
+	 * @param {*} [thisArg] The `this` binding of `customizer`.
+	 * @returns {Object} Returns `object`.
+	 * @example
+	 *
+	 * var users = {
+	 *   'data': [{ 'user': 'barney' }, { 'user': 'fred' }]
+	 * };
+	 *
+	 * var ages = {
+	 *   'data': [{ 'age': 36 }, { 'age': 40 }]
+	 * };
+	 *
+	 * _.merge(users, ages);
+	 * // => { 'data': [{ 'user': 'barney', 'age': 36 }, { 'user': 'fred', 'age': 40 }] }
+	 *
+	 * // using a customizer callback
+	 * var object = {
+	 *   'fruits': ['apple'],
+	 *   'vegetables': ['beet']
+	 * };
+	 *
+	 * var other = {
+	 *   'fruits': ['banana'],
+	 *   'vegetables': ['carrot']
+	 * };
+	 *
+	 * _.merge(object, other, function(a, b) {
+	 *   if (_.isArray(a)) {
+	 *     return a.concat(b);
+	 *   }
+	 * });
+	 * // => { 'fruits': ['apple', 'banana'], 'vegetables': ['beet', 'carrot'] }
+	 */
+	var merge = createAssigner(baseMerge);
+
+	module.exports = merge;
+
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var arrayEach = __webpack_require__(47),
+	    baseMergeDeep = __webpack_require__(48),
+	    isArray = __webpack_require__(56),
+	    isArrayLike = __webpack_require__(51),
+	    isObject = __webpack_require__(46),
+	    isObjectLike = __webpack_require__(55),
+	    isTypedArray = __webpack_require__(67),
+	    keys = __webpack_require__(70);
+
+	/**
+	 * The base implementation of `_.merge` without support for argument juggling,
+	 * multiple sources, and `this` binding `customizer` functions.
+	 *
+	 * @private
+	 * @param {Object} object The destination object.
+	 * @param {Object} source The source object.
+	 * @param {Function} [customizer] The function to customize merged values.
+	 * @param {Array} [stackA=[]] Tracks traversed source objects.
+	 * @param {Array} [stackB=[]] Associates values with source counterparts.
+	 * @returns {Object} Returns `object`.
+	 */
+	function baseMerge(object, source, customizer, stackA, stackB) {
+	  if (!isObject(object)) {
+	    return object;
+	  }
+	  var isSrcArr = isArrayLike(source) && (isArray(source) || isTypedArray(source)),
+	      props = isSrcArr ? undefined : keys(source);
+
+	  arrayEach(props || source, function(srcValue, key) {
+	    if (props) {
+	      key = srcValue;
+	      srcValue = source[key];
+	    }
+	    if (isObjectLike(srcValue)) {
+	      stackA || (stackA = []);
+	      stackB || (stackB = []);
+	      baseMergeDeep(object, source, key, baseMerge, customizer, stackA, stackB);
+	    }
+	    else {
+	      var value = object[key],
+	          result = customizer ? customizer(value, srcValue, key, object, source) : undefined,
+	          isCommon = result === undefined;
+
+	      if (isCommon) {
+	        result = srcValue;
+	      }
+	      if ((result !== undefined || (isSrcArr && !(key in object))) &&
+	          (isCommon || (result === result ? (result !== value) : (value === value)))) {
+	        object[key] = result;
+	      }
+	    }
+	  });
+	  return object;
+	}
+
+	module.exports = baseMerge;
+
+
+/***/ },
+/* 46 */
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
+	 * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(1);
+	 * // => false
+	 */
+	function isObject(value) {
+	  // Avoid a V8 JIT bug in Chrome 19-20.
+	  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+
+	module.exports = isObject;
+
+
+/***/ },
+/* 47 */
+/***/ function(module, exports) {
+
+	/**
+	 * A specialized version of `_.forEach` for arrays without support for callback
+	 * shorthands and `this` binding.
+	 *
+	 * @private
+	 * @param {Array} array The array to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns `array`.
+	 */
+	function arrayEach(array, iteratee) {
+	  var index = -1,
+	      length = array.length;
+
+	  while (++index < length) {
+	    if (iteratee(array[index], index, array) === false) {
+	      break;
+	    }
+	  }
+	  return array;
+	}
+
+	module.exports = arrayEach;
+
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var arrayCopy = __webpack_require__(49),
+	    isArguments = __webpack_require__(50),
+	    isArray = __webpack_require__(56),
+	    isArrayLike = __webpack_require__(51),
+	    isPlainObject = __webpack_require__(60),
+	    isTypedArray = __webpack_require__(67),
+	    toPlainObject = __webpack_require__(68);
+
+	/**
+	 * A specialized version of `baseMerge` for arrays and objects which performs
+	 * deep merges and tracks traversed objects enabling objects with circular
+	 * references to be merged.
+	 *
+	 * @private
+	 * @param {Object} object The destination object.
+	 * @param {Object} source The source object.
+	 * @param {string} key The key of the value to merge.
+	 * @param {Function} mergeFunc The function to merge values.
+	 * @param {Function} [customizer] The function to customize merged values.
+	 * @param {Array} [stackA=[]] Tracks traversed source objects.
+	 * @param {Array} [stackB=[]] Associates values with source counterparts.
+	 * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+	 */
+	function baseMergeDeep(object, source, key, mergeFunc, customizer, stackA, stackB) {
+	  var length = stackA.length,
+	      srcValue = source[key];
+
+	  while (length--) {
+	    if (stackA[length] == srcValue) {
+	      object[key] = stackB[length];
+	      return;
+	    }
+	  }
+	  var value = object[key],
+	      result = customizer ? customizer(value, srcValue, key, object, source) : undefined,
+	      isCommon = result === undefined;
+
+	  if (isCommon) {
+	    result = srcValue;
+	    if (isArrayLike(srcValue) && (isArray(srcValue) || isTypedArray(srcValue))) {
+	      result = isArray(value)
+	        ? value
+	        : (isArrayLike(value) ? arrayCopy(value) : []);
+	    }
+	    else if (isPlainObject(srcValue) || isArguments(srcValue)) {
+	      result = isArguments(value)
+	        ? toPlainObject(value)
+	        : (isPlainObject(value) ? value : {});
+	    }
+	    else {
+	      isCommon = false;
+	    }
+	  }
+	  // Add the source value to the stack of traversed objects and associate
+	  // it with its merged value.
+	  stackA.push(srcValue);
+	  stackB.push(result);
+
+	  if (isCommon) {
+	    // Recursively merge objects and arrays (susceptible to call stack limits).
+	    object[key] = mergeFunc(result, srcValue, customizer, stackA, stackB);
+	  } else if (result === result ? (result !== value) : (value === value)) {
+	    object[key] = result;
+	  }
+	}
+
+	module.exports = baseMergeDeep;
+
+
+/***/ },
+/* 49 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copies the values of `source` to `array`.
+	 *
+	 * @private
+	 * @param {Array} source The array to copy values from.
+	 * @param {Array} [array=[]] The array to copy values to.
+	 * @returns {Array} Returns `array`.
+	 */
+	function arrayCopy(source, array) {
+	  var index = -1,
+	      length = source.length;
+
+	  array || (array = Array(length));
+	  while (++index < length) {
+	    array[index] = source[index];
+	  }
+	  return array;
+	}
+
+	module.exports = arrayCopy;
+
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLike = __webpack_require__(51),
+	    isObjectLike = __webpack_require__(55);
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/** Native method references. */
+	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+	/**
+	 * Checks if `value` is classified as an `arguments` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @example
+	 *
+	 * _.isArguments(function() { return arguments; }());
+	 * // => true
+	 *
+	 * _.isArguments([1, 2, 3]);
+	 * // => false
+	 */
+	function isArguments(value) {
+	  return isObjectLike(value) && isArrayLike(value) &&
+	    hasOwnProperty.call(value, 'callee') && !propertyIsEnumerable.call(value, 'callee');
+	}
+
+	module.exports = isArguments;
+
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getLength = __webpack_require__(52),
+	    isLength = __webpack_require__(54);
+
+	/**
+	 * Checks if `value` is array-like.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+	 */
+	function isArrayLike(value) {
+	  return value != null && isLength(getLength(value));
+	}
+
+	module.exports = isArrayLike;
+
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseProperty = __webpack_require__(53);
+
+	/**
+	 * Gets the "length" property value of `object`.
+	 *
+	 * **Note:** This function is used to avoid a [JIT bug](https://bugs.webkit.org/show_bug.cgi?id=142792)
+	 * that affects Safari on at least iOS 8.1-8.3 ARM64.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {*} Returns the "length" value.
+	 */
+	var getLength = baseProperty('length');
+
+	module.exports = getLength;
+
+
+/***/ },
+/* 53 */
+/***/ function(module, exports) {
+
+	/**
+	 * The base implementation of `_.property` without support for deep paths.
+	 *
+	 * @private
+	 * @param {string} key The key of the property to get.
+	 * @returns {Function} Returns the new function.
+	 */
+	function baseProperty(key) {
+	  return function(object) {
+	    return object == null ? undefined : object[key];
+	  };
+	}
+
+	module.exports = baseProperty;
+
+
+/***/ },
+/* 54 */
+/***/ function(module, exports) {
+
+	/**
+	 * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
+	 * of an array-like value.
+	 */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+
+	/**
+	 * Checks if `value` is a valid array-like length.
+	 *
+	 * **Note:** This function is based on [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+	 */
+	function isLength(value) {
+	  return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+	}
+
+	module.exports = isLength;
+
+
+/***/ },
+/* 55 */
+/***/ function(module, exports) {
+
+	/**
+	 * Checks if `value` is object-like.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+
+	module.exports = isObjectLike;
+
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(57),
+	    isLength = __webpack_require__(54),
+	    isObjectLike = __webpack_require__(55);
+
+	/** `Object#toString` result references. */
+	var arrayTag = '[object Array]';
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/**
+	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objToString = objectProto.toString;
+
+	/* Native method references for those with the same name as other `lodash` methods. */
+	var nativeIsArray = getNative(Array, 'isArray');
+
+	/**
+	 * Checks if `value` is classified as an `Array` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @example
+	 *
+	 * _.isArray([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArray(function() { return arguments; }());
+	 * // => false
+	 */
+	var isArray = nativeIsArray || function(value) {
+	  return isObjectLike(value) && isLength(value.length) && objToString.call(value) == arrayTag;
+	};
+
+	module.exports = isArray;
+
+
+/***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isNative = __webpack_require__(58);
+
+	/**
+	 * Gets the native function at `key` of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @param {string} key The key of the method to get.
+	 * @returns {*} Returns the function if it's native, else `undefined`.
+	 */
+	function getNative(object, key) {
+	  var value = object == null ? undefined : object[key];
+	  return isNative(value) ? value : undefined;
+	}
+
+	module.exports = getNative;
+
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isFunction = __webpack_require__(59),
+	    isObjectLike = __webpack_require__(55);
+
+	/** Used to detect host constructors (Safari > 5). */
+	var reIsHostCtor = /^\[object .+?Constructor\]$/;
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/** Used to resolve the decompiled source of functions. */
+	var fnToString = Function.prototype.toString;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/** Used to detect if a method is native. */
+	var reIsNative = RegExp('^' +
+	  fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&')
+	  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+	);
+
+	/**
+	 * Checks if `value` is a native function.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a native function, else `false`.
+	 * @example
+	 *
+	 * _.isNative(Array.prototype.push);
+	 * // => true
+	 *
+	 * _.isNative(_);
+	 * // => false
+	 */
+	function isNative(value) {
+	  if (value == null) {
+	    return false;
+	  }
+	  if (isFunction(value)) {
+	    return reIsNative.test(fnToString.call(value));
+	  }
+	  return isObjectLike(value) && reIsHostCtor.test(value);
+	}
+
+	module.exports = isNative;
+
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(46);
+
+	/** `Object#toString` result references. */
+	var funcTag = '[object Function]';
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/**
+	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objToString = objectProto.toString;
+
+	/**
+	 * Checks if `value` is classified as a `Function` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @example
+	 *
+	 * _.isFunction(_);
+	 * // => true
+	 *
+	 * _.isFunction(/abc/);
+	 * // => false
+	 */
+	function isFunction(value) {
+	  // The use of `Object#toString` avoids issues with the `typeof` operator
+	  // in older versions of Chrome and Safari which return 'function' for regexes
+	  // and Safari 8 equivalents which return 'object' for typed array constructors.
+	  return isObject(value) && objToString.call(value) == funcTag;
+	}
+
+	module.exports = isFunction;
+
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseForIn = __webpack_require__(61),
+	    isArguments = __webpack_require__(50),
+	    isObjectLike = __webpack_require__(55);
+
+	/** `Object#toString` result references. */
+	var objectTag = '[object Object]';
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/**
+	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objToString = objectProto.toString;
+
+	/**
+	 * Checks if `value` is a plain object, that is, an object created by the
+	 * `Object` constructor or one with a `[[Prototype]]` of `null`.
+	 *
+	 * **Note:** This method assumes objects created by the `Object` constructor
+	 * have no inherited enumerable properties.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 * }
+	 *
+	 * _.isPlainObject(new Foo);
+	 * // => false
+	 *
+	 * _.isPlainObject([1, 2, 3]);
+	 * // => false
+	 *
+	 * _.isPlainObject({ 'x': 0, 'y': 0 });
+	 * // => true
+	 *
+	 * _.isPlainObject(Object.create(null));
+	 * // => true
+	 */
+	function isPlainObject(value) {
+	  var Ctor;
+
+	  // Exit early for non `Object` objects.
+	  if (!(isObjectLike(value) && objToString.call(value) == objectTag && !isArguments(value)) ||
+	      (!hasOwnProperty.call(value, 'constructor') && (Ctor = value.constructor, typeof Ctor == 'function' && !(Ctor instanceof Ctor)))) {
+	    return false;
+	  }
+	  // IE < 9 iterates inherited properties before own properties. If the first
+	  // iterated property is an object's own property then there are no inherited
+	  // enumerable properties.
+	  var result;
+	  // In most environments an object's own properties are iterated before
+	  // its inherited properties. If the last iterated property is an object's
+	  // own property then there are no inherited enumerable properties.
+	  baseForIn(value, function(subValue, key) {
+	    result = key;
+	  });
+	  return result === undefined || hasOwnProperty.call(value, result);
+	}
+
+	module.exports = isPlainObject;
+
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseFor = __webpack_require__(62),
+	    keysIn = __webpack_require__(65);
+
+	/**
+	 * The base implementation of `_.forIn` without support for callback
+	 * shorthands and `this` binding.
+	 *
+	 * @private
+	 * @param {Object} object The object to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Object} Returns `object`.
+	 */
+	function baseForIn(object, iteratee) {
+	  return baseFor(object, iteratee, keysIn);
+	}
+
+	module.exports = baseForIn;
+
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var createBaseFor = __webpack_require__(63);
+
+	/**
+	 * The base implementation of `baseForIn` and `baseForOwn` which iterates
+	 * over `object` properties returned by `keysFunc` invoking `iteratee` for
+	 * each property. Iteratee functions may exit iteration early by explicitly
+	 * returning `false`.
+	 *
+	 * @private
+	 * @param {Object} object The object to iterate over.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @param {Function} keysFunc The function to get the keys of `object`.
+	 * @returns {Object} Returns `object`.
+	 */
+	var baseFor = createBaseFor();
+
+	module.exports = baseFor;
+
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var toObject = __webpack_require__(64);
+
+	/**
+	 * Creates a base function for `_.forIn` or `_.forInRight`.
+	 *
+	 * @private
+	 * @param {boolean} [fromRight] Specify iterating from right to left.
+	 * @returns {Function} Returns the new base function.
+	 */
+	function createBaseFor(fromRight) {
+	  return function(object, iteratee, keysFunc) {
+	    var iterable = toObject(object),
+	        props = keysFunc(object),
+	        length = props.length,
+	        index = fromRight ? length : -1;
+
+	    while ((fromRight ? index-- : ++index < length)) {
+	      var key = props[index];
+	      if (iteratee(iterable[key], key, iterable) === false) {
+	        break;
+	      }
+	    }
+	    return object;
+	  };
+	}
+
+	module.exports = createBaseFor;
+
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(46);
+
+	/**
+	 * Converts `value` to an object if it's not one.
+	 *
+	 * @private
+	 * @param {*} value The value to process.
+	 * @returns {Object} Returns the object.
+	 */
+	function toObject(value) {
+	  return isObject(value) ? value : Object(value);
+	}
+
+	module.exports = toObject;
+
+
+/***/ },
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArguments = __webpack_require__(50),
+	    isArray = __webpack_require__(56),
+	    isIndex = __webpack_require__(66),
+	    isLength = __webpack_require__(54),
+	    isObject = __webpack_require__(46);
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/**
+	 * Creates an array of the own and inherited enumerable property names of `object`.
+	 *
+	 * **Note:** Non-object values are coerced to objects.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 *   this.b = 2;
+	 * }
+	 *
+	 * Foo.prototype.c = 3;
+	 *
+	 * _.keysIn(new Foo);
+	 * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+	 */
+	function keysIn(object) {
+	  if (object == null) {
+	    return [];
+	  }
+	  if (!isObject(object)) {
+	    object = Object(object);
+	  }
+	  var length = object.length;
+	  length = (length && isLength(length) &&
+	    (isArray(object) || isArguments(object)) && length) || 0;
+
+	  var Ctor = object.constructor,
+	      index = -1,
+	      isProto = typeof Ctor == 'function' && Ctor.prototype === object,
+	      result = Array(length),
+	      skipIndexes = length > 0;
+
+	  while (++index < length) {
+	    result[index] = (index + '');
+	  }
+	  for (var key in object) {
+	    if (!(skipIndexes && isIndex(key, length)) &&
+	        !(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
+
+	module.exports = keysIn;
+
+
+/***/ },
+/* 66 */
+/***/ function(module, exports) {
+
+	/** Used to detect unsigned integer values. */
+	var reIsUint = /^\d+$/;
+
+	/**
+	 * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
+	 * of an array-like value.
+	 */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+
+	/**
+	 * Checks if `value` is a valid array-like index.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+	 * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+	 */
+	function isIndex(value, length) {
+	  value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
+	  length = length == null ? MAX_SAFE_INTEGER : length;
+	  return value > -1 && value % 1 == 0 && value < length;
+	}
+
+	module.exports = isIndex;
+
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isLength = __webpack_require__(54),
+	    isObjectLike = __webpack_require__(55);
+
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    arrayTag = '[object Array]',
+	    boolTag = '[object Boolean]',
+	    dateTag = '[object Date]',
+	    errorTag = '[object Error]',
+	    funcTag = '[object Function]',
+	    mapTag = '[object Map]',
+	    numberTag = '[object Number]',
+	    objectTag = '[object Object]',
+	    regexpTag = '[object RegExp]',
+	    setTag = '[object Set]',
+	    stringTag = '[object String]',
+	    weakMapTag = '[object WeakMap]';
+
+	var arrayBufferTag = '[object ArrayBuffer]',
+	    float32Tag = '[object Float32Array]',
+	    float64Tag = '[object Float64Array]',
+	    int8Tag = '[object Int8Array]',
+	    int16Tag = '[object Int16Array]',
+	    int32Tag = '[object Int32Array]',
+	    uint8Tag = '[object Uint8Array]',
+	    uint8ClampedTag = '[object Uint8ClampedArray]',
+	    uint16Tag = '[object Uint16Array]',
+	    uint32Tag = '[object Uint32Array]';
+
+	/** Used to identify `toStringTag` values of typed arrays. */
+	var typedArrayTags = {};
+	typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
+	typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
+	typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
+	typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
+	typedArrayTags[uint32Tag] = true;
+	typedArrayTags[argsTag] = typedArrayTags[arrayTag] =
+	typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
+	typedArrayTags[dateTag] = typedArrayTags[errorTag] =
+	typedArrayTags[funcTag] = typedArrayTags[mapTag] =
+	typedArrayTags[numberTag] = typedArrayTags[objectTag] =
+	typedArrayTags[regexpTag] = typedArrayTags[setTag] =
+	typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/**
+	 * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objToString = objectProto.toString;
+
+	/**
+	 * Checks if `value` is classified as a typed array.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+	 * @example
+	 *
+	 * _.isTypedArray(new Uint8Array);
+	 * // => true
+	 *
+	 * _.isTypedArray([]);
+	 * // => false
+	 */
+	function isTypedArray(value) {
+	  return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[objToString.call(value)];
+	}
+
+	module.exports = isTypedArray;
+
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseCopy = __webpack_require__(69),
+	    keysIn = __webpack_require__(65);
+
+	/**
+	 * Converts `value` to a plain object flattening inherited enumerable
+	 * properties of `value` to own properties of the plain object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Lang
+	 * @param {*} value The value to convert.
+	 * @returns {Object} Returns the converted plain object.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.b = 2;
+	 * }
+	 *
+	 * Foo.prototype.c = 3;
+	 *
+	 * _.assign({ 'a': 1 }, new Foo);
+	 * // => { 'a': 1, 'b': 2 }
+	 *
+	 * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
+	 * // => { 'a': 1, 'b': 2, 'c': 3 }
+	 */
+	function toPlainObject(value) {
+	  return baseCopy(value, keysIn(value));
+	}
+
+	module.exports = toPlainObject;
+
+
+/***/ },
+/* 69 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copies properties of `source` to `object`.
+	 *
+	 * @private
+	 * @param {Object} source The object to copy properties from.
+	 * @param {Array} props The property names to copy.
+	 * @param {Object} [object={}] The object to copy properties to.
+	 * @returns {Object} Returns `object`.
+	 */
+	function baseCopy(source, props, object) {
+	  object || (object = {});
+
+	  var index = -1,
+	      length = props.length;
+
+	  while (++index < length) {
+	    var key = props[index];
+	    object[key] = source[key];
+	  }
+	  return object;
+	}
+
+	module.exports = baseCopy;
+
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var getNative = __webpack_require__(57),
+	    isArrayLike = __webpack_require__(51),
+	    isObject = __webpack_require__(46),
+	    shimKeys = __webpack_require__(71);
+
+	/* Native method references for those with the same name as other `lodash` methods. */
+	var nativeKeys = getNative(Object, 'keys');
+
+	/**
+	 * Creates an array of the own enumerable property names of `object`.
+	 *
+	 * **Note:** Non-object values are coerced to objects. See the
+	 * [ES spec](http://ecma-international.org/ecma-262/6.0/#sec-object.keys)
+	 * for more details.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 *   this.b = 2;
+	 * }
+	 *
+	 * Foo.prototype.c = 3;
+	 *
+	 * _.keys(new Foo);
+	 * // => ['a', 'b'] (iteration order is not guaranteed)
+	 *
+	 * _.keys('hi');
+	 * // => ['0', '1']
+	 */
+	var keys = !nativeKeys ? shimKeys : function(object) {
+	  var Ctor = object == null ? undefined : object.constructor;
+	  if ((typeof Ctor == 'function' && Ctor.prototype === object) ||
+	      (typeof object != 'function' && isArrayLike(object))) {
+	    return shimKeys(object);
+	  }
+	  return isObject(object) ? nativeKeys(object) : [];
+	};
+
+	module.exports = keys;
+
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArguments = __webpack_require__(50),
+	    isArray = __webpack_require__(56),
+	    isIndex = __webpack_require__(66),
+	    isLength = __webpack_require__(54),
+	    keysIn = __webpack_require__(65);
+
+	/** Used for native method references. */
+	var objectProto = Object.prototype;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/**
+	 * A fallback implementation of `Object.keys` which creates an array of the
+	 * own enumerable property names of `object`.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 */
+	function shimKeys(object) {
+	  var props = keysIn(object),
+	      propsLength = props.length,
+	      length = propsLength && object.length;
+
+	  var allowIndexes = !!length && isLength(length) &&
+	    (isArray(object) || isArguments(object));
+
+	  var index = -1,
+	      result = [];
+
+	  while (++index < propsLength) {
+	    var key = props[index];
+	    if ((allowIndexes && isIndex(key, length)) || hasOwnProperty.call(object, key)) {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
+
+	module.exports = shimKeys;
+
+
+/***/ },
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var bindCallback = __webpack_require__(73),
+	    isIterateeCall = __webpack_require__(75),
+	    restParam = __webpack_require__(76);
+
+	/**
+	 * Creates a `_.assign`, `_.defaults`, or `_.merge` function.
+	 *
+	 * @private
+	 * @param {Function} assigner The function to assign values.
+	 * @returns {Function} Returns the new assigner function.
+	 */
+	function createAssigner(assigner) {
+	  return restParam(function(object, sources) {
+	    var index = -1,
+	        length = object == null ? 0 : sources.length,
+	        customizer = length > 2 ? sources[length - 2] : undefined,
+	        guard = length > 2 ? sources[2] : undefined,
+	        thisArg = length > 1 ? sources[length - 1] : undefined;
+
+	    if (typeof customizer == 'function') {
+	      customizer = bindCallback(customizer, thisArg, 5);
+	      length -= 2;
+	    } else {
+	      customizer = typeof thisArg == 'function' ? thisArg : undefined;
+	      length -= (customizer ? 1 : 0);
+	    }
+	    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+	      customizer = length < 3 ? undefined : customizer;
+	      length = 1;
+	    }
+	    while (++index < length) {
+	      var source = sources[index];
+	      if (source) {
+	        assigner(object, source, customizer);
+	      }
+	    }
+	    return object;
+	  });
+	}
+
+	module.exports = createAssigner;
+
+
+/***/ },
+/* 73 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var identity = __webpack_require__(74);
+
+	/**
+	 * A specialized version of `baseCallback` which only supports `this` binding
+	 * and specifying the number of arguments to provide to `func`.
+	 *
+	 * @private
+	 * @param {Function} func The function to bind.
+	 * @param {*} thisArg The `this` binding of `func`.
+	 * @param {number} [argCount] The number of arguments to provide to `func`.
+	 * @returns {Function} Returns the callback.
+	 */
+	function bindCallback(func, thisArg, argCount) {
+	  if (typeof func != 'function') {
+	    return identity;
+	  }
+	  if (thisArg === undefined) {
+	    return func;
+	  }
+	  switch (argCount) {
+	    case 1: return function(value) {
+	      return func.call(thisArg, value);
+	    };
+	    case 3: return function(value, index, collection) {
+	      return func.call(thisArg, value, index, collection);
+	    };
+	    case 4: return function(accumulator, value, index, collection) {
+	      return func.call(thisArg, accumulator, value, index, collection);
+	    };
+	    case 5: return function(value, other, key, object, source) {
+	      return func.call(thisArg, value, other, key, object, source);
+	    };
+	  }
+	  return function() {
+	    return func.apply(thisArg, arguments);
+	  };
+	}
+
+	module.exports = bindCallback;
+
+
+/***/ },
+/* 74 */
+/***/ function(module, exports) {
+
+	/**
+	 * This method returns the first argument provided to it.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Utility
+	 * @param {*} value Any value.
+	 * @returns {*} Returns `value`.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred' };
+	 *
+	 * _.identity(object) === object;
+	 * // => true
+	 */
+	function identity(value) {
+	  return value;
+	}
+
+	module.exports = identity;
+
+
+/***/ },
+/* 75 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isArrayLike = __webpack_require__(51),
+	    isIndex = __webpack_require__(66),
+	    isObject = __webpack_require__(46);
+
+	/**
+	 * Checks if the provided arguments are from an iteratee call.
+	 *
+	 * @private
+	 * @param {*} value The potential iteratee value argument.
+	 * @param {*} index The potential iteratee index or key argument.
+	 * @param {*} object The potential iteratee object argument.
+	 * @returns {boolean} Returns `true` if the arguments are from an iteratee call, else `false`.
+	 */
+	function isIterateeCall(value, index, object) {
+	  if (!isObject(object)) {
+	    return false;
+	  }
+	  var type = typeof index;
+	  if (type == 'number'
+	      ? (isArrayLike(object) && isIndex(index, object.length))
+	      : (type == 'string' && index in object)) {
+	    var other = object[index];
+	    return value === value ? (value === other) : (other !== other);
+	  }
+	  return false;
+	}
+
+	module.exports = isIterateeCall;
+
+
+/***/ },
+/* 76 */
+/***/ function(module, exports) {
+
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+
+	/* Native method references for those with the same name as other `lodash` methods. */
+	var nativeMax = Math.max;
+
+	/**
+	 * Creates a function that invokes `func` with the `this` binding of the
+	 * created function and arguments from `start` and beyond provided as an array.
+	 *
+	 * **Note:** This method is based on the [rest parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Function
+	 * @param {Function} func The function to apply a rest parameter to.
+	 * @param {number} [start=func.length-1] The start position of the rest parameter.
+	 * @returns {Function} Returns the new function.
+	 * @example
+	 *
+	 * var say = _.restParam(function(what, names) {
+	 *   return what + ' ' + _.initial(names).join(', ') +
+	 *     (_.size(names) > 1 ? ', & ' : '') + _.last(names);
+	 * });
+	 *
+	 * say('hello', 'fred', 'barney', 'pebbles');
+	 * // => 'hello fred, barney, & pebbles'
+	 */
+	function restParam(func, start) {
+	  if (typeof func != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  start = nativeMax(start === undefined ? (func.length - 1) : (+start || 0), 0);
+	  return function() {
+	    var args = arguments,
+	        index = -1,
+	        length = nativeMax(args.length - start, 0),
+	        rest = Array(length);
+
+	    while (++index < length) {
+	      rest[index] = args[start + index];
+	    }
+	    switch (start) {
+	      case 0: return func.call(this, rest);
+	      case 1: return func.call(this, args[0], rest);
+	      case 2: return func.call(this, args[0], args[1], rest);
+	    }
+	    var otherArgs = Array(start + 1);
+	    index = -1;
+	    while (++index < start) {
+	      otherArgs[index] = args[index];
+	    }
+	    otherArgs[start] = rest;
+	    return func.apply(this, otherArgs);
+	  };
+	}
+
+	module.exports = restParam;
+
+
+/***/ },
+/* 77 */
+/***/ function(module, exports) {
+
+	// (C) Copyright 2015 Hewlett-Packard Development Company, L.P.
+
+	// Slightly modified version of the Mozilla Developer Network version.
+	// renamed the module and the functions.
+
+	/*\
+	|*|
+	|*|  :: cookies.js ::
+	|*|
+	|*|  A complete cookies reader/writer framework with full unicode support.
+	|*|
+	|*|  Revision #1 - September 4, 2014
+	|*|
+	|*|  https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
+	|*|  https://developer.mozilla.org/User:fusionchess
+	|*|
+	|*|  This framework is released under the GNU Public License, version 3 or later.
+	|*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
+	|*|
+	|*|  Syntaxes:
+	|*|
+	|*|  * Cookies.set(name, value[, end[, path[, domain[, secure]]]])
+	|*|  * Cookies.get(name)
+	|*|  * Cookies.remove(name[, path[, domain]])
+	|*|  * Cookies.has(name)
+	|*|  * Cookies.keys()
+	|*|
+	\*/
+
+	"use strict";
+
+	var Cookies = {
+	  get: function get(sKey) {
+	    if (!sKey) {
+	      return null;
+	    }
+	    return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+	  },
+	  set: function set(sKey, sValue, vEnd, sPath, sDomain, bSecure) {
+	    if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
+	      return false;
+	    }
+	    var sExpires = "";
+	    if (vEnd) {
+	      switch (vEnd.constructor) {
+	        case Number:
+	          sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
+	          break;
+	        case String:
+	          sExpires = "; expires=" + vEnd;
+	          break;
+	        case Date:
+	          sExpires = "; expires=" + vEnd.toUTCString();
+	          break;
+	      }
+	    }
+	    document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
+	    return true;
+	  },
+	  remove: function remove(sKey, sPath, sDomain) {
+	    if (!this.has(sKey)) {
+	      return false;
+	    }
+	    document.cookie = encodeURIComponent(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "");
+	    return true;
+	  },
+	  has: function has(sKey) {
+	    if (!sKey) {
+	      return false;
+	    }
+	    return new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=").test(document.cookie);
+	  },
+	  keys: function keys() {
+	    var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
+	    for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) {
+	      aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]);
+	    }
+	    return aKeys;
+	  }
+	};
+
+	module.exports = Cookies;
+
+/***/ },
+/* 78 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var React = __webpack_require__(2);
+	var merge = __webpack_require__(44);
+	var pick = __webpack_require__(79);
+	var keys = __webpack_require__(70);
+	var Box = __webpack_require__(84);
+	var KeyboardAccelerators = __webpack_require__(85);
+	var DOM = __webpack_require__(86);
+
+	var CLASS_ROOT = 'article';
+	var SCROLL_STEPS = 25;
+
+	var Article = React.createClass({
+	  displayName: 'Article',
+
+	  propTypes: merge({
+	    scrollStep: React.PropTypes.bool
+	  }, Box.propTypes),
+
+	  mixins: [KeyboardAccelerators],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      pad: 'none',
+	      direction: 'column'
+	    };
+	  },
+
+	  _easeInOutQuad: function _easeInOutQuad(t) {
+	    return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+	  },
+
+	  _scrollTo: function _scrollTo(delta) {
+	    clearInterval(this._scrollToTimer);
+	    var start = this._scrollParent.scrollTop;
+	    var position = start + delta;
+	    var step = 1;
+	    this._scrollToTimer = setInterval((function () {
+	      var next;
+	      var easing = this._easeInOutQuad(step / SCROLL_STEPS);
+	      if (position > start) {
+	        next = Math.min(position, Math.max(this._scrollParent.scrollTop, Math.round(start + (position - start) * easing)));
+	      } else {
+	        next = Math.max(position, Math.min(this._scrollParent.scrollTop, Math.round(start - (start - position) * easing)));
+	      }
+	      this._scrollParent.scrollTop = next;
+	      step += 1;
+	      if (step > SCROLL_STEPS) {
+	        // we're done
+	        clearInterval(this._scrollToTimer);
+	      }
+	    }).bind(this), 8);
+	  },
+
+	  _markInactive: function _markInactive() {
+	    var articleElement = this.refs.component.getDOMNode();
+	    var sections = articleElement.querySelectorAll('.section.box--full');
+	    for (var i = 0; i < sections.length; i += 1) {
+	      var section = sections[i];
+	      var rect = section.getBoundingClientRect();
+	      if (rect.top > window.innerHeight - 10) {
+	        section.classList.add('section--inactive');
+	      } else {
+	        section.classList.remove('section--inactive');
+	      }
+	    }
+	  },
+
+	  _onScroll: function _onScroll(event) {
+	    clearTimeout(this._scrollTimer);
+	    this._scrollTimer = setTimeout(this._markInactive, 50);
+	  },
+
+	  _onWheel: function _onWheel(event) {
+	    if (Math.abs(event.deltaY) > 100) {
+	      clearInterval(this._scrollTimer);
+	    } else if (event.deltaY > 5) {
+	      this._onDown();
+	    } else if (event.deltaY < -5) {
+	      this._onUp();
+	    }
+	  },
+
+	  _onDown: function _onDown(event) {
+	    if (event) {
+	      event.preventDefault();
+	    }
+	    var articleElement = this.refs.component.getDOMNode();
+	    var sections = articleElement.querySelectorAll('.section.box--full');
+	    for (var i = 0; i < sections.length; i += 1) {
+	      var section = sections[i];
+	      var rect = section.getBoundingClientRect();
+	      // 10 is for fuzziness
+	      if (rect.bottom > 10 && (event || rect.bottom < window.innerHeight)) {
+	        this._scrollTo(rect.bottom);
+	        break;
+	      }
+	    }
+	  },
+
+	  _onUp: function _onUp(event) {
+	    if (event) {
+	      event.preventDefault();
+	    }
+	    var articleElement = this.refs.component.getDOMNode();
+	    var sections = articleElement.querySelectorAll('.section.box--full');
+	    for (var i = 0; i < sections.length; i += 1) {
+	      var section = sections[i];
+	      var rect = section.getBoundingClientRect();
+	      // -10 is for fuzziness
+	      if ((rect.top >= -10 || i === sections.length - 1) && (event || rect.top < window.innerHeight)) {
+	        if (i > 0) {
+	          section = sections[i - 1];
+	          rect = section.getBoundingClientRect();
+	          this._scrollTo(rect.top);
+	        }
+	        break;
+	      }
+	    }
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return { scrollTop: 0 };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    if (this.props.scrollStep) {
+	      this._markInactive();
+	      var articleElement = this.refs.component.getDOMNode();
+	      this._scrollParent = DOM.findScrollParents(articleElement)[0];
+	      document.addEventListener('wheel', this._onWheel);
+	      this._scrollParent.addEventListener('scroll', this._onScroll);
+	      this.startListeningToKeyboard({
+	        up: this._onUp,
+	        down: this._onDown
+	      });
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.props.scrollStep) {
+	      document.removeEventListener('wheel', this._onWheel);
+	      clearInterval(this._scrollToTimer);
+	      this._scrollParent.removeEventListener('scroll', this._onScroll);
+	      clearTimeout(this._scrollTimer);
+	      this.stopListeningToKeyboard({
+	        up: this._onUp,
+	        down: this._onDown
+	      });
+	    }
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    var other = pick(this.props, keys(Box.propTypes));
+	    if (this.props.scrollStep) {
+	      classes.push(CLASS_ROOT + '--scroll-step');
+	    }
+
+	    return React.createElement(
+	      Box,
+	      _extends({ ref: 'component', tag: 'article' }, other, { className: classes.join(' ') }),
+	      this.props.children
+	    );
+	  }
+	});
+
+	module.exports = Article;
+
+/***/ },
+/* 79 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseFlatten = __webpack_require__(80),
+	    bindCallback = __webpack_require__(73),
+	    pickByArray = __webpack_require__(82),
+	    pickByCallback = __webpack_require__(83),
+	    restParam = __webpack_require__(76);
+
+	/**
+	 * Creates an object composed of the picked `object` properties. Property
+	 * names may be specified as individual arguments or as arrays of property
+	 * names. If `predicate` is provided it is invoked for each property of `object`
+	 * picking the properties `predicate` returns truthy for. The predicate is
+	 * bound to `thisArg` and invoked with three arguments: (value, key, object).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The source object.
+	 * @param {Function|...(string|string[])} [predicate] The function invoked per
+	 *  iteration or property names to pick, specified as individual property
+	 *  names or arrays of property names.
+	 * @param {*} [thisArg] The `this` binding of `predicate`.
+	 * @returns {Object} Returns the new object.
+	 * @example
+	 *
+	 * var object = { 'user': 'fred', 'age': 40 };
+	 *
+	 * _.pick(object, 'user');
+	 * // => { 'user': 'fred' }
+	 *
+	 * _.pick(object, _.isString);
+	 * // => { 'user': 'fred' }
+	 */
+	var pick = restParam(function(object, props) {
+	  if (object == null) {
+	    return {};
+	  }
+	  return typeof props[0] == 'function'
+	    ? pickByCallback(object, bindCallback(props[0], props[1], 3))
+	    : pickByArray(object, baseFlatten(props));
+	});
+
+	module.exports = pick;
+
+
+/***/ },
+/* 80 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var arrayPush = __webpack_require__(81),
+	    isArguments = __webpack_require__(50),
+	    isArray = __webpack_require__(56),
+	    isArrayLike = __webpack_require__(51),
+	    isObjectLike = __webpack_require__(55);
+
+	/**
+	 * The base implementation of `_.flatten` with added support for restricting
+	 * flattening and specifying the start index.
+	 *
+	 * @private
+	 * @param {Array} array The array to flatten.
+	 * @param {boolean} [isDeep] Specify a deep flatten.
+	 * @param {boolean} [isStrict] Restrict flattening to arrays-like objects.
+	 * @param {Array} [result=[]] The initial result value.
+	 * @returns {Array} Returns the new flattened array.
+	 */
+	function baseFlatten(array, isDeep, isStrict, result) {
+	  result || (result = []);
+
+	  var index = -1,
+	      length = array.length;
+
+	  while (++index < length) {
+	    var value = array[index];
+	    if (isObjectLike(value) && isArrayLike(value) &&
+	        (isStrict || isArray(value) || isArguments(value))) {
+	      if (isDeep) {
+	        // Recursively flatten arrays (susceptible to call stack limits).
+	        baseFlatten(value, isDeep, isStrict, result);
+	      } else {
+	        arrayPush(result, value);
+	      }
+	    } else if (!isStrict) {
+	      result[result.length] = value;
+	    }
+	  }
+	  return result;
+	}
+
+	module.exports = baseFlatten;
+
+
+/***/ },
+/* 81 */
+/***/ function(module, exports) {
+
+	/**
+	 * Appends the elements of `values` to `array`.
+	 *
+	 * @private
+	 * @param {Array} array The array to modify.
+	 * @param {Array} values The values to append.
+	 * @returns {Array} Returns `array`.
+	 */
+	function arrayPush(array, values) {
+	  var index = -1,
+	      length = values.length,
+	      offset = array.length;
+
+	  while (++index < length) {
+	    array[offset + index] = values[index];
+	  }
+	  return array;
+	}
+
+	module.exports = arrayPush;
+
+
+/***/ },
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var toObject = __webpack_require__(64);
+
+	/**
+	 * A specialized version of `_.pick` which picks `object` properties specified
+	 * by `props`.
+	 *
+	 * @private
+	 * @param {Object} object The source object.
+	 * @param {string[]} props The property names to pick.
+	 * @returns {Object} Returns the new object.
+	 */
+	function pickByArray(object, props) {
+	  object = toObject(object);
+
+	  var index = -1,
+	      length = props.length,
+	      result = {};
+
+	  while (++index < length) {
+	    var key = props[index];
+	    if (key in object) {
+	      result[key] = object[key];
+	    }
+	  }
+	  return result;
+	}
+
+	module.exports = pickByArray;
+
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var baseForIn = __webpack_require__(61);
+
+	/**
+	 * A specialized version of `_.pick` which picks `object` properties `predicate`
+	 * returns truthy for.
+	 *
+	 * @private
+	 * @param {Object} object The source object.
+	 * @param {Function} predicate The function invoked per iteration.
+	 * @returns {Object} Returns the new object.
+	 */
+	function pickByCallback(object, predicate) {
+	  var result = {};
+	  baseForIn(object, function(value, key, object) {
+	    if (predicate(value, key, object)) {
+	      result[key] = value;
+	    }
+	  });
+	  return result;
+	}
+
+	module.exports = pickByCallback;
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var keys = __webpack_require__(70);
+
+	var CLASS_ROOT = 'box';
+
+	var Box = React.createClass({
+	  displayName: 'Box',
+
+	  propTypes: {
+	    align: React.PropTypes.oneOf(['start', 'center', 'between', 'end', 'stretch']),
+	    appCentered: React.PropTypes.bool,
+	    colorIndex: React.PropTypes.string,
+	    containerClassName: React.PropTypes.string,
+	    direction: React.PropTypes.oneOf(['row', 'column']),
+	    full: React.PropTypes.oneOf([true, 'horizontal', 'vertical', false]),
+	    onClick: React.PropTypes.func,
+	    justify: React.PropTypes.oneOf(['start', 'center', 'between', 'end']),
+	    pad: React.PropTypes.oneOfType([React.PropTypes.oneOf(['none', 'small', 'medium', 'large']), React.PropTypes.shape({
+	      horizontal: React.PropTypes.oneOf(['none', 'small', 'medium', 'large']),
+	      vertical: React.PropTypes.oneOf(['none', 'small', 'medium', 'large'])
+	    })]),
+	    reverse: React.PropTypes.bool,
+	    responsive: React.PropTypes.bool,
+	    tag: React.PropTypes.string,
+	    texture: React.PropTypes.string
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      direction: 'column',
+	      pad: 'none',
+	      tag: 'div',
+	      responsive: true
+	    };
+	  },
+
+	  _addPropertyClass: function _addPropertyClass(classes, prefix, property) {
+	    var choice = this.props[property];
+	    if (choice) {
+	      if (typeof choice === 'string') {
+	        classes.push(prefix + '--' + property + '-' + choice);
+	      } else if (typeof choice === 'object') {
+	        keys(choice).forEach(function (key) {
+	          classes.push(prefix + '--' + property + '-' + key + '-' + choice[key]);
+	        });
+	      } else {
+	        classes.push(prefix + '--' + property);
+	      }
+	    }
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    var containerClasses = [CLASS_ROOT + '__container'];
+	    this._addPropertyClass(classes, CLASS_ROOT, 'flush');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'full');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'direction');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'justify');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'align');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'reverse');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'responsive');
+	    this._addPropertyClass(classes, CLASS_ROOT, 'pad');
+
+	    if (this.props.appCentered) {
+	      this._addPropertyClass(containerClasses, CLASS_ROOT + '__container', 'full');
+	      if (this.props.colorIndex) {
+	        containerClasses.push('background-color-index-' + this.props.colorIndex);
+	      }
+	      if (this.props.containerClassName) {
+	        containerClasses.push(this.props.containerClassName);
+	      }
+	    } else {
+	      if (this.props.colorIndex) {
+	        classes.push('background-color-index-' + this.props.colorIndex);
+	      }
+	    }
+
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var style = {};
+	    if (this.props.texture) {
+	      style.backgroundImage = this.props.texture;
+	    }
+
+	    if (this.props.appCentered) {
+	      return React.createElement(
+	        'div',
+	        { className: containerClasses.join(' '), style: style,
+	          onClick: this.props.onClick },
+	        React.createElement(
+	          this.props.tag,
+	          { className: classes.join(' ') },
+	          this.props.children
+	        )
+	      );
+	    } else {
+	      return React.createElement(
+	        this.props.tag,
+	        { className: classes.join(' '), style: style,
+	          onClick: this.props.onClick },
+	        this.props.children
+	      );
+	    }
+	  }
+
+	});
+
+	module.exports = Box;
+
+/***/ },
+/* 85 */
+/***/ function(module, exports) {
+
+	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
+
+	// Allow callers to use key labels instead of key code numbers.
+	// This makes their code easier to read.
+	"use strict";
+
+	var KEYS = {
+	  backspace: 8,
+	  tab: 9,
+	  enter: 13,
+	  esc: 27,
+	  escape: 27,
+	  space: 32,
+	  left: 37,
+	  up: 38,
+	  right: 39,
+	  down: 40,
+	  comma: 188,
+	  shift: 16
+	};
+
+	var downs = [];
+
+	// KeyboardAccelerators is a mixin for handling keyboard events.
+	// Add listeners using startListeningToKeyboard().
+	// Remove listeners using stopListeningToKeyboard().
+	// When the component that includes this is unmounted, the keyboard event
+	// listener is removed automatically.
+	var KeyboardAccelerators = {
+
+	  _keyboardAcceleratorHandlers: {},
+	  _keyboardAcceleratorListening: false,
+
+	  _onKeyboardAcceleratorKeyPress: function _onKeyboardAcceleratorKeyPress(e) {
+	    var key = e.keyCode ? e.keyCode : e.which;
+	    if (this._keyboardAcceleratorHandlers.hasOwnProperty(key) && !downs[KEYS.shift]) {
+	      this._keyboardAcceleratorHandlers[key](e);
+	    }
+	    downs[e.keyCode] = true;
+	  },
+
+	  _onKeyboardAcceleratorKeyUp: function _onKeyboardAcceleratorKeyUp(e) {
+	    if (downs[KEYS.shift] && downs[KEYS.left] && this._keyboardAcceleratorHandlers.shiftLeft) {
+	      this._keyboardAcceleratorHandlers.shiftLeft(e);
+	    } else if (downs[KEYS.shift] && downs[KEYS.right] && this._keyboardAcceleratorHandlers.shiftRight) {
+	      this._keyboardAcceleratorHandlers.shiftRight(e);
+	    }
+
+	    downs[e.keyCode] = false;
+	  },
+
+	  // Add handlers for specific keys.
+	  // This function can be called multiple times, existing handlers will
+	  // be replaced, new handlers will be added.
+	  startListeningToKeyboard: function startListeningToKeyboard(handlers) {
+	    var keys = 0;
+	    for (var key in handlers) {
+	      if (handlers.hasOwnProperty(key)) {
+	        var keyCode = key;
+	        if (KEYS.hasOwnProperty(key)) {
+	          keyCode = KEYS[key];
+	        }
+	        keys += 1;
+	        this._keyboardAcceleratorHandlers[keyCode] = handlers[key];
+	      }
+	    }
+
+	    if (keys > 0 && !this._keyboardAcceleratorListening) {
+	      window.addEventListener("keydown", this._onKeyboardAcceleratorKeyPress);
+	      window.addEventListener("keyup", this._onKeyboardAcceleratorKeyUp);
+	      this._keyboardAcceleratorListening = true;
+	    }
+	  },
+
+	  // Remove handlers for all keys or specific keys.
+	  // If no argument is passed in, all handlers are removed.
+	  // This function can be called multiple times, only the handlers
+	  // specified will be removed.
+	  stopListeningToKeyboard: function stopListeningToKeyboard(handlers) {
+	    if (handlers) {
+	      for (var key in handlers) {
+	        if (handlers.hasOwnProperty(key)) {
+	          var keyCode = key;
+	          if (KEYS.hasOwnProperty(key)) {
+	            keyCode = KEYS[key];
+	          }
+	          delete this._keyboardAcceleratorHandlers[keyCode];
+	        }
+	      }
+	    }
+
+	    var keyCount = 0;
+	    for (var keyHandler in this._keyboardAcceleratorHandlers) {
+	      if (this._keyboardAcceleratorHandlers.hasOwnProperty(keyHandler)) {
+	        keyCount += 1;
+	      }
+	    }
+
+	    if (!handlers || 0 === keyCount) {
+	      window.removeEventListener("keydown", this._onKeyboardAcceleratorKeyPress);
+	      window.removeEventListener("keyup", this._onKeyboardAcceleratorKeyUp);
+	      this._keyboardAcceleratorHandlers = {};
+	      this._keyboardAcceleratorListening = false;
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.stopListeningToKeyboard();
+	  }
+	};
+
+	module.exports = KeyboardAccelerators;
+
+/***/ },
+/* 86 */
+/***/ function(module, exports) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
+
+	module.exports = {
+	  findScrollParents: function findScrollParents(element) {
+	    var result = [];
+	    var parent = element.parentNode;
+	    while (parent) {
+	      // account for border the lazy way for now
+	      if (parent.scrollHeight > parent.offsetHeight + 10) {
+	        result.push(parent);
+	      }
+	      parent = parent.parentNode;
+	    }
+	    if (result.length === 0) {
+	      result.push(document);
+	    }
+	    return result;
+	  }
+	};
+
+/***/ },
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
 
 	var React = __webpack_require__(2);
 
 	var CLASS_ROOT = "button";
 
-	var Button = React.createClass({displayName: "Button",
+	var Button = React.createClass({
+	  displayName: "Button",
 
 	  propTypes: {
-	    alternate: React.PropTypes.bool,
+	    accent: React.PropTypes.bool,
 	    label: React.PropTypes.string.isRequired,
 	    large: React.PropTypes.bool,
 	    onClick: React.PropTypes.func,
-	    primary: React.PropTypes.bool,
-	    small: React.PropTypes.bool,
-	    strong: React.PropTypes.bool
+	    primary: React.PropTypes.bool
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.primary) {
 	      classes.push(CLASS_ROOT + "--primary");
 	    }
-	    if (this.props.alternate) {
-	      classes.push(CLASS_ROOT + "--alternate");
+	    if (this.props.accent) {
+	      classes.push(CLASS_ROOT + "--accent");
+	    }
+	    if (!this.props.onClick) {
+	      classes.push(CLASS_ROOT + "--disabled");
 	    }
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
-	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.strong) {
-	      classes.push(CLASS_ROOT + "--strong");
-	    }
-	    if (! this.props.onClick) {
-	      classes.push(CLASS_ROOT + "--disabled");
-	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
-	    return (
-	      React.createElement("button", {className: classes.join(' '), 
-	        onClick: this.props.onClick}, 
-	        this.props.label
-	      )
+
+	    return React.createElement(
+	      "button",
+	      { className: classes.join(" "),
+	        onClick: this.props.onClick },
+	      this.props.label
 	    );
 	  }
 
@@ -8802,18 +10863,20 @@ var Grommet =
 
 	module.exports = Button;
 
-
 /***/ },
-/* 45 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
 
 	var React = __webpack_require__(2);
 
 	var CLASS_ROOT = "check-box";
 
-	var CheckBox = React.createClass({displayName: "CheckBox",
+	var CheckBox = React.createClass({
+	  displayName: "CheckBox",
 
 	  propTypes: {
 	    checked: React.PropTypes.bool,
@@ -8825,7 +10888,7 @@ var Grommet =
 	    toggle: React.PropTypes.bool
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.toggle) {
 	      classes.push(CLASS_ROOT + "--toggle");
@@ -8833,17 +10896,28 @@ var Grommet =
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
-	    return (
-	      React.createElement("label", {className: classes.join(' ')}, 
-	        React.createElement("input", {className: CLASS_ROOT + "__input", 
-	          id: this.props.id, name: this.props.name, type: "checkbox", 
-	          checked: this.props.checked, 
-	          defaultChecked: this.props.defaultChecked, 
-	          onChange: this.props.onChange}), 
-	        React.createElement("span", {className: CLASS_ROOT + "__control"}), 
-	        React.createElement("span", {className: CLASS_ROOT + "__label"}, 
-	          this.props.label
+	    return React.createElement(
+	      "label",
+	      { className: classes.join(" ") },
+	      React.createElement("input", { className: CLASS_ROOT + "__input",
+	        id: this.props.id, name: this.props.name, type: "checkbox",
+	        checked: this.props.checked,
+	        defaultChecked: this.props.defaultChecked,
+	        onChange: this.props.onChange }),
+	      React.createElement(
+	        "span",
+	        { className: CLASS_ROOT + "__control" },
+	        React.createElement(
+	          "svg",
+	          { className: CLASS_ROOT + "__control-check", viewBox: "0 0 24 24",
+	            preserveAspectRatio: "xMidYMid meet" },
+	          React.createElement("path", { fill: "none", d: "M6,11.3 L10.3,16 L18,6.2" })
 	        )
+	      ),
+	      React.createElement(
+	        "span",
+	        { className: CLASS_ROOT + "__label" },
+	        this.props.label
 	      )
 	    );
 	  }
@@ -8852,44 +10926,174 @@ var Grommet =
 
 	module.exports = CheckBox;
 
-
 /***/ },
-/* 46 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
+	var KeyboardAccelerators = __webpack_require__(85);
+	var DOM = __webpack_require__(86);
 
-	var CLASS_ROOT = "document";
+	var CLASS_ROOT = 'document';
+	var SCROLL_STEPS = 25;
 
-	var GrommetDocument = React.createClass({displayName: "GrommetDocument",
+	var GrommetDocument = React.createClass({
+	  displayName: 'GrommetDocument',
 
 	  propTypes: {
-	    colorIndex: React.PropTypes.string,
-	    flush: React.PropTypes.bool
+	    flush: React.PropTypes.bool,
+	    full: React.PropTypes.bool
 	  },
 
-	  getDefaultProps: function () {
+	  mixins: [KeyboardAccelerators],
+
+	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      flush: true
 	    };
 	  },
 
-	  render: function() {
+	  _easeInOutQuad: function _easeInOutQuad(t) {
+	    return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+	  },
+
+	  _scrollTo: function _scrollTo(delta) {
+	    clearInterval(this._scrollToTimer);
+	    var start = this._scrollParent.scrollTop;
+	    var position = start + delta;
+	    var step = 1;
+	    this._scrollToTimer = setInterval((function () {
+	      var next;
+	      var easing = this._easeInOutQuad(step / SCROLL_STEPS);
+	      if (position > start) {
+	        next = Math.min(position, Math.max(this._scrollParent.scrollTop, Math.round(start + (position - start) * easing)));
+	      } else {
+	        next = Math.max(position, Math.min(this._scrollParent.scrollTop, Math.round(start - (start - position) * easing)));
+	      }
+	      this._scrollParent.scrollTop = next;
+	      step += 1;
+	      if (step > SCROLL_STEPS) {
+	        // we're done
+	        clearInterval(this._scrollToTimer);
+	      }
+	    }).bind(this), 8);
+	  },
+
+	  _markInactive: function _markInactive() {
+	    var doc = this.refs.document.getDOMNode();
+	    var sections = doc.querySelectorAll('.section--full');
+	    for (var i = 0; i < sections.length; i += 1) {
+	      var section = sections[i];
+	      var rect = section.getBoundingClientRect();
+	      if (rect.top > window.innerHeight - 10) {
+	        section.classList.add('section--inactive');
+	      } else {
+	        section.classList.remove('section--inactive');
+	      }
+	    }
+	  },
+
+	  _onScroll: function _onScroll(event) {
+	    clearTimeout(this._scrollTimer);
+	    this._scrollTimer = setTimeout(this._markInactive, 50);
+	  },
+
+	  _onWheel: function _onWheel(event) {
+	    if (Math.abs(event.deltaY) > 100) {
+	      clearInterval(this._scrollTimer);
+	    } else if (event.deltaY > 5) {
+	      this._onDown();
+	    } else if (event.deltaY < -5) {
+	      this._onUp();
+	    }
+	  },
+
+	  _onDown: function _onDown(event) {
+	    if (event) {
+	      event.preventDefault();
+	    }
+	    var doc = this.refs.document.getDOMNode();
+	    var sections = doc.querySelectorAll('.section--full');
+	    for (var i = 0; i < sections.length; i += 1) {
+	      var section = sections[i];
+	      var rect = section.getBoundingClientRect();
+	      if (rect.bottom > 0 && (event || rect.bottom < window.innerHeight)) {
+	        this._scrollTo(rect.bottom);
+	        break;
+	      }
+	    }
+	  },
+
+	  _onUp: function _onUp(event) {
+	    if (event) {
+	      event.preventDefault();
+	    }
+	    var doc = this.refs.document.getDOMNode();
+	    var sections = doc.querySelectorAll('.section--full');
+	    for (var i = 0; i < sections.length; i += 1) {
+	      var section = sections[i];
+	      var rect = section.getBoundingClientRect();
+	      if ((rect.top >= 0 || i === sections.length - 1) && (event || rect.top < window.innerHeight)) {
+	        section = sections[i - 1];
+	        rect = section.getBoundingClientRect();
+	        this._scrollTo(rect.top);
+	        break;
+	      }
+	    }
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return { scrollTop: 0 };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    console.warn('Warning: Grommet Document is deprecated. It has been superceded by Grommet Article.');
+	    if (this.props.full) {
+	      this._markInactive();
+	      var doc = this.refs.document.getDOMNode();
+	      this._scrollParent = DOM.findScrollParents(doc)[0];
+	      document.addEventListener('wheel', this._onWheel);
+	      this._scrollParent.addEventListener('scroll', this._onScroll);
+	      this.startListeningToKeyboard({
+	        up: this._onUp,
+	        down: this._onDown
+	      });
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.props.full) {
+	      document.removeEventListener('wheel', this._onWheel);
+	      clearInterval(this._scrollToTimer);
+	      this._scrollParent.removeEventListener('scroll', this._onScroll);
+	      clearTimeout(this._scrollTimer);
+	      this.stopListeningToKeyboard({
+	        up: this._onUp,
+	        down: this._onDown
+	      });
+	    }
+	  },
+
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
+	      classes.push(CLASS_ROOT + '--flush');
 	    }
-	    if (this.props.colorIndex) {
-	      classes.push("header-color-index-" + this.props.colorIndex);
+	    if (this.props.full) {
+	      classes.push(CLASS_ROOT + '--full');
 	    }
 
-	    return (
-	      React.createElement("div", {ref: "document", className: classes.join(' ')}, 
-	        React.createElement("div", {className: CLASS_ROOT + "__content"}, 
-	          this.props.children
-	        )
+	    return React.createElement(
+	      'div',
+	      { ref: 'document', className: classes.join(' ') },
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__content' },
+	        this.props.children
 	      )
 	    );
 	  }
@@ -8897,72 +11101,61 @@ var Grommet =
 
 	module.exports = GrommetDocument;
 
-
 /***/ },
-/* 47 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
 
-	var React = __webpack_require__(2);
-	var Legend = __webpack_require__(48);
+	'use strict';
 
-	var CLASS_ROOT = "donut";
+	var React = __webpack_require__(2);
+	var Legend = __webpack_require__(91);
+
+	var CLASS_ROOT = 'donut';
 	var BASE_SIZE = 192;
 	var PARTIAL_SIZE = 168;
 
-	function polarToCartesian (centerX, centerY, radius, angleInDegrees) {
+	function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 	  var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
 	  return {
-	    x: centerX + (radius * Math.cos(angleInRadians)),
-	    y: centerY + (radius * Math.sin(angleInRadians))
+	    x: centerX + radius * Math.cos(angleInRadians),
+	    y: centerY + radius * Math.sin(angleInRadians)
 	  };
 	}
 
-	function arcCommands (x, y, radius, startAngle, endAngle) {
+	function arcCommands(x, y, radius, startAngle, endAngle) {
 	  var start = polarToCartesian(x, y, radius, endAngle);
 	  var end = polarToCartesian(x, y, radius, startAngle);
-	  var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
-	  var d = [
-	    "M", start.x, start.y,
-	    "A", radius, radius, 0, arcSweep, 0, end.x, end.y
-	  ].join(" ");
+	  var arcSweep = endAngle - startAngle <= 180 ? '0' : '1';
+	  var d = ['M', start.x, start.y, 'A', radius, radius, 0, arcSweep, 0, end.x, end.y].join(' ');
 	  return d;
 	}
 
-	function activeIndicatorCommands (x, y, radius, startAngle, endAngle) {
-	  var midAngle = endAngle - ((endAngle - startAngle) / 2);
+	function activeIndicatorCommands(x, y, radius, startAngle, endAngle) {
+	  var midAngle = endAngle - (endAngle - startAngle) / 2;
 	  var point = polarToCartesian(x, y, radius - 24, midAngle);
 	  var start = polarToCartesian(x, y, radius, midAngle - 10);
 	  var end = polarToCartesian(x, y, radius, midAngle + 10);
 	  //var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
-	  var d = ["M", point.x, point.y,
-	    "L", start.x, start.y,
-	    "A", radius, radius, 0, 0, 0, end.x, end.y,
-	    "Z"
-	  ].join(" ");
+	  var d = ['M', point.x, point.y, 'L', start.x, start.y, 'A', radius, radius, 0, 0, 0, end.x, end.y, 'Z'].join(' ');
 	  return d;
 	}
 
-	var Donut = React.createClass({displayName: "Donut",
+	var Donut = React.createClass({
+	  displayName: 'Donut',
 
 	  propTypes: {
 	    legend: React.PropTypes.bool,
 	    partial: React.PropTypes.bool,
-	    max: React.PropTypes.oneOfType([
-	      React.PropTypes.shape({
-	        value: React.PropTypes.number,
-	        label: React.PropTypes.string
-	      }),
-	      React.PropTypes.number
-	    ]),
-	    min: React.PropTypes.oneOfType([
-	      React.PropTypes.shape({
-	        value: React.PropTypes.number,
-	        label: React.PropTypes.string
-	      }),
-	      React.PropTypes.number
-	    ]),
+	    max: React.PropTypes.oneOfType([React.PropTypes.shape({
+	      value: React.PropTypes.number,
+	      label: React.PropTypes.string
+	    }), React.PropTypes.number]),
+	    min: React.PropTypes.oneOfType([React.PropTypes.shape({
+	      value: React.PropTypes.number,
+	      label: React.PropTypes.string
+	    }), React.PropTypes.number]),
 	    series: React.PropTypes.arrayOf(React.PropTypes.shape({
 	      label: React.PropTypes.string,
 	      value: React.PropTypes.number.isRequired,
@@ -8976,14 +11169,14 @@ var Grommet =
 	    value: React.PropTypes.number
 	  },
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      max: {value: 100},
-	      min: {value: 0}
+	      max: { value: 100 },
+	      min: { value: 0 }
 	    };
 	  },
 
-	  _initialTimeout: function () {
+	  _initialTimeout: function _initialTimeout() {
 	    this.setState({
 	      initial: false,
 	      activeIndex: this.state.importantIndex
@@ -8991,17 +11184,17 @@ var Grommet =
 	    clearTimeout(this._timeout);
 	  },
 
-	  _onActive: function (index) {
-	    this.setState({initial: false, activeIndex: index});
+	  _onActive: function _onActive(index) {
+	    this.setState({ initial: false, activeIndex: index });
 	  },
 
-	  _layout: function () {
+	  _layout: function _layout() {
 	    // orientation based on available window orientation
 	    var ratio = window.innerWidth / window.innerHeight;
 	    if (ratio < 0.8) {
-	      this.setState({orientation: 'portrait'});
+	      this.setState({ orientation: 'portrait' });
 	    } else if (ratio > 1.2) {
-	      this.setState({orientation: 'landscape'});
+	      this.setState({ orientation: 'landscape' });
 	    }
 	    // content based on avialable real estate
 	    var parentElement = this.refs.donut.getDOMNode().parentNode;
@@ -9011,30 +11204,26 @@ var Grommet =
 	    if (this.props.partial) {
 	      donutHeight = PARTIAL_SIZE;
 	    }
-	    if (height < donutHeight || width < BASE_SIZE ||
-	      (width < (BASE_SIZE * 2) && height < (donutHeight * 2))) {
-	      this.setState({size: 'small'});
+	    if (height < donutHeight || width < BASE_SIZE || width < BASE_SIZE * 2 && height < donutHeight * 2) {
+	      this.setState({ size: 'small' });
 	    } else {
-	      this.setState({size: null});
+	      this.setState({ size: null });
 	    }
 	  },
 
-	  _onResize: function() {
+	  _onResize: function _onResize() {
 	    // debounce
 	    clearTimeout(this._resizeTimer);
 	    this._resizeTimer = setTimeout(this._layout, 50);
 	  },
 
-	  _generateSeries: function (props) {
+	  _generateSeries: function _generateSeries(props) {
 	    var total = props.max.value - props.min.value;
 	    var remaining = total - (props.value - props.min.value);
-	    return [
-	      {value: props.value},
-	      {value: remaining, colorIndex: 'unset'}
-	    ];
+	    return [{ value: props.value }, { value: remaining, colorIndex: 'unset' }];
 	  },
 
-	  _importantIndex: function (series) {
+	  _importantIndex: function _importantIndex(series) {
 	    var result = 0;
 	    series.some(function (data, index) {
 	      if (data.important) {
@@ -9045,7 +11234,7 @@ var Grommet =
 	    return result;
 	  },
 
-	  getInitialState: function() {
+	  getInitialState: function getInitialState() {
 	    var series = this.props.series || this._generateSeries(this.props);
 	    var importantIndex = this._importantIndex(series);
 	    return {
@@ -9058,15 +11247,15 @@ var Grommet =
 	    };
 	  },
 
-	  componentDidMount: function() {
+	  componentDidMount: function componentDidMount() {
 	    console.log('Grommet Donut is deprecated. Please use Grommet Meter instead.');
 	    this._initialTimer = setTimeout(this._initialTimeout, 10);
-	    this.setState({initial: true, activeIndex: 0});
+	    this.setState({ initial: true, activeIndex: 0 });
 	    window.addEventListener('resize', this._onResize);
 	    this._onResize();
 	  },
 
-	  componentWillReceiveProps: function (newProps) {
+	  componentWillReceiveProps: function componentWillReceiveProps(newProps) {
 	    var series = newProps.series || this._generateSeries(newProps);
 	    var importantIndex = this._importantIndex(series);
 	    this.setState({
@@ -9076,26 +11265,26 @@ var Grommet =
 	    });
 	  },
 
-	  componentWillUnmount: function() {
+	  componentWillUnmount: function componentWillUnmount() {
 	    clearTimeout(this._initialTimer);
 	    clearTimeout(this._resizeTimer);
 	    window.removeEventListener('resize', this._onResize);
 	  },
 
-	  _itemColorIndex: function (item, index) {
-	    return item.colorIndex || ('graph-' + (index + 1));
+	  _itemColorIndex: function _itemColorIndex(item, index) {
+	    return item.colorIndex || 'graph-' + (index + 1);
 	  },
 
-	  render: function() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + "--" + this.state.orientation];
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '--' + this.state.orientation];
 	    if (this.state.size) {
-	      classes.push(CLASS_ROOT + "--" + this.state.size);
+	      classes.push(CLASS_ROOT + '--' + this.state.size);
 	    }
 	    if (this.props.partial) {
-	      classes.push(CLASS_ROOT + "--partial");
+	      classes.push(CLASS_ROOT + '--partial');
 	    }
 	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
+	      classes.push(CLASS_ROOT + '--small');
 	    }
 
 	    var viewBoxHeight = BASE_SIZE;
@@ -9121,100 +11310,114 @@ var Grommet =
 
 	    var paths = this.state.series.map(function (item, index) {
 
-	      var endAngle = Math.min(360, Math.max(10, startAngle + (anglePer * item.value)));
-	      if (item.value > 0 && (startAngle + 360) === endAngle) {
+	      var endAngle = Math.min(360, Math.max(10, startAngle + anglePer * item.value));
+	      if (item.value > 0 && startAngle + 360 === endAngle) {
 	        // full use for this item, make sure we render it.
 	        endAngle -= 0.1;
 	      }
 	      var radius = 84;
 	      // start from the bottom
-	      var commands = arcCommands(BASE_SIZE / 2, BASE_SIZE / 2, radius,
-	        startAngle + 180, endAngle + 180);
+	      var commands = arcCommands(BASE_SIZE / 2, BASE_SIZE / 2, radius, startAngle + 180, endAngle + 180);
 	      var colorIndex = this._itemColorIndex(item, index);
 
-	      var sliceClasses = [CLASS_ROOT + "__slice"];
-	      sliceClasses.push("color-index-" + colorIndex);
+	      var sliceClasses = [CLASS_ROOT + '__slice'];
+	      sliceClasses.push('color-index-' + colorIndex);
 	      if (this.state.activeIndex === index) {
-	        sliceClasses.push(CLASS_ROOT + "__slice--active");
+	        sliceClasses.push(CLASS_ROOT + '__slice--active');
 	        value = item.value;
 	        units = item.units || this.props.units;
 	        label = item.label;
 	      }
 
 	      if (index === this.state.activeIndex) {
-	        var indicatorCommands = activeIndicatorCommands(BASE_SIZE / 2, BASE_SIZE / 2, radius,
-	          startAngle + 180, endAngle + 180);
-	        activeIndicator = (
-	          React.createElement("path", {stroke: "none", 
-	            className: CLASS_ROOT + "__slice-indicator color-index-" + colorIndex, 
-	            d: indicatorCommands})
-	        );
+	        var indicatorCommands = activeIndicatorCommands(BASE_SIZE / 2, BASE_SIZE / 2, radius, startAngle + 180, endAngle + 180);
+	        activeIndicator = React.createElement('path', { stroke: 'none',
+	          className: CLASS_ROOT + '__slice-indicator color-index-' + colorIndex,
+	          d: indicatorCommands });
 	      }
 
 	      startAngle = endAngle;
 
-	      return (
-	        React.createElement("path", {key: item.label, fill: "none", className: sliceClasses.join(' '), d: commands, 
-	          onMouseOver: this._onActive.bind(this, index), 
-	          onMouseOut: this._onActive.bind(this, this.state.importantIndex), 
-	          onClick: item.onClick})
-	      );
+	      return React.createElement('path', { key: item.label, fill: 'none', className: sliceClasses.join(' '), d: commands,
+	        onMouseOver: this._onActive.bind(this, index),
+	        onMouseOut: this._onActive.bind(this, this.state.importantIndex),
+	        onClick: item.onClick });
 	    }, this);
 
 	    var minLabel;
 	    var maxLabel;
 	    if (this.props.partial) {
 	      if (this.props.min) {
-	        minLabel = (
-	          React.createElement("div", {className: CLASS_ROOT + "__min-label"}, 
-	            this.props.min.value, " ", this.props.units
-	          )
+	        minLabel = React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__min-label' },
+	          this.props.min.value,
+	          ' ',
+	          this.props.units
 	        );
 	      }
 	      if (this.props.max) {
-	        maxLabel = (
-	          React.createElement("div", {className: CLASS_ROOT + "__max-label"}, 
-	            this.props.max.value, " ", this.props.units
-	          )
+	        maxLabel = React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__max-label' },
+	          this.props.max.value,
+	          ' ',
+	          this.props.units
 	        );
 	      }
 	    }
 
 	    var legend = null;
 	    if (this.props.legend) {
-	      legend = (
-	        React.createElement(Legend, {className: CLASS_ROOT + "__legend", 
-	          series: this.props.series, 
-	          units: this.props.units, 
-	          value: this.props.value, 
-	          activeIndex: this.state.activeIndex, 
-	          onActive: this._onActive})
-	      );
+	      legend = React.createElement(Legend, { className: CLASS_ROOT + '__legend',
+	        series: this.props.series,
+	        units: this.props.units,
+	        value: this.props.value,
+	        activeIndex: this.state.activeIndex,
+	        onActive: this._onActive });
 	    }
 
-	    return (
-	      React.createElement("div", {ref: "donut", className: classes.join(' ')}, 
-	        React.createElement("div", {className: CLASS_ROOT + "__graphic-container"}, 
-	          React.createElement("svg", {className: CLASS_ROOT + "__graphic", 
-	            viewBox: "0 0 " + BASE_SIZE + " " + viewBoxHeight, 
-	            preserveAspectRatio: "xMidYMid meet"}, 
-	            React.createElement("g", null, 
-	              activeIndicator, 
-	              paths
+	    return React.createElement(
+	      'div',
+	      { ref: 'donut', className: classes.join(' ') },
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__graphic-container' },
+	        React.createElement(
+	          'svg',
+	          { className: CLASS_ROOT + '__graphic',
+	            viewBox: '0 0 ' + BASE_SIZE + ' ' + viewBoxHeight,
+	            preserveAspectRatio: 'xMidYMid meet' },
+	          React.createElement(
+	            'g',
+	            null,
+	            activeIndicator,
+	            paths
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__active' },
+	          React.createElement(
+	            'div',
+	            { className: CLASS_ROOT + '__active-value large-number-font' },
+	            value,
+	            React.createElement(
+	              'span',
+	              { className: CLASS_ROOT + '__active-units large-number-font' },
+	              units
 	            )
-	          ), 
-	          React.createElement("div", {className: CLASS_ROOT + "__active"}, 
-	            React.createElement("div", {className: CLASS_ROOT + "__active-value large-number-font"}, 
-	              value, 
-	              React.createElement("span", {className: CLASS_ROOT + "__active-units large-number-font"}, units)
-	            ), 
-	            React.createElement("div", {className: CLASS_ROOT + "__active-label"}, label)
-	          ), 
-	          minLabel, 
-	          maxLabel
-	        ), 
-	        legend
-	      )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: CLASS_ROOT + '__active-label' },
+	            label
+	          )
+	        ),
+	        minLabel,
+	        maxLabel
+	      ),
+	      legend
 	    );
 	  }
 
@@ -9222,19 +11425,21 @@ var Grommet =
 
 	module.exports = Donut;
 
-
 /***/ },
-/* 48 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
-	var IntlMixin = __webpack_require__(4);
+	var IntlMixin = __webpack_require__(3);
 
-	var CLASS_ROOT = "legend";
+	var CLASS_ROOT = 'legend';
 
-	var Legend = React.createClass({displayName: "Legend",
+	var Legend = React.createClass({
+	  displayName: 'Legend',
 
 	  mixins: [IntlMixin],
 
@@ -9245,9 +11450,8 @@ var Grommet =
 	      label: React.PropTypes.string,
 	      value: React.PropTypes.number,
 	      units: React.PropTypes.string,
-	      colorIndex: React.PropTypes.oneOfType([
-	        React.PropTypes.number, // 1-6
-	        React.PropTypes.string // status
+	      colorIndex: React.PropTypes.oneOfType([React.PropTypes.number, // 1-6
+	      React.PropTypes.string // status
 	      ]),
 	      onClick: React.PropTypes.func
 	    })).isRequired,
@@ -9256,29 +11460,29 @@ var Grommet =
 	    value: React.PropTypes.number
 	  },
 
-	  _onActive: function (index) {
-	    this.setState({activeIndex: index});
+	  _onActive: function _onActive(index) {
+	    this.setState({ activeIndex: index });
 	    if (this.props.onActive) {
 	      this.props.onActive(index);
 	    }
 	  },
 
-	  getInitialState: function () {
-	    return {activeIndex: this.props.activeIndex};
+	  getInitialState: function getInitialState() {
+	    return { activeIndex: this.props.activeIndex };
 	  },
 
-	  componentWillReceiveProps: function (newProps) {
-	    this.setState({activeIndex: newProps.activeIndex});
+	  componentWillReceiveProps: function componentWillReceiveProps(newProps) {
+	    this.setState({ activeIndex: newProps.activeIndex });
 	  },
 
-	  _itemColorIndex: function (item, index) {
-	    return item.colorIndex || ('graph-' + (index + 1));
+	  _itemColorIndex: function _itemColorIndex(item, index) {
+	    return item.colorIndex || 'graph-' + (index + 1);
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.series.length === 1) {
-	      classes.push(CLASS_ROOT + "--single");
+	      classes.push(CLASS_ROOT + '--single');
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -9286,31 +11490,43 @@ var Grommet =
 
 	    var totalValue = 0;
 	    var items = this.props.series.map(function (item, index) {
-	      var legendClasses = [CLASS_ROOT + "__item"];
+	      var legendClasses = [CLASS_ROOT + '__item'];
 	      if (index === this.state.activeIndex) {
-	        legendClasses.push(CLASS_ROOT + "__item--active");
+	        legendClasses.push(CLASS_ROOT + '__item--active');
 	      }
 	      var colorIndex = this._itemColorIndex(item, index);
 	      totalValue += item.value;
 
-	      var valueClasses = [CLASS_ROOT + "__item-value"];
+	      var valueClasses = [CLASS_ROOT + '__item-value'];
 	      if (1 === this.props.series.length) {
-	        valueClasses.push("large-number-font");
+	        valueClasses.push('large-number-font');
 	      }
 
-	      return (
-	        React.createElement("li", {key: item.label, className: legendClasses.join(' '), 
-	          onClick: item.onClick, 
-	          onMouseOver: this._onActive.bind(this, index), 
-	          onMouseOut: this._onActive.bind(this, this.props.activeIndex)}, 
-	          React.createElement("svg", {className: CLASS_ROOT + "__item-swatch color-index-" + colorIndex, 
-	            viewBox: "0 0 12 12"}, 
-	            React.createElement("path", {className: item.className, d: "M 5 0 l 0 12"})
-	          ), 
-	          React.createElement("span", {className: CLASS_ROOT + "__item-label"}, item.label), 
-	          React.createElement("span", {className: valueClasses.join(' ')}, 
-	            item.value, 
-	            React.createElement("span", {className: CLASS_ROOT + "__item-units"}, this.props.units)
+	      return React.createElement(
+	        'li',
+	        { key: item.label || index, className: legendClasses.join(' '),
+	          onClick: item.onClick,
+	          onMouseOver: this._onActive.bind(this, index),
+	          onMouseOut: this._onActive.bind(this, this.props.activeIndex) },
+	        React.createElement(
+	          'svg',
+	          { className: CLASS_ROOT + '__item-swatch color-index-' + colorIndex,
+	            viewBox: '0 0 12 12' },
+	          React.createElement('path', { className: item.className, d: 'M 5 0 l 0 12' })
+	        ),
+	        React.createElement(
+	          'span',
+	          { className: CLASS_ROOT + '__item-label' },
+	          item.label
+	        ),
+	        React.createElement(
+	          'span',
+	          { className: valueClasses.join(' ') },
+	          item.value,
+	          React.createElement(
+	            'span',
+	            { className: CLASS_ROOT + '__item-units' },
+	            this.props.units
 	          )
 	        )
 	      );
@@ -9318,24 +11534,32 @@ var Grommet =
 
 	    var total = null;
 	    if (this.props.total && this.props.series.length > 1) {
-	      total = (
-	        React.createElement("li", {className: CLASS_ROOT + "__total"}, 
-	          React.createElement("span", {className: CLASS_ROOT + "__total-label"}, 
-	            this.getGrommetIntlMessage('Total')
-	          ), 
-	          React.createElement("span", {className: CLASS_ROOT + "__total-value"}, 
-	            totalValue, 
-	            React.createElement("span", {className: CLASS_ROOT + "__total-units"}, this.props.units)
+	      total = React.createElement(
+	        'li',
+	        { className: CLASS_ROOT + '__total' },
+	        React.createElement(
+	          'span',
+	          { className: CLASS_ROOT + '__total-label' },
+	          this.getGrommetIntlMessage('Total')
+	        ),
+	        React.createElement(
+	          'span',
+	          { className: CLASS_ROOT + '__total-value' },
+	          totalValue,
+	          React.createElement(
+	            'span',
+	            { className: CLASS_ROOT + '__total-units' },
+	            this.props.units
 	          )
 	        )
 	      );
 	    }
 
-	    return (
-	      React.createElement("ol", {className: classes.join(' ')}, 
-	        items.reverse(), 
-	        total
-	      )
+	    return React.createElement(
+	      'ol',
+	      { className: classes.join(' ') },
+	      items.reverse(),
+	      total
 	    );
 	  }
 
@@ -9343,106 +11567,58 @@ var Grommet =
 
 	module.exports = Legend;
 
-
 /***/ },
-/* 49 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
-	var Top = __webpack_require__(50);
+	var merge = __webpack_require__(44);
+	var pick = __webpack_require__(79);
+	var keys = __webpack_require__(70);
+	var Box = __webpack_require__(84);
 
-	var CLASS_ROOT = "footer";
+	var CLASS_ROOT = 'footer';
 
-	var Footer = React.createClass({displayName: "Footer",
+	var Footer = React.createClass({
+	  displayName: 'Footer',
 
-	  propTypes: {
-	    centered: React.PropTypes.bool,
-	    colorIndex: React.PropTypes.string,
-	    flush: React.PropTypes.bool,
-	    primary: React.PropTypes.bool,
-	    scrollTop: React.PropTypes.bool
-	  },
+	  propTypes: merge({
+	    large: React.PropTypes.bool,
+	    separator: React.PropTypes.bool,
+	    small: React.PropTypes.bool
+	  }, Box.propTypes),
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      flush: true
+	      pad: 'none',
+	      direction: 'row',
+	      responsive: false
 	    };
 	  },
 
-	  _updateState: function () {
-	    this.setState({scrolled: this._scrollable.scrollTop > 0});
-	  },
-
-	  _onClickTop: function() {
-	    this._scrollable.scrollTop = 0;
-	  },
-
-	  _onScroll: function() {
-	    // debounce
-	    clearTimeout(this._scrollTimer);
-	    this._scrollTimer = setTimeout(this._updateState, 10);
-	  },
-
-	  getInitialState: function () {
-	    return {scrolled: false};
-	  },
-
-	  componentDidMount: function () {
-	    this._scrollable = this.refs.footer.getDOMNode().parentNode.parentNode;
-	    this._scrollable.addEventListener("scroll", this._onScroll);
-	  },
-
-	  componentWillUnmount: function () {
-	    this._scrollable.removeEventListener("scroll", this._onScroll);
-	  },
-
-	  componentWillReceiveProps: function() {
-	    this.setState({scrolled: false});
-	  },
-
-	  componentDidUpdate: function() {
-	    if (!this.state.scrolled) {
-	      this._scrollable.scrollTop = 0;
-	    }
-	  },
-
-	  render: function() {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
-	    if (this.props.primary) {
-	      classes.push(CLASS_ROOT + "--primary");
+	    var other = pick(this.props, keys(Box.propTypes));
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + '--large');
 	    }
-	    if (this.props.centered) {
-	      classes.push(CLASS_ROOT + "--centered");
-	    }
-	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("background-color-index-" + this.props.colorIndex);
+	    if (this.props.separator) {
+	      classes.push(CLASS_ROOT + '--separator');
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 
-	    var top = null;
-	    if (this.props.scrollTop && this.state.scrolled) {
-	      top = (
-	        React.createElement("div", {className: CLASS_ROOT + "__top control-icon", 
-	          onClick: this._onClickTop}, 
-	          React.createElement(Top, null)
-	        )
-	      );
-	    }
-
-	    return (
-	      React.createElement("div", {ref: "footer", className: classes.join(' ')}, 
-	        React.createElement("div", {className: CLASS_ROOT + "__content"}, 
-	          this.props.children, 
-	          top
-	        )
-	      )
+	    return React.createElement(
+	      Box,
+	      _extends({ tag: 'footer' }, other, { className: classes.join(' ') }),
+	      this.props.children
 	    );
 	  }
 
@@ -9450,84 +11626,66 @@ var Grommet =
 
 	module.exports = Footer;
 
-
 /***/ },
-/* 50 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	var React = __webpack_require__(2);
-
-	var Top = React.createClass({displayName: "Top",
-
-	  render: function() {
-	    var className = 'control-icon control-icon-top';
-	    if (this.props.className) {
-	      className += ' ' + this.props.className;
-	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("polyline", {strokeWidth: "2", points: "14,20.9 24,13 34,21 "}), 
-	          React.createElement("path", {strokeWidth: "2", d: "M24,13.3C24,36,24,36,24,36"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "13", y1: "11", x2: "35", y2: "11"})
-	        )
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Top;
-
-
-/***/ },
-/* 51 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+	'use strict';
 
 	var React = __webpack_require__(2);
+	var keys = __webpack_require__(70);
 
-	var CLASS_ROOT = "form";
+	var CLASS_ROOT = 'form';
 
-	var Form = React.createClass({displayName: "Form",
+	var Form = React.createClass({
+	  displayName: 'Form',
 
 	  propTypes: {
 	    compact: React.PropTypes.bool,
 	    fill: React.PropTypes.bool,
 	    flush: React.PropTypes.bool,
 	    onSubmit: React.PropTypes.func,
-	    className: React.PropTypes.string
+	    pad: React.PropTypes.oneOfType([React.PropTypes.oneOf(['none', 'small', 'medium', 'large']), React.PropTypes.shape({
+	      horizontal: React.PropTypes.oneOf(['none', 'small', 'medium', 'large']),
+	      vertical: React.PropTypes.oneOf(['none', 'small', 'medium', 'large'])
+	    })])
 	  },
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      compact: false,
 	      fill: false,
-	      flush: true
+	      flush: true,
+	      pad: 'none'
 	    };
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.compact) {
-	      classes.push(CLASS_ROOT + "--compact");
+	      classes.push(CLASS_ROOT + '--compact');
 	    }
 	    if (this.props.fill) {
-	      classes.push(CLASS_ROOT + "--fill");
+	      classes.push(CLASS_ROOT + '--fill');
 	    }
-	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
+	    if (this.props.pad) {
+	      if (typeof this.props.pad === 'string') {
+	        classes.push(CLASS_ROOT + '--pad-' + this.props.pad);
+	      } else if (typeof this.props.pad === 'object') {
+	        keys(this.props.pad).forEach(function (key) {
+	          classes.push(CLASS_ROOT + '--pad-' + key + '-' + this.props.pad[key]);
+	        });
+	      }
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
-	    return (
-	      React.createElement("form", {className: classes.join(' '), onSubmit: this.props.onSubmit}, 
-	        this.props.children
-	      )
+	    return React.createElement(
+	      'form',
+	      { className: classes.join(' '), onSubmit: this.props.onSubmit },
+	      this.props.children
 	    );
 	  }
 
@@ -9535,18 +11693,20 @@ var Grommet =
 
 	module.exports = Form;
 
-
 /***/ },
-/* 52 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var CLASS_ROOT = "form-field";
+	var CLASS_ROOT = 'form-field';
 
-	var FormField = React.createClass({displayName: "FormField",
+	var FormField = React.createClass({
+	  displayName: 'FormField',
 
 	  propTypes: {
 	    error: React.PropTypes.string,
@@ -9557,25 +11717,25 @@ var Grommet =
 	    required: React.PropTypes.bool
 	  },
 
-	  _onFocus: function () {
-	    this.setState({focus: true});
+	  _onFocus: function _onFocus() {
+	    this.setState({ focus: true });
 	  },
 
-	  _onBlur: function () {
-	    this.setState({focus: false});
+	  _onBlur: function _onBlur() {
+	    this.setState({ focus: false });
 	  },
 
-	  _onClick: function () {
+	  _onClick: function _onClick() {
 	    if (this._inputElement) {
 	      this._inputElement.focus();
 	    }
 	  },
 
-	  getInitialState: function () {
-	    return {focus: false};
+	  getInitialState: function getInitialState() {
+	    return { focus: false };
 	  },
 
-	  componentDidMount: function () {
+	  componentDidMount: function componentDidMount() {
 	    var contentsElement = this.refs.contents.getDOMNode();
 	    var inputElements = contentsElement.querySelectorAll('input, textarea, select');
 	    if (inputElements.length === 1) {
@@ -9585,7 +11745,7 @@ var Grommet =
 	    }
 	  },
 
-	  componentWillUnmount: function () {
+	  componentWillUnmount: function componentWillUnmount() {
 	    if (this._inputElement) {
 	      this._inputElement.removeEventListener('focus', this._onFocus);
 	      this._inputElement.removeEventListener('blur', this._onBlur);
@@ -9593,41 +11753,53 @@ var Grommet =
 	    }
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.state.focus) {
-	      classes.push(CLASS_ROOT + "--focus");
+	      classes.push(CLASS_ROOT + '--focus');
 	    }
 	    if (this.props.required) {
-	      classes.push(CLASS_ROOT + "--required");
+	      classes.push(CLASS_ROOT + '--required');
 	    }
 	    if (this.props.hidden) {
-	      classes.push(CLASS_ROOT + "--hidden");
+	      classes.push(CLASS_ROOT + '--hidden');
 	    }
 	    if (this.props.htmlFor) {
-	      classes.push(CLASS_ROOT + "--text");
+	      classes.push(CLASS_ROOT + '--text');
 	    }
 
 	    var error = null;
 	    if (this.props.error) {
-	      classes.push(CLASS_ROOT + "--error");
-	      error = React.createElement("span", {className: CLASS_ROOT + "__error"}, this.props.error);
+	      classes.push(CLASS_ROOT + '--error');
+	      error = React.createElement(
+	        'span',
+	        { className: CLASS_ROOT + '__error' },
+	        this.props.error
+	      );
 	    }
 	    var help = null;
 	    if (this.props.help) {
-	      help = React.createElement("span", {className: CLASS_ROOT + "__help"}, this.props.help);
+	      help = React.createElement(
+	        'span',
+	        { className: CLASS_ROOT + '__help' },
+	        this.props.help
+	      );
 	    }
 
-	    return (
-	      React.createElement("div", {className: classes.join(' '), onClick: this._onClick}, 
-	        error, 
-	        React.createElement("label", {className: CLASS_ROOT + "__label", htmlFor: this.props.htmlFor}, 
-	          this.props.label
-	        ), 
-	        React.createElement("span", {ref: "contents", className: CLASS_ROOT + "__contents"}, 
-	          this.props.children
-	        ), 
-	        help
+	    return React.createElement(
+	      'div',
+	      { className: classes.join(' '), onClick: this._onClick },
+	      error,
+	      React.createElement(
+	        'label',
+	        { className: CLASS_ROOT + '__label', htmlFor: this.props.htmlFor },
+	        this.props.label
+	      ),
+	      help,
+	      React.createElement(
+	        'span',
+	        { ref: 'contents', className: CLASS_ROOT + '__contents' },
+	        this.props.children
 	      )
 	    );
 	  }
@@ -9636,42 +11808,52 @@ var Grommet =
 
 	module.exports = FormField;
 
-
 /***/ },
-/* 53 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
+	var merge = __webpack_require__(44);
+	var pick = __webpack_require__(79);
+	var keys = __webpack_require__(70);
+	var Box = __webpack_require__(84);
 
-	var CLASS_ROOT = "header";
+	var CLASS_ROOT = 'header';
 
-	var Header = React.createClass({displayName: "Header",
+	var Header = React.createClass({
+	  displayName: 'Header',
 
-	  propTypes: {
-	    colorIndex: React.PropTypes.string,
+	  propTypes: merge({
 	    fixed: React.PropTypes.bool,
-	    flush: React.PropTypes.bool,
+	    float: React.PropTypes.bool,
 	    large: React.PropTypes.bool,
-	    primary: React.PropTypes.bool,
-	    small: React.PropTypes.bool
-	  },
+	    separator: React.PropTypes.oneOf(['top', 'bottom']),
+	    small: React.PropTypes.bool,
+	    splash: React.PropTypes.bool,
+	    tag: React.PropTypes.string
+	  }, Box.propTypes),
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      flush: true,
-	      large: false,
-	      primary: false,
-	      small: false
+	      pad: 'none',
+	      direction: 'row',
+	      align: 'center',
+	      responsive: false,
+	      tag: 'header'
 	    };
 	  },
 
-	  _onResize: function () {
+	  _onResize: function _onResize() {
 	    this._alignMirror();
 	  },
 
-	  _alignMirror: function () {
+	  _alignMirror: function _alignMirror() {
 	    var contentElement = this.refs.content.getDOMNode();
 	    var mirrorElement = this.refs.mirror.getDOMNode();
 
@@ -9684,36 +11866,104 @@ var Grommet =
 	    mirrorElement.style.height = '' + Math.floor(contentRect.height) + 'px';
 	  },
 
-	  componentDidMount: function () {
+	  componentDidMount: function componentDidMount() {
 	    if (this.props.fixed) {
 	      this._alignMirror();
 	      window.addEventListener('resize', this._onResize);
 	    }
 	  },
 
-	  componentDidUpdate: function () {
+	  componentDidUpdate: function componentDidUpdate() {
 	    if (this.props.fixed) {
 	      this._alignMirror();
 	    }
 	  },
 
-	  componentWillUnmount: function () {
+	  componentWillUnmount: function componentWillUnmount() {
 	    if (this.props.fixed) {
 	      window.removeEventListener('resize', this._onResize);
 	    }
 	  },
 
-	  render: function() {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
-	    if (this.props.primary) {
-	      classes.push(CLASS_ROOT + "--primary");
-	    }
+	    var containerClasses = [CLASS_ROOT + '__container'];
+	    var other = pick(this.props, keys(Box.propTypes));
 	    if (this.props.fixed) {
-	      classes.push(CLASS_ROOT + "--fixed");
+	      containerClasses.push(CLASS_ROOT + '__container--fixed');
 	    }
-	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
+	    if (this.props.float) {
+	      classes.push(CLASS_ROOT + '--float');
+	      containerClasses.push(CLASS_ROOT + '__container--float');
 	    }
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + '--large');
+	    }
+	    if (this.props.small) {
+	      classes.push(CLASS_ROOT + '--small');
+	    }
+	    if (this.props.splash) {
+	      classes.push(CLASS_ROOT + '--splash');
+	    }
+	    if (this.props.separator) {
+	      classes.push(CLASS_ROOT + '--separator-' + this.props.separator);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    if (this.props.fixed) {
+	      return React.createElement(
+	        'div',
+	        { className: containerClasses.join(' ') },
+	        React.createElement('div', { ref: 'mirror', className: CLASS_ROOT + '__mirror' }),
+	        React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__wrapper' },
+	          React.createElement(
+	            Box,
+	            _extends({ ref: 'content', tag: this.props.header }, other, { className: classes.join(' ') }),
+	            this.props.children
+	          )
+	        )
+	      );
+	    } else {
+	      return React.createElement(
+	        Box,
+	        _extends({ tag: this.props.header }, other, { className: classes.join(' '),
+	          containerClassName: containerClasses.join(' ') }),
+	        this.props.children
+	      );
+	    }
+	  }
+
+	});
+
+	module.exports = Header;
+
+/***/ },
+/* 96 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var CLASS_ROOT = "headline";
+
+	var Headline = React.createClass({
+	  displayName: "Headline",
+
+	  propTypes: {
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool,
+	    small: React.PropTypes.bool
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
@@ -9724,72 +11974,57 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
-	    var mirror = null;
-	    if (this.props.fixed) {
-	      mirror = React.createElement("div", {ref: "mirror", className: CLASS_ROOT + "__mirror"});
-	    }
-
-	    var content = (
-	      React.createElement("div", {ref: "content", className: CLASS_ROOT + "__content"}, 
-	        this.props.children
-	      )
-	    );
-	    if (this.props.colorIndex || this.props.fixed) {
-	      var wrapperClasses = [CLASS_ROOT + "__wrapper"];
-	      if (this.props.colorIndex) {
-	        wrapperClasses.push("background-color-index-" +
-	          this.props.colorIndex);
-	      }
-
-	      content = (
-	        React.createElement("div", {className: wrapperClasses.join(' ')}, 
-	          content
-	        )
-	      );
-	    }
-
-	    return (
-	      React.createElement("div", {className: classes.join(' ')}, 
-	        mirror, 
-	        content
-	      )
+	    return React.createElement(
+	      "div",
+	      { className: classes.join(" ") },
+	      this.props.children
 	    );
 	  }
 
 	});
 
-	module.exports = Header;
-
+	module.exports = Headline;
 
 /***/ },
-/* 54 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	"use strict";
+
 	var React = __webpack_require__(2);
 
-	var Label = React.createClass({displayName: "Label",
+	var Label = React.createClass({
+	  displayName: "Label",
 
 	  propTypes: {
 	    icon: React.PropTypes.node,
 	    text: React.PropTypes.string
 	  },
 
-	  render: function() {
+	  render: function render() {
 	    var icon = null;
 	    var text = null;
 	    if (this.props.icon) {
-	      icon = (React.createElement("span", {className: "label__icon control-icon"}, this.props.icon));
+	      icon = React.createElement(
+	        "span",
+	        { className: "label__icon control-icon" },
+	        this.props.icon
+	      );
 	    }
 	    if (this.props.text) {
-	      text = (React.createElement("span", {className: "label__text"}, this.props.text));
+	      text = React.createElement(
+	        "span",
+	        { className: "label__text" },
+	        this.props.text
+	      );
 	    }
-	    return (
-	      React.createElement("div", {className: "label"}, 
-	        icon, 
-	        text
-	      )
+	    return React.createElement(
+	      "div",
+	      { className: "label" },
+	      icon,
+	      text
 	    );
 	  }
 
@@ -9797,67 +12032,387 @@ var Grommet =
 
 	module.exports = Label;
 
-
 /***/ },
-/* 55 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var ListItem = __webpack_require__(100);
+	var SpinningIcon = __webpack_require__(101);
+	var InfiniteScroll = __webpack_require__(99);
+	var IntlMixin = __webpack_require__(3);
+
+	var CLASS_ROOT = 'list';
+
+	var List = React.createClass({
+	  displayName: 'List',
+
+	  propTypes: {
+	    data: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+	    large: React.PropTypes.bool,
+	    onMore: React.PropTypes.func,
+	    onSelect: React.PropTypes.func,
+	    schema: React.PropTypes.arrayOf(React.PropTypes.shape({
+	      attribute: React.PropTypes.string,
+	      'default': React.PropTypes.node,
+	      image: React.PropTypes.bool,
+	      label: React.PropTypes.string,
+	      primary: React.PropTypes.bool,
+	      secondary: React.PropTypes.bool,
+	      timestamp: React.PropTypes.bool,
+	      uid: React.PropTypes.bool
+	    })).isRequired,
+	    selected: React.PropTypes.oneOfType([React.PropTypes.string, // uid
+	    React.PropTypes.arrayOf(React.PropTypes.string)]),
+	    small: React.PropTypes.bool
+	  },
+
+	  mixins: [InfiniteScroll, IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return { small: false };
+	  },
+
+	  _onClickItem: function _onClickItem(item) {
+	    if (this.props.onSelect) {
+	      this.props.onSelect(item);
+	    }
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    if (this.props.onMore) {
+	      this.startListeningForScroll(this.refs.more.getDOMNode(), this.props.onMore);
+	    }
+	  },
+
+	  componentDidUpdate: function componentDidUpdate() {
+	    this.stopListeningForScroll();
+	    if (this.props.onMore) {
+	      this.startListeningForScroll(this.refs.more.getDOMNode(), this.props.onMore);
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.props.onMore) {
+	      this.stopListeningForScroll();
+	    }
+	  },
+
+	  _renderValue: function _renderValue(item, scheme) {
+	    var result;
+	    var value = item[scheme.attribute] || scheme['default'];
+	    if (scheme.image) {
+	      if (typeof value === 'string') {
+	        result = React.createElement('img', { src: value, alt: scheme.label || 'image' });
+	      } else {
+	        result = value;
+	      }
+	    } else if (scheme.timestamp) {
+	      result = this.getGrommetFormattedDate(value);
+	    } else {
+	      result = value;
+	    }
+	    return result;
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (true) {
+	      classes.push(CLASS_ROOT + '--fill');
+	    }
+	    if (true) {
+	      classes.push(CLASS_ROOT + '--flush');
+	    }
+	    if (this.props.small) {
+	      classes.push(CLASS_ROOT + '--small');
+	    }
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + '--large');
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var items = this.props.data.map(function (item) {
+	      var uid;
+	      var image;
+	      var primary;
+	      var secondary;
+	      var selected;
+
+	      this.props.schema.forEach(function (scheme) {
+	        if (scheme.image) {
+	          image = this._renderValue(item, scheme);
+	        } else if (scheme.primary) {
+	          primary = this._renderValue(item, scheme);
+	        } else if (scheme.secondary) {
+	          secondary = this._renderValue(item, scheme);
+	        }
+	        if (scheme.uid) {
+	          uid = item[scheme.attribute];
+	          if (uid === this.props.selected) {
+	            selected = true;
+	          }
+	        }
+	      }, this);
+
+	      return React.createElement(ListItem, { key: uid, image: image, label: primary,
+	        annotation: secondary, selected: selected,
+	        onClick: this._onClickItem.bind(this, item) });
+	    }, this);
+
+	    var more = null;
+	    if (this.props.onMore) {
+	      classes.push(CLASS_ROOT + '--moreable');
+	      more = React.createElement(
+	        'li',
+	        { ref: 'more', className: CLASS_ROOT + '__more' },
+	        React.createElement(SpinningIcon, null)
+	      );
+	    }
+
+	    return React.createElement(
+	      'ul',
+	      { className: classes.join(' ') },
+	      items,
+	      more
+	    );
+	  }
+
+	});
+
+	module.exports = List;
+
+/***/ },
+/* 99 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
+
+	var DOM = __webpack_require__(86);
+
+	var SCROLL_MORE_DELAY = 2000; // when the user scrolls
+	var SCROLL_MORE_INITIAL_DELAY = 200; // when we start out at the bottom already
+
+	var InfiniteScroll = {
+
+	  _infiniteScroll: {
+	    indicatorElement: null,
+	    scrollParent: null,
+	    onEnd: null
+	  },
+
+	  _onScroll: function _onScroll() {
+	    // delay a bit to ride out quick users
+	    clearTimeout(this._infiniteScroll.scrollTimer);
+	    this._infiniteScroll.scrollTimer = setTimeout((function () {
+	      // are we at the bottom?
+	      var parentRect = this._infiniteScroll.scrollParent.getBoundingClientRect();
+	      var indicatorRect = this._infiniteScroll.indicatorElement.getBoundingClientRect();
+	      if (indicatorRect.bottom <= parentRect.bottom) {
+	        this._infiniteScroll.onEnd();
+	      }
+	    }).bind(this), SCROLL_MORE_DELAY);
+	  },
+
+	  startListeningForScroll: function startListeningForScroll(indicatorElement, onEnd) {
+	    this._infiniteScroll.onEnd = onEnd;
+	    this._infiniteScroll.indicatorElement = indicatorElement;
+	    this._infiniteScroll.scrollParent = DOM.findScrollParents(indicatorElement)[0];
+	    this._infiniteScroll.scrollParent.addEventListener("scroll", this._onScroll);
+	    // check in case we're already at the bottom
+	    if (this._infiniteScroll.scrollParent === document) {
+	      this._infiniteScroll.scrollTimer = setTimeout(onEnd, SCROLL_MORE_INITIAL_DELAY);
+	    }
+	  },
+
+	  stopListeningForScroll: function stopListeningForScroll() {
+	    if (this._infiniteScroll.scrollParent) {
+	      clearTimeout(this._infiniteScroll.scrollTimer);
+	      this._infiniteScroll.scrollParent.removeEventListener("scroll", this._onScroll);
+	      this._infiniteScroll.scrollParent = null;
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.stopListeningForScroll();
+	  }
+	};
+
+	module.exports = InfiniteScroll;
+
+/***/ },
+/* 100 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
+
 	var React = __webpack_require__(2);
 
-	var Login = React.createClass({displayName: "Login",
+	var CLASS_ROOT = "list-item";
+
+	var ListItem = React.createClass({
+	  displayName: "ListItem",
+
+	  propTypes: {
+	    annotation: React.PropTypes.node,
+	    image: React.PropTypes.node,
+	    label: React.PropTypes.node,
+	    onClick: React.PropTypes.func,
+	    selected: React.PropTypes.bool
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.onClick) {
+	      classes.push(CLASS_ROOT + "--selectable");
+	    }
+	    if (this.props.selected) {
+	      classes.push(CLASS_ROOT + "--selected");
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    return React.createElement(
+	      "li",
+	      { className: classes.join(" "), onClick: this.props.onClick },
+	      React.createElement(
+	        "span",
+	        { className: CLASS_ROOT + "__image" },
+	        this.props.image
+	      ),
+	      React.createElement(
+	        "span",
+	        { className: CLASS_ROOT + "__text" },
+	        React.createElement(
+	          "span",
+	          { className: CLASS_ROOT + "__label" },
+	          this.props.label
+	        ),
+	        React.createElement(
+	          "span",
+	          { className: CLASS_ROOT + "__annotation" },
+	          this.props.annotation
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = ListItem;
+
+/***/ },
+/* 101 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var CLASS_ROOT = "icon-spinning";
+
+	var Spinning = React.createClass({
+	  displayName: "Spinning",
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.small) {
+	      classes.push(CLASS_ROOT + "--small");
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+	    return React.createElement(
+	      "svg",
+	      { className: classes.join(" "), viewBox: "0 0 48 48", version: "1.1" },
+	      React.createElement("circle", { stroke: "#ddd", strokeWidth: "4", strokeDasharray: "24px 8px", fill: "none", cx: "24", cy: "24", r: "20" }),
+	      React.createElement("circle", { stroke: "#333", strokeWidth: "4", strokeDasharray: "24px 104px", fill: "none", cx: "24", cy: "24", r: "20" })
+	    );
+	  }
+
+	});
+
+	module.exports = Spinning;
+
+/***/ },
+/* 102 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+
+	var Login = React.createClass({
+	  displayName: 'Login',
 
 	  propTypes: {
 	    background: React.PropTypes.string
 	  },
 
-	  _onResize: function() {
+	  _onResize: function _onResize() {
 	    this.adjustBackground();
 	  },
 
-	  adjustBackground: function() {
+	  adjustBackground: function adjustBackground() {
 	    // make sure the background always fills the screen, preserve aspect ratio
 	    var windowRatio = window.innerWidth / window.innerHeight;
 	    var image = this.refs.background.getDOMNode();
 	    var imageRatio = image.scrollWidth / image.scrollHeight;
-	    this.setState({orientation: (windowRatio < imageRatio) ? 'portrait' : 'landscape'});
+	    this.setState({ orientation: windowRatio < imageRatio ? 'portrait' : 'landscape' });
 	  },
 
-	  getInitialState: function() {
+	  getInitialState: function getInitialState() {
 	    return {
 	      orientation: null
 	    };
 	  },
 
-	  componentDidMount: function() {
-	    window.addEventListener('resize', this._onResize);
-	    setTimeout(this.adjustBackground, 300);
+	  componentDidMount: function componentDidMount() {
+	    if (this.props.background) {
+	      window.addEventListener('resize', this._onResize);
+	      setTimeout(this.adjustBackground, 300);
+	    }
 	  },
 
-	  componentWillUnmount: function() {
-	    window.removeEventListener('resize', this._onResize);
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.props.background) {
+	      window.removeEventListener('resize', this._onResize);
+	    }
 	  },
 
-	  render: function() {
+	  render: function render() {
 	    var background = null;
 	    if (this.props.background) {
 	      var classes = ['login__background'];
 	      if (this.state.orientation) {
 	        classes.push('login__background--' + this.state.orientation);
 	      }
-	      background = (
-	        React.createElement("img", {ref: "background", className: classes.join(' '), 
-	          src: this.props.background})
-	      );
+	      background = React.createElement('img', { ref: 'background', className: classes.join(' '),
+	        src: this.props.background });
 	    }
 
-	    return (
-	      React.createElement("div", {className: "login"}, 
-	        background, 
-	        React.createElement("div", {className: "login__container"}, 
-	          this.props.children
-	        )
+	    return React.createElement(
+	      'div',
+	      { className: 'login' },
+	      background,
+	      React.createElement(
+	        'div',
+	        { className: 'login__container' },
+	        this.props.children
 	      )
 	    );
 	  }
@@ -9866,22 +12421,24 @@ var Grommet =
 
 	module.exports = Login;
 
-
 /***/ },
-/* 56 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	var React = __webpack_require__(2);
-	var Form = __webpack_require__(51);
-	var FormField = __webpack_require__(52);
-	var CheckBox = __webpack_require__(45);
-	var Button = __webpack_require__(44);
-	var IntlMixin = __webpack_require__(4);
-	var CLASS_ROOT = "login-form";
+	'use strict';
 
-	var LoginForm = React.createClass({displayName: "LoginForm",
+	var React = __webpack_require__(2);
+	var Form = __webpack_require__(93);
+	var FormField = __webpack_require__(94);
+	var CheckBox = __webpack_require__(88);
+	var Button = __webpack_require__(87);
+	var IntlMixin = __webpack_require__(3);
+	var CLASS_ROOT = 'login-form';
+
+	var LoginForm = React.createClass({
+	  displayName: 'LoginForm',
 
 	  mixins: [IntlMixin],
 
@@ -9894,47 +12451,51 @@ var Grommet =
 	    onSubmit: React.PropTypes.func
 	  },
 
-	  _onSubmit: function (event) {
+	  _onSubmit: function _onSubmit(event) {
 	    event.preventDefault();
 	    var username = this.refs.username.getDOMNode().value.trim();
 	    var password = this.refs.password.getDOMNode().value.trim();
 	    if (this.props.onSubmit) {
-	      this.props.onSubmit({username: username, password: password});
+	      this.props.onSubmit({ username: username, password: password });
 	    }
 	  },
 
-	  getDefaultProps: function () {
-	    return ({
+	  getDefaultProps: function getDefaultProps() {
+	    return {
 	      errors: []
-	    });
+	    };
 	  },
 
-	  componentDidMount: function() {
+	  componentDidMount: function componentDidMount() {
 	    this.refs.username.getDOMNode().focus();
 	  },
 
-	  render: function() {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 
-	    var errors = this.props.errors.map(function (error, index) {
-	      return (React.createElement("div", {key: index, className: CLASS_ROOT + "__error"}, this.getGrommetIntlMessage(error)));
-	    }.bind(this));
+	    var errors = this.props.errors.map((function (error, index) {
+	      return React.createElement(
+	        'div',
+	        { key: index, className: CLASS_ROOT + '__error' },
+	        this.getGrommetIntlMessage(error)
+	      );
+	    }).bind(this));
 
 	    var logo = null;
 	    if (this.props.logo) {
-	      logo = (
-	        React.createElement("div", {className: CLASS_ROOT + "__logo"}, 
-	          this.props.logo
-	        )
+	      logo = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__logo' },
+	        this.props.logo
 	      );
 	    }
 
 	    var title = null;
 	    if (this.props.title) {
-	      title = (
-	        React.createElement("h1", {className: CLASS_ROOT + "__title"}, 
-	          this.props.title
-	        )
+	      title = React.createElement(
+	        'h1',
+	        { className: CLASS_ROOT + '__title' },
+	        this.props.title
 	      );
 	    }
 
@@ -9942,37 +12503,41 @@ var Grommet =
 	    if (this.props.rememberMe || this.props.forgotPassword) {
 	      var rememberMe = null;
 	      if (this.props.rememberMe) {
-	        rememberMe = (
-	          React.createElement(CheckBox, {className: CLASS_ROOT + "__remember-me", 
-	            id: "remember-me", label: this.getGrommetIntlMessage('Remember me')})
-	        );
+	        rememberMe = React.createElement(CheckBox, { className: CLASS_ROOT + '__remember-me',
+	          id: 'remember-me', label: this.getGrommetIntlMessage('Remember me') });
 	      }
-	      footer = (
-	        React.createElement("div", {className: CLASS_ROOT + "__footer"}, 
-	          rememberMe, 
-	          this.props.forgotPassword
-	        )
+	      footer = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__footer' },
+	        rememberMe,
+	        this.props.forgotPassword
 	      );
 	    }
 
-	    return (
-	      React.createElement(Form, {className: classes.join(' '), onSubmit: this._onSubmit}, 
-	        logo, 
-	        title, 
-	        React.createElement("fieldset", null, 
-	          React.createElement(FormField, {htmlFor: "username", label: this.getGrommetIntlMessage('Username')}, 
-	            React.createElement("input", {id: "username", ref: "username", type: "email"})
-	          ), 
-	          React.createElement(FormField, {htmlFor: "password", label: this.getGrommetIntlMessage('Password')}, 
-	            React.createElement("input", {id: "password", ref: "password", type: "password"})
-	          )
-	        ), 
-	        errors, 
-	        React.createElement(Button, {className: CLASS_ROOT + "__submit", primary: true, strong: true, 
-	          label: this.getGrommetIntlMessage('Log In'), 
-	          onClick: this._onSubmit}), 
-	        footer
-	      )
+	    return React.createElement(
+	      Form,
+	      { className: classes.join(' '), onSubmit: this._onSubmit },
+	      logo,
+	      title,
+	      React.createElement(
+	        'fieldset',
+	        null,
+	        React.createElement(
+	          FormField,
+	          { htmlFor: 'username', label: this.getGrommetIntlMessage('Username') },
+	          React.createElement('input', { id: 'username', ref: 'username', type: 'email' })
+	        ),
+	        React.createElement(
+	          FormField,
+	          { htmlFor: 'password', label: this.getGrommetIntlMessage('Password') },
+	          React.createElement('input', { id: 'password', ref: 'password', type: 'password' })
+	        )
+	      ),
+	      errors,
+	      React.createElement(Button, { className: CLASS_ROOT + '__submit', primary: true, strong: true,
+	        label: this.getGrommetIntlMessage('Log In'),
+	        onClick: this._onSubmit }),
+	      footer
 	    );
 	  }
 
@@ -9980,127 +12545,147 @@ var Grommet =
 
 	module.exports = LoginForm;
 
-
 /***/ },
-/* 57 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
-	var ReactLayeredComponent = __webpack_require__(60);
-	var KeyboardAccelerators = __webpack_require__(61);
-	var Overlay = __webpack_require__(58);
-	var MoreIcon = __webpack_require__(62);
-	var DropCaretIcon = __webpack_require__(63);
+	var merge = __webpack_require__(44);
+	var pick = __webpack_require__(79);
+	var keys = __webpack_require__(70);
+	var KeyboardAccelerators = __webpack_require__(85);
+	var Drop = __webpack_require__(105);
+	var Box = __webpack_require__(84);
+	var MoreIcon = __webpack_require__(106);
+	var DropCaretIcon = __webpack_require__(107);
 
-	var ROOT_CLASS = "menu";
+	var CLASS_ROOT = 'menu';
 
-	var MenuLayer = React.createClass({displayName: "MenuLayer",
+	// We have a separate module for the drop component so we can transfer the router context.
+	var MenuDrop = React.createClass({
+	  displayName: 'MenuDrop',
 
-	  propTypes: {
-	    align: React.PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
-	    direction: React.PropTypes.oneOf(['up', 'down', 'left', 'right', 'center']),
+	  propTypes: merge({
+	    control: React.PropTypes.node,
+	    dropAlign: Drop.alignPropType,
 	    id: React.PropTypes.string.isRequired,
 	    onClick: React.PropTypes.func.isRequired,
 	    router: React.PropTypes.func
-	  },
+	  }, Box.propTypes),
 
 	  childContextTypes: {
 	    router: React.PropTypes.func
 	  },
 
-	  getChildContext: function () {
+	  getChildContext: function getChildContext() {
 	    return { router: this.props.router };
 	  },
 
-	  render: function () {
-	    var classes = [ROOT_CLASS + "__layer"];
-	    if (this.props.direction) {
-	      classes.push(ROOT_CLASS + "__layer--" + this.props.direction);
+	  render: function render() {
+	    var classes = [CLASS_ROOT + '__drop'];
+	    var other = pick(this.props, keys(Box.propTypes));
+
+	    var first = this.props.control;
+	    var second = React.createElement(
+	      Box,
+	      _extends({ tag: 'nav' }, other),
+	      this.props.children
+	    );
+	    if (this.props.dropAlign.bottom) {
+	      first = second;
+	      second = this.props.control;
 	    }
-	    if (this.props.align) {
-	      classes.push(ROOT_CLASS + "__layer--align-" + this.props.align);
+	    if (this.props.dropAlign.right) {
+	      classes.push(CLASS_ROOT + '__drop--align-right');
 	    }
 
-	    return (
-	      React.createElement("div", {id: this.props.id, className: classes.join(' '), 
-	        onClick: this.props.onClick}, 
-	        this.props.children
-	      )
+	    return React.createElement(
+	      'div',
+	      { id: this.props.id, className: classes.join(' '),
+	        onClick: this.props.onClick },
+	      first,
+	      second
 	    );
 	  }
 	});
 
-	var Menu = React.createClass({displayName: "Menu",
+	var Menu = React.createClass({
+	  displayName: 'Menu',
 
-	  propTypes: {
-	    align: React.PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
+	  propTypes: merge({
 	    closeOnClick: React.PropTypes.bool,
 	    collapse: React.PropTypes.bool,
-	    direction: React.PropTypes.oneOf(['up', 'down', 'left', 'right', 'center']),
+	    dropAlign: Drop.alignPropType,
 	    icon: React.PropTypes.node,
 	    label: React.PropTypes.string,
 	    primary: React.PropTypes.bool,
 	    small: React.PropTypes.bool
-	  },
+	  }, Box.propTypes),
 
 	  contextTypes: {
 	    router: React.PropTypes.func
 	  },
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      align: 'left',
+	      align: 'stretch',
 	      closeOnClick: true,
-	      direction: 'down',
+	      direction: 'column',
+	      dropAlign: { top: 'top', left: 'left' },
+	      pad: 'none',
 	      small: false
 	    };
 	  },
 
-	  mixins: [ReactLayeredComponent, KeyboardAccelerators, Overlay],
+	  mixins: [KeyboardAccelerators],
 
-	  _onOpen: function (event) {
+	  _onOpen: function _onOpen(event) {
 	    event.preventDefault();
-	    this.setState({active: true});
+	    this.setState({ active: true });
 	  },
 
-	  _onClose: function () {
-	    this.setState({active: false});
+	  _onClose: function _onClose() {
+	    this.setState({ active: false });
 	  },
 
-	  _onFocusControl: function () {
-	    this.setState({controlFocused: true});
+	  _onFocusControl: function _onFocusControl() {
+	    this.setState({ controlFocused: true });
 	  },
 
-	  _onBlurControl: function () {
-	    this.setState({controlFocused: false});
+	  _onBlurControl: function _onBlurControl() {
+	    this.setState({ controlFocused: false });
 	  },
 
-	  _onSink: function (event) {
+	  _onSink: function _onSink(event) {
 	    event.stopPropagation();
 	    // need to go native to prevent closing via document
 	    event.nativeEvent.stopImmediatePropagation();
 	  },
 
-	  getInitialState: function () {
+	  getInitialState: function getInitialState() {
 	    return {
 	      controlFocused: false,
 	      active: false,
-	      inline: (! this.props.label && ! this.props.icon && ! this.props.collapse)
+	      inline: !this.props.label && !this.props.icon && !this.props.collapse
 	    };
 	  },
 
-	  componentDidMount: function () {
+	  componentDidMount: function componentDidMount() {
 	    if (this.refs.control) {
 	      var controlElement = this.refs.control.getDOMNode();
 	      this.setState({
-	        layerId: 'menu-layer-' + controlElement.getAttribute('data-reactid')
+	        dropId: 'menu-drop-' + controlElement.getAttribute('data-reactid')
 	      });
 	    }
 	  },
 
-	  componentDidUpdate: function (prevProps, prevState) {
+	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 	    // Set up keyboard listeners appropriate to the current state.
 
 	    var activeKeyboardHandlers = {
@@ -10115,117 +12700,136 @@ var Grommet =
 
 	    // the order here is important, need to turn off keys before turning on
 
-	    if (! this.state.controlFocused && prevState.controlFocused) {
+	    if (!this.state.controlFocused && prevState.controlFocused) {
 	      this.stopListeningToKeyboard(focusedKeyboardHandlers);
 	    }
 
-	    if (! this.state.active && prevState.active) {
+	    if (!this.state.active && prevState.active) {
 	      document.removeEventListener('click', this._onClose);
 	      this.stopListeningToKeyboard(activeKeyboardHandlers);
-	      this.stopOverlay();
+	      this._drop.remove();
+	      this._drop = null;
 	    }
 
 	    // re-arm the space key in case we used it when active
-	    if (this.state.controlFocused && (! prevState.controlFocused ||
-	      (! this.state.active && prevState.active))) {
+	    if (this.state.controlFocused && (!prevState.controlFocused || !this.state.active && prevState.active)) {
 	      this.startListeningToKeyboard(focusedKeyboardHandlers);
 	    }
 
-	    if (this.state.active && ! prevState.active) {
+	    if (this.state.active && !prevState.active) {
 	      document.addEventListener('click', this._onClose);
 	      this.startListeningToKeyboard(activeKeyboardHandlers);
+	      this._drop = Drop.add(this.refs.control.getDOMNode(), this._renderDrop(), this.props.dropAlign);
+	    }
 
-	      var controlElement = this.refs.control.getDOMNode();
-	      var layerElement = document.getElementById(this.state.layerId);
-	      var layerControlElement = layerElement.querySelectorAll("." + ROOT_CLASS + "__control")[0];
-	      var layerControlIconElement = layerElement.querySelectorAll('svg, img')[0];
-
-	      // give layer control element the same line height and font size as the control
-	      var fontSize = window.getComputedStyle(controlElement).fontSize;
-	      layerControlElement.style.fontSize = fontSize;
-	      var height = controlElement.clientHeight;
-	      if (layerControlIconElement &&
-	        height <= (layerControlIconElement.clientHeight + 1)) {
-	        // adjust to align with underlying control when control uses all height
-	        if ('down' === this.props.direction) {
-	          layerControlElement.style.marginTop = '-1px';
-	        } else if ('up' === this.props.direction) {
-	          layerControlElement.style.marginBottom = '1px';
-	        }
-	      }
-	      layerControlElement.style.height = height + 'px';
-	      layerControlElement.style.lineHeight = height + 'px';
-
-	      this.startOverlay(controlElement, layerElement, this.props.align);
+	    if (this.state.active) {
+	      this._drop.render(this._renderDrop());
 	    }
 	  },
 
-	  componentWillUnmount: function () {
+	  componentWillUnmount: function componentWillUnmount() {
 	    document.removeEventListener('click', this._onClose);
+	    if (this._drop) {
+	      this._drop.remove();
+	    }
 	  },
 
-	  _renderControl: function () {
+	  _renderControl: function _renderControl() {
 	    var result = null;
 	    var icon = null;
-	    var controlClassName = ROOT_CLASS + "__control";
+	    var controlClassName = CLASS_ROOT + '__control';
 
 	    var classes = [controlClassName];
 
 	    if (this.props.icon) {
-	      classes.push(controlClassName + "--labelled");
+	      classes.push(controlClassName + '--labelled');
 	      icon = this.props.icon;
 	    } else {
-	      classes.push(controlClassName + "--fixed-label");
+	      classes.push(controlClassName + '--fixed-label');
 	      icon = React.createElement(MoreIcon, null);
 	    }
 
 	    if (this.props.label) {
-	      result = (
-	        React.createElement("div", {className: classes.join(' ')}, 
-	          React.createElement("div", {className: controlClassName + "-icon"}, 
-	            icon
-	          ), 
-	          React.createElement("span", {className: controlClassName + "-label"}, this.props.label), 
-	          React.createElement(DropCaretIcon, {className: controlClassName + "-drop-icon"})
-	        )
+	      result = React.createElement(
+	        'div',
+	        { className: classes.join(' ') },
+	        React.createElement(
+	          'div',
+	          { className: controlClassName + '-icon' },
+	          icon
+	        ),
+	        React.createElement(
+	          'span',
+	          { className: controlClassName + '-label' },
+	          this.props.label
+	        ),
+	        React.createElement(DropCaretIcon, { className: controlClassName + '-drop-icon' })
 	      );
 	    } else {
-	      result = (
-	        React.createElement("div", {className: controlClassName}, 
-	          icon
-	        )
+	      result = React.createElement(
+	        'div',
+	        { className: controlClassName },
+	        icon
 	      );
 	    }
 	    return result;
 	  },
 
-	  _classes: function (prefix) {
+	  _renderDrop: function _renderDrop() {
+	    var other = pick(this.props, keys(Box.propTypes));
+
+	    var controlContents = React.createElement(
+	      'div',
+	      { onClick: this._onClose },
+	      this._renderControl()
+	    );
+
+	    var onClick;
+	    if (this.props.closeOnClick) {
+	      onClick = this._onClose;
+	    } else {
+	      onClick = this._onSink;
+	    }
+
+	    return React.createElement(
+	      MenuDrop,
+	      _extends({ router: this.context.router,
+	        dropAlign: this.props.dropAlign
+	      }, other, {
+	        onClick: onClick,
+	        id: this.state.dropId,
+	        control: controlContents }),
+	      this.props.children
+	    );
+	  },
+
+	  _classes: function _classes(prefix) {
 	    var classes = [prefix];
 
 	    if (this.props.direction) {
-	      classes.push(prefix + "--" + this.props.direction);
+	      classes.push(prefix + '--' + this.props.direction);
 	    }
 	    if (this.props.align) {
-	      classes.push(prefix + "--align-" + this.props.align);
+	      classes.push(prefix + '--align-' + this.props.align);
 	    }
 	    if (this.props.small) {
-	      classes.push(prefix + "--small");
+	      classes.push(prefix + '--small');
 	    }
 	    if (this.props.primary) {
-	      classes.push(prefix + "--primary");
+	      classes.push(prefix + '--primary');
 	    }
 
 	    return classes;
 	  },
 
-	  render: function () {
-	    var classes = this._classes(ROOT_CLASS);
+	  render: function render() {
+	    var classes = this._classes(CLASS_ROOT);
 	    if (this.state.inline) {
-	      classes.push(ROOT_CLASS + "--inline");
+	      classes.push(CLASS_ROOT + '--inline');
 	    } else {
-	      classes.push(ROOT_CLASS + "--controlled");
+	      classes.push(CLASS_ROOT + '--controlled');
 	      if (this.props.label) {
-	        classes.push(ROOT_CLASS + "--labelled");
+	        classes.push(CLASS_ROOT + '--labelled');
 	      }
 	    }
 	    if (this.props.className) {
@@ -10233,69 +12837,26 @@ var Grommet =
 	    }
 
 	    if (this.state.inline) {
+	      var other = pick(this.props, keys(Box.propTypes));
 
-	      return (
-	        React.createElement("div", {className: classes.join(' '), onClick: this._onClose}, 
-	          this.props.children
-	        )
+	      return React.createElement(
+	        Box,
+	        _extends({ tag: 'nav' }, other, { className: classes.join(' '), onClick: this._onClose }),
+	        this.props.children
 	      );
-
 	    } else {
 
 	      var controlContents = this._renderControl();
 
-	      return (
-	        React.createElement("div", {ref: "control", className: classes.join(' '), 
-	          tabIndex: "0", 
-	          onClick: this._onOpen, 
-	          onFocus: this._onFocusControl, 
-	          onBlur: this._onBlurControl}, 
-	          controlContents
-	        )
+	      return React.createElement(
+	        'div',
+	        { ref: 'control', className: classes.join(' '),
+	          tabIndex: '0',
+	          onClick: this._onOpen,
+	          onFocus: this._onFocusControl,
+	          onBlur: this._onBlurControl },
+	        controlContents
 	      );
-
-	    }
-	  },
-
-	  renderLayer: function() {
-	    if (this.state.active) {
-
-	      var controlContents = (
-	        React.createElement("div", {onClick: this._onClose}, 
-	          this._renderControl()
-	        )
-	      );
-
-	      var first = null;
-	      var second = null;
-	      if ('up' === this.props.direction) {
-	        first = this.props.children;
-	        second = controlContents;
-	      } else {
-	        first = controlContents;
-	        second = this.props.children;
-	      }
-
-	      var onClick;
-	      if (this.props.closeOnClick) {
-	        onClick = this._onClose;
-	      } else {
-	        onClick = this._onSink;
-	      }
-
-	      return (
-	        React.createElement(MenuLayer, {router: this.context.router, 
-	          align: this.props.align, 
-	          direction: this.props.direction, 
-	          onClick: onClick, 
-	          id: this.state.layerId}, 
-	          first, 
-	          second
-	        )
-	      );
-
-	    } else {
-	      return (React.createElement("span", null));
 	    }
 	  }
 
@@ -10303,297 +12864,220 @@ var Grommet =
 
 	module.exports = Menu;
 
-
 /***/ },
-/* 58 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
 
-	var DOM = __webpack_require__(59);
+	'use strict';
 
-	// Overlay is a mixin for ensuring components layerd on top align with their initiating controls underneath.
-	var Overlay = {
+	var React = __webpack_require__(2);
+	var DOM = __webpack_require__(86);
 
-	  _overlay: {
-	    controlElement: null,
-	    layerElement: null,
-	    align: null,
-	    scrollParents: []
-	  },
+	/*
+	 * Drop is a utility for rendering components like drop down menus layered above
+	 * their initiating controls.
+	 */
 
-	  startOverlay: function (controlElement, layerElement, align) {
-	    this._overlay.controlElement = controlElement;
-	    this._overlay.layerElement = layerElement;
-	    this._overlay.align = align;
-	    this._overlay.scrollParents = DOM.findScrollParents(this._overlay.controlElement);
-	    this._overlay.scrollParents.forEach(function (parent) {
-	      parent.addEventListener('scroll', this.positionOverlay);
-	    }, this);
-	    window.addEventListener('resize', this.positionOverlay);
+	var VERTICAL_ALIGN_OPTIONS = ['top', 'bottom'];
+	var HORIZONTAL_ALIGN_OPTIONS = ['right', 'left'];
 
-	    this.positionOverlay();
-	  },
+	var Drop = {
 
-	  stopOverlay: function () {
-	    if (this._overlay.controlElement) {
-	      this._overlay.scrollParents.forEach(function (parent) {
-	        parent.removeEventListener('scroll', this.positionOverlay);
-	      }, this);
-	      window.removeEventListener('resize', this.positionOverlay);
-	      this._overlay.controlElement = null;
-	      this._overlay.layerElement = null;
-	      this._overlay.align = null;
-	      this._overlay.scrollParents = [];
+	  // How callers can validate a property for drop alignment which will be passed to add().
+	  alignPropType: React.PropTypes.shape({
+	    top: React.PropTypes.oneOf(VERTICAL_ALIGN_OPTIONS),
+	    bottom: React.PropTypes.oneOf(VERTICAL_ALIGN_OPTIONS),
+	    left: React.PropTypes.oneOf(HORIZONTAL_ALIGN_OPTIONS),
+	    right: React.PropTypes.oneOf(HORIZONTAL_ALIGN_OPTIONS)
+	  }),
+
+	  // Add a drop component.
+	  //
+	  // control - DOM element to anchor the overlay on
+	  // content - React node to render
+	  // align -
+	  // {
+	  //    top: top|bottom
+	  //    bottom: top|bottom
+	  //    left: left|right
+	  //    right: left|right
+	  // }
+
+	  add: function add(control, content, align) {
+	    // validate align
+	    if (align && align.top && VERTICAL_ALIGN_OPTIONS.indexOf(align.top) === -1) {
+	      console.warn('Warning: Invalid align.top value \'' + align.top + '\' supplied to Drop,' + 'expected one of [' + VERTICAL_ALIGN_OPTIONS.join(',') + ']');
 	    }
+	    if (align && align.bottom && VERTICAL_ALIGN_OPTIONS.indexOf(align.bottom) === -1) {
+	      console.warn('Warning: Invalid align.bottom value \'' + align.bottom + '\' supplied to Drop,' + 'expected one of [' + VERTICAL_ALIGN_OPTIONS.join(',') + ']');
+	    }
+	    if (align && align.left && HORIZONTAL_ALIGN_OPTIONS.indexOf(align.left) === -1) {
+	      console.warn('Warning: Invalid align.left value \'' + align.left + '\' supplied to Drop,' + 'expected one of [' + HORIZONTAL_ALIGN_OPTIONS.join(',') + ']');
+	    }
+	    if (align && align.right && HORIZONTAL_ALIGN_OPTIONS.indexOf(align.right) === -1) {
+	      console.warn('Warning: Invalid align.right value \'' + align.right + '\' supplied to Drop,' + 'expected one of [' + HORIZONTAL_ALIGN_OPTIONS.join(',') + ']');
+	    }
+
+	    // initialize data
+	    var drop = {
+	      control: control,
+	      align: {
+	        top: align.top,
+	        bottom: align.bottom,
+	        left: align.left,
+	        right: align.right
+	      }
+	    };
+	    if (!drop.align.top && !drop.align.bottom) {
+	      drop.align.top = 'top';
+	    }
+	    if (!drop.align.left && !drop.align.right) {
+	      drop.align.left = 'left';
+	    }
+
+	    // setup DOM
+	    drop.container = document.createElement('div');
+	    if (drop.container.classList) {
+	      drop.container.classList.add('drop');
+	    } else {
+	      // unit test version
+	      drop.container.className += ' drop';
+	    }
+	    document.body.appendChild(drop.container);
+	    React.render(content, drop.container);
+
+	    drop.scrollParents = DOM.findScrollParents(drop.control);
+	    drop.place = this._place.bind(this, drop);
+	    drop.render = this._render.bind(this, drop);
+	    drop.remove = this._remove.bind(this, drop);
+
+	    drop.scrollParents.forEach(function (scrollParent) {
+	      scrollParent.addEventListener('scroll', drop.place);
+	    });
+	    window.addEventListener('resize', drop.place);
+
+	    // position content
+	    this._place(drop);
+
+	    return drop;
 	  },
 
-	  positionOverlay: function () {
-	    var controlElement = this._overlay.controlElement;
-	    var layerElement = this._overlay.layerElement;
+	  _render: function _render(drop, content) {
+	    React.render(content, drop.container);
+	    // in case content changed, re-place
+	    setTimeout(this._place.bind(this, drop), 1);
+	  },
 
-	    var controlRect = controlElement.getBoundingClientRect();
+	  _remove: function _remove(drop) {
+	    drop.scrollParents.forEach(function (scrollParent) {
+	      scrollParent.removeEventListener('scroll', drop.place);
+	    });
+	    window.removeEventListener('resize', drop.place);
+
+	    React.unmountComponentAtNode(drop.container);
+	    document.body.removeChild(drop.container);
+	  },
+
+	  _place: function _place(drop) {
+	    var control = drop.control;
+	    var container = drop.container;
+	    var align = drop.align;
+	    var controlRect = control.getBoundingClientRect();
+	    var containerRect = container.getBoundingClientRect();
 	    var windowWidth = window.innerWidth;
+	    var windowHeight = window.innerHeight;
 
 	    // clear prior styling
-	    layerElement.style.left = '';
-	    layerElement.style.width = '';
-	    layerElement.style.top = '';
+	    container.style.left = '';
+	    container.style.width = '';
+	    container.style.top = '';
 
-	    var width = Math.min(
-	      Math.max(controlRect.width, layerElement.offsetWidth),
-	        windowWidth);
-	    // align right edge and make at least as wide as the control
-	    var left = (controlRect.left + layerElement.offsetWidth) - width;
-	    if ('right' === this._overlay.align) {
-	      // align right edge
-	      left = (controlRect.left + controlRect.width) -
-	        layerElement.offsetWidth;
-	    } else {
-	      // align left edge
-	      left = controlRect.left;
+	    var width = Math.min(Math.max(controlRect.width, containerRect.width), windowWidth);
+	    var left;
+	    var top;
+
+	    if (align.left) {
+	      if ('left' === align.left) {
+	        left = controlRect.left;
+	      } else if ('right' === align.left) {
+	        left = controlRect.left - width;
+	      }
+	    } else if (align.right) {
+	      if ('left' === align.right) {
+	        left = controlRect.left - width;
+	      } else if ('right' === align.right) {
+	        left = controlRect.left + controlRect.width - width;
+	      }
 	    }
-	    if ((left + width) > windowWidth) {
-	      left -= ((left + width) - windowWidth);
+	    if (left + width > windowWidth) {
+	      left -= left + width - windowWidth;
 	    } else if (left < 0) {
 	      left = 0;
 	    }
 
-	    var top = controlRect.top;
-	    if ('up' === this.props.direction) {
-	      // align bottom edge
-	      top = (controlRect.top + controlRect.height) -
-	        layerElement.offsetHeight;
-	    } else if ('below' === this._overlay.align) {
-	      // align top of layer to bottom of control
-	      top = (controlRect.top + controlRect.height);
-	    }
-
-	    // ensure height is within viewport
-	    var maxHeight = window.innerHeight - top;
-
-	    layerElement.style.left = '' + left + 'px';
-	    layerElement.style.width = '' + width + 'px';
-	    layerElement.style.top = '' + top + 'px';
-	    layerElement.style.maxHeight = '' + maxHeight + 'px';
-	  },
-
-	  componentWillUnmount: function () {
-	    this.stopOverlay();
-	  }
-	};
-
-	module.exports = Overlay;
-
-
-/***/ },
-/* 59 */
-/***/ function(module, exports) {
-
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
-
-	module.exports = {
-	  findScrollParents: function (element) {
-	    var result = [];
-	    var parent = element.parentNode;
-	    while (parent) {
-	      // account for border the lazy way for now
-	      if (parent.scrollHeight > (parent.offsetHeight + 10)) {
-	        result.push(parent);
+	    if (align.top) {
+	      if ('top' === align.top) {
+	        top = controlRect.top;
+	      } else if ('bottom' === align.top) {
+	        top = controlRect.top + controlRect.height;
 	      }
-	      parent = parent.parentNode;
+	    } else if (align.bottom) {
+	      if ('top' === align.bottom) {
+	        top = controlRect.top - containerRect.height;
+	      } else if ('bottom' === align.bottom) {
+	        top = controlRect.top + controlRect.height - containerRect.height;
+	      }
 	    }
-	    if (result.length === 0) {
-	      result.push(document);
+	    if (top + containerRect.height > windowHeight) {
+	      // For now, just slide up so we can see it.
+	      // TODO: when we don't want to cover the control, like with SearchInput and Calendar,
+	      // add bottom margin to the control to allow the user to scroll down if needed.
+	      if (align.top === 'bottom') {
+	        top = controlRect.top - containerRect.height;
+	      } else {
+	        top = Math.max(controlRect.bottom - containerRect.height, top - (top + containerRect.height - windowHeight));
+	      }
+	    } else if (top < 0) {
+	      top = 0;
 	    }
-	    return result;
+
+	    container.style.left = '' + left + 'px';
+	    container.style.width = '' + width + 'px';
+	    container.style.top = '' + top + 'px';
 	  }
 	};
 
+	module.exports = Drop;
 
 /***/ },
-/* 60 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	// http://jsfiddle.net/LBAr8/
+	'use strict';
 
 	var React = __webpack_require__(2);
 
-	var ReactLayeredComponent = {
+	var More = React.createClass({
+	  displayName: 'More',
 
-	  componentWillUnmount: function() {
-	    this._unrenderLayer();
-	    document.body.removeChild(this._target);
-	  },
-	  componentDidUpdate: function() {
-	    this._renderLayer();
-	  },
-	  componentDidMount: function() {
-	    // Appending to the body is easier than managing the z-index of everything on the page.
-	    // It's also better for accessibility and makes stacking a snap (since components will stack
-	    // in mount order).
-	    this._target = document.createElement('div');
-	    document.body.appendChild(this._target);
-	    this._renderLayer();
-	  },
-	  _renderLayer: function() {
-	    // By calling this method in componentDidMount() and componentDidUpdate(), you're effectively
-	    // creating a "wormhole" that funnels React's hierarchical updates through to a DOM node on an
-	    // entirely different part of the page.
-	    React.render(this.renderLayer(), this._target);
-	  },
-	  _unrenderLayer: function() {
-	    React.unmountComponentAtNode(this._target);
-	  }
-	};
-
-	module.exports = ReactLayeredComponent;
-
-
-/***/ },
-/* 61 */
-/***/ function(module, exports) {
-
-	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
-
-	// Allow callers to use key labels instead of key code numbers.
-	// This makes their code easier to read.
-	var KEYS = {
-	  backspace: 8,
-	  tab: 9,
-	  enter: 13,
-	  esc: 27,
-	  escape: 27,
-	  space: 32,
-	  left: 37,
-	  up: 38,
-	  right: 39,
-	  down: 40,
-	  comma: 188
-	};
-
-	// KeyboardAccelerators is a mixin for handling keyboard events.
-	// Add listeners using startListeningToKeyboard().
-	// Remove listeners using stopListeningToKeyboard().
-	// When the component that includes this is unmounted, the keyboard event
-	// listener is removed automatically.
-	var KeyboardAccelerators = {
-
-	  _keyboardAcceleratorHandlers: {},
-	  _keyboardAcceleratorListening: false,
-
-	  _onKeyboardAcceleratorKeyPress: function (e) {
-	    var key = (e.keyCode ? e.keyCode : e.which);
-	    if (this._keyboardAcceleratorHandlers.hasOwnProperty(key)) {
-	      this._keyboardAcceleratorHandlers[key](e);
-	    }
-	  },
-
-	  // Add handlers for specific keys.
-	  // This function can be called multiple times, existing handlers will
-	  // be replaced, new handlers will be added.
-	  startListeningToKeyboard: function (handlers) {
-	    var keys = 0;
-	    for (var key in handlers) {
-	      if (handlers.hasOwnProperty(key)) {
-	        var keyCode = key;
-	        if (KEYS.hasOwnProperty(key)) {
-	          keyCode = KEYS[key];
-	        }
-	        keys += 1;
-	        this._keyboardAcceleratorHandlers[keyCode] = handlers[key];
-	      }
-	    }
-
-	    if (keys > 0 && ! this._keyboardAcceleratorListening) {
-	      window.addEventListener("keydown", this._onKeyboardAcceleratorKeyPress);
-	      this._keyboardAcceleratorListening = true;
-	    }
-	  },
-
-	  // Remove handlers for all keys or specific keys.
-	  // If no argument is passed in, all handlers are removed.
-	  // This function can be called multiple times, only the handlers
-	  // specified will be removed.
-	  stopListeningToKeyboard: function (handlers) {
-	    if (handlers) {
-	      for (var key in handlers) {
-	        if (handlers.hasOwnProperty(key)) {
-	          var keyCode = key;
-	          if (KEYS.hasOwnProperty(key)) {
-	            keyCode = KEYS[key];
-	          }
-	          delete this._keyboardAcceleratorHandlers[keyCode];
-	        }
-	      }
-	    }
-
-	    var keyCount = 0;
-	    for (var keyHandler in this._keyboardAcceleratorHandlers) {
-	      if (this._keyboardAcceleratorHandlers.hasOwnProperty(keyHandler)) {
-	        keyCount += 1;
-	      }
-	    }
-
-	    if (! handlers || 0 === keyCount) {
-	      window.removeEventListener("keydown", this._onKeyboardAcceleratorKeyPress);
-	      this._keyboardAcceleratorHandlers = {};
-	      this._keyboardAcceleratorListening = false;
-	    }
-	  },
-
-	  componentWillUnmount: function () {
-	    this.stopListeningToKeyboard();
-	  }
-	};
-
-	module.exports = KeyboardAccelerators;
-
-
-/***/ },
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
-
-	var React = __webpack_require__(2);
-
-	var More = React.createClass({displayName: "More",
-
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-more';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("rect", {x: "23", y: "23", strokeWidth: "2", width: "2", height: "2"}), 
-	          React.createElement("rect", {x: "15", y: "23", strokeWidth: "2", width: "2", height: "2"}), 
-	          React.createElement("rect", {x: "31", y: "23", strokeWidth: "2", width: "2", height: "2"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('rect', { x: '23', y: '23', strokeWidth: '2', width: '2', height: '2' }),
+	        React.createElement('rect', { x: '15', y: '23', strokeWidth: '2', width: '2', height: '2' }),
+	        React.createElement('rect', { x: '31', y: '23', strokeWidth: '2', width: '2', height: '2' })
 	      )
 	    );
 	  }
@@ -10602,27 +13086,31 @@ var Grommet =
 
 	module.exports = More;
 
-
 /***/ },
-/* 63 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var DropCaret = React.createClass({displayName: "DropCaret",
+	var DropCaret = React.createClass({
+	  displayName: 'DropCaret',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-drop-caret';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {stroke: "none"}, 
-	          React.createElement("polygon", {points: "33.4,19.7 24.1,30.3 14.8,19.7"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { stroke: 'none' },
+	        React.createElement('polygon', { points: '33.4,19.7 24.1,30.3 14.8,19.7' })
 	      )
 	    );
 	  }
@@ -10631,17 +13119,18 @@ var Grommet =
 
 	module.exports = DropCaret;
 
-
 /***/ },
-/* 64 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
 
-	var React = __webpack_require__(2);
-	var Legend = __webpack_require__(48);
+	'use strict';
 
-	var CLASS_ROOT = "meter";
+	var React = __webpack_require__(2);
+	var Legend = __webpack_require__(91);
+
+	var CLASS_ROOT = 'meter';
 
 	var BAR_LENGTH = 192;
 	var BAR_THICKNESS = 24;
@@ -10652,55 +13141,45 @@ var Grommet =
 
 	var ARC_HEIGHT = 144;
 
-	function polarToCartesian (centerX, centerY, radius, angleInDegrees) {
+	function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 	  var angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
 	  return {
-	    x: centerX + (radius * Math.cos(angleInRadians)),
-	    y: centerY + (radius * Math.sin(angleInRadians))
+	    x: centerX + radius * Math.cos(angleInRadians),
+	    y: centerY + radius * Math.sin(angleInRadians)
 	  };
 	}
 
-	function arcCommands (x, y, radius, startAngle, endAngle) {
+	function arcCommands(x, y, radius, startAngle, endAngle) {
 	  var start = polarToCartesian(x, y, radius, endAngle);
 	  var end = polarToCartesian(x, y, radius, startAngle);
-	  var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
-	  var d = [
-	    "M", start.x, start.y,
-	    "A", radius, radius, 0, arcSweep, 0, end.x, end.y
-	  ].join(" ");
+	  var arcSweep = endAngle - startAngle <= 180 ? '0' : '1';
+	  var d = ['M', start.x, start.y, 'A', radius, radius, 0, arcSweep, 0, end.x, end.y].join(' ');
 	  return d;
 	}
 
-	function activeIndicatorCommands (x, y, radius, startAngle, endAngle) {
-	  var point = polarToCartesian(x, y, radius - 30, endAngle - 1);
+	function singleIndicatorCommands(x, y, radius, startAngle, endAngle, length) {
+	  var point = polarToCartesian(x, y, radius - length, endAngle - 1);
 	  var start = polarToCartesian(x, y, radius, endAngle - 1);
-	  var d = ["M", start.x, start.y,
-	    "L", point.x, point.y
-	  ].join(" ");
+	  var d = ['M', start.x, start.y, 'L', point.x, point.y].join(' ');
 	  return d;
 	}
 
-	var Meter = React.createClass({displayName: "Meter",
+	var Meter = React.createClass({
+	  displayName: 'Meter',
 
 	  propTypes: {
 	    important: React.PropTypes.number,
 	    large: React.PropTypes.bool,
 	    legend: React.PropTypes.bool,
 	    legendTotal: React.PropTypes.bool,
-	    max: React.PropTypes.oneOfType([
-	      React.PropTypes.shape({
-	        value: React.PropTypes.number.isRequired,
-	        label: React.PropTypes.string
-	      }),
-	      React.PropTypes.number
-	    ]),
-	    min: React.PropTypes.oneOfType([
-	      React.PropTypes.shape({
-	        value: React.PropTypes.number.isRequired,
-	        label: React.PropTypes.string
-	      }),
-	      React.PropTypes.number
-	    ]),
+	    max: React.PropTypes.oneOfType([React.PropTypes.shape({
+	      value: React.PropTypes.number.isRequired,
+	      label: React.PropTypes.string
+	    }), React.PropTypes.number]),
+	    min: React.PropTypes.oneOfType([React.PropTypes.shape({
+	      value: React.PropTypes.number.isRequired,
+	      label: React.PropTypes.string
+	    }), React.PropTypes.number]),
 	    series: React.PropTypes.arrayOf(React.PropTypes.shape({
 	      label: React.PropTypes.string,
 	      value: React.PropTypes.number.isRequired,
@@ -10721,13 +13200,13 @@ var Grommet =
 	    vertical: React.PropTypes.bool
 	  },
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      type: 'bar'
 	    };
 	  },
 
-	  _initialTimeout: function () {
+	  _initialTimeout: function _initialTimeout() {
 	    this.setState({
 	      initial: false,
 	      activeIndex: this.state.importantIndex
@@ -10735,23 +13214,23 @@ var Grommet =
 	    clearTimeout(this._timeout);
 	  },
 
-	  _onActivate: function (index) {
-	    this.setState({initial: false, activeIndex: index});
+	  _onActivate: function _onActivate(index) {
+	    this.setState({ initial: false, activeIndex: index });
 	  },
 
-	  _onResize: function() {
+	  _onResize: function _onResize() {
 	    // debounce
 	    clearTimeout(this._resizeTimer);
 	    this._resizeTimer = setTimeout(this._layout, 50);
 	  },
 
-	  _layout: function () {
+	  _layout: function _layout() {
 	    // legendPosition based on available window orientation
 	    var ratio = window.innerWidth / window.innerHeight;
 	    if (ratio < 0.8) {
-	      this.setState({legendPosition: 'bottom'});
+	      this.setState({ legendPosition: 'bottom' });
 	    } else if (ratio > 1.2) {
-	      this.setState({legendPosition: 'right'});
+	      this.setState({ legendPosition: 'right' });
 	    }
 	    /*
 	    // content based on available real estate
@@ -10771,21 +13250,40 @@ var Grommet =
 	    */
 	  },
 
-	  _normalizeSeries: function (props, min, max) {
+	  _normalizeSeries: function _normalizeSeries(props, min, max, thresholds) {
 	    var series = [];
 	    if (props.series) {
 	      series = props.series;
 	    } else if (props.value) {
-	      //var remaining = max.value - props.value;
-	      series = [
-	        {value: props.value, important: true} //,
-	        //{value: remaining, colorIndex: 'unset'}
-	      ];
+	      series = [{ value: props.value, important: true }];
 	    }
+
+	    // set color index
+	    if (series.length === 1 && props.thresholds) {
+	      var item = series[0];
+	      if (!item.colorIndex) {
+	        // see which threshold color index to use
+	        var cumulative = 0;
+	        thresholds.some(function (threshold) {
+	          cumulative += threshold.value;
+	          if (item.value < cumulative) {
+	            item.colorIndex = threshold.colorIndex || 'graph-1';
+	            return true;
+	          }
+	        });
+	      }
+	    } else {
+	      series.forEach(function (item, index) {
+	        if (!item.colorIndex) {
+	          item.colorIndex = 'graph-' + (index + 1);
+	        }
+	      });
+	    }
+
 	    return series;
 	  },
 
-	  _normalizeThresholds: function (props, min, max) {
+	  _normalizeThresholds: function _normalizeThresholds(props, min, max) {
 	    var thresholds = [];
 	    if (props.thresholds) {
 	      // Convert thresholds from absolute values to cummulative,
@@ -10801,26 +13299,24 @@ var Grommet =
 	          thresholds[i - 1].value = threshold.value - total;
 	          total += thresholds[i - 1].value;
 	        }
-	        if (i === (props.thresholds.length - 1)) {
+	        if (i === props.thresholds.length - 1) {
 	          thresholds[i].value = max.value - total;
 	        }
 	      }
 	    } else if (props.threshold) {
 	      var remaining = max.value - props.threshold;
-	      thresholds = [
-	        {value: props.threshold, colorIndex: 'unset'},
-	        {value: remaining, colorIndex: 'error'}
-	      ];
+	      thresholds = [{ value: props.threshold, colorIndex: 'unset' }, { value: remaining, colorIndex: 'error' }];
 	    } else {
-	      thresholds = [
-	        {value: max.value, colorIndex: 'unset'}
-	      ];
+	      thresholds = [{ value: max.value, colorIndex: 'unset' }];
 	    }
 	    return thresholds;
 	  },
 
-	  _importantIndex: function (series) {
-	    var result = series.length - 1;
+	  _importantIndex: function _importantIndex(series) {
+	    var result = null;
+	    if (series.length === 1) {
+	      result = 0;
+	    }
 	    if (this.props.hasOwnProperty('important')) {
 	      result = this.props.important;
 	    }
@@ -10834,14 +13330,14 @@ var Grommet =
 	  },
 
 	  // Normalize min or max to an object.
-	  _terminal: function (terminal) {
+	  _terminal: function _terminal(terminal) {
 	    if (typeof terminal === 'number') {
-	      terminal = {value: terminal};
+	      terminal = { value: terminal };
 	    }
 	    return terminal;
 	  },
 
-	  _seriesTotal: function (series) {
+	  _seriesTotal: function _seriesTotal(series) {
 	    var total = 0;
 	    series.some(function (item) {
 	      total += item.value;
@@ -10849,7 +13345,7 @@ var Grommet =
 	    return total;
 	  },
 
-	  _viewBoxDimensions: function () {
+	  _viewBoxDimensions: function _viewBoxDimensions() {
 	    var viewBoxHeight;
 	    var viewBoxWidth;
 	    if ('arc' === this.props.type) {
@@ -10876,7 +13372,7 @@ var Grommet =
 	  },
 
 	  // Generates state based on the provided props.
-	  _stateFromProps: function (props) {
+	  _stateFromProps: function _stateFromProps(props) {
 	    var total;
 	    if (props.series && props.series.length > 1) {
 	      total = this._seriesTotal(props.series);
@@ -10890,13 +13386,12 @@ var Grommet =
 	    // Max could be provided in props or come from the total of
 	    // a multi-value series.
 	    var max = this._terminal(props.max || total);
-	    // Normalize simple value prop to a series, if needed.
-	    var series = this._normalizeSeries(props, min, max);
 	    // Normalize simple threshold prop to an array, if needed.
 	    var thresholds = this._normalizeThresholds(props, min, max);
+	    // Normalize simple value prop to a series, if needed.
+	    var series = this._normalizeSeries(props, min, max, thresholds);
 	    // Determine important index.
 	    var importantIndex = this._importantIndex(series);
-	    ///total = this._seriesTotal(series);
 	    // Determine the viewBox dimensions
 	    var viewBoxDimensions = this._viewBoxDimensions();
 
@@ -10931,64 +13426,61 @@ var Grommet =
 	    return state;
 	  },
 
-	  getInitialState: function() {
+	  getInitialState: function getInitialState() {
 	    var state = this._stateFromProps(this.props);
 	    state.legendPosition = 'bottom';
 	    state.initial = true;
 	    return state;
 	  },
 
-	  componentDidMount: function() {
+	  componentDidMount: function componentDidMount() {
 	    this._initialTimer = setTimeout(this._initialTimeout, 10);
 	    window.addEventListener('resize', this._onResize);
 	    this._onResize();
 	  },
 
-	  componentWillReceiveProps: function (newProps) {
+	  componentWillReceiveProps: function componentWillReceiveProps(newProps) {
 	    var state = this._stateFromProps(newProps);
 	    this.setState(state);
 	    this._onResize();
 	  },
 
-	  componentWillUnmount: function() {
+	  componentWillUnmount: function componentWillUnmount() {
 	    clearTimeout(this._initialTimer);
 	    clearTimeout(this._resizeTimer);
 	    window.removeEventListener('resize', this._onResize);
 	  },
 
-	  _itemColorIndex: function (item, index) {
-	    return item.colorIndex || ('graph-' + (index + 1));
-	  },
+	  //_itemColorIndex: function (item, index) {
+	  //  return item.colorIndex || ('graph-' + (index + 1));
+	  //},
 
-	  _translateBarWidth: function (value) {
+	  _translateBarWidth: function _translateBarWidth(value) {
 	    return Math.round(this.state.scale * value);
 	  },
 
-	  _barCommands: function (start, distance) {
+	  _barCommands: function _barCommands(start, distance) {
 	    var commands;
 	    if (this.props.vertical) {
-	      commands = "M" + MID_BAR_THICKNESS + "," + (BAR_LENGTH - start) +
-	        " L" + MID_BAR_THICKNESS + "," + (BAR_LENGTH - (start + distance));
+	      commands = 'M' + MID_BAR_THICKNESS + ',' + (BAR_LENGTH - start) + ' L' + MID_BAR_THICKNESS + ',' + (BAR_LENGTH - (start + distance));
 	    } else {
-	      commands = "M" + start + "," + MID_BAR_THICKNESS +
-	        " L" + (start + distance) + "," + MID_BAR_THICKNESS;
+	      commands = 'M' + start + ',' + MID_BAR_THICKNESS + ' L' + (start + distance) + ',' + MID_BAR_THICKNESS;
 	    }
 	    return commands;
 	  },
 
-	  _renderBar: function (series) {
+	  _renderBar: function _renderBar(series) {
 	    var start = 0;
 	    var minRemaining = this.state.min.value;
 	    var classes;
 	    var commands;
 
 	    var paths = series.map(function (item, index) {
-	      var colorIndex = this._itemColorIndex(item, index);
-	      classes = [CLASS_ROOT + "__bar"];
+	      classes = [CLASS_ROOT + '__bar'];
 	      if (index === this.state.activeIndex) {
-	        classes.push(CLASS_ROOT + "__bar--active");
+	        classes.push(CLASS_ROOT + '__bar--active');
 	      }
-	      classes.push("color-index-" + colorIndex);
+	      classes.push('color-index-' + item.colorIndex);
 
 	      var value = item.value - minRemaining;
 	      minRemaining = Math.max(0, minRemaining - item.value);
@@ -10996,161 +13488,149 @@ var Grommet =
 	      commands = this._barCommands(start, distance);
 	      start += distance;
 
-	      return (
-	        React.createElement("path", {key: index, className: classes.join(' '), d: commands, 
-	          onMouseOver: this._onActivate.bind(this, index), 
-	          onMouseOut: this._onActivate.bind(this, this.state.importantIndex), 
-	          onClick: item.onClick})
-	      );
+	      return React.createElement('path', { key: index, className: classes.join(' '), d: commands,
+	        onMouseOver: this._onActivate.bind(this, index),
+	        onMouseOut: this._onActivate.bind(this, this.state.importantIndex),
+	        onClick: item.onClick });
 	    }, this);
 
 	    if (paths.length === 0) {
-	      classes = [CLASS_ROOT + "__bar"];
-	      classes.push(CLASS_ROOT + "__bar--loading");
-	      classes.push("color-index-loading");
+	      classes = [CLASS_ROOT + '__bar'];
+	      classes.push(CLASS_ROOT + '__bar--loading');
+	      classes.push('color-index-loading');
 	      commands = this._barCommands(0, BAR_LENGTH);
-	      paths.push(
-	        React.createElement("path", {key: "loading", className: classes.join(' '), d: commands})
-	      );
+	      paths.push(React.createElement('path', { key: 'loading', className: classes.join(' '), d: commands }));
 	    }
 
 	    return paths;
 	  },
 
-	  _translateEndAngle: function (startAngle, value) {
-	    return Math.min(360, Math.max(0,
-	      startAngle + (this.state.anglePer * value)));
+	  _translateEndAngle: function _translateEndAngle(startAngle, value) {
+	    return Math.min(360, Math.max(0, startAngle + this.state.anglePer * value));
 	  },
 
-	  _arcCommands: function (startAngle, endAngle) {
-	    return arcCommands(CIRCLE_WIDTH / 2, CIRCLE_WIDTH / 2, CIRCLE_RADIUS,
-	      startAngle + this.state.angleOffset,
-	      endAngle + this.state.angleOffset);
+	  _arcCommands: function _arcCommands(startAngle, endAngle) {
+	    return arcCommands(CIRCLE_WIDTH / 2, CIRCLE_WIDTH / 2, CIRCLE_RADIUS, startAngle + this.state.angleOffset, endAngle + this.state.angleOffset);
 	  },
 
-	  _renderArcOrCircle: function (series) {
+	  _renderArcOrCircle: function _renderArcOrCircle(series) {
 	    var startAngle = this.state.startAngle;
 	    var classes;
 	    var endAngle;
 	    var commands;
 
 	    var paths = series.map(function (item, index) {
-	      var classes = [CLASS_ROOT + "__slice"];
+	      var classes = [CLASS_ROOT + '__slice'];
 	      if (index === this.state.activeIndex) {
-	        classes.push(CLASS_ROOT + "__slice--active");
+	        classes.push(CLASS_ROOT + '__slice--active');
 	      }
-	      var colorIndex = this._itemColorIndex(item, index);
-	      classes.push("color-index-" + colorIndex);
+	      classes.push('color-index-' + item.colorIndex);
 	      endAngle = this._translateEndAngle(startAngle, item.value);
 	      commands = this._arcCommands(startAngle, endAngle);
 
 	      startAngle = endAngle;
 
-	      return (
-	        React.createElement("path", {key: item.label || index, fill: "none", 
-	          className: classes.join(' '), d: commands, 
-	          onMouseOver: this._onActivate.bind(this, index), 
-	          onMouseOut: this._onActivate.bind(this, this.state.importantIndex), 
-	          onClick: item.onClick})
-	      );
+	      return React.createElement('path', { key: item.label || index, fill: 'none',
+	        className: classes.join(' '), d: commands,
+	        onMouseOver: this._onActivate.bind(this, index),
+	        onMouseOut: this._onActivate.bind(this, this.state.importantIndex),
+	        onClick: item.onClick });
 	    }, this);
 
 	    if (paths.length === 0) {
-	      classes = [CLASS_ROOT + "__slice"];
-	      classes.push(CLASS_ROOT + "__slice--loading");
-	      classes.push("color-index-loading");
+	      classes = [CLASS_ROOT + '__slice'];
+	      classes.push(CLASS_ROOT + '__slice--loading');
+	      classes.push('color-index-loading');
 	      endAngle = this._translateEndAngle(this.state.startAngle, this.state.max.value);
 	      commands = this._arcCommands(this.state.startAngle, endAngle);
-	      paths.push(
-	        React.createElement("path", {key: "loading", className: classes.join(' '), d: commands})
-	      );
+	      paths.push(React.createElement('path', { key: 'loading', className: classes.join(' '), d: commands }));
 	    }
 
 	    return paths;
 	  },
 
-	  _renderActiveIndicator: function (series) {
-	    var activeIndicator = null;
+	  _renderSingleIndicator: function _renderSingleIndicator(series) {
+	    var seriesIndicator = null;
 	    var startAngle = this.state.startAngle;
 	    series.forEach(function (item, index) {
-	      var colorIndex = this._itemColorIndex(item, index);
 	      var endAngle = this._translateEndAngle(startAngle, item.value);
 
 	      if (index === this.state.activeIndex) {
-	        var indicatorCommands =
-	          activeIndicatorCommands(CIRCLE_WIDTH / 2, CIRCLE_WIDTH / 2, CIRCLE_RADIUS,
-	          startAngle + this.state.angleOffset,
-	          endAngle + this.state.angleOffset);
-	        activeIndicator = (
-	          React.createElement("path", {fill: "none", 
-	            className: CLASS_ROOT + "__slice-indicator color-index-" + colorIndex, 
-	            d: indicatorCommands})
-	        );
+	        var length;
+	        if ('arc' === this.props.type) {
+	          length = CIRCLE_RADIUS;
+	        } else {
+	          length = CIRCLE_RADIUS * 0.60;
+	        }
+	        var indicatorCommands = singleIndicatorCommands(CIRCLE_WIDTH / 2, CIRCLE_WIDTH / 2, CIRCLE_RADIUS * 1.1, startAngle + this.state.angleOffset, endAngle + this.state.angleOffset, length);
+	        seriesIndicator = React.createElement('path', { fill: 'none',
+	          className: CLASS_ROOT + '__slice-indicator color-index-' + item.colorIndex,
+	          d: indicatorCommands });
 	      }
 
 	      startAngle = endAngle;
 	    }, this);
 
-	    return activeIndicator;
+	    return seriesIndicator;
 	  },
 
-	  _renderActive: function () {
-	    var result;
-	    var active = this.state.series[this.state.activeIndex];
-	    if ('arc' === this.props.type || 'circle' === this.props.type) {
-	      result = (
-	        React.createElement("div", {className: CLASS_ROOT + "__active"}, 
-	          React.createElement("div", {className: CLASS_ROOT + "__active-value large-number-font"}, 
-	            active.value, 
-	            React.createElement("span", {className: CLASS_ROOT + "__active-units large-number-font"}, 
-	              this.props.units
-	            )
-	          ), 
-	          React.createElement("div", {className: CLASS_ROOT + "__active-label"}, 
-	            active.label
-	          )
-	        )
-	      );
-	    } else if ('bar' === this.props.type) {
-	      result = (
-	        React.createElement("span", {className: CLASS_ROOT + "__active"}, 
-	          React.createElement("span", {className: CLASS_ROOT + "__active-value large-number-font"}, 
-	            active.value
-	          ), 
-	          React.createElement("span", {className: CLASS_ROOT + "__active-units large-number-font"}, 
-	            this.props.units
-	          )
-	        )
-	      );
+	  _renderActive: function _renderActive() {
+	    var fields;
+	    if (null === this.state.activeIndex) {
+	      fields = { value: this.state.total, label: 'Total' };
+	    } else {
+	      var active = this.state.series[this.state.activeIndex];
+	      fields = { value: active.value, label: active.label };
 	    }
-	    return result;
-	  },
-
-	  _renderLegend: function () {
-	    return (
-	      React.createElement(Legend, {className: CLASS_ROOT + "__legend", 
-	        series: this.state.series, 
-	        units: this.props.units, 
-	        activeIndex: this.state.activeIndex, 
-	        onActive: this._onActive})
+	    return React.createElement(
+	      'div',
+	      { className: CLASS_ROOT + '__active' },
+	      React.createElement(
+	        'span',
+	        { className: CLASS_ROOT + '__active-value large-number-font' },
+	        fields.value,
+	        React.createElement(
+	          'span',
+	          { className: CLASS_ROOT + '__active-units large-number-font' },
+	          this.props.units
+	        )
+	      ),
+	      React.createElement(
+	        'span',
+	        { className: CLASS_ROOT + '__active-label' },
+	        fields.label
+	      )
 	    );
 	  },
 
-	  render: function() {
+	  _renderLegend: function _renderLegend() {
+	    return React.createElement(Legend, { className: CLASS_ROOT + '__legend',
+	      series: this.state.series,
+	      units: this.props.units,
+	      activeIndex: this.state.activeIndex,
+	      onActive: this._onActive });
+	  },
+
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
-	    classes.push(CLASS_ROOT + "--" + this.props.type);
-	    classes.push(CLASS_ROOT + "--legend-" + this.state.legendPosition);
+	    classes.push(CLASS_ROOT + '--' + this.props.type);
+	    classes.push(CLASS_ROOT + '--legend-' + this.state.legendPosition);
 	    if (this.props.vertical) {
-	      classes.push(CLASS_ROOT + "--vertical");
+	      classes.push(CLASS_ROOT + '--vertical');
 	    }
 	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
+	      classes.push(CLASS_ROOT + '--small');
 	    }
 	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
+	      classes.push(CLASS_ROOT + '--large');
 	    }
 	    if (this.state.series.length === 0) {
-	      classes.push(CLASS_ROOT + "--loading");
+	      classes.push(CLASS_ROOT + '--loading');
+	    } else if (this.state.series.length === 1) {
+	      classes.push(CLASS_ROOT + '--single');
+	    }
+	    if (this.state.activeIndex !== null) {
+	      classes.push(CLASS_ROOT + '--active');
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -11158,11 +13638,13 @@ var Grommet =
 
 	    var values = null;
 	    var thresholds = null;
-	    var activeIndicator = null;
+	    var singleIndicator = null;
 	    if ('arc' === this.props.type || 'circle' === this.props.type) {
 	      values = this._renderArcOrCircle(this.state.series);
 	      thresholds = this._renderArcOrCircle(this.state.thresholds);
-	      activeIndicator = this._renderActiveIndicator(this.state.series);
+	      if (this.state.series.length === 1) {
+	        singleIndicator = this._renderSingleIndicator(this.state.series);
+	      }
 	    } else if ('bar' === this.props.type) {
 	      values = this._renderBar(this.state.series);
 	      thresholds = this._renderBar(this.state.thresholds);
@@ -11170,58 +13652,68 @@ var Grommet =
 
 	    var minLabel = null;
 	    if (this.state.min.label) {
-	      minLabel = (
-	        React.createElement("div", {className: CLASS_ROOT + "__label-min"}, 
-	          this.state.min.label
-	        )
+	      minLabel = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__label-min' },
+	        this.state.min.label
 	      );
 	    }
 	    var maxLabel = null;
 	    if (this.state.max.label) {
-	      maxLabel = (
-	        React.createElement("div", {className: CLASS_ROOT + "__label-max"}, 
-	          this.state.max.label
-	        )
+	      maxLabel = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__label-max' },
+	        this.state.max.label
 	      );
 	    }
 
-	    var active = null;
-	    if (this.state.activeIndex >= 0) {
-	      active = this._renderActive();
-	    }
+	    var active = this._renderActive();
 
 	    var legend = null;
 	    if (this.props.legend) {
 	      legend = this._renderLegend();
 	    }
 
-	    return (
-	      React.createElement("div", {className: classes.join(' ')}, 
-	        React.createElement("div", {className: CLASS_ROOT + "__active-graphic"}, 
-	          React.createElement("div", {className: CLASS_ROOT + "__labeled-graphic"}, 
-	            React.createElement("svg", {className: CLASS_ROOT + "__graphic", 
-	              viewBox: "0 0 " + this.state.viewBoxWidth +
-	                " " + this.state.viewBoxHeight, 
-	              preserveAspectRatio: "xMidYMid meet"}, 
-	              React.createElement("g", {className: CLASS_ROOT + "__thresholds"}, 
-	                thresholds
-	              ), 
-	              React.createElement("g", {className: CLASS_ROOT + "__values"}, 
-	                values
-	              ), 
-	              activeIndicator
-	            ), 
-	            React.createElement("div", {className: CLASS_ROOT + "__labels-container"}, 
-	              React.createElement("div", {className: CLASS_ROOT + "__labels"}, 
-	                minLabel, 
-	                maxLabel
-	              )
+	    return React.createElement(
+	      'div',
+	      { className: classes.join(' ') },
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__active-graphic' },
+	        React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__labeled-graphic' },
+	          React.createElement(
+	            'svg',
+	            { className: CLASS_ROOT + '__graphic',
+	              viewBox: '0 0 ' + this.state.viewBoxWidth + ' ' + this.state.viewBoxHeight,
+	              preserveAspectRatio: 'xMidYMid meet' },
+	            React.createElement(
+	              'g',
+	              { className: CLASS_ROOT + '__thresholds' },
+	              thresholds
+	            ),
+	            React.createElement(
+	              'g',
+	              { className: CLASS_ROOT + '__values' },
+	              values
+	            ),
+	            singleIndicator
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: CLASS_ROOT + '__labels-container' },
+	            React.createElement(
+	              'div',
+	              { className: CLASS_ROOT + '__labels' },
+	              minLabel,
+	              maxLabel
 	            )
-	          ), 
-	          active
-	        ), 
-	        legend
-	      )
+	          )
+	        ),
+	        active
+	      ),
+	      legend
 	    );
 	  }
 
@@ -11229,58 +13721,66 @@ var Grommet =
 
 	module.exports = Meter;
 
-
 /***/ },
-/* 65 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Panel = React.createClass({displayName: "Panel",
+	var Panel = React.createClass({
+	  displayName: 'Panel',
 
 	  propTypes: {
 	    direction: React.PropTypes.string,
 	    index: React.PropTypes.oneOf([1, 2])
 	  },
 
-	  render: function() {
-	    var classes = ["panel"];
+	  render: function render() {
+	    var classes = ['panel'];
 	    if (this.props.direction === 'horizontal') {
-	      classes.push("panel--horizontal");
+	      classes.push('panel--horizontal');
 	    }
 	    if (this.props.index) {
-	      classes.push("panel--index-" + this.props.index);
+	      classes.push('panel--index-' + this.props.index);
 	    }
 
 	    var title = null;
 	    if (this.props.title) {
-	      title = (React.createElement("h2", {className: "panel__title"}, this.props.title));
+	      title = React.createElement(
+	        'h2',
+	        { className: 'panel__title' },
+	        this.props.title
+	      );
 	    }
 
-	    return (
-	      React.createElement("div", {className: classes.join(' ')}, 
-	        title, 
-	        this.props.children
-	      )
+	    return React.createElement(
+	      'div',
+	      { className: classes.join(' ') },
+	      title,
+	      this.props.children
 	    );
 	  }
 	});
 
 	module.exports = Panel;
 
-
 /***/ },
-/* 66 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var CLASS_ROOT = "radio-button";
+	var CLASS_ROOT = 'radio-button';
 
-	var RadioButton = React.createClass({displayName: "RadioButton",
+	var RadioButton = React.createClass({
+	  displayName: 'RadioButton',
 
 	  propTypes: {
 	    checked: React.PropTypes.bool,
@@ -11292,23 +13792,25 @@ var Grommet =
 	    value: React.PropTypes.string
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
-	    return (
-	      React.createElement("label", {className: classes.join(' ')}, 
-	        React.createElement("input", {className: CLASS_ROOT + "__input", 
-	          id: this.props.id, name: this.props.name, type: "radio", 
-	          checked: this.props.checked, 
-	          defaultChecked: this.props.defaultChecked, 
-	          value: this.props.value, 
-	          onChange: this.props.onChange}), 
-	        React.createElement("span", {className: CLASS_ROOT + "__control"}), 
-	        React.createElement("span", {className: CLASS_ROOT + "__label"}, 
-	          this.props.label
-	        )
+	    return React.createElement(
+	      'label',
+	      { className: classes.join(' ') },
+	      React.createElement('input', { className: CLASS_ROOT + '__input',
+	        id: this.props.id, name: this.props.name, type: 'radio',
+	        checked: this.props.checked,
+	        defaultChecked: this.props.defaultChecked,
+	        value: this.props.value,
+	        onChange: this.props.onChange }),
+	      React.createElement('span', { className: CLASS_ROOT + '__control' }),
+	      React.createElement(
+	        'span',
+	        { className: CLASS_ROOT + '__label' },
+	        this.props.label
 	      )
 	    );
 	  }
@@ -11317,117 +13819,119 @@ var Grommet =
 
 	module.exports = RadioButton;
 
-
 /***/ },
-/* 67 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
-	var ReactLayeredComponent = __webpack_require__(60);
-	var KeyboardAccelerators = __webpack_require__(61);
-	var Overlay = __webpack_require__(58);
-	var SearchIcon = __webpack_require__(68);
-	var IntlMixin = __webpack_require__(4);
+	var KeyboardAccelerators = __webpack_require__(85);
+	var Drop = __webpack_require__(105);
+	var SearchIcon = __webpack_require__(112);
+	var IntlMixin = __webpack_require__(3);
 
-	var CLASS_ROOT = "search";
+	var CLASS_ROOT = 'search';
 
-	var Search = React.createClass({displayName: "Search",
+	var Search = React.createClass({
+	  displayName: 'Search',
 
 	  propTypes: {
-	    align: React.PropTypes.oneOf(['left', 'right']),
 	    defaultValue: React.PropTypes.string,
+	    dropAlign: Drop.alignPropType,
 	    inline: React.PropTypes.bool,
 	    onChange: React.PropTypes.func,
 	    placeHolder: React.PropTypes.string,
-	    suggestions: React.PropTypes.arrayOf(React.PropTypes.string)
+	    suggestions: React.PropTypes.arrayOf(React.PropTypes.string),
+	    value: React.PropTypes.string
 	  },
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      align: 'left',
 	      inline: false,
-	      placeHolder: 'Search'
+	      placeHolder: 'Search',
+	      dropAlign: { top: 'top', left: 'left' }
 	    };
 	  },
 
-	  mixins: [ReactLayeredComponent, KeyboardAccelerators, Overlay, IntlMixin],
+	  mixins: [KeyboardAccelerators, IntlMixin],
 
-	  _onAddLayer: function (event) {
+	  _onAddDrop: function _onAddDrop(event) {
 	    event.preventDefault();
-	    this.setState({layer: true, activeSuggestionIndex: -1});
+	    this.setState({ dropActive: true, activeSuggestionIndex: -1 });
 	  },
 
-	  _onRemoveLayer: function () {
-	    this.setState({layer: false});
+	  _onRemoveDrop: function _onRemoveDrop() {
+	    this.setState({ dropActive: false });
 	  },
 
-	  _onFocusControl: function () {
+	  _onFocusControl: function _onFocusControl() {
 	    this.setState({
 	      controlFocused: true,
-	      layer: true,
+	      dropActive: true,
 	      activeSuggestionIndex: -1
 	    });
 	  },
 
-	  _onBlurControl: function () {
-	    this.setState({controlFocused: false});
+	  _onBlurControl: function _onBlurControl() {
+	    this.setState({ controlFocused: false });
 	  },
 
-	  _onFocusInput: function () {
+	  _onFocusInput: function _onFocusInput() {
 	    this.refs.input.getDOMNode().select();
 	    this.setState({
-	      layer: (! this.state.inline || this.props.suggestions),
+	      dropActive: !this.state.inline || this.props.suggestions,
 	      activeSuggestionIndex: -1
 	    });
 	  },
 
-	  _onBlurInput: function () {
-	    //this.setState({layer: false});
-	  },
+	  _onBlurInput: function _onBlurInput() {},
 
-	  _onChangeInput: function (event) {
-	    this.setState({activeSuggestionIndex: -1});
+	  _onChangeInput: function _onChangeInput(event) {
+	    this.setState({ activeSuggestionIndex: -1 });
 	    if (this.props.onChange) {
 	      this.props.onChange(event.target.value);
 	    }
 	  },
 
-	  _onNextSuggestion: function () {
+	  _onNextSuggestion: function _onNextSuggestion() {
 	    var index = this.state.activeSuggestionIndex;
 	    index = Math.min(index + 1, this.props.suggestions.length - 1);
-	    this.setState({activeSuggestionIndex: index});
+	    this.setState({ activeSuggestionIndex: index });
 	  },
 
-	  _onPreviousSuggestion: function () {
+	  _onPreviousSuggestion: function _onPreviousSuggestion() {
 	    var index = this.state.activeSuggestionIndex;
 	    index = Math.max(index - 1, 0);
-	    this.setState({activeSuggestionIndex: index});
+	    this.setState({ activeSuggestionIndex: index });
 	  },
 
-	  _onEnter: function () {
+	  _onEnter: function _onEnter() {
 	    if (this.state.activeSuggestionIndex >= 0) {
 	      var text = this.props.suggestions[this.state.activeSuggestionIndex];
 	      if (this.props.onChange) {
 	        this.props.onChange(text);
 	      }
 	    }
-	    this._onRemoveLayer();
+	    this._onRemoveDrop();
 	  },
 
-	  _onClickSuggestion: function (item) {
+	  _onClickSuggestion: function _onClickSuggestion(item) {
 	    if (this.props.onChange) {
 	      this.props.onChange(item);
 	    }
-	    this._onRemoveLayer();
+	    this._onRemoveDrop();
 	  },
 
-	  _onSink: function (event) {
+	  _onSink: function _onSink(event) {
 	    event.stopPropagation();
 	    event.nativeEvent.stopImmediatePropagation();
 	  },
 
+	  /*
 	  _layout: function () {
 	    if (window.innerWidth < 600) {
 	      this.setState({inline: false});
@@ -11435,126 +13939,165 @@ var Grommet =
 	      this.setState({inline: this.props.inline});
 	    }
 	  },
-
-	  _onResize: function () {
+	   _onResize: function () {
 	    // debounce
 	    clearTimeout(this._resizeTimer);
 	    this._resizeTimer = setTimeout(this._layout, 50);
 	  },
+	  */
 
-	  getInitialState: function () {
+	  getInitialState: function getInitialState() {
 	    return {
 	      align: 'left',
 	      controlFocused: false,
 	      inline: this.props.inline,
-	      layer: false,
+	      dropActive: false,
 	      activeSuggestionIndex: -1
 	    };
 	  },
 
+	  /*
 	  componentDidMount: function () {
 	    window.addEventListener('resize', this._onResize);
 	    this._layout();
 	  },
+	  */
 
-	  componentDidUpdate: function (prevProps, prevState) {
+	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 
 	    // Set up keyboard listeners appropriate to the current state.
 
 	    var activeKeyboardHandlers = {
-	      esc: this._onRemoveLayer,
-	      tab: this._onRemoveLayer,
+	      esc: this._onRemoveDrop,
+	      tab: this._onRemoveDrop,
 	      up: this._onPreviousSuggestion,
 	      down: this._onNextSuggestion,
 	      enter: this._onEnter
 	    };
 	    var focusedKeyboardHandlers = {
-	      space: this._onAddLayer
+	      space: this._onAddDrop
 	    };
 
 	    // the order here is important, need to turn off keys before turning on
 
-	    if (! this.state.controlFocused && prevState.controlFocused) {
+	    if (!this.state.controlFocused && prevState.controlFocused) {
 	      this.stopListeningToKeyboard(focusedKeyboardHandlers);
 	    }
 
-	    if (! this.state.layer && prevState.layer) {
-	      document.removeEventListener('click', this._onRemoveLayer);
+	    if (!this.state.dropActive && prevState.dropActive) {
+	      document.removeEventListener('click', this._onRemoveDrop);
 	      this.stopListeningToKeyboard(activeKeyboardHandlers);
-	      this.stopOverlay();
+	      if (this._drop) {
+	        this._drop.remove();
+	        this._drop = null;
+	      }
 	    }
 
-	    if (this.state.controlFocused && ! prevState.controlFocused) {
+	    if (this.state.controlFocused && !prevState.controlFocused) {
 	      this.startListeningToKeyboard(focusedKeyboardHandlers);
 	    }
 
-	    if (this.state.layer && ! prevState.layer) {
-	      document.addEventListener('click', this._onRemoveLayer);
+	    if (this.state.dropActive && !prevState.dropActive) {
+	      document.addEventListener('click', this._onRemoveDrop);
 	      this.startListeningToKeyboard(activeKeyboardHandlers);
 
-	      var baseElement =
-	        (this.refs.control ? this.refs.control : this.refs.input).getDOMNode();
-	      var layerElement = document.getElementById('search-layer');
-	      var layerControlElement = layerElement.querySelectorAll('.search__control')[0];
-	      var layerControlIconElement = layerElement.querySelectorAll('svg')[0];
-	      var inputElement = layerElement.querySelectorAll('.search__input')[0];
+	      var baseElement = (this.refs.control ? this.refs.control : this.refs.input).getDOMNode();
+	      this._drop = Drop.add(baseElement, this._renderDrop(), this.props.dropAlign);
 
-	      // give input element the same line height and font size as the control
-	      var fontSize = window.getComputedStyle(baseElement).fontSize;
-	      inputElement.style.fontSize = fontSize;
-	      var height = baseElement.clientHeight;
-	      if (layerControlIconElement && height <= layerControlIconElement.clientHeight) {
-	        // adjust to align with underlying control when control uses all height
-	        layerControlElement.style.marginTop = '-2px';
-	      }
-	      inputElement.style.height = height + 'px';
-	      if (layerControlElement) {
-	        layerControlElement.style.height = height + 'px';
-	        layerControlElement.style.lineHeight = height + 'px';
-	      }
-
-	      this.startOverlay(baseElement, layerElement, this.props.align);
-	      inputElement.focus();
+	      document.getElementById('search-drop-input').focus();
 	    }
 	  },
 
-	  componentWillUnmount: function () {
-	    document.removeEventListener('click', this._onRemoveLayer);
-	    window.removeEventListener('resize', this._onResize);
+	  componentWillUnmount: function componentWillUnmount() {
+	    document.removeEventListener('click', this._onRemoveDrop);
+	    //window.removeEventListener('resize', this._onResize);
 	  },
 
-	  focus: function () {
+	  focus: function focus() {
 	    var ref = this.refs.input || this.refs.control;
 	    if (ref) {
 	      ref.getDOMNode().focus();
 	    }
 	  },
 
-	  _createControl: function () {
-	    var controlClassName = CLASS_ROOT + "__control";
-	    return (
-	      React.createElement("div", {className: controlClassName}, 
-	        React.createElement(SearchIcon, null)
-	      )
+	  _createControl: function _createControl() {
+	    var controlClassName = CLASS_ROOT + '__control';
+	    return React.createElement(
+	      'div',
+	      { className: controlClassName },
+	      React.createElement(SearchIcon, null)
 	    );
 	  },
 
-	  _classes: function (prefix) {
+	  _classes: function _classes(prefix) {
 	    var classes = [prefix];
 
 	    if (this.state.inline) {
-	      classes.push(prefix + "--inline");
+	      classes.push(prefix + '--inline');
 	    } else {
-	      classes.push(prefix + "--controlled");
-	    }
-	    if (this.props.align) {
-	      classes.push(prefix + "--align-" + this.props.align);
+	      classes.push(prefix + '--controlled');
 	    }
 
 	    return classes;
 	  },
 
-	  render: function () {
+	  _renderDrop: function _renderDrop() {
+	    var classes = this._classes(CLASS_ROOT + '__drop');
+
+	    var suggestions = null;
+	    if (this.props.suggestions) {
+	      suggestions = this.props.suggestions.map(function (item, index) {
+	        var classes = [CLASS_ROOT + '__suggestion'];
+	        if (index === this.state.activeSuggestionIndex) {
+	          classes.push(CLASS_ROOT + '__suggestion--active');
+	        }
+	        return React.createElement(
+	          'div',
+	          { key: item,
+	            className: classes.join(' '),
+	            onClick: this._onClickSuggestion.bind(this, item) },
+	          item
+	        );
+	      }, this);
+	    }
+
+	    var contents = React.createElement(
+	      'div',
+	      { className: CLASS_ROOT + '__drop-contents', onClick: this._onSink },
+	      React.createElement('input', { id: 'search-drop-input', type: 'search',
+	        defaultValue: this.props.defaultValue,
+	        value: this.props.value,
+	        className: CLASS_ROOT + '__input',
+	        onChange: this._onChangeInput }),
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__suggestions' },
+	        suggestions
+	      )
+	    );
+
+	    if (!this.state.inline) {
+	      var control = this._createControl();
+	      var rightAlign = !this.props.dropAlign.left;
+	      var first = rightAlign ? contents : control;
+	      var second = rightAlign ? control : contents;
+
+	      contents = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__drop-header' },
+	        first,
+	        second
+	      );
+	    }
+
+	    return React.createElement(
+	      'div',
+	      { id: 'search-drop', className: classes.join(' ') },
+	      contents
+	    );
+	  },
+
+	  render: function render() {
 
 	    var classes = this._classes(CLASS_ROOT);
 	    if (this.props.className) {
@@ -11565,91 +14108,32 @@ var Grommet =
 
 	      var readOnly = this.props.suggestions ? true : false;
 
-	      return (
-	        React.createElement("div", {className: classes.join(' ')}, 
-	          React.createElement("input", {ref: "input", type: "search", 
-	            placeholder: this.getGrommetIntlMessage(this.props.placeHolder), 
-	            value: this.props.defaultValue, 
-	            className: CLASS_ROOT + "__input", 
-	            readOnly: readOnly, 
-	            onFocus: this._onFocusInput, 
-	            onBlur: this._onBlurInput, 
-	            onChange: this._onChangeInput})
-	        )
+	      return React.createElement(
+	        'div',
+	        { className: classes.join(' ') },
+	        React.createElement('input', { ref: 'input', type: 'search',
+	          placeholder: this.getGrommetIntlMessage(this.props.placeHolder),
+	          defaultValue: this.props.defaultValue,
+	          value: this.props.value,
+	          className: CLASS_ROOT + '__input',
+	          readOnly: readOnly,
+	          onFocus: this._onFocusInput,
+	          onBlur: this._onBlurInput,
+	          onChange: this._onChangeInput })
 	      );
-
 	    } else {
 
 	      var controlContents = this._createControl();
 
-	      return (
-	        React.createElement("div", {ref: "control", className: classes.join(' '), 
-	          tabIndex: "0", 
-	          onClick: this._onAddLayer, 
-	          onFocus: this._onFocusControl, 
-	          onBlur: this._onBlurControl}, 
-	          controlContents
-	        )
+	      return React.createElement(
+	        'div',
+	        { ref: 'control', className: classes.join(' '),
+	          tabIndex: '0',
+	          onClick: this._onAddDrop,
+	          onFocus: this._onFocusControl,
+	          onBlur: this._onBlurControl },
+	        controlContents
 	      );
-	    }
-	  },
-
-	  renderLayer: function() {
-	    if (this.state.layer) {
-
-	      var classes = this._classes(CLASS_ROOT + "__layer");
-
-	      var suggestions = null;
-	      if (this.props.suggestions) {
-	        suggestions = this.props.suggestions.map(function (item, index) {
-	          var classes = [CLASS_ROOT + "__suggestion"];
-	          if (index === this.state.activeSuggestionIndex) {
-	            classes.push(CLASS_ROOT + "__suggestion--active");
-	          }
-	          return (
-	            React.createElement("div", {key: item, 
-	              className: classes.join(' '), 
-	              onClick: this._onClickSuggestion.bind(this, item)}, 
-	              item
-	            )
-	          );
-	        }, this);
-	      }
-
-	      var contents = (
-	        React.createElement("div", {className: CLASS_ROOT + "__layer-contents", onClick: this._onSink}, 
-	          React.createElement("input", {type: "search", 
-	            defaultValue: this.props.defaultValue, 
-	            className: CLASS_ROOT + "__input", 
-	            onChange: this._onChangeInput}), 
-	          React.createElement("div", {className: CLASS_ROOT + "__suggestions"}, 
-	            suggestions
-	          )
-	        )
-	      );
-
-	      if (! this.state.inline) {
-	        var control = this._createControl();
-	        var rightAlign = ('right' === this.props.align);
-	        var first = rightAlign ? contents : control;
-	        var second = rightAlign ? control : contents;
-
-	        contents = (
-	          React.createElement("div", {className: CLASS_ROOT + "__layer-header"}, 
-	            first, 
-	            second
-	          )
-	        );
-	      }
-
-	      return (
-	        React.createElement("div", {id: "search-layer", className: classes.join(' ')}, 
-	          contents
-	        )
-	      );
-
-	    } else { // no layer
-	      return (React.createElement("span", null));
 	    }
 	  }
 
@@ -11657,28 +14141,34 @@ var Grommet =
 
 	module.exports = Search;
 
+	//this.setState({drop: false});
 
 /***/ },
-/* 68 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Search = React.createClass({displayName: "Search",
+	var Search = React.createClass({
+	  displayName: 'Search',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-search';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("circle", {strokeWidth: "2", cx: "21.5", cy: "21.5", r: "9"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "35.5", y1: "35.5", x2: "27.8", y2: "27.8"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('circle', { strokeWidth: '2', cx: '21.5', cy: '21.5', r: '9' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '35.5', y1: '35.5', x2: '27.8', y2: '27.8' })
 	      )
 	    );
 	  }
@@ -11687,163 +14177,159 @@ var Grommet =
 
 	module.exports = Search;
 
-
 /***/ },
-/* 69 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
-	var ReactLayeredComponent = __webpack_require__(60);
-	var KeyboardAccelerators = __webpack_require__(61);
-	var Overlay = __webpack_require__(58);
-	var SearchIcon = __webpack_require__(68);
+	var KeyboardAccelerators = __webpack_require__(85);
+	var Drop = __webpack_require__(105);
+	var SearchIcon = __webpack_require__(112);
 
-	var CLASS_ROOT = "search-input";
+	var CLASS_ROOT = 'search-input';
 
-	var SearchInput = React.createClass({displayName: "SearchInput",
+	var SearchInput = React.createClass({
+	  displayName: 'SearchInput',
 
 	  propTypes: {
-	    defaultValue: React.PropTypes.oneOfType([
-	      React.PropTypes.shape({
-	        label: React.PropTypes.string,
-	        value: React.PropTypes.string
-	      }),
-	      React.PropTypes.string
-	    ]),
+	    defaultValue: React.PropTypes.oneOfType([React.PropTypes.shape({
+	      label: React.PropTypes.string,
+	      value: React.PropTypes.string
+	    }), React.PropTypes.string]),
 	    id: React.PropTypes.string,
 	    name: React.PropTypes.string,
 	    onChange: React.PropTypes.func,
-	    onSearch: React.PropTypes.func,
-	    suggestions: React.PropTypes.arrayOf(
-	      React.PropTypes.oneOfType([
-	        React.PropTypes.shape({
-	          label: React.PropTypes.string,
-	          value: React.PropTypes.string
-	        }),
-	        React.PropTypes.string
-	      ])
-	    ),
-	    value: React.PropTypes.oneOfType([
-	      React.PropTypes.shape({
-	        label: React.PropTypes.string,
-	        value: React.PropTypes.string
-	      }),
-	      React.PropTypes.string
-	    ])
+	    placeHolder: React.PropTypes.string,
+	    suggestions: React.PropTypes.arrayOf(React.PropTypes.oneOfType([React.PropTypes.shape({
+	      label: React.PropTypes.string,
+	      value: React.PropTypes.string
+	    }), React.PropTypes.string])),
+	    value: React.PropTypes.oneOfType([React.PropTypes.shape({
+	      label: React.PropTypes.string,
+	      value: React.PropTypes.string
+	    }), React.PropTypes.string])
 	  },
 
-	  mixins: [ReactLayeredComponent, KeyboardAccelerators, Overlay],
+	  mixins: [KeyboardAccelerators],
 
-	  _onInputChange: function (event) {
-	    this.props.onChange(event.target.value);
+	  _onInputChange: function _onInputChange(event) {
+	    this.setState({ dropActive: true, activeSuggestionIndex: -1 });
+	    this.props.onChange(event.target.value, false);
 	  },
 
-	  _onOpen: function (event) {
+	  _onAddDrop: function _onAddDrop(event) {
 	    event.preventDefault();
-	    this.setState({active: true, activeSuggestionIndex: -1});
+	    this.setState({ dropActive: true, activeSuggestionIndex: -1 });
 	  },
 
-	  _onClose: function () {
-	    this.setState({active: false});
+	  _onRemoveDrop: function _onRemoveDrop() {
+	    this.setState({ dropActive: false });
 	  },
 
-	  _onSearchChange: function (event) {
-	    this.setState({activeSuggestionIndex: -1});
-	    this.props.onSearch(event.target.value);
-	  },
-
-	  _onNextSuggestion: function () {
+	  _onNextSuggestion: function _onNextSuggestion() {
 	    var index = this.state.activeSuggestionIndex;
 	    index = Math.min(index + 1, this.props.suggestions.length - 1);
-	    this.setState({activeSuggestionIndex: index});
+	    this.setState({ activeSuggestionIndex: index });
 	  },
 
-	  _onPreviousSuggestion: function () {
+	  _onPreviousSuggestion: function _onPreviousSuggestion() {
 	    var index = this.state.activeSuggestionIndex;
 	    index = Math.max(index - 1, 0);
-	    this.setState({activeSuggestionIndex: index});
+	    this.setState({ activeSuggestionIndex: index });
 	  },
 
-	  _onEnter: function () {
-	    this.setState({active: false});
-	    this._activation(false);
+	  _onEnter: function _onEnter() {
+	    this.setState({ dropActive: false });
 	    if (this.state.activeSuggestionIndex >= 0) {
 	      var suggestion = this.props.suggestions[this.state.activeSuggestionIndex];
-	      this.setState({value: suggestion});
-	      this.props.onChange(suggestion);
+	      this.setState({ value: suggestion });
+	      this.props.onChange(suggestion, true);
 	    }
 	  },
 
-	  _onClickSuggestion: function (suggestion) {
-	    this.setState({value: suggestion});
-	    this._activation(false);
-	    this.props.onChange(suggestion);
+	  _onClickSuggestion: function _onClickSuggestion(suggestion) {
+	    this.setState({ value: suggestion, dropActive: false });
+	    this.props.onChange(suggestion, true);
 	  },
 
-	  _activation: function (active) {
-
-	    var listeners = {
-	      esc: this._onClose,
-	      tab: this._onClose,
-	      up: this._onPreviousSuggestion,
-	      down: this._onNextSuggestion,
-	      enter: this._onEnter
-	    };
-
-	    if (active) {
-
-	      document.addEventListener('click', this._onClose);
-	      this.startListeningToKeyboard(listeners);
-
-	      var element = this.refs.component.getDOMNode();
-	      var layerElement = document.getElementById(CLASS_ROOT + '-layer');
-	      this.startOverlay(element, layerElement, 'below');
-
-	      // focus on search
-	      var searchInputElement = layerElement.querySelectorAll('input')[0];
-	      searchInputElement.focus();
-
-	    } else {
-
-	      document.removeEventListener('click', this._onClose);
-	      this.stopListeningToKeyboard(listeners);
-	      this.stopOverlay();
-
-	    }
+	  _onFocus: function _onFocus() {
+	    this.refs.input.getDOMNode().select();
+	    this.setState({
+	      focused: true,
+	      dropActive: false,
+	      activeSuggestionIndex: -1
+	    });
 	  },
 
-	  getInitialState: function () {
+	  _onBlur: function _onBlur() {
+	    this.setState({
+	      focused: false,
+	      dropActive: false,
+	      activeSuggestionIndex: -1
+	    });
+	  },
+
+	  getInitialState: function getInitialState() {
 	    return {
-	      active: false,
+	      dropActive: false,
 	      defaultValue: this.props.defaultValue,
 	      value: this.props.value,
 	      activeSuggestionIndex: -1
 	    };
 	  },
 
-	  componentDidMount: function () {
-	    if (this.state.active) {
-	      this._activation(this.state.active);
-	    }
-	  },
-
-	  componentDidUpdate: function (prevProps, prevState) {
+	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 	    // Set up keyboard listeners appropriate to the current state.
-	    if (! this.state.active && prevState.active) {
-	      this._activation(this.state.active);
+
+	    var activeKeyboardHandlers = {
+	      esc: this._onRemoveDrop,
+	      tab: this._onRemoveDrop,
+	      up: this._onPreviousSuggestion,
+	      down: this._onNextSuggestion,
+	      enter: this._onEnter
+	    };
+	    var focusedKeyboardHandlers = {
+	      down: this._onAddDrop
+	    };
+
+	    // the order here is important, need to turn off keys before turning on
+
+	    if (!this.state.focused && prevState.focused) {
+	      this.stopListeningToKeyboard(focusedKeyboardHandlers);
 	    }
-	    if (this.state.active && ! prevState.active) {
-	      this._activation(this.state.active);
+
+	    if (!this.state.dropActive && prevState.dropActive) {
+	      document.removeEventListener('click', this._onRemoveDrop);
+	      this.stopListeningToKeyboard(activeKeyboardHandlers);
+	      if (this._drop) {
+	        this._drop.remove();
+	        this._drop = null;
+	      }
+	    }
+
+	    if (this.state.focused && !prevState.focused) {
+	      this.startListeningToKeyboard(focusedKeyboardHandlers);
+	    }
+
+	    if (this.state.dropActive && !prevState.dropActive) {
+	      document.addEventListener('click', this._onRemoveDrop);
+	      this.startListeningToKeyboard(activeKeyboardHandlers);
+
+	      this._drop = Drop.add(this.refs.component.getDOMNode(), this._renderDrop(), { top: 'bottom', left: 'left' });
+	    } else if (this.state.dropActive && prevState.dropActive) {
+	      this._drop.render(this._renderDrop());
 	    }
 	  },
 
-	  componentWillUnmount: function () {
-	    this._activation(false);
+	  componentWillUnmount: function componentWillUnmount() {
+	    document.removeEventListener('click', this._onRemoveDrop);
 	  },
 
-	  _valueText: function (value) {
+	  _valueText: function _valueText(value) {
 	    var text = '';
 	    if (value) {
 	      if ('string' === typeof value) {
@@ -11855,136 +14341,97 @@ var Grommet =
 	    return text;
 	  },
 
-	  render: function() {
+	  _renderDrop: function _renderDrop() {
+	    var suggestions = null;
+	    if (this.props.suggestions) {
+	      suggestions = this.props.suggestions.map(function (suggestion, index) {
+	        var classes = [CLASS_ROOT + '__suggestion'];
+	        if (index === this.state.activeSuggestionIndex) {
+	          classes.push(CLASS_ROOT + '__suggestion--active');
+	        }
+	        return React.createElement(
+	          'li',
+	          { key: this._valueText(suggestion),
+	            className: classes.join(' '),
+	            onClick: this._onClickSuggestion.bind(this, suggestion) },
+	          this._valueText(suggestion)
+	        );
+	      }, this);
+	    }
+
+	    return React.createElement(
+	      'ol',
+	      { className: CLASS_ROOT + '__suggestions', onClick: this._onRemoveDrop },
+	      suggestions
+	    );
+	  },
+
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.state.active) {
-	      classes.push(CLASS_ROOT + "--active");
+	      classes.push(CLASS_ROOT + '--active');
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 
-	    return (
-	      React.createElement("div", {ref: "component", className: classes.join(' ')}, 
-	        React.createElement("input", {className: CLASS_ROOT + "__input", 
-	          id: this.props.id, name: this.props.name, 
-	          value: this._valueText(this.props.value), 
-	          defaultValue: this._valueText(this.props.defaultValue), 
-	          onChange: this._onInputChange}), 
-	        React.createElement("div", {className: CLASS_ROOT + "__control", onClick: this._onOpen}, 
-	          React.createElement(SearchIcon, null)
-	        )
+	    return React.createElement(
+	      'div',
+	      { ref: 'component', className: classes.join(' ') },
+	      React.createElement('input', { ref: 'input', className: CLASS_ROOT + '__input',
+	        id: this.props.id, name: this.props.name,
+	        value: this._valueText(this.props.value),
+	        defaultValue: this._valueText(this.props.defaultValue),
+	        placeholder: this.props.placeHolder,
+	        onChange: this._onInputChange,
+	        onFocus: this._onFocus,
+	        onBlur: this._onBlur }),
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__control', onClick: this._onAddDrop },
+	        React.createElement(SearchIcon, null)
 	      )
 	    );
-	  },
-
-	  renderLayer: function() {
-	    if (this.state.active) {
-
-	      var suggestions = null;
-	      if (this.props.suggestions) {
-	        suggestions = this.props.suggestions.map(function (suggestion, index) {
-	          var classes = [CLASS_ROOT + "__layer-suggestion"];
-	          if (index === this.state.activeSuggestionIndex) {
-	            classes.push(CLASS_ROOT + "__layer-suggestion--active");
-	          }
-	          return (
-	            React.createElement("div", {key: this._valueText(suggestion), 
-	              className: classes.join(' '), 
-	              onClick: this._onClickSuggestion.bind(this, suggestion)}, 
-	              this._valueText(suggestion)
-	            )
-	          );
-	        }, this);
-	      }
-
-	      return (
-	        React.createElement("div", {id: CLASS_ROOT + "-layer", className: CLASS_ROOT + "__layer", 
-	          onClick: this._onClose}, 
-	          React.createElement("input", {type: "search", 
-	            defaultValue: "", 
-	            placeholder: "Search", 
-	            className: CLASS_ROOT + "__layer-input", 
-	            onChange: this._onSearchChange}), 
-	          React.createElement("div", {className: CLASS_ROOT + "__layer-suggestions"}, 
-	            suggestions
-	          )
-	        )
-	      );
-	    } else {
-	      return (React.createElement("span", null));
-	    }
 	  }
 
 	});
 
 	module.exports = SearchInput;
 
-
 /***/ },
-/* 70 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
+	var Box = __webpack_require__(84);
 
-	var CLASS_ROOT = "section";
+	var CLASS_ROOT = 'section';
 
-	var Section = React.createClass({displayName: "Section",
+	var Section = React.createClass({
+	  displayName: 'Section',
 
-	  propTypes: {
-	    centered: React.PropTypes.bool,
-	    compact: React.PropTypes.bool,
-	    colorIndex: React.PropTypes.string,
-	    direction: React.PropTypes.oneOf(['up', 'down', 'left', 'right']),
-	    flush: React.PropTypes.bool,
-	    texture: React.PropTypes.string
+	  propTypes: Box.propTypes,
+
+	  getDefaultProps: function getDefaultProps() {
+	    return { pad: { vertical: 'medium' } };
 	  },
 
-	  getDefaultProps: function () {
-	    return {
-	      colored: false,
-	      direction: 'down',
-	      flush: true,
-	      small: false
-	    };
-	  },
-
-	  render: function() {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
-	    var contentClasses = [CLASS_ROOT + "__content"];
-
-	    if (this.props.compact) {
-	      classes.push(CLASS_ROOT + "--compact");
-	    }
-	    if (this.props.centered) {
-	      classes.push(CLASS_ROOT + "--centered");
-	    }
-	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
-	    }
-	    if (this.props.direction) {
-	      classes.push(CLASS_ROOT + "--" + this.props.direction);
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("background-color-index-" + this.props.colorIndex);
-	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 
-	    var style = {};
-	    if (this.props.texture) {
-	      style.backgroundImage = this.props.texture;
-	    }
-
-	    return (
-	      React.createElement("div", {className: classes.join(' '), style: style}, 
-	        React.createElement("div", {className: contentClasses.join(' ')}, 
-	          this.props.children
-	        )
-	      )
+	    return React.createElement(
+	      Box,
+	      _extends({ tag: 'section' }, this.props, { className: classes.join(' ') }),
+	      this.props.children
 	    );
 	  }
 
@@ -11992,20 +14439,22 @@ var Grommet =
 
 	module.exports = Section;
 
-
 /***/ },
-/* 71 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
-	var SpinningIcon = __webpack_require__(72);
-	var InfiniteScroll = __webpack_require__(73);
+	var SpinningIcon = __webpack_require__(101);
+	var InfiniteScroll = __webpack_require__(99);
 
-	var CLASS_ROOT = "table";
+	var CLASS_ROOT = 'table';
 
-	var Table = React.createClass({displayName: "Table",
+	var Table = React.createClass({
+	  displayName: 'Table',
 
 	  propTypes: {
 	    selection: React.PropTypes.number,
@@ -12016,7 +14465,7 @@ var Grommet =
 
 	  mixins: [InfiniteScroll],
 
-	  getDefaultProps: function () {
+	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      selection: null,
 	      scrollable: false,
@@ -12024,39 +14473,37 @@ var Grommet =
 	    };
 	  },
 
-	  _clearSelection: function () {
-	    var rows = this.refs.table.getDOMNode()
-	      .querySelectorAll("." + CLASS_ROOT + "__row--selected");
+	  _clearSelection: function _clearSelection() {
+	    var rows = this.refs.table.getDOMNode().querySelectorAll('.' + CLASS_ROOT + '__row--selected');
 	    for (var i = 0; i < rows.length; i++) {
-	      rows[i].classList.remove(CLASS_ROOT + "__row--selected");
+	      rows[i].classList.remove(CLASS_ROOT + '__row--selected');
 	    }
 	  },
 
-	  _markSelection: function () {
+	  _markSelection: function _markSelection() {
 	    this._clearSelection();
 	    if (null !== this.state.selection) {
 	      var tbody = this.refs.table.getDOMNode().querySelectorAll('tbody')[0];
-	      tbody.childNodes[this.state.selection].classList.
-	        add(CLASS_ROOT + "__row--selected");
+	      tbody.childNodes[this.state.selection].classList.add(CLASS_ROOT + '__row--selected');
 	    }
 	  },
 
-	  _onClick: function (event) {
+	  _onClick: function _onClick(event) {
 	    var element = event.target;
 	    while (element.nodeName !== 'TR') {
 	      element = element.parentNode;
 	    }
 	    if (element && element.parentNode.nodeName === 'TBODY') {
 	      this._clearSelection();
-	      element.classList.add(CLASS_ROOT + "__row--selected");
+	      element.classList.add(CLASS_ROOT + '__row--selected');
 	    }
 	  },
 
-	  _onResize: function () {
+	  _onResize: function _onResize() {
 	    this._alignMirror();
 	  },
 
-	  _buildMirror: function () {
+	  _buildMirror: function _buildMirror() {
 	    var tableElement = this.refs.table.getDOMNode();
 	    var cells = tableElement.querySelectorAll('thead tr th');
 	    var mirrorElement = this.refs.mirror.getDOMNode();
@@ -12066,7 +14513,7 @@ var Grommet =
 	    }
 	  },
 
-	  _alignMirror: function () {
+	  _alignMirror: function _alignMirror() {
 	    var tableElement = this.refs.table.getDOMNode();
 	    var cells = tableElement.querySelectorAll('thead tr th');
 	    var mirrorElement = this.refs.mirror.getDOMNode();
@@ -12085,11 +14532,11 @@ var Grommet =
 	    mirrorElement.style.height = '' + height + 'px';
 	  },
 
-	  getInitialState: function () {
-	    return {selection: this.props.selection};
+	  getInitialState: function getInitialState() {
+	    return { selection: this.props.selection };
 	  },
 
-	  componentDidMount: function () {
+	  componentDidMount: function componentDidMount() {
 	    this._markSelection();
 	    if (this.props.scrollable) {
 	      this._buildMirror();
@@ -12101,13 +14548,13 @@ var Grommet =
 	    window.addEventListener('resize', this._onResize);
 	  },
 
-	  componentWillReceiveProps: function (newProps) {
+	  componentWillReceiveProps: function componentWillReceiveProps(newProps) {
 	    if (newProps.hasOwnProperty('selection')) {
-	      this.setState({selection: newProps.selection});
+	      this.setState({ selection: newProps.selection });
 	    }
 	  },
 
-	  componentDidUpdate: function (prevProps, prevState) {
+	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 	    if (this.state.selection !== prevState.selection) {
 	      this._markSelection();
 	    }
@@ -12120,20 +14567,20 @@ var Grommet =
 	    }
 	  },
 
-	  componentWillUnmount: function () {
+	  componentWillUnmount: function componentWillUnmount() {
 	    if (this.props.onMore) {
 	      this.stopListeningForScroll();
 	    }
 	    window.removeEventListener('resize', this._onResize);
 	  },
 
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.selectable) {
-	      classes.push(CLASS_ROOT + "--selectable");
+	      classes.push(CLASS_ROOT + '--selectable');
 	    }
 	    if (this.props.scrollable) {
-	      classes.push(CLASS_ROOT + "--scrollable");
+	      classes.push(CLASS_ROOT + '--scrollable');
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -12141,32 +14588,36 @@ var Grommet =
 
 	    var mirror = null;
 	    if (this.props.scrollable) {
-	      mirror = (
-	        React.createElement("table", {ref: "mirror", className: CLASS_ROOT + "__mirror"}, 
-	          React.createElement("thead", null, 
-	            React.createElement("tr", null)
-	          )
+	      mirror = React.createElement(
+	        'table',
+	        { ref: 'mirror', className: CLASS_ROOT + '__mirror' },
+	        React.createElement(
+	          'thead',
+	          null,
+	          React.createElement('tr', null)
 	        )
 	      );
 	    }
 
 	    var more = null;
 	    if (this.props.onMore) {
-	      more = (
-	        React.createElement("div", {ref: "more", className: CLASS_ROOT + "__more"}, 
-	          React.createElement(SpinningIcon, null)
-	        )
+	      more = React.createElement(
+	        'div',
+	        { ref: 'more', className: CLASS_ROOT + '__more' },
+	        React.createElement(SpinningIcon, null)
 	      );
 	    }
 
-	    return (
-	      React.createElement("div", {ref: "container", className: classes.join(' ')}, 
-	        mirror, 
-	        React.createElement("table", {ref: "table", className: CLASS_ROOT + "__table", onClick: this._onClick}, 
-	          this.props.children
-	        ), 
-	        more
-	      )
+	    return React.createElement(
+	      'div',
+	      { ref: 'container', className: classes.join(' ') },
+	      mirror,
+	      React.createElement(
+	        'table',
+	        { ref: 'table', className: CLASS_ROOT + '__table', onClick: this._onClick },
+	        this.props.children
+	      ),
+	      more
 	    );
 	  }
 
@@ -12174,112 +14625,22 @@ var Grommet =
 
 	module.exports = Table;
 
-
 /***/ },
-/* 72 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	var React = __webpack_require__(2);
-
-	var CLASS_ROOT = "icon-spinning";
-
-	var Spinning = React.createClass({displayName: "Spinning",
-
-	  render: function() {
-	    var classes = [CLASS_ROOT];
-	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-	    return (
-	      React.createElement("svg", {className: classes.join(' '), viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("circle", {stroke: "#ddd", strokeWidth: "4", strokeDasharray: "24px 8px", fill: "none", cx: "24", cy: "24", r: "20"}), 
-	        React.createElement("circle", {stroke: "#333", strokeWidth: "4", strokeDasharray: "24px 104px", fill: "none", cx: "24", cy: "24", r: "20"})
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Spinning;
-
-
-/***/ },
-/* 73 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
-
-	var DOM = __webpack_require__(59);
-
-	var SCROLL_MORE_DELAY = 2000; // when the user scrolls
-	var SCROLL_MORE_INITIAL_DELAY = 200; // when we start out at the bottom already
-
-	var InfiniteScroll = {
-
-	  _infiniteScroll: {
-	    indicatorElement: null,
-	    scrollParent: null,
-	    onEnd: null
-	  },
-
-	  _onScroll: function () {
-	    // delay a bit to ride out quick users
-	    clearTimeout(this._infiniteScroll.scrollTimer);
-	    this._infiniteScroll.scrollTimer = setTimeout(function () {
-	      // are we at the bottom?
-	      var parentRect = this._infiniteScroll.scrollParent.getBoundingClientRect();
-	      var indicatorRect = this._infiniteScroll.indicatorElement.getBoundingClientRect();
-	      if (indicatorRect.bottom <= parentRect.bottom) {
-	        this._infiniteScroll.onEnd();
-	      }
-	    }.bind(this), SCROLL_MORE_DELAY);
-	  },
-
-	  startListeningForScroll: function (indicatorElement, onEnd) {
-	    this._infiniteScroll.onEnd = onEnd;
-	    this._infiniteScroll.indicatorElement = indicatorElement;
-	    this._infiniteScroll.scrollParent = DOM.findScrollParents(indicatorElement)[0];
-	    this._infiniteScroll.scrollParent.addEventListener("scroll", this._onScroll);
-	    // check in case we're already at the bottom
-	    if (this._infiniteScroll.scrollParent === document) {
-	      this._infiniteScroll.scrollTimer = setTimeout(onEnd, SCROLL_MORE_INITIAL_DELAY);
-	    }
-	  },
-
-	  stopListeningForScroll: function () {
-	    if (this._infiniteScroll.scrollParent) {
-	      clearTimeout(this._infiniteScroll.scrollTimer);
-	      this._infiniteScroll.scrollParent.removeEventListener("scroll", this._onScroll);
-	      this._infiniteScroll.scrollParent = null;
-	    }
-	  },
-
-	  componentWillUnmount: function () {
-	    this.stopListeningForScroll();
-	  }
-	};
-
-	module.exports = InfiniteScroll;
-
-
-/***/ },
-/* 74 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+	'use strict';
 
 	var React = __webpack_require__(2);
-	var SpinningIcon = __webpack_require__(72);
-	var InfiniteScroll = __webpack_require__(73);
+	var SpinningIcon = __webpack_require__(101);
+	var InfiniteScroll = __webpack_require__(99);
 
-	var CLASS_ROOT = "tiles";
+	var CLASS_ROOT = 'tiles';
 
-	var Tiles = React.createClass({displayName: "Tiles",
+	var Tiles = React.createClass({
+	  displayName: 'Tiles',
 
 	  propTypes: {
 	    fill: React.PropTypes.bool,
@@ -12290,40 +14651,40 @@ var Grommet =
 
 	  mixins: [InfiniteScroll],
 
-	  getDefaultProps: function () {
-	    return {flush: true, fill: false, small: false};
+	  getDefaultProps: function getDefaultProps() {
+	    return { flush: true, fill: false, small: false };
 	  },
 
-	  componentDidMount: function () {
+	  componentDidMount: function componentDidMount() {
 	    if (this.props.onMore) {
 	      this.startListeningForScroll(this.refs.more.getDOMNode(), this.props.onMore);
 	    }
 	  },
 
-	  componentDidUpdate: function () {
+	  componentDidUpdate: function componentDidUpdate() {
 	    this.stopListeningForScroll();
 	    if (this.props.onMore) {
 	      this.startListeningForScroll(this.refs.more.getDOMNode(), this.props.onMore);
 	    }
 	  },
 
-	  componentWillUnmount: function () {
+	  componentWillUnmount: function componentWillUnmount() {
 	    if (this.props.onMore) {
 	      this.stopListeningForScroll();
 	    }
 	  },
 
 	  // children should be an array of Tile
-	  render: function () {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.fill) {
-	      classes.push(CLASS_ROOT + "--fill");
+	      classes.push(CLASS_ROOT + '--fill');
 	    }
 	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
+	      classes.push(CLASS_ROOT + '--flush');
 	    }
 	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
+	      classes.push(CLASS_ROOT + '--small');
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -12331,19 +14692,19 @@ var Grommet =
 
 	    var more = null;
 	    if (this.props.onMore) {
-	      classes.push(CLASS_ROOT + "--moreable");
-	      more = (
-	        React.createElement("div", {ref: "more", className: CLASS_ROOT + "__more"}, 
-	          React.createElement(SpinningIcon, null)
-	        )
+	      classes.push(CLASS_ROOT + '--moreable');
+	      more = React.createElement(
+	        'div',
+	        { ref: 'more', className: CLASS_ROOT + '__more' },
+	        React.createElement(SpinningIcon, null)
 	      );
 	    }
 
-	    return (
-	      React.createElement("div", {ref: "tiles", className: classes.join(' ')}, 
-	        this.props.children, 
-	        more
-	      )
+	    return React.createElement(
+	      'div',
+	      { ref: 'tiles', className: classes.join(' ') },
+	      this.props.children,
+	      more
 	    );
 	  }
 
@@ -12351,31 +14712,118 @@ var Grommet =
 
 	module.exports = Tiles;
 
-
 /***/ },
-/* 75 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
+	var merge = __webpack_require__(44);
+	var pick = __webpack_require__(79);
+	var keys = __webpack_require__(70);
+	var Box = __webpack_require__(84);
 
-	var Title = React.createClass({displayName: "Title",
+	var CLASS_ROOT = 'tile';
 
-	  propTypes: {
-	    onClick: React.PropTypes.func
+	var Tile = React.createClass({
+	  displayName: 'Tile',
+
+	  propTypes: merge({
+	    selected: React.PropTypes.bool,
+	    status: React.PropTypes.string,
+	    wide: React.PropTypes.bool
+	  }, Box.propTypes),
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      pad: 'none',
+	      direction: 'column',
+	      align: 'center'
+	    };
 	  },
 
-	  render: function() {
-	    var classes = ["title"];
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    var other = pick(this.props, keys(Box.propTypes));
+	    if (this.props.status) {
+	      classes.push(CLASS_ROOT + '--status-' + this.props.status.toLowerCase());
+	    }
+	    if (this.props.wide) {
+	      classes.push(CLASS_ROOT + '--wide');
+	    }
 	    if (this.props.onClick) {
-	      classes.push("title--interactive");
+	      classes.push(CLASS_ROOT + '--selectable');
+	    }
+	    if (this.props.selected) {
+	      classes.push(CLASS_ROOT + '--selected');
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
 	    }
 
-	    return (
-	      React.createElement("div", {className: classes.join(' '), onClick: this.props.onClick}, 
-	        this.props.children
-	      )
+	    return React.createElement(
+	      Box,
+	      _extends({ className: classes.join(' ') }, other, { onClick: this.props.onClick }),
+	      this.props.children
+	    );
+	  }
+
+	});
+
+	module.exports = Tile;
+
+/***/ },
+/* 118 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var React = __webpack_require__(2);
+	var Box = __webpack_require__(84);
+
+	var CLASS_ROOT = 'title';
+
+	var Title = React.createClass({
+	  displayName: 'Title',
+
+	  propTypes: {
+	    onClick: React.PropTypes.func,
+	    responsive: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      align: 'center',
+	      direction: 'row',
+	      responsive: true
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.responsive) {
+	      classes.push(CLASS_ROOT + '--responsive');
+	    }
+	    if (this.props.onClick) {
+	      classes.push(CLASS_ROOT + '--interactive');
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    return React.createElement(
+	      Box,
+	      _extends({}, this.props, { className: classes.join(' '), onClick: this.props.onClick }),
+	      this.props.children
 	    );
 	  }
 
@@ -12383,19 +14831,21 @@ var Grommet =
 
 	module.exports = Title;
 
-
 /***/ },
-/* 76 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
-	var IntlMixin = __webpack_require__(4);
+	var IntlMixin = __webpack_require__(3);
 
-	var CLASS_ROOT = "object";
+	var CLASS_ROOT = 'object';
 
-	var GrommetObject = React.createClass({displayName: "GrommetObject",
+	var GrommetObject = React.createClass({
+	  displayName: 'GrommetObject',
 
 	  mixins: [IntlMixin],
 
@@ -12403,59 +14853,75 @@ var Grommet =
 	    data: React.PropTypes.object
 	  },
 
-	  _renderArray: function (array) {
+	  _renderArray: function _renderArray(array) {
 	    return array.map(function (item, index) {
 	      var itemContent = item;
-	      if ('object' === typeof(item)) {
+	      if ('object' === typeof item) {
 	        itemContent = this._renderObject(item);
 	      }
-	      return (
-	        React.createElement("li", {key: 'i_' + index, className: "list-item"}, itemContent)
+	      return React.createElement(
+	        'li',
+	        { key: 'i_' + index, className: 'list-item' },
+	        itemContent
 	      );
 	    }, this);
 	  },
 
-	  _renderObject: function (obj) {
+	  _renderObject: function _renderObject(obj) {
 	    var attrs = [];
 	    for (var name in obj) {
 	      if (obj.hasOwnProperty(name)) {
 	        var value = obj[name];
-	        var classes = [CLASS_ROOT + "__attribute"];
+	        var classes = [CLASS_ROOT + '__attribute'];
 	        if (null === value) {
 	          value = 'null';
-	          classes.push(CLASS_ROOT + "__attribute--unset");
+	          classes.push(CLASS_ROOT + '__attribute--unset');
 	        } else if (Array.isArray(value)) {
 	          var items = this._renderArray(value);
-	          value = (
-	            React.createElement("ol", null, items)
+	          value = React.createElement(
+	            'ol',
+	            null,
+	            items
 	          );
-	          classes.push(CLASS_ROOT + "__attribute--array");
+	          classes.push(CLASS_ROOT + '__attribute--array');
 	        } else if ('object' === typeof value) {
 	          value = this._renderObject(value);
-	          classes.push(CLASS_ROOT + "__attribute--container");
+	          classes.push(CLASS_ROOT + '__attribute--container');
 	        } else {
 	          value = value.toString();
 	        }
-	        attrs.push(
-	          React.createElement("li", {key: 'n_' + name, className: classes.join(' ')}, 
-	            React.createElement("span", {className: CLASS_ROOT + "__attribute-name"}, this.getGrommetIntlMessage(name)), 
-	            React.createElement("span", {className: CLASS_ROOT + "__attribute-value"}, this.getGrommetIntlMessage(value))
+	        attrs.push(React.createElement(
+	          'li',
+	          { key: 'n_' + name, className: classes.join(' ') },
+	          React.createElement(
+	            'span',
+	            { className: CLASS_ROOT + '__attribute-name' },
+	            this.getGrommetIntlMessage(name)
+	          ),
+	          React.createElement(
+	            'span',
+	            { className: CLASS_ROOT + '__attribute-value' },
+	            this.getGrommetIntlMessage(value)
 	          )
-	        );
+	        ));
 	      }
 	    }
 
-	    return (
-	      React.createElement("ul", null, attrs)
+	    return React.createElement(
+	      'ul',
+	      null,
+	      attrs
 	    );
 	  },
 
-	  render: function() {
-	    return (
-	      React.createElement("div", {className: CLASS_ROOT}, 
-	        React.createElement("div", {className: CLASS_ROOT + "__container"}, 
-	          this._renderObject(this.props.data)
-	        )
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: CLASS_ROOT },
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__container' },
+	        this._renderObject(this.props.data)
 	      )
 	    );
 	  }
@@ -12464,22 +14930,24 @@ var Grommet =
 
 	module.exports = GrommetObject;
 
-
 /***/ },
-/* 77 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var TBD = React.createClass({displayName: "TBD",
+	var TBD = React.createClass({
+	  displayName: 'TBD',
 
-	  render: function() {
-	    return (
-	      React.createElement("div", {className: "tbd"}, 
-	        'TBD'
-	      )
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'tbd' },
+	      'TBD'
 	    );
 	  }
 
@@ -12487,28 +14955,73 @@ var Grommet =
 
 	module.exports = TBD;
 
-
 /***/ },
-/* 78 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Clear = React.createClass({displayName: "Clear",
+	var Calendar = React.createClass({
+	  displayName: 'Calendar',
 
-	  render: function() {
+	  render: function render() {
+	    var className = 'control-icon control-icon-calendar';
+	    if (this.props.className) {
+	      className += ' ' + this.props.className;
+	    }
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none', strokeWidth: '2' },
+	        React.createElement('rect', { x: '13', y: '16', width: '22', height: '20' }),
+	        React.createElement('path', { d: 'M17,16 L17,13' }),
+	        React.createElement('path', { d: 'M31,16 L31,13' }),
+	        React.createElement('path', { d: 'M13,23 L35,23' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { stroke: 'none' },
+	        React.createElement('rect', { x: '29', y: '30', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Calendar;
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+
+	var Clear = React.createClass({
+	  displayName: 'Clear',
+
+	  render: function render() {
 	    var className = 'control-icon control-icon-clear';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("line", {strokeWidth: "2", x1: "12", y1: "12", x2: "36", y2: "36"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "12", y1: "36", x2: "36", y2: "12"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('line', { strokeWidth: '2', x1: '14', y1: '14', x2: '34', y2: '34' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '14', y1: '34', x2: '34', y2: '14' })
 	      )
 	    );
 	  }
@@ -12517,34 +15030,38 @@ var Grommet =
 
 	module.exports = Clear;
 
-
 /***/ },
-/* 79 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var DragHandle = React.createClass({displayName: "DragHandle",
+	var DragHandle = React.createClass({
+	  displayName: 'DragHandle',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-drag-handle';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {stroke: "none", strokeWidth: "1", fill: "#cccccc", fillRule: "evenodd"}, 
-	          React.createElement("rect", {x: "12", y: "12", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "18", y: "12", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "12", y: "18", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "18", y: "18", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "12", y: "24", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "18", y: "24", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "12", y: "30", width: "3", height: "3"}), 
-	          React.createElement("rect", {x: "18", y: "30", width: "3", height: "3"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { stroke: 'none', strokeWidth: '1', fill: '#cccccc', fillRule: 'evenodd' },
+	        React.createElement('rect', { x: '12', y: '12', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '18', y: '12', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '12', y: '18', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '18', y: '18', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '12', y: '24', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '18', y: '24', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '12', y: '30', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '18', y: '30', width: '3', height: '3' })
 	      )
 	    );
 	  }
@@ -12553,35 +15070,39 @@ var Grommet =
 
 	module.exports = DragHandle;
 
-
 /***/ },
-/* 80 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Edit = React.createClass({displayName: "Edit",
+	var Edit = React.createClass({
+	  displayName: 'Edit',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-edit';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("circle", {strokeWidth: "2", cx: "24", cy: "24", r: "9"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "24", y1: "11", x2: "24", y2: "15"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "33.2", y1: "14.8", x2: "30.3", y2: "17.6"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "37", y1: "24", x2: "33", y2: "24"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "33.2", y1: "33.2", x2: "30.3", y2: "30.4"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "24", y1: "37", x2: "24", y2: "33"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "14.8", y1: "33.2", x2: "17.7", y2: "30.4"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "11", y1: "24", x2: "15.2", y2: "24"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "14.8", y1: "14.8", x2: "17.7", y2: "17.6"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('circle', { strokeWidth: '2', cx: '24', cy: '24', r: '9' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '24', y1: '11', x2: '24', y2: '15' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '33.2', y1: '14.8', x2: '30.3', y2: '17.6' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '37', y1: '24', x2: '33', y2: '24' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '33.2', y1: '33.2', x2: '30.3', y2: '30.4' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '24', y1: '37', x2: '24', y2: '33' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '14.8', y1: '33.2', x2: '17.7', y2: '30.4' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '11', y1: '24', x2: '15.2', y2: '24' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '14.8', y1: '14.8', x2: '17.7', y2: '17.6' })
 	      )
 	    );
 	  }
@@ -12590,22 +15111,24 @@ var Grommet =
 
 	module.exports = Edit;
 
-
 /***/ },
-/* 81 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Filter = React.createClass({displayName: "Filter",
+	var Filter = React.createClass({
+	  displayName: 'Filter',
 
 	  propTypes: {
 	    notifications: React.PropTypes.number
 	  },
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-filter';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
@@ -12613,22 +15136,28 @@ var Grommet =
 
 	    var badge = null;
 	    if (this.props.notifications) {
-	      badge = (
-	        React.createElement("g", {className: "control-icon__badge"}, 
-	          React.createElement("circle", {stroke: "none", cx: "37", cy: "11", r: "10"}), 
-	          React.createElement("text", {x: "33.5", y: "16", fontSize: 16}, this.props.notifications)
+	      badge = React.createElement(
+	        'g',
+	        { className: 'control-icon__badge' },
+	        React.createElement('circle', { stroke: 'none', cx: '37', cy: '11', r: '10' }),
+	        React.createElement(
+	          'text',
+	          { x: '33.5', y: '16', fontSize: 16 },
+	          this.props.notifications
 	        )
 	      );
 	    }
 
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("polygon", {strokeWidth: "2", points: "14,15 24,27 34,15  "}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "24", y1: "27", x2: "24", y2: "36"})
-	        ), 
-	        badge
-	      )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('polygon', { strokeWidth: '2', points: '14,15 24,27 34,15 \t' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '24', y1: '27', x2: '24', y2: '34' })
+	      ),
+	      badge
 	    );
 	  }
 
@@ -12636,28 +15165,75 @@ var Grommet =
 
 	module.exports = Filter;
 
-
 /***/ },
-/* 82 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	"use strict";
+
 	var React = __webpack_require__(2);
 
-	var Help = React.createClass({displayName: "Help",
+	var CLASS_ROOT = "logo-icon";
 
-	  render: function() {
+	var Grommet = React.createClass({
+	  displayName: "Grommet",
+
+	  propTypes: {
+	    small: React.PropTypes.bool,
+	    large: React.PropTypes.bool
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.small) {
+	      classes.push(CLASS_ROOT + "--small");
+	    }
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+	    return React.createElement(
+	      "svg",
+	      { className: classes.join(" "), viewBox: "0 0 140 140", version: "1.1" },
+	      React.createElement("path", { d: "M119.49603,20.5014878 L100.989057,39.0094878 C105.89805,43.9184878 109.859044,49.7734878 111.669042,55.3734878 C122.692025,89.4684878 93.3250687,120.604488 59.5321185,112.820488 C44.9911399,109.470488 30.5211612,94.9984878 27.1751661,80.4564878 C20.432176,51.1514878 42.9571429,25.1854878 71.2931012,25.9974878 L93.3090687,3.98048778 C86.0960794,1.43348778 78.3420908,0.0304877767 70.2641027,0.000487776719 C32.014159,-0.141512223 0.549205302,30.7384878 0.00720609982,68.9844878 C-0.547793083,108.124488 31.0271604,140.024488 70.045103,139.999488 C108.802046,139.975488 140,108.756488 140,70.0004878 C140,50.6694878 132.164012,33.1694878 119.49603,20.5014878 L119.49603,20.5014878 Z", fill: "#8C50FF" }),
+	      React.createElement("path", { d: "M27.1736636,80.457549 C30.5194807,94.999549 44.98869,109.472549 59.5288954,112.821549 C93.3190487,120.605549 122.685444,89.469549 111.663046,55.374549 C109.852145,49.774549 105.891362,43.918549 100.98363,39.010549 L69.9953234,70.000549 L100.083679,70.001549 C100.083679,86.762549 86.3804279,100.322549 69.5663468,100.089549 C53.4302287,99.865549 40.23095,86.746549 39.9119674,70.611549 C39.7429767,62.061549 43.140791,54.304549 48.7174862,48.725549 L48.6404904,48.648549 L71.2872528,25.998549 C42.9548011,25.186549 20.4310321,51.152549 27.1736636,80.457549 L27.1736636,80.457549 Z", fill: "#333333" })
+	    );
+	  }
+
+	});
+
+	module.exports = Grommet;
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+
+	var Help = React.createClass({
+	  displayName: 'Help',
+
+	  render: function render() {
 	    var className = 'control-icon control-icon-help';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("path", {strokeWidth: "2", d: "M17,18c0-4,3.4-7,7-7c3.5,0,7,2.7,7,7s-3.6,7-7,7v6"}), 
-	          React.createElement("line", {strokeWidth: "2", x1: "24", y1: "37", x2: "24", y2: "35"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('path', { strokeWidth: '2', d: 'M17,18c0-4,3.4-7,7-7c3.5,0,7,2.7,7,7s-3.6,7-7,7v6' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '24', y1: '37', x2: '24', y2: '35' })
 	      )
 	    );
 	  }
@@ -12666,28 +15242,32 @@ var Grommet =
 
 	module.exports = Help;
 
-
 /***/ },
-/* 83 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Left = React.createClass({displayName: "Left",
+	var Left = React.createClass({
+	  displayName: 'Left',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-left';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("polyline", {strokeWidth: "2", points: "20.9,34 13,24 21,14 "}), 
-	          React.createElement("path", {strokeWidth: "2", d: "M13.3,24C36,24,36,24,36,24"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('polyline', { strokeWidth: '2', points: '20.9,34 13,24 21,14 ' }),
+	        React.createElement('path', { strokeWidth: '2', d: 'M13.3,24C36,24,36,24,36,24' })
 	      )
 	    );
 	  }
@@ -12696,28 +15276,32 @@ var Grommet =
 
 	module.exports = Left;
 
-
 /***/ },
-/* 84 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Right = React.createClass({displayName: "Right",
+	var Right = React.createClass({
+	  displayName: 'Right',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-right';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {fill: "none"}, 
-	          React.createElement("polyline", {strokeWidth: "2", points: "27.1,14 35,24 27,34"}), 
-	          React.createElement("path", {strokeWidth: "2", d: "M34.7,24C12,24,12,24,12,24"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('polyline', { strokeWidth: '2', points: '27.1,14 35,24 27,34' }),
+	        React.createElement('path', { strokeWidth: '2', d: 'M34.7,24C12,24,12,24,12,24' })
 	      )
 	    );
 	  }
@@ -12726,30 +15310,34 @@ var Grommet =
 
 	module.exports = Right;
 
-
 /***/ },
-/* 85 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var SearchPlus = React.createClass({displayName: "SearchPlus",
+	var SearchPlus = React.createClass({
+	  displayName: 'SearchPlus',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'control-icon control-icon-search-plus';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 48 48", version: "1.1"}, 
-	        React.createElement("g", {strokeWidth: "4", fill: "none", fillRule: "evenodd"}, 
-	          React.createElement("circle", {strokeWidth: "4", cx: "21", cy: "21", r: "7"}), 
-	          React.createElement("path", {d: "M27.2,27 L34.2,36", strokeWidth: "4", strokeLinecap: "round"}), 
-	          React.createElement("path", {d: "M34,13 L34,19", strokeWidth: "2", strokeLinecap: "round"}), 
-	          React.createElement("path", {d: "M37,16 L31,16", strokeWidth: "2", strokeLinecap: "round"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { strokeWidth: '4', fill: 'none', fillRule: 'evenodd' },
+	        React.createElement('circle', { strokeWidth: '4', cx: '21', cy: '21', r: '7' }),
+	        React.createElement('path', { d: 'M27.2,27 L34.2,36', strokeWidth: '4', strokeLinecap: 'round' }),
+	        React.createElement('path', { d: 'M34,13 L34,19', strokeWidth: '2', strokeLinecap: 'round' }),
+	        React.createElement('path', { d: 'M37,16 L31,16', strokeWidth: '2', strokeLinecap: 'round' })
 	      )
 	    );
 	  }
@@ -12758,24 +15346,26 @@ var Grommet =
 
 	module.exports = SearchPlus;
 
-
 /***/ },
-/* 86 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
-	var OK = __webpack_require__(87);
-	var ErrorStatus = __webpack_require__(88);
-	var Warning = __webpack_require__(89);
-	var Disabled = __webpack_require__(90);
-	var Unknown = __webpack_require__(91);
-	var Label = __webpack_require__(92);
+	var OK = __webpack_require__(132);
+	var ErrorStatus = __webpack_require__(133);
+	var Warning = __webpack_require__(134);
+	var Disabled = __webpack_require__(135);
+	var Unknown = __webpack_require__(136);
+	var Label = __webpack_require__(137);
 
-	var CLASS_ROOT = "status-icon";
+	var CLASS_ROOT = 'status-icon';
 
-	var Status = React.createClass({displayName: "Status",
+	var Status = React.createClass({
+	  displayName: 'Status',
 
 	  propType: {
 	    large: React.PropTypes.bool,
@@ -12783,44 +15373,48 @@ var Grommet =
 	    value: React.PropTypes.oneOf(['error', 'warning', 'ok', 'unknown', 'disabled'])
 	  },
 
-	  getDefaultProps: function () {
-	    return {value: 'unknown'};
+	  getDefaultProps: function getDefaultProps() {
+	    return { value: 'unknown' };
 	  },
 
-	  render: function() {
+	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
+	      classes.push(CLASS_ROOT + '--small');
 	    }
 	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
+	      classes.push(CLASS_ROOT + '--large');
 	    }
 	    var className = classes.join(' ');
-	    var icon = (React.createElement("span", null, '?'));
+	    var icon = React.createElement(
+	      'span',
+	      null,
+	      '?'
+	    );
 	    switch (this.props.value.toLowerCase()) {
-	    case 'ok':
-	    case 'normal':
-	      icon = (React.createElement(OK, {className: className}));
-	      break;
-	    case 'warning':
-	      icon = (React.createElement(Warning, {className: className}));
-	      break;
-	    case 'error':
-	    case 'critical':
-	      icon = (React.createElement(ErrorStatus, {className: className}));
-	      break;
-	    case 'disabled':
-	      icon = (React.createElement(Disabled, {className: className}));
-	      break;
-	    case 'unknown':
-	      icon = (React.createElement(Unknown, {className: className}));
-	      break;
-	    case 'label':
-	      icon = (React.createElement(Label, {className: className}));
-	      break;
+	      case 'ok':
+	      case 'normal':
+	        icon = React.createElement(OK, { className: className });
+	        break;
+	      case 'warning':
+	        icon = React.createElement(Warning, { className: className });
+	        break;
+	      case 'error':
+	      case 'critical':
+	        icon = React.createElement(ErrorStatus, { className: className });
+	        break;
+	      case 'disabled':
+	        icon = React.createElement(Disabled, { className: className });
+	        break;
+	      case 'unknown':
+	        icon = React.createElement(Unknown, { className: className });
+	        break;
+	      case 'label':
+	        icon = React.createElement(Label, { className: className });
+	        break;
 	    }
 	    return icon;
 	  }
@@ -12829,30 +15423,45 @@ var Grommet =
 
 	module.exports = Status;
 
-
 /***/ },
-/* 87 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(3);
 
-	var OK = React.createClass({displayName: "OK",
+	var OK = React.createClass({
+	  displayName: 'OK',
 
-	  render: function() {
+	  mixins: [IntlMixin],
+
+	  render: function render() {
 	    var className = 'status-icon status-icon-ok';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 24 24", version: "1.1"}, 
-	        React.createElement("g", {className: "status-icon__base", fill: "#43A547"}, 
-	          React.createElement("path", {d: "M0,4.4058651 L0,19.657478 C0,21.7548387 2.41428571,23.9929619 4.68571429,23.9929619 L19.4571429,23.9929619 C21.7285714,23.9929619 24,21.8956012 24,19.657478 L24,4.4058651 C24,2.3085044 21.7285714,0.0703812317 19.4571429,0.0703812317 L4.68571429,0.0703812317 C2.27142857,0.0703812317 0,2.16774194 0,4.4058651 L0,4.4058651 Z"})
-	        ), 
-	        React.createElement("g", {className: "status-icon__detail", fill: "#FFFFFF", transform: "translate(4.214286, 3.519062)"}, 
-	          React.createElement("path", {d: "M0.0428571429,6.76363636 L0.0428571429,10.5431085 L6.86428571,15.4416422 L15.6642857,4.80703812 L15.6642857,0.0492668622 L6.15,11.2469208 L0.0428571429,6.76363636 Z"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 24 24',
+	        role: 'img', 'aria-labelledby': 'title', version: '1.1' },
+	      React.createElement(
+	        'title',
+	        { id: 'title' },
+	        this.getGrommetIntlMessage('OK')
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__base' },
+	        React.createElement('circle', { cx: '12', cy: '12', r: '12', stroke: 'none' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__detail' },
+	        React.createElement('path', { d: 'M10,17.4 L5.3,12.7 L6.7,11.3 L10,14.6 L17.3,7.3 L18.7,8.7 L10,17.4 Z', stroke: 'none' })
 	      )
 	    );
 	  }
@@ -12861,30 +15470,37 @@ var Grommet =
 
 	module.exports = OK;
 
-
 /***/ },
-/* 88 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var ErrorStatus = React.createClass({displayName: "ErrorStatus",
+	var ErrorStatus = React.createClass({
+	  displayName: 'ErrorStatus',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'status-icon status-icon-error';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 24 24", version: "1.1"}, 
-	        React.createElement("g", {className: "status-icon__base", fill: "#DC462F"}, 
-	          React.createElement("circle", {cx: "12", cy: "12", r: "12"})
-	        ), 
-	        React.createElement("g", {className: "status-icon__detail", fill: "#FFFFFF"}, 
-	          React.createElement("rect", {x: "4", y: "10", width: "16", height: "4"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 24 24', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__base', stroke: 'none' },
+	        React.createElement('path', { d: 'M12,0 L24,12 L12,24 L0,12 Z' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__detail', fill: 'none' },
+	        React.createElement('path', { d: 'M8,8 L16,16', strokeWidth: '2' }),
+	        React.createElement('path', { d: 'M8,16 L16,8', strokeWidth: '2' })
 	      )
 	    );
 	  }
@@ -12893,30 +15509,37 @@ var Grommet =
 
 	module.exports = ErrorStatus;
 
-
 /***/ },
-/* 89 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Warning = React.createClass({displayName: "Warning",
+	var Warning = React.createClass({
+	  displayName: 'Warning',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'status-icon status-icon-warning';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 27 24", version: "1.1"}, 
-	        React.createElement("g", {className: "status-icon__base", fill: "#F3B51D"}, 
-	          React.createElement("path", {d: "M26.758209,22.8752239 L14.1062687,0.494328358 C13.8268657,-0.071641791 13.2608955,-0.071641791 12.838209,0.494328358 L0.179104478,22.8752239 C-0.100298507,23.441194 0.179104478,24 0.745074627,24 L26.0561194,24 C26.758209,24 27.0376119,23.5773134 26.758209,22.8752239 L26.758209,22.8752239 Z"})
-	        ), 
-	        React.createElement("g", {className: "status-icon__detail", fill: "#FFFFFF", transform: "translate(12.250746, 7.307463)"}, 
-	          React.createElement("path", {d: "M2.69373134,9.01970149 L0.0214925373,9.01970149 L0.0214925373,0.0143283582 L2.69373134,0.0143283582 L2.69373134,9.01970149 L2.69373134,9.01970149 Z M2.69373134,10.9898507 L0.0214925373,10.9898507 L0.0214925373,13.6620896 L2.69373134,13.6620896 L2.69373134,10.9898507 L2.69373134,10.9898507 Z"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 27 24', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__base' },
+	        React.createElement('path', { d: 'M12,0 L0,22 L24,22 L12,0 L12,0 Z', stroke: 'none' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__detail', strokeWidth: '2', transform: 'translate(11.000000, 8.000000)' },
+	        React.createElement('path', { d: 'M1,0 L1,6', fill: 'none' }),
+	        React.createElement('path', { d: 'M1,8 L1,10', fill: 'none' })
 	      )
 	    );
 	  }
@@ -12925,30 +15548,37 @@ var Grommet =
 
 	module.exports = Warning;
 
-
 /***/ },
-/* 90 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Disabled = React.createClass({displayName: "Disabled",
+	var Disabled = React.createClass({
+	  displayName: 'Disabled',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'status-icon status-icon-disabled';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 24 24", version: "1.1"}, 
-	        React.createElement("g", {className: "status-icon__base", fill: "#848484"}, 
-	          React.createElement("path", {d: "M12,0 L0,12 L12,24 L24,12 L12,0 L12,0 Z"})
-	        ), 
-	        React.createElement("g", {className: "status-icon__detail", fill: "#FFFFFF"}, 
-	          React.createElement("circle", {cx: "12", cy: "12", r: "5.5"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 24 24', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__base' },
+	        React.createElement('rect', { x: '0', y: '0', width: '24', height: '24', stroke: 'none' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__detail', strokeWidth: '2' },
+	        React.createElement('circle', { cx: '12', cy: '12', r: '7', fill: 'none' }),
+	        React.createElement('path', { d: 'M7.3,7.3 L16.6,16.7', fill: 'none' })
 	      )
 	    );
 	  }
@@ -12957,30 +15587,37 @@ var Grommet =
 
 	module.exports = Disabled;
 
-
 /***/ },
-/* 91 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Unknown = React.createClass({displayName: "Unknown",
+	var Unknown = React.createClass({
+	  displayName: 'Unknown',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'status-icon status-icon-unknown';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 24 24", version: "1.1"}, 
-	        React.createElement("g", {className: "status-icon__base", fill: "#848484"}, 
-	          React.createElement("path", {d: "M12,0 L0,12 L12,24 L24,12 L12,0 L12,0 Z"})
-	        ), 
-	        React.createElement("g", {className: "status-icon__detail", fill: "#FFFFFF", transform: "translate(7.524324, 4.994595)"}, 
-	          React.createElement("path", {d: "M8.89945946,3.97621622 C8.89945946,4.48216216 8.64648649,4.98810811 8.39351351,5.49405405 C8.0172973,5.87027027 7.51135135,6.62918919 6.49945946,7.38810811 C5.99351351,7.76432432 5.74054054,8.14702703 5.6172973,8.4 L5.6172973,8.77621622 C5.49405405,9.02918919 5.49405405,9.53513514 5.49405405,10.1643243 L3.47027027,10.1643243 L3.47027027,9.53513514 C3.47027027,8.90594595 3.59351351,8.0172973 3.84648649,7.51135135 C3.96972973,7.13513514 4.47567568,6.62918919 5.23459459,5.99351351 C5.99351351,5.36432432 6.36972973,4.98162162 6.49945946,4.85837838 C6.75243243,4.60540541 6.87567568,4.35243243 6.87567568,3.97621622 C6.87567568,3.6 6.6227027,3.2172973 6.24648649,2.84108108 C5.87027027,2.46486486 5.23459459,2.33513514 4.60540541,2.33513514 C3.97621622,2.33513514 3.47027027,2.45837838 2.96432432,2.71135135 C2.58810811,2.96432432 2.20540541,3.34054054 2.08216216,3.84648649 L0.0583783784,3.84648649 C0.0583783784,2.83459459 0.564324324,1.95243243 1.32324324,1.19351351 C2.20540541,0.434594595 3.2172973,0.0583783784 4.48216216,0.0583783784 C5.87027027,0.0583783784 7.00540541,0.434594595 7.76432432,1.19351351 C8.51675676,1.95891892 8.89945946,2.96432432 8.89945946,3.97621622 L8.89945946,3.97621622 Z M4.47567568,10.9232432 C3.71675676,10.9232432 2.95783784,11.6821622 2.95783784,12.4410811 C2.95783784,13.2 3.71675676,13.9589189 4.47567568,13.9589189 C5.23459459,13.9589189 5.99351351,13.2 5.99351351,12.4410811 C5.99351351,11.6821622 5.23459459,10.9232432 4.47567568,10.9232432 L4.47567568,10.9232432 Z"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 24 24', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__base' },
+	        React.createElement('path', { d: 'M12,2 C17.5,2 22,6.5 22,12 C22,17.5 17.5,22 12,22 C6.5,22 2,17.5 2,12 C2,6.5 6.5,2 12,2 L12,2 Z M12,0 C5.4,0 0,5.4 0,12 C0,18.6 5.4,24 12,24 C18.6,24 24,18.6 24,12 C24,5.4 18.6,0 12,0 L12,0 L12,0 Z', stroke: 'none' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__detail' },
+	        React.createElement('path', { d: 'M9,10.4 C9,8.8 10.4,7.6 12,7.6 C13.6,7.6 14.9,9 15,10.4 C15,11.7 14.1,12.7 12.9,13.1 C12.4,13.2 12,13.7 12,14.2 L12,15.5', fill: 'none', strokeWidth: '2' }),
+	        React.createElement('circle', { stroke: 'none', cx: '12', cy: '17.6', r: '1' })
 	      )
 	    );
 	  }
@@ -12989,27 +15626,31 @@ var Grommet =
 
 	module.exports = Unknown;
 
-
 /***/ },
-/* 92 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
+	'use strict';
+
 	var React = __webpack_require__(2);
 
-	var Label = React.createClass({displayName: "Label",
+	var Label = React.createClass({
+	  displayName: 'Label',
 
-	  render: function() {
+	  render: function render() {
 	    var className = 'status-icon status-icon-label';
 	    if (this.props.className) {
 	      className += ' ' + this.props.className;
 	    }
-	    return (
-	      React.createElement("svg", {className: className, viewBox: "0 0 24 24", version: "1.1"}, 
-	        React.createElement("g", {className: "status-icon__base", fill: "#CCCCCC"}, 
-	          React.createElement("circle", {cx: "12", cy: "12", r: "12"})
-	        )
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 24 24', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { className: 'status-icon__base' },
+	        React.createElement('circle', { cx: '12', cy: '12', r: '12', stroke: 'none' })
 	      )
 	    );
 	  }
@@ -13018,76 +15659,116 @@ var Grommet =
 
 	module.exports = Label;
 
-
 /***/ },
-/* 93 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	var Reflux = __webpack_require__(94);
-	var Rest = __webpack_require__(117);
+	// http://jsfiddle.net/LBAr8/
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+
+	var ReactLayeredComponent = {
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    this._unrenderLayer();
+	    document.body.removeChild(this._target);
+	  },
+	  componentDidUpdate: function componentDidUpdate() {
+	    this._renderLayer();
+	  },
+	  componentDidMount: function componentDidMount() {
+	    // Appending to the body is easier than managing the z-index of everything on the page.
+	    // It's also better for accessibility and makes stacking a snap (since components will stack
+	    // in mount order).
+	    this._target = document.createElement('div');
+	    document.body.appendChild(this._target);
+	    this._renderLayer();
+	  },
+	  _renderLayer: function _renderLayer() {
+	    // By calling this method in componentDidMount() and componentDidUpdate(), you're effectively
+	    // creating a "wormhole" that funnels React's hierarchical updates through to a DOM node on an
+	    // entirely different part of the page.
+	    React.render(this.renderLayer(), this._target);
+	  },
+	  _unrenderLayer: function _unrenderLayer() {
+	    React.unmountComponentAtNode(this._target);
+	  }
+	};
+
+	module.exports = ReactLayeredComponent;
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var Reflux = __webpack_require__(140);
+	var Rest = __webpack_require__(163);
 
 	var Actions = Reflux.createActions({
 	  // Session
-	  'login': {asyncResult: true},
+	  'login': { asyncResult: true },
 	  'logout': {}
 	});
 
-	Actions.login.listen(function(userName, password) {
+	Actions.login.listen(function (userName, password) {
 	  if (!userName || !password) {
-	    return this.failed(400, { message: 'loginInvalidPassword'});
+	    return this.failed(400, { message: 'loginInvalidPassword' });
 	  }
 
 	  var thisAction = this;
-	  Rest.post('/rest/login-sessions',
-	    {authLoginDomain: 'LOCAL', userName: userName, password: password, loginMsgAck: true})
-	    .end(function(err, res) {
-	      if (err || !res.ok) {
-	        return thisAction.failed(err, res.body);
-	      }
-	      thisAction.completed(userName, res.body.sessionID);
-	    });
+	  Rest.post('/rest/login-sessions', { authLoginDomain: 'LOCAL', userName: userName, password: password, loginMsgAck: true }).end(function (err, res) {
+	    if (err || !res.ok) {
+	      return thisAction.failed(err, res.body);
+	    }
+	    thisAction.completed(userName, res.body.sessionID);
+	  });
 	});
 
 	module.exports = Actions;
 
-
 /***/ },
-/* 94 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(95);
+	module.exports = __webpack_require__(141);
 
 
 /***/ },
-/* 95 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports.ActionMethods = __webpack_require__(97);
+	exports.ActionMethods = __webpack_require__(143);
 
-	exports.ListenerMethods = __webpack_require__(98);
+	exports.ListenerMethods = __webpack_require__(144);
 
-	exports.PublisherMethods = __webpack_require__(110);
+	exports.PublisherMethods = __webpack_require__(156);
 
-	exports.StoreMethods = __webpack_require__(111);
+	exports.StoreMethods = __webpack_require__(157);
 
-	exports.createAction = __webpack_require__(112);
+	exports.createAction = __webpack_require__(158);
 
-	exports.createStore = __webpack_require__(106);
+	exports.createStore = __webpack_require__(152);
 
-	exports.connect = __webpack_require__(113);
+	exports.connect = __webpack_require__(159);
 
-	exports.connectFilter = __webpack_require__(114);
+	exports.connectFilter = __webpack_require__(160);
 
-	exports.ListenerMixin = __webpack_require__(115);
+	exports.ListenerMixin = __webpack_require__(161);
 
-	exports.listenTo = __webpack_require__(96);
+	exports.listenTo = __webpack_require__(142);
 
-	exports.listenToMany = __webpack_require__(116);
+	exports.listenToMany = __webpack_require__(162);
 
 
-	var maker = __webpack_require__(105).staticJoinCreator;
+	var maker = __webpack_require__(151).staticJoinCreator;
 
 	exports.joinTrailing = exports.all = maker("last"); // Reflux.all alias for backward compatibility
 
@@ -13097,7 +15778,7 @@ var Grommet =
 
 	exports.joinConcat = maker("all");
 
-	var _ = __webpack_require__(99);
+	var _ = __webpack_require__(145);
 
 	exports.EventEmitter = _.EventEmitter;
 
@@ -13126,7 +15807,7 @@ var Grommet =
 	 * Sets the eventmitter that Reflux uses
 	 */
 	exports.setEventEmitter = function(ctx) {
-	    var _ = __webpack_require__(99);
+	    var _ = __webpack_require__(145);
 	    exports.EventEmitter = _.EventEmitter = ctx;
 	};
 
@@ -13135,7 +15816,7 @@ var Grommet =
 	 * Sets the Promise library that Reflux uses
 	 */
 	exports.setPromise = function(ctx) {
-	    var _ = __webpack_require__(99);
+	    var _ = __webpack_require__(145);
 	    exports.Promise = _.Promise = ctx;
 	};
 
@@ -13145,7 +15826,7 @@ var Grommet =
 	 * @param {Function} factory has the signature `function(resolver) { return [new Promise]; }`
 	 */
 	exports.setPromiseFactory = function(factory) {
-	    var _ = __webpack_require__(99);
+	    var _ = __webpack_require__(145);
 	    _.createPromise = factory;
 	};
 
@@ -13154,14 +15835,14 @@ var Grommet =
 	 * Sets the method used for deferring actions and stores
 	 */
 	exports.nextTick = function(nextTick) {
-	    var _ = __webpack_require__(99);
+	    var _ = __webpack_require__(145);
 	    _.nextTick = nextTick;
 	};
 
 	/**
 	 * Provides the set of created actions and stores for introspection
 	 */
-	exports.__keep = __webpack_require__(107);
+	exports.__keep = __webpack_require__(153);
 
 	/**
 	 * Warn if Function.prototype.bind not available
@@ -13176,10 +15857,10 @@ var Grommet =
 
 
 /***/ },
-/* 96 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Reflux = __webpack_require__(95);
+	var Reflux = __webpack_require__(141);
 
 
 	/**
@@ -13218,7 +15899,7 @@ var Grommet =
 
 
 /***/ },
-/* 97 */
+/* 143 */
 /***/ function(module, exports) {
 
 	/**
@@ -13230,11 +15911,11 @@ var Grommet =
 
 
 /***/ },
-/* 98 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(99),
-	    maker = __webpack_require__(105).instanceJoinCreator;
+	var _ = __webpack_require__(145),
+	    maker = __webpack_require__(151).instanceJoinCreator;
 
 	/**
 	 * Extract child listenables from a parent from their
@@ -13456,7 +16137,7 @@ var Grommet =
 
 
 /***/ },
-/* 99 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -13491,7 +16172,7 @@ var Grommet =
 	    return typeof value === 'function';
 	};
 
-	exports.EventEmitter = __webpack_require__(100);
+	exports.EventEmitter = __webpack_require__(146);
 
 	exports.nextTick = function(callback) {
 	    setTimeout(callback, 0);
@@ -13513,7 +16194,7 @@ var Grommet =
 	    return o;
 	};
 
-	exports.Promise = __webpack_require__(101);
+	exports.Promise = __webpack_require__(147);
 
 	exports.createPromise = function(resolver) {
 	    return new exports.Promise(resolver);
@@ -13531,7 +16212,7 @@ var Grommet =
 
 
 /***/ },
-/* 100 */
+/* 146 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13766,22 +16447,22 @@ var Grommet =
 
 
 /***/ },
-/* 101 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*! Native Promise Only
 	    v0.7.8-a (c) Kyle Simpson
 	    MIT License: http://getify.mit-license.org
 	*/
-	!function(t,n,e){n[t]=n[t]||e(),"undefined"!=typeof module&&module.exports?module.exports=n[t]:"function"=="function"&&__webpack_require__(104)&&!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return n[t]}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}("Promise","undefined"!=typeof global?global:this,function(){"use strict";function t(t,n){l.add(t,n),h||(h=y(l.drain))}function n(t){var n,e=typeof t;return null==t||"object"!=e&&"function"!=e||(n=t.then),"function"==typeof n?n:!1}function e(){for(var t=0;t<this.chain.length;t++)o(this,1===this.state?this.chain[t].success:this.chain[t].failure,this.chain[t]);this.chain.length=0}function o(t,e,o){var r,i;try{e===!1?o.reject(t.msg):(r=e===!0?t.msg:e.call(void 0,t.msg),r===o.promise?o.reject(TypeError("Promise-chain cycle")):(i=n(r))?i.call(r,o.resolve,o.reject):o.resolve(r))}catch(c){o.reject(c)}}function r(o){var c,u,a=this;if(!a.triggered){a.triggered=!0,a.def&&(a=a.def);try{(c=n(o))?(u=new f(a),c.call(o,function(){r.apply(u,arguments)},function(){i.apply(u,arguments)})):(a.msg=o,a.state=1,a.chain.length>0&&t(e,a))}catch(s){i.call(u||new f(a),s)}}}function i(n){var o=this;o.triggered||(o.triggered=!0,o.def&&(o=o.def),o.msg=n,o.state=2,o.chain.length>0&&t(e,o))}function c(t,n,e,o){for(var r=0;r<n.length;r++)!function(r){t.resolve(n[r]).then(function(t){e(r,t)},o)}(r)}function f(t){this.def=t,this.triggered=!1}function u(t){this.promise=t,this.state=0,this.triggered=!1,this.chain=[],this.msg=void 0}function a(n){if("function"!=typeof n)throw TypeError("Not a function");if(0!==this.__NPO__)throw TypeError("Not a promise");this.__NPO__=1;var o=new u(this);this.then=function(n,r){var i={success:"function"==typeof n?n:!0,failure:"function"==typeof r?r:!1};return i.promise=new this.constructor(function(t,n){if("function"!=typeof t||"function"!=typeof n)throw TypeError("Not a function");i.resolve=t,i.reject=n}),o.chain.push(i),0!==o.state&&t(e,o),i.promise},this["catch"]=function(t){return this.then(void 0,t)};try{n.call(void 0,function(t){r.call(o,t)},function(t){i.call(o,t)})}catch(c){i.call(o,c)}}var s,h,l,p=Object.prototype.toString,y="undefined"!=typeof setImmediate?function(t){return setImmediate(t)}:setTimeout;try{Object.defineProperty({},"x",{}),s=function(t,n,e,o){return Object.defineProperty(t,n,{value:e,writable:!0,configurable:o!==!1})}}catch(d){s=function(t,n,e){return t[n]=e,t}}l=function(){function t(t,n){this.fn=t,this.self=n,this.next=void 0}var n,e,o;return{add:function(r,i){o=new t(r,i),e?e.next=o:n=o,e=o,o=void 0},drain:function(){var t=n;for(n=e=h=void 0;t;)t.fn.call(t.self),t=t.next}}}();var g=s({},"constructor",a,!1);return a.prototype=g,s(g,"__NPO__",0,!1),s(a,"resolve",function(t){var n=this;return t&&"object"==typeof t&&1===t.__NPO__?t:new n(function(n,e){if("function"!=typeof n||"function"!=typeof e)throw TypeError("Not a function");n(t)})}),s(a,"reject",function(t){return new this(function(n,e){if("function"!=typeof n||"function"!=typeof e)throw TypeError("Not a function");e(t)})}),s(a,"all",function(t){var n=this;return"[object Array]"!=p.call(t)?n.reject(TypeError("Not an array")):0===t.length?n.resolve([]):new n(function(e,o){if("function"!=typeof e||"function"!=typeof o)throw TypeError("Not a function");var r=t.length,i=Array(r),f=0;c(n,t,function(t,n){i[t]=n,++f===r&&e(i)},o)})}),s(a,"race",function(t){var n=this;return"[object Array]"!=p.call(t)?n.reject(TypeError("Not an array")):new n(function(e,o){if("function"!=typeof e||"function"!=typeof o)throw TypeError("Not a function");c(n,t,function(t,n){e(n)},o)})}),a});
+	!function(t,n,e){n[t]=n[t]||e(),"undefined"!=typeof module&&module.exports?module.exports=n[t]:"function"=="function"&&__webpack_require__(150)&&!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return n[t]}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}("Promise","undefined"!=typeof global?global:this,function(){"use strict";function t(t,n){l.add(t,n),h||(h=y(l.drain))}function n(t){var n,e=typeof t;return null==t||"object"!=e&&"function"!=e||(n=t.then),"function"==typeof n?n:!1}function e(){for(var t=0;t<this.chain.length;t++)o(this,1===this.state?this.chain[t].success:this.chain[t].failure,this.chain[t]);this.chain.length=0}function o(t,e,o){var r,i;try{e===!1?o.reject(t.msg):(r=e===!0?t.msg:e.call(void 0,t.msg),r===o.promise?o.reject(TypeError("Promise-chain cycle")):(i=n(r))?i.call(r,o.resolve,o.reject):o.resolve(r))}catch(c){o.reject(c)}}function r(o){var c,u,a=this;if(!a.triggered){a.triggered=!0,a.def&&(a=a.def);try{(c=n(o))?(u=new f(a),c.call(o,function(){r.apply(u,arguments)},function(){i.apply(u,arguments)})):(a.msg=o,a.state=1,a.chain.length>0&&t(e,a))}catch(s){i.call(u||new f(a),s)}}}function i(n){var o=this;o.triggered||(o.triggered=!0,o.def&&(o=o.def),o.msg=n,o.state=2,o.chain.length>0&&t(e,o))}function c(t,n,e,o){for(var r=0;r<n.length;r++)!function(r){t.resolve(n[r]).then(function(t){e(r,t)},o)}(r)}function f(t){this.def=t,this.triggered=!1}function u(t){this.promise=t,this.state=0,this.triggered=!1,this.chain=[],this.msg=void 0}function a(n){if("function"!=typeof n)throw TypeError("Not a function");if(0!==this.__NPO__)throw TypeError("Not a promise");this.__NPO__=1;var o=new u(this);this.then=function(n,r){var i={success:"function"==typeof n?n:!0,failure:"function"==typeof r?r:!1};return i.promise=new this.constructor(function(t,n){if("function"!=typeof t||"function"!=typeof n)throw TypeError("Not a function");i.resolve=t,i.reject=n}),o.chain.push(i),0!==o.state&&t(e,o),i.promise},this["catch"]=function(t){return this.then(void 0,t)};try{n.call(void 0,function(t){r.call(o,t)},function(t){i.call(o,t)})}catch(c){i.call(o,c)}}var s,h,l,p=Object.prototype.toString,y="undefined"!=typeof setImmediate?function(t){return setImmediate(t)}:setTimeout;try{Object.defineProperty({},"x",{}),s=function(t,n,e,o){return Object.defineProperty(t,n,{value:e,writable:!0,configurable:o!==!1})}}catch(d){s=function(t,n,e){return t[n]=e,t}}l=function(){function t(t,n){this.fn=t,this.self=n,this.next=void 0}var n,e,o;return{add:function(r,i){o=new t(r,i),e?e.next=o:n=o,e=o,o=void 0},drain:function(){var t=n;for(n=e=h=void 0;t;)t.fn.call(t.self),t=t.next}}}();var g=s({},"constructor",a,!1);return a.prototype=g,s(g,"__NPO__",0,!1),s(a,"resolve",function(t){var n=this;return t&&"object"==typeof t&&1===t.__NPO__?t:new n(function(n,e){if("function"!=typeof n||"function"!=typeof e)throw TypeError("Not a function");n(t)})}),s(a,"reject",function(t){return new this(function(n,e){if("function"!=typeof n||"function"!=typeof e)throw TypeError("Not a function");e(t)})}),s(a,"all",function(t){var n=this;return"[object Array]"!=p.call(t)?n.reject(TypeError("Not an array")):0===t.length?n.resolve([]):new n(function(e,o){if("function"!=typeof e||"function"!=typeof o)throw TypeError("Not a function");var r=t.length,i=Array(r),f=0;c(n,t,function(t,n){i[t]=n,++f===r&&e(i)},o)})}),s(a,"race",function(t){var n=this;return"[object Array]"!=p.call(t)?n.reject(TypeError("Not an array")):new n(function(e,o){if("function"!=typeof e||"function"!=typeof o)throw TypeError("Not a function");c(n,t,function(t,n){e(n)},o)})}),a});
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(102).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(148).setImmediate))
 
 /***/ },
-/* 102 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(103).nextTick;
+	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(149).nextTick;
 	var apply = Function.prototype.apply;
 	var slice = Array.prototype.slice;
 	var immediateIds = {};
@@ -13857,10 +16538,10 @@ var Grommet =
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(102).setImmediate, __webpack_require__(102).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(148).setImmediate, __webpack_require__(148).clearImmediate))
 
 /***/ },
-/* 103 */
+/* 149 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -13956,7 +16637,7 @@ var Grommet =
 
 
 /***/ },
-/* 104 */
+/* 150 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -13964,7 +16645,7 @@ var Grommet =
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 105 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -13972,8 +16653,8 @@ var Grommet =
 	 */
 
 	var slice = Array.prototype.slice,
-	    _ = __webpack_require__(99),
-	    createStore = __webpack_require__(106),
+	    _ = __webpack_require__(145),
+	    createStore = __webpack_require__(152),
 	    strategyMethodNames = {
 	        strict: "joinStrict",
 	        first: "joinLeading",
@@ -14076,15 +16757,15 @@ var Grommet =
 
 
 /***/ },
-/* 106 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(99),
-	    Reflux = __webpack_require__(95),
-	    Keep = __webpack_require__(107),
-	    mixer = __webpack_require__(108),
+	var _ = __webpack_require__(145),
+	    Reflux = __webpack_require__(141),
+	    Keep = __webpack_require__(153),
+	    mixer = __webpack_require__(154),
 	    allowed = {preEmit:1,shouldEmit:1},
-	    bindMethods = __webpack_require__(109);
+	    bindMethods = __webpack_require__(155);
 
 	/**
 	 * Creates an event emitting Data Store. It is mixed in with functions
@@ -14143,7 +16824,7 @@ var Grommet =
 
 
 /***/ },
-/* 107 */
+/* 153 */
 /***/ function(module, exports) {
 
 	exports.createdStores = [];
@@ -14161,10 +16842,10 @@ var Grommet =
 
 
 /***/ },
-/* 108 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(99);
+	var _ = __webpack_require__(145);
 
 	module.exports = function mix(def) {
 	    var composed = {
@@ -14224,7 +16905,7 @@ var Grommet =
 
 
 /***/ },
-/* 109 */
+/* 155 */
 /***/ function(module, exports) {
 
 	module.exports = function(store, definition) {
@@ -14253,10 +16934,10 @@ var Grommet =
 
 
 /***/ },
-/* 110 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(99);
+	var _ = __webpack_require__(145);
 
 	/**
 	 * A module of methods for object that you want to be able to listen to.
@@ -14440,7 +17121,7 @@ var Grommet =
 
 
 /***/ },
-/* 111 */
+/* 157 */
 /***/ function(module, exports) {
 
 	/**
@@ -14452,12 +17133,12 @@ var Grommet =
 
 
 /***/ },
-/* 112 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(99),
-	    Reflux = __webpack_require__(95),
-	    Keep = __webpack_require__(107),
+	var _ = __webpack_require__(145),
+	    Reflux = __webpack_require__(141),
+	    Keep = __webpack_require__(153),
 	    allowed = {preEmit:1,shouldEmit:1};
 
 	/**
@@ -14523,11 +17204,11 @@ var Grommet =
 
 
 /***/ },
-/* 113 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Reflux = __webpack_require__(95),
-	    _ = __webpack_require__(99);
+	var Reflux = __webpack_require__(141),
+	    _ = __webpack_require__(145);
 
 	module.exports = function(listenable,key){
 	    return {
@@ -14555,11 +17236,11 @@ var Grommet =
 
 
 /***/ },
-/* 114 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Reflux = __webpack_require__(95),
-	  _ = __webpack_require__(99);
+	var Reflux = __webpack_require__(141),
+	  _ = __webpack_require__(145);
 
 	module.exports = function(listenable, key, filterFunc) {
 	    filterFunc = _.isFunction(key) ? key : filterFunc;
@@ -14600,11 +17281,11 @@ var Grommet =
 
 
 /***/ },
-/* 115 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(99),
-	    ListenerMethods = __webpack_require__(98);
+	var _ = __webpack_require__(145),
+	    ListenerMethods = __webpack_require__(144);
 
 	/**
 	 * A module meant to be consumed as a mixin by a React component. Supplies the methods from
@@ -14623,10 +17304,10 @@ var Grommet =
 
 
 /***/ },
-/* 116 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Reflux = __webpack_require__(95);
+	var Reflux = __webpack_require__(141);
 
 	/**
 	 * A mixin factory for a React component. Meant as a more convenient way of using the `listenerMixin`,
@@ -14662,14 +17343,16 @@ var Grommet =
 
 
 /***/ },
-/* 117 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	var request = __webpack_require__(118);
+	'use strict';
 
-	var _headers = {};
+	var request = __webpack_require__(164);
+
+	var _headers = { 'Accept': 'application/json' };
 
 	var _timeout = 10000; // 10s
 
@@ -14695,54 +17378,54 @@ var Grommet =
 
 	var Rest = {
 
-	  setTimeout: function (timeout) {
+	  setTimeout: function setTimeout(timeout) {
 	    _timeout = timeout;
 	  },
 
-	  setHeaders: function (headers) {
+	  setHeaders: function setHeaders(headers) {
 	    _headers = headers;
 	  },
 
-	  setHeader: function (name, value) {
+	  setHeader: function setHeader(name, value) {
 	    _headers[name] = value;
 	  },
 
-	  head: function (uri, params) {
+	  head: function head(uri, params) {
 	    var op = request.head(uri).query(buildQueryParams(params));
 	    op.timeout(_timeout);
 	    op.set(_headers);
 	    return op;
 	  },
 
-	  get: function (uri, params) {
+	  get: function get(uri, params) {
 	    var op = request.get(uri).query(buildQueryParams(params));
 	    op.timeout(_timeout);
 	    op.set(_headers);
 	    return op;
 	  },
 
-	  patch: function (uri, data) {
+	  patch: function patch(uri, data) {
 	    var op = request.patch(uri).send(data);
 	    op.timeout(_timeout);
 	    op.set(_headers);
 	    return op;
 	  },
 
-	  post: function (uri, data) {
+	  post: function post(uri, data) {
 	    var op = request.post(uri).send(data);
 	    op.timeout(_timeout);
 	    op.set(_headers);
 	    return op;
 	  },
 
-	  put: function (uri, data) {
+	  put: function put(uri, data) {
 	    var op = request.put(uri).send(data);
 	    op.timeout(_timeout);
 	    op.set(_headers);
 	    return op;
 	  },
 
-	  del: function (uri) {
+	  del: function del(uri) {
 	    var op = request.del(uri);
 	    op.timeout(_timeout);
 	    op.set(_headers);
@@ -14752,17 +17435,16 @@ var Grommet =
 
 	module.exports = Rest;
 
-
 /***/ },
-/* 118 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module dependencies.
 	 */
 
-	var Emitter = __webpack_require__(119);
-	var reduce = __webpack_require__(120);
+	var Emitter = __webpack_require__(165);
+	var reduce = __webpack_require__(166);
 
 	/**
 	 * Root reference for iframes.
@@ -15883,7 +18565,7 @@ var Grommet =
 
 
 /***/ },
-/* 119 */
+/* 165 */
 /***/ function(module, exports) {
 
 	
@@ -16053,7 +18735,7 @@ var Grommet =
 
 
 /***/ },
-/* 120 */
+/* 166 */
 /***/ function(module, exports) {
 
 	
@@ -16082,19 +18764,21 @@ var Grommet =
 	};
 
 /***/ },
-/* 121 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	var Reflux = __webpack_require__(94);
-	var Actions = __webpack_require__(93);
-	var Cookies = __webpack_require__(122);
+	'use strict';
 
-	var TOKEN = "token";
-	var USER = "user";
-	var LOGIN_TIME = "loginTime";
-	var EMAIL = "email";
+	var Reflux = __webpack_require__(140);
+	var Actions = __webpack_require__(139);
+	var Cookies = __webpack_require__(77);
+
+	var TOKEN = 'token';
+	var USER = 'user';
+	var LOGIN_TIME = 'loginTime';
+	var EMAIL = 'email';
 
 	var SessionStore = Reflux.createStore({
 
@@ -16106,7 +18790,7 @@ var Grommet =
 	    loginError: null // {message: , resolution: }
 	  },
 
-	  init: function () {
+	  init: function init() {
 	    this._data.id = Cookies.get(TOKEN);
 	    this._data.name = Cookies.get(USER);
 	    this._data.created = Cookies.get(LOGIN_TIME);
@@ -16117,7 +18801,7 @@ var Grommet =
 	    this.listenTo(Actions.logout, this._onLogout);
 	  },
 
-	  _onLoginCompleted: function (username, id) {
+	  _onLoginCompleted: function _onLoginCompleted(username, id) {
 	    this._data.id = id;
 	    this._data.name = username;
 	    this._data.created = new Date();
@@ -16132,7 +18816,7 @@ var Grommet =
 	    this.trigger(this._data);
 	  },
 
-	  _onLoginFailed: function (error, response) {
+	  _onLoginFailed: function _onLoginFailed(error, response) {
 	    this._data.loginError = {
 	      message: response.message,
 	      resolution: response.resolution
@@ -16140,7 +18824,7 @@ var Grommet =
 	    this.trigger(this._data);
 	  },
 
-	  _onLogout: function () {
+	  _onLogout: function _onLogout() {
 	    this._data.id = null;
 	    this._data.name = null;
 	    this._data.created = null;
@@ -16152,89 +18836,51 @@ var Grommet =
 	    this.trigger(this._data);
 	  },
 
-	  getInitialState: function () {
+	  getInitialState: function getInitialState() {
 	    return this._data;
 	  }
 	});
 
 	module.exports = SessionStore;
 
-
 /***/ },
-/* 122 */
+/* 168 */
 /***/ function(module, exports) {
 
-	// (C) Copyright 2015 Hewlett-Packard Development Company, L.P.
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	// Slightly modified version of the Mozilla Developer Network version.
-	// renamed the module and the functions.
+	'use strict';
 
-	/*\
-	|*|
-	|*|  :: cookies.js ::
-	|*|
-	|*|  A complete cookies reader/writer framework with full unicode support.
-	|*|
-	|*|  Revision #1 - September 4, 2014
-	|*|
-	|*|  https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
-	|*|  https://developer.mozilla.org/User:fusionchess
-	|*|
-	|*|  This framework is released under the GNU Public License, version 3 or later.
-	|*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
-	|*|
-	|*|  Syntaxes:
-	|*|
-	|*|  * Cookies.set(name, value[, end[, path[, domain[, secure]]]])
-	|*|  * Cookies.get(name)
-	|*|  * Cookies.remove(name[, path[, domain]])
-	|*|  * Cookies.has(name)
-	|*|  * Cookies.keys()
-	|*|
-	\*/
+	module.exports = {
+	  validate: function validate(rules) {
+	    var result = {
+	      valid: true,
+	      errors: {},
+	      firstError: null
+	    };
 
-	var Cookies = {
-	  get: function (sKey) {
-	    if (!sKey) { return null; }
-	    return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
-	  },
-	  set: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
-	    if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) { return false; }
-	    var sExpires = "";
-	    if (vEnd) {
-	      switch (vEnd.constructor) {
-	        case Number:
-	          sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
-	          break;
-	        case String:
-	          sExpires = "; expires=" + vEnd;
-	          break;
-	        case Date:
-	          sExpires = "; expires=" + vEnd.toUTCString();
-	          break;
+	    rules.forEach(function (rule) {
+	      if (rule.hasOwnProperty('test')) {
+	        if (rule.test) {
+	          result.errors[rule.field] = rule.message;
+	          result.valid = false;
+	          result.firstError = result.firstError || rule.field;
+	        }
+	      } else if (rule.hasOwnProperty('tests')) {
+	        rule.tests.some(function (test) {
+	          if (test.test) {
+	            result.errors[rule.field] = test.message;
+	            result.valid = false;
+	            result.firstError = result.firstError || rule.field;
+	            return true;
+	          }
+	        });
 	      }
-	    }
-	    document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
-	    return true;
-	  },
-	  remove: function (sKey, sPath, sDomain) {
-	    if (!this.has(sKey)) { return false; }
-	    document.cookie = encodeURIComponent(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "");
-	    return true;
-	  },
-	  has: function (sKey) {
-	    if (!sKey) { return false; }
-	    return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
-	  },
-	  keys: function () {
-	    var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
-	    for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) { aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]); }
-	    return aKeys;
+	    });
+
+	    return result;
 	  }
 	};
-
-	module.exports = Cookies;
-
 
 /***/ }
 /******/ ]);
