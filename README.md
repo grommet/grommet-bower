@@ -2,9 +2,11 @@
 
 **Note**: This is the Bower distribution of [Grommet](https://github.com/HewlettPackard/grommet).
 
-[![Slack](http://alansouzati.github.io/artic/img/slack-badge.svg)](https://grommet.slack.com)  [![Build Status](https://magnum.travis-ci.com/HewlettPackard/grommet.svg?token=1waizR3WLGtkHJzKYxT8&branch=master)](https://magnum.travis-ci.com/HewlettPackard/grommet)  [![Coverage Status](https://coveralls.io/repos/HewlettPackard/grommet/badge.svg?branch=master&t=Wle9Qs)](https://coveralls.io/r/HewlettPackard/grommet?branch=master)
+[![Slack](http://alansouzati.github.io/artic/img/slack-badge.svg)](http://grommet.io/slackin)  [![Build Status](https://api.travis-ci.org/HewlettPackard/grommet.svg)](https://travis-ci.org/HewlettPackard/grommet)  [![Coverage Status](https://coveralls.io/repos/HewlettPackard/grommet/badge.svg)](https://coveralls.io/r/HewlettPackard/grommet) [![Code Climate](https://codeclimate.com/github/HewlettPackard/grommet/badges/gpa.svg)](https://codeclimate.com/github/HewlettPackard/grommet)
 
-<img align="right" height="260" src="http://alansouzati.github.io/artic/img/grommet-logo.png">
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/alansouzahp.svg)](https://saucelabs.com/u/alansouzahp)
+
+<img align="right" height="260" src="http://grommet.io/docs/img/grommet.svg">
 
 ### Documentation
 
@@ -12,11 +14,11 @@ Visit the [grommet.io](http://grommet.io/) website for more information.
 
 ### Support / Contributing
 
-Before opening an issue or pull request, please read the [Contributing](http://grommet.io/docs/hpe/documentation/contributing) guide.
+Before opening an issue or pull request, please read the [Contributing](https://github.com/HewlettPackard/grommet/blob/master/CONTRIBUTING.md) guide.
 
 ### Hello World
 
-  The quickest way to get started is to access the [Hello World](http://grommet.io/docs/hpe/documentation) page.
+  The quickest way to get started is to access the [Hello World](http://grommet.io/docs/develop/hello-world) page.
 
 ### Install
 
@@ -32,7 +34,7 @@ Before opening an issue or pull request, please read the [Contributing](http://g
     $ npm install -g grommet
   ```
 
-  Detailed instructions are on the [Get Started](http://grommet.io/docs/hpe/documentation/get-started) page.
+  Detailed instructions are on the [Get Started](http://grommet.io/docs/develop/get-started) page.
 
 ### Build
 
