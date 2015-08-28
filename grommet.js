@@ -458,12 +458,6 @@ var Grommet =
 
 	  mixins: [KeyboardAccelerators],
 
-	  _onClick: function _onClick(event) {
-	    if (this.props.onClose && event.target === this.refs.background.getDOMNode()) {
-	      this.props.onClose();
-	    }
-	  },
-
 	  getChildContext: function getChildContext() {
 	    return { router: this.props.router };
 	  },
@@ -523,7 +517,7 @@ var Grommet =
 
 	    return React.createElement(
 	      'div',
-	      { ref: 'background', className: classes.join(' '), onClick: this._onClick },
+	      { ref: 'background', className: classes.join(' ') },
 	      React.createElement(
 	        'div',
 	        { className: CLASS_ROOT + "__container" },
@@ -3150,7 +3144,7 @@ var Grommet =
 	  displayName: 'Box',
 
 	  propTypes: {
-	    align: React.PropTypes.oneOf(['start', 'center', 'between', 'end', 'stretch']),
+	    align: React.PropTypes.oneOf(['start', 'center', 'end']),
 	    appCentered: React.PropTypes.bool,
 	    backgroundImage: React.PropTypes.string,
 	    colorIndex: React.PropTypes.string,
@@ -10457,14 +10451,14 @@ var Grommet =
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(2);
 
 	var CLASS_ROOT = "button";
 
 	var Button = React.createClass({
-	  displayName: "Button",
+	  displayName: 'Button',
 
 	  propTypes: {
 	    accent: React.PropTypes.bool,
@@ -10472,7 +10466,14 @@ var Grommet =
 	    large: React.PropTypes.bool,
 	    onClick: React.PropTypes.func,
 	    primary: React.PropTypes.bool,
+	    type: React.PropTypes.oneOf(['button', 'reset', 'submit']),
 	    id: React.PropTypes.string
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      type: "button"
+	    };
 	  },
 
 	  render: function render() {
@@ -10494,8 +10495,8 @@ var Grommet =
 	    }
 
 	    return React.createElement(
-	      "button",
-	      { id: this.props.id, className: classes.join(' '),
+	      'button',
+	      { id: this.props.id, type: this.props.type, className: classes.join(' '),
 	        onClick: this.props.onClick },
 	      this.props.label
 	    );
@@ -22683,6 +22684,7 @@ var Grommet =
 	var MIN_LABEL_WIDTH = 48;
 	var SPARKLINE_STEP_WIDTH = 6;
 	var SPARKLINE_BAR_PADDING = 1;
+	var POINT_RADIUS = 6;
 
 	var Chart = React.createClass({
 	  displayName: 'Chart',
@@ -22696,12 +22698,14 @@ var Grommet =
 	    }),
 	    max: React.PropTypes.number,
 	    min: React.PropTypes.number,
+	    points: React.PropTypes.bool,
 	    series: React.PropTypes.arrayOf(React.PropTypes.shape({
 	      label: React.PropTypes.string,
 	      values: React.PropTypes.arrayOf(React.PropTypes.arrayOf(React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.object // Date
 	      ]))).isRequired,
 	      colorIndex: React.PropTypes.string
 	    })).isRequired,
+	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
 	    small: React.PropTypes.bool,
 	    smooth: React.PropTypes.bool,
 	    sparkline: React.PropTypes.bool,
@@ -22713,10 +22717,17 @@ var Grommet =
 	    })),
 	    type: React.PropTypes.oneOf(['line', 'bar', 'area']),
 	    units: React.PropTypes.string,
-	    xAxis: React.PropTypes.arrayOf(React.PropTypes.shape({
+	    xAxis: React.PropTypes.oneOfType(React.PropTypes.arrayOf(React.PropTypes.shape({
 	      value: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.object // Date
 	      ]).isRequired,
 	      label: React.PropTypes.string.isRequired
+	    })), React.PropTypes.shape({
+	      placement: React.PropTypes.oneOf(['top', 'bottom']),
+	      data: React.PropTypes.arrayOf(React.PropTypes.shape({
+	        value: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.object // Date
+	        ]).isRequired,
+	        label: React.PropTypes.string.isRequired
+	      }).isRequired)
 	    }))
 	  },
 
@@ -22742,13 +22753,27 @@ var Grommet =
 	  },
 
 	  // Performs some initial calculations to make subsequent calculations easier.
-	  _bounds: function _bounds(series, xAxis, width, height) {
+	  _bounds: function _bounds(series, xAxisArg, width, height) {
+	    // normalize xAxis
+	    var xAxis;
+	    if (xAxisArg) {
+	      if (xAxisArg.data) {
+	        xAxis = xAxisArg;
+	      } else {
+	        xAxis = {
+	          data: xAxisArg,
+	          placement: 'top'
+	        };
+	      }
+	    } else {
+	      xAxis = { data: [] };
+	    }
+
 	    // analyze series data
 	    var minX = null;
 	    var maxX = null;
 	    var minY = null;
 	    var maxY = null;
-	    xAxis = xAxis || [];
 
 	    series.forEach(function (item) {
 	      item.values.forEach(function (value, xIndex) {
@@ -22766,8 +22791,8 @@ var Grommet =
 	          minY = Math.min(minY, y);
 	          maxY = Math.max(maxY, y);
 	        }
-	        if (xIndex >= xAxis.length) {
-	          xAxis.push({ value: x, label: '' });
+	        if (xIndex >= xAxis.data.length) {
+	          xAxis.data.push({ value: x, label: '' });
 	        }
 	      });
 	    });
@@ -22780,7 +22805,7 @@ var Grommet =
 	    }
 
 	    if ('bar' === this.props.type) {
-	      xAxis.forEach(function (obj, xIndex) {
+	      xAxis.data.forEach(function (obj, xIndex) {
 	        var sumY = 0;
 	        series.forEach(function (item) {
 	          sumY += item.values[xIndex][1];
@@ -22810,17 +22835,32 @@ var Grommet =
 	    if (this.props.sparkline) {
 	      width = spanX * (SPARKLINE_STEP_WIDTH + SPARKLINE_BAR_PADDING);
 	    }
-	    var thresholdWidth = width - YAXIS_WIDTH;
-	    var thresholdHeight = height - XAXIS_HEIGHT;
 
-	    var graphWidth = this.props.thresholds ? thresholdWidth : width;
-	    var graphHeight = this.props.xAxis ? thresholdHeight : height;
+	    var graphWidth = width;
+	    var graphHeight = height;
+	    if (this.props.thresholds) {
+	      graphWidth -= YAXIS_WIDTH;
+	    }
+	    if (xAxis.placement) {
+	      graphHeight -= XAXIS_HEIGHT;
+	    }
+	    var graphTop = 'top' === xAxis.placement ? XAXIS_HEIGHT : 0;
+	    // graphBottom is the bottom graph Y value
+	    var graphBottom = 'bottom' === xAxis.placement ? height - XAXIS_HEIGHT : height;
+
+	    var graphLeft = 0;
+	    var graphRight = graphWidth;
+	    if (this.props.points) {
+	      graphLeft += POINT_RADIUS + 2;
+	      graphRight -= POINT_RADIUS + 2;
+	    }
+
 	    var scaleX = graphWidth / spanX;
-	    var xStepWidth = Math.round(graphWidth / (xAxis.length - 1));
+	    var xStepWidth = Math.round(graphWidth / (xAxis.data.length - 1));
 	    if ('bar' === this.props.type) {
 	      // allow room for bar width for last bar
-	      scaleX = graphWidth / (spanX + spanX / (xAxis.length - 1));
-	      xStepWidth = Math.round(graphWidth / xAxis.length);
+	      scaleX = graphWidth / (spanX + spanX / (xAxis.data.length - 1));
+	      xStepWidth = Math.round(graphWidth / xAxis.data.length);
 	    }
 	    var scaleY = graphHeight / spanY;
 	    var barPadding = Math.max(BAR_PADDING, Math.round(xStepWidth / 8));
@@ -22840,6 +22880,10 @@ var Grommet =
 	      scaleY: scaleY,
 	      graphWidth: graphWidth,
 	      graphHeight: graphHeight,
+	      graphTop: graphTop,
+	      graphBottom: graphBottom,
+	      graphLeft: graphLeft,
+	      graphRight: graphRight,
 	      xStepWidth: xStepWidth,
 	      barPadding: barPadding,
 	      xAxis: xAxis
@@ -22850,7 +22894,8 @@ var Grommet =
 
 	  // Aligns the legend with the current position of the cursor, if any.
 	  _alignLegend: function _alignLegend() {
-	    if (this.state.activeXIndex >= 0) {
+	    if (this.state.activeXIndex >= 0 && this.refs.cursor) {
+	      var bounds = this.state.bounds;
 	      var cursorElement = this.refs.cursor.getDOMNode();
 	      var cursorRect = cursorElement.getBoundingClientRect();
 	      var element = this.refs.chart.getDOMNode();
@@ -22865,7 +22910,7 @@ var Grommet =
 	      }
 
 	      legendElement.style.left = '' + left + 'px ';
-	      legendElement.style.top = '' + XAXIS_HEIGHT + 'px ';
+	      legendElement.style.top = '' + bounds.graphTop + 'px ';
 	    }
 	  },
 
@@ -22902,12 +22947,19 @@ var Grommet =
 	    if (props.hasOwnProperty('important')) {
 	      defaultXIndex = props.important;
 	    }
+	    var activeXIndex = defaultXIndex;
+	    if (this.state && this.state.activeXIndex >= 0) {
+	      activeXIndex = this.state.activeXIndex;
+	    }
+	    // normalize size
+	    var size = props.size || (props.small ? 'small' : props.large ? 'large' : null);
 	    return {
 	      bounds: bounds,
 	      defaultXIndex: defaultXIndex,
-	      activeXIndex: defaultXIndex,
+	      activeXIndex: activeXIndex,
 	      width: width,
-	      height: height
+	      height: height,
+	      size: size
 	    };
 	  },
 
@@ -22937,13 +22989,14 @@ var Grommet =
 	  // Translates X value to X coordinate.
 	  _translateX: function _translateX(x) {
 	    var bounds = this.state.bounds;
-	    return Math.round((x - bounds.minX) * bounds.scaleX);
+	    return Math.max(bounds.graphLeft, Math.min(bounds.graphRight, Math.round((x - bounds.minX) * bounds.scaleX)));
 	  },
 
 	  // Translates Y value to Y coordinate.
 	  _translateY: function _translateY(y) {
+	    var bounds = this.state.bounds;
 	    // leave room for line width since strokes are aligned to the center
-	    return Math.max(1, this.state.height - Math.max(1, this._translateHeight(y)));
+	    return Math.max(1, bounds.graphBottom - Math.max(1, this._translateHeight(y)));
 	  },
 
 	  // Translates Y value to graph height.
@@ -23005,6 +23058,7 @@ var Grommet =
 
 	  // Converts the series data into paths for line or area types.
 	  _renderLinesOrAreas: function _renderLinesOrAreas() {
+	    var bounds = this.state.bounds;
 	    var values = this.props.series.map(function (item, seriesIndex) {
 
 	      // Get all coordinates up front so they are available
@@ -23014,10 +23068,10 @@ var Grommet =
 	      }, this);
 
 	      var colorIndex = this._itemColorIndex(item, seriesIndex);
-	      var classes = [CLASS_ROOT + "__values-" + this.props.type, "color-index-" + colorIndex];
 	      var commands = null;
 	      var controlCoordinates = null;
 	      var previousControlCoordinates = null;
+	      var points = [];
 
 	      // Build the commands for this set of coordinates.
 	      coordinates.forEach(function (coordinate, index) {
@@ -23039,25 +23093,39 @@ var Grommet =
 	            commands += " L" + coordinate.join(',');
 	          }
 	        }
+
+	        if (this.props.points && !this.props.sparkline) {
+	          var x = Math.max(POINT_RADIUS + 1, Math.min(bounds.graphWidth - (POINT_RADIUS + 1), coordinate[0]));
+	          points.push(React.createElement('circle', { className: CLASS_ROOT + "__values-point color-index-" + colorIndex,
+	            cx: x, cy: coordinate[1], r: POINT_RADIUS }));
+	        }
+
 	        previousControlCoordinates = controlCoordinates;
 	      }, this);
 
-	      var path = null;
-	      if ('line' === this.props.type) {
-	        path = React.createElement('path', { fill: 'none', className: classes.join(' '), d: commands });
-	      } else if ('area' === this.props.type) {
+	      var linePath;
+	      if ('line' === this.props.type || this.props.points) {
+	        var classes = [CLASS_ROOT + "__values-line", "color-index-" + colorIndex];
+	        linePath = React.createElement('path', { fill: 'none', className: classes.join(' '), d: commands });
+	      }
+
+	      var areaPath;
+	      if ('area' === this.props.type) {
 	        // For area charts, close the path by drawing down to the bottom
 	        // and across to the bottom of where we started.
-	        var close = 'L' + coordinates[coordinates.length - 1][0] + ',' + this.state.height + 'L' + coordinates[0][0] + ',' + this.state.height + 'Z';
-	        commands += close;
+	        var close = 'L' + coordinates[coordinates.length - 1][0] + ',' + bounds.graphBottom + 'L' + coordinates[0][0] + ',' + bounds.graphBottom + 'Z';
+	        var areaCommands = commands + close;
+	        var classes = [CLASS_ROOT + "__values-area", "color-index-" + colorIndex];
 
-	        path = React.createElement('path', { stroke: 'none', className: classes.join(' '), d: commands });
+	        areaPath = React.createElement('path', { stroke: 'none', className: classes.join(' '), d: areaCommands });
 	      }
 
 	      return React.createElement(
 	        'g',
 	        { key: seriesIndex },
-	        path
+	        areaPath,
+	        linePath,
+	        points
 	      );
 	    }, this);
 
@@ -23068,7 +23136,7 @@ var Grommet =
 	  _renderBars: function _renderBars() {
 	    var bounds = this.state.bounds;
 
-	    var values = bounds.xAxis.map(function (obj, xIndex) {
+	    var values = bounds.xAxis.data.map(function (obj, xIndex) {
 	      var baseY = bounds.minY;
 	      var stepBars = this.props.series.map(function (item, seriesIndex) {
 
@@ -23146,18 +23214,23 @@ var Grommet =
 	  // Converts the xAxis labels into texts.
 	  _renderXAxis: function _renderXAxis() {
 	    var bounds = this.state.bounds;
-	    var labelY = Math.round(XAXIS_HEIGHT * 0.6);
+	    var labelY;
+	    if ('bottom' === bounds.xAxis.placement) {
+	      labelY = this.state.height - Math.round(XAXIS_HEIGHT * 0.3);
+	    } else {
+	      labelY = Math.round(XAXIS_HEIGHT * 0.6);
+	    }
 	    var priorPosition = null;
 	    var activePosition = null;
-	    if (bounds.xAxis && this.state.activeXIndex >= 0) {
-	      activePosition = this._labelPosition(bounds.xAxis[this.state.activeXIndex].value, bounds);
+	    if (this.state.activeXIndex >= 0) {
+	      activePosition = this._labelPosition(bounds.xAxis.data[this.state.activeXIndex].value, bounds);
 	    }
 	    var lastPosition = null;
-	    if (bounds.xAxis.length > 0) {
-	      lastPosition = this._labelPosition(bounds.xAxis[bounds.xAxis.length - 1].value, bounds);
+	    if (bounds.xAxis.data.length > 0) {
+	      lastPosition = this._labelPosition(bounds.xAxis.data[bounds.xAxis.data.length - 1].value, bounds);
 	    }
 
-	    var labels = bounds.xAxis.map(function (obj, xIndex) {
+	    var labels = bounds.xAxis.data.map(function (obj, xIndex) {
 	      var classes = [CLASS_ROOT + "__xaxis-index"];
 	      if (xIndex === this.state.activeXIndex) {
 	        classes.push(CLASS_ROOT + "__xaxis-index--active");
@@ -23166,7 +23239,7 @@ var Grommet =
 
 	      // Ensure we don't overlap labels. But, make sure we show the first and
 	      // last ones.
-	      if (this._labelOverlaps(position, activePosition) || xIndex !== 0 && xIndex !== bounds.xAxis.length - 1 && (this._labelOverlaps(position, priorPosition) || this._labelOverlaps(position, lastPosition))) {
+	      if (this._labelOverlaps(position, activePosition) || xIndex !== 0 && xIndex !== bounds.xAxis.data.length - 1 && (this._labelOverlaps(position, priorPosition) || this._labelOverlaps(position, lastPosition))) {
 	        classes.push(CLASS_ROOT + "__xaxis-index--eclipse");
 	      } else {
 	        priorPosition = position;
@@ -23231,7 +23304,7 @@ var Grommet =
 	    var className = CLASS_ROOT + "__" + layer;
 	    var bounds = this.state.bounds;
 
-	    var bands = bounds.xAxis.map(function (obj, xIndex) {
+	    var bands = bounds.xAxis.data.map(function (obj, xIndex) {
 	      var classes = [className + "-xband"];
 	      if (xIndex === this.state.activeXIndex) {
 	        classes.push(className + "-xband--active");
@@ -23269,6 +23342,7 @@ var Grommet =
 
 	  // Converts the active X index to a line.
 	  _renderCursor: function _renderCursor() {
+	    var bounds = this.state.bounds;
 	    var value = this.props.series[0].values[this.state.activeXIndex];
 	    var coordinates = this._coordinates(value);
 	    if ('bar' === this.props.type) {
@@ -23276,22 +23350,43 @@ var Grommet =
 	    }
 	    // Offset it just a little if it is at an edge.
 	    var x = Math.max(1, Math.min(coordinates[0], this.state.bounds.graphWidth - 1));
+	    var line = React.createElement('line', { fill: 'none', x1: x, y1: bounds.graphTop, x2: x, y2: bounds.graphBottom });
+
+	    var points;
+	    if (this.props.points) {
+	      // for area and line charts, include a dot at the intersection
+	      if ('line' === this.props.type || 'area' === this.props.type) {
+	        points = this.props.series.map(function (item, seriesIndex) {
+	          value = item.values[this.state.activeXIndex];
+	          coordinates = this._coordinates(value);
+	          var colorIndex = this._itemColorIndex(item, seriesIndex);
+	          return React.createElement('circle', { className: CLASS_ROOT + "__cursor-point color-index-" + colorIndex,
+	            cx: x, cy: coordinates[1], r: Math.round(POINT_RADIUS * 1.2) });
+	        }, this);
+	      }
+	    }
+
 	    return React.createElement(
 	      'g',
 	      { ref: 'cursor', className: CLASS_ROOT + "__cursor" },
-	      React.createElement('line', { fill: 'none', x1: x, y1: XAXIS_HEIGHT, x2: x, y2: this.state.height })
+	      line,
+	      points
 	    );
 	  },
 
 	  // Builds a Legend appropriate for the currently active X index.
 	  _renderLegend: function _renderLegend() {
 	    var activeSeries = this.props.series.map(function (item) {
-	      return {
-	        label: item.label,
+	      var datum = {
 	        value: item.values[this.state.activeXIndex][1],
-	        units: item.units,
-	        colorIndex: item.colorIndex
+	        units: item.units
 	      };
+	      // only show label and swatch if we have more than one series
+	      if (this.props.series.length > 1) {
+	        datum.label = item.label;
+	        datum.colorIndex = item.colorIndex;
+	      }
+	      return datum;
 	    }, this);
 	    var classes = [CLASS_ROOT + "__legend", CLASS_ROOT + "__legend--" + (this.props.legend.position || 'overlay')];
 
@@ -23304,11 +23399,8 @@ var Grommet =
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    classes.push(CLASS_ROOT + "--" + this.props.type);
-	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
+	    if (this.state.size) {
+	      classes.push(CLASS_ROOT + "--" + this.state.size);
 	    }
 	    if (this.props.sparkline) {
 	      classes.push(CLASS_ROOT + "--sparkline");
@@ -23341,7 +23433,7 @@ var Grommet =
 
 	    var cursor = null;
 	    var legend = null;
-	    if (this.props.legend && this.state.activeXIndex >= 0) {
+	    if (this.props.legend && this.state.activeXIndex >= 0 && this.props.series[0].values.length > 0) {
 	      cursor = this._renderCursor();
 	      legend = this._renderLegend();
 	    }
@@ -23465,24 +23557,28 @@ var Grommet =
 	        valueClasses.push("large-number-font");
 	      }
 
-	      return React.createElement(
-	        'li',
-	        { key: item.label || index, className: legendClasses.join(' '),
-	          onClick: item.onClick,
-	          onMouseOver: this._onActive.bind(this, index),
-	          onMouseOut: this._onActive.bind(this, this.props.activeIndex) },
-	        React.createElement(
+	      var swatch;
+	      if (item.hasOwnProperty('colorIndex')) {
+	        swatch = React.createElement(
 	          'svg',
 	          { className: CLASS_ROOT + "__item-swatch color-index-" + colorIndex,
 	            viewBox: '0 0 12 12' },
 	          React.createElement('path', { className: item.className, d: 'M 5 0 l 0 12' })
-	        ),
-	        React.createElement(
+	        );
+	      }
+
+	      var label;
+	      if (item.hasOwnProperty('label')) {
+	        label = React.createElement(
 	          'span',
 	          { className: CLASS_ROOT + "__item-label" },
 	          item.label
-	        ),
-	        React.createElement(
+	        );
+	      }
+
+	      var value;
+	      if (item.hasOwnProperty('value')) {
+	        value = React.createElement(
 	          'span',
 	          { className: valueClasses.join(' ') },
 	          item.value,
@@ -23491,7 +23587,18 @@ var Grommet =
 	            { className: CLASS_ROOT + "__item-units" },
 	            this.props.units
 	          )
-	        )
+	        );
+	      }
+
+	      return React.createElement(
+	        'li',
+	        { key: item.label || index, className: legendClasses.join(' '),
+	          onClick: item.onClick,
+	          onMouseOver: this._onActive.bind(this, index),
+	          onMouseOut: this._onActive.bind(this, this.props.activeIndex) },
+	        swatch,
+	        label,
+	        value
 	      );
 	    }, this);
 
@@ -23549,6 +23656,7 @@ var Grommet =
 	  propTypes: {
 	    checked: React.PropTypes.bool,
 	    defaultChecked: React.PropTypes.bool,
+	    disabled: React.PropTypes.bool,
 	    id: React.PropTypes.string.isRequired,
 	    label: React.PropTypes.string.isRequired,
 	    name: React.PropTypes.string,
@@ -23560,8 +23668,15 @@ var Grommet =
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    var labelId = 'checkbox-label-' + uuid.v1();
+	    var hidden;
 	    if (this.props.toggle) {
 	      classes.push(CLASS_ROOT + "--toggle");
+	    }
+	    if (this.props.disabled) {
+	      classes.push(CLASS_ROOT + "--disabled");
+	      if (this.props.checked) {
+	        hidden = React.createElement('input', { name: this.props.name, type: 'hidden', value: 'true' });
+	      }
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -23574,6 +23689,7 @@ var Grommet =
 	        'aria-lebelledby': labelId },
 	      React.createElement('input', { tabIndex: '0', className: CLASS_ROOT + "__input",
 	        id: this.props.id, name: this.props.name, type: 'checkbox',
+	        disabled: this.props.disabled,
 	        checked: this.props.checked,
 	        defaultChecked: this.props.defaultChecked,
 	        onChange: this.props.onChange }),
@@ -23587,6 +23703,7 @@ var Grommet =
 	          React.createElement('path', { fill: 'none', d: 'M6,11.3 L10.3,16 L18,6.2' })
 	        )
 	      ),
+	      hidden,
 	      React.createElement(
 	        'span',
 	        { role: 'label', id: labelId, tabIndex: '-1', className: CLASS_ROOT + "__label" },
@@ -23887,6 +24004,7 @@ var Grommet =
 	        svgElement: React.PropTypes.node
 	      }
 	    })),
+	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
 	    small: React.PropTypes.bool,
 	    units: React.PropTypes.string,
 	    vertical: React.PropTypes.bool
@@ -23949,8 +24067,12 @@ var Grommet =
 	      total = 100;
 	    }
 
+	    // normalize size
+	    var size = props.size || (props.small ? 'small' : props.large ? 'large' : null);
+
 	    var state = {
-	      total: total
+	      total: total,
+	      size: size
 	    };
 
 	    return state;
@@ -23998,14 +24120,11 @@ var Grommet =
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    classes.push(CLASS_ROOT + "--legend-" + this.state.legendPosition);
+	    if (this.state.size) {
+	      classes.push(CLASS_ROOT + "--" + this.state.size);
+	    }
 	    if (this.props.vertical) {
 	      classes.push(CLASS_ROOT + "--vertical");
-	    }
-	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
 	    }
 	    if (!this.props.series || this.props.series.length === 0) {
 	      classes.push(CLASS_ROOT + "--loading");
@@ -25449,6 +25568,7 @@ var Grommet =
 	  propTypes: {
 	    logo: React.PropTypes.node,
 	    title: React.PropTypes.string,
+	    usernameType: React.PropTypes.string,
 	    rememberMe: React.PropTypes.bool,
 	    forgotPassword: React.PropTypes.node,
 	    errors: React.PropTypes.arrayOf(React.PropTypes.string),
@@ -25466,7 +25586,8 @@ var Grommet =
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      errors: []
+	      errors: [],
+	      usernameType: 'email'
 	    };
 	  },
 
@@ -25529,7 +25650,7 @@ var Grommet =
 	        React.createElement(
 	          FormField,
 	          { htmlFor: 'username', label: this.getGrommetIntlMessage('Username') },
-	          React.createElement('input', { id: 'username', ref: 'username', type: 'email' })
+	          React.createElement('input', { id: 'username', ref: 'username', type: this.props.usernameType })
 	        ),
 	        React.createElement(
 	          FormField,
@@ -25538,7 +25659,7 @@ var Grommet =
 	        )
 	      ),
 	      errors,
-	      React.createElement(Button, { className: CLASS_ROOT + "__submit", primary: true, strong: true,
+	      React.createElement(Button, { id: CLASS_ROOT + "__submit", className: CLASS_ROOT + "__submit", primary: true, strong: true,
 	        label: this.getGrommetIntlMessage('Log In'),
 	        onClick: this._onSubmit }),
 	      footer
@@ -25790,9 +25911,11 @@ var Grommet =
 
 	  propTypes: {
 	    important: React.PropTypes.number,
-	    large: React.PropTypes.bool,
-	    legend: React.PropTypes.bool,
-	    legendTotal: React.PropTypes.bool,
+	    large: React.PropTypes.bool, // DEPRECATED: remove in 0.5, use size
+	    legend: React.PropTypes.oneOfType([React.PropTypes.bool, React.PropTypes.shape({
+	      total: React.PropTypes.bool,
+	      placement: React.PropTypes.oneOf(['right', 'bottom'])
+	    })]),
 	    max: React.PropTypes.oneOfType([React.PropTypes.shape({
 	      value: React.PropTypes.number.isRequired,
 	      label: React.PropTypes.string
@@ -25801,6 +25924,7 @@ var Grommet =
 	      value: React.PropTypes.number.isRequired,
 	      label: React.PropTypes.string
 	    }), React.PropTypes.number]),
+	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
 	    series: React.PropTypes.arrayOf(React.PropTypes.shape({
 	      label: React.PropTypes.string,
 	      value: React.PropTypes.number.isRequired,
@@ -25808,7 +25932,7 @@ var Grommet =
 	      important: React.PropTypes.bool,
 	      onClick: React.PropTypes.func
 	    })),
-	    small: React.PropTypes.bool,
+	    small: React.PropTypes.bool, // DEPRECATED: remove in 0.5, use size
 	    threshold: React.PropTypes.number,
 	    thresholds: React.PropTypes.arrayOf(React.PropTypes.shape({
 	      label: React.PropTypes.string,
@@ -25846,29 +25970,23 @@ var Grommet =
 	  },
 
 	  _layout: function _layout() {
-	    // legendPosition based on available window orientation
-	    var ratio = window.innerWidth / window.innerHeight;
-	    if (ratio < 0.8) {
-	      this.setState({ legendPosition: 'bottom' });
-	    } else if (ratio > 1.2) {
-	      this.setState({ legendPosition: 'right' });
+	    if (this.state.placeLegend) {
+	      // legendPlacement based on available window orientation
+	      var ratio = window.innerWidth / window.innerHeight;
+	      if (ratio < 0.8) {
+	        this.setState({ legendPlacement: 'bottom' });
+	      } else if (ratio > 1.2) {
+	        this.setState({ legendPlacement: 'right' });
+	      }
 	    }
-	    /*
-	    // content based on available real estate
-	    var parentElement = this.refs.donut.getDOMNode().parentNode;
-	    var width = parentElement.offsetWidth;
-	    var height = parentElement.offsetHeight;
-	    var donutHeight = BASE_SIZE;
-	    if (this.props.partial) {
-	      donutHeight = PARTIAL_SIZE;
+
+	    if ('right' === this.state.legendPlacement) {
+	      if (this.refs.legend) {
+	        var graphicHeight = this.refs.activeGraphic.getDOMNode().offsetHeight;
+	        var legendHeight = this.refs.legend.getDOMNode().offsetHeight;
+	        this.setState({ tallLegend: legendHeight > graphicHeight });
+	      }
 	    }
-	    if (height < donutHeight || width < BASE_SIZE ||
-	      (width < (BASE_SIZE * 2) && height < (donutHeight * 2))) {
-	      this.setState({size: 'small'});
-	    } else {
-	      this.setState({size: null});
-	    }
-	    */
 	  },
 
 	  _normalizeSeries: function _normalizeSeries(props, min, max, thresholds) {
@@ -26067,12 +26185,23 @@ var Grommet =
 	      state.startRadius = Math.max(CIRCLE_RADIUS, SPIRAL_THICKNESS * (series.length + 0.5)) - Math.max(0, series.length - 1) * SPIRAL_THICKNESS;
 	    }
 
+	    // normalize size
+	    state.size = props.size || (props.small ? 'small' : props.large ? 'large' : null);
+
+	    // legend
+	    state.placeLegend = !(props.legend && props.legend.placement);
+	    if (!state.placeLegend) {
+	      state.legendPlacement = props.legend.placement;
+	    }
+
 	    return state;
 	  },
 
 	  getInitialState: function getInitialState() {
 	    var state = this._stateFromProps(this.props);
-	    state.legendPosition = 'bottom';
+	    if (state.placeLegend) {
+	      state.legendPlacement = 'bottom';
+	    }
 	    state.initial = true;
 	    return state;
 	  },
@@ -26094,10 +26223,6 @@ var Grommet =
 	    clearTimeout(this._resizeTimer);
 	    window.removeEventListener('resize', this._onResize);
 	  },
-
-	  //_itemColorIndex: function (item, index) {
-	  //  return item.colorIndex || ('graph-' + (index + 1));
-	  //},
 
 	  _translateBarWidth: function _translateBarWidth(value) {
 	    return Math.round(this.state.scale * value);
@@ -26332,7 +26457,7 @@ var Grommet =
 	  },
 
 	  _renderLegend: function _renderLegend() {
-	    return React.createElement(Legend, { className: CLASS_ROOT + "__legend",
+	    return React.createElement(Legend, { ref: 'legend', className: CLASS_ROOT + "__legend",
 	      series: this.state.series,
 	      units: this.props.units,
 	      activeIndex: this.state.activeIndex,
@@ -26342,15 +26467,11 @@ var Grommet =
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
 	    classes.push(CLASS_ROOT + "--" + this.props.type);
-	    classes.push(CLASS_ROOT + "--legend-" + this.state.legendPosition);
 	    if (this.props.vertical) {
 	      classes.push(CLASS_ROOT + "--vertical");
 	    }
-	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
+	    if (this.state.size) {
+	      classes.push(CLASS_ROOT + "--" + this.state.size);
 	    }
 	    if (this.state.series.length === 0) {
 	      classes.push(CLASS_ROOT + "--loading");
@@ -26359,6 +26480,9 @@ var Grommet =
 	    }
 	    if (this.state.activeIndex !== null) {
 	      classes.push(CLASS_ROOT + "--active");
+	    }
+	    if (this.state.tallLegend) {
+	      classes.push(CLASS_ROOT + "--tall-legend");
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -26425,13 +26549,15 @@ var Grommet =
 	          maxLabel
 	        )
 	      );
+	      classes.push(CLASS_ROOT + "--minmax");
 	    }
 
 	    var active = this._renderActive();
 
-	    var legend = null;
+	    var legend;
 	    if (this.props.legend) {
 	      legend = this._renderLegend();
+	      classes.push(CLASS_ROOT + "--legend-" + this.state.legendPlacement);
 	    }
 
 	    return React.createElement(
@@ -26439,7 +26565,7 @@ var Grommet =
 	      { className: classes.join(' ') },
 	      React.createElement(
 	        'div',
-	        { className: CLASS_ROOT + "__active-graphic" },
+	        { ref: 'activeGraphic', className: CLASS_ROOT + "__active-graphic" },
 	        React.createElement(
 	          'div',
 	          { className: CLASS_ROOT + "__labeled-graphic" },
@@ -26521,17 +26647,18 @@ var Grommet =
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(2);
 
 	var CLASS_ROOT = "radio-button";
 
 	var RadioButton = React.createClass({
-	  displayName: 'RadioButton',
+	  displayName: "RadioButton",
 
 	  propTypes: {
 	    checked: React.PropTypes.bool,
+	    disabled: React.PropTypes.bool,
 	    defaultChecked: React.PropTypes.bool,
 	    id: React.PropTypes.string.isRequired,
 	    label: React.PropTypes.string.isRequired,
@@ -26542,21 +26669,25 @@ var Grommet =
 
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
+	    if (this.props.disabled) {
+	      classes.push(CLASS_ROOT + "--disabled");
+	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 	    return React.createElement(
-	      'label',
+	      "label",
 	      { className: classes.join(' ') },
-	      React.createElement('input', { className: CLASS_ROOT + "__input",
-	        id: this.props.id, name: this.props.name, type: 'radio',
+	      React.createElement("input", { className: CLASS_ROOT + "__input",
+	        id: this.props.id, name: this.props.name, type: "radio",
+	        disabled: this.props.disabled,
 	        checked: this.props.checked,
 	        defaultChecked: this.props.defaultChecked,
 	        value: this.props.value,
 	        onChange: this.props.onChange }),
-	      React.createElement('span', { className: CLASS_ROOT + "__control" }),
+	      React.createElement("span", { className: CLASS_ROOT + "__control" }),
 	      React.createElement(
-	        'span',
+	        "span",
 	        { className: CLASS_ROOT + "__label" },
 	        this.props.label
 	      )
@@ -27294,7 +27425,7 @@ var Grommet =
 
 	  _layout: function _layout() {
 	    var splitElement = this.refs.split.getDOMNode();
-	    if (splitElement.offsetWidth < 600) {
+	    if (splitElement.offsetWidth < this._breakWidth) {
 	      this._setResponsive('single');
 	    } else {
 	      this._setResponsive('multiple');
@@ -27306,6 +27437,15 @@ var Grommet =
 	  },
 
 	  componentDidMount: function componentDidMount() {
+	    // figure out the break width
+	    this._breakWidth = 720; // default
+	    // CSS stores the break width in a hidden pseudo element
+	    var splitElement = this.refs.split.getDOMNode();
+	    var after = window.getComputedStyle(splitElement, ':after');
+	    if (after) {
+	      this._breakWidth = after.getPropertyValue('width');
+	    }
+
 	    window.addEventListener('resize', this._onResize);
 	    this._layout();
 	  },
@@ -27352,6 +27492,7 @@ var Grommet =
 	var InfiniteScroll = __webpack_require__(212);
 
 	var CLASS_ROOT = "table";
+	var SELECTED_CLASS = CLASS_ROOT + "__row--selected";
 
 	var Table = React.createClass({
 	  displayName: 'Table',
@@ -27360,7 +27501,7 @@ var Grommet =
 	    selection: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.arrayOf(React.PropTypes.number)]),
 	    onMore: React.PropTypes.func,
 	    scrollable: React.PropTypes.bool,
-	    selectable: React.PropTypes.bool,
+	    selectable: React.PropTypes.oneOfType([React.PropTypes.bool, React.PropTypes.oneOf(['multiple'])]),
 	    onSelect: React.PropTypes.func
 	  },
 
@@ -27375,15 +27516,15 @@ var Grommet =
 	    };
 	  },
 
-	  _clearSelection: function _clearSelection() {
-	    var rows = this.refs.table.getDOMNode().querySelectorAll("." + CLASS_ROOT + "__row--selected");
+	  _clearSelected: function _clearSelected() {
+	    var rows = this.refs.table.getDOMNode().querySelectorAll("." + SELECTED_CLASS);
 	    for (var i = 0; i < rows.length; i++) {
-	      rows[i].classList.remove(CLASS_ROOT + "__row--selected");
+	      rows[i].classList.remove(SELECTED_CLASS);
 	    }
 	  },
 
-	  _markSelection: function _markSelection() {
-	    this._clearSelection();
+	  _alignSelection: function _alignSelection() {
+	    this._clearSelected();
 	    if (null !== this.state.selection) {
 	      var tbody = this.refs.table.getDOMNode().querySelectorAll('tbody')[0];
 	      var selection = this.state.selection;
@@ -27391,7 +27532,7 @@ var Grommet =
 	        selection = [selection];
 	      }
 	      selection.forEach(function (rowIndex) {
-	        tbody.childNodes[rowIndex].classList.add(CLASS_ROOT + "__row--selected");
+	        tbody.childNodes[rowIndex].classList.add(SELECTED_CLASS);
 	      });
 	    }
 	  },
@@ -27408,16 +27549,45 @@ var Grommet =
 
 	    var parentElement = element.parentNode;
 	    if (element && parentElement.nodeName === 'TBODY') {
-	      this._clearSelection();
-	      element.classList.add(CLASS_ROOT + "__row--selected");
-	      if (this.props.onSelect) {
-	        var idx;
-	        for (idx = 0; idx < parentElement.childNodes.length; idx++) {
-	          if (parentElement.childNodes[idx] === element) {
-	            break;
-	          }
+
+	      var index;
+	      for (index = 0; index < parentElement.childNodes.length; index++) {
+	        if (parentElement.childNodes[index] === element) {
+	          break;
 	        }
-	        this.props.onSelect(idx);
+	      }
+
+	      var selection = [];
+	      if (this.state.selection) {
+	        selection = this.state.selection.slice(0);
+	      }
+
+	      if ('multiple' === this.props.selectable && (event.ctrlKey || event.metaKey)) {
+
+	        // toggle
+	        var selectionIndex = selection.indexOf(index);
+	        if (-1 === selectionIndex) {
+	          element.classList.add(SELECTED_CLASS);
+	          selection.push(index);
+	        } else {
+	          element.classList.remove(SELECTED_CLASS);
+	          selection.splice(selectionIndex, 1);
+	        }
+	      } else {
+
+	        this._clearSelected();
+	        selection = [index];
+	        element.classList.add(SELECTED_CLASS);
+	      }
+
+	      this.setState({ selection: selection });
+
+	      if (this.props.onSelect) {
+	        // notify caller that the selection has changed
+	        if (selection.length === 1) {
+	          selection = selection[0];
+	        }
+	        this.props.onSelect(selection);
 	      }
 	    }
 	  },
@@ -27462,7 +27632,7 @@ var Grommet =
 	  },
 
 	  componentDidMount: function componentDidMount() {
-	    this._markSelection();
+	    this._alignSelection();
 	    if (this.props.scrollable) {
 	      this._buildMirror();
 	      this._alignMirror();
@@ -27481,7 +27651,7 @@ var Grommet =
 
 	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 	    if (this.state.selection !== prevState.selection) {
-	      this._markSelection();
+	      this._alignSelection();
 	    }
 	    if (this.props.scrollable) {
 	      this._alignMirror();
@@ -27575,6 +27745,7 @@ var Grommet =
 	    fill: React.PropTypes.bool,
 	    flush: React.PropTypes.bool,
 	    onMore: React.PropTypes.func,
+	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
 	    small: React.PropTypes.bool
 	  },
 
@@ -27704,7 +27875,9 @@ var Grommet =
 	    if (this.props.flush) {
 	      classes.push(CLASS_ROOT + "--flush");
 	    }
-	    if (this.props.small) {
+	    if (this.props.size) {
+	      classes.push(CLASS_ROOT + "--" + this.props.size);
+	    } else if (this.props.small) {
 	      classes.push(CLASS_ROOT + "--small");
 	    }
 	    if (this.props.direction) {
@@ -27931,6 +28104,7 @@ var Grommet =
 	  displayName: 'Parts',
 
 	  propTypes: {
+	    align: React.PropTypes.oneOf(['start', 'center', 'between', 'end', 'stretch']),
 	    direction: React.PropTypes.oneOf(['row', 'column']).isRequired,
 	    uniform: React.PropTypes.bool
 	  },
@@ -27977,6 +28151,9 @@ var Grommet =
 	  render: function render() {
 	    var classes = [CLASS_ROOT + "__parts"];
 	    classes.push(CLASS_ROOT + "__parts--direction-" + this.props.direction);
+	    if (this.props.align) {
+	      classes.push(CLASS_ROOT + "__parts--align-" + this.props.align);
+	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
@@ -29101,6 +29278,10 @@ var Grommet =
 	var Person = React.createClass({
 	  displayName: 'Person',
 
+	  propTypes: {
+	    onClick: React.PropTypes.func
+	  },
+
 	  render: function render() {
 	    var className = 'control-icon control-icon-person';
 	    if (this.props.className) {
@@ -29108,7 +29289,8 @@ var Grommet =
 	    }
 	    return React.createElement(
 	      'svg',
-	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      { className: className, viewBox: '0 0 48 48', version: '1.1',
+	        onClick: this.props.onClick },
 	      React.createElement(
 	        'g',
 	        { fill: 'none', strokeWidth: '2' },
