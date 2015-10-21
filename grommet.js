@@ -46,89 +46,90 @@ var Grommet =
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
-
 	'use strict';
 
 	var Grommet = {
 	  // Components
 	  Anchor: __webpack_require__(1),
 	  App: __webpack_require__(4),
-	  Article: __webpack_require__(100),
-	  Box: __webpack_require__(95),
-	  Button: __webpack_require__(103),
-	  Calendar: __webpack_require__(104),
-	  Carousel: __webpack_require__(197),
-	  Chart: __webpack_require__(198),
-	  CheckBox: __webpack_require__(200),
-	  Distribution: __webpack_require__(201),
-	  Donut: __webpack_require__(202),
-	  Footer: __webpack_require__(203),
-	  Form: __webpack_require__(204),
-	  FormField: __webpack_require__(205),
-	  FormFields: __webpack_require__(206),
-	  Header: __webpack_require__(195),
-	  Headline: __webpack_require__(207),
-	  Label: __webpack_require__(208),
+	  Article: __webpack_require__(101),
+	  Box: __webpack_require__(96),
+	  Button: __webpack_require__(54),
+	  Calendar: __webpack_require__(105),
+	  Carousel: __webpack_require__(198),
+	  Chart: __webpack_require__(199),
+	  CheckBox: __webpack_require__(201),
+	  Distribution: __webpack_require__(202),
+	  Donut: __webpack_require__(203),
+	  Footer: __webpack_require__(204),
+	  Form: __webpack_require__(205),
+	  FormField: __webpack_require__(206),
+	  FormFields: __webpack_require__(207),
+	  Header: __webpack_require__(196),
+	  Headline: __webpack_require__(208),
+	  Label: __webpack_require__(209),
 	  Layer: __webpack_require__(6),
-	  Legend: __webpack_require__(199),
-	  List: __webpack_require__(209),
-	  ListItem: __webpack_require__(210),
-	  Login: __webpack_require__(213),
-	  LoginForm: __webpack_require__(214),
-	  Map: __webpack_require__(215),
-	  Menu: __webpack_require__(54),
-	  Meter: __webpack_require__(216),
-	  RadioButton: __webpack_require__(217),
-	  Search: __webpack_require__(218),
-	  SearchInput: __webpack_require__(220),
-	  Section: __webpack_require__(221),
-	  Sidebar: __webpack_require__(222),
-	  Split: __webpack_require__(223),
-	  Table: __webpack_require__(224),
-	  Tiles: __webpack_require__(232),
-	  Tile: __webpack_require__(233),
-	  Title: __webpack_require__(196),
-	  Topology: __webpack_require__(234),
-	  Object: __webpack_require__(242),
-	  TBD: __webpack_require__(243),
+	  Legend: __webpack_require__(200),
+	  List: __webpack_require__(210),
+	  ListItem: __webpack_require__(211),
+	  Login: __webpack_require__(214),
+	  LoginForm: __webpack_require__(215),
+	  Map: __webpack_require__(216),
+	  Menu: __webpack_require__(55),
+	  Meter: __webpack_require__(217),
+	  RadioButton: __webpack_require__(218),
+	  Search: __webpack_require__(219),
+	  SearchInput: __webpack_require__(221),
+	  Section: __webpack_require__(222),
+	  Sidebar: __webpack_require__(223),
+	  Split: __webpack_require__(224),
+	  Table: __webpack_require__(225),
+	  Tiles: __webpack_require__(233),
+	  Tile: __webpack_require__(234),
+	  Title: __webpack_require__(197),
+	  Topology: __webpack_require__(235),
+	  Object: __webpack_require__(243),
+	  TBD: __webpack_require__(244),
 	  Icons: {
-	    Calendar: __webpack_require__(193),
-	    Clear: __webpack_require__(7),
-	    DragHandle: __webpack_require__(244),
-	    Edit: __webpack_require__(245),
-	    Facebook: __webpack_require__(246),
-	    Filter: __webpack_require__(247),
-	    Grommet: __webpack_require__(248),
-	    Help: __webpack_require__(249),
-	    Left: __webpack_require__(194),
-	    LinkedIn: __webpack_require__(250),
-	    Mail: __webpack_require__(251),
-	    More: __webpack_require__(96),
-	    Person: __webpack_require__(252),
+	    Calendar: __webpack_require__(245),
+	    Clear: __webpack_require__(246),
+	    DragHandle: __webpack_require__(247),
+	    Edit: __webpack_require__(248),
+	    Facebook: __webpack_require__(249),
+	    Filter: __webpack_require__(250),
+	    Grommet: __webpack_require__(251),
+	    Help: __webpack_require__(252),
+	    Left: __webpack_require__(195),
+	    LinkedIn: __webpack_require__(253),
+	    Mail: __webpack_require__(254),
+	    More: __webpack_require__(97),
+	    Person: __webpack_require__(255),
 	    Right: __webpack_require__(3),
-	    Search: __webpack_require__(219),
-	    SearchPlus: __webpack_require__(253),
-	    Spinning: __webpack_require__(211),
-	    Status: __webpack_require__(235),
-	    Twitter: __webpack_require__(254),
-	    World: __webpack_require__(255)
+	    Search: __webpack_require__(220),
+	    SearchPlus: __webpack_require__(256),
+	    Spinning: __webpack_require__(212),
+	    Status: __webpack_require__(236),
+	    Twitter: __webpack_require__(257),
+	    World: __webpack_require__(258),
+	    Base: __webpack_require__(259)
 	  },
 	  // Mixins
 	  Mixins: {
-	    KeyboardAccelerators: __webpack_require__(52),
-	    ReactLayeredComponent: __webpack_require__(256)
+	    KeyboardAccelerators: __webpack_require__(102),
+	    ReactLayeredComponent: __webpack_require__(569)
 	  },
 	  // Actions
-	  Actions: __webpack_require__(257),
+	  Actions: __webpack_require__(570),
 	  // Stores
-	  SessionStore: __webpack_require__(283),
+	  SessionStore: __webpack_require__(596),
 	  // Utils
-	  Cookies: __webpack_require__(99),
+	  Cookies: __webpack_require__(100),
 	  DOM: __webpack_require__(53),
-	  Locale: __webpack_require__(98),
-	  Rest: __webpack_require__(279),
-	  RestWatch: __webpack_require__(284),
-	  Validator: __webpack_require__(285)
+	  KeyboardAccelerators: __webpack_require__(52),
+	  Locale: __webpack_require__(99),
+	  Rest: __webpack_require__(592),
+	  RestWatch: __webpack_require__(597),
+	  Validator: __webpack_require__(598)
 	};
 
 	module.exports = Grommet;
@@ -242,7 +243,7 @@ var Grommet =
 	var SkipLinks = __webpack_require__(5);
 
 	var IntlMixin = __webpack_require__(8);
-	var Locale = __webpack_require__(98);
+	var Locale = __webpack_require__(99);
 
 	var App = React.createClass({
 	  displayName: 'App',
@@ -317,7 +318,7 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var Layer = __webpack_require__(6);
-	var Menu = __webpack_require__(54);
+	var Menu = __webpack_require__(55);
 	var DOM = __webpack_require__(53);
 	var IntlMixin = __webpack_require__(8);
 
@@ -435,6 +436,7 @@ var Grommet =
 	var CloseIcon = __webpack_require__(7);
 	var KeyboardAccelerators = __webpack_require__(52);
 	var DOMUtils = __webpack_require__(53);
+	var Button = __webpack_require__(54);
 
 	var CLASS_ROOT = "layer";
 
@@ -456,8 +458,6 @@ var Grommet =
 	    router: React.PropTypes.func
 	  },
 
-	  mixins: [KeyboardAccelerators],
-
 	  getChildContext: function getChildContext() {
 	    return { router: this.props.router };
 	  },
@@ -471,7 +471,7 @@ var Grommet =
 	    }
 
 	    if (this.props.onClose) {
-	      this.startListeningToKeyboard({
+	      KeyboardAccelerators.startListeningToKeyboard(this, {
 	        tab: this._processTab,
 	        esc: this.props.onClose
 	      });
@@ -487,7 +487,7 @@ var Grommet =
 	    }
 
 	    if (this.props.onClose) {
-	      this.stopListeningToKeyboard({
+	      KeyboardAccelerators.stopListeningToKeyboard(this, {
 	        tab: this._processTab,
 	        esc: this.props.onClose
 	      });
@@ -537,8 +537,11 @@ var Grommet =
 	      closer = React.createElement(
 	        'div',
 	        { className: CLASS_ROOT + "__closer" },
-	        React.createElement(CloseIcon, { onClick: this.props.onClose, a11yTitle: this.props.a11yCloserTitle,
-	          a11yRole: 'button' })
+	        React.createElement(
+	          Button,
+	          { type: 'icon', onClick: this.props.onClose },
+	          React.createElement(CloseIcon, { a11yTitle: this.props.a11yCloserTitle })
+	        )
 	      );
 	    }
 
@@ -664,101 +667,67 @@ var Grommet =
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
 
 	'use strict';
 
 	var React = __webpack_require__(2);
 	var IntlMixin = __webpack_require__(8);
-	var KeyboardAccelerators = __webpack_require__(52);
 
-	var Clear = React.createClass({
-	  displayName: 'Clear',
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
 
 	  propTypes: {
-	    onClick: React.PropTypes.func,
 	    a11yTitle: React.PropTypes.string,
 	    a11yTitleId: React.PropTypes.string,
-	    a11yRole: React.PropTypes.string
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
 	  },
 
-	  mixins: [IntlMixin, KeyboardAccelerators],
+	  mixins: [IntlMixin],
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      a11yRole: 'button',
-	      a11yTitleId: 'clear-title'
+	      a11yTitleId: 'close-title'
 	    };
 	  },
 
-	  componentDidMount: function componentDidMount() {
-	    if (this.props.onClick) {
-	      this.startListeningToKeyboard({
-	        enter: this._handleKeyboardEvent,
-	        space: this._handleKeyboardEvent
-	      });
-	    }
-	  },
-
-	  componentWillUnmount: function componentWillUnmount() {
-	    if (this.props.onClick) {
-	      this.stopListeningToKeyboard({
-	        enter: this._handleKeyboardEvent,
-	        space: this._handleKeyboardEvent
-	      });
-	    }
-	  },
-
-	  _handleKeyboardEvent: function _handleKeyboardEvent(e) {
-	    if (document.activeElement === this.getDOMNode()) {
-	      e.preventDefault();
-	      e.stopPropagation();
-	      this.props.onClick();
-	    }
-	  },
-
-	  _handleClick: function _handleClick(e) {
-	    if (this.props.onClick) {
-	      e.preventDefault();
-	      e.stopPropagation();
-	      this.props.onClick();
-	    }
-	  },
-
 	  render: function render() {
-	    var className = 'control-icon control-icon-clear';
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-close'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
 	    if (this.props.className) {
-	      className += ' ' + this.props.className;
+	      classes.push(this.props.className);
 	    }
 
-	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : 'Clear');
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "close");
 
 	    return React.createElement(
-	      'a',
-	      { href: '#', onClick: this._handleClick, role: this.props.a11yRole,
-	        'aria-labelledby': this.props.a11yTitleId },
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
 	      React.createElement(
 	        'title',
 	        { id: this.props.a11yTitleId },
 	        a11yTitle
 	      ),
 	      React.createElement(
-	        'svg',
-	        { className: className, viewBox: '0 0 48 48',
-	          version: '1.1' },
-	        React.createElement(
-	          'g',
-	          { fill: 'none' },
-	          React.createElement('line', { strokeWidth: '2', x1: '14', y1: '14', x2: '34', y2: '34' }),
-	          React.createElement('line', { strokeWidth: '2', x1: '14', y1: '34', x2: '34', y2: '14' })
-	        )
+	        'g',
+	        { id: 'close' },
+	        React.createElement('rect', { id: '_x2E_svg', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,33l18-18 M15,15l18,18' })
 	      )
 	    );
 	  }
 
 	});
 
-	module.exports = Clear;
+	module.exports = Icon;
 
 /***/ },
 /* 8 */
@@ -837,7 +806,7 @@ var Grommet =
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {var m = __webpack_require__(10),
-	    IntlPolyfill = m.default;
+	    IntlPolyfill = m['default'];
 
 	// Expose `IntlPolyfill` as global to add locale data into runtime later on.
 	global.IntlPolyfill = IntlPolyfill;
@@ -855,7 +824,7 @@ var Grommet =
 	// providing an idiomatic api for the nodejs version of this module
 	module.exports = exports = IntlPolyfill;
 	// preserving the original api in case another module is relying on that
-	exports.default = IntlPolyfill;
+	exports['default'] = IntlPolyfill;
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
@@ -7524,14 +7493,16 @@ var Grommet =
 
 /***/ },
 /* 52 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var findDOMNode = __webpack_require__(2).findDOMNode;
 
 	// Allow callers to use key labels instead of key code numbers.
 	// This makes their code easier to read.
-	'use strict';
-
 	var KEYS = {
 	  backspace: 8,
 	  tab: 9,
@@ -7565,31 +7536,29 @@ var Grommet =
 	  }
 	};
 
-	// KeyboardAccelerators is a mixin for handling keyboard events.
+	// KeyboardAccelerators is a utility for handling keyboard events.
 	// Add listeners using startListeningToKeyboard().
 	// Remove listeners using stopListeningToKeyboard().
-	// When the component that includes this is unmounted, the keyboard event
-	// listener is removed automatically.
 	var KeyboardAccelerators = {
-	  _initKeyboardAccelerators: function _initKeyboardAccelerators() {
-	    var id = this.getDOMNode().getAttribute('data-reactid');
+	  _initKeyboardAccelerators: function _initKeyboardAccelerators(element) {
+	    var id = element.getAttribute('data-reactid');
 	    _keyboardAccelerators[id] = {
 	      handlers: {}
 	    };
 	  },
 
-	  _getKeyboardAcceleratorHandlers: function _getKeyboardAcceleratorHandlers() {
-	    var id = this.getDOMNode().getAttribute('data-reactid');
+	  _getKeyboardAcceleratorHandlers: function _getKeyboardAcceleratorHandlers(element) {
+	    var id = element.getAttribute('data-reactid');
 	    return _keyboardAccelerators[id].handlers;
 	  },
 
-	  _getDowns: function _getDowns() {
-	    var id = this.getDOMNode().getAttribute('data-reactid');
+	  _getDowns: function _getDowns(element) {
+	    var id = element.getAttribute('data-reactid');
 	    return _keyboardAccelerators[id].downs;
 	  },
 
-	  _isComponentListening: function _isComponentListening() {
-	    var id = this.getDOMNode().getAttribute('data-reactid');
+	  _isComponentListening: function _isComponentListening(element) {
+	    var id = element.getAttribute('data-reactid');
 	    for (var i = 0; i < _listenersCounter; i++) {
 	      if (_listeners[i] === id) {
 	        return true;
@@ -7598,14 +7567,14 @@ var Grommet =
 	    return false;
 	  },
 
-	  _subscribeComponent: function _subscribeComponent() {
-	    var id = this.getDOMNode().getAttribute('data-reactid');
+	  _subscribeComponent: function _subscribeComponent(element) {
+	    var id = element.getAttribute('data-reactid');
 	    _listeners[_listenersCounter] = id;
 	    _listenersCounter++;
 	  },
 
-	  _unsubscribeComponent: function _unsubscribeComponent() {
-	    var id = this.getDOMNode().getAttribute('data-reactid');
+	  _unsubscribeComponent: function _unsubscribeComponent(element) {
+	    var id = element.getAttribute('data-reactid');
 	    var i = 0;
 	    for (; i < _listenersCounter; i++) {
 	      if (_listeners[i] == id) {
@@ -7623,8 +7592,9 @@ var Grommet =
 	  // Add handlers for specific keys.
 	  // This function can be called multiple times, existing handlers will
 	  // be replaced, new handlers will be added.
-	  startListeningToKeyboard: function startListeningToKeyboard(handlers) {
-	    this._initKeyboardAccelerators();
+	  startListeningToKeyboard: function startListeningToKeyboard(component, handlers) {
+	    var element = findDOMNode(component);
+	    this._initKeyboardAccelerators(element);
 	    var keys = 0;
 	    for (var key in handlers) {
 	      if (handlers.hasOwnProperty(key)) {
@@ -7633,7 +7603,7 @@ var Grommet =
 	          keyCode = KEYS[key];
 	        }
 	        keys += 1;
-	        this._getKeyboardAcceleratorHandlers()[keyCode] = handlers[key];
+	        this._getKeyboardAcceleratorHandlers(element)[keyCode] = handlers[key];
 	      }
 	    }
 
@@ -7642,8 +7612,8 @@ var Grommet =
 	        window.addEventListener("keydown", _onKeyboardAcceleratorKeyPress);
 	        _isKeyboardAcceleratorListening = true;
 	      }
-	      if (!this._isComponentListening()) {
-	        this._subscribeComponent();
+	      if (!this._isComponentListening(element)) {
+	        this._subscribeComponent(element);
 	      }
 	    }
 	  },
@@ -7652,8 +7622,9 @@ var Grommet =
 	  // If no argument is passed in, all handlers are removed.
 	  // This function can be called multiple times, only the handlers
 	  // specified will be removed.
-	  stopListeningToKeyboard: function stopListeningToKeyboard(handlers) {
-	    if (!this._isComponentListening()) {
+	  stopListeningToKeyboard: function stopListeningToKeyboard(component, handlers) {
+	    var element = findDOMNode(component);
+	    if (!this._isComponentListening(element)) {
 	      return;
 	    }
 	    if (handlers) {
@@ -7663,31 +7634,27 @@ var Grommet =
 	          if (KEYS.hasOwnProperty(key)) {
 	            keyCode = KEYS[key];
 	          }
-	          delete this._getKeyboardAcceleratorHandlers()[keyCode];
+	          delete this._getKeyboardAcceleratorHandlers(element)[keyCode];
 	        }
 	      }
 	    }
 
 	    var keyCount = 0;
-	    for (var keyHandler in this._getKeyboardAcceleratorHandlers()) {
-	      if (this._getKeyboardAcceleratorHandlers().hasOwnProperty(keyHandler)) {
+	    for (var keyHandler in this._getKeyboardAcceleratorHandlers(element)) {
+	      if (this._getKeyboardAcceleratorHandlers(element).hasOwnProperty(keyHandler)) {
 	        keyCount += 1;
 	      }
 	    }
 
 	    if (!handlers || 0 === keyCount) {
-	      this._initKeyboardAccelerators();
-	      this._unsubscribeComponent();
+	      this._initKeyboardAccelerators(element);
+	      this._unsubscribeComponent(element);
 	    }
 
 	    if (_listenersCounter === 0) {
 	      window.removeEventListener("keydown", _onKeyboardAcceleratorKeyPress);
 	      _isKeyboardAcceleratorListening = false;
 	    }
-	  },
-
-	  componentWillUnmount: function componentWillUnmount() {
-	    this.stopListeningToKeyboard();
 	  }
 	};
 
@@ -7767,18 +7734,88 @@ var Grommet =
 
 	'use strict';
 
+	var React = __webpack_require__(2);
+
+	var CLASS_ROOT = "button";
+
+	var Button = React.createClass({
+	  displayName: 'Button',
+
+	  propTypes: {
+	    accent: React.PropTypes.bool,
+	    label: React.PropTypes.string,
+	    id: React.PropTypes.string,
+	    onClick: React.PropTypes.func,
+	    primary: React.PropTypes.bool,
+	    secondary: React.PropTypes.bool,
+	    icon: React.PropTypes.bool,
+	    type: React.PropTypes.oneOf(['button', 'reset', 'submit', 'icon'])
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      type: "button"
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.primary) {
+	      classes.push(CLASS_ROOT + "--primary");
+	    }
+	    if (this.props.secondary) {
+	      classes.push(CLASS_ROOT + "--secondary");
+	    }
+	    if (this.props.accent) {
+	      classes.push(CLASS_ROOT + "--accent");
+	    }
+	    if (!this.props.onClick) {
+	      classes.push(CLASS_ROOT + "--disabled");
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var content = this.props.label;
+	    var type = this.props.type;
+	    if (this.props.type === 'icon') {
+	      classes.push(CLASS_ROOT + "--icon");
+	      content = this.props.children;
+	      type = 'button';
+	    }
+
+	    return React.createElement(
+	      'button',
+	      { id: this.props.id, type: type, className: classes.join(' '),
+	        onClick: this.props.onClick, disabled: !this.props.onClick },
+	      content
+	    );
+	  }
+
+	});
+
+	module.exports = Button;
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var merge = __webpack_require__(55);
-	var pick = __webpack_require__(88);
-	var keys = __webpack_require__(81);
+	var merge = __webpack_require__(56);
+	var pick = __webpack_require__(89);
+	var keys = __webpack_require__(82);
 	var KeyboardAccelerators = __webpack_require__(52);
-	var Drop = __webpack_require__(93);
-	var Responsive = __webpack_require__(94);
-	var Box = __webpack_require__(95);
-	var MoreIcon = __webpack_require__(96);
-	var DropCaretIcon = __webpack_require__(97);
+	var Drop = __webpack_require__(94);
+	var Responsive = __webpack_require__(95);
+	var Box = __webpack_require__(96);
+	var MoreIcon = __webpack_require__(97);
+	var DropCaretIcon = __webpack_require__(98);
 
 	var CLASS_ROOT = "menu";
 
@@ -7801,8 +7838,6 @@ var Grommet =
 	    router: React.PropTypes.func
 	  },
 
-	  mixins: [KeyboardAccelerators],
-
 	  getChildContext: function getChildContext() {
 	    return { router: this.props.router };
 	  },
@@ -7812,7 +7847,7 @@ var Grommet =
 	      up: this._onUpKeyPress,
 	      down: this._onDownKeyPress
 	    };
-	    this.startListeningToKeyboard(this._keyboardHandlers);
+	    KeyboardAccelerators.startListeningToKeyboard(this, this._keyboardHandlers);
 	    var menuItems = this.refs.navContainer.getDOMNode().childNodes;
 	    for (var i = 0; i < menuItems.length; i++) {
 	      var classes = menuItems[i].className.toString();
@@ -7832,7 +7867,7 @@ var Grommet =
 	  },
 
 	  componentWillUnmount: function componentWillUnmount() {
-	    this.stopListeningToKeyboard(this._keyboardHandlers);
+	    KeyboardAccelerators.stopListeningToKeyboard(this, this._keyboardHandlers);
 	  },
 
 	  _onUpKeyPress: function _onUpKeyPress(event) {
@@ -7947,8 +7982,6 @@ var Grommet =
 	    router: React.PropTypes.func
 	  },
 
-	  mixins: [KeyboardAccelerators],
-
 	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      closeOnClick: true,
@@ -8021,8 +8054,8 @@ var Grommet =
 
 	    switch (this.state.state) {
 	      case 'collapsed':
-	        this.stopListeningToKeyboard(focusedKeyboardHandlers);
-	        this.stopListeningToKeyboard(activeKeyboardHandlers);
+	        KeyboardAccelerators.stopListeningToKeyboard(this, focusedKeyboardHandlers);
+	        KeyboardAccelerators.stopListeningToKeyboard(this, activeKeyboardHandlers);
 	        document.removeEventListener('click', this._onClose);
 	        if (this._drop) {
 	          this._drop.remove();
@@ -8030,12 +8063,12 @@ var Grommet =
 	        }
 	        break;
 	      case 'focused':
-	        this.stopListeningToKeyboard(activeKeyboardHandlers);
-	        this.startListeningToKeyboard(focusedKeyboardHandlers);
+	        KeyboardAccelerators.stopListeningToKeyboard(this, activeKeyboardHandlers);
+	        KeyboardAccelerators.startListeningToKeyboard(this, focusedKeyboardHandlers);
 	        break;
 	      case 'expanded':
-	        this.stopListeningToKeyboard(focusedKeyboardHandlers);
-	        this.startListeningToKeyboard(activeKeyboardHandlers);
+	        KeyboardAccelerators.stopListeningToKeyboard(this, focusedKeyboardHandlers);
+	        KeyboardAccelerators.startListeningToKeyboard(this, activeKeyboardHandlers);
 	        if (prevState.state !== 'expanded') {
 	          document.addEventListener('click', this._onClose);
 	          this._drop = Drop.add(this.refs.control.getDOMNode(), this._renderDrop(), this.props.dropAlign);
@@ -8053,6 +8086,7 @@ var Grommet =
 
 	  componentWillUnmount: function componentWillUnmount() {
 	    document.removeEventListener('click', this._onClose);
+	    KeyboardAccelerators.stopListeningToKeyboard(this);
 	    if (this._drop) {
 	      this._drop.remove();
 	    }
@@ -8240,11 +8274,11 @@ var Grommet =
 	module.exports = Menu;
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseMerge = __webpack_require__(56),
-	    createAssigner = __webpack_require__(83);
+	var baseMerge = __webpack_require__(57),
+	    createAssigner = __webpack_require__(84);
 
 	/**
 	 * Recursively merges own enumerable properties of the source object(s), that
@@ -8300,17 +8334,17 @@ var Grommet =
 
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayEach = __webpack_require__(57),
-	    baseMergeDeep = __webpack_require__(58),
-	    isArray = __webpack_require__(66),
-	    isArrayLike = __webpack_require__(61),
-	    isObject = __webpack_require__(70),
-	    isObjectLike = __webpack_require__(65),
-	    isTypedArray = __webpack_require__(78),
-	    keys = __webpack_require__(81);
+	var arrayEach = __webpack_require__(58),
+	    baseMergeDeep = __webpack_require__(59),
+	    isArray = __webpack_require__(67),
+	    isArrayLike = __webpack_require__(62),
+	    isObject = __webpack_require__(71),
+	    isObjectLike = __webpack_require__(66),
+	    isTypedArray = __webpack_require__(79),
+	    keys = __webpack_require__(82);
 
 	/**
 	 * The base implementation of `_.merge` without support for argument juggling,
@@ -8362,7 +8396,7 @@ var Grommet =
 
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	/**
@@ -8390,16 +8424,16 @@ var Grommet =
 
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayCopy = __webpack_require__(59),
-	    isArguments = __webpack_require__(60),
-	    isArray = __webpack_require__(66),
-	    isArrayLike = __webpack_require__(61),
-	    isPlainObject = __webpack_require__(71),
-	    isTypedArray = __webpack_require__(78),
-	    toPlainObject = __webpack_require__(79);
+	var arrayCopy = __webpack_require__(60),
+	    isArguments = __webpack_require__(61),
+	    isArray = __webpack_require__(67),
+	    isArrayLike = __webpack_require__(62),
+	    isPlainObject = __webpack_require__(72),
+	    isTypedArray = __webpack_require__(79),
+	    toPlainObject = __webpack_require__(80);
 
 	/**
 	 * A specialized version of `baseMerge` for arrays and objects which performs
@@ -8463,7 +8497,7 @@ var Grommet =
 
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	/**
@@ -8489,11 +8523,11 @@ var Grommet =
 
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArrayLike = __webpack_require__(61),
-	    isObjectLike = __webpack_require__(65);
+	var isArrayLike = __webpack_require__(62),
+	    isObjectLike = __webpack_require__(66);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -8529,11 +8563,11 @@ var Grommet =
 
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getLength = __webpack_require__(62),
-	    isLength = __webpack_require__(64);
+	var getLength = __webpack_require__(63),
+	    isLength = __webpack_require__(65);
 
 	/**
 	 * Checks if `value` is array-like.
@@ -8550,10 +8584,10 @@ var Grommet =
 
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseProperty = __webpack_require__(63);
+	var baseProperty = __webpack_require__(64);
 
 	/**
 	 * Gets the "length" property value of `object`.
@@ -8571,7 +8605,7 @@ var Grommet =
 
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports) {
 
 	/**
@@ -8591,7 +8625,7 @@ var Grommet =
 
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports) {
 
 	/**
@@ -8617,7 +8651,7 @@ var Grommet =
 
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports) {
 
 	/**
@@ -8635,12 +8669,12 @@ var Grommet =
 
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(67),
-	    isLength = __webpack_require__(64),
-	    isObjectLike = __webpack_require__(65);
+	var getNative = __webpack_require__(68),
+	    isLength = __webpack_require__(65),
+	    isObjectLike = __webpack_require__(66);
 
 	/** `Object#toString` result references. */
 	var arrayTag = '[object Array]';
@@ -8681,10 +8715,10 @@ var Grommet =
 
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isNative = __webpack_require__(68);
+	var isNative = __webpack_require__(69);
 
 	/**
 	 * Gets the native function at `key` of `object`.
@@ -8703,11 +8737,11 @@ var Grommet =
 
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isFunction = __webpack_require__(69),
-	    isObjectLike = __webpack_require__(65);
+	var isFunction = __webpack_require__(70),
+	    isObjectLike = __webpack_require__(66);
 
 	/** Used to detect host constructors (Safari > 5). */
 	var reIsHostCtor = /^\[object .+?Constructor\]$/;
@@ -8757,10 +8791,10 @@ var Grommet =
 
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(70);
+	var isObject = __webpack_require__(71);
 
 	/** `Object#toString` result references. */
 	var funcTag = '[object Function]';
@@ -8801,7 +8835,7 @@ var Grommet =
 
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports) {
 
 	/**
@@ -8835,12 +8869,12 @@ var Grommet =
 
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseForIn = __webpack_require__(72),
-	    isArguments = __webpack_require__(60),
-	    isObjectLike = __webpack_require__(65);
+	var baseForIn = __webpack_require__(73),
+	    isArguments = __webpack_require__(61),
+	    isObjectLike = __webpack_require__(66);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -8912,11 +8946,11 @@ var Grommet =
 
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFor = __webpack_require__(73),
-	    keysIn = __webpack_require__(76);
+	var baseFor = __webpack_require__(74),
+	    keysIn = __webpack_require__(77);
 
 	/**
 	 * The base implementation of `_.forIn` without support for callback
@@ -8935,10 +8969,10 @@ var Grommet =
 
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createBaseFor = __webpack_require__(74);
+	var createBaseFor = __webpack_require__(75);
 
 	/**
 	 * The base implementation of `baseForIn` and `baseForOwn` which iterates
@@ -8958,10 +8992,10 @@ var Grommet =
 
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(75);
+	var toObject = __webpack_require__(76);
 
 	/**
 	 * Creates a base function for `_.forIn` or `_.forInRight`.
@@ -8991,10 +9025,10 @@ var Grommet =
 
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(70);
+	var isObject = __webpack_require__(71);
 
 	/**
 	 * Converts `value` to an object if it's not one.
@@ -9011,14 +9045,14 @@ var Grommet =
 
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArguments = __webpack_require__(60),
-	    isArray = __webpack_require__(66),
-	    isIndex = __webpack_require__(77),
-	    isLength = __webpack_require__(64),
-	    isObject = __webpack_require__(70);
+	var isArguments = __webpack_require__(61),
+	    isArray = __webpack_require__(67),
+	    isIndex = __webpack_require__(78),
+	    isLength = __webpack_require__(65),
+	    isObject = __webpack_require__(71);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -9081,7 +9115,7 @@ var Grommet =
 
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports) {
 
 	/** Used to detect unsigned integer values. */
@@ -9111,11 +9145,11 @@ var Grommet =
 
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isLength = __webpack_require__(64),
-	    isObjectLike = __webpack_require__(65);
+	var isLength = __webpack_require__(65),
+	    isObjectLike = __webpack_require__(66);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]',
@@ -9191,11 +9225,11 @@ var Grommet =
 
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCopy = __webpack_require__(80),
-	    keysIn = __webpack_require__(76);
+	var baseCopy = __webpack_require__(81),
+	    keysIn = __webpack_require__(77);
 
 	/**
 	 * Converts `value` to a plain object flattening inherited enumerable
@@ -9228,7 +9262,7 @@ var Grommet =
 
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	/**
@@ -9257,13 +9291,13 @@ var Grommet =
 
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(67),
-	    isArrayLike = __webpack_require__(61),
-	    isObject = __webpack_require__(70),
-	    shimKeys = __webpack_require__(82);
+	var getNative = __webpack_require__(68),
+	    isArrayLike = __webpack_require__(62),
+	    isObject = __webpack_require__(71),
+	    shimKeys = __webpack_require__(83);
 
 	/* Native method references for those with the same name as other `lodash` methods. */
 	var nativeKeys = getNative(Object, 'keys');
@@ -9308,14 +9342,14 @@ var Grommet =
 
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArguments = __webpack_require__(60),
-	    isArray = __webpack_require__(66),
-	    isIndex = __webpack_require__(77),
-	    isLength = __webpack_require__(64),
-	    keysIn = __webpack_require__(76);
+	var isArguments = __webpack_require__(61),
+	    isArray = __webpack_require__(67),
+	    isIndex = __webpack_require__(78),
+	    isLength = __webpack_require__(65),
+	    keysIn = __webpack_require__(77);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -9355,12 +9389,12 @@ var Grommet =
 
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bindCallback = __webpack_require__(84),
-	    isIterateeCall = __webpack_require__(86),
-	    restParam = __webpack_require__(87);
+	var bindCallback = __webpack_require__(85),
+	    isIterateeCall = __webpack_require__(87),
+	    restParam = __webpack_require__(88);
 
 	/**
 	 * Creates a `_.assign`, `_.defaults`, or `_.merge` function.
@@ -9402,10 +9436,10 @@ var Grommet =
 
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var identity = __webpack_require__(85);
+	var identity = __webpack_require__(86);
 
 	/**
 	 * A specialized version of `baseCallback` which only supports `this` binding
@@ -9447,7 +9481,7 @@ var Grommet =
 
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports) {
 
 	/**
@@ -9473,12 +9507,12 @@ var Grommet =
 
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArrayLike = __webpack_require__(61),
-	    isIndex = __webpack_require__(77),
-	    isObject = __webpack_require__(70);
+	var isArrayLike = __webpack_require__(62),
+	    isIndex = __webpack_require__(78),
+	    isObject = __webpack_require__(71);
 
 	/**
 	 * Checks if the provided arguments are from an iteratee call.
@@ -9507,7 +9541,7 @@ var Grommet =
 
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports) {
 
 	/** Used as the `TypeError` message for "Functions" methods. */
@@ -9571,14 +9605,14 @@ var Grommet =
 
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFlatten = __webpack_require__(89),
-	    bindCallback = __webpack_require__(84),
-	    pickByArray = __webpack_require__(91),
-	    pickByCallback = __webpack_require__(92),
-	    restParam = __webpack_require__(87);
+	var baseFlatten = __webpack_require__(90),
+	    bindCallback = __webpack_require__(85),
+	    pickByArray = __webpack_require__(92),
+	    pickByCallback = __webpack_require__(93),
+	    restParam = __webpack_require__(88);
 
 	/**
 	 * Creates an object composed of the picked `object` properties. Property
@@ -9619,14 +9653,14 @@ var Grommet =
 
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayPush = __webpack_require__(90),
-	    isArguments = __webpack_require__(60),
-	    isArray = __webpack_require__(66),
-	    isArrayLike = __webpack_require__(61),
-	    isObjectLike = __webpack_require__(65);
+	var arrayPush = __webpack_require__(91),
+	    isArguments = __webpack_require__(61),
+	    isArray = __webpack_require__(67),
+	    isArrayLike = __webpack_require__(62),
+	    isObjectLike = __webpack_require__(66);
 
 	/**
 	 * The base implementation of `_.flatten` with added support for restricting
@@ -9666,7 +9700,7 @@ var Grommet =
 
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports) {
 
 	/**
@@ -9692,10 +9726,10 @@ var Grommet =
 
 
 /***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(75);
+	var toObject = __webpack_require__(76);
 
 	/**
 	 * A specialized version of `_.pick` which picks `object` properties specified
@@ -9726,10 +9760,10 @@ var Grommet =
 
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseForIn = __webpack_require__(72);
+	var baseForIn = __webpack_require__(73);
 
 	/**
 	 * A specialized version of `_.pick` which picks `object` properties `predicate`
@@ -9754,7 +9788,7 @@ var Grommet =
 
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -9941,7 +9975,7 @@ var Grommet =
 	module.exports = Drop;
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -10018,7 +10052,7 @@ var Grommet =
 	module.exports = Responsive;
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -10026,7 +10060,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var keys = __webpack_require__(81);
+	var keys = __webpack_require__(82);
 
 	var CLASS_ROOT = "box";
 
@@ -10146,7 +10180,7 @@ var Grommet =
 	module.exports = Box;
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -10181,7 +10215,7 @@ var Grommet =
 	module.exports = More;
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -10214,14 +10248,14 @@ var Grommet =
 	module.exports = DropCaret;
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 	'use strict';
 
-	var merge = __webpack_require__(55);
-	var Cookies = __webpack_require__(99);
+	var merge = __webpack_require__(56);
+	var Cookies = __webpack_require__(100);
 	var fallbackLocale = 'en-US';
 
 	function normalizeLocale(locale) {
@@ -10266,7 +10300,7 @@ var Grommet =
 	};
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2015 Hewlett-Packard Development Company, L.P.
@@ -10353,7 +10387,7 @@ var Grommet =
 	module.exports = Cookies;
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -10363,14 +10397,14 @@ var Grommet =
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var merge = __webpack_require__(55);
-	var pick = __webpack_require__(88);
-	var keys = __webpack_require__(81);
-	var Box = __webpack_require__(95);
-	var KeyboardAccelerators = __webpack_require__(52);
+	var merge = __webpack_require__(56);
+	var pick = __webpack_require__(89);
+	var keys = __webpack_require__(82);
+	var Box = __webpack_require__(96);
+	var KeyboardAccelerators = __webpack_require__(102);
 	var DOM = __webpack_require__(53);
-	var Scroll = __webpack_require__(101);
-	var SkipLinkAnchor = __webpack_require__(102);
+	var Scroll = __webpack_require__(103);
+	var SkipLinkAnchor = __webpack_require__(104);
 
 	var CLASS_ROOT = "article";
 
@@ -10511,7 +10545,178 @@ var Grommet =
 	module.exports = Article;
 
 /***/ },
-/* 101 */
+/* 102 */
+/***/ function(module, exports) {
+
+	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
+
+	// Allow callers to use key labels instead of key code numbers.
+	// This makes their code easier to read.
+	'use strict';
+
+	var KEYS = {
+	  backspace: 8,
+	  tab: 9,
+	  enter: 13,
+	  esc: 27,
+	  escape: 27,
+	  space: 32,
+	  left: 37,
+	  up: 38,
+	  right: 39,
+	  down: 40,
+	  comma: 188,
+	  shift: 16
+	};
+
+	var _keyboardAccelerators = {};
+	var _listenersCounter = 0;
+	var _listeners = [];
+	var _isKeyboardAcceleratorListening = false;
+
+	var _onKeyboardAcceleratorKeyPress = function _onKeyboardAcceleratorKeyPress(e) {
+	  var key = e.keyCode ? e.keyCode : e.which;
+	  for (var i = _listenersCounter - 1; i >= 0; i--) {
+	    var id = _listeners[i];
+	    var handlers = _keyboardAccelerators[id].handlers;
+	    if (handlers.hasOwnProperty(key)) {
+	      if (handlers[key](e)) {
+	        break;
+	      }
+	    }
+	  }
+	};
+
+	// KeyboardAccelerators is a mixin for handling keyboard events.
+	// Add listeners using startListeningToKeyboard().
+	// Remove listeners using stopListeningToKeyboard().
+	// When the component that includes this is unmounted, the keyboard event
+	// listener is removed automatically.
+	var KeyboardAccelerators = {
+	  _initKeyboardAccelerators: function _initKeyboardAccelerators() {
+	    var id = this.getDOMNode().getAttribute('data-reactid');
+	    _keyboardAccelerators[id] = {
+	      handlers: {}
+	    };
+	  },
+
+	  _getKeyboardAcceleratorHandlers: function _getKeyboardAcceleratorHandlers() {
+	    var id = this.getDOMNode().getAttribute('data-reactid');
+	    return _keyboardAccelerators[id].handlers;
+	  },
+
+	  _getDowns: function _getDowns() {
+	    var id = this.getDOMNode().getAttribute('data-reactid');
+	    return _keyboardAccelerators[id].downs;
+	  },
+
+	  _isComponentListening: function _isComponentListening() {
+	    var id = this.getDOMNode().getAttribute('data-reactid');
+	    for (var i = 0; i < _listenersCounter; i++) {
+	      if (_listeners[i] === id) {
+	        return true;
+	      }
+	    }
+	    return false;
+	  },
+
+	  _subscribeComponent: function _subscribeComponent() {
+	    var id = this.getDOMNode().getAttribute('data-reactid');
+	    _listeners[_listenersCounter] = id;
+	    _listenersCounter++;
+	  },
+
+	  _unsubscribeComponent: function _unsubscribeComponent() {
+	    var id = this.getDOMNode().getAttribute('data-reactid');
+	    var i = 0;
+	    for (; i < _listenersCounter; i++) {
+	      if (_listeners[i] == id) {
+	        break;
+	      }
+	    }
+	    for (; i < _listenersCounter - 1; i++) {
+	      _listeners[i] = _listeners[i + 1];
+	    }
+	    _listenersCounter--;
+	    _listeners[_listenersCounter] = null;
+	    delete _keyboardAccelerators[id];
+	  },
+
+	  // Add handlers for specific keys.
+	  // This function can be called multiple times, existing handlers will
+	  // be replaced, new handlers will be added.
+	  startListeningToKeyboard: function startListeningToKeyboard(handlers) {
+	    this._initKeyboardAccelerators();
+	    var keys = 0;
+	    for (var key in handlers) {
+	      if (handlers.hasOwnProperty(key)) {
+	        var keyCode = key;
+	        if (KEYS.hasOwnProperty(key)) {
+	          keyCode = KEYS[key];
+	        }
+	        keys += 1;
+	        this._getKeyboardAcceleratorHandlers()[keyCode] = handlers[key];
+	      }
+	    }
+
+	    if (keys > 0) {
+	      if (!_isKeyboardAcceleratorListening) {
+	        window.addEventListener("keydown", _onKeyboardAcceleratorKeyPress);
+	        _isKeyboardAcceleratorListening = true;
+	      }
+	      if (!this._isComponentListening()) {
+	        this._subscribeComponent();
+	      }
+	    }
+	  },
+
+	  // Remove handlers for all keys or specific keys.
+	  // If no argument is passed in, all handlers are removed.
+	  // This function can be called multiple times, only the handlers
+	  // specified will be removed.
+	  stopListeningToKeyboard: function stopListeningToKeyboard(handlers) {
+	    if (!this._isComponentListening()) {
+	      return;
+	    }
+	    if (handlers) {
+	      for (var key in handlers) {
+	        if (handlers.hasOwnProperty(key)) {
+	          var keyCode = key;
+	          if (KEYS.hasOwnProperty(key)) {
+	            keyCode = KEYS[key];
+	          }
+	          delete this._getKeyboardAcceleratorHandlers()[keyCode];
+	        }
+	      }
+	    }
+
+	    var keyCount = 0;
+	    for (var keyHandler in this._getKeyboardAcceleratorHandlers()) {
+	      if (this._getKeyboardAcceleratorHandlers().hasOwnProperty(keyHandler)) {
+	        keyCount += 1;
+	      }
+	    }
+
+	    if (!handlers || 0 === keyCount) {
+	      this._initKeyboardAccelerators();
+	      this._unsubscribeComponent();
+	    }
+
+	    if (_listenersCounter === 0) {
+	      window.removeEventListener("keydown", _onKeyboardAcceleratorKeyPress);
+	      _isKeyboardAcceleratorListening = false;
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.stopListeningToKeyboard();
+	  }
+	};
+
+	module.exports = KeyboardAccelerators;
+
+/***/ },
+/* 103 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -10560,7 +10765,7 @@ var Grommet =
 	module.exports = Scroll;
 
 /***/ },
-/* 102 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -10590,68 +10795,7 @@ var Grommet =
 	module.exports = SkipLinkAnchor;
 
 /***/ },
-/* 103 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-
-	var CLASS_ROOT = "button";
-
-	var Button = React.createClass({
-	  displayName: 'Button',
-
-	  propTypes: {
-	    accent: React.PropTypes.bool,
-	    label: React.PropTypes.string.isRequired,
-	    id: React.PropTypes.string,
-	    onClick: React.PropTypes.func,
-	    primary: React.PropTypes.bool,
-	    secondary: React.PropTypes.bool,
-	    type: React.PropTypes.oneOf(['button', 'reset', 'submit'])
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      type: "button"
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT];
-	    if (this.props.primary) {
-	      classes.push(CLASS_ROOT + "--primary");
-	    }
-	    if (this.props.secondary) {
-	      classes.push(CLASS_ROOT + "--secondary");
-	    }
-	    if (this.props.accent) {
-	      classes.push(CLASS_ROOT + "--accent");
-	    }
-	    if (!this.props.onClick) {
-	      classes.push(CLASS_ROOT + "--disabled");
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    return React.createElement(
-	      'button',
-	      { id: this.props.id, type: this.props.type, className: classes.join(' '),
-	        onClick: this.props.onClick },
-	      this.props.label
-	    );
-	  }
-
-	});
-
-	module.exports = Button;
-
-/***/ },
-/* 104 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -10659,15 +10803,15 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var moment = __webpack_require__(105);
-	var KeyboardAccelerators = __webpack_require__(52);
-	var Drop = __webpack_require__(93);
-	var CalendarIcon = __webpack_require__(193);
-	var PreviousIcon = __webpack_require__(194);
+	var moment = __webpack_require__(106);
+	var KeyboardAccelerators = __webpack_require__(102);
+	var Drop = __webpack_require__(94);
+	var CalendarIcon = __webpack_require__(194);
+	var PreviousIcon = __webpack_require__(195);
 	var NextIcon = __webpack_require__(3);
-	var Header = __webpack_require__(195);
-	var Menu = __webpack_require__(54);
-	var Title = __webpack_require__(196);
+	var Header = __webpack_require__(196);
+	var Menu = __webpack_require__(55);
+	var Title = __webpack_require__(197);
 
 	var CLASS_ROOT = "calendar";
 
@@ -11001,7 +11145,7 @@ var Grommet =
 	module.exports = Calendar;
 
 /***/ },
-/* 105 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
@@ -11272,7 +11416,7 @@ var Grommet =
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(107)("./" + name);
+	                __webpack_require__(108)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -14199,10 +14343,10 @@ var Grommet =
 	    return _moment;
 
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(106)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(107)(module)))
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -14218,180 +14362,180 @@ var Grommet =
 
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 108,
-		"./af.js": 108,
-		"./ar": 109,
-		"./ar-ma": 110,
-		"./ar-ma.js": 110,
-		"./ar-sa": 111,
-		"./ar-sa.js": 111,
-		"./ar-tn": 112,
-		"./ar-tn.js": 112,
-		"./ar.js": 109,
-		"./az": 113,
-		"./az.js": 113,
-		"./be": 114,
-		"./be.js": 114,
-		"./bg": 115,
-		"./bg.js": 115,
-		"./bn": 116,
-		"./bn.js": 116,
-		"./bo": 117,
-		"./bo.js": 117,
-		"./br": 118,
-		"./br.js": 118,
-		"./bs": 119,
-		"./bs.js": 119,
-		"./ca": 120,
-		"./ca.js": 120,
-		"./cs": 121,
-		"./cs.js": 121,
-		"./cv": 122,
-		"./cv.js": 122,
-		"./cy": 123,
-		"./cy.js": 123,
-		"./da": 124,
-		"./da.js": 124,
-		"./de": 125,
-		"./de-at": 126,
-		"./de-at.js": 126,
-		"./de.js": 125,
-		"./el": 127,
-		"./el.js": 127,
-		"./en-au": 128,
-		"./en-au.js": 128,
-		"./en-ca": 129,
-		"./en-ca.js": 129,
-		"./en-gb": 130,
-		"./en-gb.js": 130,
-		"./eo": 131,
-		"./eo.js": 131,
-		"./es": 132,
-		"./es.js": 132,
-		"./et": 133,
-		"./et.js": 133,
-		"./eu": 134,
-		"./eu.js": 134,
-		"./fa": 135,
-		"./fa.js": 135,
-		"./fi": 136,
-		"./fi.js": 136,
-		"./fo": 137,
-		"./fo.js": 137,
-		"./fr": 138,
-		"./fr-ca": 139,
-		"./fr-ca.js": 139,
-		"./fr.js": 138,
-		"./fy": 140,
-		"./fy.js": 140,
-		"./gl": 141,
-		"./gl.js": 141,
-		"./he": 142,
-		"./he.js": 142,
-		"./hi": 143,
-		"./hi.js": 143,
-		"./hr": 144,
-		"./hr.js": 144,
-		"./hu": 145,
-		"./hu.js": 145,
-		"./hy-am": 146,
-		"./hy-am.js": 146,
-		"./id": 147,
-		"./id.js": 147,
-		"./is": 148,
-		"./is.js": 148,
-		"./it": 149,
-		"./it.js": 149,
-		"./ja": 150,
-		"./ja.js": 150,
-		"./jv": 151,
-		"./jv.js": 151,
-		"./ka": 152,
-		"./ka.js": 152,
-		"./km": 153,
-		"./km.js": 153,
-		"./ko": 154,
-		"./ko.js": 154,
-		"./lb": 155,
-		"./lb.js": 155,
-		"./lt": 156,
-		"./lt.js": 156,
-		"./lv": 157,
-		"./lv.js": 157,
-		"./me": 158,
-		"./me.js": 158,
-		"./mk": 159,
-		"./mk.js": 159,
-		"./ml": 160,
-		"./ml.js": 160,
-		"./mr": 161,
-		"./mr.js": 161,
-		"./ms": 162,
-		"./ms-my": 163,
-		"./ms-my.js": 163,
-		"./ms.js": 162,
-		"./my": 164,
-		"./my.js": 164,
-		"./nb": 165,
-		"./nb.js": 165,
-		"./ne": 166,
-		"./ne.js": 166,
-		"./nl": 167,
-		"./nl.js": 167,
-		"./nn": 168,
-		"./nn.js": 168,
-		"./pl": 169,
-		"./pl.js": 169,
-		"./pt": 170,
-		"./pt-br": 171,
-		"./pt-br.js": 171,
-		"./pt.js": 170,
-		"./ro": 172,
-		"./ro.js": 172,
-		"./ru": 173,
-		"./ru.js": 173,
-		"./si": 174,
-		"./si.js": 174,
-		"./sk": 175,
-		"./sk.js": 175,
-		"./sl": 176,
-		"./sl.js": 176,
-		"./sq": 177,
-		"./sq.js": 177,
-		"./sr": 178,
-		"./sr-cyrl": 179,
-		"./sr-cyrl.js": 179,
-		"./sr.js": 178,
-		"./sv": 180,
-		"./sv.js": 180,
-		"./ta": 181,
-		"./ta.js": 181,
-		"./th": 182,
-		"./th.js": 182,
-		"./tl-ph": 183,
-		"./tl-ph.js": 183,
-		"./tr": 184,
-		"./tr.js": 184,
-		"./tzl": 185,
-		"./tzl.js": 185,
-		"./tzm": 186,
-		"./tzm-latn": 187,
-		"./tzm-latn.js": 187,
-		"./tzm.js": 186,
-		"./uk": 188,
-		"./uk.js": 188,
-		"./uz": 189,
-		"./uz.js": 189,
-		"./vi": 190,
-		"./vi.js": 190,
-		"./zh-cn": 191,
-		"./zh-cn.js": 191,
-		"./zh-tw": 192,
-		"./zh-tw.js": 192
+		"./af": 109,
+		"./af.js": 109,
+		"./ar": 110,
+		"./ar-ma": 111,
+		"./ar-ma.js": 111,
+		"./ar-sa": 112,
+		"./ar-sa.js": 112,
+		"./ar-tn": 113,
+		"./ar-tn.js": 113,
+		"./ar.js": 110,
+		"./az": 114,
+		"./az.js": 114,
+		"./be": 115,
+		"./be.js": 115,
+		"./bg": 116,
+		"./bg.js": 116,
+		"./bn": 117,
+		"./bn.js": 117,
+		"./bo": 118,
+		"./bo.js": 118,
+		"./br": 119,
+		"./br.js": 119,
+		"./bs": 120,
+		"./bs.js": 120,
+		"./ca": 121,
+		"./ca.js": 121,
+		"./cs": 122,
+		"./cs.js": 122,
+		"./cv": 123,
+		"./cv.js": 123,
+		"./cy": 124,
+		"./cy.js": 124,
+		"./da": 125,
+		"./da.js": 125,
+		"./de": 126,
+		"./de-at": 127,
+		"./de-at.js": 127,
+		"./de.js": 126,
+		"./el": 128,
+		"./el.js": 128,
+		"./en-au": 129,
+		"./en-au.js": 129,
+		"./en-ca": 130,
+		"./en-ca.js": 130,
+		"./en-gb": 131,
+		"./en-gb.js": 131,
+		"./eo": 132,
+		"./eo.js": 132,
+		"./es": 133,
+		"./es.js": 133,
+		"./et": 134,
+		"./et.js": 134,
+		"./eu": 135,
+		"./eu.js": 135,
+		"./fa": 136,
+		"./fa.js": 136,
+		"./fi": 137,
+		"./fi.js": 137,
+		"./fo": 138,
+		"./fo.js": 138,
+		"./fr": 139,
+		"./fr-ca": 140,
+		"./fr-ca.js": 140,
+		"./fr.js": 139,
+		"./fy": 141,
+		"./fy.js": 141,
+		"./gl": 142,
+		"./gl.js": 142,
+		"./he": 143,
+		"./he.js": 143,
+		"./hi": 144,
+		"./hi.js": 144,
+		"./hr": 145,
+		"./hr.js": 145,
+		"./hu": 146,
+		"./hu.js": 146,
+		"./hy-am": 147,
+		"./hy-am.js": 147,
+		"./id": 148,
+		"./id.js": 148,
+		"./is": 149,
+		"./is.js": 149,
+		"./it": 150,
+		"./it.js": 150,
+		"./ja": 151,
+		"./ja.js": 151,
+		"./jv": 152,
+		"./jv.js": 152,
+		"./ka": 153,
+		"./ka.js": 153,
+		"./km": 154,
+		"./km.js": 154,
+		"./ko": 155,
+		"./ko.js": 155,
+		"./lb": 156,
+		"./lb.js": 156,
+		"./lt": 157,
+		"./lt.js": 157,
+		"./lv": 158,
+		"./lv.js": 158,
+		"./me": 159,
+		"./me.js": 159,
+		"./mk": 160,
+		"./mk.js": 160,
+		"./ml": 161,
+		"./ml.js": 161,
+		"./mr": 162,
+		"./mr.js": 162,
+		"./ms": 163,
+		"./ms-my": 164,
+		"./ms-my.js": 164,
+		"./ms.js": 163,
+		"./my": 165,
+		"./my.js": 165,
+		"./nb": 166,
+		"./nb.js": 166,
+		"./ne": 167,
+		"./ne.js": 167,
+		"./nl": 168,
+		"./nl.js": 168,
+		"./nn": 169,
+		"./nn.js": 169,
+		"./pl": 170,
+		"./pl.js": 170,
+		"./pt": 171,
+		"./pt-br": 172,
+		"./pt-br.js": 172,
+		"./pt.js": 171,
+		"./ro": 173,
+		"./ro.js": 173,
+		"./ru": 174,
+		"./ru.js": 174,
+		"./si": 175,
+		"./si.js": 175,
+		"./sk": 176,
+		"./sk.js": 176,
+		"./sl": 177,
+		"./sl.js": 177,
+		"./sq": 178,
+		"./sq.js": 178,
+		"./sr": 179,
+		"./sr-cyrl": 180,
+		"./sr-cyrl.js": 180,
+		"./sr.js": 179,
+		"./sv": 181,
+		"./sv.js": 181,
+		"./ta": 182,
+		"./ta.js": 182,
+		"./th": 183,
+		"./th.js": 183,
+		"./tl-ph": 184,
+		"./tl-ph.js": 184,
+		"./tr": 185,
+		"./tr.js": 185,
+		"./tzl": 186,
+		"./tzl.js": 186,
+		"./tzm": 187,
+		"./tzm-latn": 188,
+		"./tzm-latn.js": 188,
+		"./tzm.js": 187,
+		"./uk": 189,
+		"./uk.js": 189,
+		"./uz": 190,
+		"./uz.js": 190,
+		"./vi": 191,
+		"./vi.js": 191,
+		"./zh-cn": 192,
+		"./zh-cn.js": 192,
+		"./zh-tw": 193,
+		"./zh-tw.js": 193
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -14404,11 +14548,11 @@ var Grommet =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 107;
+	webpackContext.id = 108;
 
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -14416,7 +14560,7 @@ var Grommet =
 	//! author : Werner Mollentze : https://github.com/wernerm
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -14485,7 +14629,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -14495,7 +14639,7 @@ var Grommet =
 	//! Native plural forms: forabi https://github.com/forabi
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -14625,7 +14769,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -14634,7 +14778,7 @@ var Grommet =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -14688,7 +14832,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -14696,7 +14840,7 @@ var Grommet =
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -14795,14 +14939,14 @@ var Grommet =
 	}));
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale  : Tunisian Arabic (ar-tn)
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -14856,7 +15000,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -14864,7 +15008,7 @@ var Grommet =
 	//! author : topchiyev : https://github.com/topchiyev
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -14964,7 +15108,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -14974,7 +15118,7 @@ var Grommet =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15115,7 +15259,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 115 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15123,7 +15267,7 @@ var Grommet =
 	//! author : Krasen Borisov : https://github.com/kraz
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15209,7 +15353,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 116 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15217,7 +15361,7 @@ var Grommet =
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15326,7 +15470,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 117 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15334,7 +15478,7 @@ var Grommet =
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15440,7 +15584,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 118 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15448,7 +15592,7 @@ var Grommet =
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15551,7 +15695,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 119 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15560,7 +15704,7 @@ var Grommet =
 	//! based on (hr) translation by Bojan Marković
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15696,7 +15840,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 120 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15704,7 +15848,7 @@ var Grommet =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15779,7 +15923,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 121 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15787,7 +15931,7 @@ var Grommet =
 	//! author : petrbela : https://github.com/petrbela
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -15940,7 +16084,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 122 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -15948,7 +16092,7 @@ var Grommet =
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16007,7 +16151,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 123 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16015,7 +16159,7 @@ var Grommet =
 	//! author : Robert Allen
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16090,7 +16234,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 124 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16098,7 +16242,7 @@ var Grommet =
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16154,7 +16298,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 125 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16163,7 +16307,7 @@ var Grommet =
 	//! author: Menelion Elensúle: https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16233,7 +16377,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 126 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16243,7 +16387,7 @@ var Grommet =
 	//! author : Martin Groller : https://github.com/MadMG
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16313,7 +16457,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 127 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16321,7 +16465,7 @@ var Grommet =
 	//! author : Aggelos Karalias : https://github.com/mehiel
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16411,14 +16555,14 @@ var Grommet =
 	}));
 
 /***/ },
-/* 128 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : australian english (en-au)
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16481,7 +16625,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16489,7 +16633,7 @@ var Grommet =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16548,7 +16692,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16556,7 +16700,7 @@ var Grommet =
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16619,7 +16763,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16629,7 +16773,7 @@ var Grommet =
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16696,7 +16840,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 132 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16704,7 +16848,7 @@ var Grommet =
 	//! author : Julio Napurí : https://github.com/julionc
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16779,7 +16923,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 133 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16788,7 +16932,7 @@ var Grommet =
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16863,7 +17007,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 134 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16871,7 +17015,7 @@ var Grommet =
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -16931,7 +17075,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -16939,7 +17083,7 @@ var Grommet =
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17040,7 +17184,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17048,7 +17192,7 @@ var Grommet =
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17151,7 +17295,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17159,7 +17303,7 @@ var Grommet =
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17215,7 +17359,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17223,7 +17367,7 @@ var Grommet =
 	//! author : John Fischer : https://github.com/jfroffice
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17281,7 +17425,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17289,7 +17433,7 @@ var Grommet =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17343,7 +17487,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17351,7 +17495,7 @@ var Grommet =
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17418,7 +17562,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17426,7 +17570,7 @@ var Grommet =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17497,7 +17641,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17507,7 +17651,7 @@ var Grommet =
 	//! author : Tal Ater : https://github.com/TalAter
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17583,7 +17727,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17591,7 +17735,7 @@ var Grommet =
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17710,7 +17854,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17718,7 +17862,7 @@ var Grommet =
 	//! author : Bojan Marković : https://github.com/bmarkovic
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17854,7 +17998,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17862,7 +18006,7 @@ var Grommet =
 	//! author : Adam Brunner : https://github.com/adambrunner
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -17967,7 +18111,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -17975,7 +18119,7 @@ var Grommet =
 	//! author : Armendarabyan : https://github.com/armendarabyan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18082,7 +18226,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18091,7 +18235,7 @@ var Grommet =
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18169,7 +18313,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18177,7 +18321,7 @@ var Grommet =
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18300,7 +18444,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18309,7 +18453,7 @@ var Grommet =
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18374,7 +18518,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18382,7 +18526,7 @@ var Grommet =
 	//! author : LI Long : https://github.com/baryon
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18443,7 +18587,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18452,7 +18596,7 @@ var Grommet =
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18530,7 +18674,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18538,7 +18682,7 @@ var Grommet =
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18637,7 +18781,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18645,7 +18789,7 @@ var Grommet =
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18699,7 +18843,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18711,7 +18855,7 @@ var Grommet =
 	//! - Jeeeyul Lee <jeeeyul@gmail.com>
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18771,7 +18915,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18779,7 +18923,7 @@ var Grommet =
 	//! author : mweimerskirch : https://github.com/mweimerskirch, David Raison : https://github.com/kwisatz
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -18909,7 +19053,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -18917,7 +19061,7 @@ var Grommet =
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19038,7 +19182,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19047,7 +19191,7 @@ var Grommet =
 	//! author : Jānis Elmeris : https://github.com/JanisE
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19138,7 +19282,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19146,7 +19290,7 @@ var Grommet =
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19251,7 +19395,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19259,7 +19403,7 @@ var Grommet =
 	//! author : Borislav Mickov : https://github.com/B0k0
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19345,7 +19489,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19353,7 +19497,7 @@ var Grommet =
 	//! author : Floyd Pink : https://github.com/floydpink
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19420,7 +19564,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19428,7 +19572,7 @@ var Grommet =
 	//! author : Harshad Kale : https://github.com/kalehv
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19545,7 +19689,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19553,7 +19697,7 @@ var Grommet =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19631,7 +19775,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19639,7 +19783,7 @@ var Grommet =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19717,7 +19861,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19725,7 +19869,7 @@ var Grommet =
 	//! author : Squar team, mysquar.com
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19814,7 +19958,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19823,7 +19967,7 @@ var Grommet =
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -19879,7 +20023,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -19887,7 +20031,7 @@ var Grommet =
 	//! author : suvash : https://github.com/suvash
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20006,7 +20150,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20014,7 +20158,7 @@ var Grommet =
 	//! author : Joris Röling : https://github.com/jjupiter
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20081,7 +20225,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20089,7 +20233,7 @@ var Grommet =
 	//! author : https://github.com/mechuwind
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20145,7 +20289,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20153,7 +20297,7 @@ var Grommet =
 	//! author : Rafal Hirsz : https://github.com/evoL
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20254,7 +20398,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20262,7 +20406,7 @@ var Grommet =
 	//! author : Jefferson : https://github.com/jalex79
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20322,7 +20466,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20330,7 +20474,7 @@ var Grommet =
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20386,7 +20530,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20395,7 +20539,7 @@ var Grommet =
 	//! author : Valentin Agachi : https://github.com/avaly
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20464,7 +20608,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20473,7 +20617,7 @@ var Grommet =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20632,7 +20776,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20640,7 +20784,7 @@ var Grommet =
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20701,7 +20845,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20710,7 +20854,7 @@ var Grommet =
 	//! based on work of petrbela : https://github.com/petrbela
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -20863,7 +21007,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -20871,7 +21015,7 @@ var Grommet =
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21027,7 +21171,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21037,7 +21181,7 @@ var Grommet =
 	//! author : Oerd Cukalla : https://github.com/oerd (fixes)
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21100,7 +21244,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 178 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21108,7 +21252,7 @@ var Grommet =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21212,7 +21356,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21220,7 +21364,7 @@ var Grommet =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21324,7 +21468,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21332,7 +21476,7 @@ var Grommet =
 	//! author : Jens Alm : https://github.com/ulmus
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21395,7 +21539,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21403,7 +21547,7 @@ var Grommet =
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21494,7 +21638,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21502,7 +21646,7 @@ var Grommet =
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21563,7 +21707,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21571,7 +21715,7 @@ var Grommet =
 	//! author : Dan Hagman
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21629,7 +21773,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21638,7 +21782,7 @@ var Grommet =
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21723,7 +21867,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21731,7 +21875,7 @@ var Grommet =
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v with the help of Iustì Canun
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21812,7 +21956,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21820,7 +21964,7 @@ var Grommet =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21874,7 +22018,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21882,7 +22026,7 @@ var Grommet =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -21936,7 +22080,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -21945,7 +22089,7 @@ var Grommet =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -22093,7 +22237,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -22101,7 +22245,7 @@ var Grommet =
 	//! author : Sardor Muminov : https://github.com/muminoff
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -22155,7 +22299,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -22163,7 +22307,7 @@ var Grommet =
 	//! author : Bang Nguyen : https://github.com/bangnk
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -22225,7 +22369,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -22234,7 +22378,7 @@ var Grommet =
 	//! author : Zeno Zeng : https://github.com/zenozeng
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -22356,7 +22500,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -22364,7 +22508,7 @@ var Grommet =
 	//! author : Ben : https://github.com/ben-lin
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(105)) :
+	    true ? factory(__webpack_require__(106)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -22461,48 +22605,73 @@ var Grommet =
 	}));
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
 
 	'use strict';
 
 	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
 
-	var Calendar = React.createClass({
-	  displayName: 'Calendar',
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'calendar-title'
+	    };
+	  },
 
 	  render: function render() {
-	    var className = 'control-icon control-icon-calendar';
-	    if (this.props.className) {
-	      className += ' ' + this.props.className;
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-calendar'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
 	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "calendar");
+
 	    return React.createElement(
 	      'svg',
-	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
 	      React.createElement(
-	        'g',
-	        { fill: 'none', strokeWidth: '2' },
-	        React.createElement('rect', { x: '13', y: '16', width: '22', height: '20' }),
-	        React.createElement('path', { d: 'M17,16 L17,13' }),
-	        React.createElement('path', { d: 'M31,16 L31,13' }),
-	        React.createElement('path', { d: 'M13,23 L35,23' })
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
 	      ),
 	      React.createElement(
 	        'g',
-	        { stroke: 'none' },
-	        React.createElement('rect', { x: '29', y: '30', width: '3', height: '3' })
+	        { id: 'calendar' },
+	        React.createElement('rect', { id: '_x2E_svg_34_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34.7969H13v-19h22V34.7969z M14,21.7969h20 M18,15.7969v-4 M30,15.7969v-4' })
 	      )
 	    );
 	  }
 
 	});
 
-	module.exports = Calendar;
+	module.exports = Icon;
 
 /***/ },
-/* 194 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -22536,7 +22705,7 @@ var Grommet =
 	module.exports = Left;
 
 /***/ },
-/* 195 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -22546,10 +22715,10 @@ var Grommet =
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var merge = __webpack_require__(55);
-	var pick = __webpack_require__(88);
-	var keys = __webpack_require__(81);
-	var Box = __webpack_require__(95);
+	var merge = __webpack_require__(56);
+	var pick = __webpack_require__(89);
+	var keys = __webpack_require__(82);
+	var Box = __webpack_require__(96);
 
 	var CLASS_ROOT = "header";
 
@@ -22679,7 +22848,7 @@ var Grommet =
 	module.exports = Header;
 
 /***/ },
-/* 196 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -22687,7 +22856,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Box = __webpack_require__(95);
+	var Box = __webpack_require__(96);
 
 	var CLASS_ROOT = "title";
 
@@ -22730,7 +22899,7 @@ var Grommet =
 	module.exports = Title;
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -22812,7 +22981,7 @@ var Grommet =
 	module.exports = Carousel;
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -22820,7 +22989,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Legend = __webpack_require__(199);
+	var Legend = __webpack_require__(200);
 
 	var CLASS_ROOT = "chart";
 
@@ -23629,7 +23798,7 @@ var Grommet =
 	module.exports = Chart;
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -23786,7 +23955,7 @@ var Grommet =
 	module.exports = Legend;
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -23864,7 +24033,7 @@ var Grommet =
 	module.exports = CheckBox;
 
 /***/ },
-/* 201 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -23872,7 +24041,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Legend = __webpack_require__(199);
+	var Legend = __webpack_require__(200);
 
 	var CLASS_ROOT = "distribution";
 
@@ -24098,7 +24267,8 @@ var Grommet =
 	            icons
 	          );
 	        } else {
-	          contents = React.createElement('rect', { className: boxClasses.join(' '), x: x, y: y, width: width, height: height });
+	          contents = React.createElement('rect', { className: boxClasses.join(' '),
+	            x: x, y: y, width: width, height: height });
 	        }
 
 	        if (width < 144 || height < 144) {
@@ -24127,7 +24297,7 @@ var Grommet =
 
 	        return React.createElement(
 	          'g',
-	          { key: index, 'data-index': index },
+	          { key: index, 'data-index': index, onClick: item.onClick },
 	          contents
 	        );
 	      }, this);
@@ -24165,7 +24335,7 @@ var Grommet =
 	module.exports = Distribution;
 
 /***/ },
-/* 202 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -24173,7 +24343,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Legend = __webpack_require__(199);
+	var Legend = __webpack_require__(200);
 
 	var CLASS_ROOT = "donut";
 	var BASE_SIZE = 192;
@@ -24489,7 +24659,7 @@ var Grommet =
 	module.exports = Donut;
 
 /***/ },
-/* 203 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24499,11 +24669,11 @@ var Grommet =
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var merge = __webpack_require__(55);
-	var pick = __webpack_require__(88);
-	var keys = __webpack_require__(81);
-	var Box = __webpack_require__(95);
-	var SkipLinkAnchor = __webpack_require__(102);
+	var merge = __webpack_require__(56);
+	var pick = __webpack_require__(89);
+	var keys = __webpack_require__(82);
+	var Box = __webpack_require__(96);
+	var SkipLinkAnchor = __webpack_require__(104);
 
 	var CLASS_ROOT = "footer";
 
@@ -24553,7 +24723,7 @@ var Grommet =
 	module.exports = Footer;
 
 /***/ },
-/* 204 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24561,7 +24731,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var keys = __webpack_require__(81);
+	var keys = __webpack_require__(82);
 
 	var CLASS_ROOT = "form";
 
@@ -24620,7 +24790,7 @@ var Grommet =
 	module.exports = Form;
 
 /***/ },
-/* 205 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24735,7 +24905,7 @@ var Grommet =
 	module.exports = FormField;
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24764,7 +24934,7 @@ var Grommet =
 	module.exports = FormFields;
 
 /***/ },
-/* 207 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24812,7 +24982,7 @@ var Grommet =
 	module.exports = Headline;
 
 /***/ },
-/* 208 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24859,7 +25029,7 @@ var Grommet =
 	module.exports = Label;
 
 /***/ },
-/* 209 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -24867,9 +25037,9 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var ListItem = __webpack_require__(210);
-	var SpinningIcon = __webpack_require__(211);
-	var InfiniteScroll = __webpack_require__(212);
+	var ListItem = __webpack_require__(211);
+	var SpinningIcon = __webpack_require__(212);
+	var InfiniteScroll = __webpack_require__(213);
 	var IntlMixin = __webpack_require__(8);
 
 	var CLASS_ROOT = "list";
@@ -24880,6 +25050,7 @@ var Grommet =
 	  propTypes: {
 	    data: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
 	    emptyIndicator: React.PropTypes.node,
+	    itemDirection: React.PropTypes.oneOf(['row', 'column']),
 	    large: React.PropTypes.bool,
 	    onMore: React.PropTypes.func,
 	    onSelect: React.PropTypes.func,
@@ -24902,7 +25073,7 @@ var Grommet =
 	  mixins: [InfiniteScroll, IntlMixin],
 
 	  getDefaultProps: function getDefaultProps() {
-	    return { small: false };
+	    return { small: false, itemDirection: 'row' };
 	  },
 
 	  getInitialState: function getInitialState() {
@@ -25004,7 +25175,7 @@ var Grommet =
 
 	      return React.createElement(ListItem, { key: uid, image: image, label: primary,
 	        annotation: secondary, selected: selected,
-	        onClick: onClick });
+	        direction: this.props.itemDirection, onClick: onClick });
 	    }, this);
 
 	    var more;
@@ -25040,22 +25211,23 @@ var Grommet =
 	module.exports = List;
 
 /***/ },
-/* 210 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(2);
 
 	var CLASS_ROOT = "list-item";
 
 	var ListItem = React.createClass({
-	  displayName: "ListItem",
+	  displayName: 'ListItem',
 
 	  propTypes: {
 	    annotation: React.PropTypes.node,
+	    direction: React.PropTypes.oneOf(['row', 'column']),
 	    image: React.PropTypes.node,
 	    label: React.PropTypes.node,
 	    onClick: React.PropTypes.func,
@@ -25070,31 +25242,34 @@ var Grommet =
 	    if (this.props.selected) {
 	      classes.push(CLASS_ROOT + "--selected");
 	    }
+	    if (this.props.direction) {
+	      classes.push(CLASS_ROOT + "--" + this.props.direction);
+	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
-
-	    return React.createElement(
-	      "li",
-	      { className: classes.join(' '), onClick: this.props.onClick },
-	      React.createElement(
-	        "span",
+	    var image;
+	    if (this.props.image) {
+	      image = React.createElement(
+	        'span',
 	        { className: CLASS_ROOT + "__image" },
 	        this.props.image
+	      );
+	    }
+
+	    return React.createElement(
+	      'li',
+	      { className: classes.join(' '), onClick: this.props.onClick },
+	      image,
+	      React.createElement(
+	        'span',
+	        { className: CLASS_ROOT + "__label" },
+	        this.props.label
 	      ),
 	      React.createElement(
-	        "span",
-	        { className: CLASS_ROOT + "__text" },
-	        React.createElement(
-	          "span",
-	          { className: CLASS_ROOT + "__label" },
-	          this.props.label
-	        ),
-	        React.createElement(
-	          "span",
-	          { className: CLASS_ROOT + "__annotation" },
-	          this.props.annotation
-	        )
+	        'span',
+	        { className: CLASS_ROOT + "__annotation" },
+	        this.props.annotation
 	      )
 	    );
 	  }
@@ -25102,9 +25277,14 @@ var Grommet =
 	});
 
 	module.exports = ListItem;
+	/*}
+	<span className={CLASS_ROOT + "__text"}>
+	{*/ /*}
+	    </span>
+	    {*/
 
 /***/ },
-/* 211 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -25139,7 +25319,7 @@ var Grommet =
 	module.exports = Spinning;
 
 /***/ },
-/* 212 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -25148,8 +25328,8 @@ var Grommet =
 
 	var DOM = __webpack_require__(53);
 
-	var SCROLL_MORE_DELAY = 2000; // when the user scrolls
-	var SCROLL_MORE_INITIAL_DELAY = 200; // when we start out at the bottom already
+	var SCROLL_MORE_DELAY = 500; // when the user scrolls
+	var SCROLL_MORE_INITIAL_DELAY = 50; // when we start out at the bottom already
 
 	var InfiniteScroll = {
 
@@ -25199,7 +25379,7 @@ var Grommet =
 	module.exports = InfiniteScroll;
 
 /***/ },
-/* 213 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -25274,7 +25454,7 @@ var Grommet =
 	module.exports = Login;
 
 /***/ },
-/* 214 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -25282,10 +25462,10 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Form = __webpack_require__(204);
-	var FormField = __webpack_require__(205);
-	var CheckBox = __webpack_require__(200);
-	var Button = __webpack_require__(103);
+	var Form = __webpack_require__(205);
+	var FormField = __webpack_require__(206);
+	var CheckBox = __webpack_require__(201);
+	var Button = __webpack_require__(54);
 	var IntlMixin = __webpack_require__(8);
 	var CLASS_ROOT = "login-form";
 
@@ -25295,6 +25475,7 @@ var Grommet =
 	  propTypes: {
 	    logo: React.PropTypes.node,
 	    title: React.PropTypes.string,
+	    secondaryText: React.PropTypes.string,
 	    usernameType: React.PropTypes.string,
 	    rememberMe: React.PropTypes.bool,
 	    forgotPassword: React.PropTypes.node,
@@ -25349,21 +25530,34 @@ var Grommet =
 	      title = React.createElement(
 	        'h1',
 	        { className: CLASS_ROOT + "__title" },
-	        this.props.title
+	        React.createElement(
+	          'strong',
+	          null,
+	          this.props.title
+	        )
 	      );
 	    }
 
+	    var secondaryText = null;
+	    if (this.props.secondaryText) {
+	      secondaryText = React.createElement(
+	        'p',
+	        { className: CLASS_ROOT + "__secondary-text" },
+	        this.props.secondaryText
+	      );
+	    }
+
+	    var rememberMe = null;
+	    if (this.props.rememberMe) {
+	      rememberMe = React.createElement(CheckBox, { className: CLASS_ROOT + "__remember-me",
+	        id: 'remember-me', label: this.getGrommetIntlMessage('Remember me') });
+	    }
+
 	    var footer = null;
-	    if (this.props.rememberMe || this.props.forgotPassword) {
-	      var rememberMe = null;
-	      if (this.props.rememberMe) {
-	        rememberMe = React.createElement(CheckBox, { className: CLASS_ROOT + "__remember-me",
-	          id: 'remember-me', label: this.getGrommetIntlMessage('Remember me') });
-	      }
+	    if (this.props.forgotPassword) {
 	      footer = React.createElement(
 	        'div',
 	        { className: CLASS_ROOT + "__footer" },
-	        rememberMe,
 	        this.props.forgotPassword
 	      );
 	    }
@@ -25373,6 +25567,7 @@ var Grommet =
 	      { className: classes.join(' '), onSubmit: this._onSubmit },
 	      logo,
 	      title,
+	      secondaryText,
 	      React.createElement(
 	        'fieldset',
 	        null,
@@ -25388,6 +25583,7 @@ var Grommet =
 	        )
 	      ),
 	      errors,
+	      rememberMe,
 	      React.createElement(Button, { id: CLASS_ROOT + "__submit", className: CLASS_ROOT + "__submit", primary: true, strong: true,
 	        type: 'submit', label: this.getGrommetIntlMessage('Log In'),
 	        onClick: this._onSubmit }),
@@ -25400,7 +25596,7 @@ var Grommet =
 	module.exports = LoginForm;
 
 /***/ },
-/* 215 */
+/* 216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -25587,7 +25783,7 @@ var Grommet =
 	module.exports = ResourceMap;
 
 /***/ },
-/* 216 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -25597,7 +25793,7 @@ var Grommet =
 	var React = __webpack_require__(2);
 	var IntlMixin = __webpack_require__(8);
 
-	var Legend = __webpack_require__(199);
+	var Legend = __webpack_require__(200);
 
 	var CLASS_ROOT = "meter";
 
@@ -26399,7 +26595,7 @@ var Grommet =
 	module.exports = Meter;
 
 /***/ },
-/* 217 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -26456,7 +26652,7 @@ var Grommet =
 	module.exports = RadioButton;
 
 /***/ },
-/* 218 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -26465,9 +26661,9 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var KeyboardAccelerators = __webpack_require__(52);
-	var Drop = __webpack_require__(93);
-	var Responsive = __webpack_require__(94);
-	var SearchIcon = __webpack_require__(219);
+	var Drop = __webpack_require__(94);
+	var Responsive = __webpack_require__(95);
+	var SearchIcon = __webpack_require__(220);
 	var IntlMixin = __webpack_require__(8);
 
 	var CLASS_ROOT = "search";
@@ -26488,7 +26684,7 @@ var Grommet =
 	    value: React.PropTypes.string
 	  },
 
-	  mixins: [KeyboardAccelerators, IntlMixin],
+	  mixins: [IntlMixin],
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
@@ -26533,12 +26729,12 @@ var Grommet =
 	    // the order here is important, need to turn off keys before turning on
 
 	    if (!this.state.controlFocused && prevState.controlFocused) {
-	      this.stopListeningToKeyboard(focusedKeyboardHandlers);
+	      KeyboardAccelerators.stopListeningToKeyboard(this, focusedKeyboardHandlers);
 	    }
 
 	    if (!this.state.dropActive && prevState.dropActive) {
 	      document.removeEventListener('click', this._onRemoveDrop);
-	      this.stopListeningToKeyboard(activeKeyboardHandlers);
+	      KeyboardAccelerators.stopListeningToKeyboard(this, activeKeyboardHandlers);
 	      if (this._drop) {
 	        this._drop.remove();
 	        this._drop = null;
@@ -26546,7 +26742,7 @@ var Grommet =
 	    }
 
 	    if (this.state.controlFocused && !prevState.controlFocused) {
-	      this.startListeningToKeyboard(focusedKeyboardHandlers);
+	      KeyboardAccelerators.startListeningToKeyboard(this, focusedKeyboardHandlers);
 	    }
 
 	    if (this.state.dropActive && !prevState.dropActive) {
@@ -26557,7 +26753,7 @@ var Grommet =
 	      setTimeout((function () {
 	        document.addEventListener('click', this._onRemoveDrop);
 	      }).bind(this), 100);
-	      this.startListeningToKeyboard(activeKeyboardHandlers);
+	      KeyboardAccelerators.startListeningToKeyboard(this, activeKeyboardHandlers);
 
 	      var baseElement = (this.refs.control ? this.refs.control : this.refs.input).getDOMNode();
 	      this._drop = Drop.add(baseElement, this._renderDrop(), this.props.dropAlign);
@@ -26568,6 +26764,7 @@ var Grommet =
 
 	  componentWillUnmount: function componentWillUnmount() {
 	    document.removeEventListener('click', this._onRemoveDrop);
+	    KeyboardAccelerators.stopListeningToKeyboard(this);
 	    if (this._responsive) {
 	      this._responsive.stop();
 	    }
@@ -26793,7 +26990,7 @@ var Grommet =
 	module.exports = Search;
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -26827,7 +27024,7 @@ var Grommet =
 	module.exports = Search;
 
 /***/ },
-/* 220 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett-Packard Development Company, L.P.
@@ -26835,9 +27032,9 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var KeyboardAccelerators = __webpack_require__(52);
-	var Drop = __webpack_require__(93);
-	var SearchIcon = __webpack_require__(219);
+	var KeyboardAccelerators = __webpack_require__(102);
+	var Drop = __webpack_require__(94);
+	var SearchIcon = __webpack_require__(220);
 
 	var CLASS_ROOT = "search-input";
 
@@ -27039,7 +27236,7 @@ var Grommet =
 	module.exports = SearchInput;
 
 /***/ },
-/* 221 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -27049,9 +27246,9 @@ var Grommet =
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var Box = __webpack_require__(95);
-	var SkipLinkAnchor = __webpack_require__(102);
-	var merge = __webpack_require__(55);
+	var Box = __webpack_require__(96);
+	var SkipLinkAnchor = __webpack_require__(104);
+	var merge = __webpack_require__(56);
 
 	var CLASS_ROOT = "section";
 
@@ -27090,29 +27287,38 @@ var Grommet =
 	module.exports = Section;
 
 /***/ },
-/* 222 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
+	var merge = __webpack_require__(56);
+	var pick = __webpack_require__(89);
+	var keys = __webpack_require__(82);
+	var Box = __webpack_require__(96);
 
 	var CLASS_ROOT = "sidebar";
 
 	var Sidebar = React.createClass({
 	  displayName: 'Sidebar',
 
-	  propTypes: {
+	  propTypes: merge({
 	    fixed: React.PropTypes.bool,
-	    primary: React.PropTypes.bool,
+	    primary: React.PropTypes.bool, // Deprecated
 	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
-	    small: React.PropTypes.bool
-	  },
+	    small: React.PropTypes.bool // Deprecated
+	  }, Box.propTypes),
 
 	  getDefaultProps: function getDefaultProps() {
-	    return { primary: false };
+	    return {
+	      direction: 'column',
+	      primary: false
+	    };
 	  },
 
 	  getInitialState: function getInitialState() {
@@ -27129,6 +27335,7 @@ var Grommet =
 
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
+	    var other = pick(this.props, keys(Box.propTypes));
 	    if (this.props.primary) {
 	      classes.push(CLASS_ROOT + "--primary");
 	    }
@@ -27143,8 +27350,8 @@ var Grommet =
 	    }
 
 	    return React.createElement(
-	      'div',
-	      { className: classes.join(' ') },
+	      Box,
+	      _extends({}, other, { className: classes.join(' ') }),
 	      this.props.children
 	    );
 	  }
@@ -27154,7 +27361,7 @@ var Grommet =
 	module.exports = Sidebar;
 
 /***/ },
-/* 223 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -27253,7 +27460,7 @@ var Grommet =
 	module.exports = Split;
 
 /***/ },
-/* 224 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -27261,9 +27468,9 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var isEqual = __webpack_require__(225);
-	var SpinningIcon = __webpack_require__(211);
-	var InfiniteScroll = __webpack_require__(212);
+	var isEqual = __webpack_require__(226);
+	var SpinningIcon = __webpack_require__(212);
+	var InfiniteScroll = __webpack_require__(213);
 
 	var CLASS_ROOT = "table";
 	var SELECTED_CLASS = CLASS_ROOT + "__row--selected";
@@ -27519,11 +27726,11 @@ var Grommet =
 	module.exports = Table;
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqual = __webpack_require__(226),
-	    bindCallback = __webpack_require__(84);
+	var baseIsEqual = __webpack_require__(227),
+	    bindCallback = __webpack_require__(85);
 
 	/**
 	 * Performs a deep comparison between two values to determine if they are
@@ -27579,12 +27786,12 @@ var Grommet =
 
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqualDeep = __webpack_require__(227),
-	    isObject = __webpack_require__(70),
-	    isObjectLike = __webpack_require__(65);
+	var baseIsEqualDeep = __webpack_require__(228),
+	    isObject = __webpack_require__(71),
+	    isObjectLike = __webpack_require__(66);
 
 	/**
 	 * The base implementation of `_.isEqual` without support for `this` binding
@@ -27613,14 +27820,14 @@ var Grommet =
 
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var equalArrays = __webpack_require__(228),
-	    equalByTag = __webpack_require__(230),
-	    equalObjects = __webpack_require__(231),
-	    isArray = __webpack_require__(66),
-	    isTypedArray = __webpack_require__(78);
+	var equalArrays = __webpack_require__(229),
+	    equalByTag = __webpack_require__(231),
+	    equalObjects = __webpack_require__(232),
+	    isArray = __webpack_require__(67),
+	    isTypedArray = __webpack_require__(79);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]',
@@ -27721,10 +27928,10 @@ var Grommet =
 
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arraySome = __webpack_require__(229);
+	var arraySome = __webpack_require__(230);
 
 	/**
 	 * A specialized version of `baseIsEqualDeep` for arrays with support for
@@ -27778,7 +27985,7 @@ var Grommet =
 
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports) {
 
 	/**
@@ -27807,7 +28014,7 @@ var Grommet =
 
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports) {
 
 	/** `Object#toString` result references. */
@@ -27861,10 +28068,10 @@ var Grommet =
 
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var keys = __webpack_require__(81);
+	var keys = __webpack_require__(82);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -27934,7 +28141,7 @@ var Grommet =
 
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -27942,11 +28149,11 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var SpinningIcon = __webpack_require__(211);
-	var LeftIcon = __webpack_require__(194);
+	var SpinningIcon = __webpack_require__(212);
+	var LeftIcon = __webpack_require__(195);
 	var RightIcon = __webpack_require__(3);
-	var Scroll = __webpack_require__(101);
-	var InfiniteScroll = __webpack_require__(212);
+	var Scroll = __webpack_require__(103);
+	var InfiniteScroll = __webpack_require__(213);
 
 	var CLASS_ROOT = "tiles";
 
@@ -28151,7 +28358,7 @@ var Grommet =
 	module.exports = Tiles;
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28161,10 +28368,10 @@ var Grommet =
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var merge = __webpack_require__(55);
-	var pick = __webpack_require__(88);
-	var keys = __webpack_require__(81);
-	var Box = __webpack_require__(95);
+	var merge = __webpack_require__(56);
+	var pick = __webpack_require__(89);
+	var keys = __webpack_require__(82);
+	var Box = __webpack_require__(96);
 
 	var CLASS_ROOT = "tile";
 
@@ -28216,7 +28423,7 @@ var Grommet =
 	module.exports = Tile;
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28224,7 +28431,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Status = __webpack_require__(235);
+	var Status = __webpack_require__(236);
 
 	var CLASS_ROOT = "topology";
 
@@ -28608,7 +28815,7 @@ var Grommet =
 	module.exports = Topology;
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28616,12 +28823,12 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var OK = __webpack_require__(236);
-	var ErrorStatus = __webpack_require__(237);
-	var Warning = __webpack_require__(238);
-	var Disabled = __webpack_require__(239);
-	var Unknown = __webpack_require__(240);
-	var Label = __webpack_require__(241);
+	var OK = __webpack_require__(237);
+	var ErrorStatus = __webpack_require__(238);
+	var Warning = __webpack_require__(239);
+	var Disabled = __webpack_require__(240);
+	var Unknown = __webpack_require__(241);
+	var Label = __webpack_require__(242);
 
 	var CLASS_ROOT = "status-icon";
 
@@ -28696,7 +28903,7 @@ var Grommet =
 	module.exports = Status;
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28753,7 +28960,7 @@ var Grommet =
 	module.exports = OK;
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28811,7 +29018,7 @@ var Grommet =
 	module.exports = ErrorStatus;
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28868,7 +29075,7 @@ var Grommet =
 	module.exports = Warning;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28925,7 +29132,7 @@ var Grommet =
 	module.exports = Disabled;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -28979,7 +29186,7 @@ var Grommet =
 	module.exports = Unknown;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29012,7 +29219,7 @@ var Grommet =
 	module.exports = Label;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29111,7 +29318,7 @@ var Grommet =
 	module.exports = GrommetObject;
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29136,7 +29343,82 @@ var Grommet =
 	module.exports = TBD;
 
 /***/ },
-/* 244 */
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+
+	var Calendar = React.createClass({
+	  displayName: 'Calendar',
+
+	  render: function render() {
+	    var className = 'control-icon control-icon-calendar';
+	    if (this.props.className) {
+	      className += ' ' + this.props.className;
+	    }
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none', strokeWidth: '2' },
+	        React.createElement('rect', { x: '13', y: '16', width: '22', height: '20' }),
+	        React.createElement('path', { d: 'M17,16 L17,13' }),
+	        React.createElement('path', { d: 'M31,16 L31,13' }),
+	        React.createElement('path', { d: 'M13,23 L35,23' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { stroke: 'none' },
+	        React.createElement('rect', { x: '29', y: '30', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Calendar;
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+
+	var Clear = React.createClass({
+	  displayName: 'Clear',
+
+	  render: function render() {
+	    var className = 'control-icon control-icon-clear';
+	    if (this.props.className) {
+	      className += ' ' + this.props.className;
+	    }
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 48 48', version: '1.1' },
+	      React.createElement(
+	        'g',
+	        { fill: 'none' },
+	        React.createElement('line', { strokeWidth: '2', x1: '14', y1: '14', x2: '34', y2: '34' }),
+	        React.createElement('line', { strokeWidth: '2', x1: '14', y1: '34', x2: '34', y2: '14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Clear;
+
+/***/ },
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29176,7 +29458,7 @@ var Grommet =
 	module.exports = DragHandle;
 
 /***/ },
-/* 245 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29217,7 +29499,7 @@ var Grommet =
 	module.exports = Edit;
 
 /***/ },
-/* 246 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29250,7 +29532,7 @@ var Grommet =
 	module.exports = Facebook;
 
 /***/ },
-/* 247 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29321,7 +29603,7 @@ var Grommet =
 	module.exports = Filter;
 
 /***/ },
-/* 248 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29378,7 +29660,7 @@ var Grommet =
 	module.exports = Grommet;
 
 /***/ },
-/* 249 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29412,7 +29694,7 @@ var Grommet =
 	module.exports = Help;
 
 /***/ },
-/* 250 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29445,7 +29727,7 @@ var Grommet =
 	module.exports = LinkedIn;
 
 /***/ },
-/* 251 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29481,7 +29763,7 @@ var Grommet =
 	module.exports = Mail;
 
 /***/ },
-/* 252 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29522,7 +29804,7 @@ var Grommet =
 	module.exports = Person;
 
 /***/ },
-/* 253 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29558,7 +29840,7 @@ var Grommet =
 	module.exports = SearchPlus;
 
 /***/ },
-/* 254 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29591,7 +29873,7 @@ var Grommet =
 	module.exports = Twitter;
 
 /***/ },
-/* 255 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29627,7 +29909,20655 @@ var Grommet =
 	module.exports = World;
 
 /***/ },
-/* 256 */
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	module.exports = { "Achievement": __webpack_require__(260), "Action": __webpack_require__(261), "Actions": __webpack_require__(262), "Add": __webpack_require__(263), "AdvancedSearch": __webpack_require__(264), "Aggregate": __webpack_require__(265), "Alarm": __webpack_require__(266), "Alert": __webpack_require__(267), "Analytics": __webpack_require__(268), "Announcement": __webpack_require__(269), "App": __webpack_require__(270), "Archive": __webpack_require__(271), "Article": __webpack_require__(272), "Ascend": __webpack_require__(273), "Assistant": __webpack_require__(274), "Attachment": __webpack_require__(275), "BarChart": __webpack_require__(276), "Blog": __webpack_require__(277), "Book": __webpack_require__(278), "Bookmark": __webpack_require__(279), "Bundle": __webpack_require__(280), "Calculator": __webpack_require__(281), "Calendar": __webpack_require__(194), "Camera": __webpack_require__(282), "Capacity": __webpack_require__(283), "CarrotDown": __webpack_require__(284), "CarrotNext": __webpack_require__(285), "CarrotPrevious": __webpack_require__(286), "CarrotUp": __webpack_require__(287), "Catalog": __webpack_require__(288), "ChapterAdd": __webpack_require__(289), "ChapterNext": __webpack_require__(290), "ChapterPrevious": __webpack_require__(291), "Chat": __webpack_require__(292), "CheckboxSelected": __webpack_require__(293), "Checkbox": __webpack_require__(294), "Checkmark": __webpack_require__(295), "CircularView": __webpack_require__(296), "Clipboard": __webpack_require__(297), "Clone": __webpack_require__(298), "Close": __webpack_require__(7), "CloudComputer": __webpack_require__(299), "CloudDownload": __webpack_require__(300), "CloudSoftware": __webpack_require__(301), "CloudUpload": __webpack_require__(302), "Cloud": __webpack_require__(303), "Cluster": __webpack_require__(304), "Code": __webpack_require__(305), "CommandLine": __webpack_require__(306), "Compare": __webpack_require__(307), "Compasss": __webpack_require__(308), "Compliance": __webpack_require__(309), "ComputerPersonal": __webpack_require__(310), "Configuration": __webpack_require__(311), "Connect": __webpack_require__(312), "ContactCard": __webpack_require__(313), "ContactUs": __webpack_require__(314), "Contract": __webpack_require__(315), "Copy": __webpack_require__(316), "Cube": __webpack_require__(317), "Cubes": __webpack_require__(318), "Cusror": __webpack_require__(319), "Cut": __webpack_require__(320), "Cycle": __webpack_require__(321), "Dashboard": __webpack_require__(322), "Database": __webpack_require__(323), "Defect": __webpack_require__(324), "Deliver": __webpack_require__(325), "Deployment": __webpack_require__(326), "Descend": __webpack_require__(327), "Desktop": __webpack_require__(328), "Detach": __webpack_require__(329), "Directions": __webpack_require__(330), "Dislike": __webpack_require__(331), "DivideFour": __webpack_require__(332), "DivideRight": __webpack_require__(333), "DivideThree": __webpack_require__(334), "Divide": __webpack_require__(335), "DocumentCloud": __webpack_require__(336), "DocumentCompress": __webpack_require__(337), "DocumentConig": __webpack_require__(338), "DocumentCsv": __webpack_require__(339), "DocumentData": __webpack_require__(340), "DocumentDownload": __webpack_require__(341), "DocumentExcel": __webpack_require__(342), "DocumentExecutable": __webpack_require__(343), "DocumentImage": __webpack_require__(344), "DocumentLocked": __webpack_require__(345), "DocumentMissing": __webpack_require__(346), "DocumentNotes": __webpack_require__(347), "DocumentOutlook": __webpack_require__(348), "DocumentPdf": __webpack_require__(349), "DocumentPerformance": __webpack_require__(350), "DocumentPowerpoint": __webpack_require__(351), "DocumentRtf": __webpack_require__(352), "DocumentSound": __webpack_require__(353), "DocumentTest": __webpack_require__(354), "DocumentText": __webpack_require__(355), "DocumentThreat": __webpack_require__(356), "DocumentTime": __webpack_require__(357), "DocumentTransfer": __webpack_require__(358), "DocumentTxt": __webpack_require__(359), "DocumentUpdate": __webpack_require__(360), "DocumentUpload": __webpack_require__(361), "DocumentUser": __webpack_require__(362), "DocumentVerified": __webpack_require__(363), "DocumentVideo": __webpack_require__(364), "DocumentWord": __webpack_require__(365), "Document": __webpack_require__(366), "Domain": __webpack_require__(367), "Down": __webpack_require__(368), "Download": __webpack_require__(369), "Drag": __webpack_require__(370), "DriveCage": __webpack_require__(371), "Duplicate": __webpack_require__(372), "Edit": __webpack_require__(373), "Eject": __webpack_require__(374), "Expand": __webpack_require__(375), "Fan": __webpack_require__(376), "FastForward": __webpack_require__(377), "Favorite": __webpack_require__(378), "Filter": __webpack_require__(379), "FirstAid": __webpack_require__(380), "Flag": __webpack_require__(381), "FolderCycle": __webpack_require__(382), "FolderOpen": __webpack_require__(383), "Folder": __webpack_require__(384), "Gallery": __webpack_require__(385), "Globe": __webpack_require__(386), "Grid": __webpack_require__(387), "Group": __webpack_require__(388), "Grow": __webpack_require__(389), "Halt": __webpack_require__(390), "Help": __webpack_require__(391), "History": __webpack_require__(392), "Home": __webpack_require__(393), "HostMaintenance": __webpack_require__(394), "Host": __webpack_require__(395), "Image": __webpack_require__(396), "Impact": __webpack_require__(397), "InProgress": __webpack_require__(398), "Inbox": __webpack_require__(399), "Indicator": __webpack_require__(400), "Information": __webpack_require__(401), "Inherit": __webpack_require__(402), "Install": __webpack_require__(403), "Integration": __webpack_require__(404), "Iteration": __webpack_require__(405), "Java": __webpack_require__(406), "Language": __webpack_require__(407), "Launch": __webpack_require__(408), "License": __webpack_require__(409), "Like": __webpack_require__(410), "LineChart": __webpack_require__(411), "LinkBottom": __webpack_require__(412), "LinkDown": __webpack_require__(413), "LinkNext": __webpack_require__(414), "LinkPrevious": __webpack_require__(415), "LinkTop": __webpack_require__(416), "LinkUp": __webpack_require__(417), "Link": __webpack_require__(418), "LocationPin": __webpack_require__(419), "Location": __webpack_require__(420), "Lock": __webpack_require__(421), "Login": __webpack_require__(422), "Logout": __webpack_require__(423), "Mail": __webpack_require__(424), "Manual": __webpack_require__(425), "MapLocation": __webpack_require__(426), "Map": __webpack_require__(427), "Menu": __webpack_require__(428), "Microphone": __webpack_require__(429), "Monitor": __webpack_require__(430), "More": __webpack_require__(431), "Multiple": __webpack_require__(432), "Navigate": __webpack_require__(433), "NewWindow": __webpack_require__(434), "New": __webpack_require__(435), "Next": __webpack_require__(436), "Notes": __webpack_require__(437), "Notification": __webpack_require__(438), "Optimization": __webpack_require__(439), "Organization": __webpack_require__(440), "Overview": __webpack_require__(441), "Pan": __webpack_require__(442), "Pause": __webpack_require__(443), "PaymentGoogleWallet": __webpack_require__(444), "PaymentMastercard": __webpack_require__(445), "PaymentPaypal": __webpack_require__(446), "PaymentSquare": __webpack_require__(447), "PaymentVisa": __webpack_require__(448), "Pin": __webpack_require__(449), "Plan": __webpack_require__(450), "PlatformApple": __webpack_require__(451), "PlatformChrome": __webpack_require__(452), "PlatformDropbox": __webpack_require__(453), "PlatformEdge": __webpack_require__(454), "PlatformFirefox": __webpack_require__(455), "PlatformInternetExplorer": __webpack_require__(456), "PlatformSkype": __webpack_require__(457), "PlatformWindows": __webpack_require__(458), "Play": __webpack_require__(459), "Power": __webpack_require__(460), "Previous": __webpack_require__(461), "Print": __webpack_require__(462), "QuickView": __webpack_require__(463), "RadialSelected": __webpack_require__(464), "Radial": __webpack_require__(465), "Refresh": __webpack_require__(466), "Resources": __webpack_require__(467), "Rewind": __webpack_require__(468), "Risk": __webpack_require__(469), "Rss": __webpack_require__(470), "Satellite": __webpack_require__(471), "ScheduleClone": __webpack_require__(472), "ScheduleNew": __webpack_require__(473), "SchedulePlay": __webpack_require__(474), "Schedule": __webpack_require__(475), "Scorecard": __webpack_require__(476), "Search": __webpack_require__(477), "Secure": __webpack_require__(478), "SelectLeft": __webpack_require__(479), "Select": __webpack_require__(480), "ServerCluster": __webpack_require__(481), "Server": __webpack_require__(482), "Servers": __webpack_require__(483), "ServiceBusiness": __webpack_require__(484), "ServiceStart": __webpack_require__(485), "Share": __webpack_require__(486), "SheildConfigure": __webpack_require__(487), "Shield": __webpack_require__(488), "Shift": __webpack_require__(489), "ShopBasket": __webpack_require__(490), "ShopCart": __webpack_require__(491), "Soa": __webpack_require__(492), "SocialEmail": __webpack_require__(493), "SocialFacebook": __webpack_require__(494), "SocialGithub": __webpack_require__(495), "SocialGoogle": __webpack_require__(496), "SocialInstagram": __webpack_require__(497), "SocialLinkedin": __webpack_require__(498), "SocialMedium": __webpack_require__(499), "SocialPinterest": __webpack_require__(500), "SocialReddit": __webpack_require__(501), "SocialSlack": __webpack_require__(502), "SocialTumblr": __webpack_require__(503), "SocialTwitter": __webpack_require__(504), "SocialVimeo": __webpack_require__(505), "SocialYoutube": __webpack_require__(506), "Sort": __webpack_require__(507), "Stakeholder": __webpack_require__(508), "StarHalf": __webpack_require__(509), "Star": __webpack_require__(510), "Steps": __webpack_require__(511), "Storage": __webpack_require__(512), "StreetView": __webpack_require__(513), "Subtract": __webpack_require__(514), "Support": __webpack_require__(515), "Svg": __webpack_require__(516), "Sync": __webpack_require__(517), "System": __webpack_require__(518), "TabNext": __webpack_require__(519), "TabPrevious": __webpack_require__(520), "TabUp": __webpack_require__(521), "TableAdd": __webpack_require__(522), "Table": __webpack_require__(523), "Tag": __webpack_require__(524), "Target": __webpack_require__(525), "Task": __webpack_require__(526), "Template": __webpack_require__(527), "TestDesktop": __webpack_require__(528), "Test": __webpack_require__(529), "TesxtWrap": __webpack_require__(530), "Threats": __webpack_require__(531), "ThreeD": __webpack_require__(532), "Ticket": __webpack_require__(533), "Tools": __webpack_require__(534), "Tooltip": __webpack_require__(535), "Transaction": __webpack_require__(536), "Trash": __webpack_require__(537), "Tree": __webpack_require__(538), "Trigger": __webpack_require__(539), "Trophy": __webpack_require__(540), "Troubleshooting": __webpack_require__(541), "Unlock": __webpack_require__(542), "Up": __webpack_require__(543), "Update": __webpack_require__(544), "Upgrade": __webpack_require__(545), "Upload": __webpack_require__(546), "UserAdd": __webpack_require__(547), "UserAdmin": __webpack_require__(548), "UserExpert": __webpack_require__(549), "UserFemale": __webpack_require__(550), "UserManager": __webpack_require__(551), "UserNew": __webpack_require__(552), "UserPolice": __webpack_require__(553), "UserSettings": __webpack_require__(554), "UserWorker": __webpack_require__(555), "User": __webpack_require__(556), "Validation": __webpack_require__(557), "Video": __webpack_require__(558), "View": __webpack_require__(559), "VirtualMachine": __webpack_require__(560), "VmMaintenance": __webpack_require__(561), "VolumeLow": __webpack_require__(562), "VolumeMute": __webpack_require__(563), "Volume": __webpack_require__(564), "Vulnerability": __webpack_require__(565), "Waypoint": __webpack_require__(566), "Workshop": __webpack_require__(567), "ZoomIn": __webpack_require__(568) };
+
+/***/ },
+/* 260 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'achievement-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-achievement'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "achievement");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'achievement' },
+	        React.createElement('rect', { id: '_x2E_svg_178_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33.6196,24.9113L29.031,29.5l-2.7238-2.7238 M27.98,20.79C28,20.7,28,20.6,28,20.5c0-0.08,0-3.66,0-6c0-1.15,0-2,0-2H16v8c0,3.31,2.69,6,6,6c0.38,0,0.74-0.04,1.1-0.11 M16,14.5h-5v4.3c0,2.2091,1.7909,3.7,4,3.7h1 M32.34,20.91c0.42-0.58,0.66-1.3,0.66-2.11v-4.3h-5 M19.73,26.05 C18.11,26.89,17,28.58,17,30.53 M23,30.5h-8v4h14 M30,20.5c-3.866,0-7,3.134-7,7s3.134,7,7,7s7-3.134,7-7S33.866,20.5,30,20.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'action-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-action'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "action");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'action' },
+	        React.createElement('rect', { id: '_x2E_svg_82_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16.3088,32.1644l-0.5364-0.5391 c-2.3631-2.3748-2.3631-6.2608,0-8.6356L16.7573,22L26,31.2883l-0.8719,0.8762C22.6928,34.6119,18.7442,34.6119,16.3088,32.1644z M22.8719,15.8356L22,16.7117L31.2427,26l0.9849-0.9898c2.3631-2.3748,2.3631-6.2608,0-8.6356l-0.5364-0.5391 C29.2559,13.3881,25.3073,13.3881,22.8719,15.8356z M25.71,26.54l3.04-3.04 M21.46,22.29l3.05-3.05 M31.9279,16.0722L35,13 M13,35 l3.0722-3.0722' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'actions-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-actions'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "actions");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'actions' },
+	        React.createElement('rect', { id: '_x2E_svg_2_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32,24c0,4.4183-3.5817,8-8,8s-8-3.5817-8-8 s3.5817-8,8-8S32,19.5817,32,24z M27,24c0-1.6542-1.3455-3-3-3s-3,1.3458-3,3s1.3455,3,3,3S27,25.6542,27,24z M24,12v4 M32,24h4 M24,36v-4 M12,24h4 M32.4853,15.5147l-2.8284,2.8284 M29.6569,29.6569l2.8284,2.8284 M18.3431,29.6569l-2.8284,2.8284 M15.5147,15.5147l2.8284,2.8284' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'add-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-add'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "add");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'add' },
+	        React.createElement('rect', { id: '_x2E_svg_1_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M12,24h24 M24,36V12' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'advanced-search-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-advanced-search'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "advanced-search");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'advanced-search' },
+	        React.createElement('rect', { id: '_x2E_svg_19_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,22.4448c0,4.1421-3.3579,7.5-7.5,7.5 s-7.5-3.3579-7.5-7.5s3.3579-7.5,7.5-7.5S29,18.3027,29,22.4448z M33,11.9448v6 M30,14.9448h6 M27,27.9448l6,6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'aggregate-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-aggregate'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "aggregate");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'aggregate' },
+	        React.createElement('rect', { id: '_x2E_svg_83_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M20.5,28c-4.1438,0-7.5-3.3562-7.5-7.5 c0-4.1437,3.3562-7.5,7.5-7.5c4.1437,0,7.5,3.3563,7.5,7.5 M28,20h-8v8h8V20z M20,27.5c0,4.1437,3.3563,7.5,7.5,7.5 s7.5-3.3563,7.5-7.5S31.6438,20,27.5,20 M28,20h-8v8h8V20z M28,20h-8v8h8V20z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'alarm-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-alarm'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "alarm");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'alarm' },
+	        React.createElement('rect', { id: '_x2E_svg_151_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,24c0,4.9706-4.0294,9-9,9s-9-4.0294-9-9 s4.0294-9,9-9S33,19.0294,33,24z M18,30l-4,4 M30,30l4,4 M21.46,15.37C20.71,13.96,19.22,13,17.5,13c-2.49,0-4.5,2.01-4.5,4.5 c0,1.72,0.96,3.21,2.37,3.96 M32.63,21.46C34.04,20.71,35,19.22,35,17.5c0-2.49-2.01-4.5-4.5-4.5c-1.72,0-3.21,0.96-3.96,2.37 M24,19v5l3,3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'alert-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-alert'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "alert");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'alert' },
+	        React.createElement('rect', { id: '_x2E_svg_11_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement(
+	          'g',
+	          null,
+	          React.createElement('path', { fill: '#231F20', d: 'M24,17.1214l8.6309,15.8234H15.3691L24,17.1214 M24,12.9448l-12,22h24L24,12.9448L24,12.9448z' })
+	        ),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '24', y1: '27.9448', x2: '24', y2: '21.9448' }),
+	        React.createElement('rect', { x: '23', y: '28.9448', fill: '#231F20', width: '2', height: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'analytics-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-analytics'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "analytics");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'analytics' },
+	        React.createElement('rect', { id: '_x2E_svg_84_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31.5,19c1.25,1.67,2,3.75,2,6 c0,5.52-4.48,10-10,10s-10-4.48-10-10s4.48-10,10-10 M23.5,13v12l9.6-7.2C30.91,14.89,27.42,13,23.5,13z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'announcement-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-announcement'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "announcement");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'announcement' },
+	        React.createElement('rect', { id: '_x2E_svg_59_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,28c-2.7614,0-5-2.2386-5-5s2.2386-5,5-5h5v10 H19z M32,23v-8.7c0,0-4,3.7-8,3.7 M24,28c4,0,8,3.6,8,3.6V23 M33,26c1.6569,0,3-1.3431,3-3s-1.3431-3-3-3 M24,28h-4v7h4V28z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'app-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-app'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "app");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'app' },
+	        React.createElement('rect', { id: '_x2E_svg_4_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M18,18h-4v-4h4V18z M26,14h-4v4h4V14z M34,14h-4v4h4V14z M18,22h-4v4h4V22z M26,22h-4v4h4V22z M34,22h-4v4 h4V22z M18,30h-4v4h4V30z M26,30h-4v4h4V30z M34,30h-4v4h4V30z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'archive-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-archive'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "archive");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'archive' },
+	        React.createElement('rect', { id: '_x2E_svg_86_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,18H13v-5h22V18z M33,18H15v17h18V18z M27,22h-6 v4h6V22z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'article-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-article'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "article");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'article' },
+	        React.createElement('rect', { id: '_x2E_svg_242_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeLinecap: 'round', strokeMiterlimit: '10', d: 'M18,29.5 c0,1.3807-1.1193,2.5-2.5,2.5S13,30.8807,13,29.5V18h5C18,18,18,29.4062,18,29.5z M16,32h16.5c1.3807,0,2.5-1.1193,2.5-2.5V14H18v4 ' }),
+	        React.createElement('rect', { x: '27', y: '17', fill: '#231F20', width: '5', height: '6' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '21', y1: '18', x2: '25', y2: '18' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '21', y1: '22', x2: '25', y2: '22' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '21', y1: '26', x2: '32', y2: '26' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'ascend-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-ascend'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "ascend");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'ascend' },
+	        React.createElement('rect', { id: '_x2E_svg_87_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14,19l6-5l6,5 M20,36V14 M24,23h7 M24,27h9 M24,31 h11 M24,35h13' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 274 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'assistant-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-assistant'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "assistant");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'assistant' },
+	        React.createElement('rect', { id: '_x2E_svg_246_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M21.1397,25.5h-1c-0.5523,0-1-0.4477-1-1v-1c0-0.5523,0.4477-1,1-1h1c0.5523,0,1,0.4477,1,1v1 C22.1397,25.0523,21.692,25.5,21.1397,25.5z' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M28.1397,25.5h-1c-0.5523,0-1-0.4477-1-1v-1c0-0.5523,0.4477-1,1-1h1c0.5523,0,1,0.4477,1,1v1 C29.1397,25.0523,28.692,25.5,28.1397,25.5z' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '24.0981', cy: '14.5417', r: '2.0417' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32.1397,30.5c-1.3553,0.71-4.1967,1.9688-8,1.9688 c-1.53,0-4.631-0.2037-8-1.9688c0-2.3333,0-1.6667,0-4c0-4.4183,3.5817-8,8-8h0c4.4183,0,8,3.5817,8,8V30.5z M24.1397,18.5v-4 M16.1702,25.7989c0,2.15,4.4695,2.7011,7.9695,2.7011 M24.1397,28.5c3.5,0,7.9677-0.5633,7.9677-2.7133 M20.1397,32.5 c0,2.21,1.79,4,4,4s4-1.79,4-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'attachment-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-attachment'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "attachment");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'attachment' },
+	        React.createElement('rect', { id: '_x2E_svg_29_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33.8566,24.0113l-9.488,9.488 c-2.3197,2.3197-6.0807,2.3197-8.4004,0l-0.0849-0.0849c-2.3197-2.3197-2.3197-6.0807,0-8.4004l10.6732-10.6732 c1.5465-1.5465,4.0538-1.5465,5.6003,0l0.0566,0.0566c1.5465,1.5465,1.5465,4.0538,0,5.6003L21.5684,30.6427 c-0.7732,0.7732-2.0269,0.7732-2.8001,0L18.74,30.6144c-0.7732-0.7732-0.7732-2.0269,0-2.8001l9.4598-9.4598' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'bar-chart-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-bar-chart'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "bar-chart");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'bar-chart' },
+	        React.createElement('rect', { id: '_x2E_svg_56_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26,30h-4v-8h4V30z M18,18h-4v12h4V18z M34,14h-4 v16h4V14z M12,34h24' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'blog-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-blog'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "blog");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'blog' },
+	        React.createElement('rect', { id: '_x2E_svg_89_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M18,13c9.9253,0,18,8.0747,18,18 M31,31 c0-7.1685-5.8315-13-13-13 M26,31c0-4.4111-3.5889-8-8-8 M18,28c-1.6569,0-3,1.3431-3,3c0,1.6569,1.3431,3,3,3s3-1.3431,3-3 C21,29.3431,19.6569,28,18,28z M15,31v-8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'book-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-book'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "book");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'book' },
+	        React.createElement('rect', { id: '_x2E_svg_240_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,35H16.5c-1.3807,0-2.5-1.1193-2.5-2.5v0 c0-1.3807,1.1193-2.5,2.5-2.5H32V13H16.5c-1.3807,0-2.5,1.1193-2.5,2.5V16v17 M31.5,30c-1.3807,0-2.5,1.1193-2.5,2.5v0 c0,1.3807,1.1193,2.5,2.5,2.5 M21,13v10l3-2l3,2v-9' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'bookmark-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-bookmark'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "bookmark");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'bookmark' },
+	        React.createElement('rect', { id: '_x2E_svg_71_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '31,34 24,29 17,34 17,13 31,13 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'bundle-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-bundle'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "bundle");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'bundle' },
+	        React.createElement('rect', { id: '_x2E_svg_141_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeLinecap: 'round', strokeMiterlimit: '10', d: 'M29,15h6v10h-5h-1H19h-6V15 h6 M13,25v4h6 M29,29h6v-4 M13,29v4h6 M35,29v4h-6 M29,14H19v20h10V14z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'calculator-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-calculator'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "calculator");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'calculator' },
+	        React.createElement('rect', { id: '_x2E_svg_58_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '14.5', y: '13', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '19', height: '22' }),
+	        React.createElement('rect', { x: '17.5', y: '24', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '22.5', y: '24', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '27.5', y: '24', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '17.5', y: '29', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '22.5', y: '29', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '27.5', y: '29', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '18.5', y: '17', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '11', height: '4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'camera-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-camera'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "camera");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'camera' },
+	        React.createElement('rect', { id: '_x2E_svg_57_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34H13V18h4.9997L20,14h8l2,4h5V34z M24,30 c2.7614,0,5-2.2386,5-5s-2.2386-5-5-5s-5,2.2386-5,5S21.2386,30,24,30z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'capacity-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-capacity'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "capacity");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'capacity' },
+	        React.createElement('rect', { id: '_x2E_svg_140_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeLinecap: 'round', strokeMiterlimit: '10', d: 'M36,31H12V17h24V31z M19,20 h-4v8h4V20z M26,20h-4v8h4V20z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'carrot-down-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-down'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-down");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'carrot-down' },
+	        React.createElement('rect', { id: '_x2E_svg_7_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { id: 'drop-carrot', fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.8571,19  31.1428,19 24,29 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'carrot-next-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-next'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-next");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'carrot-next' },
+	        React.createElement('rect', { id: '_x2E_svg_254_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '19,16.8571 19,31.1429 29,24 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'carrot-previous-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-previous'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-previous");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'carrot-previous' },
+	        React.createElement('rect', { id: '_x2E_svg_255_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '27,16.8571 27,31.1429 17,24 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'carrot-up-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-up'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-up");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'carrot-up' },
+	        React.createElement('rect', { id: '_x2E_svg_253_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.8571,29 31.1429,29 24,19 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 288 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'catalog-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-catalog'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "catalog");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'catalog' },
+	        React.createElement('rect', { id: '_x2E_svg_72_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16.9792,28V14l7,2l7-2v14l-7,2L16.9792,28z M16.9792,17l-4-1v15l11,3l11-3V16l-4,1 M23.9792,29V16' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'chapter-add-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-chapter-add'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "chapter-add");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'chapter-add' },
+	        React.createElement('rect', { id: '_x2E_svg_150_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16,26.5v-9h14v15h-8 M30,28.5h4v-15H20v4 M16,28.5 v8 M20,32.5h-8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'chapter-next-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-chapter-next'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "chapter-next");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'chapter-next' },
+	        React.createElement('rect', { id: '_x2E_svg_266_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '35.0162,24 22,14 22,19.7143 14,14 14,34  22,28.2857 22,34 \t' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '36', y1: '14', x2: '36', y2: '34' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'chapter-previous-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-chapter-previous'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "chapter-previous");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'chapter-previous' },
+	        React.createElement('rect', { id: '_x2E_svg_265_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '12.9838,24 26,14 26,19.7143 34,14 34,34  26,28.2857 26,34 \t' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '12', y1: '14', x2: '12', y2: '34' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'chat-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-chat'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "chat");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'chat' },
+	        React.createElement('rect', { id: '_x2E_svg_44_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,31h-7.5333L15,34v-3h-2V20h14V31z M27,24h1.53 L33,27v-3h2V13H21v7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 293 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'checkbox-selected-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-checkbox-selected'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "checkbox-selected");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'checkbox-selected' },
+	        React.createElement('rect', { id: '_x2E_svg_37_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '20', y: '20', fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '8', height: '8' }),
+	        React.createElement('rect', { x: '14', y: '14', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '20', height: '20' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'checkbox-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-checkbox'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "checkbox");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'checkbox' },
+	        React.createElement('rect', { id: '_x2E_svg_38_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '14', y: '14', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '20', height: '20' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'checkmark-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-checkmark'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "checkmark");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'checkmark' },
+	        React.createElement('rect', { id: '_x2E_svg_20_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '13.5,24.0018 20.6375,31.2101  34.5,17.2101 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'circular-view-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-circular-view'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "circular-view");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'circular-view' },
+	        React.createElement('rect', { id: '_x2E_svg_168_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26.7574,15.5c0,1.3807-1.1193,2.5-2.5,2.5 c-1.3807,0-2.5-1.1193-2.5-2.5s1.1193-2.5,2.5-2.5C25.6381,13,26.7574,14.1193,26.7574,15.5z M32.2574,17 c-1.3807,0-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5c1.3807,0,2.5-1.1193,2.5-2.5S33.6381,17,32.2574,17z M32.2574,26 c-1.3807,0-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5c1.3807,0,2.5-1.1193,2.5-2.5S33.6381,26,32.2574,26z M16.2574,17 c-1.3807,0-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5s2.5-1.1193,2.5-2.5S17.6381,17,16.2574,17z M16.2574,26 c-1.3807,0-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5s2.5-1.1193,2.5-2.5S17.6381,26,16.2574,26z M24.2574,30 c-1.3807,0-2.5,1.1193-2.5,2.5c0,1.3807,1.1193,2.5,2.5,2.5c1.3807,0,2.5-1.1193,2.5-2.5C26.7574,31.1193,25.6381,30,24.2574,30z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'clipboard-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-clipboard'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "clipboard");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'clipboard' },
+	        React.createElement('rect', { id: '_x2E_svg_247_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,15.5h5v20H15v-20h5 M28,13.5h-8v5h8V13.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'clone-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-clone'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "clone");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'clone' },
+	        React.createElement('rect', { id: '_x2E_svg_156_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19.0833,19.0455H35v15.9167H19.0833V19.0455z M29,16.0455v-3h-3 M13,26.0455v3h3 M13,24.0455v-6 M16,13.0455h-3v3 M18,13.0455h6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cloud-computer-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cloud-computer'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cloud-computer");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cloud-computer' },
+	        React.createElement('rect', { id: '_x2E_svg_157_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,19v-1.1c0-2.2091,1.7909-3.9,4-3.9h4 c2.2091,0,4,1.6909,4,3.9v1c2.7729,0,5,2.2469,5,5.0198S33.7729,29.05,31,29.05 M25,19h-7.9792 C14.2479,19,12.1,21.2125,12.1,23.9854S14.2271,29,17,29 M28,25h-8v7h8V25z M24,32v4 M21,36h6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cloud-download-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cloud-download'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cloud-download");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cloud-download' },
+	        React.createElement('rect', { id: '_x2E_svg_65_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,24v8 M20,29l4,4l4-4 M30,31h0.0792 c2.7729,0,4.9708-2.2323,4.9708-5.0052S33,21,30,21v-1c0-2.2091-1.6909-4-3.9-4h-3c-2.2091,0-4.1,1.7909-4.1,4v1 M24,21h-5.8792 C15.3479,21,13.1,23.2375,13.1,26.0104S15.3271,31,18.1,31H18' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cloud-software-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cloud-software'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cloud-software");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cloud-software' },
+	        React.createElement('rect', { id: '_x2E_svg_158_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,19v-1.1c0-2.2091,1.7909-3.9,4-3.9h4 c2.2091,0,4,1.6909,4,3.9v1c2.7729,0,5,2.2469,5,5.0198S33.7729,29.05,31,29.05 M25,19h-7.9792C14.2479,19,12,21.2271,12,24 s2.2271,5,5,5 M28,25h-8v11h8V25z M21,29h6 M24,25v3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cloud-upload-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cloud-upload'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cloud-upload");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cloud-upload' },
+	        React.createElement('rect', { id: '_x2E_svg_64_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,34v-8 M28,29l-4-4l-4,4 M28,31h2.0792 c2.7729,0,4.9708-2.2323,4.9708-5.0052S33,21,30,21v-1c0-2.2091-1.6909-4-3.9-4h-3c-2.2091,0-4.1,1.7909-4.1,4v1 M24,21h-5.8792 C15.3479,21,13.1,23.2375,13.1,26.0104S15.3271,31,18.1,31H18' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cloud-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cloud'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cloud");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cloud' },
+	        React.createElement('rect', { id: '_x2E_svg_63_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19.1,20v-1c0-2.2091,1.7909-4,4-4h3 c2.2091,0,4,1.7909,4,4v1c2.7729,0,5,2.2219,5,4.9948S32.8521,30,30.0792,30H23.4 M24.7,20h-6.5792 C15.3479,20,13.1,22.2375,13.1,25.0104S15.3271,30,18.1,30v1.1c0,2.2091,1.7909,4,4,4h3c2.2091,0,4-1.7909,4-4V31' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cluster-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cluster'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cluster");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cluster' },
+	        React.createElement('rect', { id: '_x2E_svg_159_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,22h-8v-8h8V22z M21,28h-8v8h8V28z M35,28h-8v8 h8V28z M16,28l6-6 M22,32h4 M26,22l6,6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'code-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-code'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "code");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'code' },
+	        React.createElement('rect', { id: '_x2E_svg_76_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,30l-5.5-6l5.5-6 M29,30l5.5-6L29,18 M21,34 l6-20' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'command-line-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-command-line'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "command-line");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'command-line' },
+	        React.createElement('rect', { id: '_x2E_svg_229_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,35H13V13h22V35z M17,27l3-3l-3-3 M22,27h6 M34,17H14l0,0H34L34,17z M17,17L17,17v-4l0,0V17z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'compare-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-compare'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "compare");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'compare' },
+	        React.createElement('rect', { id: '_x2E_svg_161_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M17.9688,31h-6V21h6V31z M35.9688,21h-6v10h6V21z' }),
+	        React.createElement(
+	          'g',
+	          null,
+	          React.createElement('polygon', { fill: '#231F20', points: '26.9688,21 22.9688,17 22.9688,25 \t\t' }),
+	          React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '19.9688', y1: '21', x2: '23.9688', y2: '21' })
+	        ),
+	        React.createElement(
+	          'g',
+	          null,
+	          React.createElement('polygon', { fill: '#231F20', points: '20.9688,31 24.9688,35 24.9688,27 \t\t' }),
+	          React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '27.9688', y1: '31', x2: '23.9688', y2: '31' })
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'compasss-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-compasss'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "compasss");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'compasss' },
+	        React.createElement('rect', { id: '_x2E_svg_128_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', cx: '24.0208', cy: '24', r: '11' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M20.4853,20.4645L18.0208,30l9.5355-2.4645L30.0208,18L20.4853,20.4645z M24.0208,26 c-1.1046,0-2-0.8954-2-2s0.8954-2,2-2s2,0.8954,2,2S25.1254,26,24.0208,26z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 309 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'compliance-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-compliance'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "compliance");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'compliance' },
+	        React.createElement('rect', { id: '_x2E_svg_173_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,15h5v20H15V15h5 M28,13h-8v5h8V13z M20,26l3,3 l6-6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 310 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'computer-personal-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-computer-personal'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "computer-personal");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'computer-personal' },
+	        React.createElement('rect', { id: '_x2E_svg_142_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34,30.9467H14v-16h20V30.9467z M36,30.9467H12v4 h24V30.9467z M31,17.9467H17v10h14V17.9467z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'configuration-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-configuration'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "configuration");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'configuration' },
+	        React.createElement('rect', { id: '_x2E_svg_54_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26.5387,25.7l-8.42,8.42 c-0.58,0.59-1.35,0.88-2.12,0.88c-0.77,0-1.54-0.29-2.12-0.88c-1.17-1.17-1.17-3.07,0-4.24l8.42-8.42c-0.2-0.62-0.3-1.28-0.3-1.96 c0-3.59,2.91-6.5,6.5-6.5c0.8,0,1.56,0.14,2.26,0.41l-4.2,4.2l3.83,3.83l4.2-4.2c0.27,0.7,0.41,1.46,0.41,2.26 c0,3.59-2.91,6.5-6.5,6.5C27.8187,26,27.1587,25.9,26.5387,25.7z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'connect-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-connect'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "connect");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'connect' },
+	        React.createElement('rect', { id: '_x2E_svg_187_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M21.4336,33.5147 c-1.9245,1.9245-5.0447,1.9245-6.9692,0c-1.9245-1.9245-1.9245-5.0447,0-6.9692l3.0509-3.0509l6.9538,6.9538L21.4336,33.5147z M23.5519,17.4889l6.9538,6.9538l3.0509-3.0509c1.9245-1.9245,1.9245-5.0447,0-6.9692c-1.9245-1.9245-5.0447-1.9245-6.9692,0 L23.5519,17.4889z M23,21.9792l-3.5,3.5 M26,24.9792l-3.5,3.5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 313 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'contact-card-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-contact-card'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "contact-card");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'contact-card' },
+	        React.createElement('rect', { id: '_x2E_svg_114_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M21,21c0,1.6569-1.3431,3-3,3s-3-1.3431-3-3 s1.3431-3,3-3S21,19.3431,21,21z M23,29.4545C23,26.6429,20.7662,24,17.9545,24h0.0682C15.2111,24,13,26.6429,13,29.4545V32h10 V29.4545z M26,21h10 M26,25h7 M26,29h10' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 314 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'contact-us-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-contact-us'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "contact-us");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'contact-us' },
+	        React.createElement('rect', { id: '_x2E_svg_31_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '34.5,30.5 26.0001,30.5 17.5,34.5  17.5,30.5 13.5,30.5 13.5,13.5 34.5,13.5 \t' }),
+	        React.createElement('rect', { x: '17.5', y: '20.5', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '22.5', y: '20.5', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '27.5', y: '20.5', fill: '#231F20', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'contract-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-contract'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "contract");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'contract' },
+	        React.createElement('rect', { id: '_x2E_svg_125_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34.0002,22h-8v-8 M35.0002,13l-9,9 M14.0002,26h8 v8 M13.0002,35l9-9' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'copy-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-copy'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "copy");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'copy' },
+	        React.createElement('rect', { id: '_x2E_svg_160_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32,33H16V15h11.0002L32,19.9999V33z M16,19h-4v18 h16v-4 M26,15v6h6 M19,21h4 M19,25h10 M19,29h8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cube-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cube'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cube");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cube' },
+	        React.createElement('rect', { id: '_x2E_svg_152_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14,18l10-5l10,5v12l-10,5l-10-5V18z M14,18l10,5 l10-5 M24,23v12' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cubes-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cubes'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cubes");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cubes' },
+	        React.createElement('rect', { id: '_x2E_svg_153_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M12,23.9545L18,21l6,2.9545v7.0909L18,34l-6-2.9545 V23.9545z M12,23.9545l6,2.9545l6-2.9545 M18,27v7 M24,31.0455L30,34l6-2.9545v-7.0909L30,21l-6,2.9545V31.0455z M24,23.9545 l6,2.9545l6-2.9545 M30,27v7 M18,21.0455L24,24l6-2.9545v-7.0909L24,11l-6,2.9545V21.0455z M18,13.9545l6,2.9545l6-2.9545 M24,17v7 ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cusror-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cusror'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cusror");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cusror' },
+	        React.createElement('rect', { id: '_x2E_svg_193_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '32,26 18,13 18,32 22.3967,28.3361  25.1616,34.7876 28.8384,33.2124 26.0653,26.7418 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cut-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cut'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cut");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cut' },
+	        React.createElement('rect', { id: '_x2E_svg_53_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M20,16.5c0,1.933-1.567,3.5-3.5,3.5 S13,18.433,13,16.5s1.567-3.5,3.5-3.5S20,14.567,20,16.5z M35,32L19.14,18.78 M20,31.5c0-1.933-1.567-3.5-3.5-3.5 S13,29.567,13,31.5s1.567,3.5,3.5,3.5S20,33.433,20,31.5z M35,16L19.14,29.22' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 321 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'cycle-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cycle'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cycle");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'cycle' },
+	        React.createElement('rect', { id: '_x2E_svg_52_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26.9508,29.7125l-2.2097,3.9209l3.8266,2.2642 M17.518,23.4374l-2.2088-3.9215L11.482,21.779' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.6134,18.4261l4.4187,0.0263l0.0257-4.5277' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26.0138,33.5 c4.4091-0.9351,7.7173-4.8501,7.7173-9.5378c0-0.729-0.08-1.4393-0.2317-2.1226' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14.8579,20.5153 c-0.4051,1.0716-0.6268,2.2334-0.6268,3.4469c0,4.3751,2.8817,8.0772,6.8506,9.3117' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31.2979,17.5179 c-1.7867-2.027-4.4024-3.3057-7.3168-3.3057c-2.4341,0-4.6598,0.8919-6.3682,2.3668' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'dashboard-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-dashboard'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "dashboard");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'dashboard' },
+	        React.createElement('rect', { id: '_x2E_svg_51_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24.5c0,6.0751-4.9249,11-11,11 s-11-4.9249-11-11s4.9249-11,11-11S35,18.4249,35,24.5z M14,28.5h20 M27,27.5c0-1.6569-1.3431-3-3-3c-1.6569,0-3,1.3431-3,3 M24,24.5v-6 M24,16.5v-2 M29.6568,18.8431l1.4142-1.4142 M32,24.5h2 M18,18.8431l-1.4142-1.4142 M16,24.5h-2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 323 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'database-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-database'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "database");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'database' },
+	        React.createElement('rect', { id: '_x2E_svg_50_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '13', y: '13.5', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '22', height: '7' }),
+	        React.createElement('rect', { x: '13', y: '20.5', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '22', height: '7' }),
+	        React.createElement('rect', { x: '13', y: '27.5', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '22', height: '7' }),
+	        React.createElement('rect', { x: '15', y: '15.5', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '15', y: '22.5', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '15', y: '29.5', fill: '#231F20', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 324 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'defect-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-defect'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "defect");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'defect' },
+	        React.createElement('rect', { id: '_x2E_svg_196_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31.0004,28.0796c0,3.822-3.178,6.9204-7,6.9204 s-7-3.0984-7-6.9204v-6.7266c1-0.5968,3.3059-2.3646,7.0368-2.3529c3.6859,0.0115,5.9632,1.7526,6.9632,2.3529 C31.0004,25.7128,31.0004,23.7197,31.0004,28.0796z M24.0004,36V24 M12.8575,18c2.3571,3.25,5.1429,3,5.1429,3 M17.0804,29.08 c-1.01,0.19-2.7,0.83-4.22,2.92 M12.0004,25h6 M30.0004,21c0,0,2.7857,0.25,5.1429-3 M35.1404,32c-1.52-2.09-3.21-2.73-4.22-2.92 M30.0004,25h6 M28.5904,19.98c0.27-0.61,0.41-1.28,0.41-1.98c0-2.76-2.24-5-5-5s-5,2.24-5,5c0,0.71,0.15,1.38,0.41,1.99' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 325 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'deliver-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-deliver'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "deliver");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'deliver' },
+	        React.createElement('rect', { id: '_x2E_svg_85_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15.6875,29h-2V15h14v4v10h-7 M27.6875,29 L27.6875,29 M32.6875,29h3v-6l-4-4h-4 M18.1875,27c-1.3807,0-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5c1.3807,0,2.5-1.1193,2.5-2.5 S19.5682,27,18.1875,27z M30.1875,27c-1.3807,0-2.5,1.1193-2.5,2.5s1.1193,2.5,2.5,2.5c1.3807,0,2.5-1.1193,2.5-2.5 S31.5682,27,30.1875,27z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 326 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'deployment-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-deployment'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "deployment");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'deployment' },
+	        React.createElement('rect', { id: '_x2E_svg_162_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28.6159,31.7646 c0,0.8825-0.3506,1.7289-0.9746,2.3529l-2.6321,2.6321c-0.4698,0.4698-1.2737,0.2264-1.404-0.4251l-0.674-3.3702 c-0.1288-0.6442-0.4455-1.2358-0.91-1.7004l-1.6405-1.6405L18.74,27.973c-0.4645-0.4645-1.0562-0.7812-1.7004-0.91l-3.3702-0.674 c-0.6515-0.1303-0.8949-0.9342-0.4251-1.404l2.6321-2.6321c0.624-0.624,1.4704-0.9746,2.3529-0.9746h3.5777 c0.7522-0.9043,1.6371-1.8872,2.6911-2.9412c5.239-5.239,10-2.9412,10-2.9412s2.2978,4.761-2.9412,10 c-1.054,1.054-2.0369,1.9389-2.9412,2.6911V31.7646z M18.1661,31.8339c-1.1119-1.1119-2.9147-1.1119-4.0266,0 c-1.1119,1.1119-1.3212,4.7187-1.0067,5.0333c0.2936,0.2936,3.9213,0.1053,5.0333-1.0066 C19.278,34.7486,19.278,32.9459,18.1661,31.8339z' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '29', cy: '21', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 327 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'descend-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-descend'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "descend");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'descend' },
+	        React.createElement('rect', { id: '_x2E_svg_88_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26,29l-6,5l-6-5 M20,34V12 M24,25h7 M24,21h9 M24,17h11 M24,13h13' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 328 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'desktop-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-desktop'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "desktop");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'desktop' },
+	        React.createElement('rect', { id: '_x2E_svg_230_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,31H13V13h22V31z M17,35h14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 329 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'detach-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-detach'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "detach");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'detach' },
+	        React.createElement('rect', { id: '_x2E_svg_172_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,18l-5,5 M25.83,25.83l6.18-6.19 c1.55-1.54,1.55-4.05,0-5.6l-0.05-0.05c-1.55-1.55-4.06-1.55-5.6,0l-6.19,6.18 M21,25l-2.46,2.46c-0.77,0.77-0.77,2.03,0,2.8 l0.03,0.03c0.77,0.77,2.03,0.77,2.8,0l2.46-2.46 M28.66,28.66l5-5 M18.17,22.17l-2.49,2.49c-2.32,2.32-2.32,6.08,0,8.4l0.09,0.08 c2.32,2.32,6.08,2.32,8.4,0l2.49-2.48 M16,16l4.17,4.17L23,23l2.83,2.83l2.83,2.83L32,32' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 330 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'directions-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-directions'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "directions");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'directions' },
+	        React.createElement('rect', { id: '_x2E_svg_147_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14,23h4c3.3137,0,6,2.6863,6,6v7 M18,18l-5,5l5,5 M34,18h-4c-3.3137,0-6,2.6863-6,6v12 M30,23l5-5l-5-5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 331 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'dislike-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-dislike'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "dislike");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'dislike' },
+	        React.createElement('rect', { id: '_x2E_svg_269_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'thumb', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,13h6v12h-6V13z M29,13H16 c-1.6569,0-3,1.3431-3,3v10h7v6c0,1.6569,1.2431,3,2.9,3H25v-7.1c0-1.6569,1.3431-2.9,3-2.9h1' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 332 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'divide-four-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-divide-four'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "divide-four");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'divide-four' },
+	        React.createElement('rect', { id: '_x2E_svg_166_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34,34H14V14h20V34z M19,14v21 M24,14v21 M29,14v21 ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 333 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'divide-right-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-divide-right'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "divide-right");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'divide-right' },
+	        React.createElement('rect', { id: '_x2E_svg_164_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34H13V14h22V34z M28,14v21' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'divide-three-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-divide-three'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "divide-three");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'divide-three' },
+	        React.createElement('rect', { id: '_x2E_svg_165_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34.5,34h-21V14h21V34z M20.5,14v21 M27.5,14v21' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 335 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'divide-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-divide'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "divide");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'divide' },
+	        React.createElement('rect', { id: '_x2E_svg_163_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34H13V14h22V34z M24,14v21' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 336 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-cloud-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-cloud'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-cloud");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-cloud' },
+	        React.createElement('rect', { id: '_x2E_svg_271_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16,18 16,13 29.0002,13 34,17.9999 34,35  27,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28,14 28,19 34,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15.375,24.8537v-1c0-1.6569,1.3431-3,3-3h4 c1.6569,0,3,1.3431,3,3v1h1c1.6569,0,3,1.3431,3,3v0c0,1.6569-1.3431,3-3,3h-6.3754' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,30.8537v1c0,1.6569-1.3431,3-3,3h-3 c-1.6569,0-3-1.3431-3-3v-1h-1c-1.6569,0-3-1.3431-3-3v0c0-1.6569,1.3431-3,3-3h6.375' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 337 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-compress-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-compress'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-compress");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-compress' },
+	        React.createElement('rect', { id: '_x2E_svg_199_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15.5,21v-8h13.0002L33.5,17.9999V35h-19 M27.5,13 v6h6 M26.5,19 M11.5,24h5v1l-4,4v1h5 M20.5,23v8 M24.5,24v7 M27.5,28c1.1046,0,2-0.8954,2-2s-0.8954-2-2-2h-3v4H27.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 338 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-conig-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-conig'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-conig");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-conig' },
+	        React.createElement('rect', { id: '_x2E_svg_198_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,23V13h13.0002L33,17.9999V35h-8 M27,13v6h6 M26,19 M21,30c0-1.6542-1.3455-3-3-3s-3,1.3458-3,3s1.3455,3,3,3S21,31.6542,21,30z M21,30.0001L24,30 M20.1212,32.1214 l2.1214,2.1212 M18,36l-0.0001-3 M15.8786,32.1212l-2.1212,2.1214 M12,30h3 M15.8787,27.8787l-2.1213-2.1213 M18,27v-3 M22.2426,25.7574l-2.1213,2.1213' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 339 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-csv-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-csv'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-csv");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-csv' },
+	        React.createElement('rect', { id: '_x2E_svg_207_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '17,21 17,13 30.0002,13 35,17.9999 35,35  16,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '29,14 29,19 35,19 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '17,24 13,24 13,30 17,30 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '23,24 19,24 19,27 22,27 22,30 18,30 \t' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '31.72,23 29.05,31 26.95,31 24.28,23 26.39,23 28,27.84 29.61,23 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 340 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-data-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-data'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-data");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-data' },
+	        React.createElement('rect', { id: '_x2E_svg_232_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,19v-6h13.0002L33,17.9999V35h-5 M27,14v5h6 M19,22c-3.3137,0-6,1.1193-6,2.5s2.6863,2.5,6,2.5s6-1.1193,6-2.5S22.3137,22,19,22z M13,25v3.5c0,1.3807,2.6863,2.5,6,2.5 s6-1.1193,6-2.5V25 M13,29v3.5c0,1.3807,2.6863,2.5,6,2.5s6-1.1193,6-2.5V29' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 341 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-download-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-download'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-download");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-download' },
+	        React.createElement('rect', { id: '_x2E_svg_237_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,13h13.0002L33,17.9999V35H15V13z M27,14v5h6 M24,22v8 M20,27l4,4l4-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 342 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-excel-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-excel'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-excel");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-excel' },
+	        React.createElement('rect', { id: '_x2E_svg_279_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M17.3305,27.3729l-3.0084-4.4232h2.314l1.877,2.9186l1.9156-2.9186h2.2502l-3.0084,4.3971l3.1368,4.6029 h-2.314l-2.0185-3.0856l-2.0315,3.0856h-2.2502L17.3305,27.3729z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 343 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-executable-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-executable'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-executable");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-executable' },
+	        React.createElement('rect', { id: '_x2E_svg_284_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '17.4186', y1: '25', x2: '11.4186', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '17.4186', y1: '31', x2: '11.4186', y2: '31' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '16.4186', y1: '28.0001', x2: '11.4186', y2: '28.0001' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '12.4186', y1: '24', x2: '12.4186', y2: '32' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.4186', y1: '25', x2: '25.4186', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.4186', y1: '31', x2: '25.4186', y2: '31' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '30.4186', y1: '28.0001', x2: '25.4186', y2: '28.0001' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '26.4186', y1: '24', x2: '26.4186', y2: '32' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '22.8214,32.0002 17.8171,24 19.9926,24 25,32 \t' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '19.8202,32.0002 24.8245,24 22.6454,24 17.638,32 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.4186,20 16.4186,13 29.4188,13  34.4186,17.9999 34.4186,35 16.4186,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.4186,14 28.4186,19 34.4186,19 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 344 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-image-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-image'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-image");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-image' },
+	        React.createElement('rect', { id: '_x2E_svg_231_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,20v-7h13.0002L33,17.9999V35h-5 M27,14v5h6 M25,22.9H12V35h13V22.9z' }),
+	        React.createElement('polyline', { fill: '#231F20', points: '13.25,34 16.0192,30 19.25,34.5 \t' }),
+	        React.createElement('polyline', { fill: '#231F20', points: '17.5833,33.8889 20.9679,29 24.9167,34.5 \t' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '16', cy: '27', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 345 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-locked-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-locked'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-locked");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-locked' },
+	        React.createElement('rect', { id: '_x2E_svg_286_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16,20 16,13 29.0002,13 34,17.9999 34,35  27,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28,14 28,19 34,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,35H14v-8h10V35z M19,32v-2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,27h-6v-2c0-1.6569,1.3431-3,3-3h0 c1.6569,0,3,1.3431,3,3V27z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 346 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-missing-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-missing'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-missing");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-missing' },
+	        React.createElement('rect', { id: '_x2E_svg_206_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,21v-8h13.0002L33,17.9999V35H15V21z M27,14v5h6 M21,24l6,6 M27,24l-6,6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 347 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-notes-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-notes'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-notes");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-notes' },
+	        React.createElement('rect', { id: '_x2E_svg_278_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M14.5017,22.9497h1.8258l4.217,5.5416v-5.5416h1.9542v9h-1.6843l-4.358-5.7212v5.7212h-1.9547V22.9497z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 348 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-outlook-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-outlook'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-outlook");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-outlook' },
+	        React.createElement('rect', { id: '_x2E_svg_276_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.4186,21 16.4186,13 29.4188,13  34.4186,17.9999 34.4186,35 15.4186,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.4186,14 28.4186,19 34.4186,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.4186,19' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M14.3379,27.4758v-0.0256c0-2.6643,1.653-4.75,4.094-4.75c2.4272,0,4.0674,2.0601,4.0674,4.7234v0.0266 c0,2.6633-1.6402,4.75-4.0935,4.75C15.9519,32.2002,14.3379,30.1401,14.3379,27.4758z M20.4264,27.4758v-0.0256 c0-1.6668-0.8137-2.9265-2.0206-2.9265c-1.2075,0-1.995,1.2203-1.995,2.8999v0.0266c0,1.6796,0.8009,2.9255,2.0211,2.9255 S20.4264,29.1426,20.4264,27.4758z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 349 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-pdf-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-pdf'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-pdf");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-pdf' },
+	        React.createElement('rect', { id: '_x2E_svg_273_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M12.5,25v7 M14.5,29c1.1046,0,2-0.8954,2-2 c0-1.1046-0.8954-2-2-2h-2v4H14.5z M19.5,31h3c1.1046,0,2-1.0945,2-2.2213V28v-0.7787c0-1.1055-0.8954-2.2213-2-2.2213h-3V31z' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '32.5', y1: '25', x2: '26.5', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '27.5', y1: '24', x2: '27.5', y2: '32' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.5', y1: '29', x2: '26.5', y2: '29' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-performance-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-performance'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-performance");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-performance' },
+	        React.createElement('rect', { id: '_x2E_svg_218_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M17,21v-8h13.0002L35,17.9999V35H16 M29,14v5h6' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '14,31 19,26 23,30 28,25 \t' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '25,23 30,28 31,22 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-powerpoint-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-powerpoint'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-powerpoint");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-powerpoint' },
+	        React.createElement('rect', { id: '_x2E_svg_277_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' }),
+	        React.createElement(
+	          'g',
+	          null,
+	          React.createElement('path', { fill: '#231F20', d: 'M15.2898,22.9497h3.6772c2.1474,0,3.4459,1.2729,3.4459,3.1117v0.0261 c0,2.0822-1.6201,3.1619-3.6385,3.1619h-1.5042v2.7003h-1.9803V22.9497z M18.8385,27.4888c0.9899,0,1.5684-0.592,1.5684-1.3637 V26.1c0-0.8875-0.6171-1.3627-1.607-1.3627h-1.5298v2.7515H18.8385z' })
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 352 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-rtf-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-rtf'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-rtf");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-rtf' },
+	        React.createElement('rect', { id: '_x2E_svg_280_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '12.5001', y1: '25.0004', x2: '12.5001', y2: '32.0004' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14.5001,29.0004c1.1046,0,2-0.8954,2-2 s-0.8954-2-2-2h-2v4H14.5001z' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '15.7461,32.0004 13.0438,28.2977 15.2342,28.2977 17.9562,32.0201 \t' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '24.0558', y1: '25', x2: '18.0558', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '21.0558', y1: '24', x2: '21.0558', y2: '32' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.0558', y1: '25', x2: '25.0558', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '26.0558', y1: '24', x2: '26.0558', y2: '32' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '30.0558', y1: '29', x2: '25.0558', y2: '29' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 353 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-sound-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-sound'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-sound");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-sound' },
+	        React.createElement('rect', { id: '_x2E_svg_287_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16,20 16,13 29.0002,13 34,17.9999 34,35  30,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28,14 28,19 34,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22.5,25L22.5,25c1.6569,0,3,1.3431,3,3v0 c0,1.6569-1.3431,3-3,3h0' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22.5,21L22.5,21c3.866,0,7,3.134,7,7v0 c0,3.866-3.134,7-7,7h0' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '15,26 12,26 12,30 15,30 20,34 20,22 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 354 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-test-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-test'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-test");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-test' },
+	        React.createElement('rect', { id: '_x2E_svg_272_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16,18 16,13 29.0002,13 34,17.9999 34,35  29,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28,14 28,19 34,19 \t' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '15', y1: '21', x2: '23', y2: '21' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '17,22 17,25.7727 12,33.9545 12,35 19,35  ' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '19,35 26,35 26,33.9545 21,25.7727 21,22  ' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M23.4527,29.5795 c-4.2577-2.3438-4.7917,1.946-8.5436-0.3977' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 355 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-text-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-text'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-text");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-text' },
+	        React.createElement('rect', { id: '_x2E_svg_61_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,35H15V13h12.0002L30,16l3,2.9999V35z M26,13v7 h7 M18,20h5 M18,24h12 M18,28h10' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 356 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-threat-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-threat'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-threat");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-threat' },
+	        React.createElement('rect', { id: '_x2E_svg_234_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16,16v-3h13.0002L34,17.9999V35h-9 M28,14v5h6 M16,24.72c-2,0.7933-3.2083,2.7067-3.2083,4.9467C12.7917,32.6133,15.3033,35,18.25,35s5.25-2.3867,5.25-5.3333 c0-2.24-1.5-4.1533-3.5-4.9467v-0.3867V23h-4v1.3333V24.72z M25,19.6c0,0.8284-0.6716,1.5-1.5,1.5h-0.3333 c-0.8284,0-1.5-0.6716-1.5-1.5v0c0-0.8284-0.6716-1.5-1.5-1.5H19.5c-0.8284,0-1.5,0.6716-1.5,1.5v2.5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 357 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-time-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-time'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-time");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-time' },
+	        React.createElement('rect', { id: '_x2E_svg_233_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16,18v-5h13.0002L34,17.9999V35h-7 M28,14v5h6 M19,21c-3.866,0-7,3.134-7,7s3.134,7,7,7s7-3.134,7-7S22.866,21,19,21z M19,24v4l3,3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 358 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-transfer-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-transfer'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-transfer");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-transfer' },
+	        React.createElement('rect', { id: '_x2E_svg_236_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M23.5,28h-10 M16.5,24l-4,4l4,4 M14.5,35h19V22 v-4.0001L28.5002,13H15.5v9 M27.5,14v5h6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 359 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-txt-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-txt'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-txt");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-txt' },
+	        React.createElement('rect', { id: '_x2E_svg_274_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.4186,21 16.4186,13 29.4188,13  34.4186,17.9999 34.4186,35 15.4186,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.4186,14 28.4186,19 34.4186,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.4186,19' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '17.4186', y1: '25', x2: '11.4186', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '14.4186', y1: '24', x2: '14.4186', y2: '32' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.4186', y1: '25', x2: '25.4186', y2: '25' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '28.4186', y1: '24', x2: '28.4186', y2: '32' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '22.8214,32.0002 17.8171,24 19.9926,24 25,32 \t' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '19.8202,32.0002 24.8245,24 22.6454,24 17.638,32 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 360 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-update-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-update'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-update");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-update' },
+	        React.createElement('rect', { id: '_x2E_svg_285_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16,20 16,13 29.0002,13 34,17.9999 34,35  27,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28,14 28,19 34,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26.9128,28c0,3.866-3.134,7-7,7s-7-3.134-7-7 s3.134-7,7-7S26.9128,24.134,26.9128,28z M19.9128,32v-6 M22.9128,28l-3-3l-3,3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 361 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-upload-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-upload'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-upload");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-upload' },
+	        React.createElement('rect', { id: '_x2E_svg_238_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,13h13.0002L33,17.9999V35H15V13z M27,14v5h6 M24,32v-8 M28,27l-4-4l-4,4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 362 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-user-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-user'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-user");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-user' },
+	        React.createElement('rect', { id: '_x2E_svg_235_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16,19v-6h13.0002L34,17.9999V35H24 M28,14v5h6 M16,22c-1.6318,0-2.9545,1.3228-2.9545,2.9545S14.3683,27.9091,16,27.9091s2.9545-1.3228,2.9545-2.9545S17.6318,22,16,22z M21,32.6364C21,30.0256,18.679,28,16.0682,28h-0.2046C13.2528,28,11,30.0256,11,32.6364V35h10V32.6364z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 363 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-verified-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-verified'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-verified");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-verified' },
+	        React.createElement('rect', { id: '_x2E_svg_275_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15,21v-8h13.0002L33,17.9999V35H15V21z M27,14v5h6 M29,24l-6,6l-3-3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-video-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-video'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-video");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-video' },
+	        React.createElement('rect', { id: '_x2E_svg_270_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16,21 16,13 29.0002,13 34,17.9999 34,35  30,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28,14 28,19 34,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,34H12V24h10V34z M22,31l5,3V24l-5,3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 365 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-word-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document-word'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document-word");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document-word' },
+	        React.createElement('rect', { id: '_x2E_svg_219_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '17,21 17,13 30.0002,13 35,17.9999 35,35  16,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '29,14 29,19 35,19 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,19' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '25.72,23 22.72,32 21.34,32 19,26.54 16.66,32 15.28,32 12.28,23 14.39,23 16.12,28.19 18.34,23  19.66,23 21.88,28.19 23.61,23 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'document-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-document'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "document");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'document' },
+	        React.createElement('rect', { id: '_x2E_svg_60_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,35H15V13h12.0002L30,16l3,2.9999V35z M26,13v7 h7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 367 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'domain-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-domain'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "domain");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'domain' },
+	        React.createElement('rect', { id: '_x2E_svg_188_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,33H13V15h22V33z M13,19h21 M17,15v3 M21,15v3 M25,15v3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 368 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'down-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-down'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "down");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'down' },
+	        React.createElement('rect', { id: '_x2E_svg_260_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '35,18.5 24,29.5 13,18.5 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 369 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'download-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-download'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "download");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'download' },
+	        React.createElement('rect', { id: '_x2E_svg_26_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,22.2101l-7,7l-7-7 M24,12.2101v17 M13,28.2101 v7h22v-7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 370 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'drag-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-drag'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "drag");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'drag' },
+	        React.createElement('rect', { id: '_x2E_svg_6_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M22,18h-4v-4h4V18z M30,14h-4v4h4V14z M22,22h-4v4h4V22z M30,22h-4v4h4V22z M22,30h-4v4h4V30z M30,30h-4v4 h4V30z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 371 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'drive-cage-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-drive-cage'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "drive-cage");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'drive-cage' },
+	        React.createElement('rect', { id: '_x2E_svg_205_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '30', y: '16', fill: '#231F20', width: '2', height: '2' }),
+	        React.createElement('rect', { x: '30', y: '22', fill: '#231F20', width: '2', height: '2' }),
+	        React.createElement('rect', { x: '30', y: '28', fill: '#231F20', width: '2', height: '2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,32H13V14h22V32z M14,20h20 M16,17h13 M14,26h20 M16,23h13 M16,29h13 M13,14v21 M35,14v21' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 372 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'duplicate-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-duplicate'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "duplicate");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'duplicate' },
+	        React.createElement('rect', { id: '_x2E_svg_204_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,19h16v16H19V19z M29,19v-6H13v16h5 M27,23v8 M31,27h-8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 373 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'edit-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-edit'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "edit");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'edit' },
+	        React.createElement('rect', { id: '_x2E_svg_33_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29.5047,13.2031l5.0891,5.0891L18.0891,34.7969H13 v-5.0891L29.5047,13.2031z M26.5621,16.6916l4.8677,4.8676' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 374 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'eject-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-eject'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "eject");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'eject' },
+	        React.createElement('rect', { id: '_x2E_svg_103_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M13,30h22v5H13V30z M14.2571,26h19.4857L24,13.5 L14.2571,26z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 375 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'expand-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-expand'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "expand");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'expand' },
+	        React.createElement('rect', { id: '_x2E_svg_126_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,13h8v8 M34,14l-8,8 M13,27v8h8 M22,26l-8,8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 376 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'fan-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-fan'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "fan");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'fan' },
+	        React.createElement('rect', { id: '_x2E_svg_203_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeLinecap: 'round', strokeMiterlimit: '10', d: 'M24.0004,29 c-2.2061,0-4-1.7944-4-4s1.7939-4,4-4s4,1.7944,4,4S26.2064,29,24.0004,29z M26.7404,22.09c0.5-1.82,1.01-3.64,1.51-5.46 c0.32-1.15-0.46-2.31-1.73-2.6c-0.7-0.17-1.51-0.28-2.42-0.29c-1.03-0.01-1.96,0.12-2.73,0.32c-1.22,0.29-1.93,1.45-1.62,2.57 l1.51,5.46 M25.1304,28.84c1.33,1.35,2.68,2.72,4.02,4.08c0.84,0.85,2.24,0.76,3.13-0.2c0.49-0.52,1-1.17,1.46-1.95 c0.52-0.89,0.86-1.76,1.09-2.52c0.35-1.21-0.31-2.4-1.43-2.69l-5.5-1.43 M20.1004,24.13c-1.83,0.47-3.66,0.95-5.5,1.42 c-1.16,0.31-1.78,1.56-1.4,2.82c0.21,0.68,0.52,1.44,0.96,2.23c0.51,0.9,1.09,1.63,1.64,2.2c0.88,0.92,2.23,0.95,3.04,0.12 l4.03-4.08' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 377 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'fast-forward-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-fast-forward'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "fast-forward");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'fast-forward' },
+	        React.createElement('rect', { id: '_x2E_svg_102_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '36.5081,24 23.4919,14 23.4919,19.7143  15.4919,14 15.4919,34 23.4919,28.2857 23.4919,34 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 378 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'favorite-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-favorite'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "favorite");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'favorite_1_' },
+	        React.createElement('rect', { id: '_x2E_svg_13_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'favorite', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24.001,33.9448 C21.6279,32.1148,13,25.0635,13,19.2505c0-2.9256,2.4678-5.3057,5.5-5.3057c1.9014,0,3.6406,0.9275,4.6533,2.4814L24,17.7253 l0.8467-1.2991c1.0127-1.5539,2.752-2.4814,4.6533-2.4814c3.0322,0,5.5,2.3801,5.5,5.3057C35,25.096,26.376,32.1214,24.001,33.9448 z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 379 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'filter-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-filter'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "filter");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'filter_1_' },
+	        React.createElement('rect', { id: '_x2E_svg_8_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { id: 'filter', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '13.5,14 13.5,14.5 21.5,24.5  21.5,34.5 26.5,32.5 26.5,24.5 34.5,14.5 34.5,14 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 380 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'first-aid-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-first-aid'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "first-aid");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'first-aid' },
+	        React.createElement('rect', { id: '_x2E_svg_92_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34.5H13v-16h22V34.5z M28,14.5h-8v4h8V14.5z M24,30.5v-8 M20,26.5h8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 381 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'flag-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-flag'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "flag");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'flag' },
+	        React.createElement('rect', { id: '_x2E_svg_47_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14,36V14c6.3636-4,11.8181,5.9998,19.9998,0.0001 L34,14v12c-8.1818,6-13.6364-4-20,0' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 382 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'folder-cycle-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-folder-cycle'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "folder-cycle");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'folder-cycle' },
+	        React.createElement('rect', { id: '_x2E_svg_202_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16,35h-3V17l0-4h8l3,4h11v18h-4 M13,21h22' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,30c0-2.7614,2.2386-5,5-5 c1.9848,0,3.6994,1.1565,4.5069,2.8323' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '25,29 30,29 30,24 \t' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,30c0,2.7614-2.2386,5-5,5 c-1.9848,0-3.6994-1.1565-4.5069-2.8323' }),
+	        React.createElement('polygon', { fill: '#231F20', points: '23,31 18,31 18,36 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 383 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'folder-open-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-folder-open'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "folder-open");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'folder-open' },
+	        React.createElement('rect', { id: '_x2E_svg_42_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32,22H16v-3l0-5h6l2,4h8V22z M25,22H13l3,12h16 l3-12H25z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 384 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'folder-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-folder'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "folder");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'folder' },
+	        React.createElement('rect', { id: '_x2E_svg_41_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34H13V18l0-4h8l3,4h11V34z M13,22h22' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 385 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'gallery-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-gallery'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "gallery");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'gallery' },
+	        React.createElement('rect', { id: '_x2E_svg_243_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '18', cy: '18', r: '2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,30H13V13h18V30z M31,27l-5.01-6L22,26l-3-3 l-6,7 M17,31v3h18V17h-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 386 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'globe-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-globe'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "globe");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'globe' },
+	        React.createElement('rect', { id: '_x2E_svg_146_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24c0,6.0751-4.9249,11-11,11s-11-4.9249-11-11 s4.9249-11,11-11S35,17.9249,35,24z M14,21c0,0,4.125-0.25,5.4344,1.2308C20.4973,23.4327,20,24.7448,21,25l0,0 c0,0,1.7237,0.3779,1.3,1.5804c-1.425,4.0446,2.6809,2.248,2.6809,5.3569c0,3.1145,3.2905,3.3569,3.2905,0.8664 s2.2024-3.7329,2.2024-5.5993c0-1.8664-1.6845-2.1022-2.7988-2.7262C26.5606,23.8597,26.1589,23,24,23l0,0l0,0 c-1.1199-1-1.5349-1.8913-1-3c0.546-1.1199,2.4332-1.0625,2.4332-3.8015c0-1.6714-1.4238-3.1434-2.5381-3.1434' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 387 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'grid-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-grid'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "grid");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'grid' },
+	        React.createElement('rect', { id: '_x2E_svg_201_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M20.5,20.5h-7v-7h7V20.5z M27.5,13.5h-7v7h7V13.5z M34.5,13.5h-7v7h7V13.5z M20.5,20.5h-7v7h7V20.5z M27.5,20.5h-7v7h7V20.5z M34.5,20.5h-7v7h7V20.5z M20.5,27.5h-7v7h7V27.5z M27.5,27.5h-7v7h7V27.5z M34.5,27.5h-7v7h7V27.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 388 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'group-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-group'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "group");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'group' },
+	        React.createElement('rect', { id: '_x2E_svg_119_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,20.5c0,2.2091-1.7909,4-4,4s-4-1.7909-4-4 s1.7909-4,4-4S28,18.2909,28,20.5z M30,30.4091C30,26.995,27.3687,24.5,23.9546,24.5h0.1364C20.6768,24.5,18,26.995,18,30.4091 V33.5h12V30.4091z M27.96,20.93c0.01,0,0.01,0.01,0.02,0.01c0.58,0.35,1.26,0.55,1.97,0.56c0.02,0,0.03,0,0.05,0c2.21,0,4-1.79,4-4 s-1.79-4-4-4c-2.06,0-3.76,1.56-3.97,3.56 M30,30.5h6v-3.0909C36,23.995,33.3687,21.5,29.9546,21.5H30 M21.97,17.06 c-0.21-2-1.91-3.56-3.97-3.56c-2.21,0-4,1.79-4,4s1.79,4,4,4c0.02,0,0.03,0,0.05,0c0.71-0.01,1.39-0.21,1.97-0.56 c0.01,0,0.01-0.01,0.02-0.01 M18,21.5h0.0454C14.6313,21.5,12,23.995,12,27.4091V30.5h6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 389 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'grow-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-grow'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "grow");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'grow' },
+	        React.createElement('rect', { id: '_x2E_svg_189_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,17.9792v10 M25.4286,14.2037 c-1.4154,1.2132-1.7745,2.9887-1.0978,4.4919c1.7537,0.58,3.8251,0.2722,5.2405-0.941c1.4154-1.2132,1.7745-2.9887,1.0978-4.4919 C28.9154,12.6828,26.8441,12.9905,25.4286,14.2037z M17.3308,17.2627c-0.6766,1.5032-0.3176,3.2787,1.0978,4.4919 c1.4154,1.2132,3.4868,1.521,5.2405,0.941c0.6766-1.5032,0.3176-3.2787-1.0978-4.4919 C21.1559,16.9905,19.0846,16.6828,17.3308,17.2627z M29,27.9792H19l1,7h8L29,27.9792z M16,27.9792h16' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 390 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'halt-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-halt'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "halt");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'halt' },
+	        React.createElement('rect', { id: '_x2E_svg_245_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30,26v-6c0-1.1046,0.8954-2,2-2h0 c1.1046,0,2,0.8954,2,2v8v1c0,3.866-3.134,7-7,7h-6c-3.866,0-7-3.134-7-7v-6h1c1.6569,0,3,1.3431,3,3v4 M30,25v-8 c0-1.1046-0.8954-2-2-2h0c-1.1046,0-2,0.8954-2,2v8 M26,22v-8c0-1.1046-0.8954-2-2-2h0c-1.1046,0-2,0.8954-2,2v8 M22,25v-8 c0-1.1046-0.8954-2-2-2h0c-1.1046,0-2,0.8954-2,2v8.9' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 391 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'help-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-help'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "help");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'help' },
+	        React.createElement('rect', { id: '_x2E_svg_18_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M17.9638,18.789 c0-3.3312,2.7795-5.9867,6.1213-5.9402c3.176,0.0442,5.9069,2.9082,5.9511,6.0841c0.0381,2.7402-1.8236,4.9472-4.3113,5.6954 C24.679,24.9429,24,25.9806,24,27.0729v2.8719' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '24', cy: '33.9448', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 392 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'history-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-history'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "history");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'history' },
+	        React.createElement('rect', { id: '_x2E_svg_171_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.9813,29.0812L24,25v-7 M13,13v7h7 M13,24 c0,6.0751,4.9249,11,11,11s11-4.9249,11-11s-4.9249-11-11-11c-4.4373,0-8.261,2.6274-10.0001,6.4113' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 393 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'home-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-home'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "home");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'home' },
+	        React.createElement('rect', { id: '_x2E_svg_49_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M12.6887,22.5833L24,13.3211l11.3113,9.2622 M16,20 v1v7.42V35h16V21v-1 M27,27h-6v8h6V27z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 394 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'host-maintenance-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-host-maintenance'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "host-maintenance");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'host-maintenance' },
+	        React.createElement('rect', { id: '_x2E_svg_217_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M23.1,35H14V13h16v10 M15,20h14 M15,25h13.1 M15,30 h11' }),
+	        React.createElement('rect', { x: '25', y: '15', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M35.3397,26.7645l-1.9941,1.9941l-1.4142-1.4142l1.994-1.994c-1.1101-0.5445-2.4819-0.3465-3.4083,0.5798 c-0.9244,0.9244-1.1092,2.2919-0.5776,3.4064l-5.0793,5.079l1.4141,1.4141l5.0795-5.079c1.1144,0.5314,2.4817,0.3466,3.4061-0.5778 C35.6861,29.2465,35.8842,27.8746,35.3397,26.7645z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 395 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'host-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-host'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "host");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'host' },
+	        React.createElement('rect', { id: '_x2E_svg_200_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,35H15V13h18V35z M16,20h16 M16,25h16 M16,30h16 ' }),
+	        React.createElement('rect', { x: '28', y: '15', fill: '#231F20', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 396 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'image-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-image'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "image");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'image' },
+	        React.createElement('rect', { id: '_x2E_svg_39_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,33H13V15h22V33z M35,29l-6-6l-5,5l-3-3l-8,8' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '19', cy: '20', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 397 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'impact-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-impact'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "impact");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'impact' },
+	        React.createElement('rect', { id: '_x2E_svg_154_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M25.025,22.0455v12v-22l10,5v12l-10,5V22.0455z M35.025,17.0455l-10,5 M21.025,34.0455v-22 M21.025,23.0455l-7-7 M21.025,23.0455h-8 M21.025,23.0455l-7,7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 398 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'in-progress-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-in-progress'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "in-progress");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'in-progress' },
+	        React.createElement('rect', { id: '_x2E_svg_216_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35.0002,36h-6.17h-9.75h-6.08h3.8896 c-3.625-8.125,5.1104-8.0208,5.1104-11c0-3-8.625-2.875-5-11h-4h22h-3.8896c3.625,8.125-5.1104,8.0208-5.1104,11 c0,3,8.625,2.875,5,11' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M28.8302,36h-9.75c-0.31-1.54,0.23-2.4399,2.27-4.3201c0.78-0.72,1.79-1.53,2.7-2.76 c0.91,1.23,1.9,2.0701,2.68,2.8C28.8402,33.6899,29.3102,33.97,28.8302,36z' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M21.4466,19c-0.714,1.2603-0.6832,1.2753,0.9183,2.0747c0.4669,0.2328,1.0602,0.5291,1.6027,0.9253 c0.5494-0.3968,1.1516-0.6931,1.6247-0.9265c1.6734-0.8236,1.6602-0.8467,0.9653-2.0735' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 399 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'inbox-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-inbox'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "inbox");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'inbox' },
+	        React.createElement('rect', { id: '_x2E_svg_122_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34.1H13v-10l4-10h14l4,10 C35,24.2667,35,34.1,35,34.1z M14,24.1h6v4h8v-4h7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 400 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'indicator-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-indicator'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "indicator");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'indicator' },
+	        React.createElement('rect', { id: '_x2E_svg_239_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,35v-3c0-3.0938-1.5745-5.6785-2.8975-7.0015 C17.8184,23.7144,17,21.9536,17,19.9941c0-4.313,3.9007-7.7223,8.3667-6.8762c2.7529,0.5216,4.9634,2.7423,5.4984,5.4927 c0.4874,2.5056-0.3875,4.8077-1.9677,6.3878C27.5745,26.3215,26,28.9062,26,32v3h-2H22z M24,17c-1.6569,0-3,1.3431-3,3 s1.3431,3,3,3c1.6569,0,3-1.3431,3-3S25.6569,17,24,17z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 401 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'information-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-information'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "information");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'information' },
+	        React.createElement('rect', { id: '_x2E_svg_80_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M21,29.3705c0-1.6316-0.6658-3.1916-1.8455-4.3188 C17.825,23.7815,17,21.992,17,20c0-3.922,3.2147-7.084,7.1565-6.9983c3.6551,0.0795,6.7296,3.125,6.8402,6.7793 c0.0618,2.0431-0.744,3.8882-2.079,5.2009C27.7288,26.1508,27,27.7063,27,29.3736V30h-6V29.3705z M27,32v-2h-6v2 c0,1.6569,1.3431,3,3,3h0C25.6569,35,27,33.6569,27,32z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 402 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'inherit-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-inherit'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "inherit");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'inherit' },
+	        React.createElement('rect', { id: '_x2E_svg_170_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,17.8333c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5 s2.2386-5,5-5S29,15.0719,29,17.8333z M16,28.8333c-1.6569,0-3,1.3431-3,3s1.3431,3,3,3s3-1.3431,3-3S17.6569,28.8333,16,28.8333z M29,31.8333c0,1.6569,1.3431,3,3,3c1.6569,0,3-1.3431,3-3s-1.3431-3-3-3C30.3431,28.8333,29,30.1765,29,31.8333z M18.4,30.0333 l5.6-3.2v-4 M29.6,30.0333l-5.6-3.2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 403 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'install-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-install'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "install");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'install' },
+	        React.createElement('rect', { id: '_x2E_svg_121_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,22.1v13 M16,25.1v5.125l8,4.875l8-4.875V25.1 M16,17.225l8,4.9375L32,17.1 M16,17.2172l-4.9375,4.9297L19,27.1l5-5h0.0625L29,27.1l8-4.9375L32,17.1l-7.9375-3.9167L16,17.2172z ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 404 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'integration-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-integration'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "integration");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'integration' },
+	        React.createElement('rect', { id: '_x2E_svg_208_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,28H13V16h18 M17,34h18V22H17' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 405 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'iteration-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-iteration'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "iteration");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'iteration' },
+	        React.createElement('rect', { id: '_x2E_svg_180_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,27.0208H21V12.9792h14V27.0208z M17,16.9792 v14.0417h14 M13,20.9792v14h14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 406 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'java-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-java'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "java");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'java' },
+	        React.createElement('rect', { id: '_x2E_svg_113_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,35L22,35c-4.4183,0-8-3.5817-8-8v-6h16v6 C30,31.4183,26.4183,35,22,35z M33,23c-1.6569,0-3,1.3431-3,3s1.3431,3,3,3c1.6569,0,3-1.3431,3-3S34.6568,23,33,23z M19,18v-4 M22,18v-6 M25,18v-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 407 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'language-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-language'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "language");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'language' },
+	        React.createElement('rect', { id: '_x2E_svg_30_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24c0,6.0751-4.9249,11-11,11s-11-4.9249-11-11 s4.9249-11,11-11S35,17.9249,35,24z M24,13c-2.2091,0-4,4.9249-4,11s1.7909,11,4,11s4-4.9249,4-11S26.2091,13,24,13z M14,20h20 M14,28h20' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 408 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'launch-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-launch'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "launch");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'launch' },
+	        React.createElement('rect', { id: '_x2E_svg_209_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '24', cy: '21', r: '2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31.1848,29.4137 C31.8089,30.0219,32,30.8468,32,31.707v3.6281c0,0.6476-0.581,0.8821-1.1339,0.5229l-2.7003-2.0099 C27.6193,33.493,26.977,33,26.3201,33H24h-2.3201c-0.6569,0-1.2195,0.493-1.7661,0.8481l-2.78,2.1616 C16.581,36.369,16,35.9827,16,35.3351V31.707c0-0.8602,0.1911-1.6851,0.8152-2.2933l2.3703-2.4657 c-0.1076-1.1416-0.1768-2.4289-0.1768-3.8817c0-7.2213,4.9914-8.919,4.9914-8.919s4.9914,1.6976,4.9914,8.919 c0,1.4528-0.0693,2.7401-0.1768,3.8817L31.1848,29.4137z M20,33l2,3h4l2-3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 409 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'license-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-license'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "license");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'license' },
+	        React.createElement('rect', { id: '_x2E_svg_99_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '18', cy: '17.9899', r: '2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M21.47,24.4599l0.53,0.53v3h3v3h3v2l2,2h5v-4 l-10.26-10.26c0.17-0.55,0.26-1.14,0.26-1.74c0-3.31-2.69-6-6-6s-6,2.69-6,6s2.69,6,6,6C19.88,24.9899,20.72,24.7999,21.47,24.4599 z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 410 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'like-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-like'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "like");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'like' },
+	        React.createElement('rect', { id: '_x2E_svg_77_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,35h-6V23h6V35z M19,35h13 c1.6569,0,3-1.3431,3-3V22h-7v-6c0-1.6569-1.2431-3-2.9-3H23v7.1c0,1.6569-1.3431,2.9-3,2.9h-1' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 411 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'line-chart-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-line-chart'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "line-chart");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'line-chart' },
+	        React.createElement('rect', { id: '_x2E_svg_55_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,16h7v7 M12,34h24 M12.6875,28.3125L20,21l5,5 l9-9' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 412 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-bottom-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link-bottom'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-bottom");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link-bottom' },
+	        React.createElement('rect', { id: '_x2E_svg_252_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,23l-7,7l-7-7 M24,13v17 M34,34H14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 413 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-down-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link-down'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-down");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link-down' },
+	        React.createElement('rect', { id: '_x2E_svg_251_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32,25l-8,8l-8-8 M24,33V14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 414 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-next-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link-next'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-next");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link-next' },
+	        React.createElement('rect', { id: '_x2E_svg_16_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M25,15.9448l8,8l-8,8 M14,23.9448h19' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 415 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-previous-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link-previous'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-previous");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link-previous' },
+	        React.createElement('rect', { id: '_x2E_svg_250_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M23.1397,32l-8-8l8-8 M15.1397,24h19' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 416 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-top-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link-top'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-top");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link-top' },
+	        React.createElement('rect', { id: '_x2E_svg_14_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M17,24.9448l7-7l7,7 M24,34.9448v-17 M14,13.9448 h20' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 417 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-up-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link-up'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-up");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link-up' },
+	        React.createElement('rect', { id: '_x2E_svg_15_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16,22.9448l8-8l8,8 M24,33.9448v-19' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 418 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'link-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-link'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'link' },
+	        React.createElement('rect', { id: '_x2E_svg_23_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16.4792,34.6702l-2.9392-2.9392 c-0.7199-0.7199-0.7199-1.8871,0-2.6071l4.5839-4.5839c0.7199-0.7199,1.8871-0.7199,2.6071,0l2.9392,2.9392 c0.7199,0.7199,0.7199,1.8871,0,2.6071l-4.5839,4.5839C18.3663,35.3901,17.1991,35.3901,16.4792,34.6702z M29.8761,23.8803 l4.5839-4.5839c0.7199-0.7199,0.7199-1.8871,0-2.6071L31.5208,13.75c-0.7199-0.7199-1.8871-0.7199-2.6071,0l-4.5839,4.5839 c-0.7199,0.7199-0.7199,1.8871,0,2.6071l2.9392,2.9392C27.989,24.6002,29.1562,24.6002,29.8761,23.8803z M29,19.2101l-10,10' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 419 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'location-pin-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-location-pin'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "location-pin");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'location-pin' },
+	        React.createElement('rect', { id: '_x2E_svg_186_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,21.9792c0,6.75-9,13-9,13s-9-6.25-9-13 c0-4.9706,4.0294-9,9-9S33,17.0086,33,21.9792z M24,18.9792c-1.6569,0-3,1.3431-3,3c0,1.6569,1.3431,3,3,3s3-1.3431,3-3 C27,20.3223,25.6569,18.9792,24,18.9792z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 420 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'location-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-location'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "location");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'location' },
+	        React.createElement('rect', { id: '_x2E_svg_73_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32.3754,21c0,7.0833-8,14-8,14s-8-6.9167-8-14 c0-4.4183,3.5817-8,8-8S32.3754,16.5817,32.3754,21z M24.3754,24c1.6569,0,3-1.3431,3-3s-1.3431-3-3-3c-1.6569,0-3,1.3431-3,3 S22.7185,24,24.3754,24z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 421 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'lock-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-lock'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "lock");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'lock' },
+	        React.createElement('rect', { id: '_x2E_svg_66_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,35H15V23h18V35z M30,19c0-3.3137-2.6863-6-6-6 s-6,2.6863-6,6v4h12V19z M24,31v-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 422 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'login-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-login'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "login");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'login' },
+	        React.createElement('rect', { id: '_x2E_svg_149_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M25.536,19l5,5l-5,5 M30.536,24h-18 M21.536,27v7 h13V14h-13v7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 423 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'logout-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-logout'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "logout");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'logout' },
+	        React.createElement('rect', { id: '_x2E_svg_148_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29.9688,19l5,5l-5,5 M34.9688,24h-18 M25.9688,21 v-7h-13v20h13v-7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 424 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'mail-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-mail'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "mail");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'mail' },
+	        React.createElement('rect', { id: '_x2E_svg_78_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,32H13V16h22V32z M13,18l11,9l11-9' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 425 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'manual-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-manual'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "manual");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'manual' },
+	        React.createElement('rect', { id: '_x2E_svg_181_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,31.9792H19v-3h10V31.9792z M32,31.9792H16v3h16 V31.9792z M24,12.9792c-2.2091,0-4,1.7909-4,4s1.7909,4,4,4s4-1.7909,4-4S26.2091,12.9792,24,12.9792z M22,20.9792v8 M26,20.9792v8 ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 426 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'map-location-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-map-location'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "map-location");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'map-location' },
+	        React.createElement('rect', { id: '_x2E_svg_145_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '20.025', y1: '18.9467', x2: '20.025', y2: '18.9467' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29.705,16.7667l5.32,2.28v15l-7-3l-8,3l-7-3v-15 l5.27,2.26 M20.025,33.9467v-11 M28.025,30.9467v-8 M24.025,11.9467c-3.1861,0-5.769,2.5829-5.769,5.769 c0,4.3989,5.769,9.2304,5.769,9.2304c2.2529-2.2529,5.769-4.7594,5.769-9.2304C29.794,14.5296,27.2111,11.9467,24.025,11.9467z' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '24.025', cy: '17.9467', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 427 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'map-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-map'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "map");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'map' },
+	        React.createElement('rect', { id: '_x2E_svg_75_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,13l7,3v18l-7-3l-7,3l-7-3V13l7,3L27,13z M20,34 V16 M27,31V14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 428 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'menu-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-menu'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "menu");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'menu' },
+	        React.createElement('rect', { id: '_x2E_svg_5_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M12,16h24 M12,32h24 M12,24h24' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 429 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'microphone-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-microphone'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "microphone");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'microphone' },
+	        React.createElement('rect', { id: '_x2E_svg_21_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31.9997,21.2101v2.04 c0,4.3892-3.5708,7.96-7.96,7.96h-0.0801c-4.3892,0-7.96-3.5708-7.96-7.96v-2.04 M27.9997,23.2501v-6.08 c0-2.187-1.773-3.96-3.96-3.96h-0.08c-2.187,0-3.96,1.773-3.96,3.96v6.08c0,2.187,1.773,3.96,3.96,3.96h0.08 C26.2267,27.2101,27.9997,25.4372,27.9997,23.2501z M23.9997,31.2101v5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 430 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'monitor-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-monitor'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "monitor");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'monitor' },
+	        React.createElement('rect', { id: '_x2E_svg_112_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,28H13V14h22V28z M27,28h-6v6h6V28z M17,34h14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 431 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'more-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-more'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "more");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'more' },
+	        React.createElement('rect', { id: '_x2E_svg_3_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '12', y: '22', fill: '#231F20', width: '4', height: '4' }),
+	        React.createElement('rect', { x: '22', y: '22', fill: '#231F20', width: '4', height: '4' }),
+	        React.createElement('rect', { x: '32', y: '22', fill: '#231F20', width: '4', height: '4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 432 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'multiple-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-multiple'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "multiple");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'multiple' },
+	        React.createElement('rect', { id: '_x2E_svg_62_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,35H13V21h14V35z M27,31h4V17H17v4 M31,27h4V13 H21v4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 433 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'navigate-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-navigate'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "navigate");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'navigate' },
+	        React.createElement('rect', { id: '_x2E_svg_144_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26,35.9467h-4v-20l2-2l2,2V35.9467z M22,16.9467 h-7l-3,2.9996l3,3.0004h7V16.9467z M26,25.9467h7l3-2.9996l-3-3.0004h-7V25.9467z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 434 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'new-window-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-new-window'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "new-window");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'new-window' },
+	        React.createElement('rect', { id: '_x2E_svg_22_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,29.2101H19v-16h16V29.2101z M18,19.2101h-5v16 h16v-5 M27,25.2101v-8 M23,21.2101h8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 435 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'new-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-new'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "new");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'new' },
+	        React.createElement('rect', { id: '_x2E_svg_111_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,13v22 M33.5267,18.5008L14.4732,29.4992 M33.5253,29.5016L14.4746,18.4984' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 436 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'next-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-next'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "next");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'next' },
+	        React.createElement('rect', { id: '_x2E_svg_27_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '20,13.2101 31,24.2101 20,35.2101 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 437 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'notes-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-notes'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "notes");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'notes' },
+	        React.createElement('rect', { id: '_x2E_svg_110_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,30.0001L30,33l-1.9998,2H15V13h18V30.0001z M33,29h-6v6 M18,29h5 M18,25h12 M18,21h10 M16,17h16' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 438 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'notification-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-notification'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "notification");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'notification' },
+	        React.createElement('rect', { id: '_x2E_svg_48_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,31h-8V21c0-4.4183,3.5817-8,8-8s8,3.5817,8,8 v10H24z M12,31h24 M21,32c0,1.6569,1.3431,3,3,3s3-1.3431,3-3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 439 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'optimization-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-optimization'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "optimization");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'optimization' },
+	        React.createElement('rect', { id: '_x2E_svg_98_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30.5834,14.0315 C27.0001,23.2815,21.2542,26.9899,13,26.9899l0,0 M33.5621,19.5986l-2.5944-6.3875l-6.5513,2.661 M18,30.9899h-4v4h4V30.9899z M26,28.9899h-4v6h4V28.9899z M34,23.9899l-4,0.1v11l4-0.1V23.9899z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 440 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'organization-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-organization'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "organization");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'organization' },
+	        React.createElement('rect', { id: '_x2E_svg_138_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,16v19H17V16 M31,13H17 M33,13H14.9583v3H33V13z ' }),
+	        React.createElement('rect', { x: '20', y: '19', fill: '#231F20', width: '3', height: '4' }),
+	        React.createElement('rect', { x: '25', y: '19', fill: '#231F20', width: '3', height: '4' }),
+	        React.createElement('rect', { x: '20', y: '25', fill: '#231F20', width: '3', height: '4' }),
+	        React.createElement('rect', { x: '22', y: '31', fill: '#231F20', width: '4', height: '4' }),
+	        React.createElement('rect', { x: '25', y: '25', fill: '#231F20', width: '3', height: '4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 441 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'overview-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-overview'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "overview");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'overview' },
+	        React.createElement('rect', { id: '_x2E_svg_120_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,28.5c0,2.4853-2.0147,4.5-4.5,4.5 S13,30.9853,13,28.5s2.0147-4.5,4.5-4.5S22,26.0147,22,28.5z M30.5,24c-2.4853,0-4.5,2.0147-4.5,4.5s2.0147,4.5,4.5,4.5 c2.4853,0,4.5-2.0147,4.5-4.5S32.9853,24,30.5,24z M22,27.1l-1-11h-4l-4,11.375V28.1 M35,28.1v-0.625L31,16.1h-4l-1,11 M22,19.1h4 M22,27.1h5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 442 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'pan-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-pan'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "pan");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'pan' },
+	        React.createElement('rect', { id: '_x2E_svg_127_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M20,17l4-4l4,4 M20,31l4,4l4-4 M24,35V13 M31,28 l4-4l-4-4 M17,20l-4,4l4,4 M35,24H13' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'pause-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-pause'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "pause");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'pause' },
+	        React.createElement('rect', { id: '_x2E_svg_100_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,34V14h5v20H27z M21,34V14h-5v20H21z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'payment-google-wallet-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-payment-google-wallet'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "payment-google-wallet");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'payment-google-wallet' },
+	        React.createElement('rect', { id: '_x2E_svg_293_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'path34', d: 'M19.174,22.6586c-1.3677-1.8839-3.2645-3.5355-5.4194-4.6839c-0.3226-0.1806-0.6968-0.271-1.071-0.271 c-0.8387,0-1.6,0.4516-2,1.2c-0.5935,1.0968-0.1677,2.4774,0.929,3.0581c3.3161,1.7806,5.4581,5.1613,5.7161,9.0839v-0.0129 c-0.0387-0.4387,0.0387-0.8645,0.2323-1.2645c0.0258-0.0516,0.0645-0.1161,0.1032-0.1806 c1.0323-1.7032,1.5871-3.6645,1.5871-5.6774C19.2515,23.4844,19.2127,23.0715,19.174,22.6586' }),
+	        React.createElement('path', { id: 'path36', d: 'M32.3095,18.4006c-0.4-1.7548-0.9935-3.4581-1.7677-5.0839c-0.4129-0.8645-1.3032-1.4323-2.2581-1.4323 c-0.3742,0-0.7355,0.0774-1.071,0.2452c-1.2516,0.5935-1.7806,2.0903-1.1871,3.329c1.2645,2.6839,1.8968,5.5097,1.8968,8.4516 s-0.6323,5.7677-1.871,8.4c-0.0129,0.0387-0.2323,0.5032-0.2323,1.0452c0,0.1548,0.0129,0.3742,0.0645,0.5806 c0.1677,0.7097,0.6194,1.3548,1.3677,1.7032c0.3355,0.1548,0.6968,0.2452,1.071,0.2452c0.9161,0,1.7548-0.5032,2.1935-1.3032 c0.5032-0.9419,1.0065-2.1677,1.4452-3.7548c0.1419-0.4774,0.2581-0.929,0.3613-1.4065c0.4-1.7935,0.6194-3.6258,0.6194-5.5097 C32.9289,22.0522,32.7095,20.1812,32.3095,18.4006' }),
+	        React.createElement('path', { id: 'path38', d: 'M21.7418,15.7812c-0.0387-0.0774-0.0903-0.1419-0.1419-0.2065c-0.1677-0.2194-0.3613-0.4-0.5935-0.5419 c-0.3742-0.2452-0.8258-0.3871-1.2903-0.3871c-0.3871,0-0.5806,0.0516-0.8516,0.1548c-0.2839,0.1161-0.5806,0.271-0.8516,0.5548 c-0.271,0.2839-0.4258,0.5677-0.5419,0.8774c-0.2323,0.6065-0.1935,1.3935,0.1935,2.0387c0.8258,1.329,1.3161,2.8516,1.4968,4.4129 c0.0516,0.4129,0.0774,0.8387,0.0774,1.2516c0,2.0129-0.5419,3.9742-1.5871,5.6774c-0.0387,0.0645-0.0645,0.1161-0.1032,0.1806 c-0.2065,0.4-0.271,0.8516-0.2323,1.2774c0.0645,0.7226,0.4645,1.4065,1.1355,1.8194c0.1677,0.1032,0.3613,0.1806,0.5419,0.2452 c0.2194,0.0645,0.4516,0.1032,0.6839,0.1032c0.8387,0,1.6-0.4258,2.0387-1.1484c1.3161-2.1548,2.0774-4.6065,2.2452-7.1226 c0.0258-0.3355,0.0387-0.6839,0.0387-1.0194C24.0127,21.0328,23.2256,18.2199,21.7418,15.7812' }),
+	        React.createElement('path', { id: 'path40', d: 'M26.0386,32.3102c1.2516-2.6323,1.8839-5.4581,1.8839-8.4c0-1.0065-0.0645-1.7419-0.1161-2.2194 c-1.6387-2.6194-4.0129-4.9677-6.8-6.671c0,0,0.0645,0.0387,0.0645,0.0516c0.1935,0.1419,0.3484,0.2839,0.529,0.5032 c0.0387,0.0516,0.1032,0.129,0.1419,0.2065c1.4839,2.4516,2.2581,5.2516,2.2581,8.129c0,0.3484-0.0129,0.6839-0.0387,1.0194 c1.1871,2.2581,1.8323,4.8258,1.8323,7.5226c0,0.2194,0,0.5548,0,0.8129c0.0129-0.2839,0.0774-0.5806,0.1806-0.8387 C26.0127,32.3877,26.0256,32.349,26.0386,32.3102' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 445 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'payment-mastercard-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-payment-mastercard'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "payment-mastercard");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'payment-mastercard' },
+	        React.createElement('rect', { id: '_x2E_svg_291_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement(
+	          'g',
+	          { id: 'path2268' },
+	          React.createElement('path', { d: 'M28.8179,17.6966c3.4079,0,6.1812,2.7728,6.1821,6.1848c0.0005,1.6514-0.6422,3.2042-1.8096,4.3722 c-1.1674,1.168-2.7199,1.8115-4.3729,1.8119c-3.4082,0-6.1817-2.7728-6.1826-6.1846c-0.0005-1.6514,0.6422-3.2042,1.8097-4.3722 c1.1674-1.1681,2.7198-1.8116,4.371-1.812H28.8179 M28.8174,16.6966c-0.0005,0-0.0014,0-0.0019,0 c-3.9667,0.001-7.1817,3.2177-7.1807,7.1844c0,0.0013,0,0.0024,0,0.0037c0.0011,3.9664,3.2163,7.1807,7.1826,7.1807 c0.0005,0,0.0013,0,0.0018,0c3.9669-0.001,7.1819-3.2175,7.1808-7.1844c0-0.0013,0-0.0024,0-0.0037 C35.9989,19.9111,32.7838,16.6964,28.8174,16.6966L28.8174,16.6966z' })
+	        ),
+	        React.createElement('path', { d: 'M26.2193,25.3257h-4.4697c-0.0481-0.2432-0.0838-0.4864-0.1069-0.7296h4.6857c0.0233-0.2354,0.0367-0.4736,0.0367-0.7151 c0-0.0319-0.0009-0.0637-0.0013-0.0955h-4.7512c0.0024-0.2432,0.0176-0.4864,0.0449-0.7296h4.66 c-0.0277-0.2415-0.067-0.4864-0.118-0.7296H21.809c0.0544-0.2432,0.1231-0.4864,0.2049-0.7296h3.9772 c-0.0889-0.2432-0.1922-0.5674-0.3097-0.8106h-3.3619c0.1213-0.2432,0.2587-0.4864,0.4121-0.7296h2.5361 c-0.1688-0.2432-0.3555-0.4864-0.5575-0.7296h-1.414c0.2186-0.3243,0.4593-0.498,0.7206-0.7239 c-1.2764-1.1625-2.9731-1.8701-4.8343-1.8701c-0.0155,0-0.0308,0-0.0463,0C15.1929,16.733,12,19.949,12,23.8984 c0,3.9647,3.2178,7.1739,7.1826,7.1739c1.8608,0,3.557-0.701,4.8333-1.8633c0,0-0.0002,0.0078-0.0006,0.0078h0.0015 c0.2613-0.2432,0.5051-0.4864,0.7292-0.8106h-1.4715c-0.1965-0.2432-0.3751-0.4864-0.5355-0.7296h2.5379 c0.1543-0.2432,0.2941-0.4864,0.4181-0.7296H22.32c-0.115-0.2432-0.2149-0.5674-0.3002-0.8106h3.9757 C26.0863,25.8932,26.1611,25.6099,26.2193,25.3257z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'payment-paypal-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-payment-paypal'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "payment-paypal");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'payment-paypal' },
+	        React.createElement('rect', { id: '_x2E_svg_294_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M30.2812,14.477c-0.978-1.1147-2.7457-1.5925-5.0072-1.5925h-6.5635c-0.4627,0-0.8559,0.3365-0.9283,0.7928 l-2.7329,17.3326c-0.0543,0.3418,0.2103,0.6514,0.5567,0.6514h4.052l1.0177-6.4548l-0.0315,0.2021 c0.0724-0.4563,0.4627-0.7928,0.9248-0.7928h1.9255c3.7827,0,6.7446-1.5364,7.6098-5.981 c0.0257-0.1314,0.0479-0.2594,0.0672-0.3844C31.4292,16.6076,31.1698,15.4894,30.2812,14.477 M32.0516,19.1303L32.0516,19.1303 c-0.0199,0.1256-0.0415,0.253-0.0672,0.3844c-0.8652,4.444-3.8271,5.981-7.6098,5.981h-1.9261 c-0.4621,0-0.8523,0.3365-0.9242,0.7928l-0.9861,6.2521l-0.2798,1.7736c-0.0473,0.2991,0.184,0.5702,0.4866,0.5702h3.4158 c0.4043,0,0.7484-0.2944,0.8115-0.6934l0.0333-0.1741l0.6438-4.0801l0.0415-0.2255c0.0631-0.399,0.4072-0.6934,0.8115-0.6934 h0.5112c3.3089,0,5.8998-1.3442,6.657-5.2321c0.3161-1.6247,0.1525-2.9812-0.6835-3.934 C32.7334,19.5632,32.4185,19.3249,32.0516,19.1303' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 447 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'payment-square-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-payment-square'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "payment-square");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'payment-square' },
+	        React.createElement('rect', { id: '_x2E_svg_292_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '4', strokeMiterlimit: '10', d: 'M29,32.8844H19c-2.2091,0-4-1.7909-4-4v-10 c0-2.2091,1.7909-4,4-4h10c2.2091,0,4,1.7909,4,4v10C33,31.0936,31.2091,32.8844,29,32.8844z' }),
+	        React.createElement('path', { d: 'M26,20.8844h-4c-0.5523,0-1,0.4477-1,1v4c0,0.5523,0.4477,1,1,1h4c0.5523,0,1-0.4477,1-1v-4 C27,21.3322,26.5523,20.8844,26,20.8844z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 448 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'payment-visa-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-payment-visa'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "payment-visa");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'payment-visa' },
+	        React.createElement('rect', { id: '_x2E_svg_290_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M28.475,15.8444l-4.3012,10.9967l-0.4746-2.1981c0-0.0002,0,0.0126,0,0.0126L22.1836,17.24 c-0.2648-1.0163-1.0147-1.3956-1.9648-1.3956h-7.0541l-0.0558,0.3811c1.716,0.4154,3.2504,1.0384,4.5952,1.784l3.8893,13.9514 l4.6285-0.0514l6.8871-16.065H28.475z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 449 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'pin-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-pin'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "pin");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'pin' },
+	        React.createElement('rect', { id: '_x2E_svg_97_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24.678,32.9559 c1.3143-1.3143,1.9749-3.0209,1.9887-4.7412l0.0757-0.0757l6.1932-6.1932l-6.8813-6.8813l-6.1932,6.1932l-0.0757,0.0757 c-1.7203,0.0138-3.4269,0.6744-4.7412,1.9887L24.678,32.9559z' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '23.9899', y1: '13', x2: '35', y2: '24.0101' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M13,35l6.8122-6.8122L13,35z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'plan-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-plan'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "plan");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'plan' },
+	        React.createElement('rect', { id: '_x2E_svg_190_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34.5H13v-19h22V34.5z M14,20.5h20 M18,15.5v-4 M31,25.5H21 M19,25.5h-2 M31,29.5H21 M19,29.5h-2 M30,15.5v-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-apple-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-apple'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-apple");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-apple' },
+	        React.createElement('rect', { id: '_x2E_svg_303_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M30.5499,24.7496c0.0337,3.632,3.1862,4.8406,3.2211,4.856c-0.0267,0.0852-0.5037,1.7224-1.6609,3.4135 c-1.0003,1.462-2.0385,2.9187-3.674,2.9489c-1.607,0.0296-2.1237-0.953-3.961-0.953c-1.8367,0-2.4108,0.9228-3.932,0.9826 c-1.5786,0.0597-2.7807-1.581-3.7894-3.0377c-2.061-2.9797-3.636-8.4198-1.5212-12.092c1.0506-1.8236,2.9282-2.9784,4.9661-3.008 c1.5502-0.0296,3.0134,1.0429,3.961,1.0429c0.947,0,2.7251-1.2897,4.5943-1.1003c0.7825,0.0326,2.9791,0.3161,4.3895,2.3807 C33.0299,20.2535,30.5226,21.7131,30.5499,24.7496 M27.5297,15.8311c0.8381-1.0145,1.4022-2.4268,1.2483-3.832 c-1.2081,0.0486-2.6689,0.805-3.5354,1.819c-0.7766,0.8979-1.4567,2.335-1.2732,3.7124 C25.316,17.6347,26.6916,16.8462,27.5297,15.8311' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 452 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-chrome-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-chrome'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-chrome");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-chrome' },
+	        React.createElement('rect', { id: '_x2E_svg_302_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M17.9167,22.4657l-3.4346-5.9489c2.199-2.7533,5.584-4.5177,9.3816-4.5177c4.3933,0,8.2344,2.3612,10.3257,5.8832h-9.7922 c-0.1759-0.0152-0.3537-0.0234-0.5335-0.0234C21.0071,17.8589,18.5998,19.8195,17.9167,22.4657z M28.1603,19.6169h6.8785 c0.533,1.3578,0.8259,2.8362,0.8259,4.3831c0,6.5823-5.2996,11.926-11.8646,11.9991l4.908-8.5009 c0.691-0.9933,1.0968-2.1992,1.0968-3.4983C30.0048,22.285,29.2978,20.7321,28.1603,19.6169z M19.504,24 c0-2.4039,1.9558-4.3597,4.3597-4.3597S28.2234,21.5961,28.2234,24s-1.9558,4.3597-4.3597,4.3597S19.504,26.4039,19.504,24z M25.5087,29.917l-3.4357,5.9507C16.2946,35.0032,11.8629,30.0193,11.8629,24c0-2.1381,0.5598-4.1451,1.5399-5.8838l4.8995,8.4863 c0.9814,2.0887,3.1051,3.5386,5.5615,3.5386C24.4333,30.1411,24.985,30.0628,25.5087,29.917z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 453 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-dropbox-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-dropbox'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-dropbox");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-dropbox' },
+	        React.createElement('rect', { id: '_x2E_svg_295_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { points: '27.9955,13.8917 24,15.8961 32.006,19.8976 35.997,17.8961 \t' }),
+	        React.createElement('polygon', { points: '27.9955,27.5735 27.3264,27.2404 23.991,25.5675 20.6751,27.23 20.006,27.5646 19.3383,27.2315 15.994,25.5601  15.994,30.997 24,35.0014 24,34.9865 32.006,30.9865 32.006,25.569 28.6647,27.2404 \t' }),
+	        React.createElement('polygon', { points: '20.006,25.8947 24,23.8917 16.0149,19.8976 24,15.9066 20.006,13.9036 11.997,17.9051 15.9746,19.8976  11.997,21.8902 \t' }),
+	        React.createElement('polygon', { points: '24,23.9021 27.9955,25.9036 35.997,21.9021 32.006,19.8976 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-edge-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-edge'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-edge");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-edge' },
+	        React.createElement('rect', { id: '_x2E_svg_297_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'Microsoft-Edge-logo', d: 'M17.41,18.8032c-2.8552,1.7773-4.487,4.3029-4.487,4.3029 s0.4229-5.2958,4.487-8.3946c1.6164-1.2324,3.8262-2.265,6.7984-2.265c1.1166,0,3.4581,0.1943,5.5671,1.4946 s2.9612,2.3895,3.9114,3.9842c0.41,0.6881,0.7439,1.5721,0.9523,2.4248c0.3903,1.5977,0.4378,3.5084,0.4378,3.5084v2.517H20.0038 c0,0-0.3681,5.0642,6.5639,5.0642c2.4109,0,3.2551-0.3787,4.048-0.6136c1.2413-0.3676,2.44-1.187,2.44-1.187l0.0023,5.0597 c0,0-2.837,1.7475-7.123,1.7475c-1.207,0-2.4789-0.1012-3.7056-0.4992c-1.0719-0.3478-3.3168-1.2858-4.8193-3.4844 c-0.5315-0.7777-1.1074-1.8126-1.3927-2.8236c-0.3084-1.0931-0.3046-2.155-0.3046-2.74c0-2.1881,0.7475-4.2771,2.0447-5.7874 c1.6803-1.9562,3.804-2.8174,3.804-2.8174s-0.6918,0.8065-1.1173,1.8106c-0.4255,1.0041-0.5419,2.0143-0.5419,2.0143h8.5112 c0,0,0.4978-5.0859-4.816-5.0859C21.5953,17.0337,19.1362,17.7286,17.41,18.8032z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-firefox-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-firefox'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-firefox");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-firefox' },
+	        React.createElement('rect', { id: '_x2E_svg_301_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M35.384,21.7423l-0.278,1.7831c0,0-0.3974-3.3013-0.8843-4.5355c-0.7464-1.8911-1.0784-1.8759-1.0807-1.8732 c0.4999,1.2704,0.4093,1.9529,0.4093,1.9529s-0.8857-2.414-3.2276-3.1821c-2.5942-0.8504-3.9977-0.6179-4.1599-0.5739 c-0.0246-0.0002-0.0484-0.0002-0.071-0.0002c0.0192,0.0015,0.0378,0.0034,0.0569,0.005c-0.0008,0.0005-0.0021,0.001-0.0021,0.001 c0.0107,0.0131,2.8667,0.4995,3.3732,1.1955c0,0-1.2131,0-2.4204,0.3479c-0.0546,0.0156,4.442,0.5617,5.3612,5.0549 c0,0-0.4929-1.0283-1.1025-1.203c0.4009,1.2196,0.298,3.5338-0.0838,4.684c-0.0491,0.1479-0.0994-0.6394-0.8514-0.9785 c0.2409,1.7261-0.0144,4.4638-1.2119,5.2179c-0.0933,0.0587,0.7507-2.7026,0.1697-1.635c-3.3447,5.1282-7.2985,2.3665-9.0761,1.151 c0.9109,0.1983,2.6403-0.0309,3.4058-0.6003c0.001-0.0007,0.0018-0.0013,0.0028-0.002c0.8313-0.5684,1.3236-0.9835,1.7656-0.8853 c0.4424,0.0988,0.7368-0.3451,0.3933-0.739c-0.344-0.3946-1.1792-0.937-2.3092-0.6414c-0.7969,0.2087-1.7844,1.0904-3.2917,0.1976 c-1.157-0.6855-1.2659-1.255-1.2762-1.6494c0.0285-0.1398,0.0645-0.2704,0.1073-0.3896c0.1332-0.372,0.537-0.4842,0.7616-0.5728 c0.381,0.0654,0.7093,0.1843,1.0539,0.3611c0.0045-0.1147,0.0059-0.267-0.0004-0.4397c0.033-0.0657,0.0126-0.2637-0.0404-0.5058 c-0.0305-0.2416-0.0802-0.4916-0.1583-0.7193c0.0003,0,0.0005-0.0002,0.0005-0.0002c0.0015-0.0005,0.0028-0.001,0.0039-0.0017 c0.0018-0.001,0.0034-0.0026,0.0049-0.0045c0.0003-0.0005,0.0007-0.0008,0.0007-0.0008c0.0023-0.0033,0.0039-0.0068,0.005-0.0113 c0.0239-0.1082,0.2818-0.317,0.6028-0.5414c0.2876-0.2011,0.6258-0.4147,0.8922-0.5801c0.2358-0.1464,0.4153-0.255,0.4534-0.2835 c0.0145-0.0109,0.0318-0.0237,0.0507-0.0383c0.0035-0.0027,0.007-0.0054,0.0106-0.0083c0.0022-0.0017,0.0045-0.0035,0.0067-0.0053 c0.1268-0.101,0.316-0.2917,0.3557-0.6932c0.0001-0.001,0.0002-0.0019,0.0003-0.0029c0.0012-0.0118,0.0022-0.0238,0.003-0.036 c0.0007-0.0085,0.0012-0.017,0.0017-0.0257c0.0003-0.0067,0.0008-0.0133,0.001-0.0201c0.0007-0.0158,0.0012-0.032,0.0014-0.0484 c0-0.0009,0-0.0018,0.0001-0.0027c0.0005-0.0389-0.0001-0.0794-0.0024-0.1219c-0.0013-0.0238-0.003-0.0452-0.007-0.0647 c-0.0002-0.001-0.0004-0.0022-0.0007-0.0032c-0.0004-0.0019-0.0008-0.0038-0.0014-0.0057 c-0.0008-0.0034-0.0018-0.0068-0.0029-0.0101c0,0-0.0002-0.0007-0.0004-0.0011c-0.0012-0.0037-0.0026-0.0074-0.0041-0.0109 l-0.0001-0.0004c-0.0411-0.0963-0.195-0.1326-0.8307-0.1434c0,0-0.0012,0-0.0018,0l0,0c-0.2594-0.0044-0.5985-0.0045-1.043-0.0028 c-0.7793,0.0031-1.21-0.7618-1.3475-1.0578c0.1884-1.042,0.733-1.7846,1.6277-2.2881c0.0169-0.0095,0.0136-0.0174-0.0064-0.0229 c0.1749-0.1058-2.1151-0.0029-3.1684,1.3368c-0.9349-0.2324-1.7497-0.2167-2.4519-0.0519 c-0.1349-0.0038-0.3029-0.0206-0.5024-0.0622c-0.467-0.4232-1.1355-1.2047-1.1713-2.1377c0,0-0.0022,0.0017-0.0059,0.0048 c-0.0005-0.009-0.0013-0.0178-0.0017-0.0268c0,0-1.423,1.0937-1.21,4.0754c-0.0005,0.0477-0.0015,0.0934-0.0028,0.1377 c-0.3851,0.5224-0.5762,0.9614-0.5904,1.0583c-0.3412,0.6948-0.6875,1.7403-0.9693,3.3277c0,0,0.1971-0.625,0.5926-1.3328 c-0.2909,0.8911-0.5195,2.2771-0.3852,4.356c0,0,0.0355-0.4609,0.1611-1.1249c0.0981,1.2893,0.5278,2.881,1.6139,4.7528 c2.0847,3.5934,5.2891,5.408,8.8311,5.6863c0.629,0.0518,1.2668,0.0531,1.9084,0.0044c0.059-0.0042,0.1179-0.0085,0.177-0.0135 c0.7257-0.051,1.4563-0.1606,2.1853-0.3367C36.4675,33.7751,35.384,21.7423,35.384,21.7423z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-internet-explorer-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-internet-explorer'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-internet-explorer");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-internet-explorer', transform: 'translate(-314.39464,-274.3971)' },
+	        React.createElement('rect', { id: '_x2E_svg_298_', x: '314.3947', y: '274.3971', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'svg', d: 'M348.6691,299.3958c0-1.8973-0.4905-3.6797-1.3507-5.2286 c3.6665-8.2982-3.9288-7.0827-4.3517-7c-1.6091,0.3148-3.0978,0.8204-4.471,1.4612c-0.2025-0.0114-0.4062-0.0176-0.6115-0.0176 c-5.1248,0-9.4146,3.5745-10.5126,8.3664c2.7011-3.0303,4.5915-4.253,5.7235-4.7423c-0.1807,0.1614-0.3576,0.3247-0.5316,0.4892 c-0.0579,0.0547-0.1137,0.1101-0.1708,0.1652c-0.1147,0.1104-0.2292,0.2208-0.341,0.3323 c-0.0665,0.0663-0.1313,0.1332-0.1968,0.1999c-0.0992,0.101-0.1982,0.2018-0.295,0.3034 c-0.0688,0.0721-0.1358,0.1445-0.2034,0.2167c-0.0905,0.0968-0.1804,0.1938-0.2686,0.291c-0.0685,0.0756-0.136,0.1512-0.2033,0.227 c-0.0836,0.0941-0.1665,0.1883-0.2482,0.2827c-0.0678,0.0783-0.135,0.1566-0.2014,0.2349c-0.0775,0.0915-0.154,0.183-0.2297,0.2744 c-0.067,0.081-0.1337,0.1618-0.1992,0.2426c-0.0709,0.0874-0.1402,0.1747-0.2094,0.262c-0.0671,0.0845-0.1342,0.1689-0.1997,0.2534 c-0.0624,0.0804-0.123,0.1605-0.184,0.2406c-0.0689,0.0906-0.1383,0.1811-0.2054,0.2712c-0.048,0.0645-0.0941,0.1284-0.1411,0.1927 c-0.4261,0.5815-0.8155,1.1517-1.1671,1.6995c-0.0009,0.0013-0.0018,0.0027-0.0026,0.004 c-0.0926,0.1443-0.1819,0.2864-0.2695,0.4272c-0.0047,0.0076-0.0096,0.0153-0.0143,0.023 c-0.0877,0.1414-0.1723,0.2804-0.2548,0.418c-0.0029,0.0048-0.0059,0.0097-0.0089,0.0145 c-0.2218,0.3702-0.4276,0.7271-0.6129,1.0629c-0.9713,1.7603-1.4442,2.9902-1.4647,3.0632 c-3.0673,10.966,6.5059,6.3351,7.8417,5.6439c1.4384,0.7106,3.0577,1.1106,4.7707,1.1106c4.6895,0,8.6794-2.9934,10.1646-7.1736 h-5.6668c-0.8385,1.4166-2.4528,2.3761-4.3074,2.3761c-2.7172,0-4.9199-2.0587-4.9199-4.5984h15.4256 C348.6388,300.33,348.6691,299.8665,348.6691,299.3958L348.6691,299.3958z M346.6544,288.7827 c0.9287,0.6268,1.6736,1.6112,0.3944,4.9265c-1.227-1.9732-3.0729-3.5211-5.267-4.3719 C342.7799,288.8553,345.2516,287.8358,346.6544,288.7827z M326.9172,309.0483c-0.7564-0.7758-0.8902-2.6652,0.779-6.1082 c0.8424,2.422,2.5234,4.4515,4.6962,5.7395C331.3119,309.2743,328.4431,310.6134,326.9172,309.0483z M333.1309,297.8357 c0.0862-2.4684,2.2344-4.4447,4.8738-4.4447c2.6393,0,4.7876,1.9763,4.8738,4.4447H333.1309L333.1309,297.8357z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 457 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-skype-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-skype'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-skype");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-skype' },
+	        React.createElement('rect', { id: '_x2E_svg_300_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M33.9582,26.0392c0.0821-0.5194,0.1254-1.0509,0.1254-1.5933c0-5.6373-4.5696-10.2069-10.2072-10.2069 c-0.5409,0-1.0738,0.0445-1.5928,0.1256c-0.9401-0.5815-2.0497-0.9181-3.2386-0.9181c-3.4065,0-6.168,2.7612-6.168,6.168 c0,1.1887,0.3368,2.2973,0.9181,3.2393c-0.0804,0.5202-0.1247,1.0499-0.1247,1.5923c0,5.6376,4.5696,10.2059,10.2057,10.2059 c0.5414,0,1.0743-0.0418,1.5933-0.1237c0.9411,0.5806,2.0496,0.9181,3.2386,0.9181c3.4073,0,6.1685-2.7619,6.1685-6.1687 C34.8768,28.0889,34.5402,26.9803,33.9582,26.0392L33.9582,26.0392z M28.7225,29.0881c-0.4319,0.6216-1.066,1.1073-1.8949,1.4566 c-0.8306,0.35-1.8121,0.5243-2.9455,0.5243c-1.3586,0-2.4835-0.2376-3.3713-0.7177c-0.6294-0.3437-1.1413-0.805-1.5349-1.3801 c-0.3943-0.5754-0.5942-1.1389-0.5942-1.6884c0-0.3241,0.1237-0.6062,0.3642-0.836c0.2432-0.2315,0.5563-0.3476,0.9259-0.3476 c0.3029,0,0.563,0.0912,0.7746,0.2718c0.2102,0.1806,0.3865,0.4432,0.5307,0.7898c0.1728,0.4016,0.3606,0.7372,0.5603,1.0049 c0.1985,0.2645,0.4779,0.4855,0.8397,0.6583c0.3579,0.1733,0.834,0.2598,1.43,0.2598c0.8155,0,1.4747-0.1762,1.979-0.5243 c0.507-0.351,0.7507-0.7783,0.7507-1.2948c0-0.4116-0.1315-0.7389-0.4006-0.9939c-0.2716-0.2581-0.6226-0.4549-1.0579-0.592 c-0.4371-0.1386-1.024-0.2858-1.7595-0.4407c-0.9875-0.2154-1.8135-0.4664-2.4823-0.7544 c-0.6698-0.2894-1.2031-0.6847-1.5984-1.1841c-0.3962-0.5043-0.5937-1.131-0.5937-1.8734c0-0.7079,0.2085-1.341,0.626-1.892 c0.4173-0.5524,1.021-0.9753,1.8081-1.2699c0.7844-0.2946,1.7079-0.4417,2.7659-0.4417c0.846,0,1.5779,0.0978,2.1973,0.2926 c0.618,0.1963,1.1328,0.4552,1.5444,0.78c0.4094,0.3241,0.7104,0.6661,0.901,1.0249c0.1904,0.3598,0.2865,0.7113,0.2865,1.0543 c0,0.319-0.1237,0.6082-0.3645,0.8617c-0.241,0.254-0.549,0.3833-0.9088,0.3821c-0.3244,0-0.5788-0.0748-0.7553-0.2332 c-0.1718-0.1533-0.3522-0.3972-0.5476-0.7372c-0.2466-0.4745-0.5422-0.8441-0.8861-1.1085 c-0.3346-0.2594-0.8868-0.3945-1.6551-0.3928c-0.7108,0-1.2797,0.1452-1.7089,0.4292c-0.4319,0.2887-0.6385,0.6236-0.6395,1.0159 c0.0007,0.2459,0.0714,0.4532,0.2136,0.6304c0.1445,0.1789,0.3454,0.3339,0.6038,0.4647c0.2584,0.1327,0.5212,0.2354,0.7854,0.3092 c0.2672,0.0758,0.7106,0.1853,1.3268,0.3302c0.7729,0.1667,1.4742,0.3527,2.1041,0.5556c0.6287,0.2039,1.1653,0.4498,1.6087,0.7426 c0.4468,0.2921,0.7961,0.6644,1.0455,1.1142c0.2508,0.4505,0.3759,1.0007,0.3759,1.648 C29.3725,27.7664,29.1552,28.4675,28.7225,29.0881L28.7225,29.0881z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 458 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'platform-windows-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-platform-windows'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "platform-windows");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'platform-windows' },
+	        React.createElement('rect', { id: '_x2E_svg_299_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'path13_1_', d: 'M12.0755,15.8445 l9.778-1.3317l0.0043,9.4315L12.0846,24L12.0755,15.8445z M21.8488,25.0311l0.0076,9.4398l-9.7732-1.3437l-0.0006-8.1593 L21.8488,25.0311z M23.0341,14.3387l12.9647-1.8922v11.378l-12.9647,0.1029L23.0341,14.3387z M36.0018,25.1199l-0.003,11.3267 l-12.9647-1.8298l-0.0182-9.518L36.0018,25.1199z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 459 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'play-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-play'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "play");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'play' },
+	        React.createElement('rect', { id: '_x2E_svg_101_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '18,13.8 18,34.2 32,24 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 460 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'power-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-power'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "power");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'power' },
+	        React.createElement('rect', { id: '_x2E_svg_104_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.6235,15.75 c3.7141,1.4494,6.3412,5.0548,6.3412,9.2853C33.9647,30.5431,29.5078,35,24,35s-9.9647-4.4569-9.9647-9.9647 c0-4.2305,2.6271-7.8359,6.3412-9.2853 M24,12v10' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 461 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'previous-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-previous'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "previous");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'previous' },
+	        React.createElement('rect', { id: '_x2E_svg_262_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.1397,11.5 17.1397,22.5 28.1397,33.5 \t ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 462 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'print-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-print'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "print");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'print' },
+	        React.createElement('rect', { id: '_x2E_svg_74_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M18.9988,31h-6V19h22v12h-6 M29.9988,13h-12v6h12 V13z M29.9988,27h-12v8h12V27z M15.9988,27h16' }),
+	        React.createElement('rect', { x: '29.9988', y: '22', fill: '#231F20', width: '2', height: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 463 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'quick-view-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-quick-view'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "quick-view");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'quick-view' },
+	        React.createElement('rect', { id: '_x2E_svg_244_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,28.5c0,2.4853-2.0147,4.5-4.5,4.5 S13,30.9853,13,28.5s2.0147-4.5,4.5-4.5S22,26.0147,22,28.5z M30.5,24c-2.4853,0-4.5,2.0147-4.5,4.5s2.0147,4.5,4.5,4.5 s4.5-2.0147,4.5-4.5S32.9853,24,30.5,24z M26,28c0-1.1046-0.8954-2-2-2c-1.1046,0-2,0.8954-2,2 M18,15L18,15 c-2.7614,0-5,2.2386-5,5v8 M35,28v-8c0-2.7614-2.2386-5-5-5h0' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 464 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'radial-selected-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-radial-selected'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "radial-selected");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'radial-selected' },
+	        React.createElement('rect', { id: '_x2E_svg_35_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', cx: '24', cy: '24', r: '11' }),
+	        React.createElement('path', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,28c-2.2055,0-4-1.7945-4-4s1.7945-4,4-4 s4,1.7945,4,4S26.2055,28,24,28z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 465 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'radial-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-radial'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "radial");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'radial' },
+	        React.createElement('rect', { id: '_x2E_svg_36_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', cx: '24', cy: '24', r: '11' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 466 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'refresh-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-refresh'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "refresh");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'refresh' },
+	        React.createElement('rect', { id: '_x2E_svg_17_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,13v7h-7 M34.0006,19.4123 C32.2616,15.6278,28.4377,13,24,13c-6.0751,0-11,4.9249-11,11s4.9249,11,11,11s11-4.9249,11-11' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 467 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'resources-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-resources'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "resources");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'resources' },
+	        React.createElement('rect', { id: '_x2E_svg_210_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeLinecap: 'round', strokeMiterlimit: '10', d: 'M24,25l-10-5l10-5l10,5 L24,25z M19,22.5L14,25l5,2.5l5,2.5l5-2.5l5-2.5l-5-2.5 M19,27.5L14,30l10,5l10-5l-5-2.5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 468 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'rewind-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-rewind'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "rewind");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'rewind' },
+	        React.createElement('rect', { id: '_x2E_svg_264_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '12.9838,24 26,14 26,19.7143 34,14 34,34  26,28.2857 26,34 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 469 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'risk-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-risk'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "risk");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'risk' },
+	        React.createElement('rect', { id: '_x2E_svg_182_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '23.5', y: '20.9792', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '29.5', y: '20.9792', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '29.5', y: '14.9792', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '23.5', y: '14.9792', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34.5,25.9792h-13v-13h13V25.9792z M20.5,21.9792 h-8v13h13v-8' }),
+	        React.createElement('rect', { x: '20.5', y: '29.9792', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '14.5', y: '23.9792', fill: '#231F20', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 470 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'rss-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-rss'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "rss");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'rss' },
+	        React.createElement('rect', { id: '_x2E_svg_24_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M17,13.2101c9.9253,0,18,8.0747,18,18 M30,31.2101 c0-7.1685-5.8315-13-13-13 M25,31.2101c0-4.4111-3.5889-8-8-8 M17,28.2101c-1.6569,0-3,1.3431-3,3c0,1.6569,1.3431,3,3,3 s3-1.3431,3-3C20,29.5533,18.6568,28.2101,17,28.2101z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 471 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'satellite-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-satellite'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "satellite");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'satellite' },
+	        React.createElement('rect', { id: '_x2E_svg_143_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,29.9467c-4.1421,4.1421-10.8579,4.1421-15,0 s-4.1421-10.8579,0-15L33,29.9467z M18.015,30.0467c-3.31,0-6.015,2.9-6.015,5.9h12c0-1.12-0.37-2-1.02-3H23 M26,21.9467l4-4 M31.5,13.9467c-1.3807,0-2.5,1.1193-2.5,2.5c0,1.3807,1.1193,2.5,2.5,2.5s2.5-1.1193,2.5-2.5 C34,15.066,32.8807,13.9467,31.5,13.9467z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 472 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'schedule-clone-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-schedule-clone'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "schedule-clone");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'schedule-clone' },
+	        React.createElement('rect', { id: '_x2E_svg_212_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29.0004,32h-16V16h16V32z M19.0004,32v4h16V20h-5 M14.0004,20h14 M17.0004,16v-3 M26.0004,24h-6 M18.0003,24h-2 M26.0004,28h-6 M18.0003,28h-2 M25.0004,16v-3 M29.0004,24h6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 473 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'schedule-new-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-schedule-new'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "schedule-new");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'schedule-new' },
+	        React.createElement('rect', { id: '_x2E_svg_213_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24.7535,32h-12V16h16v11 M13.7535,20h14 M16.7535,16v-3 M25.7535,24h-6 M17.7534,24h-2 M25.7535,28h-6 M17.7534,28h-2 M24.7535,16v-3 M31.7535,28v9 M35.6508,30.2503 l-7.7946,4.4993 M35.6502,34.7507l-7.7935-4.5013' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 474 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'schedule-play-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-schedule-play'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "schedule-play");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'schedule-play' },
+	        React.createElement('rect', { id: '_x2E_svg_214_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24.5,32h-11V16h16v9 M14.5,20h14 M17.5,16v-3 M26.5,24h-6 M18.5,24h-2 M24.5,28h-4 M18.5,28h-2 M25.5,16v-3 M30,25c-3.0376,0-5.5,2.4624-5.5,5.5S26.9624,36,30,36 s5.5-2.4624,5.5-5.5S33.0376,25,30,25z' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M28.5,27.5c0.0521,0.0469,0,6,0,6l5-3L28.5,27.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 475 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'schedule-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-schedule'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "schedule");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'schedule' },
+	        React.createElement('rect', { id: '_x2E_svg_105_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,35H13V16h22V35z M14,21h20 M18,16v-4 M30,16v-4 M20,26h12 M16,26h2 M20,30h12 M16,30h2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 476 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'scorecard-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-scorecard'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "scorecard");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'scorecard' },
+	        React.createElement('rect', { id: '_x2E_svg_211_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28.5,16h5v20h-19V16h5 M28.5,14h-9v5h9V14z M19.5,31v-4 M22.5,31v-6 M25.5,31v-5 M28.5,31v-8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 477 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'search-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-search'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "search");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'search' },
+	        React.createElement('rect', { id: '_x2E_svg_9_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30,21.5c0,4.6944-3.8056,8.5-8.5,8.5 S13,26.1944,13,21.5s3.8056-8.5,8.5-8.5S30,16.8056,30,21.5z M28,28l7,7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 478 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'secure-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-secure'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "secure");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'secure' },
+	        React.createElement('rect', { id: '_x2E_svg_68_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M26,27c0-1.1046-0.8954-2-2-2s-2,0.8954-2,2c0,0.7384,0.4047,1.3761,1,1.7226V31h2v-2.2774 C25.5953,28.3761,26,27.7384,26,27z' }),
+	        React.createElement('circle', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', cx: '24', cy: '28', r: '7' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19,23v-5c0-2.7614,2.2386-5,5-5h0 c2.7614,0,5,2.2386,5,5v5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 479 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'select-left-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-select-left'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "select-left");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'select-left' },
+	        React.createElement('rect', { id: '_x2E_svg_167_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,34H13V14h22V34z M24,14v21' }),
+	        React.createElement('rect', { x: '16', y: '17', fill: '#231F20', width: '5', height: '14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 480 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'select-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-select'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "select");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'select' },
+	        React.createElement('rect', { id: '_x2E_svg_194_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', strokeDasharray: '6', x1: '20', y1: '15', x2: '26', y2: '15' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28.7411,29.9075l3.4465,4.5649L28.9853,37 l-3.4363-4.5514l-2.5946,3.3408L21.1,23l12.0055,5.3882L28.7411,29.9075z M31,18v-3h-3 M18,15h-3v3 M15,28v3h3 M31,20v4 M15,26v-6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 481 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'server-cluster-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-server-cluster'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "server-cluster");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'server-cluster' },
+	        React.createElement('rect', { id: '_x2E_svg_174_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,20.34H13v-7h22V20.34z M35,20.34H13v7h22V20.34 z M35,27.34H13v7h22V27.34z' }),
+	        React.createElement('rect', { x: '25', y: '15.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '28', y: '15.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '31', y: '15.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '25', y: '22.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '28', y: '22.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '31', y: '22.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '25', y: '29.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '28', y: '29.34', fill: '#231F20', width: '2', height: '3' }),
+	        React.createElement('rect', { x: '31', y: '29.34', fill: '#231F20', width: '2', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 482 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'server-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-server'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "server");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'server' },
+	        React.createElement('rect', { id: '_x2E_svg_183_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,34.9792H17v-22h14V34.9792z M20,16.9792h8 M20,20.9792h8 M20,24.9792h8' }),
+	        React.createElement('rect', { x: '26', y: '29.9792', fill: '#231F20', width: '2', height: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 483 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'servers-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-servers'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "servers");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'servers' },
+	        React.createElement('rect', { id: '_x2E_svg_184_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('rect', { x: '19', y: '29.9792', fill: '#231F20', width: '2', height: '2' }),
+	        React.createElement('rect', { x: '30', y: '29.9792', fill: '#231F20', width: '2', height: '2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,34.9792H13v-22h11V34.9792z M16,16.9792h5 M16,20.9792h5 M16,24.9792h5 M35,12.9792H24v22h11V12.9792z M27,16.9792h5 M27,20.9792h5 M27,24.9792h5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 484 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'service-business-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-service-business'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "service-business");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'service-business' },
+	        React.createElement('rect', { id: '_x2E_svg_222_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16.1397,34.15h-3v-18h22v18h-5 M28.1397,16.15v-4 h-8v4 M19.7507,27.64c-0.665,0.686-1.071,1.624-1.071,2.66c0,2.128,1.722,3.85,3.85,3.85s3.85-1.638,3.85-3.766 c0-0.8423-0.196-1.302-0.196-1.302c-0.399-1.281-1.33-1.981-2.415-2.338c-0.014-0.007-0.035-0.021-0.049-0.035 c-0.021-0.014-0.042-0.035-0.063-0.042c-0.007-0.007-0.014-0.007-0.021-0.007 M24.5948,22.656 c-0.539-1.463-1.953-2.506-3.605-2.506c-2.128,0-3.85,1.722-3.85,3.85c0,1.694,1.092,3.129,2.611,3.64 c0.385,0.14,0.805,0.21,1.239,0.21c1.05,0,2.002-0.42,2.695-1.106c0.014-0.007,0.028-0.021,0.035-0.035 c0.693-0.693,1.12-1.652,1.12-2.709C24.8397,23.524,24.7557,23.069,24.5948,22.656z M23.6357,26.618 c0.007,0.014,0.014,0.035,0.021,0.049c0.007,0.028,0.014,0.049,0.028,0.077 M26.3796,29.1383 c0.2915,0.0745,0.5962,0.1117,0.9101,0.1117c2.128,0,3.85-1.722,3.85-3.85s-1.722-3.85-3.85-3.85c-1.05,0-2.002,0.42-2.695,1.106' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 485 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'service-start-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-service-start'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "service-start");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'service-start' },
+	        React.createElement('rect', { id: '_x2E_svg_215_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M18,17.5c0.0521,0.0469,0,6,0,6l5-3L18,17.5z' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M23.28,24.3c0.01,0,0.02,0,0.03,0.01 c0.03,0.01,0.06,0.04,0.09,0.06c0.02,0.02,0.05,0.04,0.07,0.05c1.55,0.51,2.79,1.48,3.36,3.31c0.03,0.08,0.05,0.18,0.08,0.27h0.01 c0.18,0,0.28,1.01,0.28,1.62c0,3.04-2.46,5.38-5.5,5.38s-5.5-2.46-5.5-5.5c0-1.48,0.58-2.82,1.53-3.8 M24.65,18.5799 C23.88,16.49,21.86,15,19.5,15c-3.04,0-5.5,2.46-5.5,5.5c0,2.42,1.56,4.47,3.73,5.2c0.55,0.2,1.15,0.3,1.77,0.3 c1.5,0,2.86-0.6,3.85-1.58c0.02-0.01,0.04-0.03,0.05-0.05c0.99-0.99,1.6-2.36,1.6-3.87C25,19.82,24.88,19.17,24.65,18.5799z M23.28,24.24c0.01,0.02,0.02,0.05,0.03,0.07c0.01,0.04,0.02,0.07,0.04,0.11 M26.83,27.73c0.03,0.01,0.06,0.02,0.09,0.03 c0.5,0.16,1.03,0.24,1.58,0.24c3.04,0,5.5-2.46,5.5-5.5S31.54,17,28.5,17c-1.5,0-2.86,0.6-3.85,1.58' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 486 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'share-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-share'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "share");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'share' },
+	        React.createElement('rect', { id: '_x2E_svg_40_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31,25v10H13V17h10 M24,24l11-11 M35,22v-9h-9' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 487 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'sheild-configure-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-sheild-configure'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "sheild-configure");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'sheild-configure' },
+	        React.createElement('rect', { id: '_x2E_svg_221_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24.0002,26.15c-1.6545,0-3-1.3458-3-3 s1.3455-3,3-3s3,1.3458,3,3S25.6547,26.15,24.0002,26.15z M30.0002,23.15l-3,0.0001 M28.2428,27.3926l-2.1214-2.1212 M24,26.15 l0.0001,3 M21.8787,25.2712l-2.1212,2.1214 M18.0002,23.15h3 M21.8788,21.0287l-2.1213-2.1213 M24.0002,20.15v-3 M26.1215,21.0287 l2.1213-2.1213 M24.0002,13.15l-9,4.4v2.864c0,4.2846,1.8322,8.3646,5.0345,11.2111l3.9655,3.2249l3.9655-3.2249 c3.2023-2.8465,5.0345-6.9266,5.0345-11.2111V17.55L24.0002,13.15z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 488 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'shield-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-shield'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "shield");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'shield' },
+	        React.createElement('rect', { id: '_x2E_svg_96_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,18.4v2.864 c0,4.2846-1.8322,8.3646-5.0345,11.2111L24,35.7l-3.9655-3.2249C16.8322,29.6286,15,25.5486,15,21.264V18.4l9-4.4L33,18.4z M24,35 V15 M15,24h18' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 489 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'shift-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-shift'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "shift");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'shift' },
+	        React.createElement('rect', { id: '_x2E_svg_220_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,36.15v-24 M14,24.15h20 M18,19.15l-5,5l5,5 M30,29.15l5-5l-5-5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 490 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'shop-basket-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-shop-basket'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "shop-basket");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'shop-basket' },
+	        React.createElement('rect', { id: '_x2E_svg_46_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M23,24h10l-1,11h-9 M25,24H15l1,11h9 M35,20H13v4 h22V20z M17,20l5-7.4 M26,12.6l5,7.4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 491 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'shop-cart-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-shop-cart'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "shop-cart");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'shop-cart' },
+	        React.createElement('rect', { id: '_x2E_svg_45_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '20.9988', cy: '33', r: '2' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '30.9988', cy: '33', r: '2' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M16.9988,16h17.625l-2.625,9h-13l-3-12h-4 M18.9988,25l1,4h13' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 492 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'soa-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-soa'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "soa");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'soa' },
+	        React.createElement('rect', { id: '_x2E_svg_223_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M18,21.15c-1.6545,0-3-1.3458-3-3s1.3455-3,3-3 s3,1.3458,3,3S19.6545,21.15,18,21.15z M21,18.1501l3-0.0001 M22.2426,22.3926l-2.1214-2.1212 M18,24.15l-0.0001-3 M15.8786,20.2712l-2.1212,2.1214 M12,18.15h3 M13.7574,13.9074l2.1213,2.1213 M18,15.15v-3 M20.1213,16.0287l2.1213-2.1213 M34,23.15c0-1.6542-1.3455-3-3-3s-3,1.3458-3,3s1.3455,3,3,3S34,24.8042,34,23.15z M34,23.1501l3-0.0001 M33.1212,25.2714 l2.1214,2.1212 M30.9999,26.15l0.0001,3 M28.8786,25.2712l-2.1212,2.1214 M25,23.15h3 M23,31.15c0-1.6542-1.3455-3-3-3 s-3,1.3458-3,3s1.3455,3,3,3S23,32.8042,23,31.15z M26,31.15l-3,0.0001 M22.1212,33.2714l2.1214,2.1212 M20,37.15l-0.0001-3 M15.7574,35.3926l2.1212-2.1214 M14,31.15h3 M17.8787,29.0287l-2.1213-2.1213 M20,28.15v-3 M22.1213,29.0287l2.1213-2.1213 M28.8787,21.0287l-2.1213-2.1213 M31,20.15v-3 M33.1213,21.0287l2.1213-2.1213' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 493 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-email-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-email'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-email");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-email' },
+	        React.createElement('rect', { id: '_x2E_svg_306_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,32.5H13v-16h22V32.5z' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#FFFFFF', strokeWidth: '2', strokeLinecap: 'square', strokeMiterlimit: '10', points: '12,16.8985  24,26.8985 36,16.8985 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 494 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-facebook-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-facebook'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-facebook");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-facebook' },
+	        React.createElement('rect', { id: '_x2E_svg_308_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { id: 'f', d: 'M25.1218,34.399V24.3634h3.3689l0.504-3.9107h-3.8729v-2.4975c0-1.1321,0.3145-1.9037,1.9383-1.9037l2.0709-0.0006 v-3.4984c-0.3581-0.0472-1.5874-0.1534-3.0177-0.1534c-2.9857,0-5.03,1.822-5.03,5.1694v2.8843h-3.3772v3.9107h3.3772V34.399 H25.1218z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 495 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-github-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-github'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-github");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-github' },
+	        React.createElement('rect', { id: '_x2E_svg_282_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M35.0014,25.7187c0,4.5554-2.75,8.25-11,8.25s-11-3.696-11-8.25c0-1.9635,0.451-3.7647,1.6486-5.1824 c-0.3492-0.9446-1.0422-3.6135,0.7576-6.743c3.2739,0.8223,4.8661,2.8875,5.4615,3.8734c0.9405-0.1265,1.9759-0.198,3.1322-0.198 c1.1495,0,2.1807,0.0784,3.1226,0.2145c0.5871-0.9804,2.178-3.0621,5.4711-3.8899c1.8631,3.2409,1.056,5.9867,0.7219,6.8365 C34.5036,22.0324,35.0014,23.7965,35.0014,25.7187z M31.2188,25.0312C29.4808,24.1622,27.4375,24,24,24 s-5.4808,0.1623-7.2188,1.0312c-2.0625,1.0312-2.0625,4.4688,0,5.8438c1.5414,1.0271,3.5104,1.7188,7.2188,1.7188 c3.707,0,5.676-0.6916,7.2188-1.7188C33.2813,29.5,33.2813,26.0625,31.2188,25.0312z M27.4389,25.375 c-1.4355,0-2.0625,1.2306-2.0625,2.75c0,1.518,0.5775,2.75,2.0625,2.75c1.485,0,2.0625-1.232,2.0625-2.75 C29.5014,26.6056,28.8758,25.375,27.4389,25.375z M20.5639,25.375c-1.4355,0-2.0625,1.2306-2.0625,2.75 c0,1.518,0.5775,2.75,2.0625,2.75c1.485,0,2.0625-1.232,2.0625-2.75C22.6264,26.6056,22.0008,25.375,20.5639,25.375z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 496 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-google-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-google'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-google");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-google' },
+	        React.createElement('rect', { id: '_x2E_svg_304_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M24.6393,25.7007l-1.1254-0.874c-0.3427-0.2843-0.8115-0.6595-0.8115-1.3464c0-0.6897,0.4688-1.1283,0.8757-1.5343 c1.3111-1.0319,2.621-2.1302,2.621-4.4447c0-2.38-1.4976-3.632-2.2153-4.226h1.9352l2.0313-1.2763h-6.1539 c-1.6886,0-4.122,0.3995-5.9035,1.8703c-1.3427,1.1585-1.9977,2.7558-1.9977,4.1937c0,2.441,1.8742,4.9154,5.1838,4.9154 c0.3125,0,0.6544-0.0308,0.9986-0.0627c-0.1546,0.3761-0.3108,0.6892-0.3108,1.2207c0,0.9695,0.4982,1.564,0.9372,2.1271 c-1.4063,0.0966-4.0316,0.2523-5.9668,1.4419c-1.8431,1.096-2.404,2.6914-2.404,3.8174c0,2.3175,2.1845,4.4763,6.7142,4.4763 c5.3714,0,8.2151-2.9722,8.2151-5.9145C27.2628,27.9228,26.0139,26.8586,24.6393,25.7007z M20.5481,22.1015 c-2.6871,0-3.9044-3.4738-3.9044-5.5698c0-0.816,0.1546-1.6586,0.6861-2.3167c0.501-0.6267,1.3735-1.0333,2.1881-1.0333 c2.5905,0,3.9341,3.5049,3.9341,5.7591c0,0.564-0.0622,1.5634-0.7804,2.2859C22.1691,21.7279,21.3285,22.1015,20.5481,22.1015z M20.5789,34.6875c-3.3415,0-5.4963-1.5984-5.4963-3.821c0-2.222,1.998-2.9737,2.6854-3.2226 c1.3111-0.4411,2.9982-0.5027,3.2797-0.5027c0.3122,0,0.4685,0,0.7171,0.0314c2.3755,1.6906,3.4065,2.5331,3.4065,4.1336 C25.1713,33.2442,23.578,34.6875,20.5789,34.6875z' }),
+	        React.createElement('polygon', { points: '32.5266,22.0537 32.5266,18.9244 30.981,18.9244 30.981,22.0537 27.8568,22.0537 27.8568,23.6166 30.981,23.6166  30.981,26.7651 32.5266,26.7651 32.5266,23.6166 35.6667,23.6166 35.6667,22.0537 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 497 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-instagram-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-instagram'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-instagram");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-instagram' },
+	        React.createElement('rect', { id: '_x2E_svg_305_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF', stroke: '#000000', strokeWidth: '2.7273', strokeMiterlimit: '10', d: ' M32,34H16c-1.1046,0-2-0.8954-2-2V16c0-1.1046,0.8954-2,2-2h16c1.1046,0,2,0.8954,2,2v16C34,33.1046,33.1046,34,32,34z' }),
+	        React.createElement('path', { fillRule: 'evenodd', clipRule: 'evenodd', d: 'M34,22H14v-6c0-1.1046,0.8954-2,2-2h16c1.1046,0,2,0.8954,2,2V22z' }),
+	        React.createElement('circle', { fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF', stroke: '#000000', strokeWidth: '2.5', strokeMiterlimit: '10', cx: '24', cy: '24', r: '5' }),
+	        React.createElement('path', { fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF', d: 'M31.5,19.399h-2c-0.5523,0-1-0.4477-1-1v-2c0-0.5523,0.4477-1,1-1 h2c0.5523,0,1,0.4477,1,1v2C32.5,18.9513,32.0523,19.399,31.5,19.399z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 498 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-linkedin-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-linkedin'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-linkedin");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-linkedin' },
+	        React.createElement('rect', { id: '_x2E_svg_309_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M19.352,33.3818h-4.1462V20.0466h4.1462V33.3818z M17.2789,18.2235c-1.3278,0-2.4021-1.0766-2.4021-2.4024 c0-1.3276,1.0743-2.4049,2.4021-2.4049c1.3254,0,2.402,1.0773,2.402,2.4049C19.681,17.1468,18.6043,18.2235,17.2789,18.2235z M34.8768,33.3818H30.734v-6.4857c0-1.5466-0.0272-3.5358-2.1533-3.5358c-2.1573,0-2.486,1.6858-2.486,3.4247v6.5968h-4.1434 V20.0466h3.9756v1.8232h0.0568c0.5536-1.0492,1.9055-2.1546,3.9219-2.1546c4.1971,0,4.9714,2.7619,4.9714,6.352V33.3818z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 499 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-medium-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-medium'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-medium");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-medium', transform: 'matrix(1.3333333,0,0,-1.3333333,0,126.66667)' },
+	        React.createElement('rect', { id: '_x2E_svg_296_', x: '-6', y: '53', fill: 'none', width: '48', height: '48' }),
+	        React.createElement(
+	          'g',
+	          { id: 'g12', transform: 'scale(0.1)' },
+	          React.createElement('path', { id: 'path14', d: 'M270,816.9011h-7.119c-2.643,0-6.381-3.8127-6.381-6.2537V722.176c0-2.4439,3.738-5.775,6.381-5.775H270 V695.401h-64.5v21.0001H219v93h-0.6615L186.8133,695.401H162.406l-31.1186,114.0001H130.5v-93H144V695.401H90v21.0001h6.9147 c2.8476,0,6.5853,3.3311,6.5853,5.775v88.4714c0,2.441-3.7377,6.2537-6.5853,6.2537H90v21h67.5246l22.1696-82.5h0.6099 l22.3746,82.5H270V816.9011' })
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 500 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-pinterest-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-pinterest'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-pinterest");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-pinterest' },
+	        React.createElement('rect', { id: '_x2E_svg_283_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M15.5749,21.7809c0-0.9238,0.1943-1.8403,0.5829-2.7494c0.3886-0.9092,0.9458-1.7523,1.6717-2.5295 s1.679-1.4077,2.8594-1.8916c1.1804-0.4839,2.4892-0.7259,3.9262-0.7259c2.3315,0,4.2452,0.7185,5.7409,2.1556 c1.4957,1.437,2.2436,3.1307,2.2436,5.081c0,2.5075-0.6342,4.5788-1.9026,6.2138s-2.9071,2.4525-4.916,2.4525 c-0.6599,0-1.2794-0.154-1.8586-0.4619c-0.5792-0.3079-0.9861-0.6819-1.2208-1.1218l-0.8798,3.4753 c-0.0733,0.2786-0.1686,0.5609-0.2859,0.8468c-0.1173,0.2859-0.2456,0.5609-0.3849,0.8248 c-0.1393,0.264-0.2786,0.5132-0.4179,0.7479s-0.2786,0.4546-0.4179,0.6599s-0.2603,0.3776-0.3629,0.5169 s-0.198,0.2603-0.2859,0.3629l-0.132,0.176c-0.044,0.0587-0.1026,0.0807-0.176,0.066s-0.1173-0.0587-0.132-0.132 c0-0.0147-0.011-0.1173-0.033-0.3079s-0.044-0.3923-0.066-0.6049c-0.022-0.2126-0.044-0.4876-0.066-0.8248 s-0.0293-0.6635-0.022-0.9788s0.0293-0.6635,0.066-1.0448c0.0367-0.3813,0.0916-0.7332,0.165-1.0558 c0.1613-0.6892,0.7039-2.9841,1.6277-6.8846c-0.1173-0.2346-0.2126-0.5169-0.2859-0.8468c-0.0733-0.3299-0.11-0.5975-0.11-0.8028 l-0.022-0.3299c0-0.9385,0.2383-1.7193,0.7149-2.3425c0.4766-0.6232,1.0521-0.9348,1.7267-0.9348 c0.5426,0,0.9641,0.1796,1.2647,0.5389c0.3006,0.3593,0.4509,0.8102,0.4509,1.3527c0,0.3373-0.0623,0.7515-0.187,1.2428 c-0.1246,0.4912-0.2896,1.0558-0.4949,1.6937c-0.2053,0.6379-0.3519,1.1548-0.4399,1.5507 c-0.1466,0.6599-0.0183,1.2318,0.3849,1.7157c0.4033,0.4839,0.9421,0.7259,1.6167,0.7259c1.1584,0,2.1152-0.6562,2.8704-1.9686 c0.7552-1.3124,1.1328-2.8998,1.1328-4.762c0-1.4224-0.4619-2.5845-1.3857-3.4863c-0.9238-0.9018-2.2142-1.3527-3.8712-1.3527 c-1.8476,0-3.347,0.5939-4.4981,1.7816s-1.7267,2.6101-1.7267,4.2671c0,0.9825,0.2786,1.811,0.8358,2.4855 c0.1906,0.22,0.2493,0.4546,0.176,0.7039c-0.0293,0.0733-0.0733,0.242-0.132,0.5059c-0.0587,0.2639-0.1026,0.4326-0.132,0.5059 c-0.0293,0.1613-0.1026,0.2676-0.22,0.3189s-0.2493,0.0477-0.3959-0.011c-0.8652-0.3519-1.514-0.9568-1.9466-1.8146 C15.7912,23.9254,15.5749,22.9246,15.5749,21.7809z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 501 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-reddit-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-reddit'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-reddit");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-reddit' },
+	        React.createElement('rect', { id: '_x2E_svg_289_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M36.0027,23.6172c0-1.4806-1.1866-2.6833-2.6459-2.6833c-0.6949,0-1.3203,0.2673-1.796,0.7109 c-1.7318-1.2187-4.0677-2.0205-6.6762-2.1702l1.1706-3.9127l3.5866,0.7216c0.1229,1.2134,1.1332,2.1595,2.3679,2.1595 c0.0053,0,0.0053,0,0.0107,0s0.0053,0,0.0107,0c1.3149,0,2.3786-1.0797,2.3786-2.4107s-1.069-2.4107-2.384-2.4107 c-0.0053,0-0.0053,0-0.0107,0h-0.0053c-0.9194,0-1.7105,0.5238-2.1114,1.2989l-4.7947-0.9621l-1.6463,5.5056l-0.1336,0.0053 c-2.6886,0.1176-5.1047,0.9301-6.8793,2.1755c-0.4704-0.4437-1.1011-0.7109-1.796-0.7109c-1.4592,0-2.6459,1.2027-2.6459,2.6833 c0,1.0477,0.588,1.951,1.4486,2.3947c-0.0428,0.2619-0.0641,0.5238-0.0641,0.7911c0.0053,4.0517,4.7572,7.3443,10.6156,7.3443 s10.6102-3.2927,10.6102-7.3497c0-0.2673-0.0214-0.5292-0.0588-0.7911C35.4147,25.5628,36.0027,24.6595,36.0027,23.6172z M13.8361,24.6916c-0.3528-0.2405-0.5826-0.6468-0.5826-1.1118c0-0.7376,0.5933-1.3416,1.3203-1.3416 c0.2993,0,0.5773,0.1016,0.8018,0.2726C14.6539,23.1468,14.1194,23.8844,13.8361,24.6916z M31.1278,16.0323 c0-0.4918,0.3955-0.898,0.882-0.898c0.4864,0,0.882,0.4009,0.882,0.898c0,0.4918-0.3955,0.898-0.882,0.898 C31.5234,16.9303,31.1278,16.5294,31.1278,16.0323z M18.7911,25.6163c0-0.9408,0.759-1.6998,1.6998-1.6998 c0.9408,0,1.6998,0.759,1.6998,1.6998s-0.759,1.6998-1.6998,1.6998C19.5501,27.3161,18.7911,26.557,18.7911,25.6163z M24.003,31.7064c-2.8266-0.0119-4.5131-1.6924-4.5843-1.7637l0.7482-0.7363c0.0119,0.0119,1.4074,1.4371,3.8361,1.4489 c2.3931-0.0119,3.8124-1.4371,3.8302-1.4489l0.7482,0.7363C28.5101,30.014,26.8296,31.6945,24.003,31.7064z M27.5465,27.3161 c-0.9408,0-1.6998-0.759-1.6998-1.6998s0.759-1.6998,1.6998-1.6998s1.6998,0.759,1.6998,1.6998 C29.2463,26.557,28.482,27.3161,27.5465,27.3161z M34.18,24.713c-0.2886-0.8178-0.8339-1.5715-1.5661-2.2129 c0.2245-0.1764,0.5078-0.278,0.8125-0.278c0.743,0,1.3416,0.6094,1.3416,1.363C34.7733,24.0555,34.5381,24.4671,34.18,24.713z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 502 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-slack-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-slack'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-slack");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-slack' },
+	        React.createElement('rect', { id: '_x2E_svg_281_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M33.1667,26.6344h-2.75v-5.5h2.75c1.0126,0,1.8333-0.8209,1.8333-1.8333s-0.8208-1.8333-1.8333-1.8333h-2.75v-2.75 c0-1.0125-0.8208-1.8333-1.8333-1.8333c-1.0125,0-1.8333,0.8209-1.8333,1.8333v2.75h-5.5v-2.75 c0-1.0125-0.8208-1.8333-1.8333-1.8333c-1.0125,0-1.8333,0.8209-1.8333,1.8333v2.75h-2.75c-1.0125,0-1.8333,0.8209-1.8333,1.8333 s0.8208,1.8333,1.8333,1.8333h2.75v5.5h-2.75c-1.0125,0-1.8333,0.8209-1.8333,1.8333s0.8208,1.8333,1.8333,1.8333h2.75v2.75 c0,1.0125,0.8208,1.8333,1.8333,1.8333c1.0126,0,1.8333-0.8209,1.8333-1.8333v-2.75h5.5v2.75c0,1.0125,0.8208,1.8333,1.8333,1.8333 c1.0126,0,1.8333-0.8209,1.8333-1.8333v-2.75h2.75c1.0126,0,1.8333-0.8209,1.8333-1.8333S34.1792,26.6344,33.1667,26.6344z M21.25,26.6344v-5.5h5.5v5.5H21.25z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 503 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-tumblr-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-tumblr'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-tumblr");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-tumblr' },
+	        React.createElement('rect', { id: '_x2E_svg_288_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M28.6827,30.4573c-0.4091,0.1951-1.1914,0.3649-1.7748,0.3795c-1.7613,0.0471-2.1032-1.2372-2.1174-2.1682v-6.8487h4.4181 v-3.3311h-4.4029v-5.6042c0,0-3.1702,0-3.2219,0c-0.053,0-0.1456,0.0464-0.1587,0.1642c-0.1885,1.7152-0.991,4.7256-4.3287,5.9293 v2.8417h2.2266v7.1879c0,2.4613,1.8155,5.9579,6.6081,5.8754c1.6171-0.0277,3.413-0.7045,3.8095-1.2889L28.6827,30.4573' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 504 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-twitter-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-twitter'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-twitter");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-twitter' },
+	        React.createElement('rect', { id: '_x2E_svg_307_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M36,16.5565c-0.8831,0.3923-1.8319,0.6563-2.828,0.7755c1.0164-0.6093,1.7974-1.5744,2.1648-2.7242 c-0.9512,0.5646-2.0053,0.974-3.1265,1.1953c-0.8982-0.9575-2.1779-1.5551-3.5941-1.5551c-2.7195,0-4.924,2.2045-4.924,4.924 c0,0.386,0.0434,0.7617,0.1275,1.1216c-4.0922-0.2048-7.7206-2.1652-10.1488-5.1445c-0.424,0.7272-0.6666,1.5731-0.6666,2.4761 c0,1.7075,0.8689,3.2151,2.1904,4.0981c-0.8072-0.0262-1.5666-0.2474-2.2304-0.6155c-0.0004,0.02-0.0007,0.0407-0.0007,0.0613 c0,2.3858,1.6975,4.3759,3.9499,4.8281c-0.4129,0.1131-0.8482,0.173-1.297,0.173c-0.3174,0-0.6256-0.031-0.9265-0.0889 c0.6266,1.9564,2.4451,3.3805,4.5996,3.4205c-1.6854,1.3201-3.8082,2.1073-6.1151,2.1073c-0.3978,0-0.7897-0.0234-1.1747-0.0683 c2.179,1.396,4.7671,2.2115,7.5479,2.2115c9.0568,0,14.0094-7.5028,14.0094-14.0094c0-0.213-0.0049-0.4254-0.0145-0.6363 C34.5052,18.4115,35.3399,17.5443,36,16.5565z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 505 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-vimeo-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-vimeo'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-vimeo");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-vimeo' },
+	        React.createElement('rect', { id: '_x2E_svg_311_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { d: 'M32.1611,18.6903c-0.48,2.8577-1.7372,5.528-3.7716,8.0108c-2.0115,2.4595-3.8402,4.2631-5.486,5.4108 c-0.96,0.4919-1.8058,0.5036-2.5373,0.0351c-0.7086-0.445-1.2686-1.0892-1.6801-1.9324c-0.2286-0.445-0.7943-2.2545-1.6972-5.4284 s-1.4458-4.878-1.6286-5.1122c-0.16-0.3045-0.5315-0.3162-1.1143-0.0351c-0.5829,0.2811-0.9772,0.527-1.1829,0.7378l-0.7886-1.0541 l0.8915-1.0892c0.7086-0.773,1.5429-1.5401,2.503-2.3014s1.8172-1.2239,2.5715-1.3878c1.0058-0.2108,1.7487,0.2928,2.2287,1.5108 c0.2972,0.7027,0.5829,1.9676,0.8572,3.7946c0.0457,0.3514,0.1714,0.9487,0.3772,1.7919c0.6629,2.8342,1.1886,4.2514,1.5772,4.2514 c0.5715,0,1.5086-1.2649,2.8116-3.7946c0.5943-1.1478,0.6286-2.0964,0.1029-2.846c-0.5257-0.7496-1.3486-0.7613-2.4687-0.0351 c0.1829-1.1712,0.6743-2.1667,1.4744-2.9865c1.4858-1.6162,3.0973-2.2135,4.8345-1.7919 C31.864,14.7903,32.5726,16.2074,32.1611,18.6903L32.1611,18.6903z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 506 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'social-youtube-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-social-youtube'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "social-youtube");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'social-youtube' },
+	        React.createElement('rect', { id: '_x2E_svg_310_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement(
+	          'g',
+	          { id: 'Lozenge' },
+	          React.createElement(
+	            'g',
+	            null,
+	            React.createElement('path', { d: 'M37.7189,17.8016c0,0-0.2735-1.9302-1.1131-2.7803c-1.0648-1.1155-2.2574-1.1204-2.8043-1.1853 c-3.9191-0.2839-9.7963-0.2839-9.7963-0.2839h-0.0128c0,0-5.8766,0-9.7955,0.2839c-0.5474,0.0649-1.74,0.0698-2.8048,1.1853 c-0.8396,0.8501-1.1127,2.7803-1.1127,2.7803s-0.2806,2.2646-0.2806,4.531v2.124c0,2.2661,0.2806,4.531,0.2806,4.531 s0.2731,1.9302,1.1127,2.7803c1.0648,1.1145,2.4637,1.0798,3.087,1.1965c2.2398,0.2139,9.5197,0.2815,9.5197,0.2815 s5.8837-0.0095,9.8027-0.2927c0.5469-0.0645,1.7395-0.0708,2.8043-1.1853c0.8396-0.8501,1.1131-2.7803,1.1131-2.7803 s0.2798-2.2649,0.2798-4.531v-2.124C37.9987,20.0662,37.7189,17.8016,37.7189,17.8016z M20.8907,27.2564l-0.0009-8.3179l8,4.1733 L20.8907,27.2564z' })
+	          )
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 507 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'sort-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-sort'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "sort");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'sort' },
+	        React.createElement('rect', { id: '_x2E_svg_248_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '18', y1: '15.5', x2: '34', y2: '15.5' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '18', y1: '21.5', x2: '32', y2: '21.5' }),
+	        React.createElement('rect', { x: '12', y: '13.5', fill: '#231F20', width: '4', height: '4' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '18', y1: '27.5', x2: '30', y2: '27.5' }),
+	        React.createElement('rect', { x: '12', y: '25.5', fill: '#231F20', width: '4', height: '4' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '18', y1: '33.5', x2: '28', y2: '33.5' }),
+	        React.createElement('rect', { x: '12', y: '31.5', fill: '#231F20', width: '4', height: '4' }),
+	        React.createElement('rect', { x: '12', y: '19.5', fill: '#231F20', width: '4', height: '4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 508 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'stakeholder-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-stakeholder'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "stakeholder");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'stakeholder' },
+	        React.createElement('rect', { id: '_x2E_svg_155_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26.5,16l6-2.9545L38.5,16v7.0909l-6,2.9545 l-6-2.9545V16z M26.5,16l6,2.9545L38.5,16 M32.5,19.0455v7 M18.5,24.0455c0,0,0.04,0,0.02,0c-3.23,0.03-6.02,2.66-6.02,5.89v2.11h3 M14.5,32.0455h10v-2.11c0-3.23-2.76-5.86-5.98-5.89c-0.02,0-0.02,0-0.02,0 M18.5,16.0455c-2.2091,0-4,1.7909-4,4s1.7909,4,4,4 s4-1.7909,4-4S20.7091,16.0455,18.5,16.0455z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 509 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'star-half-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-star-half'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "star-half");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'star-half' },
+	        React.createElement('rect', { id: '_x2E_svg_263_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement(
+	          'g',
+	          null,
+	          React.createElement('path', { fill: '#231F20', d: 'M24,16.4721l2.2112,4.4223L26.7639,22H28h3.3418l-2.7919,2.9393l-0.7563,0.7962l0.2659,1.0654 l1.2409,4.9725l-4.2639-2.5836L24,28.5618l-1.0364,0.628l-4.2639,2.5836l1.2409-4.9725l0.2659-1.0654l-0.7563-0.7962L16.6582,22 H20h1.2361l0.5528-1.1056L24,16.4721 M24,12l-4,8h-8l6,6.3167L15.5836,36L24,30.9003L32.4164,36L30,26.3167L36,20h-8L24,12L24,12z ' })
+	        ),
+	        React.createElement('polygon', { fill: '#231F20', points: '24,30.9003 15.5836,36 18,26.3167 12,20 20,20 24,12 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 510 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'star-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-star'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "star");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'star_1_' },
+	        React.createElement('rect', { id: '_x2E_svg_12_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement(
+	          'g',
+	          { id: 'star' },
+	          React.createElement('path', { fill: '#231F20', d: 'M24,16.4722l2.2111,4.4222L26.7639,22H28h3.3419l-2.792,2.9393l-0.7562,0.7963l0.2659,1.0654 l1.2408,4.9724l-4.2639-2.5836L24,28.5618l-1.0364,0.6281l-4.2639,2.5836l1.2408-4.9724l0.2659-1.0654l-0.7563-0.7963L16.6581,22 H20h1.2361l0.5528-1.1056L24,16.4722 M24,12l-4,8h-8l6,6.3168L15.5836,36L24,30.9003L32.4164,36L30,26.3168L36,20h-8L24,12L24,12z ' })
+	        )
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 511 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'steps-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-steps'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "steps");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'steps' },
+	        React.createElement('rect', { id: '_x2E_svg_124_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '27.5,13.1 27.5,18.1 22.5,18.1 22.5,23.1  17.5,23.1 17.5,28.1 12.5,28.1 12.5,35.1 17.5,35.1 22.5,35.1 27.5,35.1 34.5,35.1 34.5,13.1 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 512 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'storage-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-storage'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "storage");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'storage' },
+	        React.createElement('rect', { id: '_x2E_svg_224_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,33.15H15v-20h18V33.15z M32,23.15H15 M21,28.15 h6 M21,18.15h6 M15,34.15v2 M33,34.15v2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 513 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'street-view-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-street-view'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "street-view");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'street-view' },
+	        React.createElement('rect', { id: '_x2E_svg_136_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,17c0,2.2091-1.7909,4-4,4s-4-1.7909-4-4 s1.7909-4,4-4S28,14.7909,28,17z M24,21c0,0,0.04,0,0.02,0C20.79,21.03,18,23.66,18,26.89V29h3v6h6v-6h3v-2.11 c0-3.23-2.76-5.86-5.98-5.89C24,21,24,21,24,21 M16,35h16' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 514 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'subtract-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-subtract'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "subtract");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'subtract_1_' },
+	        React.createElement('rect', { id: '_x2E_svg_10_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('line', { id: 'subtract', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '12', y1: '24', x2: '36', y2: '24' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 515 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'support-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-support'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "support");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'support' },
+	        React.createElement('rect', { id: '_x2E_svg_95_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24.15c0,6.0751-4.9249,11-11,11 s-11-4.9249-11-11s4.9249-11,11-11S35,18.0749,35,24.15z M29,24.15c0-2.7568-2.2432-5-5-5s-5,2.2432-5,5s2.2432,5,5,5 S29,26.9068,29,24.15z M21,20.15v-6 M27,20.15v-6 M28,21.15h6 M28,27.15h6 M27,28.15v6 M21,28.15v6 M20,27.15h-6 M20,21.15h-6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 516 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'svg-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-svg'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "svg");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 24 23.5693', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement('path', { d: 'M24,12.3368c0-1.8973-0.4905-3.6797-1.3507-5.2286c3.6665-8.2982-3.9287-7.0827-4.3516-7 c-1.6091,0.3149-3.0978,0.8204-4.4711,1.4612c-0.2025-0.0114-0.4062-0.0177-0.6115-0.0177c-5.1248,0-9.4146,3.5745-10.5126,8.3664 C5.4036,6.8878,7.294,5.6651,8.426,5.1758C8.2453,5.3373,8.0684,5.5005,7.8944,5.665C7.8365,5.7197,7.7807,5.7751,7.7236,5.8302 C7.6088,5.9405,7.4944,6.051,7.3825,6.1625C7.316,6.2288,7.2513,6.2956,7.1857,6.3624c-0.0992,0.101-0.1981,0.2018-0.295,0.3034 C6.822,6.7379,6.7549,6.8102,6.6874,6.8824C6.5969,6.9793,6.507,7.0762,6.4188,7.1735c-0.0685,0.0756-0.136,0.1512-0.2033,0.227 C6.1319,7.4946,6.049,7.5888,5.9673,7.6832c-0.0678,0.0783-0.135,0.1565-0.2014,0.2349C5.6884,8.0096,5.6119,8.101,5.5362,8.1925 c-0.067,0.081-0.1337,0.1618-0.1993,0.2426c-0.0709,0.0874-0.1402,0.1748-0.2094,0.262c-0.0671,0.0845-0.1342,0.169-0.1997,0.2534 c-0.0624,0.0804-0.123,0.1605-0.184,0.2406C4.6749,9.2817,4.6055,9.3722,4.5384,9.4624c-0.048,0.0645-0.094,0.1284-0.1411,0.1927 c-0.4261,0.5814-0.8155,1.1517-1.1671,1.6995c-0.0009,0.0013-0.0018,0.0027-0.0026,0.004 c-0.0926,0.1442-0.1819,0.2864-0.2695,0.4272c-0.0047,0.0076-0.0096,0.0153-0.0143,0.023c-0.0877,0.1414-0.1723,0.2804-0.2548,0.418 c-0.0029,0.0048-0.0059,0.0097-0.0088,0.0145c-0.2218,0.3702-0.4276,0.7271-0.6129,1.0629 c-0.9713,1.7603-1.4442,2.9902-1.4647,3.0632c-3.0673,10.966,6.5059,6.3351,7.8417,5.6439 c1.4384,0.7106,3.0577,1.1106,4.7707,1.1106c4.6895,0,8.6795-2.9934,10.1646-7.1736h-5.6668 c-0.8385,1.4166-2.4528,2.3761-4.3074,2.3761c-2.7172,0-4.9199-2.0587-4.9199-4.5984h15.4256C23.9697,13.271,24,12.8074,24,12.3368 L24,12.3368z M21.9853,1.7237c0.9287,0.6268,1.6737,1.6113,0.3944,4.9265c-1.2269-1.9732-3.0729-3.5211-5.267-4.3719 C18.1108,1.7963,20.5825,0.7768,21.9853,1.7237z M2.2481,21.9893c-0.7564-0.7758-0.8902-2.6652,0.779-6.1083 c0.8424,2.422,2.5235,4.4515,4.6962,5.7395C6.6428,22.2153,3.774,23.5544,2.2481,21.9893z M8.4618,10.7766 C8.548,8.3083,10.6962,6.332,13.3356,6.332c2.6393,0,4.7876,1.9763,4.8738,4.4447H8.4618L8.4618,10.7766z' })
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 517 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'sync-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-sync'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "sync");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'sync' },
+	        React.createElement('rect', { id: '_x2E_svg_191_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.9996,13l4,4l-4,4 M30.9996,17h-11 c-3.866,0-7,3.134-7,7v3 M19.9996,27l-4,4l4,4 M16.9996,31h11c3.866,0,7-3.134,7-7v-3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 518 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'system-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-system'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "system");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'system' },
+	        React.createElement('rect', { id: '_x2E_svg_106_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,31H13V13h22V31z M24,19c-1.6569,0-3,1.3431-3,3 c0,1.6569,1.3431,3,3,3c1.6569,0,3-1.3431,3-3C27,20.3431,25.6568,19,24,19z M24,19v-3 M28.2426,17.7574l-2.1213,2.1213 M30,22h-3 M26.1213,24.1213l2.1213,2.1213 M24,25v3 M21.8787,24.1213l-2.1213,2.1213 M21,22h-3 M19.7574,17.7574l2.1213,2.1213 M28,22 M26.8284,24.8284 M24,28 M24,26 M21.1716,24.8284 M18,22 M20,22 M28,31h-8v4h8V31z M17,35h14' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 519 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tab-next-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tab-next'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tab-next");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tab-next' },
+	        React.createElement('rect', { id: '_x2E_svg_28_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '19.5,33.3768 19.5,15.0434 32.5,24.2101 \t ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 520 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tab-previous-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tab-previous'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tab-previous");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tab-previous' },
+	        React.createElement('rect', { id: '_x2E_svg_257_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '29,33.1667 29,14.8333 16,24 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 521 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tab-up-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tab-up'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tab-up");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tab-up' },
+	        React.createElement('rect', { id: '_x2E_svg_256_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '14.8333,29 33.1667,29 24,16 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 522 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'table-add-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-table-add'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "table-add");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'table-add' },
+	        React.createElement('rect', { id: '_x2E_svg_227_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M38,29c0,3.866-3.134,7-7,7s-7-3.134-7-7 s3.134-7,7-7S38,25.134,38,29z M34,13H13v4h21V13z M34,23v-6H20h-7v18h7h7 M20,17v18 M27,18v5l0,0 M27,36v-1v-0.26 M27,23L27,23H14 M14,29h10 M34,27 M34,27 M35,29h-8 M31,33v-8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 523 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'table-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-table'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "table");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'table' },
+	        React.createElement('rect', { id: '_x2E_svg_226_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34.5,17h-21v-4h21V17z M34.5,17h-21v18h21V17z M20.5,17v18 M27.5,35V18 M14.5,23h19 M14.5,29h20' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 524 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tag-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tag'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tag");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tag' },
+	        React.createElement('rect', { id: '_x2E_svg_79_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,23L23,35L13,25l12-12h10V23z M24,29l-5-5 M27,26l-5-5' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '29', cy: '19', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 525 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'target-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-target'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "target");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'target' },
+	        React.createElement('rect', { id: '_x2E_svg_137_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24c0,6.0751-4.9249,11-11,11s-11-4.9249-11-11 s4.9249-11,11-11S35,17.9249,35,24z M30,24c0-3.3086-2.6914-6-6-6s-6,2.6914-6,6s2.6914,6,6,6S30,27.3086,30,24z M25,24 c0-0.5518-0.4482-1-1-1s-1,0.4482-1,1s0.4482,1,1,1S25,24.5518,25,24z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 526 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'task-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-task'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "task");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'task' },
+	        React.createElement('rect', { id: '_x2E_svg_185_', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M21,12.9792l-5,5l-3-3 M13,22.9792l3,3l5-5 M13,30.9792l3,3l5-5 M24,15.9792h12 M24,23.9792h12 M24,31.9792h12' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 527 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'template-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-template'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "template");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'template' },
+	        React.createElement('rect', { id: '_x2E_svg_225_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,19.1188H13V15.15h22V19.1188z M19,19.1188h-6 v14.0625h6V19.1188z M35,19.1188H19V33.15h16V19.1188z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 528 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'test-desktop-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-test-desktop'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "test-desktop");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'test-desktop' },
+	        React.createElement('rect', { id: '_x2E_svg_108_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30.2174,13H35v18H13V13h5 M28,31h-8v4h8V31z M17,35h14 M20,13h8 M22,14v3.7727l-5,8.1818V27h7 M24,27h7v-1.0455l-5-8.1818V14 M28.4526,21.5795 c-4.2577-2.3438-4.7917,1.946-8.5436-0.3977' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 529 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'test-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-test'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "test");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'test' },
+	        React.createElement('rect', { id: '_x2E_svg_107_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M18,13h12 M21,14v6l-7,12v3h10 M24,35h10v-3l-7-12 v-6 M30.0417,25.5833C24.0406,22.1458,23.288,28.4375,18,25' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '26.5', cy: '29.5', r: '1.5' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '21.5', cy: '30.5', r: '1.5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 530 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tesxt-wrap-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tesxt-wrap'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tesxt-wrap");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tesxt-wrap' },
+	        React.createElement('rect', { id: '_x2E_svg_195_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,23h7 M29,19h7 M29,15h7 M29,27h7 M12,31h24 M12,35h24' }),
+	        React.createElement('rect', { x: '13', y: '14.9', fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', width: '13', height: '12.1' }),
+	        React.createElement('polyline', { fill: '#231F20', points: '14.25,26 17.0192,22 20.25,26.5 \t' }),
+	        React.createElement('polyline', { fill: '#231F20', points: '18.5833,25.8889 21.968,21 25.9167,26.5 \t' }),
+	        React.createElement('circle', { fill: '#231F20', cx: '17', cy: '19', r: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 531 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'threats-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-threats'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "threats");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'threats' },
+	        React.createElement('rect', { id: '_x2E_svg_94_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M21,20v-2h6v2v0.58c2.93,1.19,5,4.06,5,7.42 c0,4.42-3.58,8-8,8s-8-3.58-8-8c0-3.36,2.07-6.23,5-7.42V20z M34,13v1c0,1.1046-0.8954,2-2,2h-1c-1.1046,0-2-0.8954-2-2v0 c0-1.1046-0.8954-2-2-2h-1c-1.1046,0-2,0.8954-2,2v4 M27,31l-6-6 M21,31l6-6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 532 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'three-d-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-three-d'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "three-d");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: '_x33_d' },
+	        React.createElement('rect', { id: '_x2E_svg_197_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M34.4,24v7l-10,4.1l-10-4.1v-7 M34.4,24v-7l-10-4.1 l-10,4.1v7 M14.4,17l10,4.1l10-4.1 M30.4,29v-5h-5 M18.4,26c5.7812,4.9375,11.2-1,11.2-1' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 533 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'ticket-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-ticket'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "ticket");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'ticket' },
+	        React.createElement('rect', { id: '_x2E_svg_69_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,21c-1.66,0-3,1.34-3,3s1.34,3,3,3v5H13v-5 c1.66,0,3-1.34,3-3s-1.34-3-3-3v-5h22V21z M29,20H19v8h10V20z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 534 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tools-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tools'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tools");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tools' },
+	        React.createElement('rect', { id: '_x2E_svg_123_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15.9091,34.1L13,31.1637l10.9091-11.0112 l2.9091,2.9363L15.9091,34.1z M23.1591,19.3954l5.1136,5.1615l-0.7273,2.2022l2.9091,2.9363L37,23.0888l-2.9091-2.9363 l-2.1818,0.7341l-4.3636-4.4045c0,0-4.9455-5.2854-10.0727-0.1101C17.4727,16.3719,20.9773,17.1932,23.1591,19.3954z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 535 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tooltip-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tooltip'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tooltip");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tooltip' },
+	        React.createElement('rect', { id: '_x2E_svg_139_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '34.5,30 27.5001,30 23.4998,34.5  19.4997,30 13.5,30 13.5,13 34.5,13 \t' }),
+	        React.createElement('rect', { x: '17.5', y: '20', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '22.5', y: '20', fill: '#231F20', width: '3', height: '3' }),
+	        React.createElement('rect', { x: '27.5', y: '20', fill: '#231F20', width: '3', height: '3' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 536 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'transaction-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-transaction'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "transaction");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'transaction' },
+	        React.createElement('rect', { id: '_x2E_svg_228_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26,23v-3H13v-4h13v-3l7,5L26,23z M15,30l7,5v-3h13 v-4H22v-3L15,30z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 537 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'trash-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-trash'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "trash");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'trash' },
+	        React.createElement('rect', { id: '_x2E_svg_43_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M31.7899,35h-16V17h16V35z M12.7899,17h22 M26.7899,13h-6v4h6V13z M20.7899,30v-8 M26.7899,30v-8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 538 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'tree-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-tree'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "tree");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'tree' },
+	        React.createElement('rect', { id: '_x2E_svg_249_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22.65,19h-6v-6h6V19z M32.65,23h-4v4h4V23z M32.65,31h-4v4h4V31z M19.65,19v14h8 M19.65,25h8' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 539 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'trigger-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-trigger'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "trigger");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'trigger' },
+	        React.createElement('rect', { id: '_x2E_svg_169_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '21,13 16,26 22,26 19,35 20.75,35 32,21  26,21 30,13 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 540 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'trophy-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-trophy'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "trophy");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'trophy' },
+	        React.createElement('rect', { id: '_x2E_svg_179_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30,20.5c0,3.3137-2.6863,6-6,6s-6-2.6863-6-6v-8 h12C30,12.5,30,20.375,30,20.5z M18,14.5h-5v4.3c0,2.2091,1.7909,3.7,4,3.7h1 M30,22.5h1c2.2091,0,4-1.4909,4-3.7v-4.3h-5 M29.06,30.53c0-1.96-1.12-3.65-2.75-4.49 M21.73,26.05C20.11,26.89,19,28.58,19,30.53 M31,30.5H17v4h14V30.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 541 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'troubleshooting-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-troubleshooting'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "troubleshooting");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'troubleshooting' },
+	        React.createElement('rect', { id: '_x2E_svg_109_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M15.5,22.59c-1.76-0.78-3-2.54-3-4.59 s1.24-3.81,3-4.59V14v4h4v-4v-0.59c1.76,0.78,3,2.54,3,4.59s-1.24,3.81-3,4.59V23v10c0,1.1-0.9,2-2,2c-0.55,0-1.05-0.22-1.41-0.59 c-0.37-0.36-0.59-0.86-0.59-1.41V23V22.59z M32.5,15c0-1.1046-0.8954-2-2-2l0,0c-1.1046,0-2,0.8954-2,2v9h4V15z M25.5,24h10 M30.5,24v6H28l1.5,5h2l1.5-5h-1.5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 542 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'unlock-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-unlock'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "unlock");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'unlock' },
+	        React.createElement('rect', { id: '_x2E_svg_67_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M33,35H15V23h18V35z M30,19c0-3.3137-2.6863-6-6-6 s-6,2.6863-6,6v4 M26,29h-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 543 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'up-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-up'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "up");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'up' },
+	        React.createElement('rect', { id: '_x2E_svg_261_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '35,26.5 24,15.5 13,26.5 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 544 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'update-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-update'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "update");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'update' },
+	        React.createElement('rect', { id: '_x2E_svg_93_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,12v8h-8 M21,28h-8v8 M34.2493,19.9978 C32.6486,15.9016,28.6631,13,24,13c-6.0751,0-11,4.9249-11,11 M13.7507,28.0022C15.3514,32.0984,19.3369,35,24,35 c6.0751,0,11-4.9249,11-11' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 545 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'upgrade-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-upgrade'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "upgrade");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'upgrade' },
+	        React.createElement('rect', { id: '_x2E_svg_192_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24c0,6.0751-4.9249,11-11,11s-11-4.9249-11-11 s4.9249-11,11-11S35,17.9249,35,24z M24,30V20 M29,24l-5-5l-5,5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 546 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'upload-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-upload'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "upload");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'upload' },
+	        React.createElement('rect', { id: '_x2E_svg_25_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M17,20.2101l7-7l7,7 M24,30.2101v-17 M13,28.2101v7 h22v-7' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 547 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-add-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-add'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-add");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-add' },
+	        React.createElement('rect', { id: '_x2E_svg_118_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,17.5c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5 s2.2386-5,5-5S27,14.7386,27,17.5z M30,34.5v-4c0-4.4183-3.5817-8-8-8h0c-4.4183,0-8,3.5817-8,8v4 M33,17.5v8 M37,21.5h-8 M18,34.5 v-4 M26,34.5v-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 548 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-admin-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-admin'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-admin");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-admin' },
+	        React.createElement('rect', { id: '_x2E_svg_132_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M25.9991,18c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5 s2.2386-5,5-5S25.9991,15.2386,25.9991,18z M23.9991,32.5c0,1.3807,1.1193,2.5,2.5,2.5s2.5-1.1193,2.5-2.5 c0-1.3807-1.1193-2.5-2.5-2.5S23.9991,31.1193,23.9991,32.5z M36.9991,28l-3-3l-5.5312,5.5312 M31.4991,27.5l3,3 M20.9991,23 L20.9991,23c-4.4183,0-8,3.5817-8,8v4h8 M27.0009,25.7104C25.535,24.0484,23.3895,23,20.9991,23h0' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 549 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-expert-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-expert'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-expert");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-expert' },
+	        React.createElement('rect', { id: '_x2E_svg_130_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26,18c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5 s2.2386-5,5-5S26,15.2386,26,18z M21,23L21,23c-4.4183,0-8,3.5817-8,8v4h12 M27.928,26.997C26.5443,24.6075,23.9599,23,21,23h0 M25,30l4,4l6.875-6.875' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 550 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-female-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-female'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-female");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-female' },
+	        React.createElement('rect', { id: '_x2E_svg_117_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M19.9941,35.5v-4 M27.9941,31.5v4 M31.9941,35.5v-5 c0-2.7614-2.1386-5-4.9-5h-0.1l0,0l0,0c3.375,0,5.1-2.1,5.1-2.1s-3.1-1.8687-3.1-5.9c0-2.7583-2.2917-5-5.05-5h0.0969 c-2.7583,0-5.0234,2.2417-5.0234,5c0,3.9688-3.1117,5.9-3.1117,5.9s0.7133,2.1,4.0883,2.1h1c-2.7614,0-5,2.2386-5,5v5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 551 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-manager-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-manager'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-manager");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-manager' },
+	        React.createElement('rect', { id: '_x2E_svg_134_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.575,23.83c0.79,0.39,1.5,0.9,2.11,1.51 c1.44,1.45,2.34,3.45,2.34,5.66v4h-16v-4c0-3.14,1.81-5.86,4.45-7.17 M24.025,13c-3.3137,0-6,2.6863-6,6s2.6863,6,6,6s6-2.6863,6-6 S27.3387,13,24.025,13z M29.935,20c-2.05-0.03-3.86-1.09-4.91-2.69c-1.07,1.62-2.91,2.69-5,2.69c-0.69,0-1.35-0.11-1.96-0.33 M19.025,25l5,6v4l0,0v-4l5-6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 552 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-new-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-new'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-new");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-new' },
+	        React.createElement('rect', { id: '_x2E_svg_131_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M25.9688,18c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5 s2.2386-5,5-5S25.9688,15.2386,25.9688,18z M25.969,24.7548C24.5994,23.6568,22.8608,23,20.9688,23h0c-4.4183,0-8,3.5817-8,8v4h12 M31.9688,24v12 M37.1652,27.0005l-10.3928,5.9991 M37.1644,33.0009l-10.3913-6.0018' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 553 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-police-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-police'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-police");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-police' },
+	        React.createElement('rect', { id: '_x2E_svg_135_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30,21v0.5714C30,25.1218,27.5504,28,24,28 s-6-2.8782-6-6.4286V21 M20.45,26.83C17.81,28.14,16,30.86,16,34v1h16v-1c0-2.21-0.9-4.21-2.34-5.66 c-0.61-0.61-1.32-1.12-2.11-1.51 M33,17.3322C31.2226,14.7422,27.8652,13,24,13s-7.2226,1.7422-9,4.3322L17.4169,20H24h6.5831 L33,17.3322z' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M24,15h-2c0,0-0.0625,3,2,3c2,0,1.9998-3,1.9998-3H24z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 554 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-settings-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-settings'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-settings");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-settings' },
+	        React.createElement('rect', { id: '_x2E_svg_129_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M32,33c-1.6545,0-3-1.3458-3-3s1.3455-3,3-3 s3,1.3458,3,3S33.6545,33,32,33z M38,30l-3,0.0001 M34.1212,32.1214l2.1214,2.1212 M32,36l-0.0001-3 M27.7573,34.2426 l2.1212-2.1214 M26,30h3 M29.8787,27.8787l-2.1213-2.1213 M32,27v-3 M34.1213,27.8787l2.1213-2.1213 M21,13c-2.7614,0-5,2.2386-5,5 s2.2386,5,5,5s5-2.2386,5-5S23.7614,13,21,13z M26.0002,24.7548C24.6306,23.6568,22.892,23,21,23h0c-4.4183,0-8,3.5817-8,8v4h12.4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 555 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-worker-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user-worker'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user-worker");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user-worker' },
+	        React.createElement('rect', { id: '_x2E_svg_133_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M30,19v1.5714C30,24.1218,27.5504,27,24,27 s-6-2.8782-6-6.4286V19 M20.45,25.83C17.81,27.14,16,29.86,16,33v2h16v-2c0-2.21-0.9-4.21-2.34-5.66 c-0.61-0.61-1.32-1.12-2.11-1.51 M31,20c0-3.866-3.134-7-7-7s-7,3.134-7,7H31z M22,16v-2 M26,16v-2 M15,20h18' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 556 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'user-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-user'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "user");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'user' },
+	        React.createElement('rect', { id: '_x2E_svg_32_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29,17.7969c0,2.7614-2.2386,5-5,5s-5-2.2386-5-5 s2.2386-5,5-5S29,15.0355,29,17.7969z M33,35.7969v-5c0-4.4183-3.5817-8-8-8h-2c-4.4183,0-8,3.5817-8,8v5 M20,35.7969v-5 M28,35.7969v-5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 557 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'validation-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-validation'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "validation");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'validation' },
+	        React.createElement('rect', { id: '_x2E_svg_90_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24c0,1.3559-2.1936,2.2658-2.6825,3.4448 c-0.5068,1.2222,0.3817,3.4123-0.5394,4.3334c-0.9211,0.921-3.1111,0.0324-4.3333,0.5392C26.2657,32.8064,25.3559,35,24,35 c-1.3559,0-2.2658-2.1936-3.4448-2.6825c-1.2222-0.5068-3.4123,0.3817-4.3334-0.5394c-0.921-0.9211-0.0324-3.1111-0.5392-4.3333 C15.1936,26.2657,13,25.3559,13,24c0-1.3559,2.1936-2.2658,2.6825-3.4448c0.5068-1.2222-0.3817-3.4123,0.5394-4.3334 c0.9211-0.921,3.1111-0.0324,4.3333-0.5392C21.7343,15.1936,22.6441,13,24,13c1.3559,0,2.2658,2.1936,3.4448,2.6825 c1.2222,0.5068,3.4123-0.3817,4.3334,0.5394c0.921,0.9211,0.0324,3.1111,0.5392,4.3333C32.8064,21.7343,35,22.6441,35,24z M20,24 l3,3l6-6' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 558 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'video-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-video'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "video");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'video' },
+	        React.createElement('rect', { id: '_x2E_svg_70_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M28,31H13V17h15V31z M28,27l7,4V17l-7.0208,4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 559 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'view-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-view'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "view");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'view' },
+	        React.createElement('rect', { id: '_x2E_svg_116_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,24c-2.5079,4.8114-5.9464,8-11,8 s-8.4921-3.1886-11-8c2.5079-4.8114,5.9464-8,11-8S32.4921,19.1886,35,24z M24,20c-2.2091,0-4,1.7909-4,4s1.7909,4,4,4 s4-1.7909,4-4S26.2091,20,24,20z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 560 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'virtual-machine-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-virtual-machine'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "virtual-machine");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'virtual-machine' },
+	        React.createElement('rect', { id: '_x2E_svg_177_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M29.5,25.5h-13v-13h13V25.5z M33.5,17.5h-13v13h13 V17.5z M24.5,21.5h-13v13h13V21.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 561 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'vm-maintenance-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-vm-maintenance'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "vm-maintenance");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'vm-maintenance' },
+	        React.createElement('rect', { id: '_x2E_svg_176_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: '#231F20', d: 'M34.6937,26.2495l-2.0349,2.0349l-1.4431-1.4432l2.0348-2.0348c-1.1328-0.5556-2.5327-0.3536-3.478,0.5917 c-0.9433,0.9433-1.1319,2.3387-0.5894,3.476L24,34.0569l1.443,1.443l5.1833-5.1829c1.1372,0.5422,2.5324,0.3536,3.4757-0.5896 C35.0472,28.7822,35.2493,27.3824,34.6937,26.2495z' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M26,25.5H16v-10h10V25.5z M29,23.5v-4H19v10h6 M22,22.5H12v10h10V22.5z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 562 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'volume-low-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-volume-low'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "volume-low");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'volume-low' },
+	        React.createElement('rect', { id: '_x2E_svg_267_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M13,24v-4h5l6-5v18l-6-5h-5V24 M27,28 c2.2091,0,4-1.7909,4-4s-1.7909-4-4-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 563 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'volume-mute-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-volume-mute'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "volume-mute");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'volume-mute' },
+	        React.createElement('rect', { id: '_x2E_svg_268_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M13,24v-4h5l6-5v18l-6-5h-5V24' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '28', y1: '27.5', x2: '35', y2: '20.5' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '28', y1: '20.5', x2: '35', y2: '27.5' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 564 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'volume-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-volume'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "volume");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'volume' },
+	        React.createElement('rect', { id: '_x2E_svg_81_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M13,24v-4h5l6-5v18l-6-5h-5V24 M27,32 c4.4111,0,8-3.5889,8-8s-3.5889-8-8-8 M27,28c2.2091,0,4-1.7909,4-4s-1.7909-4-4-4' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 565 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'vulnerability-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-vulnerability'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "vulnerability");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'vulnerability' },
+	        React.createElement('rect', { id: '_x2E_svg_175_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M24,32.5c-4.9624,0-9-4.0371-9-9s4.0376-9,9-9 s9,4.0371,9,9S28.9624,32.5,24,32.5z M29,23.5c0-2.7568-2.2432-5-5-5s-5,2.2432-5,5s2.2432,5,5,5S29,26.2568,29,23.5z M12,23.5h24 M24,11.5v24' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 566 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'waypoint-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-waypoint'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "waypoint");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'waypoint' },
+	        React.createElement('rect', { id: '_x2E_svg_91_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '33.5,14.5 14.5,23.5 21.5,26.5 24.5,33.5 \t ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 567 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'workshop-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-workshop'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "workshop");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'workshop' },
+	        React.createElement('rect', { id: '_x2E_svg_241_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '32,28 35,28 35,14 15,14 15,17 \t' }),
+	        React.createElement('rect', { x: '22', y: '12', fill: '#231F20', width: '6', height: '4' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M22,22.5c0,1.933-1.567,3.5-3.5,3.5 S15,24.433,15,22.5s1.567-3.5,3.5-3.5S22,20.567,22,22.5z M20,26h-2c-2.7614,0-5,2.2386-5,5v4h11v-3.9515 c0-0.6033,0.3584-1.1483,0.9169-1.3766C28.8134,28.0792,31,23,31,23l-2-2C23.7917,26.2083,20,26,20,26 M29,21l2-2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 568 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett-Packard Development Company
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var IntlMixin = __webpack_require__(8);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  mixins: [IntlMixin],
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'zoom-in-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-zoom-in'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var a11yTitle = this.getGrommetIntlMessage(typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "zoom-in");
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'zoom-in' },
+	        React.createElement('rect', { id: '_x2E_svg_115_', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '21.5', y1: '16.5', x2: '21.5', y2: '26.5' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '26.5', y1: '21.5', x2: '16.5', y2: '21.5' }),
+	        React.createElement('circle', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', cx: '21.5', cy: '21.5', r: '9' }),
+	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '34.5', y1: '34.5', x2: '27.86', y2: '27.86' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
@@ -29669,15 +50599,15 @@ var Grommet =
 	module.exports = ReactLayeredComponent;
 
 /***/ },
-/* 257 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
 	'use strict';
 
-	var Reflux = __webpack_require__(258);
-	var Rest = __webpack_require__(279);
+	var Reflux = __webpack_require__(571);
+	var Rest = __webpack_require__(592);
 
 	var Actions = Reflux.createActions({
 	  // Session
@@ -29702,26 +50632,26 @@ var Grommet =
 	module.exports = Actions;
 
 /***/ },
-/* 258 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Reflux = __webpack_require__(259);
+	var Reflux = __webpack_require__(572);
 
-	Reflux.connect = __webpack_require__(274);
+	Reflux.connect = __webpack_require__(587);
 
-	Reflux.connectFilter = __webpack_require__(276);
+	Reflux.connectFilter = __webpack_require__(589);
 
-	Reflux.ListenerMixin = __webpack_require__(275);
+	Reflux.ListenerMixin = __webpack_require__(588);
 
-	Reflux.listenTo = __webpack_require__(277);
+	Reflux.listenTo = __webpack_require__(590);
 
-	Reflux.listenToMany = __webpack_require__(278);
+	Reflux.listenToMany = __webpack_require__(591);
 
 	module.exports = Reflux;
 
 
 /***/ },
-/* 259 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29735,19 +50665,19 @@ var Grommet =
 	    }
 	};
 
-	Reflux.ActionMethods = __webpack_require__(260);
+	Reflux.ActionMethods = __webpack_require__(573);
 
-	Reflux.ListenerMethods = __webpack_require__(261);
+	Reflux.ListenerMethods = __webpack_require__(574);
 
-	Reflux.PublisherMethods = __webpack_require__(272);
+	Reflux.PublisherMethods = __webpack_require__(585);
 
-	Reflux.StoreMethods = __webpack_require__(271);
+	Reflux.StoreMethods = __webpack_require__(584);
 
-	Reflux.createAction = __webpack_require__(273);
+	Reflux.createAction = __webpack_require__(586);
 
-	Reflux.createStore = __webpack_require__(267);
+	Reflux.createStore = __webpack_require__(580);
 
-	var maker = __webpack_require__(266).staticJoinCreator;
+	var maker = __webpack_require__(579).staticJoinCreator;
 
 	Reflux.joinTrailing = Reflux.all = maker("last"); // Reflux.all alias for backward compatibility
 
@@ -29757,7 +50687,7 @@ var Grommet =
 
 	Reflux.joinConcat = maker("all");
 
-	var _ = Reflux.utils = __webpack_require__(262);
+	var _ = Reflux.utils = __webpack_require__(575);
 
 	Reflux.EventEmitter = _.EventEmitter;
 
@@ -29831,7 +50761,7 @@ var Grommet =
 	 * Provides the set of created actions and stores for introspection
 	 */
 	/*eslint-disable no-underscore-dangle*/
-	Reflux.__keep = __webpack_require__(268);
+	Reflux.__keep = __webpack_require__(581);
 	/*eslint-enable no-underscore-dangle*/
 
 	/**
@@ -29845,7 +50775,7 @@ var Grommet =
 	module.exports = exports["default"];
 
 /***/ },
-/* 260 */
+/* 573 */
 /***/ function(module, exports) {
 
 	/**
@@ -29857,13 +50787,13 @@ var Grommet =
 	module.exports = {};
 
 /***/ },
-/* 261 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _ = __webpack_require__(262),
-	    maker = __webpack_require__(266).instanceJoinCreator;
+	var _ = __webpack_require__(575),
+	    maker = __webpack_require__(579).instanceJoinCreator;
 
 	/**
 	 * Extract child listenables from a parent from their
@@ -30095,7 +51025,7 @@ var Grommet =
 	};
 
 /***/ },
-/* 262 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(setImmediate) {"use strict";
@@ -30173,7 +51103,7 @@ var Grommet =
 	    return typeof value === "function";
 	}
 
-	exports.EventEmitter = __webpack_require__(265);
+	exports.EventEmitter = __webpack_require__(578);
 
 	if (environment.hasSetImmediate) {
 	    exports.nextTick = function (callback) {
@@ -30213,13 +51143,13 @@ var Grommet =
 	        throw Error(msg || val);
 	    }
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(263).setImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(576).setImmediate))
 
 /***/ },
-/* 263 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(264).nextTick;
+	/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(577).nextTick;
 	var apply = Function.prototype.apply;
 	var slice = Array.prototype.slice;
 	var immediateIds = {};
@@ -30295,10 +51225,10 @@ var Grommet =
 	exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
 	  delete immediateIds[id];
 	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(263).setImmediate, __webpack_require__(263).clearImmediate))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(576).setImmediate, __webpack_require__(576).clearImmediate))
 
 /***/ },
-/* 264 */
+/* 577 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -30395,7 +51325,7 @@ var Grommet =
 
 
 /***/ },
-/* 265 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30663,7 +51593,7 @@ var Grommet =
 
 
 /***/ },
-/* 266 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -30672,8 +51602,8 @@ var Grommet =
 
 	"use strict";
 
-	var createStore = __webpack_require__(267),
-	    _ = __webpack_require__(262);
+	var createStore = __webpack_require__(580),
+	    _ = __webpack_require__(575);
 
 	var slice = Array.prototype.slice,
 	    strategyMethodNames = {
@@ -30784,15 +51714,15 @@ var Grommet =
 	}
 
 /***/ },
-/* 267 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _ = __webpack_require__(262),
-	    Keep = __webpack_require__(268),
-	    mixer = __webpack_require__(269),
-	    bindMethods = __webpack_require__(270);
+	var _ = __webpack_require__(575),
+	    Keep = __webpack_require__(581),
+	    mixer = __webpack_require__(582),
+	    bindMethods = __webpack_require__(583);
 
 	var allowed = { preEmit: 1, shouldEmit: 1 };
 
@@ -30806,9 +51736,9 @@ var Grommet =
 	 */
 	module.exports = function (definition) {
 
-	    var StoreMethods = __webpack_require__(271),
-	        PublisherMethods = __webpack_require__(272),
-	        ListenerMethods = __webpack_require__(261);
+	    var StoreMethods = __webpack_require__(584),
+	        PublisherMethods = __webpack_require__(585),
+	        ListenerMethods = __webpack_require__(574);
 
 	    definition = definition || {};
 
@@ -30853,7 +51783,7 @@ var Grommet =
 	};
 
 /***/ },
-/* 268 */
+/* 581 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -30872,12 +51802,12 @@ var Grommet =
 	};
 
 /***/ },
-/* 269 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _ = __webpack_require__(262);
+	var _ = __webpack_require__(575);
 
 	module.exports = function mix(def) {
 	    var composed = {
@@ -30936,7 +51866,7 @@ var Grommet =
 	};
 
 /***/ },
-/* 270 */
+/* 583 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -30966,7 +51896,7 @@ var Grommet =
 	};
 
 /***/ },
-/* 271 */
+/* 584 */
 /***/ function(module, exports) {
 
 	/**
@@ -30978,12 +51908,12 @@ var Grommet =
 	module.exports = {};
 
 /***/ },
-/* 272 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _ = __webpack_require__(262);
+	var _ = __webpack_require__(575);
 
 	/**
 	 * A module of methods for object that you want to be able to listen to.
@@ -31166,15 +52096,15 @@ var Grommet =
 	};
 
 /***/ },
-/* 273 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _ = __webpack_require__(262),
-	    ActionMethods = __webpack_require__(260),
-	    PublisherMethods = __webpack_require__(272),
-	    Keep = __webpack_require__(268);
+	var _ = __webpack_require__(575),
+	    ActionMethods = __webpack_require__(573),
+	    PublisherMethods = __webpack_require__(585),
+	    Keep = __webpack_require__(581);
 
 	var allowed = { preEmit: 1, shouldEmit: 1 };
 
@@ -31237,12 +52167,12 @@ var Grommet =
 	module.exports = createAction;
 
 /***/ },
-/* 274 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ListenerMethods = __webpack_require__(261),
-	    ListenerMixin = __webpack_require__(275),
-	    _ = __webpack_require__(262);
+	var ListenerMethods = __webpack_require__(574),
+	    ListenerMixin = __webpack_require__(588),
+	    _ = __webpack_require__(575);
 
 	module.exports = function(listenable,key){
 	    return {
@@ -31270,11 +52200,11 @@ var Grommet =
 
 
 /***/ },
-/* 275 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(262),
-	    ListenerMethods = __webpack_require__(261);
+	var _ = __webpack_require__(575),
+	    ListenerMethods = __webpack_require__(574);
 
 	/**
 	 * A module meant to be consumed as a mixin by a React component. Supplies the methods from
@@ -31293,12 +52223,12 @@ var Grommet =
 
 
 /***/ },
-/* 276 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ListenerMethods = __webpack_require__(261),
-	    ListenerMixin = __webpack_require__(275),
-	    _ = __webpack_require__(262);
+	var ListenerMethods = __webpack_require__(574),
+	    ListenerMixin = __webpack_require__(588),
+	    _ = __webpack_require__(575);
 
 	module.exports = function(listenable, key, filterFunc) {
 	    filterFunc = _.isFunction(key) ? key : filterFunc;
@@ -31339,10 +52269,10 @@ var Grommet =
 
 
 /***/ },
-/* 277 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ListenerMethods = __webpack_require__(261);
+	var ListenerMethods = __webpack_require__(574);
 
 	/**
 	 * A mixin factory for a React component. Meant as a more convenient way of using the `ListenerMixin`,
@@ -31380,10 +52310,10 @@ var Grommet =
 
 
 /***/ },
-/* 278 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var ListenerMethods = __webpack_require__(261);
+	var ListenerMethods = __webpack_require__(574);
 
 	/**
 	 * A mixin factory for a React component. Meant as a more convenient way of using the `listenerMixin`,
@@ -31419,14 +52349,14 @@ var Grommet =
 
 
 /***/ },
-/* 279 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
 	'use strict';
 
-	var request = __webpack_require__(280);
+	var request = __webpack_require__(593);
 
 	var _headers = { 'Accept': 'application/json' };
 
@@ -31512,15 +52442,15 @@ var Grommet =
 	module.exports = Rest;
 
 /***/ },
-/* 280 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module dependencies.
 	 */
 
-	var Emitter = __webpack_require__(281);
-	var reduce = __webpack_require__(282);
+	var Emitter = __webpack_require__(594);
+	var reduce = __webpack_require__(595);
 
 	/**
 	 * Root reference for iframes.
@@ -32675,7 +53605,7 @@ var Grommet =
 
 
 /***/ },
-/* 281 */
+/* 594 */
 /***/ function(module, exports) {
 
 	
@@ -32845,7 +53775,7 @@ var Grommet =
 
 
 /***/ },
-/* 282 */
+/* 595 */
 /***/ function(module, exports) {
 
 	
@@ -32874,16 +53804,16 @@ var Grommet =
 	};
 
 /***/ },
-/* 283 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
 	'use strict';
 
-	var Reflux = __webpack_require__(258);
-	var Actions = __webpack_require__(257);
-	var Cookies = __webpack_require__(99);
+	var Reflux = __webpack_require__(571);
+	var Actions = __webpack_require__(570);
+	var Cookies = __webpack_require__(100);
 
 	var TOKEN = "token";
 	var USER = "user";
@@ -32954,14 +53884,14 @@ var Grommet =
 	module.exports = SessionStore;
 
 /***/ },
-/* 284 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
 
 	'use strict';
 
-	var Rest = __webpack_require__(279);
+	var Rest = __webpack_require__(592);
 
 	var RECONNECT_TIMEOUT = 5000; // 5s
 	var POLL_TIMEOUT = 10000; // 10s
@@ -33094,7 +54024,7 @@ var Grommet =
 	module.exports = RestWatch;
 
 /***/ },
-/* 285 */
+/* 598 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014-2015 Hewlett-Packard Development Company, L.P.
