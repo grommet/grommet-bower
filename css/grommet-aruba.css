@@ -281,7 +281,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -446,9 +447,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
@@ -581,7 +580,9 @@ img {
  * 2. If a `width` and/or `height` attribute have been explicitly defined, let’s
  *    not make the image fluid.
  */
-.gm-style img, img[width], img[height] {
+.gm-style img,
+img[width],
+img[height] {
   /* [2] */
   max-width: none; }
 
@@ -872,25 +873,29 @@ a,
     text-decoration: underline;
     color: #d16b00; }
   [class*="background-color-index-"]:not[class*="background-color-index-light"] a,
-  [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button),
-  [class*="background-color-index-"]:not[class*="background-color-index-light"] .anchor,
-  [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu .anchor:not(.button) {
+  [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button), [class*="background-color-index-"]:not[class*="background-color-index-light"]
+  .anchor,
+  [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu
+  .anchor:not(.button) {
     color: #fff; }
     [class*="background-color-index-"]:not[class*="background-color-index-light"] a .control-icon,
-    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button) .control-icon,
-    [class*="background-color-index-"]:not[class*="background-color-index-light"] .anchor .control-icon,
-    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu .anchor:not(.button) .control-icon {
+    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button) .control-icon, [class*="background-color-index-"]:not[class*="background-color-index-light"]
+    .anchor .control-icon,
+    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu
+    .anchor:not(.button) .control-icon {
       fill: #fff;
       stroke: #fff; }
     [class*="background-color-index-"]:not[class*="background-color-index-light"] a:hover,
-    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button):hover,
-    [class*="background-color-index-"]:not[class*="background-color-index-light"] .anchor:hover,
-    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu .anchor:not(.button):hover {
+    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button):hover, [class*="background-color-index-"]:not[class*="background-color-index-light"]
+    .anchor:hover,
+    [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu
+    .anchor:not(.button):hover {
       color: #fff; }
       [class*="background-color-index-"]:not[class*="background-color-index-light"] a:hover .control-icon,
-      [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button):hover .control-icon,
-      [class*="background-color-index-"]:not[class*="background-color-index-light"] .anchor:hover .control-icon,
-      [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu .anchor:not(.button):hover .control-icon {
+      [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu a:not(.button):hover .control-icon, [class*="background-color-index-"]:not[class*="background-color-index-light"]
+      .anchor:hover .control-icon,
+      [class*="background-color-index-"]:not[class*="background-color-index-light"] .menu
+      .anchor:not(.button):hover .control-icon {
         fill: #fff;
         stroke: #fff; }
   a.anchor--primary,
@@ -909,18 +914,18 @@ a,
     .anchor.anchor--primary:hover .control-icon path,
     .anchor.anchor--primary:hover .control-icon polyline {
       stroke-width: 3px; }
-    [class*="background-color-index-"] a.anchor--primary,
-    [class*="background-color-index-"] .anchor.anchor--primary {
+    [class*="background-color-index-"] a.anchor--primary, [class*="background-color-index-"]
+    .anchor.anchor--primary {
       color: #fff; }
-      [class*="background-color-index-"] a.anchor--primary .control-icon,
-      [class*="background-color-index-"] .anchor.anchor--primary .control-icon {
+      [class*="background-color-index-"] a.anchor--primary .control-icon, [class*="background-color-index-"]
+      .anchor.anchor--primary .control-icon {
         fill: #fff;
         stroke: #fff; }
-      [class*="background-color-index-"] a.anchor--primary:hover,
-      [class*="background-color-index-"] .anchor.anchor--primary:hover {
+      [class*="background-color-index-"] a.anchor--primary:hover, [class*="background-color-index-"]
+      .anchor.anchor--primary:hover {
         color: #fff; }
-        [class*="background-color-index-"] a.anchor--primary:hover .control-icon,
-        [class*="background-color-index-"] .anchor.anchor--primary:hover .control-icon {
+        [class*="background-color-index-"] a.anchor--primary:hover .control-icon, [class*="background-color-index-"]
+        .anchor.anchor--primary:hover .control-icon {
           fill: #fff;
           stroke: #fff; }
 
@@ -952,16 +957,6 @@ a,
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
-
-@media screen and (max-width: 44.9375em) {
-  .app--layered-x {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    overflow: hidden;
-    opacity: 0.3; } }
 
 .article {
   position: relative; }
@@ -1123,10 +1118,10 @@ article:not(.article) {
     text-align: center; }
   .box--text-align-right {
     text-align: right; }
-  .box > .flex-grow-1, .box > .flex {
+  .box > .flex-grow-1,
+  .box > .flex {
     flex-grow: 1; }
-  .box--direction-down,
-  .box--direction-up {
+  .box--direction-down, .box--direction-up {
     flex-direction: column; }
   .box--direction-left {
     justify-content: flex-end; }
@@ -1381,130 +1376,71 @@ button:not(.button) {
       stroke: #999999; }
     .chart__values-line.color-index-disabled {
       stroke: #999999; }
-    .chart__values-line.color-index-graph-1,
-    .chart__values-line.color-index-graph-6 {
+    .chart__values-line.color-index-graph-1, .chart__values-line.color-index-graph-6 {
       stroke: #ec9b58; }
-    .chart__values-line.color-index-graph-2,
-    .chart__values-line.color-index-graph-7 {
+    .chart__values-line.color-index-graph-2, .chart__values-line.color-index-graph-7 {
       stroke: #0049a0; }
-    .chart__values-line.color-index-graph-3,
-    .chart__values-line.color-index-graph-8 {
+    .chart__values-line.color-index-graph-3, .chart__values-line.color-index-graph-8 {
       stroke: #886f9c; }
-    .chart__values-line.color-index-graph-4,
-    .chart__values-line.color-index-graph-9 {
+    .chart__values-line.color-index-graph-4, .chart__values-line.color-index-graph-9 {
       stroke: #5fbcdd; }
-    .chart__values-line.color-index-graph-5,
-    .chart__values-line.color-index-graph-10 {
+    .chart__values-line.color-index-graph-5, .chart__values-line.color-index-graph-10 {
       stroke: #7fba44; }
-    .chart__values-line.color-index-grey-1,
-    .chart__values-line.color-index-grey-4 {
+    .chart__values-line.color-index-grey-1, .chart__values-line.color-index-grey-4 {
       stroke: #2d3034; }
-    .chart__values-line.color-index-grey-2,
-    .chart__values-line.color-index-grey-5 {
+    .chart__values-line.color-index-grey-2, .chart__values-line.color-index-grey-5 {
       stroke: #52555a; }
-    .chart__values-line.color-index-grey-3,
-    .chart__values-line.color-index-grey-6 {
+    .chart__values-line.color-index-grey-3, .chart__values-line.color-index-grey-6 {
       stroke: #999999; }
-  .chart__values-bar.color-index-error,
-  .chart__values-area.color-index-error {
+  .chart__values-bar.color-index-error, .chart__values-area.color-index-error {
     fill: rgba(200, 32, 13, 0.7); }
-  .chart__values-bar.color-index-warning,
-  .chart__values-area.color-index-warning {
+  .chart__values-bar.color-index-warning, .chart__values-area.color-index-warning {
     fill: rgba(229, 113, 24, 0.7); }
-  .chart__values-bar.color-index-ok,
-  .chart__values-area.color-index-ok {
+  .chart__values-bar.color-index-ok, .chart__values-area.color-index-ok {
     fill: rgba(42, 172, 36, 0.7); }
-  .chart__values-bar.color-index-unknown,
-  .chart__values-area.color-index-unknown {
+  .chart__values-bar.color-index-unknown, .chart__values-area.color-index-unknown {
     fill: rgba(153, 153, 153, 0.7); }
-  .chart__values-bar.color-index-disabled,
-  .chart__values-area.color-index-disabled {
+  .chart__values-bar.color-index-disabled, .chart__values-area.color-index-disabled {
     fill: rgba(153, 153, 153, 0.7); }
-  .chart__values-bar.color-index-graph-1,
-  .chart__values-bar.color-index-graph-6,
-  .chart__values-area.color-index-graph-1,
-  .chart__values-area.color-index-graph-6 {
+  .chart__values-bar.color-index-graph-1, .chart__values-bar.color-index-graph-6, .chart__values-area.color-index-graph-1, .chart__values-area.color-index-graph-6 {
     fill: rgba(236, 155, 88, 0.7); }
-  .chart__values-bar.color-index-graph-2,
-  .chart__values-bar.color-index-graph-7,
-  .chart__values-area.color-index-graph-2,
-  .chart__values-area.color-index-graph-7 {
+  .chart__values-bar.color-index-graph-2, .chart__values-bar.color-index-graph-7, .chart__values-area.color-index-graph-2, .chart__values-area.color-index-graph-7 {
     fill: rgba(0, 73, 160, 0.7); }
-  .chart__values-bar.color-index-graph-3,
-  .chart__values-bar.color-index-graph-8,
-  .chart__values-area.color-index-graph-3,
-  .chart__values-area.color-index-graph-8 {
+  .chart__values-bar.color-index-graph-3, .chart__values-bar.color-index-graph-8, .chart__values-area.color-index-graph-3, .chart__values-area.color-index-graph-8 {
     fill: rgba(136, 111, 156, 0.7); }
-  .chart__values-bar.color-index-graph-4,
-  .chart__values-bar.color-index-graph-9,
-  .chart__values-area.color-index-graph-4,
-  .chart__values-area.color-index-graph-9 {
+  .chart__values-bar.color-index-graph-4, .chart__values-bar.color-index-graph-9, .chart__values-area.color-index-graph-4, .chart__values-area.color-index-graph-9 {
     fill: rgba(95, 188, 221, 0.7); }
-  .chart__values-bar.color-index-graph-5,
-  .chart__values-bar.color-index-graph-10,
-  .chart__values-area.color-index-graph-5,
-  .chart__values-area.color-index-graph-10 {
+  .chart__values-bar.color-index-graph-5, .chart__values-bar.color-index-graph-10, .chart__values-area.color-index-graph-5, .chart__values-area.color-index-graph-10 {
     fill: rgba(127, 186, 68, 0.7); }
-  .chart__values-bar--active.color-index-unset,
-  .chart__values-area--active.color-index-unset {
+  .chart__values-bar--active.color-index-unset, .chart__values-area--active.color-index-unset {
     fill: #ddd; }
-  .chart__values-bar--active.color-index-brand,
-  .chart__values-area--active.color-index-brand {
+  .chart__values-bar--active.color-index-brand, .chart__values-area--active.color-index-brand {
     fill: #ff8300; }
-  .chart__values-bar--active.color-index-error,
-  .chart__values-area--active.color-index-error {
+  .chart__values-bar--active.color-index-error, .chart__values-area--active.color-index-error {
     fill: #c8200d; }
-  .chart__values-bar--active.color-index-warning,
-  .chart__values-area--active.color-index-warning {
+  .chart__values-bar--active.color-index-warning, .chart__values-area--active.color-index-warning {
     fill: #e57118; }
-  .chart__values-bar--active.color-index-ok,
-  .chart__values-area--active.color-index-ok {
+  .chart__values-bar--active.color-index-ok, .chart__values-area--active.color-index-ok {
     fill: #2aac24; }
-  .chart__values-bar--active.color-index-unknown,
-  .chart__values-area--active.color-index-unknown {
+  .chart__values-bar--active.color-index-unknown, .chart__values-area--active.color-index-unknown {
     fill: #999999; }
-  .chart__values-bar--active.color-index-disabled,
-  .chart__values-area--active.color-index-disabled {
+  .chart__values-bar--active.color-index-disabled, .chart__values-area--active.color-index-disabled {
     fill: #999999; }
-  .chart__values-bar--active.color-index-graph-1,
-  .chart__values-bar--active.color-index-graph-6,
-  .chart__values-area--active.color-index-graph-1,
-  .chart__values-area--active.color-index-graph-6 {
+  .chart__values-bar--active.color-index-graph-1, .chart__values-bar--active.color-index-graph-6, .chart__values-area--active.color-index-graph-1, .chart__values-area--active.color-index-graph-6 {
     fill: #ec9b58; }
-  .chart__values-bar--active.color-index-graph-2,
-  .chart__values-bar--active.color-index-graph-7,
-  .chart__values-area--active.color-index-graph-2,
-  .chart__values-area--active.color-index-graph-7 {
+  .chart__values-bar--active.color-index-graph-2, .chart__values-bar--active.color-index-graph-7, .chart__values-area--active.color-index-graph-2, .chart__values-area--active.color-index-graph-7 {
     fill: #0049a0; }
-  .chart__values-bar--active.color-index-graph-3,
-  .chart__values-bar--active.color-index-graph-8,
-  .chart__values-area--active.color-index-graph-3,
-  .chart__values-area--active.color-index-graph-8 {
+  .chart__values-bar--active.color-index-graph-3, .chart__values-bar--active.color-index-graph-8, .chart__values-area--active.color-index-graph-3, .chart__values-area--active.color-index-graph-8 {
     fill: #886f9c; }
-  .chart__values-bar--active.color-index-graph-4,
-  .chart__values-bar--active.color-index-graph-9,
-  .chart__values-area--active.color-index-graph-4,
-  .chart__values-area--active.color-index-graph-9 {
+  .chart__values-bar--active.color-index-graph-4, .chart__values-bar--active.color-index-graph-9, .chart__values-area--active.color-index-graph-4, .chart__values-area--active.color-index-graph-9 {
     fill: #5fbcdd; }
-  .chart__values-bar--active.color-index-graph-5,
-  .chart__values-bar--active.color-index-graph-10,
-  .chart__values-area--active.color-index-graph-5,
-  .chart__values-area--active.color-index-graph-10 {
+  .chart__values-bar--active.color-index-graph-5, .chart__values-bar--active.color-index-graph-10, .chart__values-area--active.color-index-graph-5, .chart__values-area--active.color-index-graph-10 {
     fill: #7fba44; }
-  .chart__values-bar--active.color-index-grey-1,
-  .chart__values-bar--active.color-index-grey-4,
-  .chart__values-area--active.color-index-grey-1,
-  .chart__values-area--active.color-index-grey-4 {
+  .chart__values-bar--active.color-index-grey-1, .chart__values-bar--active.color-index-grey-4, .chart__values-area--active.color-index-grey-1, .chart__values-area--active.color-index-grey-4 {
     fill: #2d3034; }
-  .chart__values-bar--active.color-index-grey-2,
-  .chart__values-bar--active.color-index-grey-5,
-  .chart__values-area--active.color-index-grey-2,
-  .chart__values-area--active.color-index-grey-5 {
+  .chart__values-bar--active.color-index-grey-2, .chart__values-bar--active.color-index-grey-5, .chart__values-area--active.color-index-grey-2, .chart__values-area--active.color-index-grey-5 {
     fill: #52555a; }
-  .chart__values-bar--active.color-index-grey-3,
-  .chart__values-bar--active.color-index-grey-6,
-  .chart__values-area--active.color-index-grey-3,
-  .chart__values-area--active.color-index-grey-6 {
+  .chart__values-bar--active.color-index-grey-3, .chart__values-bar--active.color-index-grey-6, .chart__values-area--active.color-index-grey-3, .chart__values-area--active.color-index-grey-6 {
     fill: #999999; }
   .chart__values-point {
     stroke-width: 3px;
@@ -1527,29 +1463,21 @@ button:not(.button) {
       stroke: #999999; }
     .chart__values-point.color-index-disabled {
       stroke: #999999; }
-    .chart__values-point.color-index-graph-1,
-    .chart__values-point.color-index-graph-6 {
+    .chart__values-point.color-index-graph-1, .chart__values-point.color-index-graph-6 {
       stroke: #ec9b58; }
-    .chart__values-point.color-index-graph-2,
-    .chart__values-point.color-index-graph-7 {
+    .chart__values-point.color-index-graph-2, .chart__values-point.color-index-graph-7 {
       stroke: #0049a0; }
-    .chart__values-point.color-index-graph-3,
-    .chart__values-point.color-index-graph-8 {
+    .chart__values-point.color-index-graph-3, .chart__values-point.color-index-graph-8 {
       stroke: #886f9c; }
-    .chart__values-point.color-index-graph-4,
-    .chart__values-point.color-index-graph-9 {
+    .chart__values-point.color-index-graph-4, .chart__values-point.color-index-graph-9 {
       stroke: #5fbcdd; }
-    .chart__values-point.color-index-graph-5,
-    .chart__values-point.color-index-graph-10 {
+    .chart__values-point.color-index-graph-5, .chart__values-point.color-index-graph-10 {
       stroke: #7fba44; }
-    .chart__values-point.color-index-grey-1,
-    .chart__values-point.color-index-grey-4 {
+    .chart__values-point.color-index-grey-1, .chart__values-point.color-index-grey-4 {
       stroke: #2d3034; }
-    .chart__values-point.color-index-grey-2,
-    .chart__values-point.color-index-grey-5 {
+    .chart__values-point.color-index-grey-2, .chart__values-point.color-index-grey-5 {
       stroke: #52555a; }
-    .chart__values-point.color-index-grey-3,
-    .chart__values-point.color-index-grey-6 {
+    .chart__values-point.color-index-grey-3, .chart__values-point.color-index-grey-6 {
       stroke: #999999; }
   .chart__values--loading {
     stroke-width: 24px; }
@@ -1571,29 +1499,21 @@ button:not(.button) {
       stroke: #999999; }
     .chart__values--loading.color-index-disabled {
       stroke: #999999; }
-    .chart__values--loading.color-index-graph-1,
-    .chart__values--loading.color-index-graph-6 {
+    .chart__values--loading.color-index-graph-1, .chart__values--loading.color-index-graph-6 {
       stroke: #ec9b58; }
-    .chart__values--loading.color-index-graph-2,
-    .chart__values--loading.color-index-graph-7 {
+    .chart__values--loading.color-index-graph-2, .chart__values--loading.color-index-graph-7 {
       stroke: #0049a0; }
-    .chart__values--loading.color-index-graph-3,
-    .chart__values--loading.color-index-graph-8 {
+    .chart__values--loading.color-index-graph-3, .chart__values--loading.color-index-graph-8 {
       stroke: #886f9c; }
-    .chart__values--loading.color-index-graph-4,
-    .chart__values--loading.color-index-graph-9 {
+    .chart__values--loading.color-index-graph-4, .chart__values--loading.color-index-graph-9 {
       stroke: #5fbcdd; }
-    .chart__values--loading.color-index-graph-5,
-    .chart__values--loading.color-index-graph-10 {
+    .chart__values--loading.color-index-graph-5, .chart__values--loading.color-index-graph-10 {
       stroke: #7fba44; }
-    .chart__values--loading.color-index-grey-1,
-    .chart__values--loading.color-index-grey-4 {
+    .chart__values--loading.color-index-grey-1, .chart__values--loading.color-index-grey-4 {
       stroke: #2d3034; }
-    .chart__values--loading.color-index-grey-2,
-    .chart__values--loading.color-index-grey-5 {
+    .chart__values--loading.color-index-grey-2, .chart__values--loading.color-index-grey-5 {
       stroke: #52555a; }
-    .chart__values--loading.color-index-grey-3,
-    .chart__values--loading.color-index-grey-6 {
+    .chart__values--loading.color-index-grey-3, .chart__values--loading.color-index-grey-6 {
       stroke: #999999; }
   .chart__threshold {
     stroke-width: 2px;
@@ -1609,20 +1529,15 @@ button:not(.button) {
     fill: rgba(153, 153, 153, 0.5); }
   .chart__yaxis .chart__bar.color-index-disabled {
     fill: rgba(153, 153, 153, 0.5); }
-  .chart__yaxis .chart__bar.color-index-graph-1,
-  .chart__yaxis .chart__bar.color-index-graph-6 {
+  .chart__yaxis .chart__bar.color-index-graph-1, .chart__yaxis .chart__bar.color-index-graph-6 {
     fill: rgba(236, 155, 88, 0.5); }
-  .chart__yaxis .chart__bar.color-index-graph-2,
-  .chart__yaxis .chart__bar.color-index-graph-7 {
+  .chart__yaxis .chart__bar.color-index-graph-2, .chart__yaxis .chart__bar.color-index-graph-7 {
     fill: rgba(0, 73, 160, 0.5); }
-  .chart__yaxis .chart__bar.color-index-graph-3,
-  .chart__yaxis .chart__bar.color-index-graph-8 {
+  .chart__yaxis .chart__bar.color-index-graph-3, .chart__yaxis .chart__bar.color-index-graph-8 {
     fill: rgba(136, 111, 156, 0.5); }
-  .chart__yaxis .chart__bar.color-index-graph-4,
-  .chart__yaxis .chart__bar.color-index-graph-9 {
+  .chart__yaxis .chart__bar.color-index-graph-4, .chart__yaxis .chart__bar.color-index-graph-9 {
     fill: rgba(95, 188, 221, 0.5); }
-  .chart__yaxis .chart__bar.color-index-graph-5,
-  .chart__yaxis .chart__bar.color-index-graph-10 {
+  .chart__yaxis .chart__bar.color-index-graph-5, .chart__yaxis .chart__bar.color-index-graph-10 {
     fill: rgba(127, 186, 68, 0.5); }
   .chart__xaxis-index text {
     fill: #777; }
@@ -1652,29 +1567,21 @@ button:not(.button) {
         fill: #999999; }
       .chart__cursor-point.color-index-disabled {
         fill: #999999; }
-      .chart__cursor-point.color-index-graph-1,
-      .chart__cursor-point.color-index-graph-6 {
+      .chart__cursor-point.color-index-graph-1, .chart__cursor-point.color-index-graph-6 {
         fill: #ec9b58; }
-      .chart__cursor-point.color-index-graph-2,
-      .chart__cursor-point.color-index-graph-7 {
+      .chart__cursor-point.color-index-graph-2, .chart__cursor-point.color-index-graph-7 {
         fill: #0049a0; }
-      .chart__cursor-point.color-index-graph-3,
-      .chart__cursor-point.color-index-graph-8 {
+      .chart__cursor-point.color-index-graph-3, .chart__cursor-point.color-index-graph-8 {
         fill: #886f9c; }
-      .chart__cursor-point.color-index-graph-4,
-      .chart__cursor-point.color-index-graph-9 {
+      .chart__cursor-point.color-index-graph-4, .chart__cursor-point.color-index-graph-9 {
         fill: #5fbcdd; }
-      .chart__cursor-point.color-index-graph-5,
-      .chart__cursor-point.color-index-graph-10 {
+      .chart__cursor-point.color-index-graph-5, .chart__cursor-point.color-index-graph-10 {
         fill: #7fba44; }
-      .chart__cursor-point.color-index-grey-1,
-      .chart__cursor-point.color-index-grey-4 {
+      .chart__cursor-point.color-index-grey-1, .chart__cursor-point.color-index-grey-4 {
         fill: #2d3034; }
-      .chart__cursor-point.color-index-grey-2,
-      .chart__cursor-point.color-index-grey-5 {
+      .chart__cursor-point.color-index-grey-2, .chart__cursor-point.color-index-grey-5 {
         fill: #52555a; }
-      .chart__cursor-point.color-index-grey-3,
-      .chart__cursor-point.color-index-grey-6 {
+      .chart__cursor-point.color-index-grey-3, .chart__cursor-point.color-index-grey-6 {
         fill: #999999; }
   .chart__legend--overlay {
     padding: 12px;
@@ -1688,144 +1595,84 @@ button:not(.button) {
         left: 0px;
         margin: 0px;
         background-color: rgba(255, 255, 255, 0.8); } }
-  .chart--area .chart__gradient.color-index-error .begin,
-  .chart--bar .chart__gradient.color-index-error .begin {
+  .chart--area .chart__gradient.color-index-error .begin, .chart--bar .chart__gradient.color-index-error .begin {
     stop-color: #c8200d; }
-  .chart--area .chart__gradient.color-index-error .mid,
-  .chart--bar .chart__gradient.color-index-error .mid {
+  .chart--area .chart__gradient.color-index-error .mid, .chart--bar .chart__gradient.color-index-error .mid {
     stop-color: #c8200d;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-error .end,
-  .chart--bar .chart__gradient.color-index-error .end {
+  .chart--area .chart__gradient.color-index-error .end, .chart--bar .chart__gradient.color-index-error .end {
     stop-color: #c8200d;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-warning .begin,
-  .chart--bar .chart__gradient.color-index-warning .begin {
+  .chart--area .chart__gradient.color-index-warning .begin, .chart--bar .chart__gradient.color-index-warning .begin {
     stop-color: #e57118; }
-  .chart--area .chart__gradient.color-index-warning .mid,
-  .chart--bar .chart__gradient.color-index-warning .mid {
+  .chart--area .chart__gradient.color-index-warning .mid, .chart--bar .chart__gradient.color-index-warning .mid {
     stop-color: #e57118;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-warning .end,
-  .chart--bar .chart__gradient.color-index-warning .end {
+  .chart--area .chart__gradient.color-index-warning .end, .chart--bar .chart__gradient.color-index-warning .end {
     stop-color: #e57118;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-ok .begin,
-  .chart--bar .chart__gradient.color-index-ok .begin {
+  .chart--area .chart__gradient.color-index-ok .begin, .chart--bar .chart__gradient.color-index-ok .begin {
     stop-color: #2aac24; }
-  .chart--area .chart__gradient.color-index-ok .mid,
-  .chart--bar .chart__gradient.color-index-ok .mid {
+  .chart--area .chart__gradient.color-index-ok .mid, .chart--bar .chart__gradient.color-index-ok .mid {
     stop-color: #2aac24;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-ok .end,
-  .chart--bar .chart__gradient.color-index-ok .end {
+  .chart--area .chart__gradient.color-index-ok .end, .chart--bar .chart__gradient.color-index-ok .end {
     stop-color: #2aac24;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-unknown .begin,
-  .chart--bar .chart__gradient.color-index-unknown .begin {
+  .chart--area .chart__gradient.color-index-unknown .begin, .chart--bar .chart__gradient.color-index-unknown .begin {
     stop-color: #999999; }
-  .chart--area .chart__gradient.color-index-unknown .mid,
-  .chart--bar .chart__gradient.color-index-unknown .mid {
+  .chart--area .chart__gradient.color-index-unknown .mid, .chart--bar .chart__gradient.color-index-unknown .mid {
     stop-color: #999999;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-unknown .end,
-  .chart--bar .chart__gradient.color-index-unknown .end {
+  .chart--area .chart__gradient.color-index-unknown .end, .chart--bar .chart__gradient.color-index-unknown .end {
     stop-color: #999999;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-disabled .begin,
-  .chart--bar .chart__gradient.color-index-disabled .begin {
+  .chart--area .chart__gradient.color-index-disabled .begin, .chart--bar .chart__gradient.color-index-disabled .begin {
     stop-color: #999999; }
-  .chart--area .chart__gradient.color-index-disabled .mid,
-  .chart--bar .chart__gradient.color-index-disabled .mid {
+  .chart--area .chart__gradient.color-index-disabled .mid, .chart--bar .chart__gradient.color-index-disabled .mid {
     stop-color: #999999;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-disabled .end,
-  .chart--bar .chart__gradient.color-index-disabled .end {
+  .chart--area .chart__gradient.color-index-disabled .end, .chart--bar .chart__gradient.color-index-disabled .end {
     stop-color: #999999;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-graph-1 .begin,
-  .chart--area .chart__gradient.color-index-graph-6 .begin,
-  .chart--bar .chart__gradient.color-index-graph-1 .begin,
-  .chart--bar .chart__gradient.color-index-graph-6 .begin {
+  .chart--area .chart__gradient.color-index-graph-1 .begin, .chart--area .chart__gradient.color-index-graph-6 .begin, .chart--bar .chart__gradient.color-index-graph-1 .begin, .chart--bar .chart__gradient.color-index-graph-6 .begin {
     stop-color: #ec9b58; }
-  .chart--area .chart__gradient.color-index-graph-1 .mid,
-  .chart--area .chart__gradient.color-index-graph-6 .mid,
-  .chart--bar .chart__gradient.color-index-graph-1 .mid,
-  .chart--bar .chart__gradient.color-index-graph-6 .mid {
+  .chart--area .chart__gradient.color-index-graph-1 .mid, .chart--area .chart__gradient.color-index-graph-6 .mid, .chart--bar .chart__gradient.color-index-graph-1 .mid, .chart--bar .chart__gradient.color-index-graph-6 .mid {
     stop-color: #ec9b58;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-graph-1 .end,
-  .chart--area .chart__gradient.color-index-graph-6 .end,
-  .chart--bar .chart__gradient.color-index-graph-1 .end,
-  .chart--bar .chart__gradient.color-index-graph-6 .end {
+  .chart--area .chart__gradient.color-index-graph-1 .end, .chart--area .chart__gradient.color-index-graph-6 .end, .chart--bar .chart__gradient.color-index-graph-1 .end, .chart--bar .chart__gradient.color-index-graph-6 .end {
     stop-color: #ec9b58;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-graph-2 .begin,
-  .chart--area .chart__gradient.color-index-graph-7 .begin,
-  .chart--bar .chart__gradient.color-index-graph-2 .begin,
-  .chart--bar .chart__gradient.color-index-graph-7 .begin {
+  .chart--area .chart__gradient.color-index-graph-2 .begin, .chart--area .chart__gradient.color-index-graph-7 .begin, .chart--bar .chart__gradient.color-index-graph-2 .begin, .chart--bar .chart__gradient.color-index-graph-7 .begin {
     stop-color: #0049a0; }
-  .chart--area .chart__gradient.color-index-graph-2 .mid,
-  .chart--area .chart__gradient.color-index-graph-7 .mid,
-  .chart--bar .chart__gradient.color-index-graph-2 .mid,
-  .chart--bar .chart__gradient.color-index-graph-7 .mid {
+  .chart--area .chart__gradient.color-index-graph-2 .mid, .chart--area .chart__gradient.color-index-graph-7 .mid, .chart--bar .chart__gradient.color-index-graph-2 .mid, .chart--bar .chart__gradient.color-index-graph-7 .mid {
     stop-color: #0049a0;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-graph-2 .end,
-  .chart--area .chart__gradient.color-index-graph-7 .end,
-  .chart--bar .chart__gradient.color-index-graph-2 .end,
-  .chart--bar .chart__gradient.color-index-graph-7 .end {
+  .chart--area .chart__gradient.color-index-graph-2 .end, .chart--area .chart__gradient.color-index-graph-7 .end, .chart--bar .chart__gradient.color-index-graph-2 .end, .chart--bar .chart__gradient.color-index-graph-7 .end {
     stop-color: #0049a0;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-graph-3 .begin,
-  .chart--area .chart__gradient.color-index-graph-8 .begin,
-  .chart--bar .chart__gradient.color-index-graph-3 .begin,
-  .chart--bar .chart__gradient.color-index-graph-8 .begin {
+  .chart--area .chart__gradient.color-index-graph-3 .begin, .chart--area .chart__gradient.color-index-graph-8 .begin, .chart--bar .chart__gradient.color-index-graph-3 .begin, .chart--bar .chart__gradient.color-index-graph-8 .begin {
     stop-color: #886f9c; }
-  .chart--area .chart__gradient.color-index-graph-3 .mid,
-  .chart--area .chart__gradient.color-index-graph-8 .mid,
-  .chart--bar .chart__gradient.color-index-graph-3 .mid,
-  .chart--bar .chart__gradient.color-index-graph-8 .mid {
+  .chart--area .chart__gradient.color-index-graph-3 .mid, .chart--area .chart__gradient.color-index-graph-8 .mid, .chart--bar .chart__gradient.color-index-graph-3 .mid, .chart--bar .chart__gradient.color-index-graph-8 .mid {
     stop-color: #886f9c;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-graph-3 .end,
-  .chart--area .chart__gradient.color-index-graph-8 .end,
-  .chart--bar .chart__gradient.color-index-graph-3 .end,
-  .chart--bar .chart__gradient.color-index-graph-8 .end {
+  .chart--area .chart__gradient.color-index-graph-3 .end, .chart--area .chart__gradient.color-index-graph-8 .end, .chart--bar .chart__gradient.color-index-graph-3 .end, .chart--bar .chart__gradient.color-index-graph-8 .end {
     stop-color: #886f9c;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-graph-4 .begin,
-  .chart--area .chart__gradient.color-index-graph-9 .begin,
-  .chart--bar .chart__gradient.color-index-graph-4 .begin,
-  .chart--bar .chart__gradient.color-index-graph-9 .begin {
+  .chart--area .chart__gradient.color-index-graph-4 .begin, .chart--area .chart__gradient.color-index-graph-9 .begin, .chart--bar .chart__gradient.color-index-graph-4 .begin, .chart--bar .chart__gradient.color-index-graph-9 .begin {
     stop-color: #5fbcdd; }
-  .chart--area .chart__gradient.color-index-graph-4 .mid,
-  .chart--area .chart__gradient.color-index-graph-9 .mid,
-  .chart--bar .chart__gradient.color-index-graph-4 .mid,
-  .chart--bar .chart__gradient.color-index-graph-9 .mid {
+  .chart--area .chart__gradient.color-index-graph-4 .mid, .chart--area .chart__gradient.color-index-graph-9 .mid, .chart--bar .chart__gradient.color-index-graph-4 .mid, .chart--bar .chart__gradient.color-index-graph-9 .mid {
     stop-color: #5fbcdd;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-graph-4 .end,
-  .chart--area .chart__gradient.color-index-graph-9 .end,
-  .chart--bar .chart__gradient.color-index-graph-4 .end,
-  .chart--bar .chart__gradient.color-index-graph-9 .end {
+  .chart--area .chart__gradient.color-index-graph-4 .end, .chart--area .chart__gradient.color-index-graph-9 .end, .chart--bar .chart__gradient.color-index-graph-4 .end, .chart--bar .chart__gradient.color-index-graph-9 .end {
     stop-color: #5fbcdd;
     stop-opacity: 0; }
-  .chart--area .chart__gradient.color-index-graph-5 .begin,
-  .chart--area .chart__gradient.color-index-graph-10 .begin,
-  .chart--bar .chart__gradient.color-index-graph-5 .begin,
-  .chart--bar .chart__gradient.color-index-graph-10 .begin {
+  .chart--area .chart__gradient.color-index-graph-5 .begin, .chart--area .chart__gradient.color-index-graph-10 .begin, .chart--bar .chart__gradient.color-index-graph-5 .begin, .chart--bar .chart__gradient.color-index-graph-10 .begin {
     stop-color: #7fba44; }
-  .chart--area .chart__gradient.color-index-graph-5 .mid,
-  .chart--area .chart__gradient.color-index-graph-10 .mid,
-  .chart--bar .chart__gradient.color-index-graph-5 .mid,
-  .chart--bar .chart__gradient.color-index-graph-10 .mid {
+  .chart--area .chart__gradient.color-index-graph-5 .mid, .chart--area .chart__gradient.color-index-graph-10 .mid, .chart--bar .chart__gradient.color-index-graph-5 .mid, .chart--bar .chart__gradient.color-index-graph-10 .mid {
     stop-color: #7fba44;
     stop-opacity: 0.5; }
-  .chart--area .chart__gradient.color-index-graph-5 .end,
-  .chart--area .chart__gradient.color-index-graph-10 .end,
-  .chart--bar .chart__gradient.color-index-graph-5 .end,
-  .chart--bar .chart__gradient.color-index-graph-10 .end {
+  .chart--area .chart__gradient.color-index-graph-5 .end, .chart--area .chart__gradient.color-index-graph-10 .end, .chart--bar .chart__gradient.color-index-graph-5 .end, .chart--bar .chart__gradient.color-index-graph-10 .end {
     stop-color: #7fba44;
     stop-opacity: 0; }
   .chart--small .chart__graphic {
@@ -1838,66 +1685,35 @@ button:not(.button) {
     .chart--sparkline .chart__graphic {
       width: auto;
       height: 24px; }
-    .chart--sparkline .chart__values-bar.color-index-unset,
-    .chart--sparkline .chart__values-area.color-index-unset {
+    .chart--sparkline .chart__values-bar.color-index-unset, .chart--sparkline .chart__values-area.color-index-unset {
       fill: #ddd; }
-    .chart--sparkline .chart__values-bar.color-index-brand,
-    .chart--sparkline .chart__values-area.color-index-brand {
+    .chart--sparkline .chart__values-bar.color-index-brand, .chart--sparkline .chart__values-area.color-index-brand {
       fill: #ff8300; }
-    .chart--sparkline .chart__values-bar.color-index-error,
-    .chart--sparkline .chart__values-area.color-index-error {
+    .chart--sparkline .chart__values-bar.color-index-error, .chart--sparkline .chart__values-area.color-index-error {
       fill: #c8200d; }
-    .chart--sparkline .chart__values-bar.color-index-warning,
-    .chart--sparkline .chart__values-area.color-index-warning {
+    .chart--sparkline .chart__values-bar.color-index-warning, .chart--sparkline .chart__values-area.color-index-warning {
       fill: #e57118; }
-    .chart--sparkline .chart__values-bar.color-index-ok,
-    .chart--sparkline .chart__values-area.color-index-ok {
+    .chart--sparkline .chart__values-bar.color-index-ok, .chart--sparkline .chart__values-area.color-index-ok {
       fill: #2aac24; }
-    .chart--sparkline .chart__values-bar.color-index-unknown,
-    .chart--sparkline .chart__values-area.color-index-unknown {
+    .chart--sparkline .chart__values-bar.color-index-unknown, .chart--sparkline .chart__values-area.color-index-unknown {
       fill: #999999; }
-    .chart--sparkline .chart__values-bar.color-index-disabled,
-    .chart--sparkline .chart__values-area.color-index-disabled {
+    .chart--sparkline .chart__values-bar.color-index-disabled, .chart--sparkline .chart__values-area.color-index-disabled {
       fill: #999999; }
-    .chart--sparkline .chart__values-bar.color-index-graph-1,
-    .chart--sparkline .chart__values-bar.color-index-graph-6,
-    .chart--sparkline .chart__values-area.color-index-graph-1,
-    .chart--sparkline .chart__values-area.color-index-graph-6 {
+    .chart--sparkline .chart__values-bar.color-index-graph-1, .chart--sparkline .chart__values-bar.color-index-graph-6, .chart--sparkline .chart__values-area.color-index-graph-1, .chart--sparkline .chart__values-area.color-index-graph-6 {
       fill: #ec9b58; }
-    .chart--sparkline .chart__values-bar.color-index-graph-2,
-    .chart--sparkline .chart__values-bar.color-index-graph-7,
-    .chart--sparkline .chart__values-area.color-index-graph-2,
-    .chart--sparkline .chart__values-area.color-index-graph-7 {
+    .chart--sparkline .chart__values-bar.color-index-graph-2, .chart--sparkline .chart__values-bar.color-index-graph-7, .chart--sparkline .chart__values-area.color-index-graph-2, .chart--sparkline .chart__values-area.color-index-graph-7 {
       fill: #0049a0; }
-    .chart--sparkline .chart__values-bar.color-index-graph-3,
-    .chart--sparkline .chart__values-bar.color-index-graph-8,
-    .chart--sparkline .chart__values-area.color-index-graph-3,
-    .chart--sparkline .chart__values-area.color-index-graph-8 {
+    .chart--sparkline .chart__values-bar.color-index-graph-3, .chart--sparkline .chart__values-bar.color-index-graph-8, .chart--sparkline .chart__values-area.color-index-graph-3, .chart--sparkline .chart__values-area.color-index-graph-8 {
       fill: #886f9c; }
-    .chart--sparkline .chart__values-bar.color-index-graph-4,
-    .chart--sparkline .chart__values-bar.color-index-graph-9,
-    .chart--sparkline .chart__values-area.color-index-graph-4,
-    .chart--sparkline .chart__values-area.color-index-graph-9 {
+    .chart--sparkline .chart__values-bar.color-index-graph-4, .chart--sparkline .chart__values-bar.color-index-graph-9, .chart--sparkline .chart__values-area.color-index-graph-4, .chart--sparkline .chart__values-area.color-index-graph-9 {
       fill: #5fbcdd; }
-    .chart--sparkline .chart__values-bar.color-index-graph-5,
-    .chart--sparkline .chart__values-bar.color-index-graph-10,
-    .chart--sparkline .chart__values-area.color-index-graph-5,
-    .chart--sparkline .chart__values-area.color-index-graph-10 {
+    .chart--sparkline .chart__values-bar.color-index-graph-5, .chart--sparkline .chart__values-bar.color-index-graph-10, .chart--sparkline .chart__values-area.color-index-graph-5, .chart--sparkline .chart__values-area.color-index-graph-10 {
       fill: #7fba44; }
-    .chart--sparkline .chart__values-bar.color-index-grey-1,
-    .chart--sparkline .chart__values-bar.color-index-grey-4,
-    .chart--sparkline .chart__values-area.color-index-grey-1,
-    .chart--sparkline .chart__values-area.color-index-grey-4 {
+    .chart--sparkline .chart__values-bar.color-index-grey-1, .chart--sparkline .chart__values-bar.color-index-grey-4, .chart--sparkline .chart__values-area.color-index-grey-1, .chart--sparkline .chart__values-area.color-index-grey-4 {
       fill: #2d3034; }
-    .chart--sparkline .chart__values-bar.color-index-grey-2,
-    .chart--sparkline .chart__values-bar.color-index-grey-5,
-    .chart--sparkline .chart__values-area.color-index-grey-2,
-    .chart--sparkline .chart__values-area.color-index-grey-5 {
+    .chart--sparkline .chart__values-bar.color-index-grey-2, .chart--sparkline .chart__values-bar.color-index-grey-5, .chart--sparkline .chart__values-area.color-index-grey-2, .chart--sparkline .chart__values-area.color-index-grey-5 {
       fill: #52555a; }
-    .chart--sparkline .chart__values-bar.color-index-grey-3,
-    .chart--sparkline .chart__values-bar.color-index-grey-6,
-    .chart--sparkline .chart__values-area.color-index-grey-3,
-    .chart--sparkline .chart__values-area.color-index-grey-6 {
+    .chart--sparkline .chart__values-bar.color-index-grey-3, .chart--sparkline .chart__values-bar.color-index-grey-6, .chart--sparkline .chart__values-area.color-index-grey-3, .chart--sparkline .chart__values-area.color-index-grey-6 {
       fill: #999999; }
 
 .check-box {
@@ -2117,29 +1933,21 @@ button:not(.button) {
       fill: #999999; }
     .distribution__box.color-index-disabled {
       fill: #999999; }
-    .distribution__box.color-index-graph-1,
-    .distribution__box.color-index-graph-6 {
+    .distribution__box.color-index-graph-1, .distribution__box.color-index-graph-6 {
       fill: #ec9b58; }
-    .distribution__box.color-index-graph-2,
-    .distribution__box.color-index-graph-7 {
+    .distribution__box.color-index-graph-2, .distribution__box.color-index-graph-7 {
       fill: #0049a0; }
-    .distribution__box.color-index-graph-3,
-    .distribution__box.color-index-graph-8 {
+    .distribution__box.color-index-graph-3, .distribution__box.color-index-graph-8 {
       fill: #886f9c; }
-    .distribution__box.color-index-graph-4,
-    .distribution__box.color-index-graph-9 {
+    .distribution__box.color-index-graph-4, .distribution__box.color-index-graph-9 {
       fill: #5fbcdd; }
-    .distribution__box.color-index-graph-5,
-    .distribution__box.color-index-graph-10 {
+    .distribution__box.color-index-graph-5, .distribution__box.color-index-graph-10 {
       fill: #7fba44; }
-    .distribution__box.color-index-grey-1,
-    .distribution__box.color-index-grey-4 {
+    .distribution__box.color-index-grey-1, .distribution__box.color-index-grey-4 {
       fill: #2d3034; }
-    .distribution__box.color-index-grey-2,
-    .distribution__box.color-index-grey-5 {
+    .distribution__box.color-index-grey-2, .distribution__box.color-index-grey-5 {
       fill: #52555a; }
-    .distribution__box.color-index-grey-3,
-    .distribution__box.color-index-grey-6 {
+    .distribution__box.color-index-grey-3, .distribution__box.color-index-grey-6 {
       fill: #999999; }
   .distribution__icons.color-index-loading {
     stroke: #ddd;
@@ -2159,29 +1967,21 @@ button:not(.button) {
     stroke: #999999; }
   .distribution__icons.color-index-disabled {
     stroke: #999999; }
-  .distribution__icons.color-index-graph-1,
-  .distribution__icons.color-index-graph-6 {
+  .distribution__icons.color-index-graph-1, .distribution__icons.color-index-graph-6 {
     stroke: #ec9b58; }
-  .distribution__icons.color-index-graph-2,
-  .distribution__icons.color-index-graph-7 {
+  .distribution__icons.color-index-graph-2, .distribution__icons.color-index-graph-7 {
     stroke: #0049a0; }
-  .distribution__icons.color-index-graph-3,
-  .distribution__icons.color-index-graph-8 {
+  .distribution__icons.color-index-graph-3, .distribution__icons.color-index-graph-8 {
     stroke: #886f9c; }
-  .distribution__icons.color-index-graph-4,
-  .distribution__icons.color-index-graph-9 {
+  .distribution__icons.color-index-graph-4, .distribution__icons.color-index-graph-9 {
     stroke: #5fbcdd; }
-  .distribution__icons.color-index-graph-5,
-  .distribution__icons.color-index-graph-10 {
+  .distribution__icons.color-index-graph-5, .distribution__icons.color-index-graph-10 {
     stroke: #7fba44; }
-  .distribution__icons.color-index-grey-1,
-  .distribution__icons.color-index-grey-4 {
+  .distribution__icons.color-index-grey-1, .distribution__icons.color-index-grey-4 {
     stroke: #2d3034; }
-  .distribution__icons.color-index-grey-2,
-  .distribution__icons.color-index-grey-5 {
+  .distribution__icons.color-index-grey-2, .distribution__icons.color-index-grey-5 {
     stroke: #52555a; }
-  .distribution__icons.color-index-grey-3,
-  .distribution__icons.color-index-grey-6 {
+  .distribution__icons.color-index-grey-3, .distribution__icons.color-index-grey-6 {
     stroke: #999999; }
   .distribution__label {
     position: absolute;
@@ -2238,29 +2038,21 @@ button:not(.button) {
       stroke: #999999; }
     .distribution__loading-indicator.color-index-disabled {
       stroke: #999999; }
-    .distribution__loading-indicator.color-index-graph-1,
-    .distribution__loading-indicator.color-index-graph-6 {
+    .distribution__loading-indicator.color-index-graph-1, .distribution__loading-indicator.color-index-graph-6 {
       stroke: #ec9b58; }
-    .distribution__loading-indicator.color-index-graph-2,
-    .distribution__loading-indicator.color-index-graph-7 {
+    .distribution__loading-indicator.color-index-graph-2, .distribution__loading-indicator.color-index-graph-7 {
       stroke: #0049a0; }
-    .distribution__loading-indicator.color-index-graph-3,
-    .distribution__loading-indicator.color-index-graph-8 {
+    .distribution__loading-indicator.color-index-graph-3, .distribution__loading-indicator.color-index-graph-8 {
       stroke: #886f9c; }
-    .distribution__loading-indicator.color-index-graph-4,
-    .distribution__loading-indicator.color-index-graph-9 {
+    .distribution__loading-indicator.color-index-graph-4, .distribution__loading-indicator.color-index-graph-9 {
       stroke: #5fbcdd; }
-    .distribution__loading-indicator.color-index-graph-5,
-    .distribution__loading-indicator.color-index-graph-10 {
+    .distribution__loading-indicator.color-index-graph-5, .distribution__loading-indicator.color-index-graph-10 {
       stroke: #7fba44; }
-    .distribution__loading-indicator.color-index-grey-1,
-    .distribution__loading-indicator.color-index-grey-4 {
+    .distribution__loading-indicator.color-index-grey-1, .distribution__loading-indicator.color-index-grey-4 {
       stroke: #2d3034; }
-    .distribution__loading-indicator.color-index-grey-2,
-    .distribution__loading-indicator.color-index-grey-5 {
+    .distribution__loading-indicator.color-index-grey-2, .distribution__loading-indicator.color-index-grey-5 {
       stroke: #52555a; }
-    .distribution__loading-indicator.color-index-grey-3,
-    .distribution__loading-indicator.color-index-grey-6 {
+    .distribution__loading-indicator.color-index-grey-3, .distribution__loading-indicator.color-index-grey-6 {
       stroke: #999999; }
   .distribution--small .distribution__graphic {
     height: 96px; }
@@ -2326,29 +2118,21 @@ button:not(.button) {
     stroke: #999999; }
   .donut__slice.color-index-disabled {
     stroke: #999999; }
-  .donut__slice.color-index-graph-1,
-  .donut__slice.color-index-graph-6 {
+  .donut__slice.color-index-graph-1, .donut__slice.color-index-graph-6 {
     stroke: #ec9b58; }
-  .donut__slice.color-index-graph-2,
-  .donut__slice.color-index-graph-7 {
+  .donut__slice.color-index-graph-2, .donut__slice.color-index-graph-7 {
     stroke: #0049a0; }
-  .donut__slice.color-index-graph-3,
-  .donut__slice.color-index-graph-8 {
+  .donut__slice.color-index-graph-3, .donut__slice.color-index-graph-8 {
     stroke: #886f9c; }
-  .donut__slice.color-index-graph-4,
-  .donut__slice.color-index-graph-9 {
+  .donut__slice.color-index-graph-4, .donut__slice.color-index-graph-9 {
     stroke: #5fbcdd; }
-  .donut__slice.color-index-graph-5,
-  .donut__slice.color-index-graph-10 {
+  .donut__slice.color-index-graph-5, .donut__slice.color-index-graph-10 {
     stroke: #7fba44; }
-  .donut__slice.color-index-grey-1,
-  .donut__slice.color-index-grey-4 {
+  .donut__slice.color-index-grey-1, .donut__slice.color-index-grey-4 {
     stroke: #2d3034; }
-  .donut__slice.color-index-grey-2,
-  .donut__slice.color-index-grey-5 {
+  .donut__slice.color-index-grey-2, .donut__slice.color-index-grey-5 {
     stroke: #52555a; }
-  .donut__slice.color-index-grey-3,
-  .donut__slice.color-index-grey-6 {
+  .donut__slice.color-index-grey-3, .donut__slice.color-index-grey-6 {
     stroke: #999999; }
   @media screen and (min-width: 45em) {
     .donut__slice {
@@ -2368,29 +2152,21 @@ button:not(.button) {
     fill: #999999; }
   .donut__slice-indicator.color-index-disabled {
     fill: #999999; }
-  .donut__slice-indicator.color-index-graph-1,
-  .donut__slice-indicator.color-index-graph-6 {
+  .donut__slice-indicator.color-index-graph-1, .donut__slice-indicator.color-index-graph-6 {
     fill: #ec9b58; }
-  .donut__slice-indicator.color-index-graph-2,
-  .donut__slice-indicator.color-index-graph-7 {
+  .donut__slice-indicator.color-index-graph-2, .donut__slice-indicator.color-index-graph-7 {
     fill: #0049a0; }
-  .donut__slice-indicator.color-index-graph-3,
-  .donut__slice-indicator.color-index-graph-8 {
+  .donut__slice-indicator.color-index-graph-3, .donut__slice-indicator.color-index-graph-8 {
     fill: #886f9c; }
-  .donut__slice-indicator.color-index-graph-4,
-  .donut__slice-indicator.color-index-graph-9 {
+  .donut__slice-indicator.color-index-graph-4, .donut__slice-indicator.color-index-graph-9 {
     fill: #5fbcdd; }
-  .donut__slice-indicator.color-index-graph-5,
-  .donut__slice-indicator.color-index-graph-10 {
+  .donut__slice-indicator.color-index-graph-5, .donut__slice-indicator.color-index-graph-10 {
     fill: #7fba44; }
-  .donut__slice-indicator.color-index-grey-1,
-  .donut__slice-indicator.color-index-grey-4 {
+  .donut__slice-indicator.color-index-grey-1, .donut__slice-indicator.color-index-grey-4 {
     fill: #2d3034; }
-  .donut__slice-indicator.color-index-grey-2,
-  .donut__slice-indicator.color-index-grey-5 {
+  .donut__slice-indicator.color-index-grey-2, .donut__slice-indicator.color-index-grey-5 {
     fill: #52555a; }
-  .donut__slice-indicator.color-index-grey-3,
-  .donut__slice-indicator.color-index-grey-6 {
+  .donut__slice-indicator.color-index-grey-3, .donut__slice-indicator.color-index-grey-6 {
     fill: #999999; }
   .donut__slice--active {
     stroke-width: 24px; }
@@ -2421,8 +2197,7 @@ button:not(.button) {
     font-size: 0.875rem;
     line-height: 16px; }
 
-.donut__min-label,
-.donut__max-label {
+.donut__min-label, .donut__max-label {
   position: absolute;
   bottom: 0px;
   color: #777;
@@ -2442,8 +2217,7 @@ button:not(.button) {
 @media screen and (min-width: 45em) {
   .donut--landscape {
     white-space: nowrap; }
-    .donut--landscape .donut__graphic-container,
-    .donut--landscape .donut__legend {
+    .donut--landscape .donut__graphic-container, .donut--landscape .donut__legend {
       display: inline-block;
       vertical-align: middle; }
     .donut--landscape .donut__legend {
@@ -2947,29 +2721,21 @@ div.header--flush .header__wrapper {
     stroke: #999999; }
   .control-icon.color-index-disabled {
     stroke: #999999; }
-  .control-icon.color-index-graph-1,
-  .control-icon.color-index-graph-6 {
+  .control-icon.color-index-graph-1, .control-icon.color-index-graph-6 {
     stroke: #ec9b58; }
-  .control-icon.color-index-graph-2,
-  .control-icon.color-index-graph-7 {
+  .control-icon.color-index-graph-2, .control-icon.color-index-graph-7 {
     stroke: #0049a0; }
-  .control-icon.color-index-graph-3,
-  .control-icon.color-index-graph-8 {
+  .control-icon.color-index-graph-3, .control-icon.color-index-graph-8 {
     stroke: #886f9c; }
-  .control-icon.color-index-graph-4,
-  .control-icon.color-index-graph-9 {
+  .control-icon.color-index-graph-4, .control-icon.color-index-graph-9 {
     stroke: #5fbcdd; }
-  .control-icon.color-index-graph-5,
-  .control-icon.color-index-graph-10 {
+  .control-icon.color-index-graph-5, .control-icon.color-index-graph-10 {
     stroke: #7fba44; }
-  .control-icon.color-index-grey-1,
-  .control-icon.color-index-grey-4 {
+  .control-icon.color-index-grey-1, .control-icon.color-index-grey-4 {
     stroke: #2d3034; }
-  .control-icon.color-index-grey-2,
-  .control-icon.color-index-grey-5 {
+  .control-icon.color-index-grey-2, .control-icon.color-index-grey-5 {
     stroke: #52555a; }
-  .control-icon.color-index-grey-3,
-  .control-icon.color-index-grey-6 {
+  .control-icon.color-index-grey-3, .control-icon.color-index-grey-6 {
     stroke: #999999; }
   .control-icon.color-index-unset {
     fill: #ddd; }
@@ -2985,29 +2751,21 @@ div.header--flush .header__wrapper {
     fill: #999999; }
   .control-icon.color-index-disabled {
     fill: #999999; }
-  .control-icon.color-index-graph-1,
-  .control-icon.color-index-graph-6 {
+  .control-icon.color-index-graph-1, .control-icon.color-index-graph-6 {
     fill: #ec9b58; }
-  .control-icon.color-index-graph-2,
-  .control-icon.color-index-graph-7 {
+  .control-icon.color-index-graph-2, .control-icon.color-index-graph-7 {
     fill: #0049a0; }
-  .control-icon.color-index-graph-3,
-  .control-icon.color-index-graph-8 {
+  .control-icon.color-index-graph-3, .control-icon.color-index-graph-8 {
     fill: #886f9c; }
-  .control-icon.color-index-graph-4,
-  .control-icon.color-index-graph-9 {
+  .control-icon.color-index-graph-4, .control-icon.color-index-graph-9 {
     fill: #5fbcdd; }
-  .control-icon.color-index-graph-5,
-  .control-icon.color-index-graph-10 {
+  .control-icon.color-index-graph-5, .control-icon.color-index-graph-10 {
     fill: #7fba44; }
-  .control-icon.color-index-grey-1,
-  .control-icon.color-index-grey-4 {
+  .control-icon.color-index-grey-1, .control-icon.color-index-grey-4 {
     fill: #2d3034; }
-  .control-icon.color-index-grey-2,
-  .control-icon.color-index-grey-5 {
+  .control-icon.color-index-grey-2, .control-icon.color-index-grey-5 {
     fill: #52555a; }
-  .control-icon.color-index-grey-3,
-  .control-icon.color-index-grey-6 {
+  .control-icon.color-index-grey-3, .control-icon.color-index-grey-6 {
     fill: #999999; }
   @media screen and (min-width: 45em) {
     .control-icon {
@@ -3103,6 +2861,40 @@ div.header--flush .header__wrapper {
 .logo-icon {
   width: 48px;
   height: 48px; }
+  .logo-icon.color-index-loading {
+    stroke: #ddd;
+    stroke-dasharray: 1px 10px;
+    stroke-dashoffset: 0; }
+  .logo-icon.color-index-unset {
+    stroke: #ddd; }
+  .logo-icon.color-index-brand {
+    stroke: #ff8300; }
+  .logo-icon.color-index-error {
+    stroke: #c8200d; }
+  .logo-icon.color-index-warning {
+    stroke: #e57118; }
+  .logo-icon.color-index-ok {
+    stroke: #2aac24; }
+  .logo-icon.color-index-unknown {
+    stroke: #999999; }
+  .logo-icon.color-index-disabled {
+    stroke: #999999; }
+  .logo-icon.color-index-graph-1, .logo-icon.color-index-graph-6 {
+    stroke: #ec9b58; }
+  .logo-icon.color-index-graph-2, .logo-icon.color-index-graph-7 {
+    stroke: #0049a0; }
+  .logo-icon.color-index-graph-3, .logo-icon.color-index-graph-8 {
+    stroke: #886f9c; }
+  .logo-icon.color-index-graph-4, .logo-icon.color-index-graph-9 {
+    stroke: #5fbcdd; }
+  .logo-icon.color-index-graph-5, .logo-icon.color-index-graph-10 {
+    stroke: #7fba44; }
+  .logo-icon.color-index-grey-1, .logo-icon.color-index-grey-4 {
+    stroke: #2d3034; }
+  .logo-icon.color-index-grey-2, .logo-icon.color-index-grey-5 {
+    stroke: #52555a; }
+  .logo-icon.color-index-grey-3, .logo-icon.color-index-grey-6 {
+    stroke: #999999; }
   .logo-icon--small {
     width: 24px;
     height: 24px; }
@@ -3251,7 +3043,6 @@ a.active > .label .label__icon.control-icon svg {
       background-image: radial-gradient(circle at top, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); }
       .layer--align-center:not(.layer--hidden) .layer__container {
         left: 50%;
-        -webkit-transform: translateX(-50%);
         transform: translateX(-50%); } }
   @media screen and (min-width: 45em) {
     .layer--align-left:not(.layer--hidden) {
@@ -3283,7 +3074,6 @@ a.active > .label .label__icon.control-icon svg {
       background-image: radial-gradient(circle at top, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); }
       .layer--align-top:not(.layer--hidden) .layer__container {
         left: 50%;
-        -webkit-transform: translateX(-50%);
         transform: translateX(-50%); } }
     @media screen and (min-width: 45em) and (min-width: 45em) {
       .layer--align-top:not(.layer--hidden) .layer__container {
@@ -3370,8 +3160,7 @@ a.active > .label .label__icon.control-icon svg {
   margin: 0px;
   padding: 0px;
   overflow: auto; }
-  .list__more,
-  .list__empty {
+  .list__more, .list__empty {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 12px;
@@ -3401,8 +3190,7 @@ a.active > .label .label__icon.control-icon svg {
         width: 100%;
         max-width: none;
         object-fit: cover; }
-    .list .list-item__label,
-    .list .list-item__annotation {
+    .list .list-item__label, .list .list-item__annotation {
       flex: 1; }
     .list .list-item__annotation {
       margin-left: 24px;
@@ -3445,23 +3233,18 @@ a.active > .label .label__icon.control-icon svg {
   white-space: normal;
   display: inline-block;
   margin: 0px; }
-  .legend__item,
-  .legend__total {
+  .legend__item, .legend__total {
     color: #777; }
-    .legend__item > *,
-    .legend__total > * {
+    .legend__item > *, .legend__total > * {
       vertical-align: top; }
-    .legend__item-label,
-    .legend__total-label {
+    .legend__item-label, .legend__total-label {
       display: inline-block;
       width: 72px; }
-    .legend__item-value,
-    .legend__total-value {
+    .legend__item-value, .legend__total-value {
       display: inline-block;
       width: 72px;
       text-align: right; }
-    .legend__item-units,
-    .legend__total-units {
+    .legend__item-units, .legend__total-units {
       display: inline-block;
       margin-left: 6px; }
   .legend__item {
@@ -3490,29 +3273,21 @@ a.active > .label .label__icon.control-icon svg {
         stroke: #999999; }
       .legend__item svg.legend__item-swatch.color-index-disabled {
         stroke: #999999; }
-      .legend__item svg.legend__item-swatch.color-index-graph-1,
-      .legend__item svg.legend__item-swatch.color-index-graph-6 {
+      .legend__item svg.legend__item-swatch.color-index-graph-1, .legend__item svg.legend__item-swatch.color-index-graph-6 {
         stroke: #ec9b58; }
-      .legend__item svg.legend__item-swatch.color-index-graph-2,
-      .legend__item svg.legend__item-swatch.color-index-graph-7 {
+      .legend__item svg.legend__item-swatch.color-index-graph-2, .legend__item svg.legend__item-swatch.color-index-graph-7 {
         stroke: #0049a0; }
-      .legend__item svg.legend__item-swatch.color-index-graph-3,
-      .legend__item svg.legend__item-swatch.color-index-graph-8 {
+      .legend__item svg.legend__item-swatch.color-index-graph-3, .legend__item svg.legend__item-swatch.color-index-graph-8 {
         stroke: #886f9c; }
-      .legend__item svg.legend__item-swatch.color-index-graph-4,
-      .legend__item svg.legend__item-swatch.color-index-graph-9 {
+      .legend__item svg.legend__item-swatch.color-index-graph-4, .legend__item svg.legend__item-swatch.color-index-graph-9 {
         stroke: #5fbcdd; }
-      .legend__item svg.legend__item-swatch.color-index-graph-5,
-      .legend__item svg.legend__item-swatch.color-index-graph-10 {
+      .legend__item svg.legend__item-swatch.color-index-graph-5, .legend__item svg.legend__item-swatch.color-index-graph-10 {
         stroke: #7fba44; }
-      .legend__item svg.legend__item-swatch.color-index-grey-1,
-      .legend__item svg.legend__item-swatch.color-index-grey-4 {
+      .legend__item svg.legend__item-swatch.color-index-grey-1, .legend__item svg.legend__item-swatch.color-index-grey-4 {
         stroke: #2d3034; }
-      .legend__item svg.legend__item-swatch.color-index-grey-2,
-      .legend__item svg.legend__item-swatch.color-index-grey-5 {
+      .legend__item svg.legend__item-swatch.color-index-grey-2, .legend__item svg.legend__item-swatch.color-index-grey-5 {
         stroke: #52555a; }
-      .legend__item svg.legend__item-swatch.color-index-grey-3,
-      .legend__item svg.legend__item-swatch.color-index-grey-6 {
+      .legend__item svg.legend__item-swatch.color-index-grey-3, .legend__item svg.legend__item-swatch.color-index-grey-6 {
         stroke: #999999; }
       .legend__item svg.legend__item-swatch path {
         stroke-width: 12px;
@@ -3686,7 +3461,7 @@ a.active > .label .label__icon.control-icon svg {
   line-height: inherit; }
   .menu:focus {
     outline: none; }
-    .menu:focus:after {
+    .menu:focus:not(.menu--expanded):after {
       content: '';
       position: absolute;
       top: 0px;
@@ -3736,8 +3511,7 @@ a.active > .label .label__icon.control-icon svg {
       padding: 12px 24px;
       white-space: nowrap;
       display: block; }
-      .menu__drop a:hover,
-      .menu__drop a:focus {
+      .menu__drop a:hover, .menu__drop a:focus {
         text-decoration: none;
         background-color: rgba(0, 0, 0, 0.1); }
     .menu__drop .check-box,
@@ -3757,22 +3531,18 @@ a.active > .label .label__icon.control-icon svg {
       height: 24px; }
   .menu--labelled {
     padding-left: 24px; }
-  .menu--inline.menu--row > *:not(.control-icon):not(.button),
-  .menu--inline.menu--right > *:not(.control-icon):not(.button) {
+  .menu--inline.menu--row > *:not(.control-icon):not(.button), .menu--inline.menu--right > *:not(.control-icon):not(.button) {
     margin-left: 0px;
     margin-right: 24px; }
-    .menu--inline.menu--row > *:not(.control-icon):not(.button):last-child,
-    .menu--inline.menu--right > *:not(.control-icon):not(.button):last-child {
+    .menu--inline.menu--row > *:not(.control-icon):not(.button):last-child, .menu--inline.menu--right > *:not(.control-icon):not(.button):last-child {
       margin-right: 0px; }
   @media screen and (max-width: 44.9375em) {
     .menu--inline.menu.box--direction-row.box--responsive > * {
       margin-right: 0; } }
-  .menu--inline.menu--row.box--justify-end > *:not(.control-icon),
-  .menu--inline.menu--left > *:not(.control-icon) {
+  .menu--inline.menu--row.box--justify-end > *:not(.control-icon), .menu--inline.menu--left > *:not(.control-icon) {
     margin-left: 24px;
     margin-right: 0px; }
-    .menu--inline.menu--row.box--justify-end > *:not(.control-icon):first-child,
-    .menu--inline.menu--left > *:not(.control-icon):first-child {
+    .menu--inline.menu--row.box--justify-end > *:not(.control-icon):first-child, .menu--inline.menu--left > *:not(.control-icon):first-child {
       margin-left: 0px; }
   .menu--small {
     font-size: 16px;
@@ -3903,8 +3673,7 @@ a.active > .label .label__icon.control-icon svg {
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 1.71429; }
-  .meter__label-min,
-  .meter__label-max {
+  .meter__label-min, .meter__label-max {
     flex: 0 0 48px; }
   .meter__label-max {
     text-align: right; }
@@ -3936,8 +3705,7 @@ a.active > .label .label__icon.control-icon svg {
     height: 100%; }
   .meter--vertical .meter__minmax-container {
     height: 192px; }
-  .meter--vertical .meter__label-min,
-  .meter--vertical .meter__label-max {
+  .meter--vertical .meter__label-min, .meter--vertical .meter__label-max {
     flex: 0 0 auto;
     text-align: left; }
   .meter--vertical .meter__label-min {
@@ -3997,29 +3765,21 @@ a.active > .label .label__icon.control-icon svg {
       stroke: #999999; }
     .meter--bar .meter__values .meter__bar.color-index-disabled {
       stroke: #999999; }
-    .meter--bar .meter__values .meter__bar.color-index-graph-1,
-    .meter--bar .meter__values .meter__bar.color-index-graph-6 {
+    .meter--bar .meter__values .meter__bar.color-index-graph-1, .meter--bar .meter__values .meter__bar.color-index-graph-6 {
       stroke: #ec9b58; }
-    .meter--bar .meter__values .meter__bar.color-index-graph-2,
-    .meter--bar .meter__values .meter__bar.color-index-graph-7 {
+    .meter--bar .meter__values .meter__bar.color-index-graph-2, .meter--bar .meter__values .meter__bar.color-index-graph-7 {
       stroke: #0049a0; }
-    .meter--bar .meter__values .meter__bar.color-index-graph-3,
-    .meter--bar .meter__values .meter__bar.color-index-graph-8 {
+    .meter--bar .meter__values .meter__bar.color-index-graph-3, .meter--bar .meter__values .meter__bar.color-index-graph-8 {
       stroke: #886f9c; }
-    .meter--bar .meter__values .meter__bar.color-index-graph-4,
-    .meter--bar .meter__values .meter__bar.color-index-graph-9 {
+    .meter--bar .meter__values .meter__bar.color-index-graph-4, .meter--bar .meter__values .meter__bar.color-index-graph-9 {
       stroke: #5fbcdd; }
-    .meter--bar .meter__values .meter__bar.color-index-graph-5,
-    .meter--bar .meter__values .meter__bar.color-index-graph-10 {
+    .meter--bar .meter__values .meter__bar.color-index-graph-5, .meter--bar .meter__values .meter__bar.color-index-graph-10 {
       stroke: #7fba44; }
-    .meter--bar .meter__values .meter__bar.color-index-grey-1,
-    .meter--bar .meter__values .meter__bar.color-index-grey-4 {
+    .meter--bar .meter__values .meter__bar.color-index-grey-1, .meter--bar .meter__values .meter__bar.color-index-grey-4 {
       stroke: #2d3034; }
-    .meter--bar .meter__values .meter__bar.color-index-grey-2,
-    .meter--bar .meter__values .meter__bar.color-index-grey-5 {
+    .meter--bar .meter__values .meter__bar.color-index-grey-2, .meter--bar .meter__values .meter__bar.color-index-grey-5 {
       stroke: #52555a; }
-    .meter--bar .meter__values .meter__bar.color-index-grey-3,
-    .meter--bar .meter__values .meter__bar.color-index-grey-6 {
+    .meter--bar .meter__values .meter__bar.color-index-grey-3, .meter--bar .meter__values .meter__bar.color-index-grey-6 {
       stroke: #999999; }
     @media screen and (min-width: 45em) {
       .meter--bar .meter__values .meter__bar {
@@ -4042,20 +3802,15 @@ a.active > .label .label__icon.control-icon svg {
       stroke: rgba(153, 153, 153, 0.5); }
     .meter--bar .meter__thresholds .meter__bar.color-index-disabled {
       stroke: rgba(153, 153, 153, 0.5); }
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-1,
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-6 {
+    .meter--bar .meter__thresholds .meter__bar.color-index-graph-1, .meter--bar .meter__thresholds .meter__bar.color-index-graph-6 {
       stroke: rgba(236, 155, 88, 0.5); }
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-2,
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-7 {
+    .meter--bar .meter__thresholds .meter__bar.color-index-graph-2, .meter--bar .meter__thresholds .meter__bar.color-index-graph-7 {
       stroke: rgba(0, 73, 160, 0.5); }
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-3,
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-8 {
+    .meter--bar .meter__thresholds .meter__bar.color-index-graph-3, .meter--bar .meter__thresholds .meter__bar.color-index-graph-8 {
       stroke: rgba(136, 111, 156, 0.5); }
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-4,
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-9 {
+    .meter--bar .meter__thresholds .meter__bar.color-index-graph-4, .meter--bar .meter__thresholds .meter__bar.color-index-graph-9 {
       stroke: rgba(95, 188, 221, 0.5); }
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-5,
-    .meter--bar .meter__thresholds .meter__bar.color-index-graph-10 {
+    .meter--bar .meter__thresholds .meter__bar.color-index-graph-5, .meter--bar .meter__thresholds .meter__bar.color-index-graph-10 {
       stroke: rgba(127, 186, 68, 0.5); }
   .meter--bar .meter__active-label {
     width: 50%;
@@ -4095,8 +3850,7 @@ a.active > .label .label__icon.control-icon svg {
     width: 288px; }
   .meter--bar:not(.meter--vertical).meter--large .meter__active {
     margin-left: 16px; }
-    .meter--bar:not(.meter--vertical).meter--large .meter__active-value,
-    .meter--bar:not(.meter--vertical).meter--large .meter__active-units {
+    .meter--bar:not(.meter--vertical).meter--large .meter__active-value, .meter--bar:not(.meter--vertical).meter--large .meter__active-units {
       font-size: 26px;
       font-size: 1.625rem;
       line-height: inherit; }
@@ -4134,239 +3888,115 @@ a.active > .label .label__icon.control-icon svg {
     .meter--bar.meter--vertical.meter--large.meter--legend-right .meter__legend {
       top: 144px; }
   @media screen and (max-width: 44.9375em) {
-    .meter--circle,
-    .meter--arc,
-    .meter--spiral {
+    .meter--circle, .meter--arc, .meter--spiral {
       margin: 0px auto; } }
-  .meter--circle svg.meter__graphic,
-  .meter--arc svg.meter__graphic,
-  .meter--spiral svg.meter__graphic {
+  .meter--circle svg.meter__graphic, .meter--arc svg.meter__graphic, .meter--spiral svg.meter__graphic {
     display: block; }
-  .meter--circle .meter.series-pre path,
-  .meter--arc .meter.series-pre path,
-  .meter--spiral .meter.series-pre path {
+  .meter--circle .meter.series-pre path, .meter--arc .meter.series-pre path, .meter--spiral .meter.series-pre path {
     stroke-dashoffset: 768px; }
-  .meter--circle .meter__slice,
-  .meter--arc .meter__slice,
-  .meter--spiral .meter__slice {
+  .meter--circle .meter__slice, .meter--arc .meter__slice, .meter--spiral .meter__slice {
     stroke-linecap: butt;
     stroke-dasharray: 768px 768px;
     stroke-dashoffset: 0;
     fill: none;
     stroke: #b2b2b2; }
-    .meter--circle .meter__slice-indicator,
-    .meter--arc .meter__slice-indicator,
-    .meter--spiral .meter__slice-indicator {
+    .meter--circle .meter__slice-indicator, .meter--arc .meter__slice-indicator, .meter--spiral .meter__slice-indicator {
       stroke-linecap: round;
       stroke-width: 3;
       stroke: #000; }
-  .meter--circle .meter__values .meter__slice,
-  .meter--arc .meter__values .meter__slice,
-  .meter--spiral .meter__values .meter__slice {
+  .meter--circle .meter__values .meter__slice, .meter--arc .meter__values .meter__slice, .meter--spiral .meter__values .meter__slice {
     stroke-width: 18px;
     cursor: pointer; }
-    .meter--circle .meter__values .meter__slice.color-index-loading,
-    .meter--arc .meter__values .meter__slice.color-index-loading,
-    .meter--spiral .meter__values .meter__slice.color-index-loading {
+    .meter--circle .meter__values .meter__slice.color-index-loading, .meter--arc .meter__values .meter__slice.color-index-loading, .meter--spiral .meter__values .meter__slice.color-index-loading {
       stroke: #ddd;
       stroke-dasharray: 1px 10px;
       stroke-dashoffset: 0; }
-    .meter--circle .meter__values .meter__slice.color-index-unset,
-    .meter--arc .meter__values .meter__slice.color-index-unset,
-    .meter--spiral .meter__values .meter__slice.color-index-unset {
+    .meter--circle .meter__values .meter__slice.color-index-unset, .meter--arc .meter__values .meter__slice.color-index-unset, .meter--spiral .meter__values .meter__slice.color-index-unset {
       stroke: #ddd; }
-    .meter--circle .meter__values .meter__slice.color-index-brand,
-    .meter--arc .meter__values .meter__slice.color-index-brand,
-    .meter--spiral .meter__values .meter__slice.color-index-brand {
+    .meter--circle .meter__values .meter__slice.color-index-brand, .meter--arc .meter__values .meter__slice.color-index-brand, .meter--spiral .meter__values .meter__slice.color-index-brand {
       stroke: #ff8300; }
-    .meter--circle .meter__values .meter__slice.color-index-error,
-    .meter--arc .meter__values .meter__slice.color-index-error,
-    .meter--spiral .meter__values .meter__slice.color-index-error {
+    .meter--circle .meter__values .meter__slice.color-index-error, .meter--arc .meter__values .meter__slice.color-index-error, .meter--spiral .meter__values .meter__slice.color-index-error {
       stroke: #c8200d; }
-    .meter--circle .meter__values .meter__slice.color-index-warning,
-    .meter--arc .meter__values .meter__slice.color-index-warning,
-    .meter--spiral .meter__values .meter__slice.color-index-warning {
+    .meter--circle .meter__values .meter__slice.color-index-warning, .meter--arc .meter__values .meter__slice.color-index-warning, .meter--spiral .meter__values .meter__slice.color-index-warning {
       stroke: #e57118; }
-    .meter--circle .meter__values .meter__slice.color-index-ok,
-    .meter--arc .meter__values .meter__slice.color-index-ok,
-    .meter--spiral .meter__values .meter__slice.color-index-ok {
+    .meter--circle .meter__values .meter__slice.color-index-ok, .meter--arc .meter__values .meter__slice.color-index-ok, .meter--spiral .meter__values .meter__slice.color-index-ok {
       stroke: #2aac24; }
-    .meter--circle .meter__values .meter__slice.color-index-unknown,
-    .meter--arc .meter__values .meter__slice.color-index-unknown,
-    .meter--spiral .meter__values .meter__slice.color-index-unknown {
+    .meter--circle .meter__values .meter__slice.color-index-unknown, .meter--arc .meter__values .meter__slice.color-index-unknown, .meter--spiral .meter__values .meter__slice.color-index-unknown {
       stroke: #999999; }
-    .meter--circle .meter__values .meter__slice.color-index-disabled,
-    .meter--arc .meter__values .meter__slice.color-index-disabled,
-    .meter--spiral .meter__values .meter__slice.color-index-disabled {
+    .meter--circle .meter__values .meter__slice.color-index-disabled, .meter--arc .meter__values .meter__slice.color-index-disabled, .meter--spiral .meter__values .meter__slice.color-index-disabled {
       stroke: #999999; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-1,
-    .meter--circle .meter__values .meter__slice.color-index-graph-6,
-    .meter--arc .meter__values .meter__slice.color-index-graph-1,
-    .meter--arc .meter__values .meter__slice.color-index-graph-6,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-1,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-6 {
+    .meter--circle .meter__values .meter__slice.color-index-graph-1, .meter--circle .meter__values .meter__slice.color-index-graph-6, .meter--arc .meter__values .meter__slice.color-index-graph-1, .meter--arc .meter__values .meter__slice.color-index-graph-6, .meter--spiral .meter__values .meter__slice.color-index-graph-1, .meter--spiral .meter__values .meter__slice.color-index-graph-6 {
       stroke: #ec9b58; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-2,
-    .meter--circle .meter__values .meter__slice.color-index-graph-7,
-    .meter--arc .meter__values .meter__slice.color-index-graph-2,
-    .meter--arc .meter__values .meter__slice.color-index-graph-7,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-2,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-7 {
+    .meter--circle .meter__values .meter__slice.color-index-graph-2, .meter--circle .meter__values .meter__slice.color-index-graph-7, .meter--arc .meter__values .meter__slice.color-index-graph-2, .meter--arc .meter__values .meter__slice.color-index-graph-7, .meter--spiral .meter__values .meter__slice.color-index-graph-2, .meter--spiral .meter__values .meter__slice.color-index-graph-7 {
       stroke: #0049a0; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-3,
-    .meter--circle .meter__values .meter__slice.color-index-graph-8,
-    .meter--arc .meter__values .meter__slice.color-index-graph-3,
-    .meter--arc .meter__values .meter__slice.color-index-graph-8,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-3,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-8 {
+    .meter--circle .meter__values .meter__slice.color-index-graph-3, .meter--circle .meter__values .meter__slice.color-index-graph-8, .meter--arc .meter__values .meter__slice.color-index-graph-3, .meter--arc .meter__values .meter__slice.color-index-graph-8, .meter--spiral .meter__values .meter__slice.color-index-graph-3, .meter--spiral .meter__values .meter__slice.color-index-graph-8 {
       stroke: #886f9c; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-4,
-    .meter--circle .meter__values .meter__slice.color-index-graph-9,
-    .meter--arc .meter__values .meter__slice.color-index-graph-4,
-    .meter--arc .meter__values .meter__slice.color-index-graph-9,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-4,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-9 {
+    .meter--circle .meter__values .meter__slice.color-index-graph-4, .meter--circle .meter__values .meter__slice.color-index-graph-9, .meter--arc .meter__values .meter__slice.color-index-graph-4, .meter--arc .meter__values .meter__slice.color-index-graph-9, .meter--spiral .meter__values .meter__slice.color-index-graph-4, .meter--spiral .meter__values .meter__slice.color-index-graph-9 {
       stroke: #5fbcdd; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-5,
-    .meter--circle .meter__values .meter__slice.color-index-graph-10,
-    .meter--arc .meter__values .meter__slice.color-index-graph-5,
-    .meter--arc .meter__values .meter__slice.color-index-graph-10,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-5,
-    .meter--spiral .meter__values .meter__slice.color-index-graph-10 {
+    .meter--circle .meter__values .meter__slice.color-index-graph-5, .meter--circle .meter__values .meter__slice.color-index-graph-10, .meter--arc .meter__values .meter__slice.color-index-graph-5, .meter--arc .meter__values .meter__slice.color-index-graph-10, .meter--spiral .meter__values .meter__slice.color-index-graph-5, .meter--spiral .meter__values .meter__slice.color-index-graph-10 {
       stroke: #7fba44; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-1,
-    .meter--circle .meter__values .meter__slice.color-index-grey-4,
-    .meter--arc .meter__values .meter__slice.color-index-grey-1,
-    .meter--arc .meter__values .meter__slice.color-index-grey-4,
-    .meter--spiral .meter__values .meter__slice.color-index-grey-1,
-    .meter--spiral .meter__values .meter__slice.color-index-grey-4 {
+    .meter--circle .meter__values .meter__slice.color-index-grey-1, .meter--circle .meter__values .meter__slice.color-index-grey-4, .meter--arc .meter__values .meter__slice.color-index-grey-1, .meter--arc .meter__values .meter__slice.color-index-grey-4, .meter--spiral .meter__values .meter__slice.color-index-grey-1, .meter--spiral .meter__values .meter__slice.color-index-grey-4 {
       stroke: #2d3034; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-2,
-    .meter--circle .meter__values .meter__slice.color-index-grey-5,
-    .meter--arc .meter__values .meter__slice.color-index-grey-2,
-    .meter--arc .meter__values .meter__slice.color-index-grey-5,
-    .meter--spiral .meter__values .meter__slice.color-index-grey-2,
-    .meter--spiral .meter__values .meter__slice.color-index-grey-5 {
+    .meter--circle .meter__values .meter__slice.color-index-grey-2, .meter--circle .meter__values .meter__slice.color-index-grey-5, .meter--arc .meter__values .meter__slice.color-index-grey-2, .meter--arc .meter__values .meter__slice.color-index-grey-5, .meter--spiral .meter__values .meter__slice.color-index-grey-2, .meter--spiral .meter__values .meter__slice.color-index-grey-5 {
       stroke: #52555a; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-3,
-    .meter--circle .meter__values .meter__slice.color-index-grey-6,
-    .meter--arc .meter__values .meter__slice.color-index-grey-3,
-    .meter--arc .meter__values .meter__slice.color-index-grey-6,
-    .meter--spiral .meter__values .meter__slice.color-index-grey-3,
-    .meter--spiral .meter__values .meter__slice.color-index-grey-6 {
+    .meter--circle .meter__values .meter__slice.color-index-grey-3, .meter--circle .meter__values .meter__slice.color-index-grey-6, .meter--arc .meter__values .meter__slice.color-index-grey-3, .meter--arc .meter__values .meter__slice.color-index-grey-6, .meter--spiral .meter__values .meter__slice.color-index-grey-3, .meter--spiral .meter__values .meter__slice.color-index-grey-6 {
       stroke: #999999; }
     @media screen and (min-width: 45em) {
-      .meter--circle .meter__values .meter__slice,
-      .meter--arc .meter__values .meter__slice,
-      .meter--spiral .meter__values .meter__slice {
+      .meter--circle .meter__values .meter__slice, .meter--arc .meter__values .meter__slice, .meter--spiral .meter__values .meter__slice {
         transition: stroke-width 0.2s;
         -webkit-animation: draw-arc 1.5s linear;
         animation: draw-arc 1.5s linear; } }
-  .meter--circle .meter__thresholds .meter__slice,
-  .meter--arc .meter__thresholds .meter__slice,
-  .meter--spiral .meter__thresholds .meter__slice {
+  .meter--circle .meter__thresholds .meter__slice, .meter--arc .meter__thresholds .meter__slice, .meter--spiral .meter__thresholds .meter__slice {
     stroke-width: 6px; }
-    .meter--circle .meter__thresholds .meter__slice.color-index-unset,
-    .meter--arc .meter__thresholds .meter__slice.color-index-unset,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-unset {
+    .meter--circle .meter__thresholds .meter__slice.color-index-unset, .meter--arc .meter__thresholds .meter__slice.color-index-unset, .meter--spiral .meter__thresholds .meter__slice.color-index-unset {
       stroke: rgba(221, 221, 221, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-brand,
-    .meter--arc .meter__thresholds .meter__slice.color-index-brand,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-brand {
+    .meter--circle .meter__thresholds .meter__slice.color-index-brand, .meter--arc .meter__thresholds .meter__slice.color-index-brand, .meter--spiral .meter__thresholds .meter__slice.color-index-brand {
       stroke: rgba(255, 131, 0, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-error,
-    .meter--arc .meter__thresholds .meter__slice.color-index-error,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-error {
+    .meter--circle .meter__thresholds .meter__slice.color-index-error, .meter--arc .meter__thresholds .meter__slice.color-index-error, .meter--spiral .meter__thresholds .meter__slice.color-index-error {
       stroke: rgba(200, 32, 13, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-warning,
-    .meter--arc .meter__thresholds .meter__slice.color-index-warning,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-warning {
+    .meter--circle .meter__thresholds .meter__slice.color-index-warning, .meter--arc .meter__thresholds .meter__slice.color-index-warning, .meter--spiral .meter__thresholds .meter__slice.color-index-warning {
       stroke: rgba(229, 113, 24, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-ok,
-    .meter--arc .meter__thresholds .meter__slice.color-index-ok,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-ok {
+    .meter--circle .meter__thresholds .meter__slice.color-index-ok, .meter--arc .meter__thresholds .meter__slice.color-index-ok, .meter--spiral .meter__thresholds .meter__slice.color-index-ok {
       stroke: rgba(42, 172, 36, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-unknown,
-    .meter--arc .meter__thresholds .meter__slice.color-index-unknown,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-unknown {
+    .meter--circle .meter__thresholds .meter__slice.color-index-unknown, .meter--arc .meter__thresholds .meter__slice.color-index-unknown, .meter--spiral .meter__thresholds .meter__slice.color-index-unknown {
       stroke: rgba(153, 153, 153, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-disabled,
-    .meter--arc .meter__thresholds .meter__slice.color-index-disabled,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-disabled {
+    .meter--circle .meter__thresholds .meter__slice.color-index-disabled, .meter--arc .meter__thresholds .meter__slice.color-index-disabled, .meter--spiral .meter__thresholds .meter__slice.color-index-disabled {
       stroke: rgba(153, 153, 153, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-1,
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-6,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-1,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-6,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-1,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-6 {
+    .meter--circle .meter__thresholds .meter__slice.color-index-graph-1, .meter--circle .meter__thresholds .meter__slice.color-index-graph-6, .meter--arc .meter__thresholds .meter__slice.color-index-graph-1, .meter--arc .meter__thresholds .meter__slice.color-index-graph-6, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-1, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-6 {
       stroke: rgba(236, 155, 88, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-2,
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-7,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-2,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-7,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-2,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-7 {
+    .meter--circle .meter__thresholds .meter__slice.color-index-graph-2, .meter--circle .meter__thresholds .meter__slice.color-index-graph-7, .meter--arc .meter__thresholds .meter__slice.color-index-graph-2, .meter--arc .meter__thresholds .meter__slice.color-index-graph-7, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-2, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-7 {
       stroke: rgba(0, 73, 160, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-3,
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-8,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-3,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-8,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-3,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-8 {
+    .meter--circle .meter__thresholds .meter__slice.color-index-graph-3, .meter--circle .meter__thresholds .meter__slice.color-index-graph-8, .meter--arc .meter__thresholds .meter__slice.color-index-graph-3, .meter--arc .meter__thresholds .meter__slice.color-index-graph-8, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-3, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-8 {
       stroke: rgba(136, 111, 156, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-4,
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-9,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-4,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-9,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-4,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-9 {
+    .meter--circle .meter__thresholds .meter__slice.color-index-graph-4, .meter--circle .meter__thresholds .meter__slice.color-index-graph-9, .meter--arc .meter__thresholds .meter__slice.color-index-graph-4, .meter--arc .meter__thresholds .meter__slice.color-index-graph-9, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-4, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-9 {
       stroke: rgba(95, 188, 221, 0.5); }
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-5,
-    .meter--circle .meter__thresholds .meter__slice.color-index-graph-10,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-5,
-    .meter--arc .meter__thresholds .meter__slice.color-index-graph-10,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-5,
-    .meter--spiral .meter__thresholds .meter__slice.color-index-graph-10 {
+    .meter--circle .meter__thresholds .meter__slice.color-index-graph-5, .meter--circle .meter__thresholds .meter__slice.color-index-graph-10, .meter--arc .meter__thresholds .meter__slice.color-index-graph-5, .meter--arc .meter__thresholds .meter__slice.color-index-graph-10, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-5, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-10 {
       stroke: rgba(127, 186, 68, 0.5); }
-  .meter--circle .meter__threshold,
-  .meter--arc .meter__threshold,
-  .meter--spiral .meter__threshold {
+  .meter--circle .meter__threshold, .meter--arc .meter__threshold, .meter--spiral .meter__threshold {
     stroke-linecap: butt; }
-  .meter--circle .meter__active-label,
-  .meter--arc .meter__active-label,
-  .meter--spiral .meter__active-label {
+  .meter--circle .meter__active-label, .meter--arc .meter__active-label, .meter--spiral .meter__active-label {
     display: block; }
   @media screen and (max-width: 44.9375em) {
-    .meter--circle,
-    .meter--arc {
+    .meter--circle, .meter--arc {
       width: 192px; } }
-  .meter--circle .meter__active,
-  .meter--arc .meter__active {
+  .meter--circle .meter__active, .meter--arc .meter__active {
     white-space: normal;
     pointer-events: none;
     text-align: center; }
-  .meter--circle .meter__minmax-container,
-  .meter--arc:not(.meter--vertical) .meter__minmax-container {
+  .meter--circle .meter__minmax-container, .meter--arc:not(.meter--vertical) .meter__minmax-container {
     width: 192px; }
-  .meter--circle .meter__active,
-  .meter--arc:not(.meter--vertical) .meter__active {
+  .meter--circle .meter__active, .meter--arc:not(.meter--vertical) .meter__active {
     position: absolute;
     left: 50%; }
-  .meter--circle.meter--small .meter__minmax-container,
-  .meter--arc:not(.meter--vertical).meter--small .meter__minmax-container {
+  .meter--circle.meter--small .meter__minmax-container, .meter--arc:not(.meter--vertical).meter--small .meter__minmax-container {
     width: 96px; }
-  .meter--circle.meter--large .meter__minmax-container,
-  .meter--arc:not(.meter--vertical).meter--large .meter__minmax-container {
+  .meter--circle.meter--large .meter__minmax-container, .meter--arc:not(.meter--vertical).meter--large .meter__minmax-container {
     width: 288px; }
-  .meter--circle.meter--legend-right .meter__legend,
-  .meter--arc.meter--vertical.meter--legend-right .meter__legend {
+  .meter--circle.meter--legend-right .meter__legend, .meter--arc.meter--vertical.meter--legend-right .meter__legend {
     top: 96px; }
-  .meter--circle.meter--legend-right.meter--small .meter__legend,
-  .meter--arc.meter--vertical.meter--legend-right.meter--small .meter__legend {
+  .meter--circle.meter--legend-right.meter--small .meter__legend, .meter--arc.meter--vertical.meter--legend-right.meter--small .meter__legend {
     top: 48px; }
-  .meter--circle.meter--legend-right.meter--large .meter__legend,
-  .meter--arc.meter--vertical.meter--legend-right.meter--large .meter__legend {
+  .meter--circle.meter--legend-right.meter--large .meter__legend, .meter--arc.meter--vertical.meter--legend-right.meter--large .meter__legend {
     top: 144px; }
   .meter--circle svg.meter__graphic {
     width: 192px;
@@ -4488,8 +4118,7 @@ a.active > .label .label__icon.control-icon svg {
     line-height: 1.5;
     margin-bottom: 24px;
     vertical-align: middle; }
-  .notification__state,
-  .notification__timestamp {
+  .notification__state, .notification__timestamp {
     display: block;
     color: #777; }
   .notification--error {
@@ -4673,10 +4302,11 @@ a.active > .label .label__icon.control-icon svg {
     .search__drop-header {
       white-space: nowrap; }
     .search__drop-contents {
-      display: inline-block; }
+      display: block; }
     .search__drop input {
       margin-right: 0px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      width: 100%; }
       @media screen and (max-width: 44.9375em) {
         .search__drop input {
           width: calc(100vw - 72px); } }
@@ -4686,8 +4316,7 @@ a.active > .label .label__icon.control-icon svg {
     .search__drop .search__suggestion {
       padding: 6px 24px;
       cursor: pointer; }
-      .search__drop .search__suggestion:hover,
-      .search__drop .search__suggestion--active {
+      .search__drop .search__suggestion:hover, .search__drop .search__suggestion--active {
         background-color: rgba(0, 0, 0, 0.1); }
     .search__drop--large {
       line-height: 96px; }
@@ -4722,8 +4351,7 @@ a.active > .label .label__icon.control-icon svg {
   .search-input__suggestion {
     padding: 6px 12px;
     cursor: pointer; }
-    .search-input__suggestion:hover,
-    .search-input__suggestion--active {
+    .search-input__suggestion:hover, .search-input__suggestion--active {
       background-color: rgba(0, 0, 0, 0.1); }
   .search-input--active .search-input__input {
     border-bottom-left-radius: 0px;
@@ -4853,8 +4481,7 @@ section > dl > dd {
     .sidebar--fixed > * {
       flex: 1;
       overflow: auto; }
-      .sidebar--fixed > *.header,
-      .sidebar--fixed > *.footer {
+      .sidebar--fixed > *.header, .sidebar--fixed > *.footer {
         flex: 0 0 auto; }
   .sidebar--primary {
     background-color: #f5f5f5; }
@@ -4905,6 +4532,11 @@ section > dl > dd {
       .split--separator > *:last-child {
         border-bottom: none; } }
 
+.skip-link-anchor {
+  width: 0;
+  height: 0;
+  overflow: hidden; }
+
 .tab {
   padding: 12px; }
   .tab a {
@@ -4919,8 +4551,7 @@ section > dl > dd {
   .tab--active .tab__label {
     color: #000;
     border-bottom: 4px solid #000; }
-  .tab:hover .tab__label,
-  .tab:focus .tab__label {
+  .tab:hover .tab__label, .tab:focus .tab__label {
     border-bottom: 4px solid; }
 
 .tabs {
@@ -5005,7 +4636,6 @@ section > dl > dd {
   flex-wrap: wrap; }
   .tiles > .tile {
     flex: 1 0 192px;
-    box-sizing: content-box;
     margin: 12px; }
     .tiles > .tile--wide {
       flex-basis: calc(100% - 24px);
