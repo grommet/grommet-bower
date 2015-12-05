@@ -52,78 +52,79 @@ var Grommet =
 	  // Components
 	  Anchor: __webpack_require__(1),
 	  App: __webpack_require__(4),
-	  Article: __webpack_require__(251),
-	  Box: __webpack_require__(241),
+	  Article: __webpack_require__(252),
+	  Box: __webpack_require__(242),
 	  Button: __webpack_require__(232),
-	  Calendar: __webpack_require__(254),
-	  Carousel: __webpack_require__(347),
-	  Chart: __webpack_require__(348),
-	  CheckBox: __webpack_require__(350),
-	  Distribution: __webpack_require__(351),
-	  Footer: __webpack_require__(352),
-	  Form: __webpack_require__(353),
-	  FormField: __webpack_require__(354),
-	  FormFields: __webpack_require__(355),
-	  Header: __webpack_require__(345),
-	  Headline: __webpack_require__(356),
-	  Label: __webpack_require__(357),
+	  Calendar: __webpack_require__(256),
+	  Carousel: __webpack_require__(349),
+	  Chart: __webpack_require__(356),
+	  CheckBox: __webpack_require__(358),
+	  Distribution: __webpack_require__(359),
+	  Footer: __webpack_require__(360),
+	  Form: __webpack_require__(361),
+	  FormField: __webpack_require__(362),
+	  FormFields: __webpack_require__(363),
+	  Header: __webpack_require__(347),
+	  Headline: __webpack_require__(364),
+	  Label: __webpack_require__(365),
 	  Layer: __webpack_require__(228),
-	  Legend: __webpack_require__(349),
-	  List: __webpack_require__(358),
-	  ListItem: __webpack_require__(359),
-	  Login: __webpack_require__(362),
-	  LoginForm: __webpack_require__(363),
-	  Map: __webpack_require__(364),
+	  Legend: __webpack_require__(357),
+	  List: __webpack_require__(366),
+	  ListItem: __webpack_require__(367),
+	  Login: __webpack_require__(368),
+	  LoginForm: __webpack_require__(369),
+	  Map: __webpack_require__(370),
 	  Menu: __webpack_require__(233),
-	  Meter: __webpack_require__(365),
-	  RadioButton: __webpack_require__(366),
-	  Search: __webpack_require__(367),
-	  SearchInput: __webpack_require__(369),
-	  Section: __webpack_require__(370),
-	  Sidebar: __webpack_require__(371),
-	  Split: __webpack_require__(372),
-	  Table: __webpack_require__(373),
-	  Tiles: __webpack_require__(381),
-	  Tile: __webpack_require__(382),
-	  Title: __webpack_require__(346),
-	  Topology: __webpack_require__(383),
-	  Object: __webpack_require__(391),
-	  TBD: __webpack_require__(392),
+	  Meter: __webpack_require__(371),
+	  RadioButton: __webpack_require__(372),
+	  Search: __webpack_require__(373),
+	  SearchInput: __webpack_require__(375),
+	  Section: __webpack_require__(376),
+	  Sidebar: __webpack_require__(377),
+	  Split: __webpack_require__(378),
+	  Table: __webpack_require__(379),
+	  Tiles: __webpack_require__(350),
+	  Tile: __webpack_require__(353),
+	  Title: __webpack_require__(348),
+	  Topology: __webpack_require__(387),
+	  Video: __webpack_require__(396),
+	  Object: __webpack_require__(400),
+	  TBD: __webpack_require__(401),
 	  Icons: {
-	    Calendar: __webpack_require__(393),
-	    Clear: __webpack_require__(394),
-	    DragHandle: __webpack_require__(395),
-	    Edit: __webpack_require__(396),
-	    Facebook: __webpack_require__(397),
-	    Filter: __webpack_require__(398),
-	    Grommet: __webpack_require__(399),
-	    Help: __webpack_require__(400),
-	    Left: __webpack_require__(344),
-	    LinkedIn: __webpack_require__(401),
-	    Mail: __webpack_require__(402),
-	    More: __webpack_require__(242),
-	    Person: __webpack_require__(403),
+	    Calendar: __webpack_require__(402),
+	    Clear: __webpack_require__(403),
+	    DragHandle: __webpack_require__(404),
+	    Edit: __webpack_require__(405),
+	    Facebook: __webpack_require__(406),
+	    Filter: __webpack_require__(407),
+	    Grommet: __webpack_require__(408),
+	    Help: __webpack_require__(409),
+	    Left: __webpack_require__(346),
+	    LinkedIn: __webpack_require__(410),
+	    Mail: __webpack_require__(411),
+	    More: __webpack_require__(243),
+	    Person: __webpack_require__(412),
 	    Right: __webpack_require__(3),
-	    Search: __webpack_require__(368),
-	    SearchPlus: __webpack_require__(404),
-	    Spinning: __webpack_require__(360),
-	    Status: __webpack_require__(384),
-	    Twitter: __webpack_require__(405),
-	    World: __webpack_require__(406),
-	    Base: __webpack_require__(407)
+	    Search: __webpack_require__(374),
+	    SearchPlus: __webpack_require__(413),
+	    Spinning: __webpack_require__(351),
+	    Status: __webpack_require__(388),
+	    Twitter: __webpack_require__(414),
+	    World: __webpack_require__(415),
+	    Base: __webpack_require__(416)
 	  },
 	  // Mixins
 	  Mixins: {
-	    KeyboardAccelerators: __webpack_require__(717)
+	    KeyboardAccelerators: __webpack_require__(721)
 	  },
 	  // Utils
 	  Cookies: __webpack_require__(39),
 	  DOM: __webpack_require__(231),
 	  KeyboardAccelerators: __webpack_require__(230),
 	  Locale: __webpack_require__(5),
-	  Rest: __webpack_require__(718),
-	  RestWatch: __webpack_require__(722),
-	  Validator: __webpack_require__(723)
+	  Rest: __webpack_require__(722),
+	  RestWatch: __webpack_require__(726),
+	  Validator: __webpack_require__(727)
 	};
 
 	module.exports = Grommet;
@@ -146,10 +147,11 @@ var Grommet =
 
 	  propTypes: {
 	    href: React.PropTypes.string,
-	    tag: React.PropTypes.string,
-	    target: React.PropTypes.string,
+	    id: React.PropTypes.string,
 	    onClick: React.PropTypes.func,
-	    primary: React.PropTypes.bool
+	    primary: React.PropTypes.bool,
+	    tag: React.PropTypes.string,
+	    target: React.PropTypes.string
 	  },
 
 	  getDefaultProps: function getDefaultProps() {
@@ -246,9 +248,9 @@ var Grommet =
 	}
 
 	if (!localesSupported()) {
-	  __webpack_require__(244);
-	  __webpack_require__(249);
+	  __webpack_require__(245);
 	  __webpack_require__(250);
+	  __webpack_require__(251);
 	  Intl.NumberFormat = IntlPolyfill.NumberFormat;
 	  Intl.DateTimeFormat = IntlPolyfill.DateTimeFormat;
 	}
@@ -1827,6 +1829,7 @@ var Grommet =
 	  created: 'Created',
 	  Critical: 'Critical',
 	  Disabled: 'Disabled',
+	  Email: 'Email',
 	  Error: 'Error',
 	  Filter: 'Filter',
 	  Footer: 'Footer',
@@ -1879,6 +1882,7 @@ var Grommet =
 	  created: 'Criado',
 	  Critical: 'Crítico',
 	  Disabled: 'Desabilitado',
+	  Email: 'Email',
 	  Error: 'Erro',
 	  Filter: 'Filtro',
 	  Footer: 'Rodapé',
@@ -1994,6 +1998,15 @@ var Grommet =
 	      );
 	    }).bind(this));
 
+	    var menuComponent;
+	    if (anchorElements.length > 0) {
+	      menuComponent = React.createElement(
+	        Menu,
+	        { direction: 'row' },
+	        anchorElements
+	      );
+	    }
+
 	    return React.createElement(
 	      'div',
 	      { className: 'skip-links' },
@@ -2008,11 +2021,7 @@ var Grommet =
 	            null,
 	            React.createElement(FormattedMessage, { id: 'Skip to', defaultMessage: 'Skip to' })
 	          ),
-	          React.createElement(
-	            Menu,
-	            { direction: 'row' },
-	            anchorElements
-	          )
+	          menuComponent
 	        )
 	      )
 	    );
@@ -6320,11 +6329,12 @@ var Grommet =
 	    var fakeNode = document.createElement('react');
 	    ReactErrorUtils.invokeGuardedCallback = function (name, func, a, b) {
 	      var boundFunc = func.bind(null, a, b);
-	      fakeNode.addEventListener(name, boundFunc, false);
+	      var evtType = 'react-' + name;
+	      fakeNode.addEventListener(evtType, boundFunc, false);
 	      var evt = document.createEvent('Event');
-	      evt.initEvent(name, false, false);
+	      evt.initEvent(evtType, false, false);
 	      fakeNode.dispatchEvent(evt);
-	      fakeNode.removeEventListener(name, boundFunc, false);
+	      fakeNode.removeEventListener(evtType, boundFunc, false);
 	    };
 	  }
 	}
@@ -6919,7 +6929,7 @@ var Grommet =
 	var canDefineProperty = false;
 	if (process.env.NODE_ENV !== 'production') {
 	  try {
-	    Object.defineProperty({}, 'x', {});
+	    Object.defineProperty({}, 'x', { get: function () {} });
 	    canDefineProperty = true;
 	  } catch (x) {
 	    // IE will fail on defineProperty
@@ -12353,6 +12363,7 @@ var Grommet =
 	    icon: null,
 	    id: MUST_USE_PROPERTY,
 	    inputMode: MUST_USE_ATTRIBUTE,
+	    integrity: null,
 	    is: MUST_USE_ATTRIBUTE,
 	    keyParams: MUST_USE_ATTRIBUTE,
 	    keyType: MUST_USE_ATTRIBUTE,
@@ -12375,6 +12386,7 @@ var Grommet =
 	    multiple: MUST_USE_PROPERTY | HAS_BOOLEAN_VALUE,
 	    muted: MUST_USE_PROPERTY | HAS_BOOLEAN_VALUE,
 	    name: null,
+	    nonce: MUST_USE_ATTRIBUTE,
 	    noValidate: HAS_BOOLEAN_VALUE,
 	    open: HAS_BOOLEAN_VALUE,
 	    optimum: null,
@@ -12386,6 +12398,7 @@ var Grommet =
 	    readOnly: MUST_USE_PROPERTY | HAS_BOOLEAN_VALUE,
 	    rel: null,
 	    required: HAS_BOOLEAN_VALUE,
+	    reversed: HAS_BOOLEAN_VALUE,
 	    role: MUST_USE_ATTRIBUTE,
 	    rows: MUST_USE_ATTRIBUTE | HAS_POSITIVE_NUMERIC_VALUE,
 	    rowSpan: null,
@@ -12712,6 +12725,7 @@ var Grommet =
 	// For quickly matching children type, to test if can be treated as content.
 	var CONTENT_TYPES = { 'string': true, 'number': true };
 
+	var CHILDREN = keyOf({ children: null });
 	var STYLE = keyOf({ style: null });
 	var HTML = keyOf({ __html: null });
 
@@ -13202,7 +13216,9 @@ var Grommet =
 	        }
 	        var markup = null;
 	        if (this._tag != null && isCustomComponent(this._tag, props)) {
-	          markup = DOMPropertyOperations.createMarkupForCustomAttribute(propKey, propValue);
+	          if (propKey !== CHILDREN) {
+	            markup = DOMPropertyOperations.createMarkupForCustomAttribute(propKey, propValue);
+	          }
 	        } else {
 	          markup = DOMPropertyOperations.createMarkupForProperty(propKey, propValue);
 	        }
@@ -13461,6 +13477,9 @@ var Grommet =
 	      } else if (isCustomComponent(this._tag, nextProps)) {
 	        if (!node) {
 	          node = ReactMount.getNode(this._rootNodeID);
+	        }
+	        if (propKey === CHILDREN) {
+	          nextProp = null;
 	        }
 	        DOMPropertyOperations.setValueForAttribute(node, propKey, nextProp);
 	      } else if (DOMProperty.properties[propKey] || DOMProperty.isCustomAttribute(propKey)) {
@@ -20582,7 +20601,7 @@ var Grommet =
 
 	'use strict';
 
-	module.exports = '0.14.1';
+	module.exports = '0.14.3';
 
 /***/ },
 /* 189 */
@@ -20641,7 +20660,7 @@ var Grommet =
 	    } else {
 	      result = React.createElement(
 	        'span',
-	        null,
+	        { id: this.props.id },
 	        this.props.defaultMessage || this.props.id
 	      );
 	    }
@@ -23467,8 +23486,6 @@ var Grommet =
 	 * This source code is licensed under the BSD-style license found in the
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule invariant
 	 */
 
 	'use strict';
@@ -23502,9 +23519,9 @@ var Grommet =
 	      var args = [a, b, c, d, e, f];
 	      var argIndex = 0;
 	      error = new Error(
-	        'Invariant Violation: ' +
 	        format.replace(/%s/g, function() { return args[argIndex++]; })
 	      );
+	      error.name = 'Invariant Violation';
 	    }
 
 	    error.framesToPop = 1; // we don't care about invariant's own frame
@@ -25003,18 +25020,31 @@ var Grommet =
 	  propTypes: {
 	    closer: React.PropTypes.oneOfType([React.PropTypes.node, React.PropTypes.bool]),
 	    onClose: React.PropTypes.func,
+	    history: React.PropTypes.object,
 	    router: React.PropTypes.func,
 	    intl: React.PropTypes.object,
 	    a11yCloserTitle: React.PropTypes.string
 	  },
 
+	  // Because Layer creates a new DOM render context, the context
+	  // is not transfered. For now, we hard code these specific ones.
+	  // TODO: Either figure out how to introspect the context and transfer
+	  // whatever we find or have callers explicitly indicate which parts
+	  // of the context to transfer somehow.
 	  childContextTypes: {
 	    router: React.PropTypes.func,
-	    intl: React.PropTypes.object
+	    history: React.PropTypes.object,
+	    intl: React.PropTypes.object,
+	    store: React.PropTypes.object
 	  },
 
 	  getChildContext: function getChildContext() {
-	    return { router: this.props.router, intl: this.props.intl };
+	    return {
+	      router: this.props.router,
+	      history: this.props.history,
+	      intl: this.props.intl,
+	      store: this.props.store
+	    };
 	  },
 
 	  componentDidMount: function componentDidMount() {
@@ -25043,7 +25073,7 @@ var Grommet =
 	  },
 
 	  _processTab: function _processTab(event) {
-	    var items = this.refs.background.getElementsByTagName('*');
+	    var items = this.refs.container.getElementsByTagName('*');
 
 	    items = DOMUtils.filterByFocusable(items);
 
@@ -25097,7 +25127,9 @@ var Grommet =
 
 	  contextTypes: {
 	    router: React.PropTypes.func,
-	    intl: React.PropTypes.object
+	    history: React.PropTypes.object,
+	    intl: React.PropTypes.object,
+	    store: React.PropTypes.object
 	  },
 
 	  getDefaultProps: function getDefaultProps() {
@@ -25170,7 +25202,11 @@ var Grommet =
 
 	  _renderLayer: function _renderLayer() {
 	    this._element.className = this._classesFromProps().join(' ');
-	    var contents = React.createElement(LayerContents, _extends({}, this.props, { router: this.context.router, intl: this.context.intl }));
+	    var contents = React.createElement(LayerContents, _extends({}, this.props, {
+	      router: this.context.router,
+	      history: this.context.history,
+	      intl: this.context.intl,
+	      store: this.context.store }));
 	    ReactDOM.render(contents, this._element);
 	    this._handleAriaHidden(this.props.hidden);
 	  },
@@ -25434,13 +25470,19 @@ var Grommet =
 	'use strict';
 
 	module.exports = {
-	  findScrollParents: function findScrollParents(element) {
+	  findScrollParents: function findScrollParents(element, horizontal) {
 	    var result = [];
 	    var parent = element.parentNode;
 	    while (parent) {
-	      // account for border the lazy way for now
-	      if (parent.scrollHeight > parent.offsetHeight + 10) {
-	        result.push(parent);
+	      // 10px is to account for borders and scrollbars in a lazy way
+	      if (horizontal) {
+	        if (parent.clientWidth && parent.scrollWidth > parent.clientWidth + 10) {
+	          result.push(parent);
+	        }
+	      } else {
+	        if (parent.clientHeight && parent.scrollHeight > parent.clientHeight + 10) {
+	          result.push(parent);
+	        }
 	      }
 	      parent = parent.parentNode;
 	    }
@@ -25509,12 +25551,13 @@ var Grommet =
 
 	  propTypes: {
 	    accent: React.PropTypes.bool,
-	    label: React.PropTypes.node,
+	    fill: React.PropTypes.bool,
+	    icon: React.PropTypes.bool,
 	    id: React.PropTypes.string,
+	    label: React.PropTypes.node,
 	    onClick: React.PropTypes.func,
 	    primary: React.PropTypes.bool,
 	    secondary: React.PropTypes.bool,
-	    icon: React.PropTypes.bool,
 	    type: React.PropTypes.oneOf(['button', 'reset', 'submit', 'icon'])
 	  },
 
@@ -25537,6 +25580,9 @@ var Grommet =
 	    }
 	    if (!this.props.onClick) {
 	      classes.push(CLASS_ROOT + "--disabled");
+	    }
+	    if (this.props.fill) {
+	      classes.push(CLASS_ROOT + "--fill");
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -25577,16 +25623,19 @@ var Grommet =
 	var merge = __webpack_require__(6);
 	var pick = __webpack_require__(234);
 	var keys = __webpack_require__(32);
+	var Intl = __webpack_require__(239);
 	var KeyboardAccelerators = __webpack_require__(230);
-	var Drop = __webpack_require__(239);
-	var Responsive = __webpack_require__(240);
-	var Box = __webpack_require__(241);
-	var MoreIcon = __webpack_require__(242);
-	var DropCaretIcon = __webpack_require__(243);
+	var Drop = __webpack_require__(240);
+	var Responsive = __webpack_require__(241);
+	var Box = __webpack_require__(242);
+	var Button = __webpack_require__(232);
+	var MoreIcon = __webpack_require__(243);
+	var DropCaretIcon = __webpack_require__(244);
 
 	var CLASS_ROOT = "menu";
 
-	// We have a separate module for the drop component so we can transfer the router context.
+	// We have a separate module for the drop component
+	// so we can transfer the router context.
 	var MenuDrop = React.createClass({
 	  displayName: 'MenuDrop',
 
@@ -25602,14 +25651,16 @@ var Grommet =
 	  }, Box.propTypes),
 
 	  childContextTypes: {
-	    router: React.PropTypes.func,
-	    intl: React.PropTypes.object
+	    intl: React.PropTypes.object,
+	    history: React.PropTypes.object,
+	    router: React.PropTypes.func
 	  },
 
 	  getChildContext: function getChildContext() {
 	    return {
-	      router: this.props.router,
-	      intl: this.props.intl
+	      intl: this.props.intl,
+	      history: this.props.history,
+	      router: this.props.router
 	    };
 	  },
 
@@ -25632,8 +25683,6 @@ var Grommet =
 	      if (!menuItems[i].getAttribute('id')) {
 	        menuItems[i].setAttribute('id', menuItems[i].getAttribute('data-reactid'));
 	      }
-	      // aria-selected informs AT which menu item is selected for that menu container.
-	      menuItems[i].setAttribute('aria-selected', classes.indexOf('active'));
 	    }
 	  },
 
@@ -25665,7 +25714,8 @@ var Grommet =
 
 	    this.activeMenuItem.focus();
 	    this.refs.menuDrop.setAttribute('aria-activedescendant', this.activeMenuItem.getAttribute('id'));
-	    // Stops KeyboardAccelerators from calling the other listeners. Works limilar to event.stopPropagation().
+	    // Stops KeyboardAccelerators from calling the other listeners.
+	    // Works limilar to event.stopPropagation().
 	    return true;
 	  },
 
@@ -25692,7 +25742,8 @@ var Grommet =
 
 	    this.activeMenuItem.focus();
 	    this.refs.menuDrop.setAttribute('aria-activedescendant', this.activeMenuItem.getAttribute('id'));
-	    // Stops KeyboardAccelerators from calling the other listeners. Works limilar to event.stopPropagation().
+	    // Stops KeyboardAccelerators from calling the other listeners.
+	    // Works limilar to event.stopPropagation().
 	    return true;
 	  },
 
@@ -25703,7 +25754,8 @@ var Grommet =
 	    var first = this.props.control;
 	    var second = React.createElement(
 	      Box,
-	      _extends({ ref: 'navContainer', tag: 'nav', className: CLASS_ROOT + '__contents' }, other),
+	      _extends({ ref: 'navContainer', tag: 'nav' }, other, {
+	        className: CLASS_ROOT + '__contents' }),
 	      this.props.children
 	    );
 	    if (this.props.dropAlign.bottom) {
@@ -25737,11 +25789,13 @@ var Grommet =
 	  displayName: 'Menu',
 
 	  propTypes: merge({
+	    a11yTitle: React.PropTypes.string,
 	    closeOnClick: React.PropTypes.bool,
 	    collapse: React.PropTypes.bool, // deprecated, remove in 0.5
 	    dropAlign: Drop.alignPropType,
 	    dropColorIndex: React.PropTypes.string,
 	    icon: React.PropTypes.node,
+	    id: React.PropTypes.string,
 	    inline: React.PropTypes.bool,
 	    label: React.PropTypes.string,
 	    large: React.PropTypes.bool,
@@ -25750,12 +25804,14 @@ var Grommet =
 	  }, Box.propTypes),
 
 	  contextTypes: {
-	    router: React.PropTypes.func,
-	    intl: React.PropTypes.object
+	    intl: React.PropTypes.object,
+	    history: React.PropTypes.object,
+	    router: React.PropTypes.func
 	  },
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
+	      a11yTitle: 'Menu',
 	      closeOnClick: true,
 	      direction: 'column',
 	      dropAlign: { top: 'top', left: 'left' },
@@ -25766,9 +25822,6 @@ var Grommet =
 	  },
 
 	  getInitialState: function getInitialState() {
-	    if (this.props.hasOwnProperty('collapse')) {
-	      console.log('The Grommet Menu "collapse" property is deprecated. Please use "inline" instead.'); // TODO: remove this message in version 0.4.0
-	    }
 	    var inline;
 	    if (this.props.hasOwnProperty('inline')) {
 	      inline = this.props.inline;
@@ -25787,25 +25840,9 @@ var Grommet =
 	    if (this.refs.control) {
 	      var controlElement = this.refs.control;
 	      this.setState({
-	        dropId: 'menu-drop-' + controlElement.getAttribute('data-reactid')
+	        dropId: 'menu-drop-' + controlElement.getAttribute('data-reactid'),
+	        controlHeight: this.refs.control.clientHeight + 'px'
 	      });
-
-	      controlElement.setAttribute('role', 'menu');
-	      var expanded = this.state.state === 'expanded';
-	      controlElement.setAttribute('aria-expanded', expanded);
-	      if (this.props.label) {
-	        controlElement.setAttribute('aria-label', this.props.label);
-	      } else if (this.props.icon) {
-	        try {
-	          var icon = controlElement.getElementsByClassName('control-icon')[0];
-	          if (!icon.getAttribute('id')) {
-	            icon.setAttribute('id', icon.getAttribute('data-reactid'));
-	          }
-	          controlElement.setAttribute('aria-labelledby', icon.getAttribute('id'));
-	        } catch (exception) {
-	          console.log('Unable to add aria-label to Menu component.');
-	        }
-	      }
 	    }
 
 	    if (this.props.inline && this.props.responsive) {
@@ -25814,15 +25851,15 @@ var Grommet =
 	  },
 
 	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
-	    // Set up keyboard listeners appropriate to the current state.
-
 	    if (this.state.state !== prevState.state) {
 	      var activeKeyboardHandlers = {
-	        esc: this._onClose
+	        esc: this._onClose,
+	        tab: this._onClose
 	      };
 	      var focusedKeyboardHandlers = {
 	        space: this._onOpen,
-	        down: this._onOpen
+	        down: this._onOpen,
+	        enter: this._onOpen
 	      };
 
 	      switch (this.state.state) {
@@ -25848,13 +25885,6 @@ var Grommet =
 	          this._drop.render(this._renderDrop());
 	          break;
 	      }
-	      if (this.refs.control) {
-	        var controlElement = this.refs.control;
-	        var expanded = this.state.state === 'expanded';
-	        controlElement.setAttribute('aria-expanded', expanded);
-	      }
-	    } else if ('expanded' === this.state.state) {
-	      this._drop.render(this._renderDrop());
 	    }
 	  },
 
@@ -25869,8 +25899,7 @@ var Grommet =
 	    }
 	  },
 
-	  _onOpen: function _onOpen(event) {
-	    event.preventDefault();
+	  _onOpen: function _onOpen() {
 	    this.setState({ state: 'expanded' });
 	  },
 
@@ -25881,16 +25910,6 @@ var Grommet =
 	      this.setState({ state: 'focused' });
 	    } else {
 	      element.focus();
-	    }
-	  },
-
-	  _onFocusControl: function _onFocusControl() {
-	    this.setState({ state: 'focused' });
-	  },
-
-	  _onBlurControl: function _onBlurControl() {
-	    if (this.state.state === 'focused') {
-	      this.setState({ state: 'collapsed' });
 	    }
 	  },
 
@@ -25917,9 +25936,20 @@ var Grommet =
 	    }
 	  },
 
-	  _renderControl: function _renderControl() {
+	  _onFocusControl: function _onFocusControl() {
+	    this.setState({ state: 'focused' });
+	  },
+
+	  _onBlurControl: function _onBlurControl() {
+	    if (this.state.state === 'focused') {
+	      this.setState({ state: 'collapsed' });
+	    }
+	  },
+
+	  _renderControl: function _renderControl(clickable) {
 	    var result = null;
 	    var icon = null;
+
 	    var controlClassName = CLASS_ROOT + "__control";
 
 	    var classes = [controlClassName];
@@ -25932,10 +25962,22 @@ var Grommet =
 	      icon = React.createElement(MoreIcon, null);
 	    }
 
+	    if (clickable) {
+	      icon = React.createElement(
+	        Button,
+	        { type: 'icon', onClick: this._onClose },
+	        icon
+	      );
+	    }
+	    var onClick;
+	    if (this.props.closeOnClick) {
+	      onClick = this._onClose;
+	    }
+
 	    if (this.props.label) {
 	      result = React.createElement(
 	        'div',
-	        { className: classes.join(' '), onClick: this._onClose },
+	        { className: classes.join(' '), onClick: onClick },
 	        React.createElement(
 	          'div',
 	          { className: controlClassName + "-icon" },
@@ -25943,7 +25985,8 @@ var Grommet =
 	        ),
 	        React.createElement(
 	          'span',
-	          { tabIndex: '-1', className: controlClassName + "-label" },
+	          { tabIndex: '-1', style: { lineHeight: this.state.controlHeight },
+	            className: controlClassName + "-label" },
 	          this.props.label
 	        ),
 	        React.createElement(DropCaretIcon, { className: controlClassName + "-drop-icon" })
@@ -25951,7 +25994,7 @@ var Grommet =
 	    } else {
 	      result = React.createElement(
 	        'div',
-	        { className: controlClassName, onClick: this._onClose },
+	        { className: controlClassName, onClick: onClick },
 	        icon
 	      );
 	    }
@@ -25961,7 +26004,7 @@ var Grommet =
 	  _renderDrop: function _renderDrop() {
 	    var other = pick(this.props, keys(Box.propTypes));
 
-	    var controlContents = this._renderControl();
+	    var controlContents = this._renderControl(true);
 
 	    var onClick;
 	    if (this.props.closeOnClick) {
@@ -25971,8 +26014,10 @@ var Grommet =
 	    }
 	    return React.createElement(
 	      MenuDrop,
-	      _extends({ tabIndex: '-1', router: this.context.router,
+	      _extends({ tabIndex: '-1',
 	        intl: this.context.intl,
+	        history: this.context.history,
+	        router: this.context.router,
 	        dropAlign: this.props.dropAlign,
 	        dropColorIndex: this.props.dropColorIndex,
 	        small: this.props.small,
@@ -26013,7 +26058,6 @@ var Grommet =
 	      if (this.props.label) {
 	        classes.push(CLASS_ROOT + "--labelled");
 	      }
-	      classes.push(CLASS_ROOT + "--" + this.state.state);
 	    }
 	    if (this.props.className) {
 	      classes.push(this.props.className);
@@ -26024,18 +26068,23 @@ var Grommet =
 
 	      return React.createElement(
 	        Box,
-	        _extends({ tag: 'nav' }, other, { className: classes.join(' '), onClick: this._onClose }),
+	        _extends({ tag: 'nav', id: this.props.id }, other, {
+	          className: classes.join(' ') }),
 	        this.props.children
 	      );
 	    } else {
 
 	      var controlContents = this._renderControl();
 
+	      var menuTitle = Intl.getMessage(this.context.intl, this.props.label || this.props.a11yTitle);
+
 	      return React.createElement(
 	        'div',
-	        { ref: 'control', className: classes.join(' '),
+	        { ref: 'control', id: this.props.id,
+	          className: classes.join(' '),
 	          tabIndex: '0',
 	          onClick: this._onOpen,
+	          role: 'link', 'aria-label': menuTitle,
 	          onFocus: this._onFocusControl,
 	          onBlur: this._onBlurControl },
 	        controlContents
@@ -26231,6 +26280,26 @@ var Grommet =
 
 /***/ },
 /* 239 */
+/***/ function(module, exports) {
+
+	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
+	"use strict";
+
+	module.exports = {
+	  getMessage: function getMessage(intl, key, values) {
+	    if (intl) {
+	      return intl.formatMessage({
+	        id: key,
+	        defaultMessage: key
+	      }, values);
+	    } else {
+	      return key;
+	    }
+	  }
+	};
+
+/***/ },
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -26414,7 +26483,7 @@ var Grommet =
 	module.exports = Drop;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -26491,15 +26560,20 @@ var Grommet =
 	module.exports = Responsive;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(2);
 	var keys = __webpack_require__(32);
+
+	var KeyboardAccelerators = __webpack_require__(230);
+	var Intl = __webpack_require__(239);
 
 	var CLASS_ROOT = "box";
 
@@ -26507,6 +26581,7 @@ var Grommet =
 	  displayName: 'Box',
 
 	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
 	    align: React.PropTypes.oneOf(['start', 'center', 'end']),
 	    appCentered: React.PropTypes.bool,
 	    backgroundImage: React.PropTypes.string,
@@ -26528,13 +26603,39 @@ var Grommet =
 	    texture: React.PropTypes.string
 	  },
 
+	  contextTypes: {
+	    intl: React.PropTypes.object
+	  },
+
 	  getDefaultProps: function getDefaultProps() {
 	    return {
+	      a11yTitle: 'Box',
 	      direction: 'column',
 	      pad: 'none',
 	      tag: 'div',
 	      responsive: true
 	    };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    if (this.props.onClick) {
+	      var clickCallback = (function () {
+	        if (this.refs.boxContainer === document.activeElement) {
+	          this.props.onClick();
+	        }
+	      }).bind(this);
+
+	      KeyboardAccelerators.startListeningToKeyboard(this, {
+	        enter: clickCallback,
+	        space: clickCallback
+	      });
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.props.onClick) {
+	      KeyboardAccelerators.stopListeningToKeyboard(this);
+	    }
 	  },
 
 	  _addPropertyClass: function _addPropertyClass(classes, prefix, property, classProperty) {
@@ -26593,22 +26694,31 @@ var Grommet =
 	      style.backgroundSize = "cover";
 	    }
 
+	    var a11yProps = {};
+	    if (this.props.onClick) {
+	      var boxLabel = Intl.getMessage(this.context.intl, this.props.a11yTitle);
+	      a11yProps.tabIndex = 0;
+	      a11yProps["aria-label"] = boxLabel;
+	      a11yProps.role = 'link';
+	    }
+
 	    if (this.props.appCentered) {
 	      return React.createElement(
 	        'div',
-	        { className: containerClasses.join(' '), style: style,
-	          onClick: this.props.onClick },
+	        _extends({ ref: 'boxContainer', className: containerClasses.join(' '),
+	          style: style, onClick: this.props.onClick }, a11yProps),
 	        React.createElement(
 	          this.props.tag,
-	          { className: classes.join(' ') },
+	          { id: this.props.id, className: classes.join(' ') },
 	          this.props.children
 	        )
 	      );
 	    } else {
 	      return React.createElement(
 	        this.props.tag,
-	        { className: classes.join(' '), style: style,
-	          onClick: this.props.onClick },
+	        _extends({ ref: 'boxContainer', id: this.props.id,
+	          className: classes.join(' '), style: style,
+	          onClick: this.props.onClick }, a11yProps),
 	        this.props.children
 	      );
 	    }
@@ -26619,7 +26729,7 @@ var Grommet =
 	module.exports = Box;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -26654,7 +26764,7 @@ var Grommet =
 	module.exports = More;
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -26687,10 +26797,10 @@ var Grommet =
 	module.exports = DropCaret;
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var m = __webpack_require__(245),
+	/* WEBPACK VAR INJECTION */(function(global) {var m = __webpack_require__(246),
 	    IntlPolyfill = m['default'];
 
 	// Expose `IntlPolyfill` as global to add locale data into runtime later on.
@@ -26698,7 +26808,7 @@ var Grommet =
 
 	// Require all locale data for `Intl`. This module will be
 	// ignored when bundling for the browser with Browserify/Webpack.
-	__webpack_require__(248);
+	__webpack_require__(249);
 
 	// hack to export the polyfill as global Intl if needed
 	if (!global.Intl) {
@@ -26714,7 +26824,7 @@ var Grommet =
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26730,7 +26840,7 @@ var Grommet =
 	/*jshint esnext: true, proto:true, eqnull:true, boss:true, laxbreak:true, newcap:false, shadow:true, funcscope:true */
 
 	"use strict";
-	var src$exp$$ = __webpack_require__(246), src$cldr$$ = __webpack_require__(247);
+	var src$exp$$ = __webpack_require__(247), src$cldr$$ = __webpack_require__(248);
 
 	var Intl = {},
 
@@ -29685,7 +29795,7 @@ var Grommet =
 	//# sourceMappingURL=core.js.map
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports) {
 
 	/* jshint esnext: true, laxbreak:true */
@@ -29793,7 +29903,7 @@ var Grommet =
 	//# sourceMappingURL=exp.js.map
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports) {
 
 	/* jslint esnext: true */
@@ -30005,25 +30115,25 @@ var Grommet =
 	//# sourceMappingURL=cldr.js.map
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports) {
 
 	IntlPolyfill.__addLocaleData({locale:"en-US",date:{ca:["gregory","buddhist","chinese","coptic","dangi","ethioaa","ethiopic","generic","hebrew","indian","islamic","islamicc","japanese","persian","roc"],hourNo0:true,hour12:true,formats:{medium:"{1}, {0}",availableFormats:{"E":"ccc",EHm:"E HH:mm",EHms:"E HH:mm:ss",Ed:"d E",Ehm:"E h:mm a",Ehms:"E h:mm:ss a",Gy:"y G",GyMMM:"MMM y G",GyMMMEd:"E, MMM d, y G",GyMMMd:"MMM d, y G","H":"HH",Hm:"HH:mm",Hms:"HH:mm:ss",Hmsv:"HH:mm:ss v",Hmv:"HH:mm v","M":"L",MEd:"E, M/d",MMM:"LLL",MMMEd:"E, MMM d",MMMd:"MMM d",Md:"M/d","d":"d","h":"h a",hm:"h:mm a",hms:"h:mm:ss a",hmsv:"h:mm:ss a v",hmv:"h:mm a v",ms:"mm:ss","y":"y",yM:"M/y",yMEd:"E, M/d/y",yMMM:"MMM y",yMMMEd:"E, MMM d, y",yMMMd:"MMM d, y",yMd:"M/d/y",yQQQ:"QQQ y",yQQQQ:"QQQQ y"},dateFormats:{full:"EEEE, MMMM d, y",long:"MMMM d, y",medium:"MMM d, y",short:"M/d/yy"},timeFormats:{full:"h:mm:ss a zzzz",long:"h:mm:ss a z",medium:"h:mm:ss a",short:"h:mm a"}},calendars:{buddhist:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["BE"],short:["BE"],long:["BE"]},dayPeriods:{am:"AM",pm:"PM"}},chinese:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Mo1","Mo2","Mo3","Mo4","Mo5","Mo6","Mo7","Mo8","Mo9","Mo10","Mo11","Mo12"],long:["Month1","Month2","Month3","Month4","Month5","Month6","Month7","Month8","Month9","Month10","Month11","Month12"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},dayPeriods:{am:"AM",pm:"PM"}},coptic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"],long:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},dangi:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Mo1","Mo2","Mo3","Mo4","Mo5","Mo6","Mo7","Mo8","Mo9","Mo10","Mo11","Mo12"],long:["Month1","Month2","Month3","Month4","Month5","Month6","Month7","Month8","Month9","Month10","Month11","Month12"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},dayPeriods:{am:"AM",pm:"PM"}},ethiopic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},ethioaa:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0"],short:["ERA0"],long:["ERA0"]},dayPeriods:{am:"AM",pm:"PM"}},generic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"],long:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},gregory:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["B","A","BCE","CE"],short:["BC","AD","BCE","CE"],long:["Before Christ","Anno Domini","Before Common Era","Common Era"]},dayPeriods:{am:"AM",pm:"PM"}},hebrew:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13","7"],short:["Tishri","Heshvan","Kislev","Tevet","Shevat","Adar I","Adar","Nisan","Iyar","Sivan","Tamuz","Av","Elul","Adar II"],long:["Tishri","Heshvan","Kislev","Tevet","Shevat","Adar I","Adar","Nisan","Iyar","Sivan","Tamuz","Av","Elul","Adar II"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AM"],short:["AM"],long:["AM"]},dayPeriods:{am:"AM",pm:"PM"}},indian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"],long:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["Saka"],short:["Saka"],long:["Saka"]},dayPeriods:{am:"AM",pm:"PM"}},islamic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Muh.","Saf.","Rab. I","Rab. II","Jum. I","Jum. II","Raj.","Sha.","Ram.","Shaw.","Dhuʻl-Q.","Dhuʻl-H."],long:["Muharram","Safar","Rabiʻ I","Rabiʻ II","Jumada I","Jumada II","Rajab","Shaʻban","Ramadan","Shawwal","Dhuʻl-Qiʻdah","Dhuʻl-Hijjah"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},islamicc:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Muh.","Saf.","Rab. I","Rab. II","Jum. I","Jum. II","Raj.","Sha.","Ram.","Shaw.","Dhuʻl-Q.","Dhuʻl-H."],long:["Muharram","Safar","Rabiʻ I","Rabiʻ II","Jumada I","Jumada II","Rajab","Shaʻban","Ramadan","Shawwal","Dhuʻl-Qiʻdah","Dhuʻl-Hijjah"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},japanese:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["Taika (645-650)","Hakuchi (650-671)","Hakuhō (672-686)","Shuchō (686-701)","Taihō (701-704)","Keiun (704-708)","Wadō (708-715)","Reiki (715-717)","Yōrō (717-724)","Jinki (724-729)","Tempyō (729-749)","Tempyō-kampō (749-749)","Tempyō-shōhō (749-757)","Tempyō-hōji (757-765)","Temphō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770-780)","Ten-ō (781-782)","Enryaku (782-806)","Daidō (806-810)","Kōnin (810-824)","Tenchō (824-834)","Jōwa (834-848)","Kajō (848-851)","Ninju (851-854)","Saiko (854-857)","Tennan (857-859)","Jōgan (859-877)","Genkei (877-885)","Ninna (885-889)","Kampyō (889-898)","Shōtai (898-901)","Engi (901-923)","Enchō (923-931)","Shōhei (931-938)","Tengyō (938-947)","Tenryaku (947-957)","Tentoku (957-961)","Ōwa (961-964)","Kōhō (964-968)","Anna (968-970)","Tenroku (970-973)","Ten-en (973-976)","Jōgen (976-978)","Tengen (978-983)","Eikan (983-985)","Kanna (985-987)","Ei-en (987-989)","Eiso (989-990)","Shōryaku (990-995)","Chōtoku (995-999)","Chōhō (999-1004)","Kankō (1004-1012)","Chōwa (1012-1017)","Kannin (1017-1021)","Jian (1021-1024)","Manju (1024-1028)","Chōgen (1028-1037)","Chōryaku (1037-1040)","Chōkyū (1040-1044)","Kantoku (1044-1046)","Eishō (1046-1053)","Tengi (1053-1058)","Kōhei (1058-1065)","Jiryaku (1065-1069)","Enkyū (1069-1074)","Shōho (1074-1077)","Shōryaku (1077-1081)","Eiho (1081-1084)","Ōtoku (1084-1087)","Kanji (1087-1094)","Kaho (1094-1096)","Eichō (1096-1097)","Shōtoku (1097-1099)","Kōwa (1099-1104)","Chōji (1104-1106)","Kashō (1106-1108)","Tennin (1108-1110)","Ten-ei (1110-1113)","Eikyū (1113-1118)","Gen-ei (1118-1120)","Hoan (1120-1124)","Tenji (1124-1126)","Daiji (1126-1131)","Tenshō (1131-1132)","Chōshō (1132-1135)","Hoen (1135-1141)","Eiji (1141-1142)","Kōji (1142-1144)","Tenyō (1144-1145)","Kyūan (1145-1151)","Ninpei (1151-1154)","Kyūju (1154-1156)","Hogen (1156-1159)","Heiji (1159-1160)","Eiryaku (1160-1161)","Ōho (1161-1163)","Chōkan (1163-1165)","Eiman (1165-1166)","Nin-an (1166-1169)","Kaō (1169-1171)","Shōan (1171-1175)","Angen (1175-1177)","Jishō (1177-1181)","Yōwa (1181-1182)","Juei (1182-1184)","Genryuku (1184-1185)","Bunji (1185-1190)","Kenkyū (1190-1199)","Shōji (1199-1201)","Kennin (1201-1204)","Genkyū (1204-1206)","Ken-ei (1206-1207)","Shōgen (1207-1211)","Kenryaku (1211-1213)","Kenpō (1213-1219)","Shōkyū (1219-1222)","Jōō (1222-1224)","Gennin (1224-1225)","Karoku (1225-1227)","Antei (1227-1229)","Kanki (1229-1232)","Jōei (1232-1233)","Tempuku (1233-1234)","Bunryaku (1234-1235)","Katei (1235-1238)","Ryakunin (1238-1239)","En-ō (1239-1240)","Ninji (1240-1243)","Kangen (1243-1247)","Hōji (1247-1249)","Kenchō (1249-1256)","Kōgen (1256-1257)","Shōka (1257-1259)","Shōgen (1259-1260)","Bun-ō (1260-1261)","Kōchō (1261-1264)","Bun-ei (1264-1275)","Kenji (1275-1278)","Kōan (1278-1288)","Shōō (1288-1293)","Einin (1293-1299)","Shōan (1299-1302)","Kengen (1302-1303)","Kagen (1303-1306)","Tokuji (1306-1308)","Enkei (1308-1311)","Ōchō (1311-1312)","Shōwa (1312-1317)","Bunpō (1317-1319)","Genō (1319-1321)","Genkyō (1321-1324)","Shōchū (1324-1326)","Kareki (1326-1329)","Gentoku (1329-1331)","Genkō (1331-1334)","Kemmu (1334-1336)","Engen (1336-1340)","Kōkoku (1340-1346)","Shōhei (1346-1370)","Kentoku (1370-1372)","Bunchũ (1372-1375)","Tenju (1375-1379)","Kōryaku (1379-1381)","Kōwa (1381-1384)","Genchũ (1384-1392)","Meitoku (1384-1387)","Kakei (1387-1389)","Kōō (1389-1390)","Meitoku (1390-1394)","Ōei (1394-1428)","Shōchō (1428-1429)","Eikyō (1429-1441)","Kakitsu (1441-1444)","Bun-an (1444-1449)","Hōtoku (1449-1452)","Kyōtoku (1452-1455)","Kōshō (1455-1457)","Chōroku (1457-1460)","Kanshō (1460-1466)","Bunshō (1466-1467)","Ōnin (1467-1469)","Bunmei (1469-1487)","Chōkyō (1487-1489)","Entoku (1489-1492)","Meiō (1492-1501)","Bunki (1501-1504)","Eishō (1504-1521)","Taiei (1521-1528)","Kyōroku (1528-1532)","Tenmon (1532-1555)","Kōji (1555-1558)","Eiroku (1558-1570)","Genki (1570-1573)","Tenshō (1573-1592)","Bunroku (1592-1596)","Keichō (1596-1615)","Genwa (1615-1624)","Kan-ei (1624-1644)","Shōho (1644-1648)","Keian (1648-1652)","Shōō (1652-1655)","Meiryaku (1655-1658)","Manji (1658-1661)","Kanbun (1661-1673)","Enpō (1673-1681)","Tenwa (1681-1684)","Jōkyō (1684-1688)","Genroku (1688-1704)","Hōei (1704-1711)","Shōtoku (1711-1716)","Kyōhō (1716-1736)","Genbun (1736-1741)","Kanpō (1741-1744)","Enkyō (1744-1748)","Kan-en (1748-1751)","Hōryaku (1751-1764)","Meiwa (1764-1772)","An-ei (1772-1781)","Tenmei (1781-1789)","Kansei (1789-1801)","Kyōwa (1801-1804)","Bunka (1804-1818)","Bunsei (1818-1830)","Tenpō (1830-1844)","Kōka (1844-1848)","Kaei (1848-1854)","Ansei (1854-1860)","Man-en (1860-1861)","Bunkyū (1861-1864)","Genji (1864-1865)","Keiō (1865-1868)","M","T","S","H"],short:["Taika (645-650)","Hakuchi (650-671)","Hakuhō (672-686)","Shuchō (686-701)","Taihō (701-704)","Keiun (704-708)","Wadō (708-715)","Reiki (715-717)","Yōrō (717-724)","Jinki (724-729)","Tempyō (729-749)","Tempyō-kampō (749-749)","Tempyō-shōhō (749-757)","Tempyō-hōji (757-765)","Temphō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770-780)","Ten-ō (781-782)","Enryaku (782-806)","Daidō (806-810)","Kōnin (810-824)","Tenchō (824-834)","Jōwa (834-848)","Kajō (848-851)","Ninju (851-854)","Saiko (854-857)","Tennan (857-859)","Jōgan (859-877)","Genkei (877-885)","Ninna (885-889)","Kampyō (889-898)","Shōtai (898-901)","Engi (901-923)","Enchō (923-931)","Shōhei (931-938)","Tengyō (938-947)","Tenryaku (947-957)","Tentoku (957-961)","Ōwa (961-964)","Kōhō (964-968)","Anna (968-970)","Tenroku (970-973)","Ten-en (973-976)","Jōgen (976-978)","Tengen (978-983)","Eikan (983-985)","Kanna (985-987)","Ei-en (987-989)","Eiso (989-990)","Shōryaku (990-995)","Chōtoku (995-999)","Chōhō (999-1004)","Kankō (1004-1012)","Chōwa (1012-1017)","Kannin (1017-1021)","Jian (1021-1024)","Manju (1024-1028)","Chōgen (1028-1037)","Chōryaku (1037-1040)","Chōkyū (1040-1044)","Kantoku (1044-1046)","Eishō (1046-1053)","Tengi (1053-1058)","Kōhei (1058-1065)","Jiryaku (1065-1069)","Enkyū (1069-1074)","Shōho (1074-1077)","Shōryaku (1077-1081)","Eiho (1081-1084)","Ōtoku (1084-1087)","Kanji (1087-1094)","Kaho (1094-1096)","Eichō (1096-1097)","Shōtoku (1097-1099)","Kōwa (1099-1104)","Chōji (1104-1106)","Kashō (1106-1108)","Tennin (1108-1110)","Ten-ei (1110-1113)","Eikyū (1113-1118)","Gen-ei (1118-1120)","Hoan (1120-1124)","Tenji (1124-1126)","Daiji (1126-1131)","Tenshō (1131-1132)","Chōshō (1132-1135)","Hoen (1135-1141)","Eiji (1141-1142)","Kōji (1142-1144)","Tenyō (1144-1145)","Kyūan (1145-1151)","Ninpei (1151-1154)","Kyūju (1154-1156)","Hogen (1156-1159)","Heiji (1159-1160)","Eiryaku (1160-1161)","Ōho (1161-1163)","Chōkan (1163-1165)","Eiman (1165-1166)","Nin-an (1166-1169)","Kaō (1169-1171)","Shōan (1171-1175)","Angen (1175-1177)","Jishō (1177-1181)","Yōwa (1181-1182)","Juei (1182-1184)","Genryuku (1184-1185)","Bunji (1185-1190)","Kenkyū (1190-1199)","Shōji (1199-1201)","Kennin (1201-1204)","Genkyū (1204-1206)","Ken-ei (1206-1207)","Shōgen (1207-1211)","Kenryaku (1211-1213)","Kenpō (1213-1219)","Shōkyū (1219-1222)","Jōō (1222-1224)","Gennin (1224-1225)","Karoku (1225-1227)","Antei (1227-1229)","Kanki (1229-1232)","Jōei (1232-1233)","Tempuku (1233-1234)","Bunryaku (1234-1235)","Katei (1235-1238)","Ryakunin (1238-1239)","En-ō (1239-1240)","Ninji (1240-1243)","Kangen (1243-1247)","Hōji (1247-1249)","Kenchō (1249-1256)","Kōgen (1256-1257)","Shōka (1257-1259)","Shōgen (1259-1260)","Bun-ō (1260-1261)","Kōchō (1261-1264)","Bun-ei (1264-1275)","Kenji (1275-1278)","Kōan (1278-1288)","Shōō (1288-1293)","Einin (1293-1299)","Shōan (1299-1302)","Kengen (1302-1303)","Kagen (1303-1306)","Tokuji (1306-1308)","Enkei (1308-1311)","Ōchō (1311-1312)","Shōwa (1312-1317)","Bunpō (1317-1319)","Genō (1319-1321)","Genkyō (1321-1324)","Shōchū (1324-1326)","Kareki (1326-1329)","Gentoku (1329-1331)","Genkō (1331-1334)","Kemmu (1334-1336)","Engen (1336-1340)","Kōkoku (1340-1346)","Shōhei (1346-1370)","Kentoku (1370-1372)","Bunchū (1372-1375)","Tenju (1375-1379)","Kōryaku (1379-1381)","Kōwa (1381-1384)","Genchū (1384-1392)","Meitoku (1384-1387)","Kakei (1387-1389)","Kōō (1389-1390)","Meitoku (1390-1394)","Ōei (1394-1428)","Shōchō (1428-1429)","Eikyō (1429-1441)","Kakitsu (1441-1444)","Bun-an (1444-1449)","Hōtoku (1449-1452)","Kyōtoku (1452-1455)","Kōshō (1455-1457)","Chōroku (1457-1460)","Kanshō (1460-1466)","Bunshō (1466-1467)","Ōnin (1467-1469)","Bunmei (1469-1487)","Chōkyō (1487-1489)","Entoku (1489-1492)","Meiō (1492-1501)","Bunki (1501-1504)","Eishō (1504-1521)","Taiei (1521-1528)","Kyōroku (1528-1532)","Tenmon (1532-1555)","Kōji (1555-1558)","Eiroku (1558-1570)","Genki (1570-1573)","Tenshō (1573-1592)","Bunroku (1592-1596)","Keichō (1596-1615)","Genwa (1615-1624)","Kan-ei (1624-1644)","Shōho (1644-1648)","Keian (1648-1652)","Shōō (1652-1655)","Meiryaku (1655-1658)","Manji (1658-1661)","Kanbun (1661-1673)","Enpō (1673-1681)","Tenwa (1681-1684)","Jōkyō (1684-1688)","Genroku (1688-1704)","Hōei (1704-1711)","Shōtoku (1711-1716)","Kyōhō (1716-1736)","Genbun (1736-1741)","Kanpō (1741-1744)","Enkyō (1744-1748)","Kan-en (1748-1751)","Hōryaku (1751-1764)","Meiwa (1764-1772)","An-ei (1772-1781)","Tenmei (1781-1789)","Kansei (1789-1801)","Kyōwa (1801-1804)","Bunka (1804-1818)","Bunsei (1818-1830)","Tenpō (1830-1844)","Kōka (1844-1848)","Kaei (1848-1854)","Ansei (1854-1860)","Man-en (1860-1861)","Bunkyū (1861-1864)","Genji (1864-1865)","Keiō (1865-1868)","Meiji","Taishō","Shōwa","Heisei"],long:["Taika (645-650)","Hakuchi (650-671)","Hakuhō (672-686)","Shuchō (686-701)","Taihō (701-704)","Keiun (704-708)","Wadō (708-715)","Reiki (715-717)","Yōrō (717-724)","Jinki (724-729)","Tempyō (729-749)","Tempyō-kampō (749-749)","Tempyō-shōhō (749-757)","Tempyō-hōji (757-765)","Temphō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770-780)","Ten-ō (781-782)","Enryaku (782-806)","Daidō (806-810)","Kōnin (810-824)","Tenchō (824-834)","Jōwa (834-848)","Kajō (848-851)","Ninju (851-854)","Saiko (854-857)","Tennan (857-859)","Jōgan (859-877)","Genkei (877-885)","Ninna (885-889)","Kampyō (889-898)","Shōtai (898-901)","Engi (901-923)","Enchō (923-931)","Shōhei (931-938)","Tengyō (938-947)","Tenryaku (947-957)","Tentoku (957-961)","Ōwa (961-964)","Kōhō (964-968)","Anna (968-970)","Tenroku (970-973)","Ten-en (973-976)","Jōgen (976-978)","Tengen (978-983)","Eikan (983-985)","Kanna (985-987)","Ei-en (987-989)","Eiso (989-990)","Shōryaku (990-995)","Chōtoku (995-999)","Chōhō (999-1004)","Kankō (1004-1012)","Chōwa (1012-1017)","Kannin (1017-1021)","Jian (1021-1024)","Manju (1024-1028)","Chōgen (1028-1037)","Chōryaku (1037-1040)","Chōkyū (1040-1044)","Kantoku (1044-1046)","Eishō (1046-1053)","Tengi (1053-1058)","Kōhei (1058-1065)","Jiryaku (1065-1069)","Enkyū (1069-1074)","Shōho (1074-1077)","Shōryaku (1077-1081)","Eiho (1081-1084)","Ōtoku (1084-1087)","Kanji (1087-1094)","Kaho (1094-1096)","Eichō (1096-1097)","Shōtoku (1097-1099)","Kōwa (1099-1104)","Chōji (1104-1106)","Kashō (1106-1108)","Tennin (1108-1110)","Ten-ei (1110-1113)","Eikyū (1113-1118)","Gen-ei (1118-1120)","Hoan (1120-1124)","Tenji (1124-1126)","Daiji (1126-1131)","Tenshō (1131-1132)","Chōshō (1132-1135)","Hoen (1135-1141)","Eiji (1141-1142)","Kōji (1142-1144)","Tenyō (1144-1145)","Kyūan (1145-1151)","Ninpei (1151-1154)","Kyūju (1154-1156)","Hogen (1156-1159)","Heiji (1159-1160)","Eiryaku (1160-1161)","Ōho (1161-1163)","Chōkan (1163-1165)","Eiman (1165-1166)","Nin-an (1166-1169)","Kaō (1169-1171)","Shōan (1171-1175)","Angen (1175-1177)","Jishō (1177-1181)","Yōwa (1181-1182)","Juei (1182-1184)","Genryuku (1184-1185)","Bunji (1185-1190)","Kenkyū (1190-1199)","Shōji (1199-1201)","Kennin (1201-1204)","Genkyū (1204-1206)","Ken-ei (1206-1207)","Shōgen (1207-1211)","Kenryaku (1211-1213)","Kenpō (1213-1219)","Shōkyū (1219-1222)","Jōō (1222-1224)","Gennin (1224-1225)","Karoku (1225-1227)","Antei (1227-1229)","Kanki (1229-1232)","Jōei (1232-1233)","Tempuku (1233-1234)","Bunryaku (1234-1235)","Katei (1235-1238)","Ryakunin (1238-1239)","En-ō (1239-1240)","Ninji (1240-1243)","Kangen (1243-1247)","Hōji (1247-1249)","Kenchō (1249-1256)","Kōgen (1256-1257)","Shōka (1257-1259)","Shōgen (1259-1260)","Bun-ō (1260-1261)","Kōchō (1261-1264)","Bun-ei (1264-1275)","Kenji (1275-1278)","Kōan (1278-1288)","Shōō (1288-1293)","Einin (1293-1299)","Shōan (1299-1302)","Kengen (1302-1303)","Kagen (1303-1306)","Tokuji (1306-1308)","Enkei (1308-1311)","Ōchō (1311-1312)","Shōwa (1312-1317)","Bunpō (1317-1319)","Genō (1319-1321)","Genkyō (1321-1324)","Shōchū (1324-1326)","Kareki (1326-1329)","Gentoku (1329-1331)","Genkō (1331-1334)","Kemmu (1334-1336)","Engen (1336-1340)","Kōkoku (1340-1346)","Shōhei (1346-1370)","Kentoku (1370-1372)","Bunchū (1372-1375)","Tenju (1375-1379)","Kōryaku (1379-1381)","Kōwa (1381-1384)","Genchū (1384-1392)","Meitoku (1384-1387)","Kakei (1387-1389)","Kōō (1389-1390)","Meitoku (1390-1394)","Ōei (1394-1428)","Shōchō (1428-1429)","Eikyō (1429-1441)","Kakitsu (1441-1444)","Bun-an (1444-1449)","Hōtoku (1449-1452)","Kyōtoku (1452-1455)","Kōshō (1455-1457)","Chōroku (1457-1460)","Kanshō (1460-1466)","Bunshō (1466-1467)","Ōnin (1467-1469)","Bunmei (1469-1487)","Chōkyō (1487-1489)","Entoku (1489-1492)","Meiō (1492-1501)","Bunki (1501-1504)","Eishō (1504-1521)","Taiei (1521-1528)","Kyōroku (1528-1532)","Tenmon (1532-1555)","Kōji (1555-1558)","Eiroku (1558-1570)","Genki (1570-1573)","Tenshō (1573-1592)","Bunroku (1592-1596)","Keichō (1596-1615)","Genwa (1615-1624)","Kan-ei (1624-1644)","Shōho (1644-1648)","Keian (1648-1652)","Shōō (1652-1655)","Meiryaku (1655-1658)","Manji (1658-1661)","Kanbun (1661-1673)","Enpō (1673-1681)","Tenwa (1681-1684)","Jōkyō (1684-1688)","Genroku (1688-1704)","Hōei (1704-1711)","Shōtoku (1711-1716)","Kyōhō (1716-1736)","Genbun (1736-1741)","Kanpō (1741-1744)","Enkyō (1744-1748)","Kan-en (1748-1751)","Hōryaku (1751-1764)","Meiwa (1764-1772)","An-ei (1772-1781)","Tenmei (1781-1789)","Kansei (1789-1801)","Kyōwa (1801-1804)","Bunka (1804-1818)","Bunsei (1818-1830)","Tenpō (1830-1844)","Kōka (1844-1848)","Kaei (1848-1854)","Ansei (1854-1860)","Man-en (1860-1861)","Bunkyū (1861-1864)","Genji (1864-1865)","Keiō (1865-1868)","Meiji","Taishō","Shōwa","Heisei"]},dayPeriods:{am:"AM",pm:"PM"}},persian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"],long:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["AP"],short:["AP"],long:["AP"]},dayPeriods:{am:"AM",pm:"PM"}},roc:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],long:["January","February","March","April","May","June","July","August","September","October","November","December"]},days:{narrow:["S","M","T","W","T","F","S"],short:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],long:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},eras:{narrow:["Before R.O.C.","Minguo"],short:["Before R.O.C.","Minguo"],long:["Before R.O.C.","Minguo"]},dayPeriods:{am:"AM",pm:"PM"}}}},number:{nu:["latn"],patterns:{decimal:{positivePattern:"{number}",negativePattern:"-{number}"},currency:{positivePattern:"{currency}{number}",negativePattern:"-{currency}{number}"},percent:{positivePattern:"{number}%",negativePattern:"-{number}%"}},symbols:{latn:{decimal:".",group:",",nan:"NaN",percent:"%",infinity:"∞"}},currencies:{AUD:"A$",BRL:"R$",CAD:"CA$",CNY:"CN¥",EUR:"€",GBP:"£",HKD:"HK$",ILS:"₪",INR:"₹",JPY:"¥",KRW:"₩",MXN:"MX$",NZD:"NZ$",TWD:"NT$",USD:"$",VND:"₫",XAF:"FCFA",XCD:"EC$",XOF:"CFA",XPF:"CFPF"}}});
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports) {
 
 	IntlPolyfill.__addLocaleData({locale:"pt-BR",date:{ca:["gregory","buddhist","chinese","coptic","dangi","ethioaa","ethiopic","generic","hebrew","indian","islamic","islamicc","japanese","persian","roc"],hourNo0:true,hour12:false,formats:{medium:"{1} {0}",availableFormats:{"E":"ccc",EHm:"E, HH:mm",EHms:"E, HH:mm:ss",Ed:"E, d",Ehm:"E, h:mm a",Ehms:"E, h:mm:ss a",Gy:"y G",GyMMM:"MMM 'de' y G",GyMMMEd:"E, d 'de' MMM 'de' y G",GyMMMd:"d 'de' MMM 'de' y G","H":"HH",Hm:"HH:mm",Hms:"HH:mm:ss",Hmsv:"HH:mm:ss v",Hmv:"HH:mm v","M":"L",MEd:"E, dd/MM",MMM:"LLL",MMMEd:"E, d 'de' MMM",MMMd:"d 'de' MMM",MMdd:"dd/MM",Md:"d/M","d":"d","h":"h a",hm:"h:mm a",hms:"h:mm:ss a",hmsv:"h:mm:ss a v",hmv:"h:mm a v",ms:"mm:ss","y":"y",yM:"MM/y",yMEd:"E, dd/MM/y",yMM:"MM/y",yMMM:"MMM 'de' y",yMMMEd:"E, d 'de' MMM 'de' y",yMMMd:"d 'de' MMM 'de' y",yMd:"dd/MM/y",yQQQ:"y QQQ",yQQQQ:"y QQQQ"},dateFormats:{full:"EEEE, d 'de' MMMM 'de' y",long:"d 'de' MMMM 'de' y",medium:"d 'de' MMM 'de' y",short:"dd/MM/yy"},timeFormats:{full:"HH:mm:ss zzzz",long:"HH:mm:ss z",medium:"HH:mm:ss",short:"HH:mm"}},calendars:{buddhist:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],long:["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["BE"],short:["BE"],long:["BE"]},dayPeriods:{am:"AM",pm:"PM"}},chinese:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Mês 1","Mês 2","Mês 3","Mês 4","Mês 5","Mês 6","Mês 7","Mês 8","Mês 9","Mês 10","Mês 11","Mês 12"],long:["Mês 1","Mês 2","Mês 3","Mês 4","Mês 5","Mês 6","Mês 7","Mês 8","Mês 9","Mês 10","Mês 11","Mês 12"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},dayPeriods:{am:"AM",pm:"PM"}},coptic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"],long:["Tout","Baba","Hator","Kiahk","Toba","Amshir","Baramhat","Baramouda","Bashans","Paona","Epep","Mesra","Nasie"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},dangi:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Mês 1","Mês 2","Mês 3","Mês 4","Mês 5","Mês 6","Mês 7","Mês 8","Mês 9","Mês 10","Mês 11","Mês 12"],long:["Mês 1","Mês 2","Mês 3","Mês 4","Mês 5","Mês 6","Mês 7","Mês 8","Mês 9","Mês 10","Mês 11","Mês 12"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},dayPeriods:{am:"AM",pm:"PM"}},ethiopic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},ethioaa:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13"],short:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"],long:["Meskerem","Tekemt","Hedar","Tahsas","Ter","Yekatit","Megabit","Miazia","Genbot","Sene","Hamle","Nehasse","Pagumen"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["ERA0"],short:["ERA0"],long:["ERA0"]},dayPeriods:{am:"AM",pm:"PM"}},generic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"],long:["M01","M02","M03","M04","M05","M06","M07","M08","M09","M10","M11","M12"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["ERA0","ERA1"],short:["ERA0","ERA1"],long:["ERA0","ERA1"]},dayPeriods:{am:"AM",pm:"PM"}},gregory:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],long:["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["a.C.","d.C.","AEC","EC"],short:["a.C.","d.C.","AEC","EC"],long:["Antes de Cristo","Ano do Senhor","Antes da Era Comum","Era Comum"]},dayPeriods:{am:"AM",pm:"PM"}},hebrew:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12","13","7"],short:["Tishri","Heshvan","Kislev","Tevet","Shevat","Adar I","Adar","Nisan","Iyar","Sivan","Tamuz","Av","Elul","Adar II"],long:["Tishri","Heshvan","Kislev","Tevet","Shevat","Adar I","Adar","Nisan","Iyar","Sivan","Tamuz","Av","Elul","Adar II"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["AM"],short:["AM"],long:["AM"]},dayPeriods:{am:"AM",pm:"PM"}},indian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"],long:["Chaitra","Vaisakha","Jyaistha","Asadha","Sravana","Bhadra","Asvina","Kartika","Agrahayana","Pausa","Magha","Phalguna"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["Saka"],short:["Saka"],long:["Saka"]},dayPeriods:{am:"AM",pm:"PM"}},islamic:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Muh.","Saf.","Rab. I","Rab. II","Jum. I","Jum. II","Raj.","Sha.","Ram.","Shaw.","Dhuʻl-Q.","Dhuʻl-H."],long:["Muharram","Safar","Rabiʻ I","Rabiʻ II","Jumada I","Jumada II","Rajab","Shaʻban","Ramadan","Shawwal","Dhuʻl-Qiʻdah","Dhuʻl-Hijjah"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},islamicc:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Muh.","Saf.","Rab. I","Rab. II","Jum. I","Jum. II","Raj.","Sha.","Ram.","Shaw.","Dhuʻl-Q.","Dhuʻl-H."],long:["Muharram","Safar","Rabiʻ I","Rabiʻ II","Jumada I","Jumada II","Rajab","Shaʻban","Ramadan","Shawwal","Dhuʻl-Qiʻdah","Dhuʻl-Hijjah"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["AH"],short:["AH"],long:["AH"]},dayPeriods:{am:"AM",pm:"PM"}},japanese:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],long:["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["Taika (645-650)","Hakuchi (650-671)","Hakuhō (672-686)","Shuchō (686-701)","Taihō (701-704)","Keiun (704-708)","Wadō (708-715)","Reiki (715-717)","Yōrō (717-724)","Jinki (724-729)","Tempyō (729-749)","Tempyō-kampō (749-749)","Tempyō-shōhō (749-757)","Tempyō-hōji (757-765)","Temphō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770-780)","Ten-ō (781-782)","Enryaku (782-806)","Daidō (806-810)","Kōnin (810-824)","Tenchō (824-834)","Jōwa (834-848)","Kajō (848-851)","Ninju (851-854)","Saiko (854-857)","Tennan (857-859)","Jōgan (859-877)","Genkei (877-885)","Ninna (885-889)","Kampyō (889-898)","Shōtai (898-901)","Engi (901-923)","Enchō (923-931)","Shōhei (931-938)","Tengyō (938-947)","Tenryaku (947-957)","Tentoku (957-961)","Ōwa (961-964)","Kōhō (964-968)","Anna (968-970)","Tenroku (970-973)","Ten-en (973-976)","Jōgen (976-978)","Tengen (978-983)","Eikan (983-985)","Kanna (985-987)","Ei-en (987-989)","Eiso (989-990)","Shōryaku (990-995)","Chōtoku (995-999)","Chōhō (999-1004)","Kankō (1004-1012)","Chōwa (1012-1017)","Kannin (1017-1021)","Jian (1021-1024)","Manju (1024-1028)","Chōgen (1028-1037)","Chōryaku (1037-1040)","Chōkyū (1040-1044)","Kantoku (1044-1046)","Eishō (1046-1053)","Tengi (1053-1058)","Kōhei (1058-1065)","Jiryaku (1065-1069)","Enkyū (1069-1074)","Shōho (1074-1077)","Shōryaku (1077-1081)","Eiho (1081-1084)","Ōtoku (1084-1087)","Kanji (1087-1094)","Kaho (1094-1096)","Eichō (1096-1097)","Shōtoku (1097-1099)","Kōwa (1099-1104)","Chōji (1104-1106)","Kashō (1106-1108)","Tennin (1108-1110)","Ten-ei (1110-1113)","Eikyū (1113-1118)","Gen-ei (1118-1120)","Hoan (1120-1124)","Tenji (1124-1126)","Daiji (1126-1131)","Tenshō (1131-1132)","Chōshō (1132-1135)","Hoen (1135-1141)","Eiji (1141-1142)","Kōji (1142-1144)","Tenyō (1144-1145)","Kyūan (1145-1151)","Ninpei (1151-1154)","Kyūju (1154-1156)","Hogen (1156-1159)","Heiji (1159-1160)","Eiryaku (1160-1161)","Ōho (1161-1163)","Chōkan (1163-1165)","Eiman (1165-1166)","Nin-an (1166-1169)","Kaō (1169-1171)","Shōan (1171-1175)","Angen (1175-1177)","Jishō (1177-1181)","Yōwa (1181-1182)","Juei (1182-1184)","Genryuku (1184-1185)","Bunji (1185-1190)","Kenkyū (1190-1199)","Shōji (1199-1201)","Kennin (1201-1204)","Genkyū (1204-1206)","Ken-ei (1206-1207)","Shōgen (1207-1211)","Kenryaku (1211-1213)","Kenpō (1213-1219)","Shōkyū (1219-1222)","Jōō (1222-1224)","Gennin (1224-1225)","Karoku (1225-1227)","Antei (1227-1229)","Kanki (1229-1232)","Jōei (1232-1233)","Tempuku (1233-1234)","Bunryaku (1234-1235)","Katei (1235-1238)","Ryakunin (1238-1239)","En-ō (1239-1240)","Ninji (1240-1243)","Kangen (1243-1247)","Hōji (1247-1249)","Kenchō (1249-1256)","Kōgen (1256-1257)","Shōka (1257-1259)","Shōgen (1259-1260)","Bun-ō (1260-1261)","Kōchō (1261-1264)","Bun-ei (1264-1275)","Kenji (1275-1278)","Kōan (1278-1288)","Shōō (1288-1293)","Einin (1293-1299)","Shōan (1299-1302)","Kengen (1302-1303)","Kagen (1303-1306)","Tokuji (1306-1308)","Enkei (1308-1311)","Ōchō (1311-1312)","Shōwa (1312-1317)","Bunpō (1317-1319)","Genō (1319-1321)","Genkyō (1321-1324)","Shōchū (1324-1326)","Kareki (1326-1329)","Gentoku (1329-1331)","Genkō (1331-1334)","Kemmu (1334-1336)","Engen (1336-1340)","Kōkoku (1340-1346)","Shōhei (1346-1370)","Kentoku (1370-1372)","Bunchũ (1372-1375)","Tenju (1375-1379)","Kōryaku (1379-1381)","Kōwa (1381-1384)","Genchũ (1384-1392)","Meitoku (1384-1387)","Kakei (1387-1389)","Kōō (1389-1390)","Meitoku (1390-1394)","Ōei (1394-1428)","Shōchō (1428-1429)","Eikyō (1429-1441)","Kakitsu (1441-1444)","Bun-an (1444-1449)","Hōtoku (1449-1452)","Kyōtoku (1452-1455)","Kōshō (1455-1457)","Chōroku (1457-1460)","Kanshō (1460-1466)","Bunshō (1466-1467)","Ōnin (1467-1469)","Bunmei (1469-1487)","Chōkyō (1487-1489)","Entoku (1489-1492)","Meiō (1492-1501)","Bunki (1501-1504)","Eishō (1504-1521)","Taiei (1521-1528)","Kyōroku (1528-1532)","Tenmon (1532-1555)","Kōji (1555-1558)","Eiroku (1558-1570)","Genki (1570-1573)","Tenshō (1573-1592)","Bunroku (1592-1596)","Keichō (1596-1615)","Genwa (1615-1624)","Kan-ei (1624-1644)","Shōho (1644-1648)","Keian (1648-1652)","Shōō (1652-1655)","Meiryaku (1655-1658)","Manji (1658-1661)","Kanbun (1661-1673)","Enpō (1673-1681)","Tenwa (1681-1684)","Jōkyō (1684-1688)","Genroku (1688-1704)","Hōei (1704-1711)","Shōtoku (1711-1716)","Kyōhō (1716-1736)","Genbun (1736-1741)","Kanpō (1741-1744)","Enkyō (1744-1748)","Kan-en (1748-1751)","Hōryaku (1751-1764)","Meiwa (1764-1772)","An-ei (1772-1781)","Tenmei (1781-1789)","Kansei (1789-1801)","Kyōwa (1801-1804)","Bunka (1804-1818)","Bunsei (1818-1830)","Tenpō (1830-1844)","Kōka (1844-1848)","Kaei (1848-1854)","Ansei (1854-1860)","Man-en (1860-1861)","Bunkyū (1861-1864)","Genji (1864-1865)","Keiō (1865-1868)","M","T","S","H"],short:["Taika (645-650)","Hakuchi (650-671)","Hakuhō (672-686)","Shuchō (686-701)","Taihō (701-704)","Keiun (704-708)","Wadō (708-715)","Reiki (715-717)","Yōrō (717-724)","Jinki (724-729)","Tempyō (729-749)","Tempyō-kampō (749-749)","Tempyō-shōhō (749-757)","Tempyō-hōji (757-765)","Temphō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770-780)","Ten-ō (781-782)","Enryaku (782-806)","Daidō (806-810)","Kōnin (810-824)","Tenchō (824-834)","Jōwa (834-848)","Kajō (848-851)","Ninju (851-854)","Saiko (854-857)","Tennan (857-859)","Jōgan (859-877)","Genkei (877-885)","Ninna (885-889)","Kampyō (889-898)","Shōtai (898-901)","Engi (901-923)","Enchō (923-931)","Shōhei (931-938)","Tengyō (938-947)","Tenryaku (947-957)","Tentoku (957-961)","Ōwa (961-964)","Kōhō (964-968)","Anna (968-970)","Tenroku (970-973)","Ten-en (973-976)","Jōgen (976-978)","Tengen (978-983)","Eikan (983-985)","Kanna (985-987)","Ei-en (987-989)","Eiso (989-990)","Shōryaku (990-995)","Chōtoku (995-999)","Chōhō (999-1004)","Kankō (1004-1012)","Chōwa (1012-1017)","Kannin (1017-1021)","Jian (1021-1024)","Manju (1024-1028)","Chōgen (1028-1037)","Chōryaku (1037-1040)","Chōkyū (1040-1044)","Kantoku (1044-1046)","Eishō (1046-1053)","Tengi (1053-1058)","Kōhei (1058-1065)","Jiryaku (1065-1069)","Enkyū (1069-1074)","Shōho (1074-1077)","Shōryaku (1077-1081)","Eiho (1081-1084)","Ōtoku (1084-1087)","Kanji (1087-1094)","Kaho (1094-1096)","Eichō (1096-1097)","Shōtoku (1097-1099)","Kōwa (1099-1104)","Chōji (1104-1106)","Kashō (1106-1108)","Tennin (1108-1110)","Ten-ei (1110-1113)","Eikyū (1113-1118)","Gen-ei (1118-1120)","Hoan (1120-1124)","Tenji (1124-1126)","Daiji (1126-1131)","Tenshō (1131-1132)","Chōshō (1132-1135)","Hoen (1135-1141)","Eiji (1141-1142)","Kōji (1142-1144)","Tenyō (1144-1145)","Kyūan (1145-1151)","Ninpei (1151-1154)","Kyūju (1154-1156)","Hogen (1156-1159)","Heiji (1159-1160)","Eiryaku (1160-1161)","Ōho (1161-1163)","Chōkan (1163-1165)","Eiman (1165-1166)","Nin-an (1166-1169)","Kaō (1169-1171)","Shōan (1171-1175)","Angen (1175-1177)","Jishō (1177-1181)","Yōwa (1181-1182)","Juei (1182-1184)","Genryuku (1184-1185)","Bunji (1185-1190)","Kenkyū (1190-1199)","Shōji (1199-1201)","Kennin (1201-1204)","Genkyū (1204-1206)","Ken-ei (1206-1207)","Shōgen (1207-1211)","Kenryaku (1211-1213)","Kenpō (1213-1219)","Shōkyū (1219-1222)","Jōō (1222-1224)","Gennin (1224-1225)","Karoku (1225-1227)","Antei (1227-1229)","Kanki (1229-1232)","Jōei (1232-1233)","Tempuku (1233-1234)","Bunryaku (1234-1235)","Katei (1235-1238)","Ryakunin (1238-1239)","En-ō (1239-1240)","Ninji (1240-1243)","Kangen (1243-1247)","Hōji (1247-1249)","Kenchō (1249-1256)","Kōgen (1256-1257)","Shōka (1257-1259)","Shōgen (1259-1260)","Bun-ō (1260-1261)","Kōchō (1261-1264)","Bun-ei (1264-1275)","Kenji (1275-1278)","Kōan (1278-1288)","Shōō (1288-1293)","Einin (1293-1299)","Shōan (1299-1302)","Kengen (1302-1303)","Kagen (1303-1306)","Tokuji (1306-1308)","Enkei (1308-1311)","Ōchō (1311-1312)","Shōwa (1312-1317)","Bunpō (1317-1319)","Genō (1319-1321)","Genkyō (1321-1324)","Shōchū (1324-1326)","Kareki (1326-1329)","Gentoku (1329-1331)","Genkō (1331-1334)","Kemmu (1334-1336)","Engen (1336-1340)","Kōkoku (1340-1346)","Shōhei (1346-1370)","Kentoku (1370-1372)","Bunchū (1372-1375)","Tenju (1375-1379)","Kōryaku (1379-1381)","Kōwa (1381-1384)","Genchū (1384-1392)","Meitoku (1384-1387)","Kakei (1387-1389)","Kōō (1389-1390)","Meitoku (1390-1394)","Ōei (1394-1428)","Shōchō (1428-1429)","Eikyō (1429-1441)","Kakitsu (1441-1444)","Bun-an (1444-1449)","Hōtoku (1449-1452)","Kyōtoku (1452-1455)","Kōshō (1455-1457)","Chōroku (1457-1460)","Kanshō (1460-1466)","Bunshō (1466-1467)","Ōnin (1467-1469)","Bunmei (1469-1487)","Chōkyō (1487-1489)","Entoku (1489-1492)","Meiō (1492-1501)","Bunki (1501-1504)","Eishō (1504-1521)","Taiei (1521-1528)","Kyōroku (1528-1532)","Tenmon (1532-1555)","Kōji (1555-1558)","Eiroku (1558-1570)","Genki (1570-1573)","Tenshō (1573-1592)","Bunroku (1592-1596)","Keichō (1596-1615)","Genwa (1615-1624)","Kan-ei (1624-1644)","Shōho (1644-1648)","Keian (1648-1652)","Shōō (1652-1655)","Meiryaku (1655-1658)","Manji (1658-1661)","Kanbun (1661-1673)","Enpō (1673-1681)","Tenwa (1681-1684)","Jōkyō (1684-1688)","Genroku (1688-1704)","Hōei (1704-1711)","Shōtoku (1711-1716)","Kyōhō (1716-1736)","Genbun (1736-1741)","Kanpō (1741-1744)","Enkyō (1744-1748)","Kan-en (1748-1751)","Hōryaku (1751-1764)","Meiwa (1764-1772)","An-ei (1772-1781)","Tenmei (1781-1789)","Kansei (1789-1801)","Kyōwa (1801-1804)","Bunka (1804-1818)","Bunsei (1818-1830)","Tenpō (1830-1844)","Kōka (1844-1848)","Kaei (1848-1854)","Ansei (1854-1860)","Man-en (1860-1861)","Bunkyū (1861-1864)","Genji (1864-1865)","Keiō (1865-1868)","Meiji","Taishō","Shōwa","Heisei"],long:["Taika (645-650)","Hakuchi (650-671)","Hakuhō (672-686)","Shuchō (686-701)","Taihō (701-704)","Keiun (704-708)","Wadō (708-715)","Reiki (715-717)","Yōrō (717-724)","Jinki (724-729)","Tempyō (729-749)","Tempyō-kampō (749-749)","Tempyō-shōhō (749-757)","Tempyō-hōji (757-765)","Temphō-jingo (765-767)","Jingo-keiun (767-770)","Hōki (770-780)","Ten-ō (781-782)","Enryaku (782-806)","Daidō (806-810)","Kōnin (810-824)","Tenchō (824-834)","Jōwa (834-848)","Kajō (848-851)","Ninju (851-854)","Saiko (854-857)","Tennan (857-859)","Jōgan (859-877)","Genkei (877-885)","Ninna (885-889)","Kampyō (889-898)","Shōtai (898-901)","Engi (901-923)","Enchō (923-931)","Shōhei (931-938)","Tengyō (938-947)","Tenryaku (947-957)","Tentoku (957-961)","Ōwa (961-964)","Kōhō (964-968)","Anna (968-970)","Tenroku (970-973)","Ten-en (973-976)","Jōgen (976-978)","Tengen (978-983)","Eikan (983-985)","Kanna (985-987)","Ei-en (987-989)","Eiso (989-990)","Shōryaku (990-995)","Chōtoku (995-999)","Chōhō (999-1004)","Kankō (1004-1012)","Chōwa (1012-1017)","Kannin (1017-1021)","Jian (1021-1024)","Manju (1024-1028)","Chōgen (1028-1037)","Chōryaku (1037-1040)","Chōkyū (1040-1044)","Kantoku (1044-1046)","Eishō (1046-1053)","Tengi (1053-1058)","Kōhei (1058-1065)","Jiryaku (1065-1069)","Enkyū (1069-1074)","Shōho (1074-1077)","Shōryaku (1077-1081)","Eiho (1081-1084)","Ōtoku (1084-1087)","Kanji (1087-1094)","Kaho (1094-1096)","Eichō (1096-1097)","Shōtoku (1097-1099)","Kōwa (1099-1104)","Chōji (1104-1106)","Kashō (1106-1108)","Tennin (1108-1110)","Ten-ei (1110-1113)","Eikyū (1113-1118)","Gen-ei (1118-1120)","Hoan (1120-1124)","Tenji (1124-1126)","Daiji (1126-1131)","Tenshō (1131-1132)","Chōshō (1132-1135)","Hoen (1135-1141)","Eiji (1141-1142)","Kōji (1142-1144)","Tenyō (1144-1145)","Kyūan (1145-1151)","Ninpei (1151-1154)","Kyūju (1154-1156)","Hogen (1156-1159)","Heiji (1159-1160)","Eiryaku (1160-1161)","Ōho (1161-1163)","Chōkan (1163-1165)","Eiman (1165-1166)","Nin-an (1166-1169)","Kaō (1169-1171)","Shōan (1171-1175)","Angen (1175-1177)","Jishō (1177-1181)","Yōwa (1181-1182)","Juei (1182-1184)","Genryuku (1184-1185)","Bunji (1185-1190)","Kenkyū (1190-1199)","Shōji (1199-1201)","Kennin (1201-1204)","Genkyū (1204-1206)","Ken-ei (1206-1207)","Shōgen (1207-1211)","Kenryaku (1211-1213)","Kenpō (1213-1219)","Shōkyū (1219-1222)","Jōō (1222-1224)","Gennin (1224-1225)","Karoku (1225-1227)","Antei (1227-1229)","Kanki (1229-1232)","Jōei (1232-1233)","Tempuku (1233-1234)","Bunryaku (1234-1235)","Katei (1235-1238)","Ryakunin (1238-1239)","En-ō (1239-1240)","Ninji (1240-1243)","Kangen (1243-1247)","Hōji (1247-1249)","Kenchō (1249-1256)","Kōgen (1256-1257)","Shōka (1257-1259)","Shōgen (1259-1260)","Bun-ō (1260-1261)","Kōchō (1261-1264)","Bun-ei (1264-1275)","Kenji (1275-1278)","Kōan (1278-1288)","Shōō (1288-1293)","Einin (1293-1299)","Shōan (1299-1302)","Kengen (1302-1303)","Kagen (1303-1306)","Tokuji (1306-1308)","Enkei (1308-1311)","Ōchō (1311-1312)","Shōwa (1312-1317)","Bunpō (1317-1319)","Genō (1319-1321)","Genkyō (1321-1324)","Shōchū (1324-1326)","Kareki (1326-1329)","Gentoku (1329-1331)","Genkō (1331-1334)","Kemmu (1334-1336)","Engen (1336-1340)","Kōkoku (1340-1346)","Shōhei (1346-1370)","Kentoku (1370-1372)","Bunchū (1372-1375)","Tenju (1375-1379)","Kōryaku (1379-1381)","Kōwa (1381-1384)","Genchū (1384-1392)","Meitoku (1384-1387)","Kakei (1387-1389)","Kōō (1389-1390)","Meitoku (1390-1394)","Ōei (1394-1428)","Shōchō (1428-1429)","Eikyō (1429-1441)","Kakitsu (1441-1444)","Bun-an (1444-1449)","Hōtoku (1449-1452)","Kyōtoku (1452-1455)","Kōshō (1455-1457)","Chōroku (1457-1460)","Kanshō (1460-1466)","Bunshō (1466-1467)","Ōnin (1467-1469)","Bunmei (1469-1487)","Chōkyō (1487-1489)","Entoku (1489-1492)","Meiō (1492-1501)","Bunki (1501-1504)","Eishō (1504-1521)","Taiei (1521-1528)","Kyōroku (1528-1532)","Tenmon (1532-1555)","Kōji (1555-1558)","Eiroku (1558-1570)","Genki (1570-1573)","Tenshō (1573-1592)","Bunroku (1592-1596)","Keichō (1596-1615)","Genwa (1615-1624)","Kan-ei (1624-1644)","Shōho (1644-1648)","Keian (1648-1652)","Shōō (1652-1655)","Meiryaku (1655-1658)","Manji (1658-1661)","Kanbun (1661-1673)","Enpō (1673-1681)","Tenwa (1681-1684)","Jōkyō (1684-1688)","Genroku (1688-1704)","Hōei (1704-1711)","Shōtoku (1711-1716)","Kyōhō (1716-1736)","Genbun (1736-1741)","Kanpō (1741-1744)","Enkyō (1744-1748)","Kan-en (1748-1751)","Hōryaku (1751-1764)","Meiwa (1764-1772)","An-ei (1772-1781)","Tenmei (1781-1789)","Kansei (1789-1801)","Kyōwa (1801-1804)","Bunka (1804-1818)","Bunsei (1818-1830)","Tenpō (1830-1844)","Kōka (1844-1848)","Kaei (1848-1854)","Ansei (1854-1860)","Man-en (1860-1861)","Bunkyū (1861-1864)","Genji (1864-1865)","Keiō (1865-1868)","Meiji","Taishō","Shōwa","Heisei"]},dayPeriods:{am:"AM",pm:"PM"}},persian:{months:{narrow:["1","2","3","4","5","6","7","8","9","10","11","12"],short:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"],long:["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar","Mehr","Aban","Azar","Dey","Bahman","Esfand"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["AP"],short:["AP"],long:["AP"]},dayPeriods:{am:"AM",pm:"PM"}},roc:{months:{narrow:["J","F","M","A","M","J","J","A","S","O","N","D"],short:["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],long:["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]},days:{narrow:["D","S","T","Q","Q","S","S"],short:["dom","seg","ter","qua","qui","sex","sáb"],long:["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"]},eras:{narrow:["Antes de R.O.C.","R.O.C."],short:["Antes de R.O.C.","R.O.C."],long:["Antes de R.O.C.","R.O.C."]},dayPeriods:{am:"AM",pm:"PM"}}}},number:{nu:["latn"],patterns:{decimal:{positivePattern:"{number}",negativePattern:"-{number}"},currency:{positivePattern:"{currency}{number}",negativePattern:"-{currency}{number}"},percent:{positivePattern:"{number}%",negativePattern:"-{number}%"}},symbols:{latn:{decimal:",",group:".",nan:"NaN",percent:"%",infinity:"∞"}},currencies:{AUD:"AU$",BRL:"R$",CAD:"CA$",CNY:"CN¥",EUR:"€",GBP:"£",HKD:"HK$",ILS:"₪",INR:"₹",JPY:"JP¥",KRW:"₩",MXN:"MX$",NZD:"NZ$",PTE:"Esc.",THB:"฿",TWD:"NT$",USD:"US$",VND:"₫",XAF:"FCFA",XCD:"EC$",XOF:"CFA",XPF:"CFPF"}}});
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -30037,20 +30147,26 @@ var Grommet =
 	var merge = __webpack_require__(6);
 	var pick = __webpack_require__(234);
 	var keys = __webpack_require__(32);
-	var Box = __webpack_require__(241);
+	var Box = __webpack_require__(242);
 	var KeyboardAccelerators = __webpack_require__(230);
-	var DOM = __webpack_require__(231);
-	var Scroll = __webpack_require__(252);
-	var SkipLinkAnchor = __webpack_require__(253);
+	var Scroll = __webpack_require__(253);
+	var SkipLinkAnchor = __webpack_require__(254);
+	var CarouselControls = __webpack_require__(255);
+	// var NextIcon = require('./icons/base/Next');
+	// var PreviousIcon = require('./icons/base/Previous');
+	// var UpIcon = require('./icons/base/Up');
+	// var DownIcon = require('./icons/base/Down');
 
 	var CLASS_ROOT = "article";
+	var DEFAULT_PLAY_INTERVAL = 10000; // 10s
 
 	var Article = React.createClass({
 	  displayName: 'Article',
 
 	  propTypes: merge({
-	    scrollStep: React.PropTypes.bool,
-	    primary: React.PropTypes.bool
+	    controls: React.PropTypes.bool,
+	    primary: React.PropTypes.bool,
+	    scrollStep: React.PropTypes.bool
 	  }, Box.propTypes),
 
 	  getDefaultProps: function getDefaultProps() {
@@ -30060,98 +30176,162 @@ var Grommet =
 	    };
 	  },
 
+	  getInitialState: function getInitialState() {
+	    return { selected: 1, playing: false };
+	  },
+
 	  componentDidMount: function componentDidMount() {
 	    if (this.props.scrollStep) {
-	      this._markInactive();
-	      var articleElement = ReactDOM.findDOMNode(this.refs.component);
-	      this._scrollParent = DOM.findScrollParents(articleElement)[0];
+	      var keys;
+	      if ('row' === this.props.direction) {
+	        keys = { left: this._onPrevious, right: this._onNext };
+	      } else {
+	        keys = { up: this._onPrevious, down: this._onNext };
+	      }
+	      keys.space = this._onTogglePlay;
+	      KeyboardAccelerators.startListeningToKeyboard(this, keys);
+
 	      document.addEventListener('wheel', this._onWheel);
-	      this._scrollParent.addEventListener('scroll', this._onScroll);
-	      KeyboardAccelerators.startListeningToKeyboard(this, {
-	        up: this._onUp,
-	        down: this._onDown
-	      });
+
+	      this._scrollParent = ReactDOM.findDOMNode(this.refs.component);
 	    }
 	  },
 
 	  componentWillUnmount: function componentWillUnmount() {
 	    if (this.props.scrollStep) {
-	      document.removeEventListener('wheel', this._onWheel);
-	      clearInterval(this._scrollToTimer);
-	      this._scrollParent.removeEventListener('scroll', this._onScroll);
-	      clearTimeout(this._scrollTimer);
-	      KeyboardAccelerators.stopListeningToKeyboard(this, {
-	        up: this._onUp,
-	        down: this._onDown
-	      });
-	    }
-	  },
-
-	  _markInactive: function _markInactive() {
-	    var articleElement = ReactDOM.findDOMNode(this.refs.component);
-	    var sections = articleElement.querySelectorAll('.section.box--full');
-	    for (var i = 0; i < sections.length; i += 1) {
-	      var section = sections[i];
-	      var rect = section.getBoundingClientRect();
-	      if (rect.top > window.innerHeight - 10) {
-	        section.classList.add('section--inactive');
+	      var keys;
+	      if ('row' === this.props.direction) {
+	        keys = { left: this._onPrevious, right: this._onNext };
 	      } else {
-	        section.classList.remove('section--inactive');
+	        keys = { up: this._onPrevious, down: this._onNext };
 	      }
-	    }
-	  },
+	      keys.space = this._onTogglePlay;
+	      KeyboardAccelerators.stopListeningToKeyboard(this, keys);
 
-	  _onScroll: function _onScroll(event) {
-	    clearTimeout(this._scrollTimer);
-	    this._scrollTimer = setTimeout(this._markInactive, 50);
+	      document.removeEventListener('wheel', this._onWheel);
+	    }
 	  },
 
 	  _onWheel: function _onWheel(event) {
-	    if (Math.abs(event.deltaY) > 100) {
-	      clearInterval(this._scrollTimer);
-	    } else if (event.deltaY > 5) {
-	      this._onDown();
-	    } else if (event.deltaY < -5) {
-	      this._onUp();
+	    var delta = 'row' === this.props.direction ? event.deltaX : event.deltaY;
+	    if (Math.abs(delta) > 100) {
+	      // The user is expressing a resolute interest in controlling the
+	      // scrolling behavior. Stop doing any of our scroll step aligning
+	      // until he stops expressing such interest.
+	      clearInterval(this._wheelTimer);
+	      clearInterval(this._wheelLongTimer);
+	      this._wheelLongTimer = setTimeout((function () {
+	        this._wheelLongTimer = null;
+	      }).bind(this), 2000);
+	    } else if (!this._wheelLongTimer) {
+	      if (delta > 10) {
+	        clearInterval(this._wheelTimer);
+	        this._wheelTimer = setTimeout(this._onNext, 200);
+	      } else if (delta < -10) {
+	        clearInterval(this._wheelTimer);
+	        this._wheelTimer = setTimeout(this._onPrevious, 200);
+	      }
 	    }
 	  },
 
-	  _onDown: function _onDown(event) {
+	  _onNext: function _onNext(event, wrap) {
 	    if (event) {
+	      this._stop();
 	      event.preventDefault();
 	    }
 	    var articleElement = ReactDOM.findDOMNode(this.refs.component);
-	    var sections = articleElement.querySelectorAll('.section.box--full');
-	    for (var i = 0; i < sections.length; i += 1) {
-	      var section = sections[i];
-	      var rect = section.getBoundingClientRect();
+	    var children = articleElement.children;
+	    var advanced = false;
+	    for (var i = 0; i < children.length - 1; i += 1) {
+	      var child = children[i];
+	      var rect = child.getBoundingClientRect();
 	      // 10 is for fuzziness
-	      if (rect.bottom > 10 && (event || rect.bottom < window.innerHeight)) {
-	        Scroll.scrollBy(this._scrollParent, 'scrollTop', rect.bottom);
-	        break;
+	      if ('row' === this.props.direction) {
+	        if (rect.right > 10 && i + 2 !== this.state.selected && (event || wrap || rect.right < window.innerWidth)) {
+	          this._onSelect(i + 2);
+	          advanced = true;
+	          break;
+	        }
+	      } else {
+	        if (rect.bottom > 10 && i + 2 !== this.state.selected && (event || wrap || rect.bottom < window.innerHeight)) {
+	          this._onSelect(i + 2);
+	          advanced = true;
+	          break;
+	        }
+	      }
+	    }
+	    if (wrap && !advanced) {
+	      this._onSelect(1);
+	    }
+	  },
+
+	  _onPrevious: function _onPrevious(event) {
+	    if (event) {
+	      this._stop();
+	      event.preventDefault();
+	    }
+	    var articleElement = ReactDOM.findDOMNode(this.refs.component);
+	    var children = articleElement.children;
+	    for (var i = 0; i < children.length; i += 1) {
+	      var child = children[i];
+	      var rect = child.getBoundingClientRect();
+	      // -10 is for fuzziness
+	      if ('row' === this.props.direction) {
+	        if ((rect.left >= -10 || i === children.length - 1) && (event || rect.left < window.innerWidth)) {
+	          if (i > 0) {
+	            child = children[i - 1];
+	            rect = child.getBoundingClientRect();
+	            Scroll.scrollBy(this._scrollParent, 'scrollLeft', rect.left);
+	            this.setState({ selected: i });
+	          }
+	          break;
+	        }
+	      } else {
+	        if ((rect.top >= -10 || i === children.length - 1) && (event || rect.top < window.innerHeight)) {
+	          if (i > 0) {
+	            child = children[i - 1];
+	            rect = child.getBoundingClientRect();
+	            Scroll.scrollBy(this._scrollParent, 'scrollTop', rect.top);
+	            this.setState({ selected: i });
+	          }
+	          break;
+	        }
 	      }
 	    }
 	  },
 
-	  _onUp: function _onUp(event) {
-	    if (event) {
-	      event.preventDefault();
+	  _start: function _start() {
+	    this._playTimer = setInterval((function () {
+	      this._onNext(null, true);
+	    }).bind(this), DEFAULT_PLAY_INTERVAL);
+	    this.setState({ playing: true });
+	  },
+
+	  _stop: function _stop() {
+	    clearInterval(this._playTimer);
+	    this.setState({ playing: false });
+	  },
+
+	  _onTogglePlay: function _onTogglePlay(event) {
+	    event.preventDefault();
+	    if (this.state.playing) {
+	      this._stop();
+	    } else {
+	      this._start();
 	    }
+	  },
+
+	  _onSelect: function _onSelect(selected) {
 	    var articleElement = ReactDOM.findDOMNode(this.refs.component);
-	    var sections = articleElement.querySelectorAll('.section.box--full');
-	    for (var i = 0; i < sections.length; i += 1) {
-	      var section = sections[i];
-	      var rect = section.getBoundingClientRect();
-	      // -10 is for fuzziness
-	      if ((rect.top >= -10 || i === sections.length - 1) && (event || rect.top < window.innerHeight)) {
-	        if (i > 0) {
-	          section = sections[i - 1];
-	          rect = section.getBoundingClientRect();
-	          Scroll.scrollBy(this._scrollParent, 'scrollTop', rect.top);
-	        }
-	        break;
-	      }
+	    var children = articleElement.children;
+	    var child = children[selected - 1];
+	    var rect = child.getBoundingClientRect();
+	    if ('row' === this.props.direction) {
+	      Scroll.scrollBy(this._scrollParent, 'scrollLeft', rect.left);
+	    } else {
+	      Scroll.scrollBy(this._scrollParent, 'scrollTop', rect.top);
 	    }
+	    this.setState({ selected: selected });
 	  },
 
 	  render: function render() {
@@ -30168,11 +30348,21 @@ var Grommet =
 	    if (this.props.primary) {
 	      skipLinkAnchor = React.createElement(SkipLinkAnchor, { label: 'Main Content' });
 	    }
+
+	    var childCount = React.Children.count(this.props.children);
+	    var controls;
+	    if (this.props.controls) {
+	      controls = React.createElement(CarouselControls, { className: CLASS_ROOT + "__controls",
+	        count: childCount,
+	        selected: this.state.selected, onChange: this._onSelect });
+	    }
+
 	    return React.createElement(
 	      Box,
 	      _extends({ ref: 'component', tag: 'article' }, other, { className: classes.join(' ') }),
 	      skipLinkAnchor,
-	      this.props.children
+	      this.props.children,
+	      controls
 	    );
 	  }
 	});
@@ -30180,7 +30370,7 @@ var Grommet =
 	module.exports = Article;
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -30219,8 +30409,12 @@ var Grommet =
 	      component[property] = next;
 	      step += 1;
 	      if (step > SCROLL_STEPS) {
-	        // we're done
+	        // we're done, but the browser/OS might still be easing from a
+	        // mouse wheel interaction. So, set it one more time after a bit.
 	        clearInterval(this._scrollToTimer);
+	        this._scrollToTimer = setTimeout(function () {
+	          component[property] = next;
+	        }, 200);
 	      }
 	    }).bind(this), 8);
 	  }
@@ -30229,7 +30423,7 @@ var Grommet =
 	module.exports = Scroll;
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -30260,7 +30454,67 @@ var Grommet =
 	module.exports = SkipLinkAnchor;
 
 /***/ },
-/* 254 */
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var Box = __webpack_require__(242);
+
+	var CLASS_ROOT = "carousel-controls";
+
+	var CarouselControls = React.createClass({
+	  displayName: 'CarouselControls',
+
+	  propTypes: {
+	    count: React.PropTypes.number.isRequired,
+	    onChange: React.PropTypes.func,
+	    selected: React.PropTypes.number
+	  },
+
+	  _onClick: function _onClick(index) {
+	    if (this.props.onChange) {
+	      this.props.onChange(index);
+	    }
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var controls = [];
+	    for (var index = 1; index <= this.props.count; index++) {
+	      var controlClasses = [CLASS_ROOT + "__control"];
+	      if (index === this.props.selected) {
+	        controlClasses.push(CLASS_ROOT + "__control--active");
+	      }
+	      controls.push(React.createElement(
+	        'svg',
+	        { key: index, className: controlClasses.join(' '), version: '1.1',
+	          viewBox: '0 0 24 24', width: '24px', height: '24px',
+	          onClick: this._onClick.bind(this, index) },
+	        React.createElement('circle', { cx: 12, cy: 12, r: 6 })
+	      ));
+	    }
+
+	    return React.createElement(
+	      Box,
+	      { className: classes.join(' '), direction: 'row', justify: 'center', responsive: false },
+	      controls
+	    );
+	  }
+
+	});
+
+	module.exports = CarouselControls;
+
+/***/ },
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -30269,15 +30523,15 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(44);
-	var moment = __webpack_require__(255);
+	var moment = __webpack_require__(257);
 	var KeyboardAccelerators = __webpack_require__(230);
-	var Drop = __webpack_require__(239);
-	var CalendarIcon = __webpack_require__(343);
-	var PreviousIcon = __webpack_require__(344);
+	var Drop = __webpack_require__(240);
+	var CalendarIcon = __webpack_require__(345);
+	var PreviousIcon = __webpack_require__(346);
 	var NextIcon = __webpack_require__(3);
-	var Header = __webpack_require__(345);
+	var Header = __webpack_require__(347);
 	var Menu = __webpack_require__(233);
-	var Title = __webpack_require__(346);
+	var Title = __webpack_require__(348);
 
 	var CLASS_ROOT = "calendar";
 
@@ -30314,12 +30568,10 @@ var Grommet =
 
 	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 	    // Set up keyboard listeners appropriate to the current state.
-	    if (!this.state.dropActive && prevState.dropActive) {
+	    if (prevState.dropActive !== this.state.dropActive) {
 	      this._activation(this.state.dropActive);
 	    }
-	    if (this.state.dropActive && !prevState.dropActive) {
-	      this._activation(this.state.dropActive);
-	    }
+
 	    if (this.state.dropActive) {
 	      this._drop.render(this._renderDrop());
 	    }
@@ -30609,7 +30861,7 @@ var Grommet =
 	module.exports = Calendar;
 
 /***/ },
-/* 255 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
@@ -30880,7 +31132,7 @@ var Grommet =
 	                module && module.exports) {
 	            try {
 	                oldLocale = globalLocale._abbr;
-	                __webpack_require__(257)("./" + name);
+	                __webpack_require__(259)("./" + name);
 	                // because defineLocale currently also sets the global locale, we
 	                // want to undo that for lazy loaded locales
 	                locale_locales__getSetGlobalLocale(oldLocale);
@@ -33807,10 +34059,10 @@ var Grommet =
 	    return _moment;
 
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(256)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(258)(module)))
 
 /***/ },
-/* 256 */
+/* 258 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -33826,180 +34078,180 @@ var Grommet =
 
 
 /***/ },
-/* 257 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./af": 258,
-		"./af.js": 258,
-		"./ar": 259,
-		"./ar-ma": 260,
-		"./ar-ma.js": 260,
-		"./ar-sa": 261,
-		"./ar-sa.js": 261,
-		"./ar-tn": 262,
-		"./ar-tn.js": 262,
-		"./ar.js": 259,
-		"./az": 263,
-		"./az.js": 263,
-		"./be": 264,
-		"./be.js": 264,
-		"./bg": 265,
-		"./bg.js": 265,
-		"./bn": 266,
-		"./bn.js": 266,
-		"./bo": 267,
-		"./bo.js": 267,
-		"./br": 268,
-		"./br.js": 268,
-		"./bs": 269,
-		"./bs.js": 269,
-		"./ca": 270,
-		"./ca.js": 270,
-		"./cs": 271,
-		"./cs.js": 271,
-		"./cv": 272,
-		"./cv.js": 272,
-		"./cy": 273,
-		"./cy.js": 273,
-		"./da": 274,
-		"./da.js": 274,
-		"./de": 275,
-		"./de-at": 276,
-		"./de-at.js": 276,
-		"./de.js": 275,
-		"./el": 277,
-		"./el.js": 277,
-		"./en-au": 278,
-		"./en-au.js": 278,
-		"./en-ca": 279,
-		"./en-ca.js": 279,
-		"./en-gb": 280,
-		"./en-gb.js": 280,
-		"./eo": 281,
-		"./eo.js": 281,
-		"./es": 282,
-		"./es.js": 282,
-		"./et": 283,
-		"./et.js": 283,
-		"./eu": 284,
-		"./eu.js": 284,
-		"./fa": 285,
-		"./fa.js": 285,
-		"./fi": 286,
-		"./fi.js": 286,
-		"./fo": 287,
-		"./fo.js": 287,
-		"./fr": 288,
-		"./fr-ca": 289,
-		"./fr-ca.js": 289,
-		"./fr.js": 288,
-		"./fy": 290,
-		"./fy.js": 290,
-		"./gl": 291,
-		"./gl.js": 291,
-		"./he": 292,
-		"./he.js": 292,
-		"./hi": 293,
-		"./hi.js": 293,
-		"./hr": 294,
-		"./hr.js": 294,
-		"./hu": 295,
-		"./hu.js": 295,
-		"./hy-am": 296,
-		"./hy-am.js": 296,
-		"./id": 297,
-		"./id.js": 297,
-		"./is": 298,
-		"./is.js": 298,
-		"./it": 299,
-		"./it.js": 299,
-		"./ja": 300,
-		"./ja.js": 300,
-		"./jv": 301,
-		"./jv.js": 301,
-		"./ka": 302,
-		"./ka.js": 302,
-		"./km": 303,
-		"./km.js": 303,
-		"./ko": 304,
-		"./ko.js": 304,
-		"./lb": 305,
-		"./lb.js": 305,
-		"./lt": 306,
-		"./lt.js": 306,
-		"./lv": 307,
-		"./lv.js": 307,
-		"./me": 308,
-		"./me.js": 308,
-		"./mk": 309,
-		"./mk.js": 309,
-		"./ml": 310,
-		"./ml.js": 310,
-		"./mr": 311,
-		"./mr.js": 311,
-		"./ms": 312,
-		"./ms-my": 313,
-		"./ms-my.js": 313,
-		"./ms.js": 312,
-		"./my": 314,
-		"./my.js": 314,
-		"./nb": 315,
-		"./nb.js": 315,
-		"./ne": 316,
-		"./ne.js": 316,
-		"./nl": 317,
-		"./nl.js": 317,
-		"./nn": 318,
-		"./nn.js": 318,
-		"./pl": 319,
-		"./pl.js": 319,
-		"./pt": 320,
-		"./pt-br": 321,
-		"./pt-br.js": 321,
-		"./pt.js": 320,
-		"./ro": 322,
-		"./ro.js": 322,
-		"./ru": 323,
-		"./ru.js": 323,
-		"./si": 324,
-		"./si.js": 324,
-		"./sk": 325,
-		"./sk.js": 325,
-		"./sl": 326,
-		"./sl.js": 326,
-		"./sq": 327,
-		"./sq.js": 327,
-		"./sr": 328,
-		"./sr-cyrl": 329,
-		"./sr-cyrl.js": 329,
-		"./sr.js": 328,
-		"./sv": 330,
-		"./sv.js": 330,
-		"./ta": 331,
-		"./ta.js": 331,
-		"./th": 332,
-		"./th.js": 332,
-		"./tl-ph": 333,
-		"./tl-ph.js": 333,
-		"./tr": 334,
-		"./tr.js": 334,
-		"./tzl": 335,
-		"./tzl.js": 335,
-		"./tzm": 336,
-		"./tzm-latn": 337,
-		"./tzm-latn.js": 337,
-		"./tzm.js": 336,
-		"./uk": 338,
-		"./uk.js": 338,
-		"./uz": 339,
-		"./uz.js": 339,
-		"./vi": 340,
-		"./vi.js": 340,
-		"./zh-cn": 341,
-		"./zh-cn.js": 341,
-		"./zh-tw": 342,
-		"./zh-tw.js": 342
+		"./af": 260,
+		"./af.js": 260,
+		"./ar": 261,
+		"./ar-ma": 262,
+		"./ar-ma.js": 262,
+		"./ar-sa": 263,
+		"./ar-sa.js": 263,
+		"./ar-tn": 264,
+		"./ar-tn.js": 264,
+		"./ar.js": 261,
+		"./az": 265,
+		"./az.js": 265,
+		"./be": 266,
+		"./be.js": 266,
+		"./bg": 267,
+		"./bg.js": 267,
+		"./bn": 268,
+		"./bn.js": 268,
+		"./bo": 269,
+		"./bo.js": 269,
+		"./br": 270,
+		"./br.js": 270,
+		"./bs": 271,
+		"./bs.js": 271,
+		"./ca": 272,
+		"./ca.js": 272,
+		"./cs": 273,
+		"./cs.js": 273,
+		"./cv": 274,
+		"./cv.js": 274,
+		"./cy": 275,
+		"./cy.js": 275,
+		"./da": 276,
+		"./da.js": 276,
+		"./de": 277,
+		"./de-at": 278,
+		"./de-at.js": 278,
+		"./de.js": 277,
+		"./el": 279,
+		"./el.js": 279,
+		"./en-au": 280,
+		"./en-au.js": 280,
+		"./en-ca": 281,
+		"./en-ca.js": 281,
+		"./en-gb": 282,
+		"./en-gb.js": 282,
+		"./eo": 283,
+		"./eo.js": 283,
+		"./es": 284,
+		"./es.js": 284,
+		"./et": 285,
+		"./et.js": 285,
+		"./eu": 286,
+		"./eu.js": 286,
+		"./fa": 287,
+		"./fa.js": 287,
+		"./fi": 288,
+		"./fi.js": 288,
+		"./fo": 289,
+		"./fo.js": 289,
+		"./fr": 290,
+		"./fr-ca": 291,
+		"./fr-ca.js": 291,
+		"./fr.js": 290,
+		"./fy": 292,
+		"./fy.js": 292,
+		"./gl": 293,
+		"./gl.js": 293,
+		"./he": 294,
+		"./he.js": 294,
+		"./hi": 295,
+		"./hi.js": 295,
+		"./hr": 296,
+		"./hr.js": 296,
+		"./hu": 297,
+		"./hu.js": 297,
+		"./hy-am": 298,
+		"./hy-am.js": 298,
+		"./id": 299,
+		"./id.js": 299,
+		"./is": 300,
+		"./is.js": 300,
+		"./it": 301,
+		"./it.js": 301,
+		"./ja": 302,
+		"./ja.js": 302,
+		"./jv": 303,
+		"./jv.js": 303,
+		"./ka": 304,
+		"./ka.js": 304,
+		"./km": 305,
+		"./km.js": 305,
+		"./ko": 306,
+		"./ko.js": 306,
+		"./lb": 307,
+		"./lb.js": 307,
+		"./lt": 308,
+		"./lt.js": 308,
+		"./lv": 309,
+		"./lv.js": 309,
+		"./me": 310,
+		"./me.js": 310,
+		"./mk": 311,
+		"./mk.js": 311,
+		"./ml": 312,
+		"./ml.js": 312,
+		"./mr": 313,
+		"./mr.js": 313,
+		"./ms": 314,
+		"./ms-my": 315,
+		"./ms-my.js": 315,
+		"./ms.js": 314,
+		"./my": 316,
+		"./my.js": 316,
+		"./nb": 317,
+		"./nb.js": 317,
+		"./ne": 318,
+		"./ne.js": 318,
+		"./nl": 319,
+		"./nl.js": 319,
+		"./nn": 320,
+		"./nn.js": 320,
+		"./pl": 321,
+		"./pl.js": 321,
+		"./pt": 322,
+		"./pt-br": 323,
+		"./pt-br.js": 323,
+		"./pt.js": 322,
+		"./ro": 324,
+		"./ro.js": 324,
+		"./ru": 325,
+		"./ru.js": 325,
+		"./si": 326,
+		"./si.js": 326,
+		"./sk": 327,
+		"./sk.js": 327,
+		"./sl": 328,
+		"./sl.js": 328,
+		"./sq": 329,
+		"./sq.js": 329,
+		"./sr": 330,
+		"./sr-cyrl": 331,
+		"./sr-cyrl.js": 331,
+		"./sr.js": 330,
+		"./sv": 332,
+		"./sv.js": 332,
+		"./ta": 333,
+		"./ta.js": 333,
+		"./th": 334,
+		"./th.js": 334,
+		"./tl-ph": 335,
+		"./tl-ph.js": 335,
+		"./tr": 336,
+		"./tr.js": 336,
+		"./tzl": 337,
+		"./tzl.js": 337,
+		"./tzm": 338,
+		"./tzm-latn": 339,
+		"./tzm-latn.js": 339,
+		"./tzm.js": 338,
+		"./uk": 340,
+		"./uk.js": 340,
+		"./uz": 341,
+		"./uz.js": 341,
+		"./vi": 342,
+		"./vi.js": 342,
+		"./zh-cn": 343,
+		"./zh-cn.js": 343,
+		"./zh-tw": 344,
+		"./zh-tw.js": 344
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -34012,11 +34264,11 @@ var Grommet =
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 257;
+	webpackContext.id = 259;
 
 
 /***/ },
-/* 258 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34024,7 +34276,7 @@ var Grommet =
 	//! author : Werner Mollentze : https://github.com/wernerm
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34093,7 +34345,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 259 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34103,7 +34355,7 @@ var Grommet =
 	//! Native plural forms: forabi https://github.com/forabi
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34233,7 +34485,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 260 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34242,7 +34494,7 @@ var Grommet =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34296,7 +34548,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 261 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34304,7 +34556,7 @@ var Grommet =
 	//! author : Suhail Alkowaileet : https://github.com/xsoh
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34403,14 +34655,14 @@ var Grommet =
 	}));
 
 /***/ },
-/* 262 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale  : Tunisian Arabic (ar-tn)
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34464,7 +34716,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 263 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34472,7 +34724,7 @@ var Grommet =
 	//! author : topchiyev : https://github.com/topchiyev
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34572,7 +34824,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 264 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34582,7 +34834,7 @@ var Grommet =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34723,7 +34975,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 265 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34731,7 +34983,7 @@ var Grommet =
 	//! author : Krasen Borisov : https://github.com/kraz
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34817,7 +35069,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 266 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34825,7 +35077,7 @@ var Grommet =
 	//! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -34934,7 +35186,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 267 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -34942,7 +35194,7 @@ var Grommet =
 	//! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35048,7 +35300,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 268 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35056,7 +35308,7 @@ var Grommet =
 	//! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35159,7 +35411,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 269 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35168,7 +35420,7 @@ var Grommet =
 	//! based on (hr) translation by Bojan Marković
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35304,7 +35556,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 270 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35312,7 +35564,7 @@ var Grommet =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35387,7 +35639,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 271 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35395,7 +35647,7 @@ var Grommet =
 	//! author : petrbela : https://github.com/petrbela
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35548,7 +35800,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 272 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35556,7 +35808,7 @@ var Grommet =
 	//! author : Anatoly Mironov : https://github.com/mirontoli
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35615,7 +35867,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 273 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35623,7 +35875,7 @@ var Grommet =
 	//! author : Robert Allen
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35698,7 +35950,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 274 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35706,7 +35958,7 @@ var Grommet =
 	//! author : Ulrik Nielsen : https://github.com/mrbase
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35762,7 +36014,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 275 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35771,7 +36023,7 @@ var Grommet =
 	//! author: Menelion Elensúle: https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35841,7 +36093,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 276 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35851,7 +36103,7 @@ var Grommet =
 	//! author : Martin Groller : https://github.com/MadMG
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -35921,7 +36173,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 277 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -35929,7 +36181,7 @@ var Grommet =
 	//! author : Aggelos Karalias : https://github.com/mehiel
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36019,14 +36271,14 @@ var Grommet =
 	}));
 
 /***/ },
-/* 278 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
 	//! locale : australian english (en-au)
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36089,7 +36341,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 279 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36097,7 +36349,7 @@ var Grommet =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36156,7 +36408,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 280 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36164,7 +36416,7 @@ var Grommet =
 	//! author : Chris Gedrim : https://github.com/chrisgedrim
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36227,7 +36479,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 281 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36237,7 +36489,7 @@ var Grommet =
 	//!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36304,7 +36556,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 282 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36312,7 +36564,7 @@ var Grommet =
 	//! author : Julio Napurí : https://github.com/julionc
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36387,7 +36639,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 283 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36396,7 +36648,7 @@ var Grommet =
 	//! improvements : Illimar Tambek : https://github.com/ragulka
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36471,7 +36723,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 284 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36479,7 +36731,7 @@ var Grommet =
 	//! author : Eneko Illarramendi : https://github.com/eillarra
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36539,7 +36791,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 285 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36547,7 +36799,7 @@ var Grommet =
 	//! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36648,7 +36900,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 286 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36656,7 +36908,7 @@ var Grommet =
 	//! author : Tarmo Aidantausta : https://github.com/bleadof
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36759,7 +37011,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 287 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36767,7 +37019,7 @@ var Grommet =
 	//! author : Ragnar Johannesen : https://github.com/ragnar123
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36823,7 +37075,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 288 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36831,7 +37083,7 @@ var Grommet =
 	//! author : John Fischer : https://github.com/jfroffice
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36889,7 +37141,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 289 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36897,7 +37149,7 @@ var Grommet =
 	//! author : Jonathan Abourbih : https://github.com/jonbca
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -36951,7 +37203,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 290 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -36959,7 +37211,7 @@ var Grommet =
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37026,7 +37278,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 291 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37034,7 +37286,7 @@ var Grommet =
 	//! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37105,7 +37357,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 292 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37115,7 +37367,7 @@ var Grommet =
 	//! author : Tal Ater : https://github.com/TalAter
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37191,7 +37443,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 293 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37199,7 +37451,7 @@ var Grommet =
 	//! author : Mayank Singhal : https://github.com/mayanksinghal
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37318,7 +37570,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 294 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37326,7 +37578,7 @@ var Grommet =
 	//! author : Bojan Marković : https://github.com/bmarkovic
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37462,7 +37714,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 295 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37470,7 +37722,7 @@ var Grommet =
 	//! author : Adam Brunner : https://github.com/adambrunner
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37575,7 +37827,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 296 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37583,7 +37835,7 @@ var Grommet =
 	//! author : Armendarabyan : https://github.com/armendarabyan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37690,7 +37942,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 297 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37699,7 +37951,7 @@ var Grommet =
 	//! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37777,7 +38029,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 298 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37785,7 +38037,7 @@ var Grommet =
 	//! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37908,7 +38160,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 299 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37917,7 +38169,7 @@ var Grommet =
 	//! author: Mattia Larentis: https://github.com/nostalgiaz
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -37982,7 +38234,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 300 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -37990,7 +38242,7 @@ var Grommet =
 	//! author : LI Long : https://github.com/baryon
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38051,7 +38303,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 301 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38060,7 +38312,7 @@ var Grommet =
 	//! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38138,7 +38390,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 302 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38146,7 +38398,7 @@ var Grommet =
 	//! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38245,7 +38497,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 303 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38253,7 +38505,7 @@ var Grommet =
 	//! author : Kruy Vanna : https://github.com/kruyvanna
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38307,7 +38559,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 304 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38319,7 +38571,7 @@ var Grommet =
 	//! - Jeeeyul Lee <jeeeyul@gmail.com>
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38379,7 +38631,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 305 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38387,7 +38639,7 @@ var Grommet =
 	//! author : mweimerskirch : https://github.com/mweimerskirch, David Raison : https://github.com/kwisatz
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38517,7 +38769,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 306 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38525,7 +38777,7 @@ var Grommet =
 	//! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38646,7 +38898,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 307 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38655,7 +38907,7 @@ var Grommet =
 	//! author : Jānis Elmeris : https://github.com/JanisE
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38746,7 +38998,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 308 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38754,7 +39006,7 @@ var Grommet =
 	//! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38859,7 +39111,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 309 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38867,7 +39119,7 @@ var Grommet =
 	//! author : Borislav Mickov : https://github.com/B0k0
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -38953,7 +39205,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 310 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -38961,7 +39213,7 @@ var Grommet =
 	//! author : Floyd Pink : https://github.com/floydpink
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39028,7 +39280,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 311 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39036,7 +39288,7 @@ var Grommet =
 	//! author : Harshad Kale : https://github.com/kalehv
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39153,7 +39405,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 312 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39161,7 +39413,7 @@ var Grommet =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39239,7 +39491,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 313 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39247,7 +39499,7 @@ var Grommet =
 	//! author : Weldan Jamili : https://github.com/weldan
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39325,7 +39577,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 314 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39333,7 +39585,7 @@ var Grommet =
 	//! author : Squar team, mysquar.com
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39422,7 +39674,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 315 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39431,7 +39683,7 @@ var Grommet =
 	//!           Sigurd Gartmann : https://github.com/sigurdga
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39487,7 +39739,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 316 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39495,7 +39747,7 @@ var Grommet =
 	//! author : suvash : https://github.com/suvash
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39614,7 +39866,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 317 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39622,7 +39874,7 @@ var Grommet =
 	//! author : Joris Röling : https://github.com/jjupiter
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39689,7 +39941,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 318 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39697,7 +39949,7 @@ var Grommet =
 	//! author : https://github.com/mechuwind
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39753,7 +40005,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 319 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39761,7 +40013,7 @@ var Grommet =
 	//! author : Rafal Hirsz : https://github.com/evoL
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39862,7 +40114,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 320 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39870,7 +40122,7 @@ var Grommet =
 	//! author : Jefferson : https://github.com/jalex79
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39930,7 +40182,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 321 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -39938,7 +40190,7 @@ var Grommet =
 	//! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -39994,7 +40246,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 322 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40003,7 +40255,7 @@ var Grommet =
 	//! author : Valentin Agachi : https://github.com/avaly
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40072,7 +40324,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 323 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40081,7 +40333,7 @@ var Grommet =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40240,7 +40492,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 324 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40248,7 +40500,7 @@ var Grommet =
 	//! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40309,7 +40561,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 325 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40318,7 +40570,7 @@ var Grommet =
 	//! based on work of petrbela : https://github.com/petrbela
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40471,7 +40723,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 326 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40479,7 +40731,7 @@ var Grommet =
 	//! author : Robert Sedovšek : https://github.com/sedovsek
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40635,7 +40887,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 327 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40645,7 +40897,7 @@ var Grommet =
 	//! author : Oerd Cukalla : https://github.com/oerd (fixes)
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40708,7 +40960,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 328 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40716,7 +40968,7 @@ var Grommet =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40820,7 +41072,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 329 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40828,7 +41080,7 @@ var Grommet =
 	//! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -40932,7 +41184,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 330 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -40940,7 +41192,7 @@ var Grommet =
 	//! author : Jens Alm : https://github.com/ulmus
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41003,7 +41255,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 331 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41011,7 +41263,7 @@ var Grommet =
 	//! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41102,7 +41354,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 332 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41110,7 +41362,7 @@ var Grommet =
 	//! author : Kridsada Thanabulpong : https://github.com/sirn
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41171,7 +41423,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 333 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41179,7 +41431,7 @@ var Grommet =
 	//! author : Dan Hagman
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41237,7 +41489,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 334 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41246,7 +41498,7 @@ var Grommet =
 	//!           Burak Yiğit Kaya: https://github.com/BYK
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41331,7 +41583,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 335 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41339,7 +41591,7 @@ var Grommet =
 	//! author : Robin van der Vliet : https://github.com/robin0van0der0v with the help of Iustì Canun
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41420,7 +41672,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 336 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41428,7 +41680,7 @@ var Grommet =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41482,7 +41734,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 337 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41490,7 +41742,7 @@ var Grommet =
 	//! author : Abdel Said : https://github.com/abdelsaid
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41544,7 +41796,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 338 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41553,7 +41805,7 @@ var Grommet =
 	//! Author : Menelion Elensúle : https://github.com/Oire
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41701,7 +41953,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 339 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41709,7 +41961,7 @@ var Grommet =
 	//! author : Sardor Muminov : https://github.com/muminoff
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41763,7 +42015,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 340 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41771,7 +42023,7 @@ var Grommet =
 	//! author : Bang Nguyen : https://github.com/bangnk
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41833,7 +42085,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 341 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41842,7 +42094,7 @@ var Grommet =
 	//! author : Zeno Zeng : https://github.com/zenozeng
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -41964,7 +42216,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 342 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
@@ -41972,7 +42224,7 @@ var Grommet =
 	//! author : Ben : https://github.com/ben-lin
 
 	(function (global, factory) {
-	    true ? factory(__webpack_require__(255)) :
+	    true ? factory(__webpack_require__(257)) :
 	   typeof define === 'function' && define.amd ? define(['moment'], factory) :
 	   factory(global.moment)
 	}(this, function (moment) { 'use strict';
@@ -42069,7 +42321,7 @@ var Grommet =
 	}));
 
 /***/ },
-/* 343 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -42134,7 +42386,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 344 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -42168,7 +42420,7 @@ var Grommet =
 	module.exports = Left;
 
 /***/ },
-/* 345 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -42182,7 +42434,7 @@ var Grommet =
 	var merge = __webpack_require__(6);
 	var pick = __webpack_require__(234);
 	var keys = __webpack_require__(32);
-	var Box = __webpack_require__(241);
+	var Box = __webpack_require__(242);
 
 	var CLASS_ROOT = "header";
 
@@ -42312,7 +42564,7 @@ var Grommet =
 	module.exports = Header;
 
 /***/ },
-/* 346 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -42320,7 +42572,9 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Box = __webpack_require__(241);
+	var Box = __webpack_require__(242);
+
+	var Intl = __webpack_require__(239);
 
 	var CLASS_ROOT = "title";
 
@@ -42328,13 +42582,19 @@ var Grommet =
 	  displayName: 'Title',
 
 	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
 	    onClick: React.PropTypes.func,
 	    responsive: React.PropTypes.bool
 	  },
 
+	  contextTypes: {
+	    intl: React.PropTypes.object
+	  },
+
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      responsive: true
+	      responsive: true,
+	      a11yTitle: 'Title'
 	    };
 	  },
 
@@ -42350,10 +42610,13 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
+	    var a11yTitle = Intl.getMessage(this.context.intl, this.props.a11yTitle);
+
 	    return React.createElement(
 	      Box,
 	      { align: 'center', direction: 'row', responsive: false,
-	        className: classes.join(' '), onClick: this.props.onClick },
+	        className: classes.join(' '), a11yTitle: a11yTitle,
+	        onClick: this.props.onClick },
 	      this.props.children
 	    );
 	  }
@@ -42363,78 +42626,216 @@ var Grommet =
 	module.exports = Title;
 
 /***/ },
-/* 347 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(2);
+	var Box = __webpack_require__(242);
+	var Tiles = __webpack_require__(350);
+	var Tile = __webpack_require__(353);
+	var Previous = __webpack_require__(354);
+	var Next = __webpack_require__(355);
 
 	var CLASS_ROOT = "carousel";
 
 	var Carousel = React.createClass({
-	  displayName: "Carousel",
+	  displayName: 'Carousel',
+
+	  propTypes: {
+	    autoplay: React.PropTypes.bool,
+	    autoplaySpeed: React.PropTypes.number,
+	    infinite: React.PropTypes.bool,
+	    persistentNav: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      autoplay: true,
+	      autoplaySpeed: 5000,
+	      infinite: true,
+	      persistentNav: true
+	    };
+	  },
 
 	  getInitialState: function getInitialState() {
-	    return { activeIndex: 0, priorIndex: 0, sequence: 1 };
+	    return {
+	      activeIndex: 0,
+	      hideControls: !this.props.persistentNav,
+	      priorIndex: 0,
+	      sequence: 1,
+	      width: 0
+	    };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    this.setState({
+	      width: this.refs.carousel.offsetWidth
+	    });
+
+	    if (this.props.autoplay) {
+	      this._setSlideInterval();
+	    }
+
+	    window.addEventListener('resize', this._onWindowResize);
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    clearInterval(this._slideAnimation);
+
+	    window.removeEventListener('resize', this._onWindowResize);
+	  },
+
+	  _slideAnimation: null,
+
+	  _setSlideInterval: function _setSlideInterval() {
+	    this._slideAnimation = setInterval((function () {
+	      var activeIndex = this.state.activeIndex;
+	      var numSlides = this.props.children.length;
+
+	      this.setState({
+	        activeIndex: (activeIndex + 1) % numSlides
+	      });
+
+	      if (!this.props.infinite && activeIndex === numSlides - 1) {
+	        clearInterval(this._slideAnimation);
+	      }
+	    }).bind(this), this.props.autoplaySpeed);
 	  },
 
 	  _onSelect: function _onSelect(index) {
 	    if (index !== this.state.activeIndex) {
 	      this.setState({
-	        activeIndex: index,
-	        priorIndex: this.state.activeIndex,
-	        sequence: this.state.sequence += 1
+	        activeIndex: index
 	      });
 	    }
 	  },
 
-	  // children should be an array of Tile
+	  _onMouseOver: function _onMouseOver() {
+	    if (this.props.autoplay) {
+	      clearInterval(this._slideAnimation);
+	    }
+
+	    if (!this.props.persistentNav) {
+	      this.setState({
+	        hideControls: false
+	      });
+	    }
+	  },
+
+	  _onMouseOut: function _onMouseOut() {
+	    if (this.props.autoplay && (this.props.infinite || this.state.activeIndex !== this.props.children.length - 1)) {
+	      this._setSlideInterval();
+	    }
+
+	    if (!this.props.persistentNav) {
+	      this.setState({
+	        hideControls: true
+	      });
+	    }
+	  },
+
+	  _onWindowResize: function _onWindowResize() {
+	    this.setState({
+	      width: this.refs.carousel.offsetWidth
+	    });
+	  },
+
+	  _slidePrev: function _slidePrev() {
+	    var numSlides = this.props.children.length;
+	    this.setState({
+	      activeIndex: (this.state.activeIndex + numSlides - 1) % numSlides
+	    });
+	  },
+
+	  _slideNext: function _slideNext() {
+	    var numSlides = this.props.children.length;
+	    this.setState({
+	      activeIndex: (this.state.activeIndex + 1) % numSlides
+	    });
+	  },
+
+	  _renderPrevButton: function _renderPrevButton() {
+	    if (this.props.infinite || this.state.activeIndex !== 0) {
+	      return React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__arrow ' + CLASS_ROOT + '__arrow--prev', onClick: this._slidePrev },
+	        React.createElement(Previous, null)
+	      );
+	    }
+	  },
+
+	  _renderNextButton: function _renderNextButton() {
+	    if (this.props.infinite || this.state.activeIndex !== this.props.children.length - 1) {
+	      return React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__arrow ' + CLASS_ROOT + '__arrow--next', onClick: this._slideNext },
+	        React.createElement(Next, null)
+	      );
+	    }
+	  },
+
 	  render: function render() {
 	    var classes = [CLASS_ROOT];
-	    classes.push(CLASS_ROOT + "--toggle-" + this.state.sequence % 2);
+	    if (this.state.hideControls) {
+	      classes.push(CLASS_ROOT + '--hide-controls');
+	    }
+
 	    if (this.props.className) {
 	      classes.push(this.props.className);
 	    }
 
 	    var index = -1;
-	    var activeChild;
-	    var priorChild;
-	    var controls = React.Children.map(this.props.children, function (child) {
+	    var children = this.props.children;
+
+	    var width = this.state.width;
+	    var trackWidth = width * children.length;
+
+	    var trackPosition = -(width * this.state.activeIndex);
+
+	    var tiles = React.Children.map(children, function (child) {
+	      return React.createElement(
+	        Tile,
+	        { className: CLASS_ROOT + "__item" },
+	        child
+	      );
+	    }, this);
+
+	    var controls = React.Children.map(children, function (child) {
 	      index += 1;
 	      var controlClasses = [CLASS_ROOT + "__control"];
 	      if (index === this.state.activeIndex) {
 	        controlClasses.push(CLASS_ROOT + "__control--active");
-	        activeChild = child;
-	      } else if (index === this.state.priorIndex) {
-	        priorChild = child;
 	      }
+
 	      return React.createElement(
-	        "svg",
-	        { className: controlClasses.join(' '), viewBox: "0 0 24 24", version: "1.1",
+	        'svg',
+	        { className: controlClasses.join(' '), viewBox: '0 0 24 24', version: '1.1',
 	          onClick: this._onSelect.bind(this, index) },
-	        React.createElement("circle", { cx: 12, cy: 12, r: 6 })
+	        React.createElement('circle', { cx: 12, cy: 12, r: 6 })
 	      );
 	    }, this);
 
 	    return React.createElement(
-	      "div",
-	      { className: classes.join(' ') },
+	      'div',
+	      { ref: 'carousel', className: classes.join(' '), onMouseEnter: this._onMouseOver, onMouseLeave: this._onMouseOut },
 	      React.createElement(
-	        "div",
-	        { className: CLASS_ROOT + "__prior" },
-	        priorChild
+	        'div',
+	        { className: CLASS_ROOT + "__track", style: { width: trackWidth, marginLeft: trackPosition } },
+	        React.createElement(
+	          Tiles,
+	          { fill: true },
+	          tiles
+	        )
 	      ),
+	      this._renderPrevButton(),
+	      this._renderNextButton(),
 	      React.createElement(
-	        "div",
-	        { className: CLASS_ROOT + "__active" },
-	        activeChild
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: CLASS_ROOT + "__controls" },
+	        Box,
+	        { className: CLASS_ROOT + "__controls", direction: 'row', justify: 'center', responsive: false },
 	        controls
 	      )
 	    );
@@ -42445,7 +42846,539 @@ var Grommet =
 	module.exports = Carousel;
 
 /***/ },
-/* 348 */
+/* 350 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var SpinningIcon = __webpack_require__(351);
+	var LeftIcon = __webpack_require__(346);
+	var RightIcon = __webpack_require__(3);
+	var Scroll = __webpack_require__(253);
+	var InfiniteScroll = __webpack_require__(352);
+
+	var CLASS_ROOT = "tiles";
+
+	var Tiles = React.createClass({
+	  displayName: 'Tiles',
+
+	  propTypes: {
+	    direction: React.PropTypes.oneOf(['row', 'column']),
+	    fill: React.PropTypes.bool,
+	    flush: React.PropTypes.bool,
+	    onMore: React.PropTypes.func,
+	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
+	    small: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      flush: true,
+	      fill: false,
+	      small: false
+	    };
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return { overflow: false };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    if (this.props.onMore) {
+	      this._scroll = InfiniteScroll.startListeningForScroll(this.refs.more, this.props.onMore);
+	    }
+	    if ('row' === this.props.direction) {
+	      window.addEventListener('resize', this._onResize);
+	      document.addEventListener('wheel', this._onWheel);
+	      this._trackHorizontalScroll();
+	      this._layout();
+	    }
+	  },
+
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    if (this._scroll) {
+	      InfiniteScroll.stopListeningForScroll(this._scroll);
+	      this._scroll = null;
+	    }
+	  },
+
+	  componentDidUpdate: function componentDidUpdate() {
+	    if (this.props.onMore && !this._scroll) {
+	      this._scroll = InfiniteScroll.startListeningForScroll(this.refs.more, this.props.onMore);
+	    }
+	    if ('row' === this.props.direction) {
+	      this._trackHorizontalScroll();
+	    }
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this._scroll) {
+	      InfiniteScroll.stopListeningForScroll(this._scroll);
+	    }
+	    if ('row' === this.props.direction) {
+	      window.removeEventListener('resize', this._onResize);
+	      document.removeEventListener('wheel', this._onWheel);
+	      if (this._tracking) {
+	        var tiles = this.refs.tiles;
+	        tiles.removeEventListener('scroll', this._onScrollHorizontal);
+	      }
+	    }
+	  },
+
+	  _onLeft: function _onLeft() {
+	    var tiles = this.refs.tiles;
+	    Scroll.scrollBy(tiles, 'scrollLeft', -tiles.offsetWidth);
+	  },
+
+	  _onRight: function _onRight() {
+	    var tiles = this.refs.tiles;
+	    Scroll.scrollBy(tiles, 'scrollLeft', tiles.offsetWidth);
+	  },
+
+	  _onScrollHorizontal: function _onScrollHorizontal() {
+	    // debounce
+	    clearTimeout(this._scrollTimer);
+	    this._scrollTimer = setTimeout(this._layout, 50);
+	  },
+
+	  _onWheel: function _onWheel(event) {
+	    if (Math.abs(event.deltaX) > 100) {
+	      clearInterval(this._scrollTimer);
+	    } else if (event.deltaX > 5) {
+	      this._onRight();
+	    } else if (event.deltaX < -5) {
+	      this._onLeft();
+	    }
+	  },
+
+	  _layout: function _layout() {
+	    if ('row' === this.props.direction) {
+	      // determine if we have more tiles than room to fit
+	      var tiles = this.refs.tiles;
+	      // 20 is to allow some fuzziness as scrollbars come and go
+	      this.setState({
+	        overflow: tiles.scrollWidth > tiles.offsetWidth + 20,
+	        overflowStart: tiles.scrollLeft <= 20,
+	        overflowEnd: tiles.scrollLeft >= tiles.scrollWidth - tiles.offsetWidth
+	      });
+
+	      // mark any tiles that might be clipped
+	      var rect = tiles.getBoundingClientRect();
+	      var children = tiles.querySelectorAll('.tile');
+	      for (var i = 0; i < children.length; i += 1) {
+	        var child = children[i];
+	        var childRect = child.getBoundingClientRect();
+	        // 12 accounts for padding
+	        if (childRect.left + 12 < rect.left || childRect.right - 12 > rect.right) {
+	          child.classList.add('tile--eclipsed');
+	        } else {
+	          child.classList.remove('tile--eclipsed');
+	        }
+	      }
+	    }
+	  },
+
+	  _onResize: function _onResize() {
+	    // debounce
+	    clearTimeout(this._resizeTimer);
+	    this._resizeTimer = setTimeout(this._layout, 50);
+	  },
+
+	  _trackHorizontalScroll: function _trackHorizontalScroll() {
+	    if (this.state.overflow && !this._tracking) {
+	      var tiles = this.refs.tiles;
+	      tiles.addEventListener('scroll', this._onScrollHorizontal);
+	      this._tracking = true;
+	    }
+	  },
+
+	  // children should be an array of Tile
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.fill) {
+	      classes.push(CLASS_ROOT + "--fill");
+	    }
+	    if (this.props.flush) {
+	      classes.push(CLASS_ROOT + "--flush");
+	    }
+	    if (this.props.size) {
+	      classes.push(CLASS_ROOT + "--" + this.props.size);
+	    } else if (this.props.small) {
+	      classes.push(CLASS_ROOT + "--small");
+	    }
+	    if (this.props.direction) {
+	      classes.push(CLASS_ROOT + "--direction-" + this.props.direction);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var more = null;
+	    if (this.props.onMore) {
+	      classes.push(CLASS_ROOT + "--moreable");
+	      more = React.createElement(
+	        'div',
+	        { ref: 'more', className: CLASS_ROOT + "__more" },
+	        React.createElement(SpinningIcon, null)
+	      );
+	    }
+
+	    var contents = React.createElement(
+	      'div',
+	      { ref: 'tiles', className: classes.join(' ') },
+	      this.props.children,
+	      more
+	    );
+
+	    if (this.state.overflow) {
+	      classes.push(CLASS_ROOT + "--overflowed");
+	      if (!this.state.overflowStart) {
+	        var left = React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + "__left", onClick: this._onLeft },
+	          React.createElement(LeftIcon, null)
+	        );
+	      }
+	      if (!this.state.overflowEnd) {
+	        var right = React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + "__right", onClick: this._onRight },
+	          React.createElement(RightIcon, null)
+	        );
+	      }
+
+	      contents = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + "__container" },
+	        left,
+	        contents,
+	        right
+	      );
+	    }
+
+	    return contents;
+	  }
+
+	});
+
+	module.exports = Tiles;
+
+/***/ },
+/* 351 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	"use strict";
+
+	var React = __webpack_require__(2);
+
+	var CLASS_ROOT = "icon-spinning";
+
+	var Spinning = React.createClass({
+	  displayName: "Spinning",
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.small) {
+	      classes.push(CLASS_ROOT + "--small");
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+	    return React.createElement(
+	      "svg",
+	      { className: classes.join(' '), viewBox: "0 0 48 48", version: "1.1" },
+	      React.createElement("circle", { stroke: "#ddd", strokeWidth: "4", strokeDasharray: "24px 8px", fill: "none", cx: "24", cy: "24", r: "20" }),
+	      React.createElement("circle", { stroke: "#333", strokeWidth: "4", strokeDasharray: "24px 104px", fill: "none", cx: "24", cy: "24", r: "20" })
+	    );
+	  }
+
+	});
+
+	module.exports = Spinning;
+
+/***/ },
+/* 352 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
+
+	"use strict";
+
+	var DOM = __webpack_require__(231);
+
+	var SCROLL_MORE_DELAY = 500; // when the user scrolls
+	var SCROLL_MORE_INITIAL_DELAY = 50; // when we start out at the bottom already
+
+	function _evaluate(scrollState) {
+	  if (scrollState.scrollParent) {
+	    // are we at the bottom?
+	    var bottom;
+	    if (scrollState.scrollParent === document) {
+	      bottom = window.innerHeight;
+	    } else {
+	      bottom = scrollState.scrollParent.getBoundingClientRect().bottom;
+	    }
+	    var indicatorRect = scrollState.indicatorElement.getBoundingClientRect();
+	    // Only if bottom isn't zero. This can happen when content hasn't arrived yet.
+	    if (bottom && indicatorRect.bottom <= bottom) {
+	      scrollState.onEnd();
+	    }
+	  }
+	}
+
+	function _onScroll(scrollState) {
+	  // delay a bit to ride out quick users
+	  clearTimeout(scrollState.scrollTimer);
+	  scrollState.scrollTimer = setTimeout(function () {
+	    _evaluate(scrollState);
+	  }, SCROLL_MORE_DELAY);
+	}
+
+	function _onResize(scrollState) {
+	  clearTimeout(scrollState.scrollTimer);
+	  scrollState.scrollTimer = setTimeout(function () {
+	    _evaluate(scrollState);
+	  }, SCROLL_MORE_DELAY);
+	}
+
+	var InfiniteScroll = {
+
+	  startListeningForScroll: function startListeningForScroll(indicatorElement, onEnd) {
+	    var scrollState = {
+	      onEnd: onEnd,
+	      indicatorElement: indicatorElement,
+	      scrollParent: DOM.findScrollParents(indicatorElement)[0]
+	    };
+
+	    scrollState._onResize = _onResize.bind(null, scrollState);
+	    scrollState._onScroll = _onScroll.bind(null, scrollState);
+
+	    scrollState.scrollParent.addEventListener("scroll", scrollState._onScroll);
+	    window.addEventListener("resize", scrollState._onResize);
+	    // check in case we're already at the bottom and the indicator is visible
+	    if (scrollState.scrollParent === document) {
+	      var rect = indicatorElement.getBoundingClientRect();
+	      if (rect.top < window.innerHeight) {
+	        scrollState.scrollTimer = setTimeout(onEnd, SCROLL_MORE_INITIAL_DELAY);
+	      }
+	    }
+	    return scrollState;
+	  },
+
+	  stopListeningForScroll: function stopListeningForScroll(scrollState) {
+	    if (scrollState.scrollParent) {
+	      clearTimeout(scrollState.scrollTimer);
+	      scrollState.scrollParent.removeEventListener("scroll", scrollState._onScroll);
+	      window.removeEventListener("resize", scrollState._onResize);
+	      scrollState.scrollParent = null;
+	    }
+	  }
+	};
+
+	module.exports = InfiniteScroll;
+
+/***/ },
+/* 353 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var React = __webpack_require__(2);
+	var merge = __webpack_require__(6);
+	var pick = __webpack_require__(234);
+	var keys = __webpack_require__(32);
+	var Box = __webpack_require__(242);
+
+	var CLASS_ROOT = "tile";
+
+	var Tile = React.createClass({
+	  displayName: 'Tile',
+
+	  propTypes: merge({
+	    selected: React.PropTypes.bool,
+	    status: React.PropTypes.string,
+	    wide: React.PropTypes.bool
+	  }, Box.propTypes),
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      pad: 'none',
+	      direction: 'column',
+	      align: 'center'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    var other = pick(this.props, keys(Box.propTypes));
+	    if (this.props.status) {
+	      classes.push(CLASS_ROOT + "--status-" + this.props.status.toLowerCase());
+	    }
+	    if (this.props.wide) {
+	      classes.push(CLASS_ROOT + "--wide");
+	    }
+	    if (this.props.onClick) {
+	      classes.push(CLASS_ROOT + "--selectable");
+	    }
+	    if (this.props.selected) {
+	      classes.push(CLASS_ROOT + "--selected");
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    return React.createElement(
+	      Box,
+	      _extends({ className: classes.join(' ') }, other, { onClick: this.props.onClick }),
+	      this.props.children
+	    );
+	  }
+
+	});
+
+	module.exports = Tile;
+
+/***/ },
+/* 354 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var FormattedMessage = __webpack_require__(190);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'previous-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-previous'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "previous";
+	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'previous' },
+	        React.createElement('rect', { id: '_x2E_svg_262_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.1397,11.5 17.1397,22.5 28.1397,33.5 \t ' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 355 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var FormattedMessage = __webpack_require__(190);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'next-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-next'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "next";
+	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'next' },
+	        React.createElement('rect', { id: '_x2E_svg_27_', x: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '20,13.2101 31,24.2101 20,35.2101 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -42454,7 +43387,10 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(44);
-	var Legend = __webpack_require__(349);
+	var Legend = __webpack_require__(357);
+
+	var Intl = __webpack_require__(239);
+	var KeyboardAccelerators = __webpack_require__(230);
 
 	var CLASS_ROOT = "chart";
 
@@ -42472,6 +43408,10 @@ var Grommet =
 	  displayName: 'Chart',
 
 	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    a11yDescId: React.PropTypes.string,
+	    a11yDesc: React.PropTypes.string,
 	    important: React.PropTypes.number,
 	    large: React.PropTypes.bool,
 	    legend: React.PropTypes.shape({
@@ -42513,8 +43453,14 @@ var Grommet =
 	    })])
 	  },
 
+	  contextTypes: {
+	    intl: React.PropTypes.object
+	  },
+
 	  getDefaultProps: function getDefaultProps() {
 	    return {
+	      a11yTitleId: 'chart-title',
+	      a11yDescId: 'chart-desc',
 	      min: 0,
 	      type: 'line'
 	    };
@@ -42527,6 +43473,15 @@ var Grommet =
 	  componentDidMount: function componentDidMount() {
 	    window.addEventListener('resize', this._onResize);
 	    this._onResize();
+
+	    //only add listerners if graph is interactive
+	    if (this.props.legend) {
+	      this._keyboardHandlers = {
+	        left: this._onRequestForPreviousLegend,
+	        right: this._onRequestForNextLegend
+	      };
+	      KeyboardAccelerators.startListeningToKeyboard(this, this._keyboardHandlers);
+	    }
 	  },
 
 	  componentWillReceiveProps: function componentWillReceiveProps(newProps) {
@@ -42541,6 +43496,36 @@ var Grommet =
 	  componentWillUnmount: function componentWillUnmount() {
 	    clearTimeout(this._resizeTimer);
 	    window.removeEventListener('resize', this._onResize);
+
+	    if (this.props.legend) {
+	      KeyboardAccelerators.stopListeningToKeyboard(this, this._keyboardHandlers);
+	    }
+	  },
+
+	  _onRequestForNextLegend: function _onRequestForNextLegend() {
+	    if (document.activeElement === this.refs.chart) {
+
+	      var totalBandCount = ReactDOM.findDOMNode(this.refs.front).childNodes.length;
+
+	      if (this.state.activeXIndex - 1 < 0) {
+	        this._onMouseOver(totalBandCount - 1);
+	      } else {
+	        this._onMouseOver(--this.state.activeXIndex);
+	      }
+	    }
+	  },
+
+	  _onRequestForPreviousLegend: function _onRequestForPreviousLegend() {
+	    if (document.activeElement === this.refs.chart) {
+
+	      var totalBandCount = ReactDOM.findDOMNode(this.refs.front).childNodes.length;
+
+	      if (this.state.activeXIndex + 1 >= totalBandCount) {
+	        this._onMouseOver(0);
+	      } else {
+	        this._onMouseOver(++this.state.activeXIndex);
+	      }
+	    }
 	  },
 
 	  _onMouseOver: function _onMouseOver(xIndex) {
@@ -42904,7 +43889,7 @@ var Grommet =
 
 	      return React.createElement(
 	        'g',
-	        { key: seriesIndex },
+	        { key: 'line_group_' + seriesIndex },
 	        areaPath,
 	        linePath,
 	        points
@@ -42933,7 +43918,7 @@ var Grommet =
 	          classes.push(CLASS_ROOT + "__values-bar--active");
 	        }
 
-	        return React.createElement('rect', { key: item.label || seriesIndex,
+	        return React.createElement('rect', { key: 'bar_rect_' + item.label || seriesIndex,
 	          className: classes.join(' '),
 	          x: this._translateX(value[0]) + bounds.barPadding,
 	          y: this.state.height - (stepBarHeight + stepBarBase),
@@ -42943,7 +43928,7 @@ var Grommet =
 
 	      return React.createElement(
 	        'g',
-	        { key: xIndex },
+	        { key: 'bar_' + xIndex },
 	        stepBars
 	      );
 	    }, this);
@@ -43029,7 +44014,7 @@ var Grommet =
 
 	      return React.createElement(
 	        'g',
-	        { key: xIndex, className: classes.join(' ') },
+	        { key: 'x_axis_' + xIndex, className: classes.join(' ') },
 	        React.createElement(
 	          'text',
 	          { x: position.x, y: labelY,
@@ -43065,7 +44050,7 @@ var Grommet =
 	      var y = this._translateY(end);
 	      start = end;
 
-	      return React.createElement('rect', { key: index,
+	      return React.createElement('rect', { key: 'y_rect_' + index,
 	        className: classes.join(' '),
 	        x: this.state.width - width,
 	        y: y,
@@ -43078,6 +44063,34 @@ var Grommet =
 	      { ref: 'yAxis', className: CLASS_ROOT + "__yaxis" },
 	      bars
 	    );
+	  },
+
+	  _activeSeriesAsString: function _activeSeriesAsString() {
+	    var total = 0;
+	    var seriesText = this._getActiveSeries().map(function (currentSeries) {
+	      total += currentSeries.value;
+
+	      var stringify = [currentSeries.label];
+
+	      if (currentSeries.value !== undefined) {
+	        stringify.push(': ' + currentSeries.value);
+
+	        if (currentSeries.units) {
+	          stringify.push(' ' + currentSeries.units);
+	        }
+	      }
+
+	      return stringify.join('');
+	    }).join('; ');
+
+	    var totalText = '';
+	    if (this.props.legend.total) {
+	      var totalMessage = Intl.getMessage(this.context.intl, 'Total');
+	      totalText = totalMessage + ': ' + total + this.props.units || '';
+	      seriesText += ', ' + totalText;
+	    }
+
+	    return seriesText;
 	  },
 
 	  // Create vertical rects for each X data point.
@@ -43106,18 +44119,29 @@ var Grommet =
 	        onMouseOut = this._onMouseOut.bind(this, xIndex);
 	      }
 
+	      var xBandId = this.props.a11yTitleId + '_x_band_' + xIndex;
+	      var xBandTitleId = this.props.a11yTitleId + '_x_band_title_' + xIndex;
+
+	      var seriesText = this._activeSeriesAsString();
+
 	      return React.createElement(
 	        'g',
-	        { key: xIndex, className: classes.join(' '),
-	          onMouseOver: onMouseOver, onMouseOut: onMouseOut },
-	        React.createElement('rect', { className: className + "-xband-background",
+	        { id: xBandId, key: xBandId, className: classes.join(' '),
+	          onMouseOver: onMouseOver, onMouseOut: onMouseOut, role: 'gridcell',
+	          'aria-labelledby': xBandTitleId },
+	        React.createElement(
+	          'title',
+	          { id: xBandTitleId },
+	          obj.label + ' ' + seriesText
+	        ),
+	        React.createElement('rect', { role: 'presentation', className: className + "-xband-background",
 	          x: x, y: 0, width: bounds.xStepWidth, height: this.state.height })
 	      );
 	    }, this);
 
 	    return React.createElement(
 	      'g',
-	      { ref: layer, className: className },
+	      { ref: layer, role: 'row', className: className },
 	      bands
 	    );
 	  },
@@ -43156,20 +44180,26 @@ var Grommet =
 	    );
 	  },
 
-	  // Builds a Legend appropriate for the currently active X index.
-	  _renderLegend: function _renderLegend() {
-	    var activeSeries = this.props.series.map(function (item) {
+	  _getActiveSeries: function _getActiveSeries(addColorIndex) {
+	    return this.props.series.map(function (item) {
 	      var datum = {
 	        value: item.values[this.state.activeXIndex][1],
-	        units: item.units
+	        units: item.units || this.props.units
 	      };
 	      // only show label and swatch if we have more than one series
 	      if (this.props.series.length > 1) {
 	        datum.label = item.label;
-	        datum.colorIndex = item.colorIndex;
+	        if (addColorIndex) {
+	          datum.colorIndex = item.colorIndex;
+	        }
 	      }
 	      return datum;
 	    }, this);
+	  },
+
+	  // Builds a Legend appropriate for the currently active X index.
+	  _renderLegend: function _renderLegend() {
+	    var activeSeries = this._getActiveSeries(true);
 	    var classes = [CLASS_ROOT + "__legend", CLASS_ROOT + "__legend--" + (this.props.legend.position || 'overlay')];
 
 	    return React.createElement(Legend, { ref: 'legend', className: classes.join(' '),
@@ -43230,9 +44260,35 @@ var Grommet =
 	      yAxis = this._renderYAxis();
 	    }
 
-	    var frontBands = null;
+	    var frontBands;
+	    var activeDescendant;
 	    if (this.props.legend) {
 	      frontBands = this._renderXBands('front');
+	      activeDescendant = this.props.a11yTitleId + '_x_band_' + this.state.activeXIndex;
+	    }
+
+	    var role = 'img';
+	    if (activeDescendant) {
+	      role = 'tablist';
+	    }
+	    var defaultTitle;
+	    if (!this.props.a11yTitle) {
+	      defaultTitle = ['Chart, ', 'Type: ', this.props.type].join(' ').trim();
+	    }
+
+	    var titleKey = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : defaultTitle;
+	    var a11yTitle = Intl.getMessage(this.context.intl, titleKey);
+
+	    var defaultA11YDesc = '';
+	    var descKey = typeof this.props.a11yDesc !== "undefined" ? this.props.a11yDesc : defaultA11YDesc;
+
+	    var a11yDescNode;
+	    if (descKey) {
+	      a11yDescNode = React.createElement(
+	        'desc',
+	        { id: this.props.a11yDescId },
+	        Intl.getMessage(this.context.intl, descKey)
+	      );
 	    }
 
 	    return React.createElement(
@@ -43242,7 +44298,15 @@ var Grommet =
 	        'svg',
 	        { ref: 'chart', className: CLASS_ROOT + "__graphic",
 	          viewBox: "0 0 " + this.state.width + " " + this.state.height,
-	          preserveAspectRatio: 'none' },
+	          preserveAspectRatio: 'none', role: role, tabIndex: '0',
+	          'aria-activedescendant': activeDescendant,
+	          'aria-labelledby': this.props.a11yTitleId + ' ' + this.props.a11yDescId },
+	        React.createElement(
+	          'title',
+	          { id: this.props.a11yTitleId },
+	          a11yTitle
+	        ),
+	        a11yDescNode,
 	        xAxis,
 	        yAxis,
 	        React.createElement(
@@ -43263,7 +44327,7 @@ var Grommet =
 	module.exports = Chart;
 
 /***/ },
-/* 349 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -43375,7 +44439,7 @@ var Grommet =
 	        { key: item.label || index, className: legendClasses.join(' '),
 	          onClick: item.onClick,
 	          onMouseOver: this._onActive.bind(this, index),
-	          onMouseOut: this._onActive.bind(this, this.props.activeIndex) },
+	          onMouseOut: this._onActive.bind(this, null) },
 	        swatch,
 	        label,
 	        value
@@ -43418,7 +44482,7 @@ var Grommet =
 	module.exports = Legend;
 
 /***/ },
-/* 350 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -43496,7 +44560,7 @@ var Grommet =
 	module.exports = CheckBox;
 
 /***/ },
-/* 351 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -43504,7 +44568,7 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var Legend = __webpack_require__(349);
+	var Legend = __webpack_require__(357);
 
 	var CLASS_ROOT = "distribution";
 
@@ -43594,12 +44658,20 @@ var Grommet =
 	      var label = labels[i];
 	      label.style.top = null;
 	      label.style.left = null;
+	      label.style.maxWidth = null;
 	      var boxIndex = label.getAttribute('data-box-index');
 	      var box = container.querySelectorAll('[data-index="' + boxIndex + '"]')[0];
 	      var boxRect = box.getBoundingClientRect();
 	      var labelRect = label.getBoundingClientRect();
+	      if (labelRect.width > boxRect.width) {
+	        label.style.left = boxRect.left - rect.left + 'px';
+	      } else {
+	        label.style.left = boxRect.left - rect.left + boxRect.width / 2 - labelRect.width / 2 + 'px';
+	      }
+	      label.style.maxWidth = boxRect.width + 'px';
+	      // have to set again after setting maxWidth in case text wraps and increases height
+	      labelRect = label.getBoundingClientRect();
 	      label.style.top = boxRect.top - rect.top + boxRect.height / 2 - labelRect.height / 2 + 'px';
-	      label.style.left = boxRect.left - rect.left + boxRect.width / 2 - labelRect.width / 2 + 'px';
 	    }
 	  },
 
@@ -43798,7 +44870,7 @@ var Grommet =
 	module.exports = Distribution;
 
 /***/ },
-/* 352 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -43811,8 +44883,8 @@ var Grommet =
 	var merge = __webpack_require__(6);
 	var pick = __webpack_require__(234);
 	var keys = __webpack_require__(32);
-	var Box = __webpack_require__(241);
-	var SkipLinkAnchor = __webpack_require__(253);
+	var Box = __webpack_require__(242);
+	var SkipLinkAnchor = __webpack_require__(254);
 
 	var CLASS_ROOT = "footer";
 
@@ -43820,6 +44892,7 @@ var Grommet =
 	  displayName: 'Footer',
 
 	  propTypes: merge({
+	    primary: React.PropTypes.bool,
 	    large: React.PropTypes.bool,
 	    small: React.PropTypes.bool,
 	    float: React.PropTypes.bool
@@ -43848,11 +44921,16 @@ var Grommet =
 	      containerClasses.push(CLASS_ROOT + "__container--float");
 	    }
 
+	    var footerSkipLink;
+	    if (this.props.primary) {
+	      footerSkipLink = React.createElement(SkipLinkAnchor, { label: 'Footer' });
+	    }
+
 	    return React.createElement(
 	      Box,
 	      _extends({ tag: 'footer' }, other, { className: classes.join(' '),
 	        containerClassName: containerClasses.join(' ') }),
-	      React.createElement(SkipLinkAnchor, { label: 'Footer' }),
+	      footerSkipLink,
 	      this.props.children
 	    );
 	  }
@@ -43862,7 +44940,7 @@ var Grommet =
 	module.exports = Footer;
 
 /***/ },
-/* 353 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -43909,9 +44987,9 @@ var Grommet =
 	      if (typeof this.props.pad === 'string') {
 	        classes.push(CLASS_ROOT + "--pad-" + this.props.pad);
 	      } else if (typeof this.props.pad === 'object') {
-	        keys(this.props.pad).forEach(function (key) {
+	        keys(this.props.pad).forEach((function (key) {
 	          classes.push(CLASS_ROOT + '--pad-' + key + '-' + this.props.pad[key]);
-	        });
+	        }).bind(this));
 	      }
 	    }
 	    if (this.props.className) {
@@ -43929,7 +45007,7 @@ var Grommet =
 	module.exports = Form;
 
 /***/ },
-/* 354 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44044,7 +45122,7 @@ var Grommet =
 	module.exports = FormField;
 
 /***/ },
-/* 355 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44073,7 +45151,7 @@ var Grommet =
 	module.exports = FormFields;
 
 /***/ },
-/* 356 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44121,7 +45199,7 @@ var Grommet =
 	module.exports = Headline;
 
 /***/ },
-/* 357 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44168,7 +45246,7 @@ var Grommet =
 	module.exports = Label;
 
 /***/ },
-/* 358 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44177,10 +45255,10 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var ReactIntl = __webpack_require__(191);
-	var FormattedDate = ReactIntl.FormattedDate;
-	var ListItem = __webpack_require__(359);
-	var SpinningIcon = __webpack_require__(360);
-	var InfiniteScroll = __webpack_require__(361);
+	var FormattedTime = ReactIntl.FormattedTime;
+	var ListItem = __webpack_require__(367);
+	var SpinningIcon = __webpack_require__(351);
+	var InfiniteScroll = __webpack_require__(352);
 
 	var CLASS_ROOT = "list";
 
@@ -44225,7 +45303,7 @@ var Grommet =
 	  },
 
 	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (this.props.onMore) {
+	    if (this._scroll) {
 	      InfiniteScroll.stopListeningForScroll(this._scroll);
 	      this._scroll = null;
 	    }
@@ -44233,13 +45311,13 @@ var Grommet =
 	  },
 
 	  componentDidUpdate: function componentDidUpdate() {
-	    if (this.props.onMore) {
+	    if (this.props.onMore && !this._scroll) {
 	      this._scroll = InfiniteScroll.startListeningForScroll(this.refs.more, this.props.onMore);
 	    }
 	  },
 
 	  componentWillUnmount: function componentWillUnmount() {
-	    if (this._onScroll) {
+	    if (this._scroll) {
 	      InfiniteScroll.stopListeningForScroll(this._scroll);
 	    }
 	  },
@@ -44264,14 +45342,12 @@ var Grommet =
 	        result = value;
 	      }
 	    } else if (scheme.timestamp) {
-	      result = React.createElement(FormattedDate, { value: new Date(date),
-	        weekday: 'long',
+	      result = React.createElement(FormattedTime, { value: value,
 	        day: 'numeric',
-	        month: 'long',
-	        year: 'numeric',
-	        hour: 'numeric',
-	        minute: 'numeric',
-	        second: 'numeric' });
+	        month: 'narrow',
+	        hour: '2-digit',
+	        minute: '2-digit',
+	        second: '2-digit' });
 	    } else {
 	      result = value;
 	    }
@@ -44359,7 +45435,7 @@ var Grommet =
 	module.exports = List;
 
 /***/ },
-/* 359 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44432,97 +45508,7 @@ var Grommet =
 	    {*/
 
 /***/ },
-/* 360 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	"use strict";
-
-	var React = __webpack_require__(2);
-
-	var CLASS_ROOT = "icon-spinning";
-
-	var Spinning = React.createClass({
-	  displayName: "Spinning",
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT];
-	    if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-	    return React.createElement(
-	      "svg",
-	      { className: classes.join(' '), viewBox: "0 0 48 48", version: "1.1" },
-	      React.createElement("circle", { stroke: "#ddd", strokeWidth: "4", strokeDasharray: "24px 8px", fill: "none", cx: "24", cy: "24", r: "20" }),
-	      React.createElement("circle", { stroke: "#333", strokeWidth: "4", strokeDasharray: "24px 104px", fill: "none", cx: "24", cy: "24", r: "20" })
-	    );
-	  }
-
-	});
-
-	module.exports = Spinning;
-
-/***/ },
-/* 361 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
-
-	"use strict";
-
-	var DOM = __webpack_require__(231);
-
-	var SCROLL_MORE_DELAY = 500; // when the user scrolls
-	var SCROLL_MORE_INITIAL_DELAY = 50; // when we start out at the bottom already
-
-	function _onScroll(scrollState) {
-	  // delay a bit to ride out quick users
-	  clearTimeout(scrollState.scrollTimer);
-	  scrollState.scrollTimer = setTimeout(function () {
-	    if (scrollState.scrollParent) {
-	      // are we at the bottom?
-	      var parentRect = scrollState.scrollParent.getBoundingClientRect();
-	      var indicatorRect = scrollState.indicatorElement.getBoundingClientRect();
-	      if (indicatorRect.bottom <= parentRect.bottom) {
-	        scrollState.onEnd();
-	      }
-	    }
-	  }, SCROLL_MORE_DELAY);
-	}
-
-	var InfiniteScroll = {
-
-	  startListeningForScroll: function startListeningForScroll(indicatorElement, onEnd) {
-	    var scrollState = {
-	      onEnd: onEnd,
-	      indicatorElement: indicatorElement,
-	      scrollParent: DOM.findScrollParents(indicatorElement)[0]
-	    };
-	    scrollState.scrollParent.addEventListener("scroll", _onScroll.bind(null, scrollState));
-	    // check in case we're already at the bottom
-	    if (scrollState.scrollParent === document) {
-	      scrollState.scrollTimer = setTimeout(onEnd, SCROLL_MORE_INITIAL_DELAY);
-	    }
-	    return scrollState;
-	  },
-
-	  stopListeningForScroll: function stopListeningForScroll(scrollState) {
-	    if (scrollState.scrollParent) {
-	      clearTimeout(scrollState.scrollTimer);
-	      scrollState.scrollParent.removeEventListener("scroll", _onScroll);
-	      scrollState.scrollParent = null;
-	    }
-	  }
-	};
-
-	module.exports = InfiniteScroll;
-
-/***/ },
-/* 362 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44597,7 +45583,7 @@ var Grommet =
 	module.exports = Login;
 
 /***/ },
-/* 363 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44607,9 +45593,9 @@ var Grommet =
 	var React = __webpack_require__(2);
 	var FormattedMessage = __webpack_require__(190);
 
-	var Form = __webpack_require__(353);
-	var FormField = __webpack_require__(354);
-	var CheckBox = __webpack_require__(350);
+	var Form = __webpack_require__(361);
+	var FormField = __webpack_require__(362);
+	var CheckBox = __webpack_require__(358);
 	var Button = __webpack_require__(232);
 	var CLASS_ROOT = "login-form";
 
@@ -44706,7 +45692,12 @@ var Grommet =
 	      );
 	    }
 
-	    var username = React.createElement(FormattedMessage, { id: 'Username', defaultMessage: 'Username' });
+	    var username;
+	    if (this.props.usernameType === 'email') {
+	      username = React.createElement(FormattedMessage, { id: 'Email', defaultMessage: 'Email' });
+	    } else {
+	      username = React.createElement(FormattedMessage, { id: 'Username', defaultMessage: 'Username' });
+	    }
 	    var password = React.createElement(FormattedMessage, { id: 'Password', defaultMessage: 'Password' });
 	    var login = React.createElement(FormattedMessage, { id: 'Log In', defaultMessage: 'Log In' });
 
@@ -44744,7 +45735,7 @@ var Grommet =
 	module.exports = LoginForm;
 
 /***/ },
-/* 364 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -44932,7 +45923,7 @@ var Grommet =
 	module.exports = ResourceMap;
 
 /***/ },
-/* 365 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -44941,9 +45932,9 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(44);
-	var FormattedMessage = __webpack_require__(190);
 
-	var Legend = __webpack_require__(349);
+	var Legend = __webpack_require__(357);
+	var Intl = __webpack_require__(239);
 
 	var CLASS_ROOT = "meter";
 
@@ -44997,6 +45988,11 @@ var Grommet =
 	  displayName: 'Meter',
 
 	  propTypes: {
+	    a11yRole: React.PropTypes.string,
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    a11yDescId: React.PropTypes.string,
+	    a11yDesc: React.PropTypes.string,
 	    important: React.PropTypes.number,
 	    large: React.PropTypes.bool, // DEPRECATED: remove in 0.5, use size
 	    legend: React.PropTypes.oneOfType([React.PropTypes.bool, React.PropTypes.shape({
@@ -45029,20 +46025,19 @@ var Grommet =
 	    type: React.PropTypes.oneOf(['bar', 'arc', 'circle', 'spiral']),
 	    units: React.PropTypes.string,
 	    value: React.PropTypes.number,
-	    vertical: React.PropTypes.bool,
-	    a11yRole: React.PropTypes.string,
-	    a11yTitle: React.PropTypes.string,
-	    a11yTitleId: React.PropTypes.string,
-	    a11yDescId: React.PropTypes.string,
-	    a11yDesc: React.PropTypes.string
+	    vertical: React.PropTypes.bool
+	  },
+
+	  contextTypes: {
+	    intl: React.PropTypes.object
 	  },
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      type: 'bar',
 	      a11yRole: 'img',
 	      a11yTitleId: 'meter-title',
-	      a11yDescId: 'meter-desc'
+	      a11yDescId: 'meter-desc',
+	      type: 'bar'
 	    };
 	  },
 
@@ -45082,6 +46077,9 @@ var Grommet =
 	  },
 
 	  _onActivate: function _onActivate(index) {
+	    if (index === null) {
+	      index = this.state.importantIndex;
+	    }
 	    this.setState({ initial: false, activeIndex: index });
 	  },
 
@@ -45166,7 +46164,7 @@ var Grommet =
 	      }
 	    } else if (props.threshold) {
 	      var remaining = max.value - props.threshold;
-	      thresholds = [{ value: props.threshold, colorIndex: 'unset' }, { value: remaining, colorIndex: 'error' }];
+	      thresholds = [{ value: props.threshold, colorIndex: 'unset' }, { value: remaining, colorIndex: 'critical' }];
 	    } else {
 	      thresholds = [{ value: max.value, colorIndex: 'unset' }];
 	    }
@@ -45503,15 +46501,17 @@ var Grommet =
 	      fields = { value: this.state.total, label: 'Total' };
 	    } else {
 	      var active = this.state.series[this.state.activeIndex];
-	      fields = { value: active.value, label: active.label };
+	      fields = { value: active.value, label: active.label, onClick: active.onClick };
 	    }
-
 	    return fields;
 	  },
 
 	  _renderActive: function _renderActive() {
-
 	    var fields = this._getActiveFields();
+	    var classes = [CLASS_ROOT + "__active"];
+	    if (fields.onClick) {
+	      classes.push(CLASS_ROOT + "__active--active");
+	    }
 	    var units;
 	    if (this.props.units) {
 	      units = React.createElement(
@@ -45520,9 +46520,11 @@ var Grommet =
 	        this.props.units
 	      );
 	    }
+
 	    return React.createElement(
 	      'div',
-	      { 'aria-hidden': 'true', role: 'presentation', className: CLASS_ROOT + "__active" },
+	      { 'aria-hidden': 'true', role: 'presentation',
+	        className: classes.join(' '), onClick: fields.onClick },
 	      React.createElement(
 	        'span',
 	        {
@@ -45572,11 +46574,13 @@ var Grommet =
 	  },
 
 	  _renderLegend: function _renderLegend() {
+	    var total = typeof this.props.legend === 'object' && this.props.legend.total;
 	    return React.createElement(Legend, { ref: 'legend', className: CLASS_ROOT + "__legend",
 	      series: this.state.series,
 	      units: this.props.units,
+	      total: total,
 	      activeIndex: this.state.activeIndex,
-	      onActive: this._onActive });
+	      onActive: this._onActivate });
 	  },
 
 	  render: function render() {
@@ -45684,16 +46688,16 @@ var Grommet =
 	    }
 
 	    var titleKey = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : defaultTitle;
-	    var a11yTitle = React.createElement(FormattedMessage, { id: titleKey, defaultMessage: titleKey });
+	    var a11yTitle = Intl.getMessage(this.context.intl, titleKey);
 
 	    var defaultA11YDesc;
-	    if (this.props.a11yTitle !== "undefined") {
+	    if (this.props.a11yDesc !== "undefined") {
 	      var fields = this._getActiveFields();
 	      defaultA11YDesc = [', Value: ', fields.value, this.props.units || '', fields.label, this.state.min.label ? ', Minimum: ' + this.state.min.label : '', this.state.max.label ? ', Maximum: ' + this.state.max.label : '', this.props.threshold ? ', Threshold: ' + this.props.threshold : '', this.props.thresholds ? getThresholdsString(this.props.thresholds) : ''].join(' ').trim();
 	    }
 
-	    var descKey = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : defaultA11YDesc;
-	    var a11yDesc = React.createElement(FormattedMessage, { id: descKey, defaultMessage: descKey });
+	    var descKey = typeof this.props.a11yDesc !== "undefined" ? this.props.a11yDesc : defaultA11YDesc;
+	    var a11yDesc = Intl.getMessage(this.context.intl, descKey);
 
 	    return React.createElement(
 	      'div',
@@ -45746,7 +46750,7 @@ var Grommet =
 	module.exports = Meter;
 
 /***/ },
-/* 366 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -45803,7 +46807,7 @@ var Grommet =
 	module.exports = RadioButton;
 
 /***/ },
-/* 367 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -45813,9 +46817,9 @@ var Grommet =
 	var React = __webpack_require__(2);
 	var PropTypes = React.PropTypes;
 	var KeyboardAccelerators = __webpack_require__(230);
-	var Drop = __webpack_require__(239);
-	var Responsive = __webpack_require__(240);
-	var SearchIcon = __webpack_require__(368);
+	var Drop = __webpack_require__(240);
+	var Responsive = __webpack_require__(241);
+	var SearchIcon = __webpack_require__(374);
 
 	var CLASS_ROOT = "search";
 
@@ -45826,6 +46830,7 @@ var Grommet =
 	    defaultValue: PropTypes.string,
 	    dropAlign: Drop.alignPropType,
 	    dropColorIndex: PropTypes.string,
+	    id: React.PropTypes.string,
 	    inline: PropTypes.bool,
 	    large: PropTypes.bool,
 	    onChange: PropTypes.func,
@@ -45864,7 +46869,7 @@ var Grommet =
 	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
 	    if (nextProps.suggestions && nextProps.suggestions.length > 0 && !this.state.dropActive && this.refs.input === document.activeElement) {
 	      this.setState({ dropActive: true });
-	    } else if (!nextProps.suggestions || nextProps.suggestions.length === 0) {
+	    } else if ((!nextProps.suggestions || nextProps.suggestions.length === 0) && this.state.inline) {
 	      this.setState({ dropActive: false });
 	    }
 	  },
@@ -45991,20 +46996,20 @@ var Grommet =
 	  },
 
 	  _onEnter: function _onEnter() {
+	    this._onRemoveDrop();
 	    if (this.state.activeSuggestionIndex >= 0) {
 	      var suggestion = this.props.suggestions[this.state.activeSuggestionIndex];
 	      if (this.props.onChange) {
 	        this.props.onChange(suggestion);
 	      }
 	    }
-	    this._onRemoveDrop();
 	  },
 
 	  _onClickSuggestion: function _onClickSuggestion(item) {
+	    this._onRemoveDrop();
 	    if (this.props.onChange) {
 	      this.props.onChange(item);
 	    }
-	    this._onRemoveDrop();
 	  },
 
 	  _onSink: function _onSink(event) {
@@ -46141,13 +47146,15 @@ var Grommet =
 	        'div',
 	        { className: classes.join(' ') },
 	        React.createElement('input', { ref: 'input', type: 'search',
+	          id: this.props.id,
 	          placeholder: this.props.placeHolder,
 	          defaultValue: this.props.defaultValue,
 	          value: this.props.value,
 	          className: CLASS_ROOT + "__input",
 	          onFocus: this._onFocusInput,
 	          onBlur: this._onBlurInput,
-	          onChange: this._onChangeInput })
+	          onChange: this._onChangeInput }),
+	        React.createElement(SearchIcon, null)
 	      );
 	    } else {
 
@@ -46155,7 +47162,8 @@ var Grommet =
 
 	      return React.createElement(
 	        'div',
-	        { ref: 'control', className: classes.join(' '),
+	        { ref: 'control', id: this.props.id,
+	          className: classes.join(' '),
 	          tabIndex: '0',
 	          onClick: this._onAddDrop,
 	          onFocus: this._onFocusControl,
@@ -46170,7 +47178,7 @@ var Grommet =
 	module.exports = Search;
 
 /***/ },
-/* 368 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -46204,7 +47212,7 @@ var Grommet =
 	module.exports = Search;
 
 /***/ },
-/* 369 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -46214,8 +47222,8 @@ var Grommet =
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(44);
 	var KeyboardAccelerators = __webpack_require__(230);
-	var Drop = __webpack_require__(239);
-	var SearchIcon = __webpack_require__(368);
+	var Drop = __webpack_require__(240);
+	var SearchIcon = __webpack_require__(374);
 
 	var CLASS_ROOT = "search-input";
 
@@ -46415,7 +47423,7 @@ var Grommet =
 	module.exports = SearchInput;
 
 /***/ },
-/* 370 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -46425,8 +47433,8 @@ var Grommet =
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(2);
-	var Box = __webpack_require__(241);
-	var SkipLinkAnchor = __webpack_require__(253);
+	var Box = __webpack_require__(242);
+	var SkipLinkAnchor = __webpack_require__(254);
 	var merge = __webpack_require__(6);
 
 	var CLASS_ROOT = "section";
@@ -46466,7 +47474,7 @@ var Grommet =
 	module.exports = Section;
 
 /***/ },
-/* 371 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -46479,7 +47487,7 @@ var Grommet =
 	var merge = __webpack_require__(6);
 	var pick = __webpack_require__(234);
 	var keys = __webpack_require__(32);
-	var Box = __webpack_require__(241);
+	var Box = __webpack_require__(242);
 
 	var CLASS_ROOT = "sidebar";
 
@@ -46540,7 +47548,7 @@ var Grommet =
 	module.exports = Sidebar;
 
 /***/ },
-/* 372 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -46557,13 +47565,15 @@ var Grommet =
 	  propTypes: {
 	    fixed: React.PropTypes.bool,
 	    flex: React.PropTypes.oneOf(['left', 'right', 'both']),
+	    priority: React.PropTypes.oneOf(['left', 'right']),
 	    separator: React.PropTypes.bool
 	  },
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
 	      fixed: true,
-	      flex: 'both'
+	      flex: 'both',
+	      priority: 'right'
 	    };
 	  },
 
@@ -46585,8 +47595,34 @@ var Grommet =
 	    this._layout();
 	  },
 
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    // If we change the number of visible children, trigger a resize event
+	    // so things like Table header can adjust. This will go away once
+	    // CSS supports per element media queries.
+	    // The 500ms delay is loosely tied to the CSS animation duration.
+	    // We want any animations to finish before triggering the resize.
+	    // TODO: consider using an animation end event instead of a timer.
+	    if (this._nonNullChildCount(nextProps) !== this._nonNullChildCount(this.props)) {
+	      clearTimeout(this._resizeTimer);
+	      this._resizeTimer = setTimeout(function () {
+	        var event = document.createEvent('HTMLEvents');
+	        event.initEvent('resize', true, false);
+	        window.dispatchEvent(event);
+	      }, 500);
+	    }
+	  },
+
 	  componentWillUnmount: function componentWillUnmount() {
 	    window.removeEventListener('resize', this._onResize);
+	  },
+
+	  // Support function for componentWillReceiveProps()
+	  _nonNullChildCount: function _nonNullChildCount(props) {
+	    var result = 0;
+	    React.Children.forEach(props.children, function (child) {
+	      if (child !== null) result += 1;
+	    });
+	    return result;
 	  },
 
 	  _onResize: function _onResize() {
@@ -46606,10 +47642,12 @@ var Grommet =
 
 	  _layout: function _layout() {
 	    var splitElement = this.refs.split;
-	    if (splitElement.offsetWidth < this._breakWidth) {
-	      this._setResponsive('single');
-	    } else {
-	      this._setResponsive('multiple');
+	    if (splitElement) {
+	      if (splitElement.offsetWidth < this._breakWidth) {
+	        this._setResponsive('single');
+	      } else {
+	        this._setResponsive('multiple');
+	      }
 	    }
 	  },
 
@@ -46628,10 +47666,21 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
+	    var children;
+	    if ('single' === this.state.responsive) {
+	      if ('left' === this.props.priority) {
+	        children = React.Children.toArray(this.props.children)[0];
+	      } else {
+	        children = React.Children.toArray(this.props.children).pop();
+	      }
+	    } else {
+	      children = this.props.children;
+	    }
+
 	    return React.createElement(
 	      'div',
 	      { ref: 'split', className: classes.join(' ') },
-	      this.props.children
+	      children
 	    );
 	  }
 	});
@@ -46639,7 +47688,7 @@ var Grommet =
 	module.exports = Split;
 
 /***/ },
-/* 373 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -46647,9 +47696,9 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var isEqual = __webpack_require__(374);
-	var SpinningIcon = __webpack_require__(360);
-	var InfiniteScroll = __webpack_require__(361);
+	var isEqual = __webpack_require__(380);
+	var SpinningIcon = __webpack_require__(351);
+	var InfiniteScroll = __webpack_require__(352);
 
 	var CLASS_ROOT = "table";
 	var SELECTED_CLASS = CLASS_ROOT + "__row--selected";
@@ -46673,7 +47722,10 @@ var Grommet =
 	  },
 
 	  getInitialState: function getInitialState() {
-	    return { selection: this._normalizeSelection(this.props.selection) };
+	    return {
+	      selection: this._normalizeSelection(this.props.selection),
+	      rebuildMirror: this.props.scrollable
+	    };
 	  },
 
 	  componentDidMount: function componentDidMount() {
@@ -46696,22 +47748,27 @@ var Grommet =
 	    if (newProps.hasOwnProperty('selection')) {
 	      this.setState({ selection: this._normalizeSelection(newProps.selection) });
 	    }
+	    this.setState({ rebuildMirror: newProps.scrollable });
 	  },
 
 	  componentDidUpdate: function componentDidUpdate(prevProps, prevState) {
 	    if (!isEqual(this.state.selection, prevState.selection)) {
 	      this._alignSelection();
 	    }
+	    if (this.state.rebuildMirror) {
+	      this._buildMirror();
+	      this.setState({ rebuildMirror: false });
+	    }
 	    if (this.props.scrollable) {
 	      this._alignMirror();
 	    }
-	    if (this.props.onMore) {
+	    if (this.props.onMore && !this._scroll) {
 	      this._scroll = InfiniteScroll.startListeningForScroll(this.refs.more, this.props.onMore);
 	    }
 	  },
 
 	  componentWillUnmount: function componentWillUnmount() {
-	    if (this._onScroll) {
+	    if (this._scroll) {
 	      InfiniteScroll.stopListeningForScroll(this._scroll);
 	    }
 	    window.removeEventListener('resize', this._onResize);
@@ -46828,6 +47885,9 @@ var Grommet =
 	    var cells = tableElement.querySelectorAll('thead tr th');
 	    var mirrorElement = this.refs.mirror;
 	    var mirrorRow = mirrorElement.querySelectorAll('thead tr')[0];
+	    while (mirrorRow.hasChildNodes()) {
+	      mirrorRow.removeChild(mirrorRow.lastChild);
+	    }
 	    for (var i = 0; i < cells.length; i++) {
 	      mirrorRow.appendChild(cells[i].cloneNode(true));
 	    }
@@ -46906,10 +47966,10 @@ var Grommet =
 	module.exports = Table;
 
 /***/ },
-/* 374 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqual = __webpack_require__(375),
+	var baseIsEqual = __webpack_require__(381),
 	    bindCallback = __webpack_require__(35);
 
 	/**
@@ -46966,10 +48026,10 @@ var Grommet =
 
 
 /***/ },
-/* 375 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqualDeep = __webpack_require__(376),
+	var baseIsEqualDeep = __webpack_require__(382),
 	    isObject = __webpack_require__(21),
 	    isObjectLike = __webpack_require__(16);
 
@@ -47000,12 +48060,12 @@ var Grommet =
 
 
 /***/ },
-/* 376 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var equalArrays = __webpack_require__(377),
-	    equalByTag = __webpack_require__(379),
-	    equalObjects = __webpack_require__(380),
+	var equalArrays = __webpack_require__(383),
+	    equalByTag = __webpack_require__(385),
+	    equalObjects = __webpack_require__(386),
 	    isArray = __webpack_require__(17),
 	    isTypedArray = __webpack_require__(29);
 
@@ -47108,10 +48168,10 @@ var Grommet =
 
 
 /***/ },
-/* 377 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arraySome = __webpack_require__(378);
+	var arraySome = __webpack_require__(384);
 
 	/**
 	 * A specialized version of `baseIsEqualDeep` for arrays with support for
@@ -47165,7 +48225,7 @@ var Grommet =
 
 
 /***/ },
-/* 378 */
+/* 384 */
 /***/ function(module, exports) {
 
 	/**
@@ -47194,7 +48254,7 @@ var Grommet =
 
 
 /***/ },
-/* 379 */
+/* 385 */
 /***/ function(module, exports) {
 
 	/** `Object#toString` result references. */
@@ -47248,7 +48308,7 @@ var Grommet =
 
 
 /***/ },
-/* 380 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var keys = __webpack_require__(32);
@@ -47321,293 +48381,7 @@ var Grommet =
 
 
 /***/ },
-/* 381 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var SpinningIcon = __webpack_require__(360);
-	var LeftIcon = __webpack_require__(344);
-	var RightIcon = __webpack_require__(3);
-	var Scroll = __webpack_require__(252);
-	var InfiniteScroll = __webpack_require__(361);
-
-	var CLASS_ROOT = "tiles";
-
-	var Tiles = React.createClass({
-	  displayName: 'Tiles',
-
-	  propTypes: {
-	    direction: React.PropTypes.oneOf(['row', 'column']),
-	    fill: React.PropTypes.bool,
-	    flush: React.PropTypes.bool,
-	    onMore: React.PropTypes.func,
-	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
-	    small: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      flush: true,
-	      fill: false,
-	      small: false
-	    };
-	  },
-
-	  getInitialState: function getInitialState() {
-	    return { overflow: false };
-	  },
-
-	  componentDidMount: function componentDidMount() {
-	    if (this.props.onMore) {
-	      this._scroll = InfiniteScroll.startListeningForScroll(this.refs.more, this.props.onMore);
-	    }
-	    if ('row' === this.props.direction) {
-	      window.addEventListener('resize', this._onResize);
-	      document.addEventListener('wheel', this._onWheel);
-	      this._trackHorizontalScroll();
-	      this._layout();
-	    }
-	  },
-
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (this.props.onMore) {
-	      InfiniteScroll.stopListeningForScroll(this._scroll);
-	      this._scroll = null;
-	    }
-	  },
-
-	  componentDidUpdate: function componentDidUpdate() {
-	    if (this.props.onMore) {
-	      this._scroll = InfiniteScroll.startListeningForScroll(this.refs.more, this.props.onMore);
-	    }
-	    if ('row' === this.props.direction) {
-	      this._trackHorizontalScroll();
-	    }
-	  },
-
-	  componentWillUnmount: function componentWillUnmount() {
-	    if (this._scroll) {
-	      InfiniteScroll.stopListeningForScroll(this._scroll);
-	    }
-	    if ('row' === this.props.direction) {
-	      window.removeEventListener('resize', this._onResize);
-	      document.removeEventListener('wheel', this._onWheel);
-	      if (this._tracking) {
-	        var tiles = this.refs.tiles;
-	        tiles.removeEventListener('scroll', this._onScrollHorizontal);
-	      }
-	    }
-	  },
-
-	  _onLeft: function _onLeft() {
-	    var tiles = this.refs.tiles;
-	    Scroll.scrollBy(tiles, 'scrollLeft', -tiles.offsetWidth);
-	  },
-
-	  _onRight: function _onRight() {
-	    var tiles = this.refs.tiles;
-	    Scroll.scrollBy(tiles, 'scrollLeft', tiles.offsetWidth);
-	  },
-
-	  _onScrollHorizontal: function _onScrollHorizontal() {
-	    // debounce
-	    clearTimeout(this._scrollTimer);
-	    this._scrollTimer = setTimeout(this._layout, 50);
-	  },
-
-	  _onWheel: function _onWheel(event) {
-	    if (Math.abs(event.deltaX) > 100) {
-	      clearInterval(this._scrollTimer);
-	    } else if (event.deltaX > 5) {
-	      this._onRight();
-	    } else if (event.deltaX < -5) {
-	      this._onLeft();
-	    }
-	  },
-
-	  _layout: function _layout() {
-	    if ('row' === this.props.direction) {
-	      // determine if we have more tiles than room to fit
-	      var tiles = this.refs.tiles;
-	      // 20 is to allow some fuzziness as scrollbars come and go
-	      this.setState({
-	        overflow: tiles.scrollWidth > tiles.offsetWidth + 20,
-	        overflowStart: tiles.scrollLeft <= 20,
-	        overflowEnd: tiles.scrollLeft >= tiles.scrollWidth - tiles.offsetWidth
-	      });
-
-	      // mark any tiles that might be clipped
-	      var rect = tiles.getBoundingClientRect();
-	      var children = tiles.querySelectorAll('.tile');
-	      for (var i = 0; i < children.length; i += 1) {
-	        var child = children[i];
-	        var childRect = child.getBoundingClientRect();
-	        // 12 accounts for padding
-	        if (childRect.left + 12 < rect.left || childRect.right - 12 > rect.right) {
-	          child.classList.add('tile--eclipsed');
-	        } else {
-	          child.classList.remove('tile--eclipsed');
-	        }
-	      }
-	    }
-	  },
-
-	  _onResize: function _onResize() {
-	    // debounce
-	    clearTimeout(this._resizeTimer);
-	    this._resizeTimer = setTimeout(this._layout, 50);
-	  },
-
-	  _trackHorizontalScroll: function _trackHorizontalScroll() {
-	    if (this.state.overflow && !this._tracking) {
-	      var tiles = this.refs.tiles;
-	      tiles.addEventListener('scroll', this._onScrollHorizontal);
-	      this._tracking = true;
-	    }
-	  },
-
-	  // children should be an array of Tile
-	  render: function render() {
-	    var classes = [CLASS_ROOT];
-	    if (this.props.fill) {
-	      classes.push(CLASS_ROOT + "--fill");
-	    }
-	    if (this.props.flush) {
-	      classes.push(CLASS_ROOT + "--flush");
-	    }
-	    if (this.props.size) {
-	      classes.push(CLASS_ROOT + "--" + this.props.size);
-	    } else if (this.props.small) {
-	      classes.push(CLASS_ROOT + "--small");
-	    }
-	    if (this.props.direction) {
-	      classes.push(CLASS_ROOT + "--direction-" + this.props.direction);
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    var more = null;
-	    if (this.props.onMore) {
-	      classes.push(CLASS_ROOT + "--moreable");
-	      more = React.createElement(
-	        'div',
-	        { ref: 'more', className: CLASS_ROOT + "__more" },
-	        React.createElement(SpinningIcon, null)
-	      );
-	    }
-
-	    var contents = React.createElement(
-	      'div',
-	      { ref: 'tiles', className: classes.join(' ') },
-	      this.props.children,
-	      more
-	    );
-
-	    if (this.state.overflow) {
-	      classes.push(CLASS_ROOT + "--overflowed");
-	      if (!this.state.overflowStart) {
-	        var left = React.createElement(
-	          'div',
-	          { className: CLASS_ROOT + "__left", onClick: this._onLeft },
-	          React.createElement(LeftIcon, null)
-	        );
-	      }
-	      if (!this.state.overflowEnd) {
-	        var right = React.createElement(
-	          'div',
-	          { className: CLASS_ROOT + "__right", onClick: this._onRight },
-	          React.createElement(RightIcon, null)
-	        );
-	      }
-
-	      contents = React.createElement(
-	        'div',
-	        { className: CLASS_ROOT + "__container" },
-	        left,
-	        contents,
-	        right
-	      );
-	    }
-
-	    return contents;
-	  }
-
-	});
-
-	module.exports = Tiles;
-
-/***/ },
-/* 382 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var React = __webpack_require__(2);
-	var merge = __webpack_require__(6);
-	var pick = __webpack_require__(234);
-	var keys = __webpack_require__(32);
-	var Box = __webpack_require__(241);
-
-	var CLASS_ROOT = "tile";
-
-	var Tile = React.createClass({
-	  displayName: 'Tile',
-
-	  propTypes: merge({
-	    selected: React.PropTypes.bool,
-	    status: React.PropTypes.string,
-	    wide: React.PropTypes.bool
-	  }, Box.propTypes),
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      pad: 'none',
-	      direction: 'column',
-	      align: 'center'
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT];
-	    var other = pick(this.props, keys(Box.propTypes));
-	    if (this.props.status) {
-	      classes.push(CLASS_ROOT + "--status-" + this.props.status.toLowerCase());
-	    }
-	    if (this.props.wide) {
-	      classes.push(CLASS_ROOT + "--wide");
-	    }
-	    if (this.props.onClick) {
-	      classes.push(CLASS_ROOT + "--selectable");
-	    }
-	    if (this.props.selected) {
-	      classes.push(CLASS_ROOT + "--selected");
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    return React.createElement(
-	      Box,
-	      _extends({ className: classes.join(' ') }, other, { onClick: this.props.onClick }),
-	      this.props.children
-	    );
-	  }
-
-	});
-
-	module.exports = Tile;
-
-/***/ },
-/* 383 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -47616,7 +48390,7 @@ var Grommet =
 
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(44);
-	var Status = __webpack_require__(384);
+	var Status = __webpack_require__(388);
 
 	var CLASS_ROOT = "topology";
 
@@ -47804,7 +48578,7 @@ var Grommet =
 	  },
 
 	  componentDidMount: function componentDidMount() {
-	    var topology = React.findDOMNode(this.refs.topology);
+	    var topology = ReactDOM.findDOMNode(this.refs.topology);
 	    topology.addEventListener('mousemove', this._onMouseMove);
 	    topology.addEventListener('mouseleave', this._onMouseLeave);
 	    window.addEventListener('resize', this._onResize);
@@ -47822,7 +48596,7 @@ var Grommet =
 	  },
 
 	  componentWillUnmount: function componentWillUnmount() {
-	    var topology = React.findDOMNode(this.refs.topology);
+	    var topology = ReactDOM.findDOMNode(this.refs.topology);
 	    topology.removeEventListener('mousemove', this._onMouseMove);
 	    topology.removeEventListener('mouseleave', this._onMouseLeave);
 	    clearTimeout(this._resizeTimer);
@@ -47859,7 +48633,7 @@ var Grommet =
 	      this.props.links.forEach(function (link, linkIndex) {
 
 	        var key = this.refs[link.colorIndex];
-	        var style = window.getComputedStyle(React.findDOMNode(key));
+	        var style = window.getComputedStyle(ReactDOM.findDOMNode(key));
 	        var color = style.getPropertyValue('background-color');
 	        context.strokeStyle = color;
 	        context.lineWidth = 2;
@@ -47925,7 +48699,7 @@ var Grommet =
 	  },
 
 	  _highlight: function _highlight(element) {
-	    var topology = React.findDOMNode(this.refs.topology);
+	    var topology = ReactDOM.findDOMNode(this.refs.topology);
 	    var highlighting = false;
 	    var highlights = {};
 	    while (element && element !== topology) {
@@ -48000,7 +48774,7 @@ var Grommet =
 	module.exports = Topology;
 
 /***/ },
-/* 384 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48008,12 +48782,13 @@ var Grommet =
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var OK = __webpack_require__(385);
-	var ErrorStatus = __webpack_require__(386);
-	var Warning = __webpack_require__(387);
-	var Disabled = __webpack_require__(388);
-	var Unknown = __webpack_require__(389);
-	var Label = __webpack_require__(390);
+	var OK = __webpack_require__(389);
+	var CriticalStatus = __webpack_require__(390);
+	var ErrorStatus = __webpack_require__(391);
+	var Warning = __webpack_require__(392);
+	var Disabled = __webpack_require__(393);
+	var Unknown = __webpack_require__(394);
+	var Label = __webpack_require__(395);
 
 	var CLASS_ROOT = "status-icon";
 
@@ -48037,7 +48812,7 @@ var Grommet =
 	    large: React.PropTypes.bool,
 	    small: React.PropTypes.bool,
 	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
-	    value: React.PropTypes.oneOf(['error', 'warning', 'ok', 'unknown', 'disabled'])
+	    value: React.PropTypes.oneOf(['critical', 'warning', 'ok', 'unknown', 'disabled'])
 	  },
 
 	  _stateFromProps: function _stateFromProps(props) {
@@ -48066,9 +48841,12 @@ var Grommet =
 	      case 'warning':
 	        icon = React.createElement(Warning, { className: className, a11yTitle: this.props.a11yTitle });
 	        break;
+	      // 'error' is deprecated, use 'critical'
 	      case 'error':
-	      case 'critical':
 	        icon = React.createElement(ErrorStatus, { className: className, a11yTitle: this.props.a11yTitle });
+	        break;
+	      case 'critical':
+	        icon = React.createElement(CriticalStatus, { className: className, a11yTitle: this.props.a11yTitle });
 	        break;
 	      case 'disabled':
 	        icon = React.createElement(Disabled, { className: className, a11yTitle: this.props.a11yTitle });
@@ -48088,7 +48866,7 @@ var Grommet =
 	module.exports = Status;
 
 /***/ },
-/* 385 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48143,7 +48921,63 @@ var Grommet =
 	module.exports = OK;
 
 /***/ },
-/* 386 */
+/* 390 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var FormattedMessage = __webpack_require__(190);
+
+	var CriticalStatus = React.createClass({
+	  displayName: 'CriticalStatus',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string
+	  },
+
+	  render: function render() {
+	    var className = 'status-icon status-icon-critical';
+	    var a11yTitle = this.props.a11yTitle;
+	    if (this.props.className) {
+	      className += ' ' + this.props.className;
+	    }
+	    if (typeof a11yTitle === "undefined") {
+	      // this.props.a11yTitle emplty string is an acceptable value. Only if undefined
+	      // should use the default title value.
+	      a11yTitle = 'Critical';
+	    }
+	    var criticalTitleId = 'critical-title';
+	    return React.createElement(
+	      'svg',
+	      { className: className, viewBox: '0 0 24 24', 'aria-labelledby': criticalTitleId, role: 'img', version: '1.1' },
+	      React.createElement(
+	        'title',
+	        { id: criticalTitleId },
+	        React.createElement(FormattedMessage, { id: a11yTitle, defaultMessage: a11yTitle })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: "status-icon__base", stroke: 'none' },
+	        React.createElement('path', { role: 'presentation', d: 'M12,0 L24,12 L12,24 L0,12 Z' })
+	      ),
+	      React.createElement(
+	        'g',
+	        { className: "status-icon__detail", fill: 'none' },
+	        React.createElement('path', { role: 'presentation', d: 'M8,8 L16,16', strokeWidth: '2' }),
+	        React.createElement('path', { role: 'presentation', d: 'M8,16 L16,8', strokeWidth: '2' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = CriticalStatus;
+
+/***/ },
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48199,7 +49033,7 @@ var Grommet =
 	module.exports = ErrorStatus;
 
 /***/ },
-/* 387 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48230,7 +49064,7 @@ var Grommet =
 	    var warningTitleId = 'warning-title';
 	    return React.createElement(
 	      'svg',
-	      { className: className, viewBox: '0 0 27 24', role: 'img', 'aria-labelledby': warningTitleId, version: '1.1' },
+	      { className: className, viewBox: '0 0 24 24', role: 'img', 'aria-labelledby': warningTitleId, version: '1.1' },
 	      React.createElement(
 	        'title',
 	        { id: warningTitleId },
@@ -48255,7 +49089,7 @@ var Grommet =
 	module.exports = Warning;
 
 /***/ },
-/* 388 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48310,7 +49144,7 @@ var Grommet =
 	module.exports = Disabled;
 
 /***/ },
-/* 389 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48362,7 +49196,7 @@ var Grommet =
 	module.exports = Unknown;
 
 /***/ },
-/* 390 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48395,7 +49229,396 @@ var Grommet =
 	module.exports = Label;
 
 /***/ },
-/* 391 */
+/* 396 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var PropTypes = React.PropTypes;
+	var PlayIcon = __webpack_require__(397);
+	var PauseIcon = __webpack_require__(398);
+	var RefreshIcon = __webpack_require__(399);
+
+	var CLASS_ROOT = "video";
+
+	var Video = React.createClass({
+	  displayName: 'Video',
+
+	  propTypes: {
+	    colorIndex: PropTypes.string,
+	    duration: PropTypes.number,
+	    full: PropTypes.oneOf([true, 'horizontal', 'vertical', false]),
+	    poster: PropTypes.string,
+	    size: React.PropTypes.oneOf(['small', 'medium', 'large']),
+	    timeline: PropTypes.arrayOf(PropTypes.shape({
+	      label: PropTypes.string,
+	      time: PropTypes.number
+	    })),
+	    title: PropTypes.node
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return { playing: false, progress: 0 };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    var video = this.refs.video;
+	    video.addEventListener('playing', this._onPlaying);
+	    video.addEventListener('pause', this._onPause);
+	    video.addEventListener('ended', this._onEnded);
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    var video = this.refs.video;
+	    video.removeEventListener('playing', this._onPlaying);
+	    video.removeEventListener('pause', this._onPause);
+	    video.removeEventListener('ended', this._onEnded);
+	  },
+
+	  _onPlaying: function _onPlaying() {
+	    var video = this.refs.video;
+	    this._progressTimer = setInterval((function () {
+	      this.setState({ progress: this.state.progress + 0.5 });
+	    }).bind(this), 500);
+	    this.setState({ playing: true, progress: video.currentTime, ended: null });
+	  },
+
+	  _onPause: function _onPause() {
+	    clearInterval(this._progressTimer);
+	    this._progressTimer = null;
+	    this.setState({ playing: false });
+	  },
+
+	  _onEnded: function _onEnded() {
+	    clearInterval(this._progressTimer);
+	    this._progressTimer = null;
+	    this.setState({ playing: false, ended: true });
+	  },
+
+	  _onClickControl: function _onClickControl() {
+	    var video = this.refs.video;
+	    if (this.state.playing) {
+	      video.pause();
+	    } else {
+	      video.play();
+	    }
+	  },
+
+	  _onMouseMove: function _onMouseMove() {
+	    this.setState({ interacting: true });
+	    clearTimeout(this._moveTimer);
+	    this._moveTimer = setTimeout((function () {
+	      this.setState({ interacting: false });
+	    }).bind(this), 1000);
+	  },
+
+	  _onClickChapter: function _onClickChapter(time) {
+	    this.refs.video.currentTime = time;
+	    this.setState({ progress: time });
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT];
+	    if (this.props.size) {
+	      classes.push(CLASS_ROOT + "--" + this.props.size);
+	    }
+	    if (this.props.full) {
+	      classes.push(CLASS_ROOT + '--full');
+	    }
+	    if (this.state.playing) {
+	      classes.push(CLASS_ROOT + '--playing');
+	    }
+	    if (this.state.interacting) {
+	      classes.push(CLASS_ROOT + '--interacting');
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("background-color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var controlIcon = this.state.playing ? React.createElement(PauseIcon, { size: 'large' }) : this.state.ended ? React.createElement(RefreshIcon, { size: 'large' }) : React.createElement(PlayIcon, { size: 'large' });
+
+	    var title;
+	    if (this.props.title) {
+	      title = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__title' },
+	        this.props.title
+	      );
+	    }
+
+	    var timeline;
+	    if (this.props.timeline && this.props.duration) {
+
+	      var chapters = this.props.timeline.map(function (chapter) {
+	        var percent = Math.round(chapter.time / this.props.duration * 100);
+	        var seconds = chapter.time % 60;
+	        var time = Math.floor(chapter.time / 60) + ':' + (seconds < 10 ? '0' + seconds : seconds);
+	        return React.createElement(
+	          'div',
+	          { key: chapter.time, className: CLASS_ROOT + '__timeline-chapter',
+	            style: { left: percent.toString() + '%' },
+	            onClick: this._onClickChapter.bind(this, chapter.time) },
+	          React.createElement(
+	            'label',
+	            null,
+	            chapter.label
+	          ),
+	          React.createElement(
+	            'time',
+	            null,
+	            time
+	          )
+	        );
+	      }, this);
+
+	      timeline = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__timeline' },
+	        chapters
+	      );
+	    }
+
+	    var progress;
+	    if (this.props.duration) {
+	      var percent = Math.round(this.state.progress / this.props.duration * 100);
+	      progress = React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__progress' },
+	        React.createElement('div', { className: CLASS_ROOT + '__progress-meter',
+	          style: { width: percent.toString() + '%' } })
+	      );
+	    }
+
+	    return React.createElement(
+	      'div',
+	      { className: classes.join(' '), onMouseMove: this._onMouseMove },
+	      React.createElement(
+	        'video',
+	        { ref: 'video', poster: this.props.poster },
+	        this.props.children
+	      ),
+	      React.createElement(
+	        'div',
+	        { className: CLASS_ROOT + '__summary' },
+	        React.createElement(
+	          'div',
+	          { className: CLASS_ROOT + '__control', onClick: this._onClickControl },
+	          controlIcon
+	        ),
+	        title
+	      ),
+	      timeline,
+	      progress
+	    );
+	  }
+
+	});
+
+	module.exports = Video;
+
+/***/ },
+/* 397 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var FormattedMessage = __webpack_require__(190);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'play-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-play'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "play";
+	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'play' },
+	        React.createElement('rect', { id: '_x2E_svg_101_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '18,13.8 18,34.2 32,24 \t' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 398 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var FormattedMessage = __webpack_require__(190);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'pause-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-pause'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "pause";
+	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'pause' },
+	        React.createElement('rect', { id: '_x2E_svg_100_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,34V14h5v20H27z M21,34V14h-5v20H21z' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 399 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var FormattedMessage = __webpack_require__(190);
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = React.createClass({
+	  displayName: 'Icon',
+
+	  propTypes: {
+	    a11yTitle: React.PropTypes.string,
+	    a11yTitleId: React.PropTypes.string,
+	    colorIndex: React.PropTypes.string,
+	    large: React.PropTypes.bool
+	  },
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      a11yTitleId: 'refresh-title'
+	    };
+	  },
+
+	  render: function render() {
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-refresh'];
+	    if (this.props.large) {
+	      classes.push(CLASS_ROOT + "--large");
+	    }
+	    if (this.props.colorIndex) {
+	      classes.push("color-index-" + this.props.colorIndex);
+	    }
+	    if (this.props.className) {
+	      classes.push(this.props.className);
+	    }
+
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "refresh";
+	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
+
+	    return React.createElement(
+	      'svg',
+	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	      React.createElement(
+	        'title',
+	        { id: this.props.a11yTitleId },
+	        a11yTitle
+	      ),
+	      React.createElement(
+	        'g',
+	        { id: 'refresh' },
+	        React.createElement('rect', { id: '_x2E_svg_17_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
+	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,13v7h-7 M34.0006,19.4123 C32.2616,15.6278,28.4377,13,24,13c-6.0751,0-11,4.9249-11,11s4.9249,11,11,11s11-4.9249,11-11' })
+	      )
+	    );
+	  }
+
+	});
+
+	module.exports = Icon;
+
+/***/ },
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48491,7 +49714,7 @@ var Grommet =
 	module.exports = GrommetObject;
 
 /***/ },
-/* 392 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48516,7 +49739,7 @@ var Grommet =
 	module.exports = TBD;
 
 /***/ },
-/* 393 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48557,7 +49780,7 @@ var Grommet =
 	module.exports = Calendar;
 
 /***/ },
-/* 394 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48591,7 +49814,7 @@ var Grommet =
 	module.exports = Clear;
 
 /***/ },
-/* 395 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48631,7 +49854,7 @@ var Grommet =
 	module.exports = DragHandle;
 
 /***/ },
-/* 396 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48672,7 +49895,7 @@ var Grommet =
 	module.exports = Edit;
 
 /***/ },
-/* 397 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48705,7 +49928,7 @@ var Grommet =
 	module.exports = Facebook;
 
 /***/ },
-/* 398 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48775,7 +49998,7 @@ var Grommet =
 	module.exports = Filter;
 
 /***/ },
-/* 399 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48825,7 +50048,7 @@ var Grommet =
 	    }
 	    return React.createElement(
 	      'svg',
-	      { className: classes.join(' '), viewBox: '0 0 140 140',
+	      { className: classes.join(' '), viewBox: '0 0 140 140', width: '140', height: '140',
 	        version: '1.1', role: 'img', 'aria-labelledby': logoTitleId },
 	      title,
 	      React.createElement('path', { role: 'presentation', d: 'M119.49603,20.5014878 L100.989057,39.0094878 C105.89805,43.9184878 109.859044,49.7734878 111.669042,55.3734878 C122.692025,89.4684878 93.3250687,120.604488 59.5321185,112.820488 C44.9911399,109.470488 30.5211612,94.9984878 27.1751661,80.4564878 C20.432176,51.1514878 42.9571429,25.1854878 71.2931012,25.9974878 L93.3090687,3.98048778 C86.0960794,1.43348778 78.3420908,0.0304877767 70.2641027,0.000487776719 C32.014159,-0.141512223 0.549205302,30.7384878 0.00720609982,68.9844878 C-0.547793083,108.124488 31.0271604,140.024488 70.045103,139.999488 C108.802046,139.975488 140,108.756488 140,70.0004878 C140,50.6694878 132.164012,33.1694878 119.49603,20.5014878 L119.49603,20.5014878 Z', fill: '#8C50FF' }),
@@ -48838,7 +50061,7 @@ var Grommet =
 	module.exports = Grommet;
 
 /***/ },
-/* 400 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48872,7 +50095,7 @@ var Grommet =
 	module.exports = Help;
 
 /***/ },
-/* 401 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48905,7 +50128,7 @@ var Grommet =
 	module.exports = LinkedIn;
 
 /***/ },
-/* 402 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48941,7 +50164,7 @@ var Grommet =
 	module.exports = Mail;
 
 /***/ },
-/* 403 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -48982,7 +50205,7 @@ var Grommet =
 	module.exports = Person;
 
 /***/ },
-/* 404 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49018,7 +50241,7 @@ var Grommet =
 	module.exports = SearchPlus;
 
 /***/ },
-/* 405 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49051,7 +50274,7 @@ var Grommet =
 	module.exports = Twitter;
 
 /***/ },
-/* 406 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49087,15 +50310,15 @@ var Grommet =
 	module.exports = World;
 
 /***/ },
-/* 407 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	module.exports = { "Achievement": __webpack_require__(408), "Action": __webpack_require__(409), "Actions": __webpack_require__(410), "Add": __webpack_require__(411), "AdvancedSearch": __webpack_require__(412), "Aggregate": __webpack_require__(413), "Alarm": __webpack_require__(414), "Alert": __webpack_require__(415), "Analytics": __webpack_require__(416), "Announcement": __webpack_require__(417), "App": __webpack_require__(418), "Archive": __webpack_require__(419), "Article": __webpack_require__(420), "Ascend": __webpack_require__(421), "Assistant": __webpack_require__(422), "Attachment": __webpack_require__(423), "BarChart": __webpack_require__(424), "Blog": __webpack_require__(425), "Book": __webpack_require__(426), "Bookmark": __webpack_require__(427), "Bundle": __webpack_require__(428), "Calculator": __webpack_require__(429), "Calendar": __webpack_require__(343), "Camera": __webpack_require__(430), "Capacity": __webpack_require__(431), "CarrotDown": __webpack_require__(432), "CarrotNext": __webpack_require__(433), "CarrotPrevious": __webpack_require__(434), "CarrotUp": __webpack_require__(435), "Catalog": __webpack_require__(436), "ChapterAdd": __webpack_require__(437), "ChapterNext": __webpack_require__(438), "ChapterPrevious": __webpack_require__(439), "Chat": __webpack_require__(440), "CheckboxSelected": __webpack_require__(441), "Checkbox": __webpack_require__(442), "Checkmark": __webpack_require__(443), "CircularView": __webpack_require__(444), "Clipboard": __webpack_require__(445), "Clone": __webpack_require__(446), "Close": __webpack_require__(229), "CloudComputer": __webpack_require__(447), "CloudDownload": __webpack_require__(448), "CloudSoftware": __webpack_require__(449), "CloudUpload": __webpack_require__(450), "Cloud": __webpack_require__(451), "Cluster": __webpack_require__(452), "Code": __webpack_require__(453), "CommandLine": __webpack_require__(454), "Compare": __webpack_require__(455), "Compasss": __webpack_require__(456), "Compliance": __webpack_require__(457), "ComputerPersonal": __webpack_require__(458), "Configuration": __webpack_require__(459), "Connect": __webpack_require__(460), "ContactCard": __webpack_require__(461), "ContactUs": __webpack_require__(462), "Contract": __webpack_require__(463), "Copy": __webpack_require__(464), "Cube": __webpack_require__(465), "Cubes": __webpack_require__(466), "Cusror": __webpack_require__(467), "Cut": __webpack_require__(468), "Cycle": __webpack_require__(469), "Dashboard": __webpack_require__(470), "Database": __webpack_require__(471), "Defect": __webpack_require__(472), "Deliver": __webpack_require__(473), "Deployment": __webpack_require__(474), "Descend": __webpack_require__(475), "Desktop": __webpack_require__(476), "Detach": __webpack_require__(477), "Directions": __webpack_require__(478), "Dislike": __webpack_require__(479), "DivideFour": __webpack_require__(480), "DivideRight": __webpack_require__(481), "DivideThree": __webpack_require__(482), "Divide": __webpack_require__(483), "DocumentCloud": __webpack_require__(484), "DocumentCompress": __webpack_require__(485), "DocumentConig": __webpack_require__(486), "DocumentCsv": __webpack_require__(487), "DocumentData": __webpack_require__(488), "DocumentDownload": __webpack_require__(489), "DocumentExcel": __webpack_require__(490), "DocumentExecutable": __webpack_require__(491), "DocumentImage": __webpack_require__(492), "DocumentLocked": __webpack_require__(493), "DocumentMissing": __webpack_require__(494), "DocumentNotes": __webpack_require__(495), "DocumentOutlook": __webpack_require__(496), "DocumentPdf": __webpack_require__(497), "DocumentPerformance": __webpack_require__(498), "DocumentPowerpoint": __webpack_require__(499), "DocumentRtf": __webpack_require__(500), "DocumentSound": __webpack_require__(501), "DocumentTest": __webpack_require__(502), "DocumentText": __webpack_require__(503), "DocumentThreat": __webpack_require__(504), "DocumentTime": __webpack_require__(505), "DocumentTransfer": __webpack_require__(506), "DocumentTxt": __webpack_require__(507), "DocumentUpdate": __webpack_require__(508), "DocumentUpload": __webpack_require__(509), "DocumentUser": __webpack_require__(510), "DocumentVerified": __webpack_require__(511), "DocumentVideo": __webpack_require__(512), "DocumentWord": __webpack_require__(513), "Document": __webpack_require__(514), "Domain": __webpack_require__(515), "Down": __webpack_require__(516), "Download": __webpack_require__(517), "Drag": __webpack_require__(518), "DriveCage": __webpack_require__(519), "Duplicate": __webpack_require__(520), "Edit": __webpack_require__(521), "Eject": __webpack_require__(522), "Expand": __webpack_require__(523), "Fan": __webpack_require__(524), "FastForward": __webpack_require__(525), "Favorite": __webpack_require__(526), "Filter": __webpack_require__(527), "FirstAid": __webpack_require__(528), "Flag": __webpack_require__(529), "FolderCycle": __webpack_require__(530), "FolderOpen": __webpack_require__(531), "Folder": __webpack_require__(532), "Gallery": __webpack_require__(533), "Globe": __webpack_require__(534), "Grid": __webpack_require__(535), "Group": __webpack_require__(536), "Grow": __webpack_require__(537), "Halt": __webpack_require__(538), "Help": __webpack_require__(539), "History": __webpack_require__(540), "Home": __webpack_require__(541), "HostMaintenance": __webpack_require__(542), "Host": __webpack_require__(543), "Image": __webpack_require__(544), "Impact": __webpack_require__(545), "InProgress": __webpack_require__(546), "Inbox": __webpack_require__(547), "Indicator": __webpack_require__(548), "Information": __webpack_require__(549), "Inherit": __webpack_require__(550), "Install": __webpack_require__(551), "Integration": __webpack_require__(552), "Iteration": __webpack_require__(553), "Java": __webpack_require__(554), "Language": __webpack_require__(555), "Launch": __webpack_require__(556), "License": __webpack_require__(557), "Like": __webpack_require__(558), "LineChart": __webpack_require__(559), "LinkBottom": __webpack_require__(560), "LinkDown": __webpack_require__(561), "LinkNext": __webpack_require__(562), "LinkPrevious": __webpack_require__(563), "LinkTop": __webpack_require__(564), "LinkUp": __webpack_require__(565), "Link": __webpack_require__(566), "LocationPin": __webpack_require__(567), "Location": __webpack_require__(568), "Lock": __webpack_require__(569), "Login": __webpack_require__(570), "Logout": __webpack_require__(571), "Mail": __webpack_require__(572), "Manual": __webpack_require__(573), "MapLocation": __webpack_require__(574), "Map": __webpack_require__(575), "Menu": __webpack_require__(576), "Microphone": __webpack_require__(577), "Monitor": __webpack_require__(578), "More": __webpack_require__(579), "Multiple": __webpack_require__(580), "Navigate": __webpack_require__(581), "NewWindow": __webpack_require__(582), "New": __webpack_require__(583), "Next": __webpack_require__(584), "Notes": __webpack_require__(585), "Notification": __webpack_require__(586), "Optimization": __webpack_require__(587), "Organization": __webpack_require__(588), "Overview": __webpack_require__(589), "Pan": __webpack_require__(590), "Pause": __webpack_require__(591), "PaymentGoogleWallet": __webpack_require__(592), "PaymentMastercard": __webpack_require__(593), "PaymentPaypal": __webpack_require__(594), "PaymentSquare": __webpack_require__(595), "PaymentVisa": __webpack_require__(596), "Pin": __webpack_require__(597), "Plan": __webpack_require__(598), "PlatformApple": __webpack_require__(599), "PlatformChrome": __webpack_require__(600), "PlatformDropbox": __webpack_require__(601), "PlatformEdge": __webpack_require__(602), "PlatformFirefox": __webpack_require__(603), "PlatformInternetExplorer": __webpack_require__(604), "PlatformSkype": __webpack_require__(605), "PlatformWindows": __webpack_require__(606), "Play": __webpack_require__(607), "Power": __webpack_require__(608), "Previous": __webpack_require__(609), "Print": __webpack_require__(610), "QuickView": __webpack_require__(611), "RadialSelected": __webpack_require__(612), "Radial": __webpack_require__(613), "Refresh": __webpack_require__(614), "Resources": __webpack_require__(615), "Rewind": __webpack_require__(616), "Risk": __webpack_require__(617), "Rss": __webpack_require__(618), "Satellite": __webpack_require__(619), "ScheduleClone": __webpack_require__(620), "ScheduleNew": __webpack_require__(621), "SchedulePlay": __webpack_require__(622), "Schedule": __webpack_require__(623), "Scorecard": __webpack_require__(624), "Search": __webpack_require__(625), "Secure": __webpack_require__(626), "SelectLeft": __webpack_require__(627), "Select": __webpack_require__(628), "ServerCluster": __webpack_require__(629), "Server": __webpack_require__(630), "Servers": __webpack_require__(631), "ServiceBusiness": __webpack_require__(632), "ServiceStart": __webpack_require__(633), "Share": __webpack_require__(634), "SheildConfigure": __webpack_require__(635), "Shield": __webpack_require__(636), "Shift": __webpack_require__(637), "ShopBasket": __webpack_require__(638), "ShopCart": __webpack_require__(639), "Soa": __webpack_require__(640), "SocialEmail": __webpack_require__(641), "SocialFacebook": __webpack_require__(642), "SocialGithub": __webpack_require__(643), "SocialGoogle": __webpack_require__(644), "SocialInstagram": __webpack_require__(645), "SocialLinkedin": __webpack_require__(646), "SocialMedium": __webpack_require__(647), "SocialPinterest": __webpack_require__(648), "SocialReddit": __webpack_require__(649), "SocialSlack": __webpack_require__(650), "SocialTumblr": __webpack_require__(651), "SocialTwitter": __webpack_require__(652), "SocialVimeo": __webpack_require__(653), "SocialYoutube": __webpack_require__(654), "Sort": __webpack_require__(655), "Stakeholder": __webpack_require__(656), "StarHalf": __webpack_require__(657), "Star": __webpack_require__(658), "Steps": __webpack_require__(659), "Storage": __webpack_require__(660), "StreetView": __webpack_require__(661), "Subtract": __webpack_require__(662), "Support": __webpack_require__(663), "Svg": __webpack_require__(664), "Sync": __webpack_require__(665), "System": __webpack_require__(666), "TabNext": __webpack_require__(667), "TabPrevious": __webpack_require__(668), "TabUp": __webpack_require__(669), "TableAdd": __webpack_require__(670), "Table": __webpack_require__(671), "Tag": __webpack_require__(672), "Target": __webpack_require__(673), "Task": __webpack_require__(674), "Template": __webpack_require__(675), "TestDesktop": __webpack_require__(676), "Test": __webpack_require__(677), "TesxtWrap": __webpack_require__(678), "Threats": __webpack_require__(679), "ThreeD": __webpack_require__(680), "Ticket": __webpack_require__(681), "Tools": __webpack_require__(682), "Tooltip": __webpack_require__(683), "Transaction": __webpack_require__(684), "Trash": __webpack_require__(685), "Tree": __webpack_require__(686), "Trigger": __webpack_require__(687), "Trophy": __webpack_require__(688), "Troubleshooting": __webpack_require__(689), "Unlock": __webpack_require__(690), "Up": __webpack_require__(691), "Update": __webpack_require__(692), "Upgrade": __webpack_require__(693), "Upload": __webpack_require__(694), "UserAdd": __webpack_require__(695), "UserAdmin": __webpack_require__(696), "UserExpert": __webpack_require__(697), "UserFemale": __webpack_require__(698), "UserManager": __webpack_require__(699), "UserNew": __webpack_require__(700), "UserPolice": __webpack_require__(701), "UserSettings": __webpack_require__(702), "UserWorker": __webpack_require__(703), "User": __webpack_require__(704), "Validation": __webpack_require__(705), "Video": __webpack_require__(706), "View": __webpack_require__(707), "VirtualMachine": __webpack_require__(708), "VmMaintenance": __webpack_require__(709), "VolumeLow": __webpack_require__(710), "VolumeMute": __webpack_require__(711), "Volume": __webpack_require__(712), "Vulnerability": __webpack_require__(713), "Waypoint": __webpack_require__(714), "Workshop": __webpack_require__(715), "ZoomIn": __webpack_require__(716) };
+	module.exports = { "Achievement": __webpack_require__(417), "Action": __webpack_require__(418), "Actions": __webpack_require__(419), "Add": __webpack_require__(420), "AdvancedSearch": __webpack_require__(421), "Aggregate": __webpack_require__(422), "Alarm": __webpack_require__(423), "Alert": __webpack_require__(424), "Analytics": __webpack_require__(425), "Announcement": __webpack_require__(426), "App": __webpack_require__(427), "Archive": __webpack_require__(428), "Article": __webpack_require__(429), "Ascend": __webpack_require__(430), "Assistant": __webpack_require__(431), "Attachment": __webpack_require__(432), "BarChart": __webpack_require__(433), "Blog": __webpack_require__(434), "Book": __webpack_require__(435), "Bookmark": __webpack_require__(436), "Bundle": __webpack_require__(437), "Calculator": __webpack_require__(438), "Calendar": __webpack_require__(345), "Camera": __webpack_require__(439), "Capacity": __webpack_require__(440), "CaretDown": __webpack_require__(441), "CaretNext": __webpack_require__(442), "CaretPrevious": __webpack_require__(443), "CaretUp": __webpack_require__(444), "Catalog": __webpack_require__(445), "ChapterAdd": __webpack_require__(446), "ChapterNext": __webpack_require__(447), "ChapterPrevious": __webpack_require__(448), "Chat": __webpack_require__(449), "CheckboxSelected": __webpack_require__(450), "Checkbox": __webpack_require__(451), "Checkmark": __webpack_require__(452), "CircularView": __webpack_require__(453), "Clipboard": __webpack_require__(454), "Clone": __webpack_require__(455), "Close": __webpack_require__(229), "CloudComputer": __webpack_require__(456), "CloudDownload": __webpack_require__(457), "CloudSoftware": __webpack_require__(458), "CloudUpload": __webpack_require__(459), "Cloud": __webpack_require__(460), "Cluster": __webpack_require__(461), "Code": __webpack_require__(462), "CommandLine": __webpack_require__(463), "Compare": __webpack_require__(464), "Compasss": __webpack_require__(465), "Compliance": __webpack_require__(466), "ComputerPersonal": __webpack_require__(467), "Configuration": __webpack_require__(468), "Connect": __webpack_require__(469), "ContactCard": __webpack_require__(470), "ContactUs": __webpack_require__(471), "Contract": __webpack_require__(472), "Copy": __webpack_require__(473), "Cube": __webpack_require__(474), "Cubes": __webpack_require__(475), "Cursor": __webpack_require__(476), "Cut": __webpack_require__(477), "Cycle": __webpack_require__(478), "Dashboard": __webpack_require__(479), "Database": __webpack_require__(480), "Defect": __webpack_require__(481), "Deliver": __webpack_require__(482), "Deployment": __webpack_require__(483), "Descend": __webpack_require__(484), "Desktop": __webpack_require__(485), "Detach": __webpack_require__(486), "Directions": __webpack_require__(487), "Dislike": __webpack_require__(488), "DivideFour": __webpack_require__(489), "DivideRight": __webpack_require__(490), "DivideThree": __webpack_require__(491), "Divide": __webpack_require__(492), "DocumentCloud": __webpack_require__(493), "DocumentCompress": __webpack_require__(494), "DocumentConig": __webpack_require__(495), "DocumentCsv": __webpack_require__(496), "DocumentData": __webpack_require__(497), "DocumentDownload": __webpack_require__(498), "DocumentExcel": __webpack_require__(499), "DocumentExecutable": __webpack_require__(500), "DocumentImage": __webpack_require__(501), "DocumentLocked": __webpack_require__(502), "DocumentMissing": __webpack_require__(503), "DocumentNotes": __webpack_require__(504), "DocumentOutlook": __webpack_require__(505), "DocumentPdf": __webpack_require__(506), "DocumentPerformance": __webpack_require__(507), "DocumentPowerpoint": __webpack_require__(508), "DocumentRtf": __webpack_require__(509), "DocumentSound": __webpack_require__(510), "DocumentTest": __webpack_require__(511), "DocumentText": __webpack_require__(512), "DocumentThreat": __webpack_require__(513), "DocumentTime": __webpack_require__(514), "DocumentTransfer": __webpack_require__(515), "DocumentTxt": __webpack_require__(516), "DocumentUpdate": __webpack_require__(517), "DocumentUpload": __webpack_require__(518), "DocumentUser": __webpack_require__(519), "DocumentVerified": __webpack_require__(520), "DocumentVideo": __webpack_require__(521), "DocumentWord": __webpack_require__(522), "Document": __webpack_require__(523), "Domain": __webpack_require__(524), "Down": __webpack_require__(525), "Download": __webpack_require__(526), "Drag": __webpack_require__(527), "DriveCage": __webpack_require__(528), "Duplicate": __webpack_require__(529), "Edit": __webpack_require__(530), "Eject": __webpack_require__(531), "Expand": __webpack_require__(532), "Fan": __webpack_require__(533), "FastForward": __webpack_require__(534), "Favorite": __webpack_require__(535), "Filter": __webpack_require__(536), "FirstAid": __webpack_require__(537), "Flag": __webpack_require__(538), "FolderCycle": __webpack_require__(539), "FolderOpen": __webpack_require__(540), "Folder": __webpack_require__(541), "Gallery": __webpack_require__(542), "Globe": __webpack_require__(543), "Grid": __webpack_require__(544), "Group": __webpack_require__(545), "Grow": __webpack_require__(546), "Halt": __webpack_require__(547), "Help": __webpack_require__(548), "History": __webpack_require__(549), "Home": __webpack_require__(550), "HostMaintenance": __webpack_require__(551), "Host": __webpack_require__(552), "Image": __webpack_require__(553), "Impact": __webpack_require__(554), "InProgress": __webpack_require__(555), "Inbox": __webpack_require__(556), "Indicator": __webpack_require__(557), "Information": __webpack_require__(558), "Inherit": __webpack_require__(559), "Install": __webpack_require__(560), "Integration": __webpack_require__(561), "Iteration": __webpack_require__(562), "Java": __webpack_require__(563), "Language": __webpack_require__(564), "Launch": __webpack_require__(565), "License": __webpack_require__(566), "Like": __webpack_require__(567), "LineChart": __webpack_require__(568), "LinkBottom": __webpack_require__(569), "LinkDown": __webpack_require__(570), "LinkNext": __webpack_require__(571), "LinkPrevious": __webpack_require__(572), "LinkTop": __webpack_require__(573), "LinkUp": __webpack_require__(574), "Link": __webpack_require__(575), "LocationPin": __webpack_require__(576), "Location": __webpack_require__(577), "Lock": __webpack_require__(578), "Login": __webpack_require__(579), "Logout": __webpack_require__(580), "Mail": __webpack_require__(581), "Manual": __webpack_require__(582), "MapLocation": __webpack_require__(583), "Map": __webpack_require__(584), "Menu": __webpack_require__(585), "Microphone": __webpack_require__(586), "Monitor": __webpack_require__(587), "More": __webpack_require__(588), "Multiple": __webpack_require__(589), "Navigate": __webpack_require__(590), "NewWindow": __webpack_require__(591), "New": __webpack_require__(592), "Next": __webpack_require__(355), "Notes": __webpack_require__(593), "Notification": __webpack_require__(594), "Optimization": __webpack_require__(595), "Organization": __webpack_require__(596), "Overview": __webpack_require__(597), "Pan": __webpack_require__(598), "Pause": __webpack_require__(398), "PaymentGoogleWallet": __webpack_require__(599), "PaymentMastercard": __webpack_require__(600), "PaymentPaypal": __webpack_require__(601), "PaymentSquare": __webpack_require__(602), "PaymentVisa": __webpack_require__(603), "Pin": __webpack_require__(604), "Plan": __webpack_require__(605), "PlatformApple": __webpack_require__(606), "PlatformChrome": __webpack_require__(607), "PlatformDropbox": __webpack_require__(608), "PlatformEdge": __webpack_require__(609), "PlatformFirefox": __webpack_require__(610), "PlatformInternetExplorer": __webpack_require__(611), "PlatformSkype": __webpack_require__(612), "PlatformWindows": __webpack_require__(613), "Play": __webpack_require__(397), "Power": __webpack_require__(614), "Previous": __webpack_require__(354), "Print": __webpack_require__(615), "QuickView": __webpack_require__(616), "RadialSelected": __webpack_require__(617), "Radial": __webpack_require__(618), "Refresh": __webpack_require__(399), "Resources": __webpack_require__(619), "Rewind": __webpack_require__(620), "Risk": __webpack_require__(621), "Rss": __webpack_require__(622), "Satellite": __webpack_require__(623), "ScheduleClone": __webpack_require__(624), "ScheduleNew": __webpack_require__(625), "SchedulePlay": __webpack_require__(626), "Schedule": __webpack_require__(627), "Scorecard": __webpack_require__(628), "Search": __webpack_require__(629), "Secure": __webpack_require__(630), "SelectLeft": __webpack_require__(631), "Select": __webpack_require__(632), "ServerCluster": __webpack_require__(633), "Server": __webpack_require__(634), "Servers": __webpack_require__(635), "ServiceBusiness": __webpack_require__(636), "ServiceStart": __webpack_require__(637), "Share": __webpack_require__(638), "SheildConfigure": __webpack_require__(639), "Shield": __webpack_require__(640), "Shift": __webpack_require__(641), "ShopBasket": __webpack_require__(642), "ShopCart": __webpack_require__(643), "Soa": __webpack_require__(644), "SocialEmail": __webpack_require__(645), "SocialFacebook": __webpack_require__(646), "SocialGithub": __webpack_require__(647), "SocialGoogle": __webpack_require__(648), "SocialInstagram": __webpack_require__(649), "SocialLinkedin": __webpack_require__(650), "SocialMedium": __webpack_require__(651), "SocialPinterest": __webpack_require__(652), "SocialReddit": __webpack_require__(653), "SocialSlack": __webpack_require__(654), "SocialTumblr": __webpack_require__(655), "SocialTwitter": __webpack_require__(656), "SocialVimeo": __webpack_require__(657), "SocialYoutube": __webpack_require__(658), "Sort": __webpack_require__(659), "Stakeholder": __webpack_require__(660), "StarHalf": __webpack_require__(661), "Star": __webpack_require__(662), "Steps": __webpack_require__(663), "Storage": __webpack_require__(664), "StreetView": __webpack_require__(665), "Subtract": __webpack_require__(666), "Support": __webpack_require__(667), "Svg": __webpack_require__(668), "Sync": __webpack_require__(669), "System": __webpack_require__(670), "TabNext": __webpack_require__(671), "TabPrevious": __webpack_require__(672), "TabUp": __webpack_require__(673), "TableAdd": __webpack_require__(674), "Table": __webpack_require__(675), "Tag": __webpack_require__(676), "Target": __webpack_require__(677), "Task": __webpack_require__(678), "Template": __webpack_require__(679), "TestDesktop": __webpack_require__(680), "Test": __webpack_require__(681), "TesxtWrap": __webpack_require__(682), "Threats": __webpack_require__(683), "ThreeD": __webpack_require__(684), "Ticket": __webpack_require__(685), "Tools": __webpack_require__(686), "Tooltip": __webpack_require__(687), "Transaction": __webpack_require__(688), "Trash": __webpack_require__(689), "Tree": __webpack_require__(690), "Trigger": __webpack_require__(691), "Trophy": __webpack_require__(692), "Troubleshooting": __webpack_require__(693), "Unlock": __webpack_require__(694), "Up": __webpack_require__(695), "Update": __webpack_require__(696), "Upgrade": __webpack_require__(697), "Upload": __webpack_require__(698), "UserAdd": __webpack_require__(699), "UserAdmin": __webpack_require__(700), "UserExpert": __webpack_require__(701), "UserFemale": __webpack_require__(702), "UserManager": __webpack_require__(703), "UserNew": __webpack_require__(704), "UserPolice": __webpack_require__(705), "UserSettings": __webpack_require__(706), "UserWorker": __webpack_require__(707), "User": __webpack_require__(708), "Validation": __webpack_require__(709), "Video": __webpack_require__(710), "View": __webpack_require__(711), "VirtualMachine": __webpack_require__(712), "VmMaintenance": __webpack_require__(713), "VolumeLow": __webpack_require__(714), "VolumeMute": __webpack_require__(715), "Volume": __webpack_require__(716), "Vulnerability": __webpack_require__(717), "Waypoint": __webpack_require__(718), "Workshop": __webpack_require__(719), "ZoomIn": __webpack_require__(720) };
 
 /***/ },
-/* 408 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49160,7 +50383,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 409 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49225,7 +50448,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 410 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49290,7 +50513,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 411 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49355,7 +50578,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 412 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49420,7 +50643,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 413 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49485,7 +50708,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 414 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49550,7 +50773,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 415 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49621,7 +50844,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 416 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49686,7 +50909,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 417 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49751,7 +50974,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 418 */
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49816,7 +51039,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 419 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49881,7 +51104,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 420 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -49950,7 +51173,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 421 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50015,7 +51238,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 422 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50083,7 +51306,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 423 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50148,7 +51371,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 424 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50213,7 +51436,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 425 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50278,7 +51501,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 426 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50343,7 +51566,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 427 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50408,7 +51631,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 428 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50473,7 +51696,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 429 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50545,7 +51768,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 430 */
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50610,7 +51833,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 431 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50675,7 +51898,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 432 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50699,12 +51922,12 @@ var Grommet =
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      a11yTitleId: 'carrot-down-title'
+	      a11yTitleId: 'caret-down-title'
 	    };
 	  },
 
 	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-down'];
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-caret-down'];
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
@@ -50715,7 +51938,7 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-down";
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "caret-down";
 	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
 
 	    return React.createElement(
@@ -50728,9 +51951,9 @@ var Grommet =
 	      ),
 	      React.createElement(
 	        'g',
-	        { id: 'carrot-down' },
+	        { id: 'caret-down' },
 	        React.createElement('rect', { id: '_x2E_svg_7_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polygon', { id: 'drop-carrot', fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.8571,19  31.1428,19 24,29 \t' })
+	        React.createElement('polygon', { id: 'drop-carrot', fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.8571,19 31.1428,19 24,29 \t' })
 	      )
 	    );
 	  }
@@ -50740,7 +51963,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 433 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50764,12 +51987,12 @@ var Grommet =
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      a11yTitleId: 'carrot-next-title'
+	      a11yTitleId: 'caret-next-title'
 	    };
 	  },
 
 	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-next'];
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-caret-next'];
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
@@ -50780,7 +52003,7 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-next";
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "caret-next";
 	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
 
 	    return React.createElement(
@@ -50793,7 +52016,7 @@ var Grommet =
 	      ),
 	      React.createElement(
 	        'g',
-	        { id: 'carrot-next' },
+	        { id: 'caret-next' },
 	        React.createElement('rect', { id: '_x2E_svg_254_', fill: 'none', width: '48', height: '48' }),
 	        React.createElement('polygon', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '19,16.8571 19,31.1429 29,24 \t' })
 	      )
@@ -50805,7 +52028,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 434 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50829,12 +52052,12 @@ var Grommet =
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      a11yTitleId: 'carrot-previous-title'
+	      a11yTitleId: 'caret-previous-title'
 	    };
 	  },
 
 	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-previous'];
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-caret-previous'];
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
@@ -50845,7 +52068,7 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-previous";
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "caret-previous";
 	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
 
 	    return React.createElement(
@@ -50858,7 +52081,7 @@ var Grommet =
 	      ),
 	      React.createElement(
 	        'g',
-	        { id: 'carrot-previous' },
+	        { id: 'caret-previous' },
 	        React.createElement('rect', { id: '_x2E_svg_255_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
 	        React.createElement('polygon', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '27,16.8571 27,31.1429 17,24 \t' })
 	      )
@@ -50870,7 +52093,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 435 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -50894,12 +52117,12 @@ var Grommet =
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      a11yTitleId: 'carrot-up-title'
+	      a11yTitleId: 'caret-up-title'
 	    };
 	  },
 
 	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-carrot-up'];
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-caret-up'];
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
@@ -50910,7 +52133,7 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "carrot-up";
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "caret-up";
 	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
 
 	    return React.createElement(
@@ -50923,7 +52146,7 @@ var Grommet =
 	      ),
 	      React.createElement(
 	        'g',
-	        { id: 'carrot-up' },
+	        { id: 'caret-up' },
 	        React.createElement('rect', { id: '_x2E_svg_253_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
 	        React.createElement('polygon', { fill: '#231F20', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.8571,29 31.1429,29 24,19 \t' })
 	      )
@@ -50935,7 +52158,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 436 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51000,7 +52223,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 437 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51065,7 +52288,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 438 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51131,7 +52354,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 439 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51197,7 +52420,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 440 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51262,7 +52485,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 441 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51328,7 +52551,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 442 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51393,7 +52616,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 443 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51458,7 +52681,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 444 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51523,7 +52746,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 445 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51588,7 +52811,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 446 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51653,7 +52876,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 447 */
+/* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51718,7 +52941,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 448 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51783,7 +53006,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 449 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51848,7 +53071,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 450 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51913,7 +53136,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 451 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -51978,7 +53201,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 452 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52043,7 +53266,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 453 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52108,7 +53331,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 454 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52173,7 +53396,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 455 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52250,7 +53473,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 456 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52316,7 +53539,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 457 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52381,7 +53604,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 458 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52446,7 +53669,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 459 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52511,7 +53734,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 460 */
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52576,7 +53799,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 461 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52641,7 +53864,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 462 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52709,7 +53932,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 463 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52774,7 +53997,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 464 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52839,7 +54062,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 465 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52904,7 +54127,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 466 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52969,7 +54192,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 467 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -52993,12 +54216,12 @@ var Grommet =
 
 	  getDefaultProps: function getDefaultProps() {
 	    return {
-	      a11yTitleId: 'cusror-title'
+	      a11yTitleId: 'cursor-title'
 	    };
 	  },
 
 	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cusror'];
+	    var classes = [CLASS_ROOT, CLASS_ROOT + '-cursor'];
 	    if (this.props.large) {
 	      classes.push(CLASS_ROOT + "--large");
 	    }
@@ -53009,7 +54232,7 @@ var Grommet =
 	      classes.push(this.props.className);
 	    }
 
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cusror";
+	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "cursor";
 	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
 
 	    return React.createElement(
@@ -53022,9 +54245,9 @@ var Grommet =
 	      ),
 	      React.createElement(
 	        'g',
-	        { id: 'cusror' },
+	        { id: 'cursor' },
 	        React.createElement('rect', { id: '_x2E_svg_193_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '32,26 18,13 18,32 22.3967,28.3361  25.1616,34.7876 28.8384,33.2124 26.0653,26.7418 \t' })
+	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '32,26 18,13 18,32 22.3967,28.3361 25.1616,34.7876 28.8384,33.2124 26.0653,26.7418 \t' })
 	      )
 	    );
 	  }
@@ -53034,7 +54257,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 468 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53099,7 +54322,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 469 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53168,7 +54391,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 470 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53233,7 +54456,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 471 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53303,7 +54526,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 472 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53368,7 +54591,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 473 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53433,7 +54656,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 474 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53499,7 +54722,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 475 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53564,7 +54787,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 476 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53629,7 +54852,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 477 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53694,7 +54917,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 478 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53759,7 +54982,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 479 */
+/* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53824,7 +55047,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 480 */
+/* 489 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53889,7 +55112,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 481 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -53954,7 +55177,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 482 */
+/* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54019,7 +55242,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 483 */
+/* 492 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54084,7 +55307,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 484 */
+/* 493 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54152,7 +55375,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 485 */
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54217,7 +55440,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 486 */
+/* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54282,7 +55505,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 487 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54351,7 +55574,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 488 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54416,7 +55639,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 489 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54481,7 +55704,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 490 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54549,7 +55772,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 491 */
+/* 500 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54625,7 +55848,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 492 */
+/* 501 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54693,7 +55916,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 493 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54761,7 +55984,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 494 */
+/* 503 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54826,7 +56049,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 495 */
+/* 504 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54894,7 +56117,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 496 */
+/* 505 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -54962,7 +56185,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 497 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55021,9 +56244,8 @@ var Grommet =
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '32.5', y1: '25', x2: '26.5', y2: '25' }),
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '27.5', y1: '24', x2: '27.5', y2: '32' }),
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.5', y1: '29', x2: '26.5', y2: '29' }),
-	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
-	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
-	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' })
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999 34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' })
 	      )
 	    );
 	  }
@@ -55033,7 +56255,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 498 */
+/* 507 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55100,7 +56322,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 499 */
+/* 508 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55172,7 +56394,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 500 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55227,9 +56449,8 @@ var Grommet =
 	        'g',
 	        { id: 'document-rtf' },
 	        React.createElement('rect', { id: '_x2E_svg_280_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999  34.5,35 15.5,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.5,21 16.5,13 29.5002,13 34.5,17.9999 34.5,35 15.5,35 \t' }),
 	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.5,14 28.5,19 34.5,19 \t' }),
-	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.5,19' }),
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '12.5001', y1: '25.0004', x2: '12.5001', y2: '32.0004' }),
 	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M14.5001,29.0004c1.1046,0,2-0.8954,2-2 s-0.8954-2-2-2h-2v4H14.5001z' }),
 	        React.createElement('polygon', { fill: '#231F20', points: '15.7461,32.0004 13.0438,28.2977 15.2342,28.2977 17.9562,32.0201 \t' }),
@@ -55247,7 +56468,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 501 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55316,7 +56537,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 502 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55386,7 +56607,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 503 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55451,7 +56672,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 504 */
+/* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55516,7 +56737,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 505 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55581,7 +56802,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 506 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55646,7 +56867,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 507 */
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55701,9 +56922,8 @@ var Grommet =
 	        'g',
 	        { id: 'document-txt' },
 	        React.createElement('rect', { id: '_x2E_svg_274_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.4186,21 16.4186,13 29.4188,13  34.4186,17.9999 34.4186,35 15.4186,35 \t' }),
+	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '16.4186,21 16.4186,13 29.4188,13 34.4186,17.9999 34.4186,35 15.4186,35 \t' }),
 	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.4186,14 28.4186,19 34.4186,19 \t' }),
-	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27.4186,19' }),
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '17.4186', y1: '25', x2: '11.4186', y2: '25' }),
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '14.4186', y1: '24', x2: '14.4186', y2: '32' }),
 	        React.createElement('line', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', x1: '31.4186', y1: '25', x2: '25.4186', y2: '25' }),
@@ -55719,7 +56939,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 508 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55786,7 +57006,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 509 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55851,7 +57071,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 510 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55916,7 +57136,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 511 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -55981,7 +57201,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 512 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56048,7 +57268,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 513 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56116,7 +57336,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 514 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56181,7 +57401,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 515 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56246,7 +57466,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 516 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56311,7 +57531,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 517 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56376,7 +57596,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 518 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56441,7 +57661,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 519 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56509,7 +57729,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 520 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56574,7 +57794,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 521 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56639,7 +57859,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 522 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56704,7 +57924,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 523 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56769,7 +57989,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 524 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56834,7 +58054,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 525 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56899,7 +58119,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 526 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -56964,7 +58184,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 527 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57029,7 +58249,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 528 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57094,7 +58314,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 529 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57159,7 +58379,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 530 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57228,7 +58448,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 531 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57293,7 +58513,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 532 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57358,7 +58578,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 533 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57424,7 +58644,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 534 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57489,7 +58709,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 535 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57554,7 +58774,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 536 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57619,7 +58839,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 537 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57684,7 +58904,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 538 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57749,7 +58969,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 539 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57815,7 +59035,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 540 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57880,7 +59100,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 541 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -57945,7 +59165,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 542 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58012,7 +59232,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 543 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58078,7 +59298,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 544 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58144,7 +59364,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 545 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58209,7 +59429,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 546 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58276,7 +59496,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 547 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58341,7 +59561,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 548 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58406,7 +59626,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 549 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58471,7 +59691,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 550 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58536,7 +59756,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 551 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58601,7 +59821,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 552 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58666,7 +59886,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 553 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58731,7 +59951,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 554 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58796,7 +60016,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 555 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58861,7 +60081,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 556 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58927,7 +60147,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 557 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -58993,7 +60213,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 558 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59058,7 +60278,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 559 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59123,7 +60343,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 560 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59188,7 +60408,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 561 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59253,7 +60473,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 562 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59318,7 +60538,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 563 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59383,7 +60603,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 564 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59448,7 +60668,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 565 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59513,7 +60733,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 566 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59578,7 +60798,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 567 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59643,7 +60863,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 568 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59708,7 +60928,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 569 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59773,7 +60993,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 570 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59838,7 +61058,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 571 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59903,7 +61123,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 572 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -59968,7 +61188,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 573 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60033,7 +61253,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 574 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60100,7 +61320,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 575 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60165,7 +61385,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 576 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60230,7 +61450,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 577 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60295,7 +61515,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 578 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60360,7 +61580,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 579 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60427,7 +61647,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 580 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60492,7 +61712,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 581 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60557,7 +61777,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 582 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60622,7 +61842,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 583 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60687,72 +61907,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 584 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var FormattedMessage = __webpack_require__(190);
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = React.createClass({
-	  displayName: 'Icon',
-
-	  propTypes: {
-	    a11yTitle: React.PropTypes.string,
-	    a11yTitleId: React.PropTypes.string,
-	    colorIndex: React.PropTypes.string,
-	    large: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      a11yTitleId: 'next-title'
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-next'];
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("color-index-" + this.props.colorIndex);
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "next";
-	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
-
-	    return React.createElement(
-	      'svg',
-	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	      React.createElement(
-	        'title',
-	        { id: this.props.a11yTitleId },
-	        a11yTitle
-	      ),
-	      React.createElement(
-	        'g',
-	        { id: 'next' },
-	        React.createElement('rect', { id: '_x2E_svg_27_', x: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '20,13.2101 31,24.2101 20,35.2101 \t' })
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Icon;
-
-/***/ },
-/* 585 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60817,7 +61972,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 586 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60882,7 +62037,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 587 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -60947,7 +62102,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 588 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61017,7 +62172,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 589 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61082,7 +62237,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 590 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61147,72 +62302,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 591 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var FormattedMessage = __webpack_require__(190);
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = React.createClass({
-	  displayName: 'Icon',
-
-	  propTypes: {
-	    a11yTitle: React.PropTypes.string,
-	    a11yTitleId: React.PropTypes.string,
-	    colorIndex: React.PropTypes.string,
-	    large: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      a11yTitleId: 'pause-title'
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-pause'];
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("color-index-" + this.props.colorIndex);
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "pause";
-	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
-
-	    return React.createElement(
-	      'svg',
-	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	      React.createElement(
-	        'title',
-	        { id: this.props.a11yTitleId },
-	        a11yTitle
-	      ),
-	      React.createElement(
-	        'g',
-	        { id: 'pause' },
-	        React.createElement('rect', { id: '_x2E_svg_100_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M27,34V14h5v20H27z M21,34V14h-5v20H21z' })
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Icon;
-
-/***/ },
-/* 592 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61280,7 +62370,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 593 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61350,7 +62440,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 594 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61415,7 +62505,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 595 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61481,7 +62571,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 596 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61546,7 +62636,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 597 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61613,7 +62703,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 598 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61678,7 +62768,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 599 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61743,7 +62833,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 600 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61808,7 +62898,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 601 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61876,7 +62966,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 602 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -61941,7 +63031,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 603 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62006,7 +63096,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 604 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62071,7 +63161,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 605 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62136,7 +63226,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 606 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62201,72 +63291,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 607 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var FormattedMessage = __webpack_require__(190);
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = React.createClass({
-	  displayName: 'Icon',
-
-	  propTypes: {
-	    a11yTitle: React.PropTypes.string,
-	    a11yTitleId: React.PropTypes.string,
-	    colorIndex: React.PropTypes.string,
-	    large: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      a11yTitleId: 'play-title'
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-play'];
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("color-index-" + this.props.colorIndex);
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "play";
-	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
-
-	    return React.createElement(
-	      'svg',
-	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	      React.createElement(
-	        'title',
-	        { id: this.props.a11yTitleId },
-	        a11yTitle
-	      ),
-	      React.createElement(
-	        'g',
-	        { id: 'play' },
-	        React.createElement('rect', { id: '_x2E_svg_101_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polygon', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '18,13.8 18,34.2 32,24 \t' })
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Icon;
-
-/***/ },
-/* 608 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62331,72 +63356,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 609 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var FormattedMessage = __webpack_require__(190);
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = React.createClass({
-	  displayName: 'Icon',
-
-	  propTypes: {
-	    a11yTitle: React.PropTypes.string,
-	    a11yTitleId: React.PropTypes.string,
-	    colorIndex: React.PropTypes.string,
-	    large: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      a11yTitleId: 'previous-title'
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-previous'];
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("color-index-" + this.props.colorIndex);
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "previous";
-	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
-
-	    return React.createElement(
-	      'svg',
-	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	      React.createElement(
-	        'title',
-	        { id: this.props.a11yTitleId },
-	        a11yTitle
-	      ),
-	      React.createElement(
-	        'g',
-	        { id: 'previous' },
-	        React.createElement('rect', { id: '_x2E_svg_262_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('polyline', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', points: '28.1397,11.5 17.1397,22.5 28.1397,33.5 \t ' })
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Icon;
-
-/***/ },
-/* 610 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62462,7 +63422,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 611 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62527,7 +63487,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 612 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62593,7 +63553,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 613 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62658,72 +63618,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 614 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	'use strict';
-
-	var React = __webpack_require__(2);
-	var FormattedMessage = __webpack_require__(190);
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = React.createClass({
-	  displayName: 'Icon',
-
-	  propTypes: {
-	    a11yTitle: React.PropTypes.string,
-	    a11yTitleId: React.PropTypes.string,
-	    colorIndex: React.PropTypes.string,
-	    large: React.PropTypes.bool
-	  },
-
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      a11yTitleId: 'refresh-title'
-	    };
-	  },
-
-	  render: function render() {
-	    var classes = [CLASS_ROOT, CLASS_ROOT + '-refresh'];
-	    if (this.props.large) {
-	      classes.push(CLASS_ROOT + "--large");
-	    }
-	    if (this.props.colorIndex) {
-	      classes.push("color-index-" + this.props.colorIndex);
-	    }
-	    if (this.props.className) {
-	      classes.push(this.props.className);
-	    }
-
-	    var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "refresh";
-	    var a11yTitle = React.createElement(FormattedMessage, { id: titleLabel, defaultMessage: titleLabel });
-
-	    return React.createElement(
-	      'svg',
-	      { version: '1.1', viewBox: '0 0 48 48', width: '48px', height: '48px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	      React.createElement(
-	        'title',
-	        { id: this.props.a11yTitleId },
-	        a11yTitle
-	      ),
-	      React.createElement(
-	        'g',
-	        { id: 'refresh' },
-	        React.createElement('rect', { id: '_x2E_svg_17_', x: '0', y: '0', fill: 'none', width: '48', height: '48' }),
-	        React.createElement('path', { fill: 'none', stroke: '#231F20', strokeWidth: '2', strokeMiterlimit: '10', d: 'M35,13v7h-7 M34.0006,19.4123 C32.2616,15.6278,28.4377,13,24,13c-6.0751,0-11,4.9249-11,11s4.9249,11,11,11s11-4.9249,11-11' })
-	      )
-	    );
-	  }
-
-	});
-
-	module.exports = Icon;
-
-/***/ },
-/* 615 */
+/* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62788,7 +63683,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 616 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62853,7 +63748,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 617 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62924,7 +63819,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 618 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -62989,7 +63884,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 619 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63054,7 +63949,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 620 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63119,7 +64014,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 621 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63184,7 +64079,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 622 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63250,7 +64145,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 623 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63315,7 +64210,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 624 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63380,7 +64275,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 625 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63445,7 +64340,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 626 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63512,7 +64407,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 627 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63578,7 +64473,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 628 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63644,7 +64539,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 629 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63718,7 +64613,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 630 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63784,7 +64679,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 631 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63851,7 +64746,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 632 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63916,7 +64811,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 633 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -63982,7 +64877,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 634 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64047,7 +64942,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 635 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64112,7 +65007,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 636 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64177,7 +65072,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 637 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64242,7 +65137,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 638 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64307,7 +65202,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 639 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64374,7 +65269,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 640 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64439,7 +65334,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 641 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64505,7 +65400,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 642 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64570,7 +65465,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 643 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64635,7 +65530,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 644 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64701,7 +65596,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 645 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64769,7 +65664,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 646 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64834,7 +65729,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 647 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64903,7 +65798,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 648 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -64968,7 +65863,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 649 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65033,7 +65928,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 650 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65098,7 +65993,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 651 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65163,7 +66058,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 652 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65228,7 +66123,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 653 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65293,7 +66188,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 654 */
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65366,7 +66261,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 655 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65438,7 +66333,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 656 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65503,7 +66398,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 657 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65573,7 +66468,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 658 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65642,7 +66537,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 659 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65707,7 +66602,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 660 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65772,7 +66667,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 661 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65837,7 +66732,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 662 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65902,7 +66797,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 663 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -65967,7 +66862,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 664 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66027,7 +66922,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 665 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66092,7 +66987,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 666 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66157,7 +67052,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 667 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66222,7 +67117,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 668 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66287,7 +67182,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 669 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66352,7 +67247,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 670 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66417,7 +67312,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 671 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66482,7 +67377,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 672 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66548,7 +67443,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 673 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66613,7 +67508,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 674 */
+/* 678 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66678,7 +67573,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 675 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66743,7 +67638,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 676 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66808,7 +67703,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 677 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66875,7 +67770,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 678 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -66944,7 +67839,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 679 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67009,7 +67904,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 680 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67074,7 +67969,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 681 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67139,7 +68034,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 682 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67204,7 +68099,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 683 */
+/* 687 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67272,7 +68167,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 684 */
+/* 688 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67337,7 +68232,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 685 */
+/* 689 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67402,7 +68297,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 686 */
+/* 690 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67467,7 +68362,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 687 */
+/* 691 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67532,7 +68427,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 688 */
+/* 692 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67597,7 +68492,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 689 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67662,7 +68557,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 690 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67727,7 +68622,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 691 */
+/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67792,7 +68687,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 692 */
+/* 696 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67857,7 +68752,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 693 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67922,7 +68817,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 694 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -67987,7 +68882,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 695 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68052,7 +68947,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 696 */
+/* 700 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68117,7 +69012,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 697 */
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68182,7 +69077,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 698 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68247,7 +69142,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 699 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68312,7 +69207,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 700 */
+/* 704 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68377,7 +69272,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 701 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68443,7 +69338,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 702 */
+/* 706 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68508,7 +69403,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 703 */
+/* 707 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68573,7 +69468,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 704 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68638,7 +69533,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 705 */
+/* 709 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68703,7 +69598,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 706 */
+/* 710 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68768,7 +69663,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 707 */
+/* 711 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68833,7 +69728,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 708 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68898,7 +69793,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 709 */
+/* 713 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -68964,7 +69859,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 710 */
+/* 714 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69029,7 +69924,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 711 */
+/* 715 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69096,7 +69991,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 712 */
+/* 716 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69161,7 +70056,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 713 */
+/* 717 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69226,7 +70121,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 714 */
+/* 718 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69291,7 +70186,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 715 */
+/* 719 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69358,7 +70253,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 716 */
+/* 720 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
@@ -69426,7 +70321,7 @@ var Grommet =
 	module.exports = Icon;
 
 /***/ },
-/* 717 */
+/* 721 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014 Hewlett Packard Enterprise Development LP
@@ -69598,14 +70493,14 @@ var Grommet =
 	module.exports = KeyboardAccelerators;
 
 /***/ },
-/* 718 */
+/* 722 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
 	'use strict';
 
-	var request = __webpack_require__(719);
+	var request = __webpack_require__(723);
 
 	var _headers = { 'Accept': 'application/json' };
 
@@ -69691,15 +70586,15 @@ var Grommet =
 	module.exports = Rest;
 
 /***/ },
-/* 719 */
+/* 723 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module dependencies.
 	 */
 
-	var Emitter = __webpack_require__(720);
-	var reduce = __webpack_require__(721);
+	var Emitter = __webpack_require__(724);
+	var reduce = __webpack_require__(725);
 
 	/**
 	 * Root reference for iframes.
@@ -70854,7 +71749,7 @@ var Grommet =
 
 
 /***/ },
-/* 720 */
+/* 724 */
 /***/ function(module, exports) {
 
 	
@@ -71024,7 +71919,7 @@ var Grommet =
 
 
 /***/ },
-/* 721 */
+/* 725 */
 /***/ function(module, exports) {
 
 	
@@ -71053,14 +71948,14 @@ var Grommet =
 	};
 
 /***/ },
-/* 722 */
+/* 726 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
 	'use strict';
 
-	var Rest = __webpack_require__(718);
+	var Rest = __webpack_require__(722);
 
 	var RECONNECT_TIMEOUT = 5000; // 5s
 	var POLL_TIMEOUT = 10000; // 10s
@@ -71193,7 +72088,7 @@ var Grommet =
 	module.exports = RestWatch;
 
 /***/ },
-/* 723 */
+/* 727 */
 /***/ function(module, exports) {
 
 	// (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
