@@ -56,65 +56,65 @@ var Grommet =
 	  Box: __webpack_require__(230),
 	  Button: __webpack_require__(199),
 	  Calendar: __webpack_require__(247),
-	  Carousel: __webpack_require__(351),
-	  Chart: __webpack_require__(365),
-	  CheckBox: __webpack_require__(367),
-	  Distribution: __webpack_require__(368),
-	  Footer: __webpack_require__(369),
-	  Form: __webpack_require__(370),
-	  FormField: __webpack_require__(371),
-	  FormFields: __webpack_require__(372),
-	  Header: __webpack_require__(349),
-	  Headline: __webpack_require__(373),
-	  Image: __webpack_require__(374),
-	  Label: __webpack_require__(375),
+	  Carousel: __webpack_require__(350),
+	  Chart: __webpack_require__(366),
+	  CheckBox: __webpack_require__(368),
+	  Distribution: __webpack_require__(369),
+	  Footer: __webpack_require__(370),
+	  Form: __webpack_require__(371),
+	  FormField: __webpack_require__(372),
+	  FormFields: __webpack_require__(373),
+	  Header: __webpack_require__(348),
+	  Headline: __webpack_require__(374),
+	  Image: __webpack_require__(375),
+	  Label: __webpack_require__(376),
 	  Layer: __webpack_require__(195),
-	  Legend: __webpack_require__(366),
-	  List: __webpack_require__(376),
-	  ListItem: __webpack_require__(377),
-	  Login: __webpack_require__(378),
-	  LoginForm: __webpack_require__(379),
-	  Map: __webpack_require__(380),
+	  Legend: __webpack_require__(367),
+	  List: __webpack_require__(377),
+	  ListItem: __webpack_require__(378),
+	  Login: __webpack_require__(379),
+	  LoginForm: __webpack_require__(380),
+	  Map: __webpack_require__(381),
 	  Menu: __webpack_require__(200),
-	  Meter: __webpack_require__(381),
-	  NumberInput: __webpack_require__(388),
-	  RadioButton: __webpack_require__(391),
-	  Search: __webpack_require__(392),
-	  SearchInput: __webpack_require__(394),
-	  Section: __webpack_require__(395),
-	  Sidebar: __webpack_require__(396),
-	  Split: __webpack_require__(397),
-	  Table: __webpack_require__(398),
-	  TableRow: __webpack_require__(399),
-	  Tiles: __webpack_require__(352),
-	  Tile: __webpack_require__(364),
-	  Title: __webpack_require__(350),
-	  Topology: __webpack_require__(400),
-	  Video: __webpack_require__(409),
-	  Object: __webpack_require__(413),
-	  TBD: __webpack_require__(414),
+	  Meter: __webpack_require__(382),
+	  NumberInput: __webpack_require__(389),
+	  RadioButton: __webpack_require__(392),
+	  Search: __webpack_require__(393),
+	  SearchInput: __webpack_require__(395),
+	  Section: __webpack_require__(396),
+	  Sidebar: __webpack_require__(397),
+	  Split: __webpack_require__(398),
+	  Table: __webpack_require__(399),
+	  TableRow: __webpack_require__(400),
+	  Tiles: __webpack_require__(351),
+	  Tile: __webpack_require__(363),
+	  Title: __webpack_require__(349),
+	  Topology: __webpack_require__(401),
+	  Video: __webpack_require__(410),
+	  Object: __webpack_require__(414),
+	  TBD: __webpack_require__(415),
 	  Icons: {
-	    Calendar: __webpack_require__(415),
-	    Clear: __webpack_require__(416),
-	    DragHandle: __webpack_require__(417),
-	    Edit: __webpack_require__(418),
-	    Facebook: __webpack_require__(419),
-	    Filter: __webpack_require__(420),
-	    Grommet: __webpack_require__(421),
-	    Help: __webpack_require__(422),
-	    Left: __webpack_require__(423),
-	    LinkedIn: __webpack_require__(424),
-	    Mail: __webpack_require__(425),
-	    More: __webpack_require__(426),
-	    Person: __webpack_require__(427),
-	    Right: __webpack_require__(428),
-	    Search: __webpack_require__(429),
-	    SearchPlus: __webpack_require__(430),
-	    Spinning: __webpack_require__(361),
-	    Status: __webpack_require__(401),
-	    Twitter: __webpack_require__(431),
-	    World: __webpack_require__(432),
-	    Base: __webpack_require__(433)
+	    Calendar: __webpack_require__(416),
+	    Clear: __webpack_require__(417),
+	    DragHandle: __webpack_require__(418),
+	    Edit: __webpack_require__(419),
+	    Facebook: __webpack_require__(420),
+	    Filter: __webpack_require__(421),
+	    Grommet: __webpack_require__(422),
+	    Help: __webpack_require__(423),
+	    Left: __webpack_require__(424),
+	    LinkedIn: __webpack_require__(425),
+	    Mail: __webpack_require__(426),
+	    More: __webpack_require__(427),
+	    Person: __webpack_require__(428),
+	    Right: __webpack_require__(429),
+	    Search: __webpack_require__(430),
+	    SearchPlus: __webpack_require__(431),
+	    Spinning: __webpack_require__(360),
+	    Status: __webpack_require__(402),
+	    Twitter: __webpack_require__(432),
+	    World: __webpack_require__(433),
+	    Base: __webpack_require__(434)
 	  },
 	  // Mixins
 	  Mixins: {
@@ -138,7 +138,7 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -162,7 +162,7 @@ var Grommet =
 
 	var CLASS_ROOT = "anchor";
 
-	var Anchor = (function (_Component) {
+	var Anchor = function (_Component) {
 	  _inherits(Anchor, _Component);
 
 	  function Anchor() {
@@ -212,7 +212,7 @@ var Grommet =
 	  }]);
 
 	  return Anchor;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Anchor;
 
@@ -243,7 +243,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -263,7 +267,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -310,7 +314,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -321,12 +327,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'link-next-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 4 */
@@ -334,7 +339,7 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -359,7 +364,7 @@ var Grommet =
 	// IntlProvider. The hope is that react-intl will change to obviate the
 	// need for this component.
 
-	var GrommetFormattedMessage = (function (_Component) {
+	var GrommetFormattedMessage = function (_Component) {
 	  _inherits(GrommetFormattedMessage, _Component);
 
 	  function GrommetFormattedMessage() {
@@ -388,7 +393,7 @@ var Grommet =
 	  }]);
 
 	  return GrommetFormattedMessage;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = GrommetFormattedMessage;
 
@@ -4599,7 +4604,7 @@ var Grommet =
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -4639,7 +4644,7 @@ var Grommet =
 	  Intl.DateTimeFormat = IntlPolyfill.DateTimeFormat;
 	}
 
-	var App = (function (_Component) {
+	var App = function (_Component) {
 	  _inherits(App, _Component);
 
 	  function App(props, context) {
@@ -4692,7 +4697,7 @@ var Grommet =
 	  }]);
 
 	  return App;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = App;
 
@@ -5069,7 +5074,7 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -5105,7 +5110,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var SkipLinks = (function (_Component) {
+	var SkipLinks = function (_Component) {
 	  _inherits(SkipLinks, _Component);
 
 	  function SkipLinks(props, context) {
@@ -5179,7 +5184,7 @@ var Grommet =
 	    key: 'render',
 	    value: function render() {
 
-	      var anchorElements = this.state.anchors.map((function (anchor, index) {
+	      var anchorElements = this.state.anchors.map(function (anchor, index) {
 	        return _react2.default.createElement(
 	          'a',
 	          { tabIndex: '0',
@@ -5190,7 +5195,7 @@ var Grommet =
 	            key: anchor.id },
 	          anchor.label
 	        );
-	      }).bind(this));
+	      }.bind(this));
 
 	      var menuComponent;
 	      if (anchorElements.length > 0) {
@@ -5219,7 +5224,7 @@ var Grommet =
 	  }]);
 
 	  return SkipLinks;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = SkipLinks;
 	module.exports = exports['default'];
@@ -21693,15 +21698,21 @@ var Grommet =
 	 * @typechecks
 	 */
 
+	/* eslint-disable fb-www/typeof-undefined */
+
 	/**
 	 * Same as document.activeElement but wraps in a try-catch block. In IE it is
 	 * not safe to call document.activeElement if there is nothing focused.
 	 *
-	 * The activeElement will be null only if the document body is not yet defined.
+	 * The activeElement will be null only if the document or document body is not
+	 * yet defined.
 	 */
-	"use strict";
+	'use strict';
 
 	function getActiveElement() /*?DOMElement*/{
+	  if (typeof document === 'undefined') {
+	    return null;
+	  }
 	  try {
 	    return document.activeElement || document.body;
 	  } catch (e) {
@@ -23700,7 +23711,7 @@ var Grommet =
 
 	'use strict';
 
-	module.exports = '0.14.5';
+	module.exports = '0.14.6';
 
 /***/ },
 /* 194 */
@@ -23731,7 +23742,7 @@ var Grommet =
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -23771,7 +23782,7 @@ var Grommet =
 
 	var CLASS_ROOT = "layer";
 
-	var LayerContents = (function (_Component) {
+	var LayerContents = function (_Component) {
 	  _inherits(LayerContents, _Component);
 
 	  function LayerContents() {
@@ -23866,7 +23877,7 @@ var Grommet =
 	  }]);
 
 	  return LayerContents;
-	})(_react.Component);
+	}(_react.Component);
 
 	LayerContents.propTypes = {
 	  closer: _react.PropTypes.oneOfType([_react.PropTypes.node, _react.PropTypes.bool]),
@@ -23889,7 +23900,7 @@ var Grommet =
 	  store: _react.PropTypes.object
 	};
 
-	var Layer = (function (_Component2) {
+	var Layer = function (_Component2) {
 	  _inherits(Layer, _Component2);
 
 	  function Layer() {
@@ -23968,11 +23979,11 @@ var Grommet =
 	      this._element.setAttribute('aria-hidden', hideOverlay);
 
 	      // refactor
-	      Array.prototype.forEach.call(document.body.childNodes, (function (currentChild) {
+	      Array.prototype.forEach.call(document.body.childNodes, function (currentChild) {
 	        if (currentChild !== this._element && currentChild.nodeType === 1 && currentChild.id !== 'skip-link-layer' && currentChild.tagName.toLowerCase() !== 'script') {
 	          currentChild.setAttribute('aria-hidden', !hideOverlay);
 	        }
-	      }).bind(this));
+	      }.bind(this));
 	    }
 	  }, {
 	    key: '_renderLayer',
@@ -24004,7 +24015,7 @@ var Grommet =
 	  }]);
 
 	  return Layer;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Layer;
 
@@ -24035,7 +24046,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -24055,7 +24070,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -24102,7 +24117,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -24113,12 +24130,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'close-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 197 */
@@ -24366,7 +24382,7 @@ var Grommet =
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -24386,7 +24402,7 @@ var Grommet =
 
 	var CLASS_ROOT = "button";
 
-	var Button = (function (_Component) {
+	var Button = function (_Component) {
 	  _inherits(Button, _Component);
 
 	  function Button() {
@@ -24449,7 +24465,7 @@ var Grommet =
 	  }]);
 
 	  return Button;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Button;
 
@@ -24478,7 +24494,7 @@ var Grommet =
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -24541,7 +24557,7 @@ var Grommet =
 	// We have a separate module for the drop component
 	// so we can transfer the router context.
 
-	var MenuDrop = (function (_Component) {
+	var MenuDrop = function (_Component) {
 	  _inherits(MenuDrop, _Component);
 
 	  function MenuDrop() {
@@ -24685,7 +24701,7 @@ var Grommet =
 	  }]);
 
 	  return MenuDrop;
-	})(_react.Component);
+	}(_react.Component);
 
 	MenuDrop.propTypes = _extends({
 	  control: _react.PropTypes.node,
@@ -24703,7 +24719,7 @@ var Grommet =
 	  router: _react.PropTypes.func
 	};
 
-	var Menu = (function (_Component2) {
+	var Menu = function (_Component2) {
 	  _inherits(Menu, _Component2);
 
 	  function Menu(props) {
@@ -24988,7 +25004,7 @@ var Grommet =
 	  }]);
 
 	  return Menu;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Menu;
 
@@ -26254,7 +26270,9 @@ var Grommet =
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26278,8 +26296,6 @@ var Grommet =
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -26288,7 +26304,7 @@ var Grommet =
 
 	var CLASS_ROOT = "box";
 
-	var Box = (function (_Component) {
+	var Box = function (_Component) {
 	  _inherits(Box, _Component);
 
 	  function Box() {
@@ -26301,11 +26317,11 @@ var Grommet =
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      if (this.props.onClick) {
-	        var clickCallback = (function () {
+	        var clickCallback = function () {
 	          if (this.refs.boxContainer === document.activeElement) {
 	            this.props.onClick();
 	          }
-	        }).bind(this);
+	        }.bind(this);
 
 	        _KeyboardAccelerators2.default.startListeningToKeyboard(this, {
 	          enter: clickCallback,
@@ -26422,7 +26438,7 @@ var Grommet =
 	  }]);
 
 	  return Box;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Box;
 
@@ -26444,7 +26460,7 @@ var Grommet =
 	  })]),
 	  reverse: _react.PropTypes.bool,
 	  responsive: _react.PropTypes.bool,
-	  separator: _react.PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
+	  separator: _react.PropTypes.oneOf(['top', 'bottom', 'left', 'right', 'horizontal', 'vertical', 'all']),
 	  tag: _react.PropTypes.string,
 	  textAlign: _react.PropTypes.oneOf(['left', 'center', 'right']),
 	  texture: _react.PropTypes.oneOfType([_react.PropTypes.node, _react.PropTypes.string]),
@@ -26494,7 +26510,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -26514,7 +26534,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -26563,7 +26583,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -26574,12 +26596,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'more-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 233 */
@@ -26587,7 +26608,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -26607,7 +26632,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -26654,7 +26679,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -26665,12 +26692,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'down-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 234 */
@@ -30016,7 +30042,7 @@ var Grommet =
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -30058,21 +30084,21 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Next = __webpack_require__(244);
+	var _LinkNext = __webpack_require__(3);
 
-	var _Next2 = _interopRequireDefault(_Next);
+	var _LinkNext2 = _interopRequireDefault(_LinkNext);
 
-	var _Previous = __webpack_require__(245);
+	var _LinkPrevious = __webpack_require__(244);
 
-	var _Previous2 = _interopRequireDefault(_Previous);
+	var _LinkPrevious2 = _interopRequireDefault(_LinkPrevious);
 
-	var _Up = __webpack_require__(246);
+	var _LinkUp = __webpack_require__(245);
 
-	var _Up2 = _interopRequireDefault(_Up);
+	var _LinkUp2 = _interopRequireDefault(_LinkUp);
 
-	var _Down = __webpack_require__(233);
+	var _LinkDown = __webpack_require__(246);
 
-	var _Down2 = _interopRequireDefault(_Down);
+	var _LinkDown2 = _interopRequireDefault(_LinkDown);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30087,7 +30113,7 @@ var Grommet =
 	var CLASS_ROOT = "article";
 	var DEFAULT_PLAY_INTERVAL = 10000; // 10s
 
-	var Article = (function (_Component) {
+	var Article = function (_Component) {
 	  _inherits(Article, _Component);
 
 	  function Article() {
@@ -30152,9 +30178,9 @@ var Grommet =
 	        // until he stops expressing such interest.
 	        clearInterval(this._wheelTimer);
 	        clearInterval(this._wheelLongTimer);
-	        this._wheelLongTimer = setTimeout((function () {
+	        this._wheelLongTimer = setTimeout(function () {
 	          this._wheelLongTimer = null;
-	        }).bind(this), 2000);
+	        }.bind(this), 2000);
 	      } else if (!this._wheelLongTimer) {
 	        if (delta > 10) {
 	          clearInterval(this._wheelTimer);
@@ -30236,9 +30262,9 @@ var Grommet =
 	  }, {
 	    key: '_start',
 	    value: function _start() {
-	      this._playTimer = setInterval((function () {
+	      this._playTimer = setInterval(function () {
 	        this._onNext(null, true);
-	      }).bind(this), DEFAULT_PLAY_INTERVAL);
+	      }.bind(this), DEFAULT_PLAY_INTERVAL);
 	      this.setState({ playing: true });
 	    }
 	  }, {
@@ -30291,7 +30317,7 @@ var Grommet =
 	            { key: 'previous', type: 'icon',
 	              className: CONTROL_CLASS_PREFIX + "left",
 	              onClick: this._onPrevious },
-	            _react2.default.createElement(_Previous2.default, null)
+	            _react2.default.createElement(_LinkPrevious2.default, { size: 'large' })
 	          ));
 	        }
 	        if (this.state.activeIndex < CHILD_COUNT) {
@@ -30300,7 +30326,7 @@ var Grommet =
 	            { key: 'next', type: 'icon',
 	              className: CONTROL_CLASS_PREFIX + "right",
 	              onClick: this._onNext },
-	            _react2.default.createElement(_Next2.default, null)
+	            _react2.default.createElement(_LinkNext2.default, { size: 'large' })
 	          ));
 	        }
 	      } else {
@@ -30310,7 +30336,7 @@ var Grommet =
 	            { key: 'previous', type: 'icon',
 	              className: CONTROL_CLASS_PREFIX + "up",
 	              onClick: this._onPrevious },
-	            _react2.default.createElement(_Up2.default, null)
+	            _react2.default.createElement(_LinkUp2.default, { size: 'large' })
 	          ));
 	        }
 	        if (this.state.activeIndex < CHILD_COUNT) {
@@ -30319,7 +30345,7 @@ var Grommet =
 	            { key: 'next', type: 'icon',
 	              className: CONTROL_CLASS_PREFIX + "down",
 	              onClick: this._onNext },
-	            _react2.default.createElement(_Down2.default, null)
+	            _react2.default.createElement(_LinkDown2.default, { size: 'large' })
 	          ));
 	        }
 	      }
@@ -30359,7 +30385,7 @@ var Grommet =
 	  }]);
 
 	  return Article;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Article;
 
@@ -30406,7 +30432,7 @@ var Grommet =
 	    var start = component[property];
 	    var position = start + delta;
 	    var step = 1;
-	    this._scrollToTimer = setInterval((function () {
+	    this._scrollToTimer = setInterval(function () {
 	      var next;
 	      var easing = this._easeInOutQuad(step / SCROLL_STEPS);
 	      if (position > start) {
@@ -30424,7 +30450,7 @@ var Grommet =
 	          component[property] = next;
 	        }, 200);
 	      }
-	    }).bind(this), 8);
+	    }.bind(this), 8);
 	  }
 	};
 	module.exports = exports['default'];
@@ -30435,7 +30461,7 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -30453,7 +30479,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var SkipLinkAnchor = (function (_Component) {
+	var SkipLinkAnchor = function (_Component) {
 	  _inherits(SkipLinkAnchor, _Component);
 
 	  function SkipLinkAnchor() {
@@ -30476,7 +30502,7 @@ var Grommet =
 	  }]);
 
 	  return SkipLinkAnchor;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = SkipLinkAnchor;
 
@@ -30491,7 +30517,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -30511,7 +30541,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -30523,7 +30553,7 @@ var Grommet =
 	  _createClass(Icon, [{
 	    key: 'render',
 	    value: function render() {
-	      var classes = [CLASS_ROOT, CLASS_ROOT + '-next'];
+	      var classes = [CLASS_ROOT, CLASS_ROOT + '-link-previous'];
 	      if (this.props.size) {
 	        classes.push(CLASS_ROOT + "--" + this.props.size);
 	      } else if (this.props.large) {
@@ -30536,7 +30566,7 @@ var Grommet =
 	        classes.push(this.props.className);
 	      }
 
-	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "next";
+	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-previous";
 	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
 
 	      return _react2.default.createElement(
@@ -30549,16 +30579,18 @@ var Grommet =
 	        ),
 	        _react2.default.createElement(
 	          'g',
-	          { id: 'next' },
-	          _react2.default.createElement('rect', { id: '_x2E_svg_27_', x: '0', y: '0', fill: 'none', width: '24', height: '24' }),
-	          _react2.default.createElement('polyline', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', points: '8,1.2101 19,12.2101 8,23.2101 \t' })
+	          { id: 'link-previous' },
+	          _react2.default.createElement('rect', { id: '_x2E_svg_250_', y: '0', fill: 'none', width: '24', height: '24' }),
+	          _react2.default.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', d: 'M11.1397,20l-8-8l8-8 M3.1397,12h19' })
 	        )
 	      );
 	    }
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -30569,12 +30601,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'link-previous-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 245 */
@@ -30582,7 +30613,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -30602,7 +30637,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -30614,7 +30649,7 @@ var Grommet =
 	  _createClass(Icon, [{
 	    key: 'render',
 	    value: function render() {
-	      var classes = [CLASS_ROOT, CLASS_ROOT + '-previous'];
+	      var classes = [CLASS_ROOT, CLASS_ROOT + '-link-up'];
 	      if (this.props.size) {
 	        classes.push(CLASS_ROOT + "--" + this.props.size);
 	      } else if (this.props.large) {
@@ -30627,98 +30662,7 @@ var Grommet =
 	        classes.push(this.props.className);
 	      }
 
-	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "previous";
-	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
-
-	      return _react2.default.createElement(
-	        'svg',
-	        { version: '1.1', viewBox: '0 0 24 25.2071', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	        _react2.default.createElement(
-	          'title',
-	          { id: this.props.a11yTitleId },
-	          a11yTitle
-	        ),
-	        _react2.default.createElement(
-	          'g',
-	          { id: 'previous' },
-	          _react2.default.createElement('rect', { id: '_x2E_svg_262_', y: '1.2071', fill: 'none', width: '24', height: '24' }),
-	          _react2.default.createElement('polyline', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', points: '16.1397,0.7071 5.1397,11.7071 \r 16.1397,22.7071 \t' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Icon;
-	})(_react.Component);
-
-	Icon.propTypes = {
-	  a11yTitle: _react.PropTypes.string,
-	  a11yTitleId: _react.PropTypes.string,
-	  colorIndex: _react.PropTypes.string,
-	  large: _react.PropTypes.bool,
-	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
-	};
-
-	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
-	};
-
-	Icon.icon = true;
-
-	module.exports = Icon;
-
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _FormattedMessage = __webpack_require__(4);
-
-	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = (function (_Component) {
-	  _inherits(Icon, _Component);
-
-	  function Icon() {
-	    _classCallCheck(this, Icon);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
-	  }
-
-	  _createClass(Icon, [{
-	    key: 'render',
-	    value: function render() {
-	      var classes = [CLASS_ROOT, CLASS_ROOT + '-up'];
-	      if (this.props.size) {
-	        classes.push(CLASS_ROOT + "--" + this.props.size);
-	      } else if (this.props.large) {
-	        classes.push(CLASS_ROOT + "--large");
-	      }
-	      if (this.props.colorIndex) {
-	        classes.push("color-index-" + this.props.colorIndex);
-	      }
-	      if (this.props.className) {
-	        classes.push(this.props.className);
-	      }
-
-	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "up";
+	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-up";
 	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
 
 	      return _react2.default.createElement(
@@ -30731,16 +30675,18 @@ var Grommet =
 	        ),
 	        _react2.default.createElement(
 	          'g',
-	          { id: 'up' },
-	          _react2.default.createElement('rect', { id: '_x2E_svg_261_', y: '0', fill: 'none', width: '24', height: '24' }),
-	          _react2.default.createElement('polyline', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', points: '23,14.5 12,3.5 1,14.5 \t' })
+	          { id: 'link-up' },
+	          _react2.default.createElement('rect', { id: '_x2E_svg_15_', x: '0', y: '0', fill: 'none', width: '24', height: '24' }),
+	          _react2.default.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', d: 'M4,10.9448l8-8l8,8 M12,21.9448v-19' })
 	        )
 	      );
 	    }
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -30751,12 +30697,107 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'link-up-title'
 	};
 
 	Icon.icon = true;
+	module.exports = exports['default'];
 
-	module.exports = Icon;
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _FormattedMessage = __webpack_require__(4);
+
+	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = function (_Component) {
+	  _inherits(Icon, _Component);
+
+	  function Icon() {
+	    _classCallCheck(this, Icon);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
+	  }
+
+	  _createClass(Icon, [{
+	    key: 'render',
+	    value: function render() {
+	      var classes = [CLASS_ROOT, CLASS_ROOT + '-link-down'];
+	      if (this.props.size) {
+	        classes.push(CLASS_ROOT + "--" + this.props.size);
+	      } else if (this.props.large) {
+	        classes.push(CLASS_ROOT + "--large");
+	      }
+	      if (this.props.colorIndex) {
+	        classes.push("color-index-" + this.props.colorIndex);
+	      }
+	      if (this.props.className) {
+	        classes.push(this.props.className);
+	      }
+
+	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-down";
+	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
+
+	      return _react2.default.createElement(
+	        'svg',
+	        { version: '1.1', viewBox: '0 0 24 24', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	        _react2.default.createElement(
+	          'title',
+	          { id: this.props.a11yTitleId },
+	          a11yTitle
+	        ),
+	        _react2.default.createElement(
+	          'g',
+	          { id: 'link-down' },
+	          _react2.default.createElement('rect', { id: '_x2E_svg_251_', y: '0', fill: 'none', width: '24', height: '24' }),
+	          _react2.default.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', d: 'M20,13l-8,8l-8-8 M12,21V2' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Icon;
+	}(_react.Component);
+
+	exports.default = Icon;
+
+	Icon.propTypes = {
+	  a11yTitle: _react.PropTypes.string,
+	  a11yTitleId: _react.PropTypes.string,
+	  colorIndex: _react.PropTypes.string,
+	  large: _react.PropTypes.bool,
+	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
+	};
+
+	Icon.defaultProps = {
+	  a11yTitleId: 'link-down-title'
+	};
+
+	Icon.icon = true;
+	module.exports = exports['default'];
 
 /***/ },
 /* 247 */
@@ -30764,7 +30805,7 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -30794,7 +30835,7 @@ var Grommet =
 
 	var _Calendar2 = _interopRequireDefault(_Calendar);
 
-	var _LinkPrevious = __webpack_require__(348);
+	var _LinkPrevious = __webpack_require__(244);
 
 	var _LinkPrevious2 = _interopRequireDefault(_LinkPrevious);
 
@@ -30802,11 +30843,11 @@ var Grommet =
 
 	var _LinkNext2 = _interopRequireDefault(_LinkNext);
 
-	var _Header = __webpack_require__(349);
+	var _Header = __webpack_require__(348);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Title = __webpack_require__(350);
+	var _Title = __webpack_require__(349);
 
 	var _Title2 = _interopRequireDefault(_Title);
 
@@ -30824,7 +30865,7 @@ var Grommet =
 
 	var CLASS_ROOT = "calendar";
 
-	var Calendar = (function (_Component) {
+	var Calendar = function (_Component) {
 	  _inherits(Calendar, _Component);
 
 	  function Calendar(props) {
@@ -31164,7 +31205,7 @@ var Grommet =
 	  }]);
 
 	  return Calendar;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Calendar;
 
@@ -43943,7 +43984,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -43963,7 +44008,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -44010,7 +44055,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -44021,12 +44068,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'calendar-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 348 */
@@ -44034,100 +44080,9 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _FormattedMessage = __webpack_require__(4);
-
-	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = (function (_Component) {
-	  _inherits(Icon, _Component);
-
-	  function Icon() {
-	    _classCallCheck(this, Icon);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
-	  }
-
-	  _createClass(Icon, [{
-	    key: 'render',
-	    value: function render() {
-	      var classes = [CLASS_ROOT, CLASS_ROOT + '-link-previous'];
-	      if (this.props.size) {
-	        classes.push(CLASS_ROOT + "--" + this.props.size);
-	      } else if (this.props.large) {
-	        classes.push(CLASS_ROOT + "--large");
-	      }
-	      if (this.props.colorIndex) {
-	        classes.push("color-index-" + this.props.colorIndex);
-	      }
-	      if (this.props.className) {
-	        classes.push(this.props.className);
-	      }
-
-	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-previous";
-	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
-
-	      return _react2.default.createElement(
-	        'svg',
-	        { version: '1.1', viewBox: '0 0 24 24', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	        _react2.default.createElement(
-	          'title',
-	          { id: this.props.a11yTitleId },
-	          a11yTitle
-	        ),
-	        _react2.default.createElement(
-	          'g',
-	          { id: 'link-previous' },
-	          _react2.default.createElement('rect', { id: '_x2E_svg_250_', y: '0', fill: 'none', width: '24', height: '24' }),
-	          _react2.default.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', d: 'M11.1397,20l-8-8l8-8 M3.1397,12h19' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Icon;
-	})(_react.Component);
-
-	Icon.propTypes = {
-	  a11yTitle: _react.PropTypes.string,
-	  a11yTitleId: _react.PropTypes.string,
-	  colorIndex: _react.PropTypes.string,
-	  large: _react.PropTypes.bool,
-	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
-	};
-
-	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
-	};
-
-	Icon.icon = true;
-
-	module.exports = Icon;
-
-/***/ },
-/* 349 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -44163,7 +44118,7 @@ var Grommet =
 
 	var CLASS_ROOT = "header";
 
-	var Header = (function (_Component) {
+	var Header = function (_Component) {
 	  _inherits(Header, _Component);
 
 	  function Header() {
@@ -44269,7 +44224,7 @@ var Grommet =
 	  }]);
 
 	  return Header;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Header;
 
@@ -44292,12 +44247,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 350 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -44325,7 +44280,7 @@ var Grommet =
 
 	var CLASS_ROOT = "title";
 
-	var Title = (function (_Component) {
+	var Title = function (_Component) {
 	  _inherits(Title, _Component);
 
 	  function Title() {
@@ -44361,7 +44316,7 @@ var Grommet =
 	  }]);
 
 	  return Title;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Title;
 
@@ -44382,12 +44337,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 351 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -44401,11 +44356,11 @@ var Grommet =
 
 	var _Box2 = _interopRequireDefault(_Box);
 
-	var _Tiles = __webpack_require__(352);
+	var _Tiles = __webpack_require__(351);
 
 	var _Tiles2 = _interopRequireDefault(_Tiles);
 
-	var _Tile = __webpack_require__(364);
+	var _Tile = __webpack_require__(363);
 
 	var _Tile2 = _interopRequireDefault(_Tile);
 
@@ -44413,11 +44368,11 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Previous = __webpack_require__(245);
+	var _Previous = __webpack_require__(364);
 
 	var _Previous2 = _interopRequireDefault(_Previous);
 
-	var _Next = __webpack_require__(244);
+	var _Next = __webpack_require__(365);
 
 	var _Next2 = _interopRequireDefault(_Next);
 
@@ -44431,7 +44386,7 @@ var Grommet =
 
 	var CLASS_ROOT = "carousel";
 
-	var Carousel = (function (_Component) {
+	var Carousel = function (_Component) {
 	  _inherits(Carousel, _Component);
 
 	  function Carousel(props) {
@@ -44479,7 +44434,7 @@ var Grommet =
 	  }, {
 	    key: '_setSlideInterval',
 	    value: function _setSlideInterval() {
-	      this._slideAnimation = setInterval((function () {
+	      this._slideAnimation = setInterval(function () {
 	        var activeIndex = this.state.activeIndex;
 	        var numSlides = this.props.children.length;
 
@@ -44490,7 +44445,7 @@ var Grommet =
 	        if (!this.props.infinite && activeIndex === numSlides - 1) {
 	          clearInterval(this._slideAnimation);
 	        }
-	      }).bind(this), this.props.autoplaySpeed);
+	      }.bind(this), this.props.autoplaySpeed);
 	    }
 	  }, {
 	    key: '_onSelect',
@@ -44653,7 +44608,7 @@ var Grommet =
 	  }]);
 
 	  return Carousel;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Carousel;
 
@@ -44673,14 +44628,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 352 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -44692,7 +44647,7 @@ var Grommet =
 
 	var _reactDom = __webpack_require__(50);
 
-	var _isEqual = __webpack_require__(353);
+	var _isEqual = __webpack_require__(352);
 
 	var _isEqual2 = _interopRequireDefault(_isEqual);
 
@@ -44712,11 +44667,11 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Spinning = __webpack_require__(361);
+	var _Spinning = __webpack_require__(360);
 
 	var _Spinning2 = _interopRequireDefault(_Spinning);
 
-	var _LinkPrevious = __webpack_require__(348);
+	var _LinkPrevious = __webpack_require__(244);
 
 	var _LinkPrevious2 = _interopRequireDefault(_LinkPrevious);
 
@@ -44728,11 +44683,11 @@ var Grommet =
 
 	var _Scroll2 = _interopRequireDefault(_Scroll);
 
-	var _InfiniteScroll = __webpack_require__(362);
+	var _InfiniteScroll = __webpack_require__(361);
 
 	var _InfiniteScroll2 = _interopRequireDefault(_InfiniteScroll);
 
-	var _Selection = __webpack_require__(363);
+	var _Selection = __webpack_require__(362);
 
 	var _Selection2 = _interopRequireDefault(_Selection);
 
@@ -44747,7 +44702,7 @@ var Grommet =
 	var CLASS_ROOT = "tiles";
 	var SELECTED_CLASS = "tile--selected";
 
-	var Tiles = (function (_Component) {
+	var Tiles = function (_Component) {
 	  _inherits(Tiles, _Component);
 
 	  function Tiles(props) {
@@ -44911,10 +44866,6 @@ var Grommet =
 	  }, {
 	    key: '_onClick',
 	    value: function _onClick(event) {
-	      if (!this.props.selectable) {
-	        return;
-	      }
-
 	      var selected = _Selection2.default.onClick(event, {
 	        containerElement: (0, _reactDom.findDOMNode)(this.refs.tiles),
 	        childSelector: '.tile',
@@ -44970,13 +44921,18 @@ var Grommet =
 	        );
 	      }
 
+	      var onClickHandler = undefined;
+	      if (this.props.selectable) {
+	        onClickHandler = this._onClick;
+	      }
+
 	      var contents = _react2.default.createElement(
 	        _Box2.default,
 	        _extends({ ref: 'tiles' }, other, {
 	          wrap: this.props.direction ? false : true,
 	          direction: this.props.direction ? this.props.direction : 'row',
 	          className: classes.join(' '),
-	          onClick: this._onClick }),
+	          onClick: onClickHandler }),
 	        this.props.children,
 	        more
 	      );
@@ -45014,7 +44970,7 @@ var Grommet =
 	  }]);
 
 	  return Tiles;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Tiles;
 
@@ -45035,10 +44991,10 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 353 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqual = __webpack_require__(354),
+	var baseIsEqual = __webpack_require__(353),
 	    bindCallback = __webpack_require__(215);
 
 	/**
@@ -45095,10 +45051,10 @@ var Grommet =
 
 
 /***/ },
-/* 354 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqualDeep = __webpack_require__(355),
+	var baseIsEqualDeep = __webpack_require__(354),
 	    isObject = __webpack_require__(214),
 	    isObjectLike = __webpack_require__(209);
 
@@ -45129,14 +45085,14 @@ var Grommet =
 
 
 /***/ },
-/* 355 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var equalArrays = __webpack_require__(356),
-	    equalByTag = __webpack_require__(358),
-	    equalObjects = __webpack_require__(359),
+	var equalArrays = __webpack_require__(355),
+	    equalByTag = __webpack_require__(357),
+	    equalObjects = __webpack_require__(358),
 	    isArray = __webpack_require__(210),
-	    isTypedArray = __webpack_require__(360);
+	    isTypedArray = __webpack_require__(359);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]',
@@ -45237,10 +45193,10 @@ var Grommet =
 
 
 /***/ },
-/* 356 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arraySome = __webpack_require__(357);
+	var arraySome = __webpack_require__(356);
 
 	/**
 	 * A specialized version of `baseIsEqualDeep` for arrays with support for
@@ -45294,7 +45250,7 @@ var Grommet =
 
 
 /***/ },
-/* 357 */
+/* 356 */
 /***/ function(module, exports) {
 
 	/**
@@ -45323,7 +45279,7 @@ var Grommet =
 
 
 /***/ },
-/* 358 */
+/* 357 */
 /***/ function(module, exports) {
 
 	/** `Object#toString` result references. */
@@ -45377,7 +45333,7 @@ var Grommet =
 
 
 /***/ },
-/* 359 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var keys = __webpack_require__(226);
@@ -45450,7 +45406,7 @@ var Grommet =
 
 
 /***/ },
-/* 360 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var isLength = __webpack_require__(208),
@@ -45530,12 +45486,12 @@ var Grommet =
 
 
 /***/ },
-/* 361 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -45555,7 +45511,7 @@ var Grommet =
 
 	var CLASS_ROOT = "icon-spinning";
 
-	var Spinning = (function (_Component) {
+	var Spinning = function (_Component) {
 	  _inherits(Spinning, _Component);
 
 	  function Spinning() {
@@ -45584,13 +45540,13 @@ var Grommet =
 	  }]);
 
 	  return Spinning;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Spinning;
 	module.exports = exports['default'];
 
 /***/ },
-/* 362 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -45676,7 +45632,7 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 363 */
+/* 362 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45837,14 +45793,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 364 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -45876,7 +45832,7 @@ var Grommet =
 
 	var CLASS_ROOT = "tile";
 
-	var Tile = (function (_Component) {
+	var Tile = function (_Component) {
 	  _inherits(Tile, _Component);
 
 	  function Tile() {
@@ -45915,7 +45871,7 @@ var Grommet =
 	  }]);
 
 	  return Tile;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Tile;
 
@@ -45934,12 +45890,204 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _FormattedMessage = __webpack_require__(4);
+
+	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = function (_Component) {
+	  _inherits(Icon, _Component);
+
+	  function Icon() {
+	    _classCallCheck(this, Icon);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
+	  }
+
+	  _createClass(Icon, [{
+	    key: 'render',
+	    value: function render() {
+	      var classes = [CLASS_ROOT, CLASS_ROOT + '-previous'];
+	      if (this.props.size) {
+	        classes.push(CLASS_ROOT + "--" + this.props.size);
+	      } else if (this.props.large) {
+	        classes.push(CLASS_ROOT + "--large");
+	      }
+	      if (this.props.colorIndex) {
+	        classes.push("color-index-" + this.props.colorIndex);
+	      }
+	      if (this.props.className) {
+	        classes.push(this.props.className);
+	      }
+
+	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "previous";
+	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
+
+	      return _react2.default.createElement(
+	        'svg',
+	        { version: '1.1', viewBox: '0 0 24 25.2071', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	        _react2.default.createElement(
+	          'title',
+	          { id: this.props.a11yTitleId },
+	          a11yTitle
+	        ),
+	        _react2.default.createElement(
+	          'g',
+	          { id: 'previous' },
+	          _react2.default.createElement('rect', { id: '_x2E_svg_262_', y: '1.2071', fill: 'none', width: '24', height: '24' }),
+	          _react2.default.createElement('polyline', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', points: '16.1397,0.7071 5.1397,11.7071 \r 16.1397,22.7071 \t' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Icon;
+	}(_react.Component);
+
+	exports.default = Icon;
+
+	Icon.propTypes = {
+	  a11yTitle: _react.PropTypes.string,
+	  a11yTitleId: _react.PropTypes.string,
+	  colorIndex: _react.PropTypes.string,
+	  large: _react.PropTypes.bool,
+	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
+	};
+
+	Icon.defaultProps = {
+	  a11yTitleId: 'previous-title'
+	};
+
+	Icon.icon = true;
+	module.exports = exports['default'];
+
+/***/ },
 /* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _FormattedMessage = __webpack_require__(4);
+
+	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = function (_Component) {
+	  _inherits(Icon, _Component);
+
+	  function Icon() {
+	    _classCallCheck(this, Icon);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
+	  }
+
+	  _createClass(Icon, [{
+	    key: 'render',
+	    value: function render() {
+	      var classes = [CLASS_ROOT, CLASS_ROOT + '-next'];
+	      if (this.props.size) {
+	        classes.push(CLASS_ROOT + "--" + this.props.size);
+	      } else if (this.props.large) {
+	        classes.push(CLASS_ROOT + "--large");
+	      }
+	      if (this.props.colorIndex) {
+	        classes.push("color-index-" + this.props.colorIndex);
+	      }
+	      if (this.props.className) {
+	        classes.push(this.props.className);
+	      }
+
+	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "next";
+	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
+
+	      return _react2.default.createElement(
+	        'svg',
+	        { version: '1.1', viewBox: '0 0 24 24', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	        _react2.default.createElement(
+	          'title',
+	          { id: this.props.a11yTitleId },
+	          a11yTitle
+	        ),
+	        _react2.default.createElement(
+	          'g',
+	          { id: 'next' },
+	          _react2.default.createElement('rect', { id: '_x2E_svg_27_', x: '0', y: '0', fill: 'none', width: '24', height: '24' }),
+	          _react2.default.createElement('polyline', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', points: '8,1.2101 19,12.2101 8,23.2101 \t' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Icon;
+	}(_react.Component);
+
+	exports.default = Icon;
+
+	Icon.propTypes = {
+	  a11yTitle: _react.PropTypes.string,
+	  a11yTitleId: _react.PropTypes.string,
+	  colorIndex: _react.PropTypes.string,
+	  large: _react.PropTypes.bool,
+	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
+	};
+
+	Icon.defaultProps = {
+	  a11yTitleId: 'next-title'
+	};
+
+	Icon.icon = true;
+	module.exports = exports['default'];
+
+/***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -45953,7 +46101,7 @@ var Grommet =
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _Legend = __webpack_require__(366);
+	var _Legend = __webpack_require__(367);
 
 	var _Legend2 = _interopRequireDefault(_Legend);
 
@@ -45985,7 +46133,7 @@ var Grommet =
 	var SPARKLINE_BAR_PADDING = 1;
 	var POINT_RADIUS = 6;
 
-	var Chart = (function (_Component) {
+	var Chart = function (_Component) {
 	  _inherits(Chart, _Component);
 
 	  function Chart(props) {
@@ -46014,7 +46162,9 @@ var Grommet =
 	      if (this.props.legend) {
 	        this._keyboardHandlers = {
 	          left: this._onRequestForPreviousLegend,
-	          right: this._onRequestForNextLegend
+	          up: this._onRequestForPreviousLegend,
+	          right: this._onRequestForNextLegend,
+	          down: this._onRequestForNextLegend
 	        };
 	        _KeyboardAccelerators2.default.startListeningToKeyboard(this, this._keyboardHandlers);
 	      }
@@ -46043,8 +46193,7 @@ var Grommet =
 	  }, {
 	    key: '_onRequestForNextLegend',
 	    value: function _onRequestForNextLegend(e) {
-	      e.stopPropagation();
-	      e.stopImmediatePropagation();
+	      e.preventDefault();
 	      if (document.activeElement === this.refs.chart) {
 
 	        var totalBandCount = _reactDom2.default.findDOMNode(this.refs.front).childNodes.length;
@@ -46058,7 +46207,8 @@ var Grommet =
 	    }
 	  }, {
 	    key: '_onRequestForPreviousLegend',
-	    value: function _onRequestForPreviousLegend() {
+	    value: function _onRequestForPreviousLegend(e) {
+	      e.preventDefault();
 	      if (document.activeElement === this.refs.chart) {
 
 	        var totalBandCount = _reactDom2.default.findDOMNode(this.refs.front).childNodes.length;
@@ -46584,7 +46734,7 @@ var Grommet =
 	      }
 	      var priorPosition = null;
 	      var activePosition = null;
-	      if (this.state.activeXIndex >= 0) {
+	      if (this.state.activeXIndex >= 0 && bounds.xAxis.data.length > this.state.activeXIndex) {
 	        activePosition = this._labelPosition(bounds.xAxis.data[this.state.activeXIndex].value, bounds);
 	      }
 	      var lastPosition = null;
@@ -46940,7 +47090,7 @@ var Grommet =
 	  }]);
 
 	  return Chart;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Chart;
 
@@ -46962,6 +47112,7 @@ var Grommet =
 	    label: _react.PropTypes.string,
 	    values: _react.PropTypes.arrayOf(_react.PropTypes.arrayOf(_react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.object // Date
 	    ]))).isRequired,
+	    units: _react.PropTypes.string,
 	    colorIndex: _react.PropTypes.string
 	  })).isRequired,
 	  size: _react.PropTypes.oneOf(['small', 'medium', 'large']),
@@ -47003,12 +47154,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 366 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -47032,7 +47183,7 @@ var Grommet =
 
 	var CLASS_ROOT = "legend";
 
-	var Legend = (function (_Component) {
+	var Legend = function (_Component) {
 	  _inherits(Legend, _Component);
 
 	  function Legend(props) {
@@ -47117,7 +47268,7 @@ var Grommet =
 	            _react2.default.createElement(
 	              'span',
 	              { className: CLASS_ROOT + "__item-units" },
-	              this.props.units
+	              item.units || this.props.units
 	            )
 	          );
 	        }
@@ -47167,7 +47318,7 @@ var Grommet =
 	  }]);
 
 	  return Legend;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Legend;
 
@@ -47190,12 +47341,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 367 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -47215,7 +47366,7 @@ var Grommet =
 
 	var CLASS_ROOT = "check-box";
 
-	var CheckBox = (function (_Component) {
+	var CheckBox = function (_Component) {
 	  _inherits(CheckBox, _Component);
 
 	  function CheckBox() {
@@ -47275,7 +47426,7 @@ var Grommet =
 	  }]);
 
 	  return CheckBox;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = CheckBox;
 
@@ -47293,12 +47444,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 368 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -47308,7 +47459,7 @@ var Grommet =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Legend = __webpack_require__(366);
+	var _Legend = __webpack_require__(367);
 
 	var _Legend2 = _interopRequireDefault(_Legend);
 
@@ -47328,7 +47479,7 @@ var Grommet =
 	var SMALL_HEIGHT = 120;
 	var THIN_HEIGHT = 72;
 
-	var Distribution = (function (_Component) {
+	var Distribution = function (_Component) {
 	  _inherits(Distribution, _Component);
 
 	  function Distribution(props) {
@@ -47639,7 +47790,7 @@ var Grommet =
 	  }]);
 
 	  return Distribution;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Distribution;
 
@@ -47667,14 +47818,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 369 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -47710,7 +47861,7 @@ var Grommet =
 
 	var CLASS_ROOT = "footer";
 
-	var Footer = (function (_Component) {
+	var Footer = function (_Component) {
 	  _inherits(Footer, _Component);
 
 	  function Footer() {
@@ -47755,7 +47906,7 @@ var Grommet =
 	  }]);
 
 	  return Footer;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Footer;
 
@@ -47775,12 +47926,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 370 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -47796,8 +47949,6 @@ var Grommet =
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -47806,7 +47957,7 @@ var Grommet =
 
 	var CLASS_ROOT = "form";
 
-	var Form = (function (_Component) {
+	var Form = function (_Component) {
 	  _inherits(Form, _Component);
 
 	  function Form() {
@@ -47829,9 +47980,9 @@ var Grommet =
 	        if (typeof this.props.pad === 'string') {
 	          classes.push(CLASS_ROOT + "--pad-" + this.props.pad);
 	        } else if (_typeof(this.props.pad) === 'object') {
-	          (0, _keys2.default)(this.props.pad).forEach((function (key) {
+	          (0, _keys2.default)(this.props.pad).forEach(function (key) {
 	            classes.push(CLASS_ROOT + '--pad-' + key + '-' + this.props.pad[key]);
-	          }).bind(this));
+	          }.bind(this));
 	        }
 	      }
 	      if (this.props.className) {
@@ -47846,7 +47997,7 @@ var Grommet =
 	  }]);
 
 	  return Form;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Form;
 
@@ -47870,12 +48021,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 371 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -47895,7 +48046,7 @@ var Grommet =
 
 	var CLASS_ROOT = "form-field";
 
-	var FormField = (function (_Component) {
+	var FormField = function (_Component) {
 	  _inherits(FormField, _Component);
 
 	  function FormField() {
@@ -48006,7 +48157,7 @@ var Grommet =
 	  }]);
 
 	  return FormField;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = FormField;
 
@@ -48021,12 +48172,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 372 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48044,7 +48195,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var FormFields = (function (_Component) {
+	var FormFields = function (_Component) {
 	  _inherits(FormFields, _Component);
 
 	  function FormFields() {
@@ -48069,18 +48220,18 @@ var Grommet =
 	  }]);
 
 	  return FormFields;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = FormFields;
 	module.exports = exports['default'];
 
 /***/ },
-/* 373 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48100,7 +48251,7 @@ var Grommet =
 
 	var CLASS_ROOT = "headline";
 
-	var Headline = (function (_Component) {
+	var Headline = function (_Component) {
 	  _inherits(Headline, _Component);
 
 	  function Headline() {
@@ -48135,7 +48286,7 @@ var Grommet =
 	  }]);
 
 	  return Headline;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Headline;
 
@@ -48148,12 +48299,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 374 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48173,7 +48324,7 @@ var Grommet =
 
 	var CLASS_ROOT = "image";
 
-	var Image = (function (_Component) {
+	var Image = function (_Component) {
 	  _inherits(Image, _Component);
 
 	  function Image() {
@@ -48203,7 +48354,7 @@ var Grommet =
 	  }]);
 
 	  return Image;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Image;
 
@@ -48215,12 +48366,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 375 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48238,7 +48389,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Label = (function (_Component) {
+	var Label = function (_Component) {
 	  _inherits(Label, _Component);
 
 	  function Label() {
@@ -48276,7 +48427,7 @@ var Grommet =
 	  }]);
 
 	  return Label;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Label;
 
@@ -48287,12 +48438,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 376 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48304,23 +48455,23 @@ var Grommet =
 
 	var _reactIntl = __webpack_require__(5);
 
-	var _isEqual = __webpack_require__(353);
+	var _isEqual = __webpack_require__(352);
 
 	var _isEqual2 = _interopRequireDefault(_isEqual);
 
-	var _Spinning = __webpack_require__(361);
+	var _Spinning = __webpack_require__(360);
 
 	var _Spinning2 = _interopRequireDefault(_Spinning);
 
-	var _InfiniteScroll = __webpack_require__(362);
+	var _InfiniteScroll = __webpack_require__(361);
 
 	var _InfiniteScroll2 = _interopRequireDefault(_InfiniteScroll);
 
-	var _Selection = __webpack_require__(363);
+	var _Selection = __webpack_require__(362);
 
 	var _Selection2 = _interopRequireDefault(_Selection);
 
-	var _ListItem = __webpack_require__(377);
+	var _ListItem = __webpack_require__(378);
 
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 
@@ -48349,7 +48500,7 @@ var Grommet =
 
 	// SchemaListItem is deprecated, use ListItem child components inside a List instead
 
-	var SchemaListItem = (function (_Component) {
+	var SchemaListItem = function (_Component) {
 	  _inherits(SchemaListItem, _Component);
 
 	  function SchemaListItem() {
@@ -48432,7 +48583,7 @@ var Grommet =
 	  }]);
 
 	  return SchemaListItem;
-	})(_react.Component);
+	}(_react.Component);
 
 	SchemaListItem.propTypes = {
 	  direction: _react.PropTypes.oneOf(['row', 'column']),
@@ -48442,7 +48593,7 @@ var Grommet =
 	  selected: _react.PropTypes.bool
 	};
 
-	var List = (function (_Component2) {
+	var List = function (_Component2) {
 	  _inherits(List, _Component2);
 
 	  function List(props) {
@@ -48619,7 +48770,7 @@ var Grommet =
 	  }]);
 
 	  return List;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = List;
 
@@ -48641,14 +48792,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 377 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48680,7 +48831,7 @@ var Grommet =
 
 	var CLASS_ROOT = "list-item";
 
-	var ListItem = (function (_Component) {
+	var ListItem = function (_Component) {
 	  _inherits(ListItem, _Component);
 
 	  function ListItem() {
@@ -48737,7 +48888,7 @@ var Grommet =
 	  }]);
 
 	  return ListItem;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = ListItem;
 
@@ -48757,12 +48908,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 378 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48780,7 +48931,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Login = (function (_Component) {
+	var Login = function (_Component) {
 	  _inherits(Login, _Component);
 
 	  function Login(props, context) {
@@ -48853,7 +49004,7 @@ var Grommet =
 	  }]);
 
 	  return Login;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Login;
 
@@ -48863,12 +49014,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 379 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -48882,15 +49033,15 @@ var Grommet =
 
 	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
 
-	var _Form = __webpack_require__(370);
+	var _Form = __webpack_require__(371);
 
 	var _Form2 = _interopRequireDefault(_Form);
 
-	var _FormField = __webpack_require__(371);
+	var _FormField = __webpack_require__(372);
 
 	var _FormField2 = _interopRequireDefault(_FormField);
 
-	var _CheckBox = __webpack_require__(367);
+	var _CheckBox = __webpack_require__(368);
 
 	var _CheckBox2 = _interopRequireDefault(_CheckBox);
 
@@ -48908,7 +49059,7 @@ var Grommet =
 
 	var CLASS_ROOT = "login-form";
 
-	var LoginForm = (function (_Component) {
+	var LoginForm = function (_Component) {
 	  _inherits(LoginForm, _Component);
 
 	  function LoginForm() {
@@ -49040,7 +49191,7 @@ var Grommet =
 	  }]);
 
 	  return LoginForm;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = LoginForm;
 
@@ -49062,12 +49213,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 380 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -49087,7 +49238,7 @@ var Grommet =
 
 	var CLASS_ROOT = "map";
 
-	var ResourceMap = (function (_Component) {
+	var ResourceMap = function (_Component) {
 	  _inherits(ResourceMap, _Component);
 
 	  function ResourceMap() {
@@ -49270,7 +49421,7 @@ var Grommet =
 	  }]);
 
 	  return ResourceMap;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = ResourceMap;
 
@@ -49293,12 +49444,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 381 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -49312,29 +49465,27 @@ var Grommet =
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _Legend = __webpack_require__(366);
+	var _Legend = __webpack_require__(367);
 
 	var _Legend2 = _interopRequireDefault(_Legend);
 
-	var _Bar = __webpack_require__(382);
+	var _Bar = __webpack_require__(383);
 
 	var _Bar2 = _interopRequireDefault(_Bar);
 
-	var _Spiral = __webpack_require__(385);
+	var _Spiral = __webpack_require__(386);
 
 	var _Spiral2 = _interopRequireDefault(_Spiral);
 
-	var _Circle = __webpack_require__(386);
+	var _Circle = __webpack_require__(387);
 
 	var _Circle2 = _interopRequireDefault(_Circle);
 
-	var _Arc = __webpack_require__(387);
+	var _Arc = __webpack_require__(388);
 
 	var _Arc2 = _interopRequireDefault(_Arc);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -49351,7 +49502,7 @@ var Grommet =
 	  'spiral': _Spiral2.default
 	};
 
-	var Meter = (function (_Component) {
+	var Meter = function (_Component) {
 	  _inherits(Meter, _Component);
 
 	  function Meter(props) {
@@ -49790,7 +49941,7 @@ var Grommet =
 	  }]);
 
 	  return Meter;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Meter;
 
@@ -49845,20 +49996,20 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 382 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
-	var _utils = __webpack_require__(383);
+	var _utils = __webpack_require__(384);
 
-	var _Graphic2 = __webpack_require__(384);
+	var _Graphic2 = __webpack_require__(385);
 
 	var _Graphic3 = _interopRequireDefault(_Graphic2);
 
@@ -49874,7 +50025,7 @@ var Grommet =
 	var BAR_THICKNESS = _utils.baseUnit;
 	var MID_BAR_THICKNESS = BAR_THICKNESS / 2;
 
-	var Bar = (function (_Graphic) {
+	var Bar = function (_Graphic) {
 	  _inherits(Bar, _Graphic);
 
 	  function Bar(props) {
@@ -49946,7 +50097,7 @@ var Grommet =
 	  }]);
 
 	  return Bar;
-	})(_Graphic3.default);
+	}(_Graphic3.default);
 
 	//needed in Graphic.js to fix minification issues
 
@@ -49955,7 +50106,7 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 383 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -50055,14 +50206,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 384 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -50076,7 +50227,7 @@ var Grommet =
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _utils = __webpack_require__(383);
+	var _utils = __webpack_require__(384);
 
 	var _Intl = __webpack_require__(231);
 
@@ -50096,7 +50247,7 @@ var Grommet =
 
 	var CLASS_ROOT = _utils.classRoot;
 
-	var Graphic = (function (_Component) {
+	var Graphic = function (_Component) {
 	  _inherits(Graphic, _Component);
 
 	  function Graphic(props) {
@@ -50116,7 +50267,9 @@ var Grommet =
 	    value: function componentDidMount() {
 	      this._keyboardHandlers = {
 	        left: this._onRequestForPreviousLegend,
-	        right: this._onRequestForNextLegend
+	        up: this._onRequestForPreviousLegend,
+	        right: this._onRequestForNextLegend,
+	        down: this._onRequestForNextLegend
 	      };
 	      _KeyboardAccelerators2.default.startListeningToKeyboard(this, this._keyboardHandlers);
 	    }
@@ -50186,8 +50339,7 @@ var Grommet =
 	  }, {
 	    key: '_onRequestForPreviousLegend',
 	    value: function _onRequestForPreviousLegend(e) {
-	      e.stopPropagation();
-	      e.stopImmediatePropagation();
+	      e.preventDefault();
 	      if (document.activeElement === this.refs.meter) {
 	        var totalValueCount = _reactDom2.default.findDOMNode(this.refs.meterValues).childNodes.length;
 
@@ -50201,8 +50353,7 @@ var Grommet =
 	  }, {
 	    key: '_onRequestForNextLegend',
 	    value: function _onRequestForNextLegend(e) {
-	      e.stopPropagation();
-	      e.stopImmediatePropagation();
+	      e.preventDefault();
 	      if (document.activeElement === this.refs.meter) {
 	        var totalValueCount = _reactDom2.default.findDOMNode(this.refs.meterValues).childNodes.length;
 
@@ -50374,7 +50525,7 @@ var Grommet =
 	  }]);
 
 	  return Graphic;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Graphic;
 
@@ -50399,12 +50550,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 385 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -50414,9 +50565,9 @@ var Grommet =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(383);
+	var _utils = __webpack_require__(384);
 
-	var _Graphic2 = __webpack_require__(384);
+	var _Graphic2 = __webpack_require__(385);
 
 	var _Graphic3 = _interopRequireDefault(_Graphic2);
 
@@ -50436,7 +50587,7 @@ var Grommet =
 	// Allow for active value content next to a spiral meter
 	var SPIRAL_TEXT_PADDING = _utils.baseUnit * 2;
 
-	var Spiral = (function (_Graphic) {
+	var Spiral = function (_Graphic) {
 	  _inherits(Spiral, _Graphic);
 
 	  function Spiral(props) {
@@ -50518,7 +50669,7 @@ var Grommet =
 	  }]);
 
 	  return Spiral;
-	})(_Graphic3.default);
+	}(_Graphic3.default);
 
 	exports.default = Spiral;
 
@@ -50531,20 +50682,20 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 386 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
-	var _utils = __webpack_require__(383);
+	var _utils = __webpack_require__(384);
 
-	var _Graphic2 = __webpack_require__(384);
+	var _Graphic2 = __webpack_require__(385);
 
 	var _Graphic3 = _interopRequireDefault(_Graphic2);
 
@@ -50560,7 +50711,7 @@ var Grommet =
 	var CIRCLE_RADIUS = _utils.baseDimension / 2 - _utils.baseUnit / 2;
 	var RING_THICKNESS = _utils.baseUnit;
 
-	var Circle = (function (_Graphic) {
+	var Circle = function (_Graphic) {
 	  _inherits(Circle, _Graphic);
 
 	  function Circle(props) {
@@ -50602,7 +50753,7 @@ var Grommet =
 	  }]);
 
 	  return Circle;
-	})(_Graphic3.default);
+	}(_Graphic3.default);
 
 	//needed in Graphic.js to fix minification issues
 
@@ -50611,12 +50762,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 387 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -50626,9 +50777,9 @@ var Grommet =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utils = __webpack_require__(383);
+	var _utils = __webpack_require__(384);
 
-	var _Graphic2 = __webpack_require__(384);
+	var _Graphic2 = __webpack_require__(385);
 
 	var _Graphic3 = _interopRequireDefault(_Graphic2);
 
@@ -50655,7 +50806,7 @@ var Grommet =
 	  return d;
 	}
 
-	var Arc = (function (_Graphic) {
+	var Arc = function (_Graphic) {
 	  _inherits(Arc, _Graphic);
 
 	  function Arc(props) {
@@ -50733,18 +50884,18 @@ var Grommet =
 	  }]);
 
 	  return Arc;
-	})(_Graphic3.default);
+	}(_Graphic3.default);
 
 	exports.default = Arc;
 	module.exports = exports['default'];
 
 /***/ },
-/* 388 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -50758,11 +50909,11 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Add = __webpack_require__(389);
+	var _Add = __webpack_require__(390);
 
 	var _Add2 = _interopRequireDefault(_Add);
 
-	var _Subtract = __webpack_require__(390);
+	var _Subtract = __webpack_require__(391);
 
 	var _Subtract2 = _interopRequireDefault(_Subtract);
 
@@ -50776,7 +50927,7 @@ var Grommet =
 
 	var CLASS_ROOT = "number-input";
 
-	var NumberInput = (function (_Component) {
+	var NumberInput = function (_Component) {
 	  _inherits(NumberInput, _Component);
 
 	  function NumberInput() {
@@ -50856,7 +51007,7 @@ var Grommet =
 	  }]);
 
 	  return NumberInput;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = NumberInput;
 
@@ -50875,12 +51026,16 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 389 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -50900,7 +51055,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -50947,7 +51102,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -50958,20 +51115,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'add-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 390 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -50991,7 +51151,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -51038,7 +51198,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -51049,20 +51211,19 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'subtract-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 391 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -51082,7 +51243,7 @@ var Grommet =
 
 	var CLASS_ROOT = "radio-button";
 
-	var RadioButton = (function (_Component) {
+	var RadioButton = function (_Component) {
 	  _inherits(RadioButton, _Component);
 
 	  function RadioButton() {
@@ -51122,7 +51283,7 @@ var Grommet =
 	  }]);
 
 	  return RadioButton;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = RadioButton;
 
@@ -51139,12 +51300,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 392 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -51174,7 +51335,7 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Search = __webpack_require__(393);
+	var _Search = __webpack_require__(394);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
@@ -51188,7 +51349,7 @@ var Grommet =
 
 	var CLASS_ROOT = "search";
 
-	var Search = (function (_Component) {
+	var Search = function (_Component) {
 	  _inherits(Search, _Component);
 
 	  function Search(props) {
@@ -51276,9 +51437,9 @@ var Grommet =
 	        // otherwise the drop will close when the mouse is released.
 	        // Not observable in Safari, 1ms is sufficient for Chrome, Firefox needs 100ms though. :(
 	        // TODO: re-evaluate how to solve this without a timeout.
-	        setTimeout((function () {
+	        setTimeout(function () {
 	          document.addEventListener('click', this._onRemoveDrop);
-	        }).bind(this), 100);
+	        }.bind(this), 100);
 	        _KeyboardAccelerators2.default.startListeningToKeyboard(this, activeKeyboardHandlers);
 
 	        var baseElement;
@@ -51555,7 +51716,7 @@ var Grommet =
 	  }]);
 
 	  return Search;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Search;
 
@@ -51584,12 +51745,16 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 393 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -51609,7 +51774,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -51656,7 +51821,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -51667,20 +51834,19 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'search-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 394 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -51706,7 +51872,7 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Search = __webpack_require__(393);
+	var _Search = __webpack_require__(394);
 
 	var _Search2 = _interopRequireDefault(_Search);
 
@@ -51720,7 +51886,7 @@ var Grommet =
 
 	var CLASS_ROOT = "search-input";
 
-	var SearchInput = (function (_Component) {
+	var SearchInput = function (_Component) {
 	  _inherits(SearchInput, _Component);
 
 	  function SearchInput(props) {
@@ -51951,7 +52117,7 @@ var Grommet =
 	  }]);
 
 	  return SearchInput;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = SearchInput;
 
@@ -51978,14 +52144,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 395 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -52013,7 +52179,7 @@ var Grommet =
 
 	var CLASS_ROOT = "section";
 
-	var Section = (function (_Component) {
+	var Section = function (_Component) {
 	  _inherits(Section, _Component);
 
 	  function Section() {
@@ -52045,7 +52211,7 @@ var Grommet =
 	  }]);
 
 	  return Section;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Section;
 
@@ -52059,14 +52225,14 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 396 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -52098,7 +52264,7 @@ var Grommet =
 
 	var CLASS_ROOT = "sidebar";
 
-	var Sidebar = (function (_Component) {
+	var Sidebar = function (_Component) {
 	  _inherits(Sidebar, _Component);
 
 	  function Sidebar() {
@@ -52134,7 +52300,7 @@ var Grommet =
 	  }]);
 
 	  return Sidebar;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Sidebar;
 
@@ -52151,12 +52317,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 397 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -52176,7 +52342,7 @@ var Grommet =
 
 	var CLASS_ROOT = "split";
 
-	var Split = (function (_Component) {
+	var Split = function (_Component) {
 	  _inherits(Split, _Component);
 
 	  function Split() {
@@ -52307,7 +52473,7 @@ var Grommet =
 	  }]);
 
 	  return Split;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Split;
 
@@ -52326,12 +52492,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 398 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -52341,19 +52507,19 @@ var Grommet =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _isEqual = __webpack_require__(353);
+	var _isEqual = __webpack_require__(352);
 
 	var _isEqual2 = _interopRequireDefault(_isEqual);
 
-	var _Spinning = __webpack_require__(361);
+	var _Spinning = __webpack_require__(360);
 
 	var _Spinning2 = _interopRequireDefault(_Spinning);
 
-	var _InfiniteScroll = __webpack_require__(362);
+	var _InfiniteScroll = __webpack_require__(361);
 
 	var _InfiniteScroll2 = _interopRequireDefault(_InfiniteScroll);
 
-	var _Selection = __webpack_require__(363);
+	var _Selection = __webpack_require__(362);
 
 	var _Selection2 = _interopRequireDefault(_Selection);
 
@@ -52368,7 +52534,7 @@ var Grommet =
 	var CLASS_ROOT = "table";
 	var SELECTED_CLASS = CLASS_ROOT + "-row--selected";
 
-	var Table = (function (_Component) {
+	var Table = function (_Component) {
 	  _inherits(Table, _Component);
 
 	  function Table(props) {
@@ -52580,7 +52746,7 @@ var Grommet =
 	  }]);
 
 	  return Table;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Table;
 
@@ -52594,12 +52760,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 399 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -52619,7 +52785,7 @@ var Grommet =
 
 	var CLASS_ROOT = "table-row";
 
-	var TableRow = (function (_Component) {
+	var TableRow = function (_Component) {
 	  _inherits(TableRow, _Component);
 
 	  function TableRow() {
@@ -52651,7 +52817,7 @@ var Grommet =
 	  }]);
 
 	  return TableRow;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = TableRow;
 
@@ -52662,12 +52828,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 400 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -52679,7 +52845,7 @@ var Grommet =
 
 	var _reactDom = __webpack_require__(50);
 
-	var _Status = __webpack_require__(401);
+	var _Status = __webpack_require__(402);
 
 	var _Status2 = _interopRequireDefault(_Status);
 
@@ -52693,7 +52859,7 @@ var Grommet =
 
 	var CLASS_ROOT = "topology";
 
-	var Label = (function (_Component) {
+	var Label = function (_Component) {
 	  _inherits(Label, _Component);
 
 	  function Label() {
@@ -52714,9 +52880,9 @@ var Grommet =
 	  }]);
 
 	  return Label;
-	})(_react.Component);
+	}(_react.Component);
 
-	var Part = (function (_Component2) {
+	var Part = function (_Component2) {
 	  _inherits(Part, _Component2);
 
 	  function Part() {
@@ -52778,7 +52944,7 @@ var Grommet =
 	  }]);
 
 	  return Part;
-	})(_react.Component);
+	}(_react.Component);
 
 	Part.propTypes = {
 	  align: _react.PropTypes.oneOf(['start', 'center', 'between', 'end', 'stretch']),
@@ -52798,7 +52964,7 @@ var Grommet =
 	  align: 'stretch'
 	};
 
-	var Parts = (function (_Component3) {
+	var Parts = function (_Component3) {
 	  _inherits(Parts, _Component3);
 
 	  function Parts() {
@@ -52863,7 +53029,7 @@ var Grommet =
 	  }]);
 
 	  return Parts;
-	})(_react.Component);
+	}(_react.Component);
 
 	Parts.propTypes = {
 	  align: _react.PropTypes.oneOf(['start', 'center', 'between', 'end', 'stretch']),
@@ -52875,7 +53041,7 @@ var Grommet =
 	  direction: 'column'
 	};
 
-	var Topology = (function (_Component4) {
+	var Topology = function (_Component4) {
 	  _inherits(Topology, _Component4);
 
 	  function Topology() {
@@ -53105,7 +53271,7 @@ var Grommet =
 	  }]);
 
 	  return Topology;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Topology;
 
@@ -53128,12 +53294,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 401 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53143,31 +53309,31 @@ var Grommet =
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _OK = __webpack_require__(402);
+	var _OK = __webpack_require__(403);
 
 	var _OK2 = _interopRequireDefault(_OK);
 
-	var _CriticalStatus = __webpack_require__(403);
+	var _CriticalStatus = __webpack_require__(404);
 
 	var _CriticalStatus2 = _interopRequireDefault(_CriticalStatus);
 
-	var _ErrorStatus = __webpack_require__(404);
+	var _ErrorStatus = __webpack_require__(405);
 
 	var _ErrorStatus2 = _interopRequireDefault(_ErrorStatus);
 
-	var _Warning = __webpack_require__(405);
+	var _Warning = __webpack_require__(406);
 
 	var _Warning2 = _interopRequireDefault(_Warning);
 
-	var _Disabled = __webpack_require__(406);
+	var _Disabled = __webpack_require__(407);
 
 	var _Disabled2 = _interopRequireDefault(_Disabled);
 
-	var _Unknown = __webpack_require__(407);
+	var _Unknown = __webpack_require__(408);
 
 	var _Unknown2 = _interopRequireDefault(_Unknown);
 
-	var _Label = __webpack_require__(408);
+	var _Label = __webpack_require__(409);
 
 	var _Label2 = _interopRequireDefault(_Label);
 
@@ -53181,7 +53347,7 @@ var Grommet =
 
 	var CLASS_ROOT = "status-icon";
 
-	var Status = (function (_Component) {
+	var Status = function (_Component) {
 	  _inherits(Status, _Component);
 
 	  function Status(props, context) {
@@ -53256,7 +53422,7 @@ var Grommet =
 	  }]);
 
 	  return Status;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Status;
 
@@ -53272,12 +53438,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 402 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53299,7 +53465,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var OK = (function (_Component) {
+	var OK = function (_Component) {
 	  _inherits(OK, _Component);
 
 	  function OK() {
@@ -53345,7 +53511,7 @@ var Grommet =
 	  }]);
 
 	  return OK;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = OK;
 
@@ -53355,12 +53521,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 403 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53382,7 +53548,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var CriticalStatus = (function (_Component) {
+	var CriticalStatus = function (_Component) {
 	  _inherits(CriticalStatus, _Component);
 
 	  function CriticalStatus() {
@@ -53430,7 +53596,7 @@ var Grommet =
 	  }]);
 
 	  return CriticalStatus;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = CriticalStatus;
 
@@ -53440,12 +53606,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 404 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53467,7 +53633,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var ErrorStatus = (function (_Component) {
+	var ErrorStatus = function (_Component) {
 	  _inherits(ErrorStatus, _Component);
 
 	  function ErrorStatus() {
@@ -53514,7 +53680,7 @@ var Grommet =
 	  }]);
 
 	  return ErrorStatus;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = ErrorStatus;
 
@@ -53524,12 +53690,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 405 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53551,7 +53717,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Warning = (function (_Component) {
+	var Warning = function (_Component) {
 	  _inherits(Warning, _Component);
 
 	  function Warning() {
@@ -53598,7 +53764,7 @@ var Grommet =
 	  }]);
 
 	  return Warning;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Warning;
 
@@ -53608,12 +53774,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 406 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53635,7 +53801,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Disabled = (function (_Component) {
+	var Disabled = function (_Component) {
 	  _inherits(Disabled, _Component);
 
 	  function Disabled() {
@@ -53681,7 +53847,7 @@ var Grommet =
 	  }]);
 
 	  return Disabled;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Disabled;
 
@@ -53691,12 +53857,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 407 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53718,7 +53884,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Unknown = (function (_Component) {
+	var Unknown = function (_Component) {
 	  _inherits(Unknown, _Component);
 
 	  function Unknown() {
@@ -53765,18 +53931,18 @@ var Grommet =
 	  }]);
 
 	  return Unknown;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Unknown;
 	module.exports = exports['default'];
 
 /***/ },
-/* 408 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53794,7 +53960,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Label = (function (_Component) {
+	var Label = function (_Component) {
 	  _inherits(Label, _Component);
 
 	  function Label() {
@@ -53823,18 +53989,18 @@ var Grommet =
 	  }]);
 
 	  return Label;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Label;
 	module.exports = exports['default'];
 
 /***/ },
-/* 409 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53848,15 +54014,15 @@ var Grommet =
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Play = __webpack_require__(410);
+	var _Play = __webpack_require__(411);
 
 	var _Play2 = _interopRequireDefault(_Play);
 
-	var _Pause = __webpack_require__(411);
+	var _Pause = __webpack_require__(412);
 
 	var _Pause2 = _interopRequireDefault(_Pause);
 
-	var _Refresh = __webpack_require__(412);
+	var _Refresh = __webpack_require__(413);
 
 	var _Refresh2 = _interopRequireDefault(_Refresh);
 
@@ -53870,7 +54036,7 @@ var Grommet =
 
 	var CLASS_ROOT = "video";
 
-	var Video = (function (_Component) {
+	var Video = function (_Component) {
 	  _inherits(Video, _Component);
 
 	  function Video() {
@@ -53909,9 +54075,9 @@ var Grommet =
 	    key: '_onPlaying',
 	    value: function _onPlaying() {
 	      var video = this.refs.video;
-	      this._progressTimer = setInterval((function () {
+	      this._progressTimer = setInterval(function () {
 	        this.setState({ progress: this.state.progress + 0.5 });
-	      }).bind(this), 500);
+	      }.bind(this), 500);
 	      this.setState({ playing: true, progress: video.currentTime, ended: null });
 	    }
 	  }, {
@@ -53943,9 +54109,9 @@ var Grommet =
 	    value: function _onMouseMove() {
 	      this.setState({ interacting: true });
 	      clearTimeout(this._moveTimer);
-	      this._moveTimer = setTimeout((function () {
+	      this._moveTimer = setTimeout(function () {
 	        this.setState({ interacting: false });
-	      }).bind(this), 1000);
+	      }.bind(this), 1000);
 	    }
 	  }, {
 	    key: '_onClickChapter',
@@ -54058,7 +54224,7 @@ var Grommet =
 	  }]);
 
 	  return Video;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Video;
 
@@ -54077,12 +54243,16 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 410 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -54102,7 +54272,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -54149,7 +54319,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -54160,20 +54332,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'play-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 411 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -54193,7 +54368,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -54240,7 +54415,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -54251,20 +54428,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'pause-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 412 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -54284,7 +54464,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -54331,7 +54511,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -54342,20 +54524,21 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'refresh-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 413 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54367,8 +54550,6 @@ var Grommet =
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -54377,7 +54558,7 @@ var Grommet =
 
 	var CLASS_ROOT = "object";
 
-	var GrommetObject = (function (_Component) {
+	var GrommetObject = function (_Component) {
 	  _inherits(GrommetObject, _Component);
 
 	  function GrommetObject() {
@@ -54465,7 +54646,7 @@ var Grommet =
 	  }]);
 
 	  return GrommetObject;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = GrommetObject;
 
@@ -54475,12 +54656,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 414 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54498,7 +54679,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var TBD = (function (_Component) {
+	var TBD = function (_Component) {
 	  _inherits(TBD, _Component);
 
 	  function TBD() {
@@ -54519,18 +54700,18 @@ var Grommet =
 	  }]);
 
 	  return TBD;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = TBD;
 	module.exports = exports['default'];
 
 /***/ },
-/* 415 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54548,7 +54729,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Calendar = (function (_Component) {
+	var Calendar = function (_Component) {
 	  _inherits(Calendar, _Component);
 
 	  function Calendar() {
@@ -54590,18 +54771,18 @@ var Grommet =
 	  }]);
 
 	  return Calendar;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Calendar;
 	module.exports = exports['default'];
 
 /***/ },
-/* 416 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54619,7 +54800,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Clear = (function (_Component) {
+	var Clear = function (_Component) {
 	  _inherits(Clear, _Component);
 
 	  function Clear() {
@@ -54654,18 +54835,18 @@ var Grommet =
 	  }]);
 
 	  return Clear;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Clear;
 	module.exports = exports['default'];
 
 /***/ },
-/* 417 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54683,7 +54864,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var DragHandle = (function (_Component) {
+	var DragHandle = function (_Component) {
 	  _inherits(DragHandle, _Component);
 
 	  function DragHandle() {
@@ -54724,18 +54905,18 @@ var Grommet =
 	  }]);
 
 	  return DragHandle;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = DragHandle;
 	module.exports = exports['default'];
 
 /***/ },
-/* 418 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54753,7 +54934,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Edit = (function (_Component) {
+	var Edit = function (_Component) {
 	  _inherits(Edit, _Component);
 
 	  function Edit() {
@@ -54795,18 +54976,18 @@ var Grommet =
 	  }]);
 
 	  return Edit;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Edit;
 	module.exports = exports['default'];
 
 /***/ },
-/* 419 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54824,7 +55005,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Facebook = (function (_Component) {
+	var Facebook = function (_Component) {
 	  _inherits(Facebook, _Component);
 
 	  function Facebook() {
@@ -54858,18 +55039,18 @@ var Grommet =
 	  }]);
 
 	  return Facebook;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Facebook;
 	module.exports = exports['default'];
 
 /***/ },
-/* 420 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54889,7 +55070,7 @@ var Grommet =
 
 	var FormattedMessage = __webpack_require__(4);
 
-	var Filter = (function (_Component) {
+	var Filter = function (_Component) {
 	  _inherits(Filter, _Component);
 
 	  function Filter() {
@@ -54954,7 +55135,7 @@ var Grommet =
 	  }]);
 
 	  return Filter;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Filter;
 
@@ -54965,12 +55146,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 421 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -54994,7 +55175,7 @@ var Grommet =
 
 	var CLASS_ROOT = "logo-icon";
 
-	var Grommet = (function (_Component) {
+	var Grommet = function (_Component) {
 	  _inherits(Grommet, _Component);
 
 	  function Grommet() {
@@ -55037,7 +55218,7 @@ var Grommet =
 	  }]);
 
 	  return Grommet;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Grommet;
 
@@ -55057,12 +55238,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 422 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55080,7 +55261,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Help = (function (_Component) {
+	var Help = function (_Component) {
 	  _inherits(Help, _Component);
 
 	  function Help() {
@@ -55115,18 +55296,18 @@ var Grommet =
 	  }]);
 
 	  return Help;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Help;
 	module.exports = exports['default'];
 
 /***/ },
-/* 423 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55144,7 +55325,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Left = (function (_Component) {
+	var Left = function (_Component) {
 	  _inherits(Left, _Component);
 
 	  function Left() {
@@ -55179,18 +55360,18 @@ var Grommet =
 	  }]);
 
 	  return Left;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Left;
 	module.exports = exports['default'];
 
 /***/ },
-/* 424 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55208,7 +55389,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var LinkedIn = (function (_Component) {
+	var LinkedIn = function (_Component) {
 	  _inherits(LinkedIn, _Component);
 
 	  function LinkedIn() {
@@ -55242,18 +55423,18 @@ var Grommet =
 	  }]);
 
 	  return LinkedIn;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = LinkedIn;
 	module.exports = exports['default'];
 
 /***/ },
-/* 425 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55271,7 +55452,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Mail = (function (_Component) {
+	var Mail = function (_Component) {
 	  _inherits(Mail, _Component);
 
 	  function Mail() {
@@ -55308,18 +55489,18 @@ var Grommet =
 	  }]);
 
 	  return Mail;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Mail;
 	module.exports = exports['default'];
 
 /***/ },
-/* 426 */
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55337,7 +55518,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var More = (function (_Component) {
+	var More = function (_Component) {
 	  _inherits(More, _Component);
 
 	  function More() {
@@ -55373,18 +55554,18 @@ var Grommet =
 	  }]);
 
 	  return More;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = More;
 	module.exports = exports['default'];
 
 /***/ },
-/* 427 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55402,7 +55583,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Person = (function (_Component) {
+	var Person = function (_Component) {
 	  _inherits(Person, _Component);
 
 	  function Person() {
@@ -55440,7 +55621,7 @@ var Grommet =
 	  }]);
 
 	  return Person;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Person;
 
@@ -55450,12 +55631,12 @@ var Grommet =
 	module.exports = exports['default'];
 
 /***/ },
-/* 428 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55473,7 +55654,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Right = (function (_Component) {
+	var Right = function (_Component) {
 	  _inherits(Right, _Component);
 
 	  function Right() {
@@ -55508,18 +55689,18 @@ var Grommet =
 	  }]);
 
 	  return Right;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Right;
 	module.exports = exports['default'];
 
 /***/ },
-/* 429 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55537,7 +55718,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Search = (function (_Component) {
+	var Search = function (_Component) {
 	  _inherits(Search, _Component);
 
 	  function Search() {
@@ -55572,18 +55753,18 @@ var Grommet =
 	  }]);
 
 	  return Search;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Search;
 	module.exports = exports['default'];
 
 /***/ },
-/* 430 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55601,7 +55782,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var SearchPlus = (function (_Component) {
+	var SearchPlus = function (_Component) {
 	  _inherits(SearchPlus, _Component);
 
 	  function SearchPlus() {
@@ -55638,18 +55819,18 @@ var Grommet =
 	  }]);
 
 	  return SearchPlus;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = SearchPlus;
 	module.exports = exports['default'];
 
 /***/ },
-/* 431 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55667,7 +55848,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var Twitter = (function (_Component) {
+	var Twitter = function (_Component) {
 	  _inherits(Twitter, _Component);
 
 	  function Twitter() {
@@ -55701,18 +55882,18 @@ var Grommet =
 	  }]);
 
 	  return Twitter;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = Twitter;
 	module.exports = exports['default'];
 
 /***/ },
-/* 432 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -55730,7 +55911,7 @@ var Grommet =
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
 
-	var World = (function (_Component) {
+	var World = function (_Component) {
 	  _inherits(World, _Component);
 
 	  function World() {
@@ -55767,26 +55948,30 @@ var Grommet =
 	  }]);
 
 	  return World;
-	})(_react.Component);
+	}(_react.Component);
 
 	exports.default = World;
 	module.exports = exports['default'];
 
 /***/ },
-/* 433 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	module.exports = { "3d": __webpack_require__(434), "Achievement": __webpack_require__(435), "Action": __webpack_require__(436), "Actions": __webpack_require__(437), "Add": __webpack_require__(389), "AdvancedSearch": __webpack_require__(438), "Aggregate": __webpack_require__(439), "Alarm": __webpack_require__(440), "Alert": __webpack_require__(441), "Analytics": __webpack_require__(442), "Announcement": __webpack_require__(443), "App": __webpack_require__(444), "Archive": __webpack_require__(445), "Article": __webpack_require__(446), "Ascend": __webpack_require__(447), "Assistant": __webpack_require__(448), "Attachment": __webpack_require__(449), "BarChart": __webpack_require__(450), "Blog": __webpack_require__(451), "Book": __webpack_require__(452), "Bookmark": __webpack_require__(453), "Bundle": __webpack_require__(454), "Calculator": __webpack_require__(455), "Calendar": __webpack_require__(347), "Camera": __webpack_require__(456), "Capacity": __webpack_require__(457), "CaretDown": __webpack_require__(458), "CaretNext": __webpack_require__(459), "CaretPrevious": __webpack_require__(460), "CaretUp": __webpack_require__(461), "Catalog": __webpack_require__(462), "ChapterAdd": __webpack_require__(463), "ChapterNext": __webpack_require__(464), "ChapterPrevious": __webpack_require__(465), "Chat": __webpack_require__(466), "CheckboxSelected": __webpack_require__(467), "Checkbox": __webpack_require__(468), "Checkmark": __webpack_require__(469), "CircularView": __webpack_require__(470), "Clipboard": __webpack_require__(471), "Clone": __webpack_require__(472), "Close": __webpack_require__(196), "CloudComputer": __webpack_require__(473), "CloudDownload": __webpack_require__(474), "CloudSoftware": __webpack_require__(475), "CloudUpload": __webpack_require__(476), "Cloud": __webpack_require__(477), "Cluster": __webpack_require__(478), "Code": __webpack_require__(479), "CommandLine": __webpack_require__(480), "Compare": __webpack_require__(481), "Compasss": __webpack_require__(482), "Compliance": __webpack_require__(483), "ComputerPersonal": __webpack_require__(484), "Configuration": __webpack_require__(485), "Connect": __webpack_require__(486), "ContactCard": __webpack_require__(487), "ContactUs": __webpack_require__(488), "Contract": __webpack_require__(489), "Copy": __webpack_require__(490), "Cube": __webpack_require__(491), "Cubes": __webpack_require__(492), "Cursor": __webpack_require__(493), "Cut": __webpack_require__(494), "Cycle": __webpack_require__(495), "Dashboard": __webpack_require__(496), "Database": __webpack_require__(497), "Defect": __webpack_require__(498), "Deliver": __webpack_require__(499), "Deployment": __webpack_require__(500), "Descend": __webpack_require__(501), "Desktop": __webpack_require__(502), "Detach": __webpack_require__(503), "Directions": __webpack_require__(504), "Dislike": __webpack_require__(505), "DivideFour": __webpack_require__(506), "DivideRight": __webpack_require__(507), "DivideThree": __webpack_require__(508), "Divide": __webpack_require__(509), "DocumentCloud": __webpack_require__(510), "DocumentCompress": __webpack_require__(511), "DocumentConig": __webpack_require__(512), "DocumentCsv": __webpack_require__(513), "DocumentData": __webpack_require__(514), "DocumentDownload": __webpack_require__(515), "DocumentExcel": __webpack_require__(516), "DocumentExecutable": __webpack_require__(517), "DocumentImage": __webpack_require__(518), "DocumentLocked": __webpack_require__(519), "DocumentMissing": __webpack_require__(520), "DocumentNotes": __webpack_require__(521), "DocumentOutlook": __webpack_require__(522), "DocumentPdf": __webpack_require__(523), "DocumentPerformance": __webpack_require__(524), "DocumentPowerpoint": __webpack_require__(525), "DocumentRtf": __webpack_require__(526), "DocumentSound": __webpack_require__(527), "DocumentTest": __webpack_require__(528), "DocumentText": __webpack_require__(529), "DocumentThreat": __webpack_require__(530), "DocumentTime": __webpack_require__(531), "DocumentTransfer": __webpack_require__(532), "DocumentTxt": __webpack_require__(533), "DocumentUpdate": __webpack_require__(534), "DocumentUpload": __webpack_require__(535), "DocumentUser": __webpack_require__(536), "DocumentVerified": __webpack_require__(537), "DocumentVideo": __webpack_require__(538), "DocumentWord": __webpack_require__(539), "Document": __webpack_require__(540), "Domain": __webpack_require__(541), "Down": __webpack_require__(233), "Download": __webpack_require__(542), "Drag": __webpack_require__(543), "DriveCage": __webpack_require__(544), "Duplicate": __webpack_require__(545), "Edit": __webpack_require__(546), "Eject": __webpack_require__(547), "Expand": __webpack_require__(548), "Fan": __webpack_require__(549), "FastForward": __webpack_require__(550), "Favorite": __webpack_require__(551), "Filter": __webpack_require__(552), "FirstAid": __webpack_require__(553), "Flag": __webpack_require__(554), "FolderCycle": __webpack_require__(555), "FolderOpen": __webpack_require__(556), "Folder": __webpack_require__(557), "Gallery": __webpack_require__(558), "Globe": __webpack_require__(559), "Grid": __webpack_require__(560), "Group": __webpack_require__(561), "Grow": __webpack_require__(562), "Halt": __webpack_require__(563), "Help": __webpack_require__(564), "History": __webpack_require__(565), "Home": __webpack_require__(566), "HostMaintenance": __webpack_require__(567), "Host": __webpack_require__(568), "Image": __webpack_require__(569), "Impact": __webpack_require__(570), "InProgress": __webpack_require__(571), "Inbox": __webpack_require__(572), "Indicator": __webpack_require__(573), "Information": __webpack_require__(574), "Inherit": __webpack_require__(575), "Install": __webpack_require__(576), "Integration": __webpack_require__(577), "Iteration": __webpack_require__(578), "Java": __webpack_require__(579), "Language": __webpack_require__(580), "Launch": __webpack_require__(581), "License": __webpack_require__(582), "Like": __webpack_require__(583), "LineChart": __webpack_require__(584), "LinkBottom": __webpack_require__(585), "LinkDown": __webpack_require__(586), "LinkNext": __webpack_require__(3), "LinkPrevious": __webpack_require__(348), "LinkTop": __webpack_require__(587), "LinkUp": __webpack_require__(588), "Link": __webpack_require__(589), "LocationPin": __webpack_require__(590), "Location": __webpack_require__(591), "Lock": __webpack_require__(592), "Login": __webpack_require__(593), "Logout": __webpack_require__(594), "Mail": __webpack_require__(595), "Manual": __webpack_require__(596), "MapLocation": __webpack_require__(597), "Map": __webpack_require__(598), "Menu": __webpack_require__(599), "Microphone": __webpack_require__(600), "Monitor": __webpack_require__(601), "More": __webpack_require__(232), "Multiple": __webpack_require__(602), "Navigate": __webpack_require__(603), "NewWindow": __webpack_require__(604), "New": __webpack_require__(605), "Next": __webpack_require__(244), "Notes": __webpack_require__(606), "Notification": __webpack_require__(607), "Optimization": __webpack_require__(608), "Organization": __webpack_require__(609), "Overview": __webpack_require__(610), "Pan": __webpack_require__(611), "Pause": __webpack_require__(411), "PaymentGoogleWallet": __webpack_require__(612), "PaymentMastercard": __webpack_require__(613), "PaymentPaypal": __webpack_require__(614), "PaymentSquare": __webpack_require__(615), "PaymentVisa": __webpack_require__(616), "Pin": __webpack_require__(617), "Plan": __webpack_require__(618), "PlatformApple": __webpack_require__(619), "PlatformChrome": __webpack_require__(620), "PlatformDropbox": __webpack_require__(621), "PlatformEdge": __webpack_require__(622), "PlatformFirefox": __webpack_require__(623), "PlatformInternetExplorer": __webpack_require__(624), "PlatformSkype": __webpack_require__(625), "PlatformWindows": __webpack_require__(626), "Play": __webpack_require__(410), "Power": __webpack_require__(627), "Previous": __webpack_require__(245), "Print": __webpack_require__(628), "QuickView": __webpack_require__(629), "RadialSelected": __webpack_require__(630), "Radial": __webpack_require__(631), "Refresh": __webpack_require__(412), "Resources": __webpack_require__(632), "Rewind": __webpack_require__(633), "Risk": __webpack_require__(634), "Rss": __webpack_require__(635), "Satellite": __webpack_require__(636), "ScheduleClone": __webpack_require__(637), "ScheduleNew": __webpack_require__(638), "SchedulePlay": __webpack_require__(639), "Schedule": __webpack_require__(640), "Scorecard": __webpack_require__(641), "Search": __webpack_require__(393), "Secure": __webpack_require__(642), "SelectLeft": __webpack_require__(643), "Select": __webpack_require__(644), "ServerCluster": __webpack_require__(645), "Server": __webpack_require__(646), "Servers": __webpack_require__(647), "ServiceBusiness": __webpack_require__(648), "ServiceStart": __webpack_require__(649), "Share": __webpack_require__(650), "SheildConfigure": __webpack_require__(651), "Shield": __webpack_require__(652), "Shift": __webpack_require__(653), "ShopBasket": __webpack_require__(654), "ShopCart": __webpack_require__(655), "Soa": __webpack_require__(656), "SocialEmail": __webpack_require__(657), "SocialFacebook": __webpack_require__(658), "SocialGithub": __webpack_require__(659), "SocialGoogle": __webpack_require__(660), "SocialInstagram": __webpack_require__(661), "SocialLinkedin": __webpack_require__(662), "SocialMedium": __webpack_require__(663), "SocialPinterest": __webpack_require__(664), "SocialReddit": __webpack_require__(665), "SocialSlack": __webpack_require__(666), "SocialTumblr": __webpack_require__(667), "SocialTwitter": __webpack_require__(668), "SocialVimeo": __webpack_require__(669), "SocialYoutube": __webpack_require__(670), "Sort": __webpack_require__(671), "Stakeholder": __webpack_require__(672), "StarHalf": __webpack_require__(673), "Star": __webpack_require__(674), "Steps": __webpack_require__(675), "Storage": __webpack_require__(676), "StreetView": __webpack_require__(677), "Subtract": __webpack_require__(390), "Support": __webpack_require__(678), "Svg": __webpack_require__(679), "Sync": __webpack_require__(680), "System": __webpack_require__(681), "TabNext": __webpack_require__(682), "TabPrevious": __webpack_require__(683), "TabUp": __webpack_require__(684), "TableAdd": __webpack_require__(685), "Table": __webpack_require__(686), "Tag": __webpack_require__(687), "Target": __webpack_require__(688), "Task": __webpack_require__(689), "Template": __webpack_require__(690), "TestDesktop": __webpack_require__(691), "Test": __webpack_require__(692), "TesxtWrap": __webpack_require__(693), "Threats": __webpack_require__(694), "ThreeD": __webpack_require__(695), "Ticket": __webpack_require__(696), "Tools": __webpack_require__(697), "Tooltip": __webpack_require__(698), "Transaction": __webpack_require__(699), "Trash": __webpack_require__(700), "Tree": __webpack_require__(701), "Trigger": __webpack_require__(702), "Trophy": __webpack_require__(703), "Troubleshooting": __webpack_require__(704), "Unlock": __webpack_require__(705), "Up": __webpack_require__(246), "Update": __webpack_require__(706), "Upgrade": __webpack_require__(707), "Upload": __webpack_require__(708), "UserAdd": __webpack_require__(709), "UserAdmin": __webpack_require__(710), "UserExpert": __webpack_require__(711), "UserFemale": __webpack_require__(712), "UserManager": __webpack_require__(713), "UserNew": __webpack_require__(714), "UserPolice": __webpack_require__(715), "UserSettings": __webpack_require__(716), "UserWorker": __webpack_require__(717), "User": __webpack_require__(718), "Validation": __webpack_require__(719), "Video": __webpack_require__(720), "View": __webpack_require__(721), "VirtualMachine": __webpack_require__(722), "VmMaintenance": __webpack_require__(723), "VolumeLow": __webpack_require__(724), "VolumeMute": __webpack_require__(725), "Volume": __webpack_require__(726), "Vulnerability": __webpack_require__(727), "Waypoint": __webpack_require__(728), "Workshop": __webpack_require__(729), "ZoomIn": __webpack_require__(730) };
+	module.exports = { "3d": __webpack_require__(435), "Achievement": __webpack_require__(436), "Action": __webpack_require__(437), "Actions": __webpack_require__(438), "Add": __webpack_require__(390), "AdvancedSearch": __webpack_require__(439), "Aggregate": __webpack_require__(440), "Alarm": __webpack_require__(441), "Alert": __webpack_require__(442), "Analytics": __webpack_require__(443), "Announcement": __webpack_require__(444), "App": __webpack_require__(445), "Archive": __webpack_require__(446), "Article": __webpack_require__(447), "Ascend": __webpack_require__(448), "Assistant": __webpack_require__(449), "Attachment": __webpack_require__(450), "BarChart": __webpack_require__(451), "Blog": __webpack_require__(452), "Book": __webpack_require__(453), "Bookmark": __webpack_require__(454), "Bundle": __webpack_require__(455), "Calculator": __webpack_require__(456), "Calendar": __webpack_require__(347), "Camera": __webpack_require__(457), "Capacity": __webpack_require__(458), "CaretDown": __webpack_require__(459), "CaretNext": __webpack_require__(460), "CaretPrevious": __webpack_require__(461), "CaretUp": __webpack_require__(462), "Catalog": __webpack_require__(463), "ChapterAdd": __webpack_require__(464), "ChapterNext": __webpack_require__(465), "ChapterPrevious": __webpack_require__(466), "Chat": __webpack_require__(467), "CheckboxSelected": __webpack_require__(468), "Checkbox": __webpack_require__(469), "Checkmark": __webpack_require__(470), "CircularView": __webpack_require__(471), "Clipboard": __webpack_require__(472), "Clone": __webpack_require__(473), "Close": __webpack_require__(196), "CloudComputer": __webpack_require__(474), "CloudDownload": __webpack_require__(475), "CloudSoftware": __webpack_require__(476), "CloudUpload": __webpack_require__(477), "Cloud": __webpack_require__(478), "Cluster": __webpack_require__(479), "Code": __webpack_require__(480), "CommandLine": __webpack_require__(481), "Compare": __webpack_require__(482), "Compasss": __webpack_require__(483), "Compliance": __webpack_require__(484), "ComputerPersonal": __webpack_require__(485), "Configuration": __webpack_require__(486), "Connect": __webpack_require__(487), "ContactCard": __webpack_require__(488), "ContactUs": __webpack_require__(489), "Contract": __webpack_require__(490), "Copy": __webpack_require__(491), "Cube": __webpack_require__(492), "Cubes": __webpack_require__(493), "Cursor": __webpack_require__(494), "Cut": __webpack_require__(495), "Cycle": __webpack_require__(496), "Dashboard": __webpack_require__(497), "Database": __webpack_require__(498), "Defect": __webpack_require__(499), "Deliver": __webpack_require__(500), "Deployment": __webpack_require__(501), "Descend": __webpack_require__(502), "Desktop": __webpack_require__(503), "Detach": __webpack_require__(504), "Directions": __webpack_require__(505), "Dislike": __webpack_require__(506), "DivideFour": __webpack_require__(507), "DivideRight": __webpack_require__(508), "DivideThree": __webpack_require__(509), "Divide": __webpack_require__(510), "DocumentCloud": __webpack_require__(511), "DocumentCompress": __webpack_require__(512), "DocumentConig": __webpack_require__(513), "DocumentCsv": __webpack_require__(514), "DocumentData": __webpack_require__(515), "DocumentDownload": __webpack_require__(516), "DocumentExcel": __webpack_require__(517), "DocumentExecutable": __webpack_require__(518), "DocumentImage": __webpack_require__(519), "DocumentLocked": __webpack_require__(520), "DocumentMissing": __webpack_require__(521), "DocumentNotes": __webpack_require__(522), "DocumentOutlook": __webpack_require__(523), "DocumentPdf": __webpack_require__(524), "DocumentPerformance": __webpack_require__(525), "DocumentPowerpoint": __webpack_require__(526), "DocumentRtf": __webpack_require__(527), "DocumentSound": __webpack_require__(528), "DocumentTest": __webpack_require__(529), "DocumentText": __webpack_require__(530), "DocumentThreat": __webpack_require__(531), "DocumentTime": __webpack_require__(532), "DocumentTransfer": __webpack_require__(533), "DocumentTxt": __webpack_require__(534), "DocumentUpdate": __webpack_require__(535), "DocumentUpload": __webpack_require__(536), "DocumentUser": __webpack_require__(537), "DocumentVerified": __webpack_require__(538), "DocumentVideo": __webpack_require__(539), "DocumentWord": __webpack_require__(540), "Document": __webpack_require__(541), "Domain": __webpack_require__(542), "Down": __webpack_require__(233), "Download": __webpack_require__(543), "Drag": __webpack_require__(544), "DriveCage": __webpack_require__(545), "Duplicate": __webpack_require__(546), "Edit": __webpack_require__(547), "Eject": __webpack_require__(548), "Expand": __webpack_require__(549), "Fan": __webpack_require__(550), "FastForward": __webpack_require__(551), "Favorite": __webpack_require__(552), "Filter": __webpack_require__(553), "FirstAid": __webpack_require__(554), "Flag": __webpack_require__(555), "FolderCycle": __webpack_require__(556), "FolderOpen": __webpack_require__(557), "Folder": __webpack_require__(558), "Gallery": __webpack_require__(559), "Globe": __webpack_require__(560), "Grid": __webpack_require__(561), "Group": __webpack_require__(562), "Grow": __webpack_require__(563), "Halt": __webpack_require__(564), "Help": __webpack_require__(565), "History": __webpack_require__(566), "Home": __webpack_require__(567), "HostMaintenance": __webpack_require__(568), "Host": __webpack_require__(569), "Image": __webpack_require__(570), "Impact": __webpack_require__(571), "InProgress": __webpack_require__(572), "Inbox": __webpack_require__(573), "Indicator": __webpack_require__(574), "Information": __webpack_require__(575), "Inherit": __webpack_require__(576), "Install": __webpack_require__(577), "Integration": __webpack_require__(578), "Iteration": __webpack_require__(579), "Java": __webpack_require__(580), "Language": __webpack_require__(581), "Launch": __webpack_require__(582), "License": __webpack_require__(583), "Like": __webpack_require__(584), "LineChart": __webpack_require__(585), "LinkBottom": __webpack_require__(586), "LinkDown": __webpack_require__(246), "LinkNext": __webpack_require__(3), "LinkPrevious": __webpack_require__(244), "LinkTop": __webpack_require__(587), "LinkUp": __webpack_require__(245), "Link": __webpack_require__(588), "LocationPin": __webpack_require__(589), "Location": __webpack_require__(590), "Lock": __webpack_require__(591), "Login": __webpack_require__(592), "Logout": __webpack_require__(593), "Mail": __webpack_require__(594), "Manual": __webpack_require__(595), "MapLocation": __webpack_require__(596), "Map": __webpack_require__(597), "Menu": __webpack_require__(598), "Microphone": __webpack_require__(599), "Monitor": __webpack_require__(600), "More": __webpack_require__(232), "Multiple": __webpack_require__(601), "Navigate": __webpack_require__(602), "NewWindow": __webpack_require__(603), "New": __webpack_require__(604), "Next": __webpack_require__(365), "Notes": __webpack_require__(605), "Notification": __webpack_require__(606), "Optimization": __webpack_require__(607), "Organization": __webpack_require__(608), "Overview": __webpack_require__(609), "Pan": __webpack_require__(610), "Pause": __webpack_require__(412), "PaymentGoogleWallet": __webpack_require__(611), "PaymentMastercard": __webpack_require__(612), "PaymentPaypal": __webpack_require__(613), "PaymentSquare": __webpack_require__(614), "PaymentVisa": __webpack_require__(615), "Pin": __webpack_require__(616), "Plan": __webpack_require__(617), "PlatformApple": __webpack_require__(618), "PlatformChrome": __webpack_require__(619), "PlatformDropbox": __webpack_require__(620), "PlatformEdge": __webpack_require__(621), "PlatformFirefox": __webpack_require__(622), "PlatformInternetExplorer": __webpack_require__(623), "PlatformSkype": __webpack_require__(624), "PlatformWindows": __webpack_require__(625), "Play": __webpack_require__(411), "Power": __webpack_require__(626), "Previous": __webpack_require__(364), "Print": __webpack_require__(627), "QuickView": __webpack_require__(628), "RadialSelected": __webpack_require__(629), "Radial": __webpack_require__(630), "Refresh": __webpack_require__(413), "Resources": __webpack_require__(631), "Rewind": __webpack_require__(632), "Risk": __webpack_require__(633), "Rss": __webpack_require__(634), "Satellite": __webpack_require__(635), "ScheduleClone": __webpack_require__(636), "ScheduleNew": __webpack_require__(637), "SchedulePlay": __webpack_require__(638), "Schedule": __webpack_require__(639), "Scorecard": __webpack_require__(640), "Search": __webpack_require__(394), "Secure": __webpack_require__(641), "SelectLeft": __webpack_require__(642), "Select": __webpack_require__(643), "ServerCluster": __webpack_require__(644), "Server": __webpack_require__(645), "Servers": __webpack_require__(646), "ServiceBusiness": __webpack_require__(647), "ServiceStart": __webpack_require__(648), "Share": __webpack_require__(649), "SheildConfigure": __webpack_require__(650), "Shield": __webpack_require__(651), "Shift": __webpack_require__(652), "ShopBasket": __webpack_require__(653), "ShopCart": __webpack_require__(654), "Soa": __webpack_require__(655), "SocialEmail": __webpack_require__(656), "SocialFacebook": __webpack_require__(657), "SocialGithub": __webpack_require__(658), "SocialGoogle": __webpack_require__(659), "SocialInstagram": __webpack_require__(660), "SocialLinkedin": __webpack_require__(661), "SocialMedium": __webpack_require__(662), "SocialPinterest": __webpack_require__(663), "SocialReddit": __webpack_require__(664), "SocialSlack": __webpack_require__(665), "SocialTumblr": __webpack_require__(666), "SocialTwitter": __webpack_require__(667), "SocialVimeo": __webpack_require__(668), "SocialYoutube": __webpack_require__(669), "Sort": __webpack_require__(670), "Stakeholder": __webpack_require__(671), "StarHalf": __webpack_require__(672), "Star": __webpack_require__(673), "Steps": __webpack_require__(674), "Storage": __webpack_require__(675), "StreetView": __webpack_require__(676), "Subtract": __webpack_require__(391), "Support": __webpack_require__(677), "Svg": __webpack_require__(678), "Sync": __webpack_require__(679), "System": __webpack_require__(680), "TabNext": __webpack_require__(681), "TabPrevious": __webpack_require__(682), "TabUp": __webpack_require__(683), "TableAdd": __webpack_require__(684), "Table": __webpack_require__(685), "Tag": __webpack_require__(686), "Target": __webpack_require__(687), "Task": __webpack_require__(688), "Template": __webpack_require__(689), "TestDesktop": __webpack_require__(690), "Test": __webpack_require__(691), "TesxtWrap": __webpack_require__(692), "Threats": __webpack_require__(693), "ThreeD": __webpack_require__(694), "Ticket": __webpack_require__(695), "Tools": __webpack_require__(696), "Tooltip": __webpack_require__(697), "Transaction": __webpack_require__(698), "Trash": __webpack_require__(699), "Tree": __webpack_require__(700), "Trigger": __webpack_require__(701), "Trophy": __webpack_require__(702), "Troubleshooting": __webpack_require__(703), "Unlock": __webpack_require__(704), "Up": __webpack_require__(705), "Update": __webpack_require__(706), "Upgrade": __webpack_require__(707), "Upload": __webpack_require__(708), "UserAdd": __webpack_require__(709), "UserAdmin": __webpack_require__(710), "UserExpert": __webpack_require__(711), "UserFemale": __webpack_require__(712), "UserManager": __webpack_require__(713), "UserNew": __webpack_require__(714), "UserPolice": __webpack_require__(715), "UserSettings": __webpack_require__(716), "UserWorker": __webpack_require__(717), "User": __webpack_require__(718), "Validation": __webpack_require__(719), "Video": __webpack_require__(720), "View": __webpack_require__(721), "VirtualMachine": __webpack_require__(722), "VmMaintenance": __webpack_require__(723), "VolumeLow": __webpack_require__(724), "VolumeMute": __webpack_require__(725), "Volume": __webpack_require__(726), "Vulnerability": __webpack_require__(727), "Waypoint": __webpack_require__(728), "Workshop": __webpack_require__(729), "ZoomIn": __webpack_require__(730) };
 
 /***/ },
-/* 434 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -55806,7 +55991,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -55853,7 +56038,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -55864,20 +56051,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: '3d-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 435 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -55897,7 +56087,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -55944,7 +56134,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -55955,20 +56147,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'achievement-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 436 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -55988,7 +56183,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56035,7 +56230,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56046,20 +56243,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'action-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 437 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56079,7 +56279,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56126,7 +56326,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56137,20 +56339,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'actions-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 438 */
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56170,7 +56375,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56217,7 +56422,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56228,20 +56435,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'advanced-search-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 439 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56261,7 +56471,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56308,7 +56518,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56319,20 +56531,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'aggregate-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 440 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56352,7 +56567,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56399,7 +56614,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56410,20 +56627,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'alarm-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 441 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56443,7 +56663,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56496,7 +56716,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56507,20 +56729,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'alert-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 442 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56540,7 +56765,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56587,7 +56812,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56598,20 +56825,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'analytics-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 443 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56631,7 +56861,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56678,7 +56908,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56689,20 +56921,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'announcement-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 444 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56722,7 +56957,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56769,7 +57004,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56780,20 +57017,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'app-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 445 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56813,7 +57053,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56860,7 +57100,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56871,20 +57113,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'archive-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 446 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56904,7 +57149,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -56955,7 +57200,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -56966,20 +57213,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'article-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 447 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -56999,7 +57249,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57046,7 +57296,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57057,20 +57309,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'ascend-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 448 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57090,7 +57345,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57140,7 +57395,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57151,20 +57408,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'assistant-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 449 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57184,7 +57444,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57231,7 +57491,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57242,20 +57504,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'attachment-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 450 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57275,7 +57540,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57322,7 +57587,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57333,20 +57600,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'bar-chart-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 451 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57366,7 +57636,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57413,7 +57683,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57424,20 +57696,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'blog-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 452 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57457,7 +57732,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57504,7 +57779,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57515,20 +57792,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'book-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 453 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57548,7 +57828,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57595,7 +57875,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57606,20 +57888,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'bookmark-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 454 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57639,7 +57924,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57686,7 +57971,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57697,20 +57984,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'bundle-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 455 */
+/* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57730,7 +58020,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57784,7 +58074,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57795,20 +58087,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'calculator-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 456 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57828,7 +58123,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57875,7 +58170,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57886,20 +58183,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'camera-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 457 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -57919,7 +58219,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -57966,7 +58266,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -57977,20 +58279,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'capacity-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 458 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58010,7 +58315,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58057,7 +58362,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58068,20 +58375,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'caret-down-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 459 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58101,7 +58411,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58148,7 +58458,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58159,20 +58471,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'caret-next-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 460 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58192,7 +58507,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58239,7 +58554,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58250,20 +58567,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'caret-previous-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 461 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58283,7 +58603,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58330,7 +58650,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58341,20 +58663,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'caret-up-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 462 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58374,7 +58699,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58421,7 +58746,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58432,20 +58759,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'catalog-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 463 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58465,7 +58795,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58512,7 +58842,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58523,20 +58855,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'chapter-add-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 464 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58556,7 +58891,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58604,7 +58939,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58615,20 +58952,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'chapter-next-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 465 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58648,7 +58988,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58696,7 +59036,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58707,20 +59049,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'chapter-previous-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 466 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58740,7 +59085,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58787,7 +59132,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58798,20 +59145,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'chat-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 467 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58831,7 +59181,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58879,7 +59229,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58890,20 +59242,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'checkbox-selected-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 468 */
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -58923,7 +59278,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -58970,7 +59325,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -58981,20 +59338,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'checkbox-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 469 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59014,7 +59374,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59061,7 +59421,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59072,20 +59434,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'checkmark-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 470 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59105,7 +59470,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59152,7 +59517,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59163,20 +59530,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'circular-view-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 471 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59196,7 +59566,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59243,7 +59613,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59254,20 +59626,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'clipboard-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 472 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59287,7 +59662,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59334,7 +59709,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59345,20 +59722,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'clone-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 473 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59378,7 +59758,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59425,7 +59805,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59436,20 +59818,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cloud-computer-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 474 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59469,7 +59854,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59516,7 +59901,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59527,20 +59914,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cloud-download-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 475 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59560,7 +59950,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59607,7 +59997,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59618,20 +60010,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cloud-software-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 476 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59651,7 +60046,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59698,7 +60093,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59709,20 +60106,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cloud-upload-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 477 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59742,7 +60142,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59789,7 +60189,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59800,20 +60202,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cloud-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 478 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59833,7 +60238,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59880,7 +60285,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59891,20 +60298,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cluster-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 479 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -59924,7 +60334,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -59971,7 +60381,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -59982,20 +60394,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'code-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 480 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60015,7 +60430,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60062,7 +60477,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60073,20 +60490,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'command-line-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 481 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60106,7 +60526,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60165,7 +60585,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60176,20 +60598,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'compare-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 482 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60209,7 +60634,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60257,7 +60682,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60268,20 +60695,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'compasss-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 483 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60301,7 +60731,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60348,7 +60778,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60359,20 +60791,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'compliance-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 484 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60392,7 +60827,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60439,7 +60874,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60450,20 +60887,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'computer-personal-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 485 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60483,7 +60923,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60530,7 +60970,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60541,20 +60983,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'configuration-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 486 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60574,7 +61019,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60621,7 +61066,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60632,20 +61079,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'connect-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 487 */
+/* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60665,7 +61115,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60712,7 +61162,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60723,20 +61175,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'contact-card-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 488 */
+/* 489 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60756,7 +61211,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60806,7 +61261,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60817,20 +61274,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'contact-us-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 489 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60850,7 +61310,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60897,7 +61357,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60908,20 +61370,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'contract-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 490 */
+/* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -60941,7 +61406,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -60988,7 +61453,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -60999,20 +61466,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'copy-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 491 */
+/* 492 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61032,7 +61502,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61079,7 +61549,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61090,20 +61562,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cube-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 492 */
+/* 493 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61123,7 +61598,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61170,7 +61645,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61181,20 +61658,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cubes-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 493 */
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61214,7 +61694,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61261,7 +61741,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61272,20 +61754,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cursor-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 494 */
+/* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61305,7 +61790,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61352,7 +61837,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61363,20 +61850,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cut-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 495 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61396,7 +61886,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61447,7 +61937,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61458,20 +61950,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'cycle-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 496 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61491,7 +61986,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61538,7 +62033,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61549,20 +62046,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'dashboard-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 497 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61582,7 +62082,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61634,7 +62134,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61645,20 +62147,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'database-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 498 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61678,7 +62183,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61725,7 +62230,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61736,20 +62243,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'defect-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 499 */
+/* 500 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61769,7 +62279,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61816,7 +62326,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61827,20 +62339,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'deliver-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 500 */
+/* 501 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61860,7 +62375,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61908,7 +62423,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -61919,20 +62436,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'deployment-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 501 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -61952,7 +62472,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -61999,7 +62519,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62010,20 +62532,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'descend-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 502 */
+/* 503 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62043,7 +62568,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62090,7 +62615,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62101,20 +62628,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'desktop-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 503 */
+/* 504 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62134,7 +62664,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62181,7 +62711,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62192,20 +62724,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'detach-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 504 */
+/* 505 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62225,7 +62760,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62272,7 +62807,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62283,20 +62820,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'directions-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 505 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62316,7 +62856,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62363,7 +62903,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62374,20 +62916,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'dislike-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 506 */
+/* 507 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62407,7 +62952,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62454,7 +62999,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62465,20 +63012,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'divide-four-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 507 */
+/* 508 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62498,7 +63048,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62545,7 +63095,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62556,20 +63108,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'divide-right-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 508 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62589,7 +63144,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62636,7 +63191,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62647,20 +63204,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'divide-three-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 509 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62680,7 +63240,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62727,7 +63287,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62738,20 +63300,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'divide-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 510 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62771,7 +63336,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62821,7 +63386,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62832,20 +63399,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-cloud-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 511 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62865,7 +63435,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -62912,7 +63482,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -62923,20 +63495,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-compress-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 512 */
+/* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -62956,7 +63531,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63003,7 +63578,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63014,20 +63591,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-conig-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 513 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63047,7 +63627,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63098,7 +63678,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63109,20 +63691,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-csv-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 514 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63142,7 +63727,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63189,7 +63774,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63200,20 +63787,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-data-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 515 */
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63233,7 +63823,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63280,7 +63870,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63291,20 +63883,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-download-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 516 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63324,7 +63919,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63374,7 +63969,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63385,20 +63982,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-excel-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 517 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63418,7 +64018,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63476,7 +64076,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63487,20 +64089,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-executable-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 518 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63520,7 +64125,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63570,7 +64175,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63581,20 +64188,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-image-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 519 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63614,7 +64224,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63664,7 +64274,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63675,20 +64287,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-locked-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 520 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63708,7 +64323,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63755,7 +64370,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63766,20 +64383,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-missing-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 521 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63799,7 +64419,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63849,7 +64469,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63860,20 +64482,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-notes-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 522 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63893,7 +64518,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -63943,7 +64568,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -63954,20 +64581,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-outlook-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 523 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -63987,7 +64617,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64040,7 +64670,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64051,20 +64683,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-pdf-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 524 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64084,7 +64719,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64133,7 +64768,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64144,20 +64781,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-performance-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 525 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64177,7 +64817,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64231,7 +64871,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64242,20 +64884,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-powerpoint-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 526 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64275,7 +64920,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64332,7 +64977,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64343,20 +64990,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-rtf-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 527 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64376,7 +65026,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64427,7 +65077,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64438,20 +65090,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-sound-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 528 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64471,7 +65126,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64523,7 +65178,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64534,20 +65191,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-test-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 529 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64567,7 +65227,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64614,7 +65274,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64625,20 +65287,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-text-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 530 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64658,7 +65323,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64705,7 +65370,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64716,20 +65383,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-threat-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 531 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64749,7 +65419,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64796,7 +65466,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64807,20 +65479,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-time-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 532 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64840,7 +65515,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64887,7 +65562,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64898,20 +65575,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-transfer-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 533 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -64931,7 +65611,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -64986,7 +65666,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -64997,20 +65679,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-txt-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 534 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65030,7 +65715,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65079,7 +65764,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65090,20 +65777,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-update-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 535 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65123,7 +65813,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65170,7 +65860,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65181,20 +65873,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-upload-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 536 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65214,7 +65909,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65261,7 +65956,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65272,20 +65969,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-user-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 537 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65305,7 +66005,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65352,7 +66052,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65363,20 +66065,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-verified-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 538 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65396,7 +66101,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65445,7 +66150,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65456,20 +66163,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-video-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 539 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65489,7 +66199,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65539,7 +66249,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65550,20 +66262,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-word-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 540 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65583,7 +66298,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65630,7 +66345,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65641,20 +66358,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'document-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 541 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65674,7 +66394,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65721,7 +66441,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65732,20 +66454,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'domain-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 542 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65765,7 +66490,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65812,7 +66537,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65823,20 +66550,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'download-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 543 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65856,7 +66586,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65903,7 +66633,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -65914,20 +66646,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'drag-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 544 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -65947,7 +66682,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -65997,7 +66732,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66008,20 +66745,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'drive-cage-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 545 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66041,7 +66781,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66088,7 +66828,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66099,20 +66841,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'duplicate-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 546 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66132,7 +66877,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66179,7 +66924,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66190,20 +66937,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'edit-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 547 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66223,7 +66973,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66270,7 +67020,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66281,20 +67033,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'eject-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 548 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66314,7 +67069,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66361,7 +67116,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66372,20 +67129,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'expand-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 549 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66405,7 +67165,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66452,7 +67212,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66463,20 +67225,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'fan-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 550 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66496,7 +67261,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66543,7 +67308,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66554,20 +67321,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'fast-forward-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 551 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66587,7 +67357,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66634,7 +67404,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66645,20 +67417,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'favorite-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 552 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66678,7 +67453,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66725,7 +67500,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66736,20 +67513,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'filter-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 553 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66769,7 +67549,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66816,7 +67596,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66827,20 +67609,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'first-aid-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 554 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66860,7 +67645,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -66907,7 +67692,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -66918,20 +67705,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'flag-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 555 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -66951,7 +67741,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67002,7 +67792,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67013,20 +67805,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'folder-cycle-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 556 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67046,7 +67841,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67093,7 +67888,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67104,20 +67901,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'folder-open-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 557 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67137,7 +67937,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67184,7 +67984,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67195,20 +67997,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'folder-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 558 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67228,7 +68033,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67276,7 +68081,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67287,20 +68094,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'gallery-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 559 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67320,7 +68130,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67367,7 +68177,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67378,20 +68190,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'globe-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 560 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67411,7 +68226,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67458,7 +68273,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67469,20 +68286,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'grid-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 561 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67502,7 +68322,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67549,7 +68369,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67560,20 +68382,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'group-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 562 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67593,7 +68418,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67640,7 +68465,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67651,20 +68478,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'grow-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 563 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67684,7 +68514,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67731,7 +68561,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67742,20 +68574,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'halt-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 564 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67775,7 +68610,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67823,7 +68658,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67834,20 +68671,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'help-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 565 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67867,7 +68707,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -67914,7 +68754,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -67925,20 +68767,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'history-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 566 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -67958,7 +68803,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68005,7 +68850,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68016,20 +68863,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'home-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 567 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68049,7 +68899,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68098,7 +68948,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68109,20 +68961,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'host-maintenance-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 568 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68142,7 +68997,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68190,7 +69045,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68201,20 +69058,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'host-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 569 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68234,7 +69094,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68282,7 +69142,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68293,20 +69155,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'image-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 570 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68326,7 +69191,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68373,7 +69238,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68384,20 +69251,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'impact-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 571 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68417,7 +69287,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68466,7 +69336,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68477,20 +69349,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'in-progress-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 572 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68510,7 +69385,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68557,7 +69432,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68568,20 +69445,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'inbox-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 573 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68601,7 +69481,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68648,7 +69528,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68659,20 +69541,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'indicator-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 574 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68692,7 +69577,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68739,7 +69624,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68750,20 +69637,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'information-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 575 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68783,7 +69673,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68830,7 +69720,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68841,20 +69733,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'inherit-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 576 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68874,7 +69769,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -68921,7 +69816,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -68932,20 +69829,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'install-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 577 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -68965,7 +69865,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69012,7 +69912,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69023,20 +69925,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'integration-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 578 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69056,7 +69961,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69103,7 +70008,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69114,20 +70021,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'iteration-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 579 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69147,7 +70057,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69194,7 +70104,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69205,20 +70117,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'java-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 580 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69238,7 +70153,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69285,7 +70200,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69296,20 +70213,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'language-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 581 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69329,7 +70249,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69377,7 +70297,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69388,20 +70310,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'launch-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 582 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69421,7 +70346,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69469,7 +70394,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69480,20 +70407,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'license-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 583 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69513,7 +70443,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69560,7 +70490,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69571,20 +70503,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'like-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 584 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69604,7 +70539,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69651,7 +70586,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69662,20 +70599,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'line-chart-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 585 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69695,7 +70635,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69742,7 +70682,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69753,103 +70695,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'link-bottom-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
-
-/***/ },
-/* 586 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _FormattedMessage = __webpack_require__(4);
-
-	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = (function (_Component) {
-	  _inherits(Icon, _Component);
-
-	  function Icon() {
-	    _classCallCheck(this, Icon);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
-	  }
-
-	  _createClass(Icon, [{
-	    key: 'render',
-	    value: function render() {
-	      var classes = [CLASS_ROOT, CLASS_ROOT + '-link-down'];
-	      if (this.props.size) {
-	        classes.push(CLASS_ROOT + "--" + this.props.size);
-	      } else if (this.props.large) {
-	        classes.push(CLASS_ROOT + "--large");
-	      }
-	      if (this.props.colorIndex) {
-	        classes.push("color-index-" + this.props.colorIndex);
-	      }
-	      if (this.props.className) {
-	        classes.push(this.props.className);
-	      }
-
-	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-down";
-	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
-
-	      return _react2.default.createElement(
-	        'svg',
-	        { version: '1.1', viewBox: '0 0 24 24', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	        _react2.default.createElement(
-	          'title',
-	          { id: this.props.a11yTitleId },
-	          a11yTitle
-	        ),
-	        _react2.default.createElement(
-	          'g',
-	          { id: 'link-down' },
-	          _react2.default.createElement('rect', { id: '_x2E_svg_251_', y: '0', fill: 'none', width: '24', height: '24' }),
-	          _react2.default.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', d: 'M20,13l-8,8l-8-8 M12,21V2' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Icon;
-	})(_react.Component);
-
-	Icon.propTypes = {
-	  a11yTitle: _react.PropTypes.string,
-	  a11yTitleId: _react.PropTypes.string,
-	  colorIndex: _react.PropTypes.string,
-	  large: _react.PropTypes.bool,
-	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
-	};
-
-	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
-	};
-
-	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 587 */
@@ -69857,7 +70707,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69877,7 +70731,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -69924,7 +70778,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -69935,12 +70791,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'link-top-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 588 */
@@ -69948,7 +70803,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -69968,98 +70827,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
-	  _inherits(Icon, _Component);
-
-	  function Icon() {
-	    _classCallCheck(this, Icon);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
-	  }
-
-	  _createClass(Icon, [{
-	    key: 'render',
-	    value: function render() {
-	      var classes = [CLASS_ROOT, CLASS_ROOT + '-link-up'];
-	      if (this.props.size) {
-	        classes.push(CLASS_ROOT + "--" + this.props.size);
-	      } else if (this.props.large) {
-	        classes.push(CLASS_ROOT + "--large");
-	      }
-	      if (this.props.colorIndex) {
-	        classes.push("color-index-" + this.props.colorIndex);
-	      }
-	      if (this.props.className) {
-	        classes.push(this.props.className);
-	      }
-
-	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "link-up";
-	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
-
-	      return _react2.default.createElement(
-	        'svg',
-	        { version: '1.1', viewBox: '0 0 24 24', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
-	        _react2.default.createElement(
-	          'title',
-	          { id: this.props.a11yTitleId },
-	          a11yTitle
-	        ),
-	        _react2.default.createElement(
-	          'g',
-	          { id: 'link-up' },
-	          _react2.default.createElement('rect', { id: '_x2E_svg_15_', x: '0', y: '0', fill: 'none', width: '24', height: '24' }),
-	          _react2.default.createElement('path', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', d: 'M4,10.9448l8-8l8,8 M12,21.9448v-19' })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Icon;
-	})(_react.Component);
-
-	Icon.propTypes = {
-	  a11yTitle: _react.PropTypes.string,
-	  a11yTitleId: _react.PropTypes.string,
-	  colorIndex: _react.PropTypes.string,
-	  large: _react.PropTypes.bool,
-	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
-	};
-
-	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
-	};
-
-	Icon.icon = true;
-
-	module.exports = Icon;
-
-/***/ },
-/* 589 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _FormattedMessage = __webpack_require__(4);
-
-	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
-
-	var CLASS_ROOT = "control-icon";
-
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70106,7 +70874,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70117,20 +70887,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'link-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 590 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70150,7 +70923,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70197,7 +70970,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70208,20 +70983,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'location-pin-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 591 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70241,7 +71019,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70288,7 +71066,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70299,20 +71079,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'location-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 592 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70332,7 +71115,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70379,7 +71162,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70390,20 +71175,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'lock-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 593 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70423,7 +71211,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70470,7 +71258,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70481,20 +71271,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'login-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 594 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70514,7 +71307,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70561,7 +71354,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70572,20 +71367,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'logout-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 595 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70605,7 +71403,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70652,7 +71450,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70663,20 +71463,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'mail-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 596 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70696,7 +71499,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70743,7 +71546,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70754,20 +71559,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'manual-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 597 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70787,7 +71595,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70836,7 +71644,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70847,20 +71657,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'map-location-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 598 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70880,7 +71693,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -70927,7 +71740,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -70938,20 +71753,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'map-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 599 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -70971,7 +71789,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71018,7 +71836,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71029,20 +71849,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'menu-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 600 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71062,7 +71885,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71109,7 +71932,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71120,20 +71945,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'microphone-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 601 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71153,7 +71981,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71200,7 +72028,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71211,20 +72041,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'monitor-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 602 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71244,7 +72077,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71291,7 +72124,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71302,20 +72137,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'multiple-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 603 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71335,7 +72173,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71382,7 +72220,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71393,20 +72233,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'navigate-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 604 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71426,7 +72269,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71473,7 +72316,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71484,20 +72329,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'new-window-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 605 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71517,7 +72365,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71564,7 +72412,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71575,20 +72425,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'new-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 606 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71608,7 +72461,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71655,7 +72508,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71666,20 +72521,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'notes-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 607 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71699,7 +72557,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71746,7 +72604,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71757,20 +72617,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'notification-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 608 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71790,7 +72653,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71837,7 +72700,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71848,20 +72713,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'optimization-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 609 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71881,7 +72749,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -71933,7 +72801,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -71944,20 +72814,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'organization-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 610 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -71977,7 +72850,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72029,7 +72902,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72040,20 +72915,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'overview-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 611 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72073,7 +72951,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72120,7 +72998,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72131,20 +73011,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'pan-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 612 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72164,7 +73047,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72214,7 +73097,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72225,20 +73110,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'payment-google-wallet-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 613 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72258,7 +73146,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72314,7 +73202,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72325,20 +73215,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'payment-mastercard-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 614 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72358,7 +73251,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72405,7 +73298,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72416,20 +73311,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'payment-paypal-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 615 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72449,7 +73347,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72497,7 +73395,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72508,20 +73408,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'payment-square-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 616 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72541,7 +73444,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72588,7 +73491,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72599,20 +73504,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'payment-visa-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 617 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72632,7 +73540,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72681,7 +73589,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72692,20 +73602,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'pin-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 618 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72725,7 +73638,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72772,7 +73685,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72783,20 +73698,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'plan-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 619 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72816,7 +73734,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72863,7 +73781,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72874,20 +73794,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-apple-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 620 */
+/* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72907,7 +73830,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -72954,7 +73877,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -72965,20 +73890,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-chrome-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 621 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -72998,7 +73926,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73048,7 +73976,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73059,20 +73989,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-dropbox-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 622 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73092,7 +74025,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73139,7 +74072,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73150,20 +74085,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-edge-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 623 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73183,7 +74121,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73230,7 +74168,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73241,20 +74181,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-firefox-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 624 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73274,7 +74217,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73321,7 +74264,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73332,20 +74277,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-internet-explorer-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 625 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73365,7 +74313,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73412,7 +74360,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73423,20 +74373,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-skype-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 626 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73456,7 +74409,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73503,7 +74456,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73514,20 +74469,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'platform-windows-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 627 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73547,7 +74505,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73594,7 +74552,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73605,20 +74565,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'power-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 628 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73638,7 +74601,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73686,7 +74649,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73697,20 +74662,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'print-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 629 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73730,7 +74698,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73777,7 +74745,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73788,20 +74758,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'quick-view-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 630 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73821,7 +74794,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73869,7 +74842,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73880,20 +74855,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'radial-selected-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 631 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -73913,7 +74891,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -73960,7 +74938,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -73971,20 +74951,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'radial-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 632 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74004,7 +74987,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74051,7 +75034,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74062,20 +75047,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'resources-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 633 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74095,7 +75083,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74142,7 +75130,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74153,20 +75143,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'rewind-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 634 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74186,7 +75179,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74239,7 +75232,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74250,20 +75245,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'risk-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 635 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74283,7 +75281,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74330,7 +75328,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74341,20 +75341,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'rss-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 636 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74374,7 +75377,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74421,7 +75424,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74432,20 +75437,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'satellite-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 637 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74465,7 +75473,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74512,7 +75520,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74523,20 +75533,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'schedule-clone-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 638 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74556,7 +75569,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74603,7 +75616,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74614,20 +75629,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'schedule-new-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 639 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74647,7 +75665,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74695,7 +75713,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74706,20 +75726,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'schedule-play-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 640 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74739,7 +75762,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74786,7 +75809,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74797,20 +75822,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'schedule-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 641 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74830,7 +75858,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74877,7 +75905,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74888,20 +75918,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'scorecard-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 642 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -74921,7 +75954,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -74970,7 +76003,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -74981,20 +76016,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'secure-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 643 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75014,7 +76052,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75062,7 +76100,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75073,20 +76113,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'select-left-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 644 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75106,7 +76149,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75154,7 +76197,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75165,20 +76210,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'select-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 645 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75198,7 +76246,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75254,7 +76302,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75265,20 +76315,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'server-cluster-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 646 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75298,7 +76351,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75346,7 +76399,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75357,20 +76412,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'server-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 647 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75390,7 +76448,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75439,7 +76497,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75450,20 +76510,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'servers-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 648 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75483,7 +76546,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75530,7 +76593,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75541,20 +76606,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'service-business-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 649 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75574,7 +76642,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75622,7 +76690,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75633,20 +76703,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'service-start-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 650 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75666,7 +76739,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75713,7 +76786,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75724,20 +76799,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'share-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 651 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75757,7 +76835,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75804,7 +76882,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75815,20 +76895,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'sheild-configure-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 652 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75848,7 +76931,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75895,7 +76978,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75906,20 +76991,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'shield-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 653 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -75939,7 +77027,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -75986,7 +77074,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -75997,20 +77087,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'shift-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 654 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76030,7 +77123,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76077,7 +77170,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76088,20 +77183,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'shop-basket-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 655 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76121,7 +77219,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76170,7 +77268,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76181,20 +77281,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'shop-cart-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 656 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76214,7 +77317,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76261,7 +77364,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76272,20 +77377,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'soa-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 657 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76305,7 +77413,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76353,7 +77461,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76364,20 +77474,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-email-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 658 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76397,7 +77510,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76444,7 +77557,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76455,20 +77570,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-facebook-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 659 */
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76488,7 +77606,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76535,7 +77653,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76546,20 +77666,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-github-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 660 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76579,7 +77702,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76627,7 +77750,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76638,20 +77763,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-google-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 661 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76671,7 +77799,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76721,7 +77849,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76732,20 +77862,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-instagram-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 662 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76765,7 +77898,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76812,7 +77945,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76823,20 +77958,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-linkedin-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 663 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76856,7 +77994,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76907,7 +78045,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -76918,20 +78058,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-medium-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 664 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -76951,7 +78094,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -76998,7 +78141,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77009,20 +78154,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-pinterest-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 665 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77042,7 +78190,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77089,7 +78237,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77100,20 +78250,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-reddit-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 666 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77133,7 +78286,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77180,7 +78333,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77191,20 +78346,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-slack-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 667 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77224,7 +78382,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77271,7 +78429,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77282,20 +78442,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-tumblr-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 668 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77315,7 +78478,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77362,7 +78525,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77373,20 +78538,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-twitter-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 669 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77406,7 +78574,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77453,7 +78621,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77464,20 +78634,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-vimeo-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 670 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77497,7 +78670,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77552,7 +78725,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77563,20 +78738,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'social-youtube-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 671 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77596,7 +78774,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77650,7 +78828,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77661,20 +78841,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'sort-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 672 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77694,7 +78877,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77741,7 +78924,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77752,20 +78937,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'stakeholder-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 673 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77785,7 +78973,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77837,7 +79025,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77848,20 +79038,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'star-half-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 674 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77881,7 +79074,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -77932,7 +79125,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -77943,20 +79138,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'star-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 675 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -77976,7 +79174,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78023,7 +79221,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78034,20 +79234,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'steps-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 676 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78067,7 +79270,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78114,7 +79317,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78125,20 +79330,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'storage-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 677 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78158,7 +79366,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78205,7 +79413,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78216,20 +79426,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'street-view-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 678 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78249,7 +79462,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78296,7 +79509,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78307,20 +79522,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'support-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 679 */
+/* 678 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78340,7 +79558,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78382,7 +79600,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78393,20 +79613,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'svg-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 680 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78426,7 +79649,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78473,7 +79696,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78484,20 +79709,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'sync-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 681 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78517,7 +79745,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78564,7 +79792,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78575,20 +79805,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'system-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 682 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78608,7 +79841,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78655,7 +79888,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78666,20 +79901,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tab-next-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 683 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78699,7 +79937,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78746,7 +79984,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78757,20 +79997,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tab-previous-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 684 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78790,7 +80033,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78837,7 +80080,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78848,20 +80093,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tab-up-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 685 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78881,7 +80129,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -78928,7 +80176,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -78939,20 +80189,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'table-add-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 686 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -78972,7 +80225,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79019,7 +80272,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79030,20 +80285,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'table-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 687 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79063,7 +80321,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79111,7 +80369,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79122,20 +80382,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tag-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 688 */
+/* 687 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79155,7 +80418,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79202,7 +80465,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79213,20 +80478,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'target-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 689 */
+/* 688 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79246,7 +80514,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79293,7 +80561,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79304,20 +80574,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'task-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 690 */
+/* 689 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79337,7 +80610,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79384,7 +80657,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79395,20 +80670,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'template-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 691 */
+/* 690 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79428,7 +80706,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79475,7 +80753,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79486,20 +80766,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'test-desktop-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 692 */
+/* 691 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79519,7 +80802,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79568,7 +80851,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79579,20 +80864,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'test-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 693 */
+/* 692 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79612,7 +80900,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79663,7 +80951,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79674,20 +80964,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tesxt-wrap-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 694 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79707,7 +81000,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79754,7 +81047,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79765,20 +81060,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'threats-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 695 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79798,7 +81096,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79845,7 +81143,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79856,20 +81156,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'three-d-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 696 */
+/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79889,7 +81192,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -79936,7 +81239,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -79947,20 +81252,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'ticket-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 697 */
+/* 696 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -79980,7 +81288,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80027,7 +81335,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80038,20 +81348,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tools-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 698 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80071,7 +81384,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80121,7 +81434,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80132,20 +81447,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tooltip-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 699 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80165,7 +81483,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80212,7 +81530,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80223,20 +81543,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'transaction-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 700 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80256,7 +81579,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80303,7 +81626,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80314,20 +81639,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'trash-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 701 */
+/* 700 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80347,7 +81675,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80394,7 +81722,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80405,20 +81735,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'tree-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 702 */
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80438,7 +81771,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80485,7 +81818,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80496,20 +81831,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'trigger-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 703 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80529,7 +81867,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80576,7 +81914,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80587,20 +81927,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'trophy-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 704 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80620,7 +81963,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80667,7 +82010,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80678,20 +82023,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'troubleshooting-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 705 */
+/* 704 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80711,7 +82059,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80758,7 +82106,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80769,20 +82119,23 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'unlock-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
-/* 706 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80802,7 +82155,103 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
+	  _inherits(Icon, _Component);
+
+	  function Icon() {
+	    _classCallCheck(this, Icon);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
+	  }
+
+	  _createClass(Icon, [{
+	    key: 'render',
+	    value: function render() {
+	      var classes = [CLASS_ROOT, CLASS_ROOT + '-up'];
+	      if (this.props.size) {
+	        classes.push(CLASS_ROOT + "--" + this.props.size);
+	      } else if (this.props.large) {
+	        classes.push(CLASS_ROOT + "--large");
+	      }
+	      if (this.props.colorIndex) {
+	        classes.push("color-index-" + this.props.colorIndex);
+	      }
+	      if (this.props.className) {
+	        classes.push(this.props.className);
+	      }
+
+	      var titleLabel = typeof this.props.a11yTitle !== "undefined" ? this.props.a11yTitle : "up";
+	      var a11yTitle = _react2.default.createElement(_FormattedMessage2.default, { id: titleLabel, defaultMessage: titleLabel });
+
+	      return _react2.default.createElement(
+	        'svg',
+	        { version: '1.1', viewBox: '0 0 24 24', width: '24px', height: '24px', className: classes.join(' '), 'aria-labelledby': this.props.a11yTitleId },
+	        _react2.default.createElement(
+	          'title',
+	          { id: this.props.a11yTitleId },
+	          a11yTitle
+	        ),
+	        _react2.default.createElement(
+	          'g',
+	          { id: 'up' },
+	          _react2.default.createElement('rect', { id: '_x2E_svg_261_', y: '0', fill: 'none', width: '24', height: '24' }),
+	          _react2.default.createElement('polyline', { fill: 'none', stroke: '#000000', strokeWidth: '2', strokeMiterlimit: '10', points: '23,14.5 12,3.5 1,14.5 \t' })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Icon;
+	}(_react.Component);
+
+	exports.default = Icon;
+
+	Icon.propTypes = {
+	  a11yTitle: _react.PropTypes.string,
+	  a11yTitleId: _react.PropTypes.string,
+	  colorIndex: _react.PropTypes.string,
+	  large: _react.PropTypes.bool,
+	  size: _react.PropTypes.oneOf(['small', 'medium', 'large'])
+	};
+
+	Icon.defaultProps = {
+	  a11yTitleId: 'up-title'
+	};
+
+	Icon.icon = true;
+	module.exports = exports['default'];
+
+/***/ },
+/* 706 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _FormattedMessage = __webpack_require__(4);
+
+	var _FormattedMessage2 = _interopRequireDefault(_FormattedMessage);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // (C) Copyright 2014-2015 Hewlett Packard Enterprise Development LP
+
+	var CLASS_ROOT = "control-icon";
+
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80849,7 +82298,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80860,12 +82311,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'update-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 707 */
@@ -80873,7 +82323,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80893,7 +82347,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -80940,7 +82394,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -80951,12 +82407,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'upgrade-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 708 */
@@ -80964,7 +82419,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -80984,7 +82443,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81031,7 +82490,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81042,12 +82503,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'upload-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 709 */
@@ -81055,7 +82515,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81075,7 +82539,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81122,7 +82586,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81133,12 +82599,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-add-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 710 */
@@ -81146,7 +82611,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81166,7 +82635,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81213,7 +82682,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81224,12 +82695,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-admin-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 711 */
@@ -81237,7 +82707,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81257,7 +82731,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81304,7 +82778,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81315,12 +82791,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-expert-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 712 */
@@ -81328,7 +82803,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81348,7 +82827,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81395,7 +82874,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81406,12 +82887,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-female-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 713 */
@@ -81419,7 +82899,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81439,7 +82923,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81486,7 +82970,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81497,12 +82983,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-manager-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 714 */
@@ -81510,7 +82995,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81530,7 +83019,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81577,7 +83066,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81588,12 +83079,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-new-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 715 */
@@ -81601,7 +83091,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81621,7 +83115,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81669,7 +83163,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81680,12 +83176,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-police-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 716 */
@@ -81693,7 +83188,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81713,7 +83212,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81760,7 +83259,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81771,12 +83272,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-settings-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 717 */
@@ -81784,7 +83284,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81804,7 +83308,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81851,7 +83355,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81862,12 +83368,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-worker-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 718 */
@@ -81875,7 +83380,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81895,7 +83404,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -81942,7 +83451,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -81953,12 +83464,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'user-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 719 */
@@ -81966,7 +83476,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -81986,7 +83500,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82033,7 +83547,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82044,12 +83560,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'validation-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 720 */
@@ -82057,7 +83572,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82077,7 +83596,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82124,7 +83643,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82135,12 +83656,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'video-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 721 */
@@ -82148,7 +83668,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82168,7 +83692,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82215,7 +83739,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82226,12 +83752,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'view-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 722 */
@@ -82239,7 +83764,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82259,7 +83788,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82306,7 +83835,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82317,12 +83848,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'virtual-machine-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 723 */
@@ -82330,7 +83860,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82350,7 +83884,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82398,7 +83932,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82409,12 +83945,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'vm-maintenance-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 724 */
@@ -82422,7 +83957,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82442,7 +83981,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82489,7 +84028,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82500,12 +84041,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'volume-low-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 725 */
@@ -82513,7 +84053,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82533,7 +84077,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82582,7 +84126,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82593,12 +84139,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'volume-mute-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 726 */
@@ -82606,7 +84151,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82626,7 +84175,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82673,7 +84222,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82684,12 +84235,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'volume-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 727 */
@@ -82697,7 +84247,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82717,7 +84271,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82764,7 +84318,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82775,12 +84331,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'vulnerability-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 728 */
@@ -82788,7 +84343,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82808,7 +84367,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82855,7 +84414,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82866,12 +84427,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'waypoint-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 729 */
@@ -82879,7 +84439,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82899,7 +84463,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -82948,7 +84512,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -82959,12 +84525,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'workshop-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 730 */
@@ -82972,7 +84537,11 @@ var Grommet =
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(2);
 
@@ -82992,7 +84561,7 @@ var Grommet =
 
 	var CLASS_ROOT = "control-icon";
 
-	var Icon = (function (_Component) {
+	var Icon = function (_Component) {
 	  _inherits(Icon, _Component);
 
 	  function Icon() {
@@ -83042,7 +84611,9 @@ var Grommet =
 	  }]);
 
 	  return Icon;
-	})(_react.Component);
+	}(_react.Component);
+
+	exports.default = Icon;
 
 	Icon.propTypes = {
 	  a11yTitle: _react.PropTypes.string,
@@ -83053,12 +84624,11 @@ var Grommet =
 	};
 
 	Icon.defaultProps = {
-	  a11yTitleId: '" + resolve.fileName + "-title'
+	  a11yTitleId: 'zoom-in-title'
 	};
 
 	Icon.icon = true;
-
-	module.exports = Icon;
+	module.exports = exports['default'];
 
 /***/ },
 /* 731 */

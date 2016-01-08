@@ -676,6 +676,9 @@ code.hljs {
 .secondary {
   color: #777; }
 
+.error {
+  color: #FF856B; }
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0; }
@@ -763,6 +766,8 @@ input[type=range] {
     width: 100%;
     height: 2px;
     background-color: #b2b2b2; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-webkit-slider-runnable-track {
+      background-color: rgba(255, 255, 255, 0.1); }
   input[type=range]::-webkit-slider-thumb {
     position: relative;
     height: 24px;
@@ -774,11 +779,13 @@ input[type=range] {
     content: "";
     position: absolute;
     left: -3000px;
-    right: 12px;
+    right: 24px;
     top: 9px;
     bottom: 9px;
     background-color: #8C50FF;
     pointer-events: none; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-webkit-slider-thumb:before {
+      background-color: #fff; }
   input[type=range]::-webkit-slider-thumb:after {
     content: "";
     position: absolute;
@@ -788,13 +795,21 @@ input[type=range] {
     border-radius: 24px;
     background-color: #fff;
     cursor: pointer; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-webkit-slider-thumb:after {
+      background-color: transparent;
+      border-color: #fff; }
   input[type=range]:hover::-webkit-slider-thumb:after {
     content: "";
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]:hover::-webkit-slider-thumb:after {
+      background-color: #fff;
+      border-color: #fff; }
   input[type=range]::-moz-range-track {
     width: 100%;
     height: 2px;
     background-color: #b2b2b2; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-moz-range-track {
+      background-color: rgba(255, 255, 255, 0.1); }
   input[type=range]::-moz-range-thumb {
     position: relative;
     height: 24px;
@@ -805,18 +820,32 @@ input[type=range] {
     width: 20px;
     border-radius: 24px;
     background-color: #fff; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-moz-range-thumb {
+      border-color: #fff;
+      background-color: transparent; }
+  input[type=range]::hover::-moz-range-thumb {
+    border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::hover::-moz-range-thumb {
+      border-color: #fff;
+      background-color: #fff; }
   input[type=range]::-ms-track {
     width: 100%;
     height: 2px;
     background-color: #b2b2b2;
     border-color: transparent;
     color: transparent; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-track {
+      background-color: rgba(255, 255, 255, 0.1); }
   input[type=range]::-ms-fill-lower {
     background: #8C50FF;
     border-color: transparent; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-fill-lower {
+      background: #fff; }
   input[type=range]::-ms-fill-upper {
     background: #b2b2b2;
     border-color: transparent; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-fill-upper {
+      background: rgba(255, 255, 255, 0.1); }
   input[type=range]::-ms-thumb {
     position: relative;
     height: 24px;
@@ -827,8 +856,13 @@ input[type=range] {
     width: 20px;
     border-radius: 24px;
     background-color: #fff; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-thumb {
+      border-color: #fff; }
   input[type=range]:hover::-ms-thumb {
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]:hover::-ms-thumb {
+      border-color: #fff;
+      background-color: #fff; }
 
 @media screen and (min-width: 45em) {
   html,
@@ -1047,9 +1081,13 @@ article:not(.article) {
     .box__container--full {
       max-width: 100%;
       width: 100vw; }
+      .layer__container .box__container--full {
+        width: calc(100vw - 48px); }
     .box__container--full-horizontal {
       max-width: 100%;
       width: 100vw; }
+      .layer__container .box__container--full-horizontal {
+        width: calc(100vw - 48px); }
     .app--centered .box__container > .box {
       width: 100%;
       max-width: 960px;
@@ -1099,9 +1137,13 @@ article:not(.article) {
     width: 100vw;
     min-height: 100vh;
     height: 100%; }
+    .layer__container .box--full {
+      width: calc(100vw - 48px); }
   .box--full-horizontal {
     max-width: 100%;
     width: 100vw; }
+    .layer__container .box--full-horizontal {
+      width: calc(100vw - 48px); }
   .box--full-vertical {
     min-height: 100vh; }
   .box--direction-row {
@@ -1147,19 +1189,19 @@ article:not(.article) {
     align-items: center; }
   .box--align-end {
     align-items: flex-end; }
-  .box--separator-top {
+  .box--separator-top, .box--separator-horizontal, .box--separator-all {
     border-top: 1px solid #ccc; }
-  .box--separator-bottom {
+  .box--separator-bottom, .box--separator-horizontal, .box--separator-all {
     border-bottom: 1px solid #ccc; }
-  .box--separator-left {
+  .box--separator-left, .box--separator-vertical, .box--separator-all {
     border-left: 1px solid #ccc; }
-  .box--separator-right {
+  .box--separator-right, .box--separator-vertical, .box--separator-all {
     border-right: 1px solid #ccc; }
   @media screen and (max-width: 44.9375em) {
-    .box--separator-left {
+    .box--separator-left, .box--separator-vertical, .box--separator-all {
       border-left: none;
       border-bottom: 1px solid #ccc; }
-    .box--separator-right {
+    .box--separator-right, .box--separator-vertical, .box--separator-all {
       border-right: none;
       border-bottom: 1px solid #ccc; } }
   [class*="background-color-index-"] .box[class*="box--separator"] {
@@ -1866,19 +1908,29 @@ button:not(.button) {
     cursor: pointer; }
   .check-box:hover:not(.check-box--disabled) .check-box__control {
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box:hover:not(.check-box--disabled) .check-box__control {
+      border-color: #fff; }
   .check-box:hover:not(.check-box--disabled) .check-box__input:checked + .check-box__control {
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box:hover:not(.check-box--disabled) .check-box__input:checked + .check-box__control {
+      border-color: #fff; }
   .check-box:hover:not(.check-box--disabled) .check-box__label {
     color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box:hover:not(.check-box--disabled) .check-box__label {
+      color: #fff; }
   .check-box__input {
     opacity: 0;
     position: absolute; }
     .check-box__input:checked + .check-box__control {
       border-color: #8C50FF; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box__input:checked + .check-box__control {
+        border-color: #fff; }
       .check-box__input:checked + .check-box__control .check-box__control-check {
         display: block; }
       .check-box__input:checked + .check-box__control + .check-box__label {
         color: #333; }
+        [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box__input:checked + .check-box__control + .check-box__label {
+          color: #fff; }
     .check-box__input:focus + .check-box__control {
       border-color: #c3a4fe;
       box-shadow: 0 0 1px 1px #c3a4fe; }
@@ -1893,6 +1945,8 @@ button:not(.button) {
     background-color: inherit;
     border: 2px solid #999;
     border-radius: 4px; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box__control {
+      border-color: #dbdbdb; }
     .check-box__control-check {
       position: absolute;
       top: -2px;
@@ -1902,16 +1956,26 @@ button:not(.button) {
       height: 24px;
       stroke-width: 4px;
       stroke: #8C50FF; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box__control-check {
+        stroke: #fff; }
   .check-box__label {
     color: #777; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box__label {
+      color: #dbdbdb; }
   .check-box--disabled .check-box__control {
     opacity: 0.5; }
   .check-box--toggle:hover:not(.check-box--disabled) .check-box__control:after {
     content: "";
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle:hover:not(.check-box--disabled) .check-box__control:after {
+      background-color: #fff;
+      border-color: #fff; }
   .check-box--toggle:hover:not(.check-box--disabled) .check-box__input:checked + .check-box__control:after {
     content: "";
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle:hover:not(.check-box--disabled) .check-box__input:checked + .check-box__control:after {
+      background-color: #fff;
+      border-color: #fff; }
   .check-box--toggle .check-box__control {
     width: 48px;
     height: 24px;
@@ -1919,6 +1983,8 @@ button:not(.button) {
     background-color: #b2b2b2;
     border: none;
     transition: background-color 0.3s; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__control {
+      background-color: rgba(255, 255, 255, 0.1); }
     .check-box--toggle .check-box__control:after {
       content: "";
       display: block;
@@ -1931,13 +1997,22 @@ button:not(.button) {
       border: 2px solid #999;
       border-radius: 24px;
       transition: margin-left 0.3s; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__control:after {
+        background-color: transparent;
+        border-color: #dbdbdb; }
   .check-box--toggle .check-box__input:checked + .check-box__control {
     background-color: #8C50FF; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__input:checked + .check-box__control {
+      background-color: rgba(255, 255, 255, 0.1); }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__input:checked + .check-box__control .check-box__control-check {
+        stroke: transparent; }
   .check-box--toggle .check-box__input:checked + .check-box__control:after {
     content: "";
     background-color: #fff;
     border-color: #8C50FF;
     margin-left: 24px; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__input:checked + .check-box__control:after {
+      border-color: #dbdbdb; }
 
 .background-color-index-neutral-1,
 .background-color-index-neutral-4 {
@@ -2601,6 +2676,9 @@ button:not(.button) {
   @media screen and (max-width: 44.9375em) {
     .form-field {
       display: block; } }
+  [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field {
+    background-color: transparent;
+    color: #dbdbdb; }
   .form--fill .form-field {
     width: 100%; }
   .form-field:last-child {
@@ -2611,6 +2689,8 @@ button:not(.button) {
     font-size: 0.875rem;
     line-height: 24px;
     color: #777; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__label {
+      color: #dbdbdb; }
   .form-field__contents {
     display: block;
     margin-left: -24px;
@@ -2646,6 +2726,17 @@ button:not(.button) {
       .form-field__contents > .calendar input:focus,
       .form-field__contents > textarea:focus {
         border: none; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__contents > input[type=text], [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > input[type=range], [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > input[type=email], [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > input[type=password], [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > input[type=number], [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > input[type=file], [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > select, [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > .search-input input, [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > .calendar input, [class*="background-color-index-"]:not([class*="background-color-index-light"])
+      .form-field__contents > textarea {
+        color: #fff; }
     .form-field__contents > input[type=range] {
       width: calc(100% - 48px);
       margin-left: 24px;
@@ -2654,8 +2745,11 @@ button:not(.button) {
       padding-right: 0px; }
     .form-field__contents > select {
       display: block;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAABGdBTUEAALGPC/xhBQAAATdJREFUOBGlUjFqw0AQ1AWBCWpd+A1pXOYHJk38BZeSOkPS5BERaWRJTcCNH2A3xj9waRf+hGsJAoLLjNk77iLFIXhB7NzO3OjuGBUEgaqqaos+wXdL7eI4frqDg27bdoZ+vsHtLB5aGZOyLJ+VUmut9Rdmj0mSHAzX16EfY77HngH2TKHfUMcTXooDEAsKMFhlWXYvVKcJtxKzhTGj0Bpy0TTNK0xPED5EUfTOWV+Ro4Za7nE19spm+NtVHP7q03gn5Ca+Hf78RoxTfOZ5PiJmEXNGTA21xG51DEmmafqBtsM3DMNwic6bKMFDcqIB9Cv0l3Z1iRIMjphMiqKYC8Os2ohYtQM6b+hwwY8o8Qm8iLhag3uvbEiJQ0EjMfMiYnRuv2pIYV3XL4xHX0Rco39hRkni9Oe+bw49m1YsR5tyAAAAAElFTkSuQmCC);
       background-position: center right 18px;
       padding-left: 22px; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__contents > select {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAABGdBTUEAALGPC/xhBQAAATtJREFUOBGdkk1KxEAQhdNiEPdZeIEk4MalNwhu9ApeQdCNhxBc6U5w4wHGjcwBAi4VMpDkCCYHkEDi+4bp0JNp/6ag6ErVey9VRZkgCExVVS/GmEzx1jYMwzxJkpMdKQxd150r8bGtGlw00DJWpK7rU8UzFT/lx2mavtma7y3L8khTvcr3VD+L4/gZHB0ujUTf93cA5E95nu/b2vSlBgYsHCsGbhTko23bK3W3EPAwiqIbcj6jBgYsHBczjmyT341i67+tZq1DSOxOf78mVgcPRVEcEGPE5IjB+Pa8IQhYO7kVcS5SFIbhI3ycmBw1MGCntjtNrL6XpySBdwlkGvNilc8kNp6Ij7uxQxfk7ou8xNdOxMXa2DuyLXIO6ugeIXx6Ihbnvj8KAmya5lKiC3x6Iq7Qv2JOCf8L6QsuVKvxz0iZVQAAAABJRU5ErkJggg==); }
     .form-field__contents > select:-moz-focusring {
       color: transparent;
       text-shadow: 0 0 0 #000; }
@@ -2730,11 +2824,15 @@ button:not(.button) {
     font-size: 0.8125rem;
     line-height: 1.84615;
     color: #777; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__help {
+      color: #dbdbdb; }
   .form-field__error {
     display: block;
     float: right;
     color: #FF856B;
     line-height: 24px; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__error {
+      color: #dbdbdb; }
   .form-field--text {
     cursor: pointer; }
     .form-field--text .form-field__label {
@@ -3196,7 +3294,10 @@ a.active > .label .label__icon.control-icon svg {
       background-image: radial-gradient(circle at top, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); }
       .layer--align-center:not(.layer--hidden) .layer__container {
         left: 50%;
-        transform: translateX(-50%); } }
+        top: 50%;
+        max-height: calc(100vh - 48px);
+        max-width: calc(100vw - 48px);
+        transform: translate(-50%, -50%); } }
   @media screen and (min-width: 45em) {
     .layer--align-left:not(.layer--hidden) {
       background-image: radial-gradient(circle at left, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); } }
@@ -4486,17 +4587,27 @@ a.active > .label .label__icon.control-icon svg {
     cursor: pointer; }
   .radio-button:hover:not(.radio-button--disabled) .radio-button__control {
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button:hover:not(.radio-button--disabled) .radio-button__control {
+      border-color: #fff; }
   .radio-button:hover:not(.radio-button--disabled) .radio-button__input:checked + .radio-button__control {
     border-color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button:hover:not(.radio-button--disabled) .radio-button__input:checked + .radio-button__control {
+      border-color: #fff; }
   .radio-button:hover:not(.radio-button--disabled) .radio-button__label {
     color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button:hover:not(.radio-button--disabled) .radio-button__label {
+      color: #fff; }
   .radio-button__input {
     opacity: 0;
     position: absolute; }
     .radio-button__input:checked + .radio-button__control {
       border-color: #8C50FF; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button__input:checked + .radio-button__control {
+        border-color: #fff; }
       .radio-button__input:checked + .radio-button__control + .radio-button__label {
         color: #333; }
+        [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button__input:checked + .radio-button__control + .radio-button__label {
+          color: #fff; }
     .radio-button__input:checked + .radio-button__control:after {
       content: "";
       display: block;
@@ -4507,6 +4618,8 @@ a.active > .label .label__icon.control-icon svg {
       height: 10px;
       background-color: #8C50FF;
       border-radius: 12px; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button__input:checked + .radio-button__control:after {
+        background-color: #fff; }
     .radio-button__input:focus + .radio-button__control {
       content: "";
       border-color: #c3a4fe;
@@ -4522,8 +4635,12 @@ a.active > .label .label__icon.control-icon svg {
     color: #6e22ff;
     border: 2px solid #999;
     border-radius: 24px; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button__control {
+      border-color: #dbdbdb; }
   .radio-button__label {
     color: #777; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button__label {
+      color: #dbdbdb; }
   .radio-button--disabled .radio-button__control {
     opacity: 0.5; }
 
@@ -4895,9 +5012,14 @@ section > dl > dd {
   .table--selectable tbody tr.table-row--selected td {
     background-color: #d9c5ff;
     color: #333; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .table--selectable tbody tr.table-row--selected td {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #fff; }
   .table--selectable tbody tr:hover:not(.table-row--selected) td {
     background-color: rgba(0, 0, 0, 0.1);
     color: #000; }
+    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .table--selectable tbody tr:hover:not(.table-row--selected) td {
+      color: #fff; }
 
 .tbd {
   text-align: center;
