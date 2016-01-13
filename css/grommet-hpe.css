@@ -1533,7 +1533,7 @@ button:not(.button) {
     .chart__values-line.color-index-unknown {
       stroke: #CCCCCC; }
     .chart__values-line.color-index-disabled {
-      stroke: #EDEDED; }
+      stroke: #CCCCCC; }
     .chart__values-line.color-index-graph-1, .chart__values-line.color-index-graph-5 {
       stroke: #617c91; }
     .chart__values-line.color-index-graph-2, .chart__values-line.color-index-graph-6 {
@@ -1565,7 +1565,7 @@ button:not(.button) {
   .chart__values-bar.color-index-unknown, .chart__values-area.color-index-unknown {
     fill: rgba(204, 204, 204, 0.7); }
   .chart__values-bar.color-index-disabled, .chart__values-area.color-index-disabled {
-    fill: rgba(237, 237, 237, 0.7); }
+    fill: rgba(204, 204, 204, 0.7); }
   .chart__values-bar.color-index-graph-1, .chart__values-bar.color-index-graph-5, .chart__values-area.color-index-graph-1, .chart__values-area.color-index-graph-5 {
     fill: rgba(97, 124, 145, 0.7); }
   .chart__values-bar.color-index-graph-2, .chart__values-bar.color-index-graph-6, .chart__values-area.color-index-graph-2, .chart__values-area.color-index-graph-6 {
@@ -1589,7 +1589,7 @@ button:not(.button) {
   .chart__values-bar--active.color-index-unknown, .chart__values-area--active.color-index-unknown {
     fill: #CCCCCC; }
   .chart__values-bar--active.color-index-disabled, .chart__values-area--active.color-index-disabled {
-    fill: #EDEDED; }
+    fill: #CCCCCC; }
   .chart__values-bar--active.color-index-graph-1, .chart__values-bar--active.color-index-graph-5, .chart__values-area--active.color-index-graph-1, .chart__values-area--active.color-index-graph-5 {
     fill: #617c91; }
   .chart__values-bar--active.color-index-graph-2, .chart__values-bar--active.color-index-graph-6, .chart__values-area--active.color-index-graph-2, .chart__values-area--active.color-index-graph-6 {
@@ -1628,7 +1628,7 @@ button:not(.button) {
     .chart__values-point.color-index-unknown {
       stroke: #CCCCCC; }
     .chart__values-point.color-index-disabled {
-      stroke: #EDEDED; }
+      stroke: #CCCCCC; }
     .chart__values-point.color-index-graph-1, .chart__values-point.color-index-graph-5 {
       stroke: #617c91; }
     .chart__values-point.color-index-graph-2, .chart__values-point.color-index-graph-6 {
@@ -1670,7 +1670,7 @@ button:not(.button) {
     .chart__values--loading.color-index-unknown {
       stroke: #CCCCCC; }
     .chart__values--loading.color-index-disabled {
-      stroke: #EDEDED; }
+      stroke: #CCCCCC; }
     .chart__values--loading.color-index-graph-1, .chart__values--loading.color-index-graph-5 {
       stroke: #617c91; }
     .chart__values--loading.color-index-graph-2, .chart__values--loading.color-index-graph-6 {
@@ -1706,7 +1706,7 @@ button:not(.button) {
   .chart__yaxis .chart__bar.color-index-unknown {
     fill: rgba(204, 204, 204, 0.5); }
   .chart__yaxis .chart__bar.color-index-disabled {
-    fill: rgba(237, 237, 237, 0.5); }
+    fill: rgba(204, 204, 204, 0.5); }
   .chart__yaxis .chart__bar.color-index-graph-1, .chart__yaxis .chart__bar.color-index-graph-5 {
     fill: rgba(97, 124, 145, 0.5); }
   .chart__yaxis .chart__bar.color-index-graph-2, .chart__yaxis .chart__bar.color-index-graph-6 {
@@ -1744,7 +1744,7 @@ button:not(.button) {
       .chart__cursor-point.color-index-unknown {
         fill: #CCCCCC; }
       .chart__cursor-point.color-index-disabled {
-        fill: #EDEDED; }
+        fill: #CCCCCC; }
       .chart__cursor-point.color-index-graph-1, .chart__cursor-point.color-index-graph-5 {
         fill: #617c91; }
       .chart__cursor-point.color-index-graph-2, .chart__cursor-point.color-index-graph-6 {
@@ -1814,12 +1814,12 @@ button:not(.button) {
     stop-color: #CCCCCC;
     stop-opacity: 0; }
   .chart--area .chart__gradient.color-index-disabled .begin, .chart--bar .chart__gradient.color-index-disabled .begin {
-    stop-color: #EDEDED; }
+    stop-color: #CCCCCC; }
   .chart--area .chart__gradient.color-index-disabled .mid, .chart--bar .chart__gradient.color-index-disabled .mid {
-    stop-color: #EDEDED;
+    stop-color: #CCCCCC;
     stop-opacity: 0.5; }
   .chart--area .chart__gradient.color-index-disabled .end, .chart--bar .chart__gradient.color-index-disabled .end {
-    stop-color: #EDEDED;
+    stop-color: #CCCCCC;
     stop-opacity: 0; }
   .chart--area .chart__gradient.color-index-graph-1 .begin, .chart--area .chart__gradient.color-index-graph-5 .begin, .chart--bar .chart__gradient.color-index-graph-1 .begin, .chart--bar .chart__gradient.color-index-graph-5 .begin {
     stop-color: #617c91; }
@@ -1878,7 +1878,7 @@ button:not(.button) {
     .chart--sparkline .chart__values-bar.color-index-unknown, .chart--sparkline .chart__values-area.color-index-unknown {
       fill: #CCCCCC; }
     .chart--sparkline .chart__values-bar.color-index-disabled, .chart--sparkline .chart__values-area.color-index-disabled {
-      fill: #EDEDED; }
+      fill: #CCCCCC; }
     .chart--sparkline .chart__values-bar.color-index-graph-1, .chart--sparkline .chart__values-bar.color-index-graph-5, .chart--sparkline .chart__values-area.color-index-graph-1, .chart--sparkline .chart__values-area.color-index-graph-5 {
       fill: #617c91; }
     .chart--sparkline .chart__values-bar.color-index-graph-2, .chart--sparkline .chart__values-bar.color-index-graph-6, .chart--sparkline .chart__values-area.color-index-graph-2, .chart--sparkline .chart__values-area.color-index-graph-6 {
@@ -2142,79 +2142,79 @@ button:not(.button) {
     width: 100%;
     height: 192px;
     max-height: calc(100vh - 144px); }
-  .distribution__box {
+  .distribution__item--clickable {
     cursor: pointer; }
-    .distribution__box.color-index-unset {
-      fill: #ddd; }
-    .distribution__box.color-index-brand {
-      fill: #01a982; }
-    .distribution__box.color-index-critical {
-      fill: #F04953; }
-    .distribution__box.color-index-error {
-      fill: #F04953; }
-    .distribution__box.color-index-warning {
-      fill: #FFD144; }
-    .distribution__box.color-index-ok {
-      fill: #01a982; }
-    .distribution__box.color-index-unknown {
-      fill: #CCCCCC; }
-    .distribution__box.color-index-disabled {
-      fill: #EDEDED; }
-    .distribution__box.color-index-graph-1, .distribution__box.color-index-graph-5 {
-      fill: #617c91; }
-    .distribution__box.color-index-graph-2, .distribution__box.color-index-graph-6 {
-      fill: #94aba8; }
-    .distribution__box.color-index-graph-3, .distribution__box.color-index-graph-7 {
-      fill: #998e88; }
-    .distribution__box.color-index-graph-4, .distribution__box.color-index-graph-8 {
-      fill: #8c6694; }
-    .distribution__box.color-index-grey-1, .distribution__box.color-index-grey-5 {
-      fill: #333333; }
-    .distribution__box.color-index-grey-2, .distribution__box.color-index-grey-6 {
-      fill: #3B3B3B; }
-    .distribution__box.color-index-grey-3, .distribution__box.color-index-grey-7 {
-      fill: #434343; }
-    .distribution__box.color-index-grey-4, .distribution__box.color-index-grey-8 {
-      fill: #666666; }
-  .distribution__icons.color-index-loading {
+  .distribution__item-box.color-index-unset {
+    fill: #ddd; }
+  .distribution__item-box.color-index-brand {
+    fill: #01a982; }
+  .distribution__item-box.color-index-critical {
+    fill: #F04953; }
+  .distribution__item-box.color-index-error {
+    fill: #F04953; }
+  .distribution__item-box.color-index-warning {
+    fill: #FFD144; }
+  .distribution__item-box.color-index-ok {
+    fill: #01a982; }
+  .distribution__item-box.color-index-unknown {
+    fill: #CCCCCC; }
+  .distribution__item-box.color-index-disabled {
+    fill: #CCCCCC; }
+  .distribution__item-box.color-index-graph-1, .distribution__item-box.color-index-graph-5 {
+    fill: #617c91; }
+  .distribution__item-box.color-index-graph-2, .distribution__item-box.color-index-graph-6 {
+    fill: #94aba8; }
+  .distribution__item-box.color-index-graph-3, .distribution__item-box.color-index-graph-7 {
+    fill: #998e88; }
+  .distribution__item-box.color-index-graph-4, .distribution__item-box.color-index-graph-8 {
+    fill: #8c6694; }
+  .distribution__item-box.color-index-grey-1, .distribution__item-box.color-index-grey-5 {
+    fill: #333333; }
+  .distribution__item-box.color-index-grey-2, .distribution__item-box.color-index-grey-6 {
+    fill: #3B3B3B; }
+  .distribution__item-box.color-index-grey-3, .distribution__item-box.color-index-grey-7 {
+    fill: #434343; }
+  .distribution__item-box.color-index-grey-4, .distribution__item-box.color-index-grey-8 {
+    fill: #666666; }
+  .distribution__item-icons.color-index-loading {
     stroke: #ddd;
     stroke-dasharray: 1px 10px;
     stroke-dashoffset: 0; }
-  .distribution__icons.color-index-unset {
+  .distribution__item-icons.color-index-unset {
     stroke: #ddd; }
-  .distribution__icons.color-index-brand {
+  .distribution__item-icons.color-index-brand {
     stroke: #01a982; }
-  .distribution__icons.color-index-critical {
+  .distribution__item-icons.color-index-critical {
     stroke: #F04953; }
-  .distribution__icons.color-index-error {
+  .distribution__item-icons.color-index-error {
     stroke: #F04953; }
-  .distribution__icons.color-index-warning {
+  .distribution__item-icons.color-index-warning {
     stroke: #FFD144; }
-  .distribution__icons.color-index-ok {
+  .distribution__item-icons.color-index-ok {
     stroke: #01a982; }
-  .distribution__icons.color-index-unknown {
+  .distribution__item-icons.color-index-unknown {
     stroke: #CCCCCC; }
-  .distribution__icons.color-index-disabled {
-    stroke: #EDEDED; }
-  .distribution__icons.color-index-graph-1, .distribution__icons.color-index-graph-5 {
+  .distribution__item-icons.color-index-disabled {
+    stroke: #CCCCCC; }
+  .distribution__item-icons.color-index-graph-1, .distribution__item-icons.color-index-graph-5 {
     stroke: #617c91; }
-  .distribution__icons.color-index-graph-2, .distribution__icons.color-index-graph-6 {
+  .distribution__item-icons.color-index-graph-2, .distribution__item-icons.color-index-graph-6 {
     stroke: #94aba8; }
-  .distribution__icons.color-index-graph-3, .distribution__icons.color-index-graph-7 {
+  .distribution__item-icons.color-index-graph-3, .distribution__item-icons.color-index-graph-7 {
     stroke: #998e88; }
-  .distribution__icons.color-index-graph-4, .distribution__icons.color-index-graph-8 {
+  .distribution__item-icons.color-index-graph-4, .distribution__item-icons.color-index-graph-8 {
     stroke: #8c6694; }
-  .distribution__icons.color-index-grey-1, .distribution__icons.color-index-grey-5 {
+  .distribution__item-icons.color-index-grey-1, .distribution__item-icons.color-index-grey-5 {
     stroke: #333333; }
-  .distribution__icons.color-index-grey-2, .distribution__icons.color-index-grey-6 {
+  .distribution__item-icons.color-index-grey-2, .distribution__item-icons.color-index-grey-6 {
     stroke: #3B3B3B; }
-  .distribution__icons.color-index-grey-3, .distribution__icons.color-index-grey-7 {
+  .distribution__item-icons.color-index-grey-3, .distribution__item-icons.color-index-grey-7 {
     stroke: #434343; }
-  .distribution__icons.color-index-grey-4, .distribution__icons.color-index-grey-8 {
+  .distribution__item-icons.color-index-grey-4, .distribution__item-icons.color-index-grey-8 {
     stroke: #666666; }
-  .distribution__icons.color-index-light-1, .distribution__icons.color-index-light-3 {
+  .distribution__item-icons.color-index-light-1, .distribution__item-icons.color-index-light-3 {
     stroke: #ffffff; }
-  .distribution__icons.color-index-light-2, .distribution__icons.color-index-light-4 {
+  .distribution__item-icons.color-index-light-2, .distribution__item-icons.color-index-light-4 {
     stroke: #f5f5f5; }
   .distribution__label {
     position: absolute;
@@ -2238,12 +2238,8 @@ button:not(.button) {
       font-weight: normal; }
     .distribution__label-label {
       display: block; }
-    .distribution__label--small {
-      padding: 12px; }
-      .distribution__label--small .distribution__label-value {
-        font-size: 20px;
-        font-size: 1.25rem;
-        line-height: 1.2; }
+    .distribution__label--active {
+      color: #333; }
     .distribution__label--thin .distribution__label-value,
     .distribution__label--thin .distribution__label-label {
       display: inline-block; }
@@ -2275,7 +2271,7 @@ button:not(.button) {
     .distribution__loading-indicator.color-index-unknown {
       stroke: #CCCCCC; }
     .distribution__loading-indicator.color-index-disabled {
-      stroke: #EDEDED; }
+      stroke: #CCCCCC; }
     .distribution__loading-indicator.color-index-graph-1, .distribution__loading-indicator.color-index-graph-5 {
       stroke: #617c91; }
     .distribution__loading-indicator.color-index-graph-2, .distribution__loading-indicator.color-index-graph-6 {
@@ -2300,6 +2296,13 @@ button:not(.button) {
     padding: 0 12px 12px 0; }
     .distribution--icons .distribution__label-value {
       line-height: 1; }
+  .distribution--small-label .distribution__label {
+    padding-top: 0px;
+    padding-left: 6px; }
+    .distribution--small-label .distribution__label-value {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.2; }
   .distribution--small .distribution__graphic {
     height: 96px; }
   .distribution--large .distribution__graphic {
@@ -2365,7 +2368,7 @@ button:not(.button) {
   .donut__slice.color-index-unknown {
     stroke: #CCCCCC; }
   .donut__slice.color-index-disabled {
-    stroke: #EDEDED; }
+    stroke: #CCCCCC; }
   .donut__slice.color-index-graph-1, .donut__slice.color-index-graph-5 {
     stroke: #617c91; }
   .donut__slice.color-index-graph-2, .donut__slice.color-index-graph-6 {
@@ -2405,7 +2408,7 @@ button:not(.button) {
   .donut__slice-indicator.color-index-unknown {
     fill: #CCCCCC; }
   .donut__slice-indicator.color-index-disabled {
-    fill: #EDEDED; }
+    fill: #CCCCCC; }
   .donut__slice-indicator.color-index-graph-1, .donut__slice-indicator.color-index-graph-5 {
     fill: #617c91; }
   .donut__slice-indicator.color-index-graph-2, .donut__slice-indicator.color-index-graph-6 {
@@ -2884,6 +2887,12 @@ header.header {
     right: 0px; }
   header.header--primary .header__wrapper {
     border-bottom: none; }
+  header.header h1,
+  header.header h2,
+  header.header h3,
+  header.header h4,
+  header.header h5 {
+    margin-bottom: 0; }
   header.header.header--splash {
     -webkit-transform: translate(0, 40vh);
     transform: translate(0, 40vh); }
@@ -2979,7 +2988,8 @@ div.header--flush .header__wrapper {
   vertical-align: middle;
   cursor: pointer;
   fill: #999;
-  stroke: #999; }
+  stroke: #999;
+  flex: 0 0 auto; }
   .control-icon *:not([stroke])[fill="none"] {
     stroke-width: 0; }
   .control-icon *[stroke] {
@@ -3005,7 +3015,7 @@ div.header--flush .header__wrapper {
   .control-icon.color-index-unknown {
     stroke: #CCCCCC; }
   .control-icon.color-index-disabled {
-    stroke: #EDEDED; }
+    stroke: #CCCCCC; }
   .control-icon.color-index-graph-1, .control-icon.color-index-graph-5 {
     stroke: #617c91; }
   .control-icon.color-index-graph-2, .control-icon.color-index-graph-6 {
@@ -3041,7 +3051,7 @@ div.header--flush .header__wrapper {
   .control-icon.color-index-unknown {
     fill: #CCCCCC; }
   .control-icon.color-index-disabled {
-    fill: #EDEDED; }
+    fill: #CCCCCC; }
   .control-icon.color-index-graph-1, .control-icon.color-index-graph-5 {
     fill: #617c91; }
   .control-icon.color-index-graph-2, .control-icon.color-index-graph-6 {
@@ -3093,7 +3103,8 @@ div.header--flush .header__wrapper {
 .status-icon {
   width: 24px;
   height: 24px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  flex: 0 0 auto; }
   .status-icon .status-icon__base {
     fill: #CCCCCC; }
   .status-icon-critical .status-icon__base {
@@ -3107,7 +3118,7 @@ div.header--flush .header__wrapper {
   .status-icon-unknown .status-icon__base {
     fill: #CCCCCC; }
   .status-icon-disabled .status-icon__base {
-    fill: #EDEDED; }
+    fill: #CCCCCC; }
   .status-icon-label .status-icon__base {
     fill: #CCCCCC; }
   .status-icon__detail {
@@ -3177,7 +3188,7 @@ div.header--flush .header__wrapper {
   .logo-icon.color-index-unknown {
     stroke: #CCCCCC; }
   .logo-icon.color-index-disabled {
-    stroke: #EDEDED; }
+    stroke: #CCCCCC; }
   .logo-icon.color-index-graph-1, .logo-icon.color-index-graph-5 {
     stroke: #617c91; }
   .logo-icon.color-index-graph-2, .logo-icon.color-index-graph-6 {
@@ -3406,16 +3417,7 @@ a.active > .label .label__icon.control-icon svg {
     color: #777;
     font-style: italic; }
   .list .list-item {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    align-items: center;
     max-width: none; }
-    .list .list-item:last-child {
-      border-bottom: none; }
     .list .list-item__image {
       height: 24px;
       width: 24px;
@@ -3441,9 +3443,6 @@ a.active > .label .label__icon.control-icon svg {
       color: #333; }
     .list .list-item--row .list-item__annotation {
       text-align: right; }
-    .list .list-item--column {
-      flex-direction: column;
-      align-items: start; }
   .list--selectable .list-item {
     cursor: pointer;
     transition: background-color 0.2s; }
@@ -3453,22 +3452,14 @@ a.active > .label .label__icon.control-icon svg {
     .list--selectable .list-item:hover:not(.list-item--selected) {
       background-color: rgba(0, 0, 0, 0.1);
       color: #000; }
-  .list--small .list-item,
-  .list--small .list__more {
-    padding-top: 6px;
-    padding-bottom: 6px; }
-    .list--small .list-item__image,
-    .list--small .list__more__image {
-      height: 12px;
-      width: 12px; }
-  .list--large .list-item,
-  .list--large .list__more {
-    padding-top: 24px;
-    padding-bottom: 24px; }
-    .list--large .list-item__image,
-    .list--large .list__more__image {
-      height: 48px;
-      width: 48px; }
+  .list--small .list-item__image,
+  .list--small .list__more__image {
+    height: 12px;
+    width: 12px; }
+  .list--large .list-item__image,
+  .list--large .list__more__image {
+    height: 48px;
+    width: 48px; }
 
 .legend {
   text-align: left;
@@ -3490,63 +3481,63 @@ a.active > .label .label__icon.control-icon svg {
     .legend__item-units, .legend__total-units {
       display: inline-block;
       margin-left: 6px; }
-  .legend__item {
+  .legend__item--clickable {
     cursor: pointer; }
-    .legend__item svg.legend__item-swatch {
-      width: 12px;
-      height: 12px;
-      margin-top: 6px;
-      margin-right: 12px;
-      overflow: visible; }
-      .legend__item svg.legend__item-swatch.color-index-loading {
-        stroke: #ddd;
-        stroke-dasharray: 1px 10px;
-        stroke-dashoffset: 0; }
-      .legend__item svg.legend__item-swatch.color-index-unset {
-        stroke: #ddd; }
-      .legend__item svg.legend__item-swatch.color-index-brand {
-        stroke: #01a982; }
-      .legend__item svg.legend__item-swatch.color-index-critical {
-        stroke: #F04953; }
-      .legend__item svg.legend__item-swatch.color-index-error {
-        stroke: #F04953; }
-      .legend__item svg.legend__item-swatch.color-index-warning {
-        stroke: #FFD144; }
-      .legend__item svg.legend__item-swatch.color-index-ok {
-        stroke: #01a982; }
-      .legend__item svg.legend__item-swatch.color-index-unknown {
-        stroke: #CCCCCC; }
-      .legend__item svg.legend__item-swatch.color-index-disabled {
-        stroke: #EDEDED; }
-      .legend__item svg.legend__item-swatch.color-index-graph-1, .legend__item svg.legend__item-swatch.color-index-graph-5 {
-        stroke: #617c91; }
-      .legend__item svg.legend__item-swatch.color-index-graph-2, .legend__item svg.legend__item-swatch.color-index-graph-6 {
-        stroke: #94aba8; }
-      .legend__item svg.legend__item-swatch.color-index-graph-3, .legend__item svg.legend__item-swatch.color-index-graph-7 {
-        stroke: #998e88; }
-      .legend__item svg.legend__item-swatch.color-index-graph-4, .legend__item svg.legend__item-swatch.color-index-graph-8 {
-        stroke: #8c6694; }
-      .legend__item svg.legend__item-swatch.color-index-grey-1, .legend__item svg.legend__item-swatch.color-index-grey-5 {
-        stroke: #333333; }
-      .legend__item svg.legend__item-swatch.color-index-grey-2, .legend__item svg.legend__item-swatch.color-index-grey-6 {
-        stroke: #3B3B3B; }
-      .legend__item svg.legend__item-swatch.color-index-grey-3, .legend__item svg.legend__item-swatch.color-index-grey-7 {
-        stroke: #434343; }
-      .legend__item svg.legend__item-swatch.color-index-grey-4, .legend__item svg.legend__item-swatch.color-index-grey-8 {
-        stroke: #666666; }
-      .legend__item svg.legend__item-swatch.color-index-light-1, .legend__item svg.legend__item-swatch.color-index-light-3 {
-        stroke: #ffffff; }
-      .legend__item svg.legend__item-swatch.color-index-light-2, .legend__item svg.legend__item-swatch.color-index-light-4 {
-        stroke: #f5f5f5; }
-      .legend__item svg.legend__item-swatch path {
-        stroke-width: 12px;
-        transition-property: stroke-width;
-        transition-duration: 0.3s;
-        transition-timing-function: ease-in-out; }
-    .legend__item--active {
-      color: #333; }
-      .legend__item--active svg.legend__item-swatch path {
-        stroke-width: 12px; }
+  .legend__item svg.legend__item-swatch {
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    margin-right: 12px;
+    overflow: visible; }
+    .legend__item svg.legend__item-swatch.color-index-loading {
+      stroke: #ddd;
+      stroke-dasharray: 1px 10px;
+      stroke-dashoffset: 0; }
+    .legend__item svg.legend__item-swatch.color-index-unset {
+      stroke: #ddd; }
+    .legend__item svg.legend__item-swatch.color-index-brand {
+      stroke: #01a982; }
+    .legend__item svg.legend__item-swatch.color-index-critical {
+      stroke: #F04953; }
+    .legend__item svg.legend__item-swatch.color-index-error {
+      stroke: #F04953; }
+    .legend__item svg.legend__item-swatch.color-index-warning {
+      stroke: #FFD144; }
+    .legend__item svg.legend__item-swatch.color-index-ok {
+      stroke: #01a982; }
+    .legend__item svg.legend__item-swatch.color-index-unknown {
+      stroke: #CCCCCC; }
+    .legend__item svg.legend__item-swatch.color-index-disabled {
+      stroke: #CCCCCC; }
+    .legend__item svg.legend__item-swatch.color-index-graph-1, .legend__item svg.legend__item-swatch.color-index-graph-5 {
+      stroke: #617c91; }
+    .legend__item svg.legend__item-swatch.color-index-graph-2, .legend__item svg.legend__item-swatch.color-index-graph-6 {
+      stroke: #94aba8; }
+    .legend__item svg.legend__item-swatch.color-index-graph-3, .legend__item svg.legend__item-swatch.color-index-graph-7 {
+      stroke: #998e88; }
+    .legend__item svg.legend__item-swatch.color-index-graph-4, .legend__item svg.legend__item-swatch.color-index-graph-8 {
+      stroke: #8c6694; }
+    .legend__item svg.legend__item-swatch.color-index-grey-1, .legend__item svg.legend__item-swatch.color-index-grey-5 {
+      stroke: #333333; }
+    .legend__item svg.legend__item-swatch.color-index-grey-2, .legend__item svg.legend__item-swatch.color-index-grey-6 {
+      stroke: #3B3B3B; }
+    .legend__item svg.legend__item-swatch.color-index-grey-3, .legend__item svg.legend__item-swatch.color-index-grey-7 {
+      stroke: #434343; }
+    .legend__item svg.legend__item-swatch.color-index-grey-4, .legend__item svg.legend__item-swatch.color-index-grey-8 {
+      stroke: #666666; }
+    .legend__item svg.legend__item-swatch.color-index-light-1, .legend__item svg.legend__item-swatch.color-index-light-3 {
+      stroke: #ffffff; }
+    .legend__item svg.legend__item-swatch.color-index-light-2, .legend__item svg.legend__item-swatch.color-index-light-4 {
+      stroke: #f5f5f5; }
+    .legend__item svg.legend__item-swatch path {
+      stroke-width: 12px;
+      transition-property: stroke-width;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out; }
+  .legend__item--active {
+    color: #333; }
+    .legend__item--active svg.legend__item-swatch path {
+      stroke-width: 12px; }
   .legend__total {
     margin-left: 24px; }
     .legend__total > * {
@@ -3739,14 +3730,11 @@ a.active > .label .label__icon.control-icon svg {
     font-size: 1rem;
     line-height: inherit;
     max-height: 100vh; }
-    .menu__drop .anchor,
-    .menu__drop a {
+    .menu__drop .anchor {
       padding: 12px 24px;
       white-space: nowrap;
       display: block; }
-      .menu__drop .anchor:hover, .menu__drop .anchor:focus,
-      .menu__drop a:hover,
-      .menu__drop a:focus {
+      .menu__drop .anchor:hover, .menu__drop .anchor:focus {
         text-decoration: none;
         background-color: rgba(0, 0, 0, 0.1); }
     .menu__drop .check-box,
@@ -4027,53 +4015,53 @@ a.active > .label .label__icon.control-icon svg {
     stroke-linecap: butt;
     stroke-dasharray: 192px 192px;
     stroke-dashoffset: 0; }
-  .meter--bar .meter__values .meter__slice {
+  .meter--bar .meter__values .meter__slice.color-index-loading {
+    stroke: #ddd;
+    stroke-dasharray: 1px 10px;
+    stroke-dashoffset: 0; }
+  .meter--bar .meter__values .meter__slice.color-index-unset {
+    stroke: #ddd; }
+  .meter--bar .meter__values .meter__slice.color-index-brand {
+    stroke: #01a982; }
+  .meter--bar .meter__values .meter__slice.color-index-critical {
+    stroke: #F04953; }
+  .meter--bar .meter__values .meter__slice.color-index-error {
+    stroke: #F04953; }
+  .meter--bar .meter__values .meter__slice.color-index-warning {
+    stroke: #FFD144; }
+  .meter--bar .meter__values .meter__slice.color-index-ok {
+    stroke: #01a982; }
+  .meter--bar .meter__values .meter__slice.color-index-unknown {
+    stroke: #CCCCCC; }
+  .meter--bar .meter__values .meter__slice.color-index-disabled {
+    stroke: #CCCCCC; }
+  .meter--bar .meter__values .meter__slice.color-index-graph-1, .meter--bar .meter__values .meter__slice.color-index-graph-5 {
+    stroke: #617c91; }
+  .meter--bar .meter__values .meter__slice.color-index-graph-2, .meter--bar .meter__values .meter__slice.color-index-graph-6 {
+    stroke: #94aba8; }
+  .meter--bar .meter__values .meter__slice.color-index-graph-3, .meter--bar .meter__values .meter__slice.color-index-graph-7 {
+    stroke: #998e88; }
+  .meter--bar .meter__values .meter__slice.color-index-graph-4, .meter--bar .meter__values .meter__slice.color-index-graph-8 {
+    stroke: #8c6694; }
+  .meter--bar .meter__values .meter__slice.color-index-grey-1, .meter--bar .meter__values .meter__slice.color-index-grey-5 {
+    stroke: #333333; }
+  .meter--bar .meter__values .meter__slice.color-index-grey-2, .meter--bar .meter__values .meter__slice.color-index-grey-6 {
+    stroke: #3B3B3B; }
+  .meter--bar .meter__values .meter__slice.color-index-grey-3, .meter--bar .meter__values .meter__slice.color-index-grey-7 {
+    stroke: #434343; }
+  .meter--bar .meter__values .meter__slice.color-index-grey-4, .meter--bar .meter__values .meter__slice.color-index-grey-8 {
+    stroke: #666666; }
+  .meter--bar .meter__values .meter__slice.color-index-light-1, .meter--bar .meter__values .meter__slice.color-index-light-3 {
+    stroke: #ffffff; }
+  .meter--bar .meter__values .meter__slice.color-index-light-2, .meter--bar .meter__values .meter__slice.color-index-light-4 {
+    stroke: #f5f5f5; }
+  .meter--bar .meter__values .meter__slice--clickable {
     cursor: pointer; }
-    .meter--bar .meter__values .meter__slice.color-index-loading {
-      stroke: #ddd;
-      stroke-dasharray: 1px 10px;
-      stroke-dashoffset: 0; }
-    .meter--bar .meter__values .meter__slice.color-index-unset {
-      stroke: #ddd; }
-    .meter--bar .meter__values .meter__slice.color-index-brand {
-      stroke: #01a982; }
-    .meter--bar .meter__values .meter__slice.color-index-critical {
-      stroke: #F04953; }
-    .meter--bar .meter__values .meter__slice.color-index-error {
-      stroke: #F04953; }
-    .meter--bar .meter__values .meter__slice.color-index-warning {
-      stroke: #FFD144; }
-    .meter--bar .meter__values .meter__slice.color-index-ok {
-      stroke: #01a982; }
-    .meter--bar .meter__values .meter__slice.color-index-unknown {
-      stroke: #CCCCCC; }
-    .meter--bar .meter__values .meter__slice.color-index-disabled {
-      stroke: #EDEDED; }
-    .meter--bar .meter__values .meter__slice.color-index-graph-1, .meter--bar .meter__values .meter__slice.color-index-graph-5 {
-      stroke: #617c91; }
-    .meter--bar .meter__values .meter__slice.color-index-graph-2, .meter--bar .meter__values .meter__slice.color-index-graph-6 {
-      stroke: #94aba8; }
-    .meter--bar .meter__values .meter__slice.color-index-graph-3, .meter--bar .meter__values .meter__slice.color-index-graph-7 {
-      stroke: #998e88; }
-    .meter--bar .meter__values .meter__slice.color-index-graph-4, .meter--bar .meter__values .meter__slice.color-index-graph-8 {
-      stroke: #8c6694; }
-    .meter--bar .meter__values .meter__slice.color-index-grey-1, .meter--bar .meter__values .meter__slice.color-index-grey-5 {
-      stroke: #333333; }
-    .meter--bar .meter__values .meter__slice.color-index-grey-2, .meter--bar .meter__values .meter__slice.color-index-grey-6 {
-      stroke: #3B3B3B; }
-    .meter--bar .meter__values .meter__slice.color-index-grey-3, .meter--bar .meter__values .meter__slice.color-index-grey-7 {
-      stroke: #434343; }
-    .meter--bar .meter__values .meter__slice.color-index-grey-4, .meter--bar .meter__values .meter__slice.color-index-grey-8 {
-      stroke: #666666; }
-    .meter--bar .meter__values .meter__slice.color-index-light-1, .meter--bar .meter__values .meter__slice.color-index-light-3 {
-      stroke: #ffffff; }
-    .meter--bar .meter__values .meter__slice.color-index-light-2, .meter--bar .meter__values .meter__slice.color-index-light-4 {
-      stroke: #f5f5f5; }
-    @media screen and (min-width: 45em) {
-      .meter--bar .meter__values .meter__slice {
-        transition: stroke-width 0.2s;
-        -webkit-animation: draw-meter 1.5s linear;
-        animation: draw-meter 1.5s linear; } }
+  @media screen and (min-width: 45em) {
+    .meter--bar .meter__values .meter__slice {
+      transition: stroke-width 0.2s;
+      -webkit-animation: draw-meter 1.5s linear;
+      animation: draw-meter 1.5s linear; } }
   .meter--bar .meter__thresholds .meter__slice.color-index-unset {
     stroke: rgba(221, 221, 221, 0.5); }
   .meter--bar .meter__thresholds .meter__slice.color-index-brand {
@@ -4089,7 +4077,7 @@ a.active > .label .label__icon.control-icon svg {
   .meter--bar .meter__thresholds .meter__slice.color-index-unknown {
     stroke: rgba(204, 204, 204, 0.5); }
   .meter--bar .meter__thresholds .meter__slice.color-index-disabled {
-    stroke: rgba(237, 237, 237, 0.5); }
+    stroke: rgba(204, 204, 204, 0.5); }
   .meter--bar .meter__thresholds .meter__slice.color-index-graph-1, .meter--bar .meter__thresholds .meter__slice.color-index-graph-5 {
     stroke: rgba(97, 124, 145, 0.5); }
   .meter--bar .meter__thresholds .meter__slice.color-index-graph-2, .meter--bar .meter__thresholds .meter__slice.color-index-graph-6 {
@@ -4125,10 +4113,14 @@ a.active > .label .label__icon.control-icon svg {
   .meter--bar:not(.meter--vertical).meter--single .meter__value-label, .meter--bar:not(.meter--vertical).meter--stacked .meter__value-label {
     display: inline-block;
     margin-left: 4px; }
+  .meter--bar:not(.meter--vertical).meter--single.meter--legend-right .meter__value, .meter--bar:not(.meter--vertical).meter--stacked.meter--legend-right .meter__value {
+    min-width: 84px; }
   .meter--bar:not(.meter--vertical).meter--legend-right .meter__legend {
     top: 0px;
     -webkit-transform: none;
     transform: none; }
+  .meter--bar:not(.meter--vertical).meter--legend-right .meter__value {
+    min-width: 48px; }
   .meter--bar:not(.meter--vertical).meter--small svg.meter__graphic {
     width: 96px; }
   .meter--bar:not(.meter--vertical).meter--small .meter__value-value,
@@ -4136,6 +4128,10 @@ a.active > .label .label__icon.control-icon svg {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5; }
+  .meter--bar:not(.meter--vertical).meter--small.meter--legend-right .meter__value {
+    min-width: 42px; }
+  .meter--bar:not(.meter--vertical).meter--small.meter--legend-right.meter--stacked .meter__value {
+    min-width: 72px; }
   .meter--bar:not(.meter--vertical).meter--large svg.meter__graphic {
     width: 288px; }
   .meter--bar:not(.meter--vertical).meter--large .meter__value {
@@ -4163,12 +4159,16 @@ a.active > .label .label__icon.control-icon svg {
       left: 24px; }
     .meter--bar.meter--vertical.meter--legend-right .meter__legend {
       top: 96px; }
+    .meter--bar.meter--vertical.meter--legend-right .meter__value {
+      min-width: 60px; }
     .meter--bar.meter--vertical.meter--small svg.meter__graphic {
       height: 96px; }
     .meter--bar.meter--vertical.meter--small .meter__value {
       top: 48px; }
     .meter--bar.meter--vertical.meter--small.meter--legend-right .meter__legend {
       top: 48px; }
+    .meter--bar.meter--vertical.meter--small.meter--legend-right .meter__value {
+      min-width: 42px; }
     .meter--bar.meter--vertical.meter--large svg.meter__graphic {
       height: 288px; }
     .meter--bar.meter--vertical.meter--large .meter__value {
@@ -4192,53 +4192,53 @@ a.active > .label .label__icon.control-icon svg {
       stroke-linecap: square;
       stroke-width: 4px;
       stroke: #000; }
-  .meter--circle .meter__values .meter__slice, .meter--arc .meter__values .meter__slice, .meter--spiral .meter__values .meter__slice {
+  .meter--circle .meter__values .meter__slice.color-index-loading, .meter--arc .meter__values .meter__slice.color-index-loading, .meter--spiral .meter__values .meter__slice.color-index-loading {
+    stroke: #ddd;
+    stroke-dasharray: 1px 10px;
+    stroke-dashoffset: 0; }
+  .meter--circle .meter__values .meter__slice.color-index-unset, .meter--arc .meter__values .meter__slice.color-index-unset, .meter--spiral .meter__values .meter__slice.color-index-unset {
+    stroke: #ddd; }
+  .meter--circle .meter__values .meter__slice.color-index-brand, .meter--arc .meter__values .meter__slice.color-index-brand, .meter--spiral .meter__values .meter__slice.color-index-brand {
+    stroke: #01a982; }
+  .meter--circle .meter__values .meter__slice.color-index-critical, .meter--arc .meter__values .meter__slice.color-index-critical, .meter--spiral .meter__values .meter__slice.color-index-critical {
+    stroke: #F04953; }
+  .meter--circle .meter__values .meter__slice.color-index-error, .meter--arc .meter__values .meter__slice.color-index-error, .meter--spiral .meter__values .meter__slice.color-index-error {
+    stroke: #F04953; }
+  .meter--circle .meter__values .meter__slice.color-index-warning, .meter--arc .meter__values .meter__slice.color-index-warning, .meter--spiral .meter__values .meter__slice.color-index-warning {
+    stroke: #FFD144; }
+  .meter--circle .meter__values .meter__slice.color-index-ok, .meter--arc .meter__values .meter__slice.color-index-ok, .meter--spiral .meter__values .meter__slice.color-index-ok {
+    stroke: #01a982; }
+  .meter--circle .meter__values .meter__slice.color-index-unknown, .meter--arc .meter__values .meter__slice.color-index-unknown, .meter--spiral .meter__values .meter__slice.color-index-unknown {
+    stroke: #CCCCCC; }
+  .meter--circle .meter__values .meter__slice.color-index-disabled, .meter--arc .meter__values .meter__slice.color-index-disabled, .meter--spiral .meter__values .meter__slice.color-index-disabled {
+    stroke: #CCCCCC; }
+  .meter--circle .meter__values .meter__slice.color-index-graph-1, .meter--circle .meter__values .meter__slice.color-index-graph-5, .meter--arc .meter__values .meter__slice.color-index-graph-1, .meter--arc .meter__values .meter__slice.color-index-graph-5, .meter--spiral .meter__values .meter__slice.color-index-graph-1, .meter--spiral .meter__values .meter__slice.color-index-graph-5 {
+    stroke: #617c91; }
+  .meter--circle .meter__values .meter__slice.color-index-graph-2, .meter--circle .meter__values .meter__slice.color-index-graph-6, .meter--arc .meter__values .meter__slice.color-index-graph-2, .meter--arc .meter__values .meter__slice.color-index-graph-6, .meter--spiral .meter__values .meter__slice.color-index-graph-2, .meter--spiral .meter__values .meter__slice.color-index-graph-6 {
+    stroke: #94aba8; }
+  .meter--circle .meter__values .meter__slice.color-index-graph-3, .meter--circle .meter__values .meter__slice.color-index-graph-7, .meter--arc .meter__values .meter__slice.color-index-graph-3, .meter--arc .meter__values .meter__slice.color-index-graph-7, .meter--spiral .meter__values .meter__slice.color-index-graph-3, .meter--spiral .meter__values .meter__slice.color-index-graph-7 {
+    stroke: #998e88; }
+  .meter--circle .meter__values .meter__slice.color-index-graph-4, .meter--circle .meter__values .meter__slice.color-index-graph-8, .meter--arc .meter__values .meter__slice.color-index-graph-4, .meter--arc .meter__values .meter__slice.color-index-graph-8, .meter--spiral .meter__values .meter__slice.color-index-graph-4, .meter--spiral .meter__values .meter__slice.color-index-graph-8 {
+    stroke: #8c6694; }
+  .meter--circle .meter__values .meter__slice.color-index-grey-1, .meter--circle .meter__values .meter__slice.color-index-grey-5, .meter--arc .meter__values .meter__slice.color-index-grey-1, .meter--arc .meter__values .meter__slice.color-index-grey-5, .meter--spiral .meter__values .meter__slice.color-index-grey-1, .meter--spiral .meter__values .meter__slice.color-index-grey-5 {
+    stroke: #333333; }
+  .meter--circle .meter__values .meter__slice.color-index-grey-2, .meter--circle .meter__values .meter__slice.color-index-grey-6, .meter--arc .meter__values .meter__slice.color-index-grey-2, .meter--arc .meter__values .meter__slice.color-index-grey-6, .meter--spiral .meter__values .meter__slice.color-index-grey-2, .meter--spiral .meter__values .meter__slice.color-index-grey-6 {
+    stroke: #3B3B3B; }
+  .meter--circle .meter__values .meter__slice.color-index-grey-3, .meter--circle .meter__values .meter__slice.color-index-grey-7, .meter--arc .meter__values .meter__slice.color-index-grey-3, .meter--arc .meter__values .meter__slice.color-index-grey-7, .meter--spiral .meter__values .meter__slice.color-index-grey-3, .meter--spiral .meter__values .meter__slice.color-index-grey-7 {
+    stroke: #434343; }
+  .meter--circle .meter__values .meter__slice.color-index-grey-4, .meter--circle .meter__values .meter__slice.color-index-grey-8, .meter--arc .meter__values .meter__slice.color-index-grey-4, .meter--arc .meter__values .meter__slice.color-index-grey-8, .meter--spiral .meter__values .meter__slice.color-index-grey-4, .meter--spiral .meter__values .meter__slice.color-index-grey-8 {
+    stroke: #666666; }
+  .meter--circle .meter__values .meter__slice.color-index-light-1, .meter--circle .meter__values .meter__slice.color-index-light-3, .meter--arc .meter__values .meter__slice.color-index-light-1, .meter--arc .meter__values .meter__slice.color-index-light-3, .meter--spiral .meter__values .meter__slice.color-index-light-1, .meter--spiral .meter__values .meter__slice.color-index-light-3 {
+    stroke: #ffffff; }
+  .meter--circle .meter__values .meter__slice.color-index-light-2, .meter--circle .meter__values .meter__slice.color-index-light-4, .meter--arc .meter__values .meter__slice.color-index-light-2, .meter--arc .meter__values .meter__slice.color-index-light-4, .meter--spiral .meter__values .meter__slice.color-index-light-2, .meter--spiral .meter__values .meter__slice.color-index-light-4 {
+    stroke: #f5f5f5; }
+  .meter--circle .meter__values .meter__slice--clickable, .meter--arc .meter__values .meter__slice--clickable, .meter--spiral .meter__values .meter__slice--clickable {
     cursor: pointer; }
-    .meter--circle .meter__values .meter__slice.color-index-loading, .meter--arc .meter__values .meter__slice.color-index-loading, .meter--spiral .meter__values .meter__slice.color-index-loading {
-      stroke: #ddd;
-      stroke-dasharray: 1px 10px;
-      stroke-dashoffset: 0; }
-    .meter--circle .meter__values .meter__slice.color-index-unset, .meter--arc .meter__values .meter__slice.color-index-unset, .meter--spiral .meter__values .meter__slice.color-index-unset {
-      stroke: #ddd; }
-    .meter--circle .meter__values .meter__slice.color-index-brand, .meter--arc .meter__values .meter__slice.color-index-brand, .meter--spiral .meter__values .meter__slice.color-index-brand {
-      stroke: #01a982; }
-    .meter--circle .meter__values .meter__slice.color-index-critical, .meter--arc .meter__values .meter__slice.color-index-critical, .meter--spiral .meter__values .meter__slice.color-index-critical {
-      stroke: #F04953; }
-    .meter--circle .meter__values .meter__slice.color-index-error, .meter--arc .meter__values .meter__slice.color-index-error, .meter--spiral .meter__values .meter__slice.color-index-error {
-      stroke: #F04953; }
-    .meter--circle .meter__values .meter__slice.color-index-warning, .meter--arc .meter__values .meter__slice.color-index-warning, .meter--spiral .meter__values .meter__slice.color-index-warning {
-      stroke: #FFD144; }
-    .meter--circle .meter__values .meter__slice.color-index-ok, .meter--arc .meter__values .meter__slice.color-index-ok, .meter--spiral .meter__values .meter__slice.color-index-ok {
-      stroke: #01a982; }
-    .meter--circle .meter__values .meter__slice.color-index-unknown, .meter--arc .meter__values .meter__slice.color-index-unknown, .meter--spiral .meter__values .meter__slice.color-index-unknown {
-      stroke: #CCCCCC; }
-    .meter--circle .meter__values .meter__slice.color-index-disabled, .meter--arc .meter__values .meter__slice.color-index-disabled, .meter--spiral .meter__values .meter__slice.color-index-disabled {
-      stroke: #EDEDED; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-1, .meter--circle .meter__values .meter__slice.color-index-graph-5, .meter--arc .meter__values .meter__slice.color-index-graph-1, .meter--arc .meter__values .meter__slice.color-index-graph-5, .meter--spiral .meter__values .meter__slice.color-index-graph-1, .meter--spiral .meter__values .meter__slice.color-index-graph-5 {
-      stroke: #617c91; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-2, .meter--circle .meter__values .meter__slice.color-index-graph-6, .meter--arc .meter__values .meter__slice.color-index-graph-2, .meter--arc .meter__values .meter__slice.color-index-graph-6, .meter--spiral .meter__values .meter__slice.color-index-graph-2, .meter--spiral .meter__values .meter__slice.color-index-graph-6 {
-      stroke: #94aba8; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-3, .meter--circle .meter__values .meter__slice.color-index-graph-7, .meter--arc .meter__values .meter__slice.color-index-graph-3, .meter--arc .meter__values .meter__slice.color-index-graph-7, .meter--spiral .meter__values .meter__slice.color-index-graph-3, .meter--spiral .meter__values .meter__slice.color-index-graph-7 {
-      stroke: #998e88; }
-    .meter--circle .meter__values .meter__slice.color-index-graph-4, .meter--circle .meter__values .meter__slice.color-index-graph-8, .meter--arc .meter__values .meter__slice.color-index-graph-4, .meter--arc .meter__values .meter__slice.color-index-graph-8, .meter--spiral .meter__values .meter__slice.color-index-graph-4, .meter--spiral .meter__values .meter__slice.color-index-graph-8 {
-      stroke: #8c6694; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-1, .meter--circle .meter__values .meter__slice.color-index-grey-5, .meter--arc .meter__values .meter__slice.color-index-grey-1, .meter--arc .meter__values .meter__slice.color-index-grey-5, .meter--spiral .meter__values .meter__slice.color-index-grey-1, .meter--spiral .meter__values .meter__slice.color-index-grey-5 {
-      stroke: #333333; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-2, .meter--circle .meter__values .meter__slice.color-index-grey-6, .meter--arc .meter__values .meter__slice.color-index-grey-2, .meter--arc .meter__values .meter__slice.color-index-grey-6, .meter--spiral .meter__values .meter__slice.color-index-grey-2, .meter--spiral .meter__values .meter__slice.color-index-grey-6 {
-      stroke: #3B3B3B; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-3, .meter--circle .meter__values .meter__slice.color-index-grey-7, .meter--arc .meter__values .meter__slice.color-index-grey-3, .meter--arc .meter__values .meter__slice.color-index-grey-7, .meter--spiral .meter__values .meter__slice.color-index-grey-3, .meter--spiral .meter__values .meter__slice.color-index-grey-7 {
-      stroke: #434343; }
-    .meter--circle .meter__values .meter__slice.color-index-grey-4, .meter--circle .meter__values .meter__slice.color-index-grey-8, .meter--arc .meter__values .meter__slice.color-index-grey-4, .meter--arc .meter__values .meter__slice.color-index-grey-8, .meter--spiral .meter__values .meter__slice.color-index-grey-4, .meter--spiral .meter__values .meter__slice.color-index-grey-8 {
-      stroke: #666666; }
-    .meter--circle .meter__values .meter__slice.color-index-light-1, .meter--circle .meter__values .meter__slice.color-index-light-3, .meter--arc .meter__values .meter__slice.color-index-light-1, .meter--arc .meter__values .meter__slice.color-index-light-3, .meter--spiral .meter__values .meter__slice.color-index-light-1, .meter--spiral .meter__values .meter__slice.color-index-light-3 {
-      stroke: #ffffff; }
-    .meter--circle .meter__values .meter__slice.color-index-light-2, .meter--circle .meter__values .meter__slice.color-index-light-4, .meter--arc .meter__values .meter__slice.color-index-light-2, .meter--arc .meter__values .meter__slice.color-index-light-4, .meter--spiral .meter__values .meter__slice.color-index-light-2, .meter--spiral .meter__values .meter__slice.color-index-light-4 {
-      stroke: #f5f5f5; }
-    @media screen and (min-width: 45em) {
-      .meter--circle .meter__values .meter__slice, .meter--arc .meter__values .meter__slice, .meter--spiral .meter__values .meter__slice {
-        transition: stroke-width 0.2s;
-        -webkit-animation: draw-arc 1.5s linear;
-        animation: draw-arc 1.5s linear; } }
+  @media screen and (min-width: 45em) {
+    .meter--circle .meter__values .meter__slice, .meter--arc .meter__values .meter__slice, .meter--spiral .meter__values .meter__slice {
+      transition: stroke-width 0.2s;
+      -webkit-animation: draw-arc 1.5s linear;
+      animation: draw-arc 1.5s linear; } }
   .meter--circle .meter__thresholds .meter__slice.color-index-unset, .meter--arc .meter__thresholds .meter__slice.color-index-unset, .meter--spiral .meter__thresholds .meter__slice.color-index-unset {
     stroke: rgba(221, 221, 221, 0.5); }
   .meter--circle .meter__thresholds .meter__slice.color-index-brand, .meter--arc .meter__thresholds .meter__slice.color-index-brand, .meter--spiral .meter__thresholds .meter__slice.color-index-brand {
@@ -4254,7 +4254,7 @@ a.active > .label .label__icon.control-icon svg {
   .meter--circle .meter__thresholds .meter__slice.color-index-unknown, .meter--arc .meter__thresholds .meter__slice.color-index-unknown, .meter--spiral .meter__thresholds .meter__slice.color-index-unknown {
     stroke: rgba(204, 204, 204, 0.5); }
   .meter--circle .meter__thresholds .meter__slice.color-index-disabled, .meter--arc .meter__thresholds .meter__slice.color-index-disabled, .meter--spiral .meter__thresholds .meter__slice.color-index-disabled {
-    stroke: rgba(237, 237, 237, 0.5); }
+    stroke: rgba(204, 204, 204, 0.5); }
   .meter--circle .meter__thresholds .meter__slice.color-index-graph-1, .meter--circle .meter__thresholds .meter__slice.color-index-graph-5, .meter--arc .meter__thresholds .meter__slice.color-index-graph-1, .meter--arc .meter__thresholds .meter__slice.color-index-graph-5, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-1, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-5 {
     stroke: rgba(97, 124, 145, 0.5); }
   .meter--circle .meter__thresholds .meter__slice.color-index-graph-2, .meter--circle .meter__thresholds .meter__slice.color-index-graph-6, .meter--arc .meter__thresholds .meter__slice.color-index-graph-2, .meter--arc .meter__thresholds .meter__slice.color-index-graph-6, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-2, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-6 {
@@ -4362,7 +4362,7 @@ a.active > .label .label__icon.control-icon svg {
     height: 96px; }
   .meter--arc.meter--vertical.meter--small .meter__value {
     top: 48px;
-    margin-left: -18px; }
+    margin-left: -12px; }
   .meter--arc.meter--vertical.meter--small .meter__minmax-container {
     padding-top: 0px;
     padding-bottom: 0px; }
@@ -4376,6 +4376,10 @@ a.active > .label .label__icon.control-icon svg {
     margin-left: -72px; }
   .meter--arc.meter--vertical.meter--minmax.meter--small .meter__value {
     margin-left: -60px; }
+  .meter--arc.meter--vertical.meter--legend-right.meter--small .meter__value {
+    min-width: 78px; }
+  .meter--arc.meter--vertical.meter--legend-right .meter__value {
+    min-width: 120px; }
   .meter--spiral .meter__value {
     position: absolute;
     top: 0px;
@@ -4403,63 +4407,82 @@ a.active > .label .label__icon.control-icon svg {
   .meter--loading .meter__value {
     display: none; }
 
-.notification__status {
-  margin-right: 12px; }
-
-.notification__message {
-  margin-bottom: 24px;
-  vertical-align: middle; }
-
-.notification--critical {
-  background-color: #F04953;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 24px;
-  color: #dbdbdb; }
-  .notification--critical .notification__status .status-icon__base {
-    fill: #dbdbdb; }
-
-.notification--error {
-  background-color: #F04953;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 24px;
-  color: #dbdbdb; }
-  .notification--error .notification__status .status-icon__base {
-    fill: #dbdbdb; }
-
-.notification--warning {
-  background-color: #FFD144;
+.notification {
   font-size: 19px;
   font-size: 1.1875rem;
   line-height: 24px; }
-  .notification--warning .notification__status .status-icon__base {
-    fill: #333; }
-
-.notification--ok {
-  background-color: #01a982;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 24px;
-  color: #dbdbdb; }
-  .notification--ok .notification__status .status-icon__base {
-    fill: #dbdbdb; }
-
-.notification--unknown {
-  background-color: #CCCCCC;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 24px; }
-  .notification--unknown .notification__status .status-icon__base {
-    fill: #333; }
-
-.notification--disabled {
-  background-color: #EDEDED;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 24px; }
-  .notification--disabled .notification__status .status-icon__base {
-    fill: #333; }
+  .notification__message {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 24px; }
+    .notification__message + * {
+      margin-top: 24px; }
+  .notification__status {
+    margin-right: 24px;
+    flex: 0 0 auto; }
+  .notification--critical {
+    background-color: #F04953;
+    color: #fff; }
+    .notification--critical .notification__status .status-icon__base {
+      fill: #fff; }
+    .notification--critical .notification__status .status-icon__detail {
+      stroke: #F04953;
+      fill: #F04953; }
+    .notification--critical .notification__status.status-icon-unknown .status-icon__detail {
+      stroke: #fff;
+      fill: #fff; }
+  .notification--error {
+    background-color: #F04953;
+    color: #fff; }
+    .notification--error .notification__status .status-icon__base {
+      fill: #fff; }
+    .notification--error .notification__status .status-icon__detail {
+      stroke: #F04953;
+      fill: #F04953; }
+    .notification--error .notification__status.status-icon-unknown .status-icon__detail {
+      stroke: #fff;
+      fill: #fff; }
+  .notification--warning {
+    background-color: #FFD144; }
+    .notification--warning .notification__status .status-icon__base {
+      fill: #fff; }
+    .notification--warning .notification__status .status-icon__detail {
+      stroke: #FFD144;
+      fill: #FFD144; }
+    .notification--warning .notification__status.status-icon-unknown .status-icon__detail {
+      stroke: #fff;
+      fill: #fff; }
+  .notification--ok {
+    background-color: #01a982;
+    color: #fff; }
+    .notification--ok .notification__status .status-icon__base {
+      fill: #fff; }
+    .notification--ok .notification__status .status-icon__detail {
+      stroke: #01a982;
+      fill: #01a982; }
+    .notification--ok .notification__status.status-icon-unknown .status-icon__detail {
+      stroke: #fff;
+      fill: #fff; }
+  .notification--unknown {
+    background-color: #CCCCCC; }
+    .notification--unknown .notification__status .status-icon__base {
+      fill: #fff; }
+    .notification--unknown .notification__status .status-icon__detail {
+      stroke: #CCCCCC;
+      fill: #CCCCCC; }
+    .notification--unknown .notification__status.status-icon-unknown .status-icon__detail {
+      stroke: #fff;
+      fill: #fff; }
+  .notification--disabled {
+    background-color: #CCCCCC; }
+    .notification--disabled .notification__status .status-icon__base {
+      fill: #fff; }
+    .notification--disabled .notification__status .status-icon__detail {
+      stroke: #CCCCCC;
+      fill: #CCCCCC; }
+    .notification--disabled .notification__status.status-icon-unknown .status-icon__detail {
+      stroke: #fff;
+      fill: #fff; }
 
 .notifications-control__icon {
   width: 48px;
@@ -5009,14 +5032,15 @@ section > dl > dd {
 .tiles {
   width: 100%;
   padding: 12px; }
-  .tiles > .tile {
-    flex: 0 0 192px;
-    margin: 12px; }
-    .tiles > .tile > * {
-      box-sizing: border-box; }
-    .tiles > .tile--wide {
-      flex-basis: calc(100% - 24px);
-      box-sizing: border-box; }
+  @media screen and (min-width: 45em) {
+    .tiles.box--direction-row > .tile {
+      flex: 0 0 192px;
+      margin: 12px; }
+      .tiles.box--direction-row > .tile > * {
+        box-sizing: border-box; }
+      .tiles.box--direction-row > .tile--wide {
+        flex-basis: calc(100% - 24px);
+        box-sizing: border-box; } }
   .tiles__container {
     display: flex;
     flex-direction: row;
