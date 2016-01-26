@@ -667,6 +667,10 @@ blockquote {
   font-size: 2.25rem;
   line-height: 1.33333; }
 
+b,
+strong {
+  font-weight: 600; }
+
 code.hljs {
   border: 1px solid #ccc; }
 
@@ -703,6 +707,11 @@ textarea {
   outline: none;
   margin-right: 12px;
   background-color: transparent; }
+  html.rtl input, html.rtl
+  select, html.rtl
+  textarea {
+    margin-right: 0;
+    margin-left: 12px; }
   input:focus,
   select:focus,
   textarea:focus {
@@ -765,7 +774,7 @@ input[type=range] {
   input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 2px;
-    background-color: #b2b2b2; }
+    background-color: rgba(51, 51, 51, 0.2); }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-webkit-slider-runnable-track {
       background-color: rgba(255, 255, 255, 0.1); }
   input[type=range]::-webkit-slider-thumb {
@@ -807,7 +816,7 @@ input[type=range] {
   input[type=range]::-moz-range-track {
     width: 100%;
     height: 2px;
-    background-color: #b2b2b2; }
+    background-color: rgba(51, 51, 51, 0.2); }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-moz-range-track {
       background-color: rgba(255, 255, 255, 0.1); }
   input[type=range]::-moz-range-thumb {
@@ -831,7 +840,7 @@ input[type=range] {
   input[type=range]::-ms-track {
     width: 100%;
     height: 2px;
-    background-color: #b2b2b2;
+    background-color: rgba(51, 51, 51, 0.2);
     border-color: transparent;
     color: transparent; }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-track {
@@ -842,7 +851,7 @@ input[type=range] {
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-fill-lower {
       background: #fff; }
   input[type=range]::-ms-fill-upper {
-    background: #b2b2b2;
+    background: rgba(51, 51, 51, 0.2);
     border-color: transparent; }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]::-ms-fill-upper {
       background: rgba(255, 255, 255, 0.1); }
@@ -863,6 +872,10 @@ input[type=range] {
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) input[type=range]:hover::-ms-thumb {
       border-color: #fff;
       background-color: #fff; }
+
+html.rtl,
+body.rtl {
+  direction: rtl; }
 
 @media screen and (min-width: 45em) {
   html,
@@ -938,6 +951,10 @@ a,
     .anchor.anchor--primary .control-icon {
       stroke: #8C50FF;
       margin-right: 12px; }
+      html.rtl a.anchor--primary .control-icon, html.rtl
+      .anchor.anchor--primary .control-icon {
+        margin-right: 0;
+        margin-left: 12px; }
     a.anchor--primary > span,
     .anchor.anchor--primary > span {
       vertical-align: middle; }
@@ -1152,10 +1169,19 @@ article:not(.article) {
       flex-direction: row-reverse; }
     .box--direction-row.box--pad-between-small > *:not(:last-child) {
       margin-right: 12px; }
+      html.rtl .box--direction-row.box--pad-between-small > *:not(:last-child) {
+        margin-right: 0;
+        margin-left: 12px; }
     .box--direction-row.box--pad-between-medium > *:not(:last-child) {
       margin-right: 24px; }
+      html.rtl .box--direction-row.box--pad-between-medium > *:not(:last-child) {
+        margin-right: 0;
+        margin-left: 24px; }
     .box--direction-row.box--pad-between-large > *:not(:last-child) {
       margin-right: 48px; }
+      html.rtl .box--direction-row.box--pad-between-large > *:not(:last-child) {
+        margin-right: 0;
+        margin-left: 48px; }
     @media screen and (max-width: 44.9375em) {
       .box--direction-row.box--responsive {
         flex-direction: column; }
@@ -1221,6 +1247,77 @@ article:not(.article) {
     justify-content: flex-end; }
   .box--flush {
     padding: 0px; }
+
+.brick {
+  box-shadow: 1px 1px 5px #eee;
+  padding: 24px;
+  position: relative;
+  margin: 0 12px 12px 0;
+  float: left;
+  max-width: calc(100% - 12px); }
+  .brick .brick--label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .brick .brick--label span {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333;
+      position: absolute;
+      left: 24px;
+      bottom: 24px; }
+  .brick[class*="background-color-index-"] span {
+    color: #fff; }
+
+.brick--1-1 {
+  width: calc(25% - 12px); }
+  .brick--1-1:after {
+    padding-top: 100%;
+    display: block;
+    content: ''; }
+  @media screen and (max-width: 63.9375em) {
+    .brick--1-1 {
+      width: calc(50% - 12px); } }
+
+.brick--1-2 {
+  width: calc(25% - 12px); }
+  .brick--1-2:after {
+    padding-top: calc(200% + 60px);
+    display: block;
+    content: ''; }
+  @media screen and (max-width: 63.9375em) {
+    .brick--1-2 {
+      width: calc(50% - 12px); } }
+
+.brick--2-1 {
+  width: calc(50% - 12px); }
+  .brick--2-1:after {
+    padding-top: calc(50% - 30px);
+    display: block;
+    content: ''; }
+  @media screen and (max-width: 63.9375em) {
+    .brick--2-1 {
+      width: calc(100% - 12px); } }
+
+.brick--2-2 {
+  width: calc(50% - 12px); }
+  .brick--2-2:after {
+    padding-top: 100%;
+    display: block;
+    content: ''; }
+  @media screen and (max-width: 63.9375em) {
+    .brick--2-2 {
+      width: calc(100% - 12px); } }
+
+.brick--content-wrapper {
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  max-width: calc(100% - 48px); }
 
 input[type="button"],
 input[type="submit"],
@@ -1489,6 +1586,8 @@ button:not(.button) {
     width: 100%;
     height: 192px;
     max-height: calc(100vh - 144px); }
+    .chart__graphic:focus {
+      outline: #c3a4fe solid 1px; }
   @media screen and (min-width: 45em) {
     .chart__values g {
       -webkit-animation: reveal-chart 1.5s;
@@ -1533,6 +1632,10 @@ button:not(.button) {
       stroke: #555555; }
     .chart__values-line.color-index-grey-4, .chart__values-line.color-index-grey-8 {
       stroke: #666666; }
+    .chart__values-line.color-index-accent-1, .chart__values-line.color-index-accent-3 {
+      stroke: #c3a4fe; }
+    .chart__values-line.color-index-accent-2, .chart__values-line.color-index-accent-4 {
+      stroke: #a577ff; }
     .chart__values-line.color-index-light-1, .chart__values-line.color-index-light-3 {
       stroke: #ffffff; }
     .chart__values-line.color-index-light-2, .chart__values-line.color-index-light-4 {
@@ -1585,6 +1688,10 @@ button:not(.button) {
     fill: #7026ff; }
   .chart__values-bar--active.color-index-graph-5, .chart__values-bar--active.color-index-graph-10, .chart__values-area--active.color-index-graph-5, .chart__values-area--active.color-index-graph-10 {
     fill: #767676; }
+  .chart__values-bar--active.color-index-accent-1, .chart__values-bar--active.color-index-accent-3, .chart__values-area--active.color-index-accent-1, .chart__values-area--active.color-index-accent-3 {
+    fill: #c3a4fe; }
+  .chart__values-bar--active.color-index-accent-2, .chart__values-bar--active.color-index-accent-4, .chart__values-area--active.color-index-accent-2, .chart__values-area--active.color-index-accent-4 {
+    fill: #a577ff; }
   .chart__values-bar--active.color-index-grey-1, .chart__values-bar--active.color-index-grey-5, .chart__values-area--active.color-index-grey-1, .chart__values-area--active.color-index-grey-5 {
     fill: #333333; }
   .chart__values-bar--active.color-index-grey-2, .chart__values-bar--active.color-index-grey-6, .chart__values-area--active.color-index-grey-2, .chart__values-area--active.color-index-grey-6 {
@@ -1634,6 +1741,10 @@ button:not(.button) {
       stroke: #555555; }
     .chart__values-point.color-index-grey-4, .chart__values-point.color-index-grey-8 {
       stroke: #666666; }
+    .chart__values-point.color-index-accent-1, .chart__values-point.color-index-accent-3 {
+      stroke: #c3a4fe; }
+    .chart__values-point.color-index-accent-2, .chart__values-point.color-index-accent-4 {
+      stroke: #a577ff; }
     .chart__values-point.color-index-light-1, .chart__values-point.color-index-light-3 {
       stroke: #ffffff; }
     .chart__values-point.color-index-light-2, .chart__values-point.color-index-light-4 {
@@ -1678,6 +1789,10 @@ button:not(.button) {
       stroke: #555555; }
     .chart__values--loading.color-index-grey-4, .chart__values--loading.color-index-grey-8 {
       stroke: #666666; }
+    .chart__values--loading.color-index-accent-1, .chart__values--loading.color-index-accent-3 {
+      stroke: #c3a4fe; }
+    .chart__values--loading.color-index-accent-2, .chart__values--loading.color-index-accent-4 {
+      stroke: #a577ff; }
     .chart__values--loading.color-index-light-1, .chart__values--loading.color-index-light-3 {
       stroke: #ffffff; }
     .chart__values--loading.color-index-light-2, .chart__values--loading.color-index-light-4 {
@@ -1748,6 +1863,10 @@ button:not(.button) {
         fill: #7026ff; }
       .chart__cursor-point.color-index-graph-5, .chart__cursor-point.color-index-graph-10 {
         fill: #767676; }
+      .chart__cursor-point.color-index-accent-1, .chart__cursor-point.color-index-accent-3 {
+        fill: #c3a4fe; }
+      .chart__cursor-point.color-index-accent-2, .chart__cursor-point.color-index-accent-4 {
+        fill: #a577ff; }
       .chart__cursor-point.color-index-grey-1, .chart__cursor-point.color-index-grey-5 {
         fill: #333333; }
       .chart__cursor-point.color-index-grey-2, .chart__cursor-point.color-index-grey-6 {
@@ -1892,6 +2011,10 @@ button:not(.button) {
       fill: #7026ff; }
     .chart--sparkline .chart__values-bar.color-index-graph-5, .chart--sparkline .chart__values-bar.color-index-graph-10, .chart--sparkline .chart__values-area.color-index-graph-5, .chart--sparkline .chart__values-area.color-index-graph-10 {
       fill: #767676; }
+    .chart--sparkline .chart__values-bar.color-index-accent-1, .chart--sparkline .chart__values-bar.color-index-accent-3, .chart--sparkline .chart__values-area.color-index-accent-1, .chart--sparkline .chart__values-area.color-index-accent-3 {
+      fill: #c3a4fe; }
+    .chart--sparkline .chart__values-bar.color-index-accent-2, .chart--sparkline .chart__values-bar.color-index-accent-4, .chart--sparkline .chart__values-area.color-index-accent-2, .chart--sparkline .chart__values-area.color-index-accent-4 {
+      fill: #a577ff; }
     .chart--sparkline .chart__values-bar.color-index-grey-1, .chart--sparkline .chart__values-bar.color-index-grey-5, .chart--sparkline .chart__values-area.color-index-grey-1, .chart--sparkline .chart__values-area.color-index-grey-5 {
       fill: #333333; }
     .chart--sparkline .chart__values-bar.color-index-grey-2, .chart--sparkline .chart__values-bar.color-index-grey-6, .chart--sparkline .chart__values-area.color-index-grey-2, .chart--sparkline .chart__values-area.color-index-grey-6 {
@@ -1904,6 +2027,9 @@ button:not(.button) {
 .check-box {
   margin-right: 12px;
   white-space: nowrap; }
+  html.rtl .check-box {
+    margin-right: 24px;
+    margin-left: 12px; }
   .check-box:not(.check-box--disabled) {
     cursor: pointer; }
   .check-box:hover:not(.check-box--disabled) .check-box__control {
@@ -1918,6 +2044,11 @@ button:not(.button) {
     color: #000; }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box:hover:not(.check-box--disabled) .check-box__label {
       color: #fff; }
+  .check-box > :first-child {
+    margin-right: 12px; }
+    html.rtl .check-box > :first-child {
+      margin-right: 0;
+      margin-left: 12px; }
   .check-box__input {
     opacity: 0;
     position: absolute; }
@@ -1940,7 +2071,6 @@ button:not(.button) {
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: 12px;
     vertical-align: middle;
     background-color: inherit;
     border: 2px solid #999;
@@ -1980,7 +2110,7 @@ button:not(.button) {
     width: 48px;
     height: 24px;
     border-radius: 24px;
-    background-color: #b2b2b2;
+    background-color: rgba(51, 51, 51, 0.2);
     border: none;
     transition: background-color 0.3s; }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__control {
@@ -2006,37 +2136,48 @@ button:not(.button) {
       background-color: rgba(255, 255, 255, 0.1); }
       [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__input:checked + .check-box__control .check-box__control-check {
         stroke: transparent; }
-  .check-box--toggle .check-box__input:checked + .check-box__control:after {
-    content: "";
-    background-color: #fff;
-    border-color: #8C50FF;
-    margin-left: 24px; }
-    [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__input:checked + .check-box__control:after {
-      border-color: #dbdbdb; }
+    .check-box--toggle .check-box__input:checked + .check-box__control:after {
+      content: "";
+      background-color: #fff;
+      border-color: #8C50FF;
+      margin-left: 24px; }
+      [class*="background-color-index-"]:not([class*="background-color-index-light"]) .check-box--toggle .check-box__input:checked + .check-box__control:after {
+        border-color: #dbdbdb; }
+    .check-box--toggle .check-box__input:checked + .check-box__control .check-box__control-check {
+      display: none; }
+
+.background-color-index-dark {
+  color: #fff; }
 
 .background-color-index-neutral-1,
 .background-color-index-neutral-4 {
-  background-color: #5d0cfb; }
+  background-color: #5d0cfb;
+  color: #fff; }
 
 .background-color-index-neutral-1-a,
 .background-color-index-neutral-4-a {
-  background-color: rgba(93, 12, 251, 0.8); }
+  background-color: rgba(93, 12, 251, 0.8);
+  color: #fff; }
 
 .background-color-index-neutral-2,
 .background-color-index-neutral-5 {
-  background-color: #7026ff; }
+  background-color: #7026ff;
+  color: #fff; }
 
 .background-color-index-neutral-2-a,
 .background-color-index-neutral-5-a {
-  background-color: rgba(112, 38, 255, 0.8); }
+  background-color: rgba(112, 38, 255, 0.8);
+  color: #fff; }
 
 .background-color-index-neutral-3,
 .background-color-index-neutral-6 {
-  background-color: #767676; }
+  background-color: #767676;
+  color: #fff; }
 
 .background-color-index-neutral-3-a,
 .background-color-index-neutral-6-a {
-  background-color: rgba(118, 118, 118, 0.8); }
+  background-color: rgba(118, 118, 118, 0.8);
+  color: #fff; }
 
 .background-color-index-accent-1,
 .background-color-index-accent-3 {
@@ -2056,35 +2197,43 @@ button:not(.button) {
 
 .background-color-index-grey-1,
 .background-color-index-grey-5 {
-  background-color: #333333; }
+  background-color: #333333;
+  color: #fff; }
 
 .background-color-index-grey-1-a,
 .background-color-index-grey-5-a {
-  background-color: rgba(51, 51, 51, 0.8); }
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff; }
 
 .background-color-index-grey-2,
 .background-color-index-grey-6 {
-  background-color: #444444; }
+  background-color: #444444;
+  color: #fff; }
 
 .background-color-index-grey-2-a,
 .background-color-index-grey-6-a {
-  background-color: rgba(68, 68, 68, 0.8); }
+  background-color: rgba(68, 68, 68, 0.8);
+  color: #fff; }
 
 .background-color-index-grey-3,
 .background-color-index-grey-7 {
-  background-color: #555555; }
+  background-color: #555555;
+  color: #fff; }
 
 .background-color-index-grey-3-a,
 .background-color-index-grey-7-a {
-  background-color: rgba(85, 85, 85, 0.8); }
+  background-color: rgba(85, 85, 85, 0.8);
+  color: #fff; }
 
 .background-color-index-grey-4,
 .background-color-index-grey-8 {
-  background-color: #666666; }
+  background-color: #666666;
+  color: #fff; }
 
 .background-color-index-grey-4-a,
 .background-color-index-grey-8-a {
-  background-color: rgba(102, 102, 102, 0.8); }
+  background-color: rgba(102, 102, 102, 0.8);
+  color: #fff; }
 
 .background-color-index-graph-1,
 .background-color-index-graph-6 {
@@ -2096,18 +2245,37 @@ button:not(.button) {
 
 .background-color-index-graph-3,
 .background-color-index-graph-8 {
-  background-color: #5d0cfb; }
+  background-color: #5d0cfb;
+  color: #fff; }
 
 .background-color-index-graph-4,
 .background-color-index-graph-9 {
-  background-color: #7026ff; }
+  background-color: #7026ff;
+  color: #fff; }
 
 .background-color-index-graph-5,
 .background-color-index-graph-10 {
-  background-color: #767676; }
+  background-color: #767676;
+  color: #fff; }
 
-[class*="background-color-index-"] {
-  color: #dbdbdb; }
+.background-color-index-critical {
+  background-color: #FF856B; }
+
+.background-color-index-error {
+  background-color: #FF856B; }
+
+.background-color-index-warning {
+  background-color: #FFB86B; }
+
+.background-color-index-ok {
+  background-color: #4EB976;
+  color: #fff; }
+
+.background-color-index-unknown {
+  background-color: #a8a8a8; }
+
+.background-color-index-disabled {
+  background-color: #a8a8a8; }
 
 .background-color-index-light-1,
 .background-color-index-light-3 {
@@ -2143,6 +2311,10 @@ button:not(.button) {
     width: 100%;
     height: 192px;
     max-height: calc(100vh - 144px); }
+    .distribution__graphic:focus {
+      outline: #c3a4fe solid 1px; }
+  .distribution__background {
+    fill: #f5f5f5; }
   .distribution__item--clickable {
     cursor: pointer; }
   .distribution__item-box.color-index-unset {
@@ -2171,6 +2343,10 @@ button:not(.button) {
     fill: #7026ff; }
   .distribution__item-box.color-index-graph-5, .distribution__item-box.color-index-graph-10 {
     fill: #767676; }
+  .distribution__item-box.color-index-accent-1, .distribution__item-box.color-index-accent-3 {
+    fill: #c3a4fe; }
+  .distribution__item-box.color-index-accent-2, .distribution__item-box.color-index-accent-4 {
+    fill: #a577ff; }
   .distribution__item-box.color-index-grey-1, .distribution__item-box.color-index-grey-5 {
     fill: #333333; }
   .distribution__item-box.color-index-grey-2, .distribution__item-box.color-index-grey-6 {
@@ -2217,18 +2393,43 @@ button:not(.button) {
     stroke: #555555; }
   .distribution__item-icons.color-index-grey-4, .distribution__item-icons.color-index-grey-8 {
     stroke: #666666; }
+  .distribution__item-icons.color-index-accent-1, .distribution__item-icons.color-index-accent-3 {
+    stroke: #c3a4fe; }
+  .distribution__item-icons.color-index-accent-2, .distribution__item-icons.color-index-accent-4 {
+    stroke: #a577ff; }
   .distribution__item-icons.color-index-light-1, .distribution__item-icons.color-index-light-3 {
     stroke: #ffffff; }
   .distribution__item-icons.color-index-light-2, .distribution__item-icons.color-index-light-4 {
     stroke: #f5f5f5; }
   .distribution__label {
     position: absolute;
-    padding: 24px;
+    padding: 6px 12px;
     font-family: "Source Sans Pro", Arial, sans-serif;
-    color: #dbdbdb;
     overflow: hidden;
     text-align: left;
     pointer-events: none; }
+    .distribution__label.color-index-ok {
+      color: #fff; }
+    .distribution__label.color-index-neutral-1, .distribution__label.color-index-neutral-4 {
+      color: #fff; }
+    .distribution__label.color-index-neutral-2, .distribution__label.color-index-neutral-5 {
+      color: #fff; }
+    .distribution__label.color-index-neutral-3, .distribution__label.color-index-neutral-6 {
+      color: #fff; }
+    .distribution__label.color-index-graph-3, .distribution__label.color-index-graph-8 {
+      color: #fff; }
+    .distribution__label.color-index-graph-4, .distribution__label.color-index-graph-9 {
+      color: #fff; }
+    .distribution__label.color-index-graph-5, .distribution__label.color-index-graph-10 {
+      color: #fff; }
+    .distribution__label.color-index-grey-1, .distribution__label.color-index-grey-5 {
+      color: #fff; }
+    .distribution__label.color-index-grey-2, .distribution__label.color-index-grey-6 {
+      color: #fff; }
+    .distribution__label.color-index-grey-3, .distribution__label.color-index-grey-7 {
+      color: #fff; }
+    .distribution__label.color-index-grey-4, .distribution__label.color-index-grey-8 {
+      color: #fff; }
     .distribution__label-value {
       display: block;
       font-size: 36px;
@@ -2248,9 +2449,18 @@ button:not(.button) {
     .distribution__label--thin .distribution__label-value,
     .distribution__label--thin .distribution__label-label {
       display: inline-block; }
+    .distribution__label--small .distribution__label-value,
+    .distribution__label--small .distribution__label-units {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1;
+      margin-right: 4px; }
     .distribution__label--icons {
+      padding: 0 12px 12px 0;
       background-color: rgba(255, 255, 255, 0.8);
       color: #333; }
+      .distribution__label--icons .label-value {
+        line-height: 1; }
       .distribution__label--icons .label-units {
         color: #777; }
       .distribution__label--icons .label-label {
@@ -2295,6 +2505,10 @@ button:not(.button) {
       stroke: #555555; }
     .distribution__loading-indicator.color-index-grey-4, .distribution__loading-indicator.color-index-grey-8 {
       stroke: #666666; }
+    .distribution__loading-indicator.color-index-accent-1, .distribution__loading-indicator.color-index-accent-3 {
+      stroke: #c3a4fe; }
+    .distribution__loading-indicator.color-index-accent-2, .distribution__loading-indicator.color-index-accent-4 {
+      stroke: #a577ff; }
     .distribution__loading-indicator.color-index-light-1, .distribution__loading-indicator.color-index-light-3 {
       stroke: #ffffff; }
     .distribution__loading-indicator.color-index-light-2, .distribution__loading-indicator.color-index-light-4 {
@@ -2303,213 +2517,15 @@ button:not(.button) {
     padding: 0 12px 12px 0; }
     .distribution--icons .distribution__label-value {
       line-height: 1; }
-  .distribution--small-label .distribution__label {
-    padding-top: 0px;
-    padding-left: 6px; }
-    .distribution--small-label .distribution__label-value {
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 1.2; }
   .distribution--small .distribution__graphic {
     height: 96px; }
   .distribution--large .distribution__graphic {
     height: 288px; }
-
-@-webkit-keyframes draw-stroke {
-  0% {
-    stroke-dashoffset: 768px; }
-  100% {
-    stroke-dashoffset: 0; } }
-
-@keyframes draw-stroke {
-  0% {
-    stroke-dashoffset: 768px; }
-  100% {
-    stroke-dashoffset: 0; } }
-
-@media screen and (max-width: 44.9375em) {
-  .donut {
-    width: 192px;
-    margin: 0px auto; } }
-
-.donut.series-pre path {
-  stroke-dashoffset: 768px; }
-
-.donut__graphic-container {
-  position: relative;
-  width: 192px;
-  height: 192px; }
-
-.donut svg.donut__graphic {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  overflow: visible; }
-
-.donut__slice {
-  stroke-width: 24px;
-  stroke-linecap: butt;
-  stroke-dasharray: 768px 768px;
-  stroke-dashoffset: 0;
-  fill: none;
-  cursor: pointer;
-  stroke: #b2b2b2; }
-  .donut__slice.color-index-loading {
-    stroke: #ddd;
-    stroke-dasharray: 1px 10px;
-    stroke-dashoffset: 0; }
-  .donut__slice.color-index-unset {
-    stroke: #ddd; }
-  .donut__slice.color-index-brand {
-    stroke: #8C50FF; }
-  .donut__slice.color-index-critical {
-    stroke: #FF856B; }
-  .donut__slice.color-index-error {
-    stroke: #FF856B; }
-  .donut__slice.color-index-warning {
-    stroke: #FFB86B; }
-  .donut__slice.color-index-ok {
-    stroke: #4EB976; }
-  .donut__slice.color-index-unknown {
-    stroke: #a8a8a8; }
-  .donut__slice.color-index-disabled {
-    stroke: #a8a8a8; }
-  .donut__slice.color-index-graph-1, .donut__slice.color-index-graph-6 {
-    stroke: #c3a4fe; }
-  .donut__slice.color-index-graph-2, .donut__slice.color-index-graph-7 {
-    stroke: #a577ff; }
-  .donut__slice.color-index-graph-3, .donut__slice.color-index-graph-8 {
-    stroke: #5d0cfb; }
-  .donut__slice.color-index-graph-4, .donut__slice.color-index-graph-9 {
-    stroke: #7026ff; }
-  .donut__slice.color-index-graph-5, .donut__slice.color-index-graph-10 {
-    stroke: #767676; }
-  .donut__slice.color-index-grey-1, .donut__slice.color-index-grey-5 {
-    stroke: #333333; }
-  .donut__slice.color-index-grey-2, .donut__slice.color-index-grey-6 {
-    stroke: #444444; }
-  .donut__slice.color-index-grey-3, .donut__slice.color-index-grey-7 {
-    stroke: #555555; }
-  .donut__slice.color-index-grey-4, .donut__slice.color-index-grey-8 {
-    stroke: #666666; }
-  .donut__slice.color-index-light-1, .donut__slice.color-index-light-3 {
-    stroke: #ffffff; }
-  .donut__slice.color-index-light-2, .donut__slice.color-index-light-4 {
-    stroke: #f5f5f5; }
-  @media screen and (min-width: 45em) {
-    .donut__slice {
-      -webkit-animation: draw-stroke 3s;
-      animation: draw-stroke 3s; } }
-  .donut__slice-indicator.color-index-unset {
-    fill: #ddd; }
-  .donut__slice-indicator.color-index-brand {
-    fill: #8C50FF; }
-  .donut__slice-indicator.color-index-critical {
-    fill: #FF856B; }
-  .donut__slice-indicator.color-index-error {
-    fill: #FF856B; }
-  .donut__slice-indicator.color-index-warning {
-    fill: #FFB86B; }
-  .donut__slice-indicator.color-index-ok {
-    fill: #4EB976; }
-  .donut__slice-indicator.color-index-unknown {
-    fill: #a8a8a8; }
-  .donut__slice-indicator.color-index-disabled {
-    fill: #a8a8a8; }
-  .donut__slice-indicator.color-index-graph-1, .donut__slice-indicator.color-index-graph-6 {
-    fill: #c3a4fe; }
-  .donut__slice-indicator.color-index-graph-2, .donut__slice-indicator.color-index-graph-7 {
-    fill: #a577ff; }
-  .donut__slice-indicator.color-index-graph-3, .donut__slice-indicator.color-index-graph-8 {
-    fill: #5d0cfb; }
-  .donut__slice-indicator.color-index-graph-4, .donut__slice-indicator.color-index-graph-9 {
-    fill: #7026ff; }
-  .donut__slice-indicator.color-index-graph-5, .donut__slice-indicator.color-index-graph-10 {
-    fill: #767676; }
-  .donut__slice-indicator.color-index-grey-1, .donut__slice-indicator.color-index-grey-5 {
-    fill: #333333; }
-  .donut__slice-indicator.color-index-grey-2, .donut__slice-indicator.color-index-grey-6 {
-    fill: #444444; }
-  .donut__slice-indicator.color-index-grey-3, .donut__slice-indicator.color-index-grey-7 {
-    fill: #555555; }
-  .donut__slice-indicator.color-index-grey-4, .donut__slice-indicator.color-index-grey-8 {
-    fill: #666666; }
-  .donut__slice--active {
-    stroke-width: 24px; }
-
-.donut__active {
-  position: absolute;
-  width: 100%;
-  margin-top: 72px;
-  text-align: center;
-  white-space: normal;
-  pointer-events: none; }
-  .donut__active-value {
-    font-size: 36px;
-    font-size: 2.25rem;
-    line-height: 38px;
-    font-weight: bold; }
-  .donut__active-units {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: inherit;
-    margin-left: 6px;
-    color: #777;
-    font-weight: normal; }
-  .donut__active-label {
-    width: 50%;
-    margin: 0px auto;
-    font-size: 14px;
-    font-size: 0.875rem;
-    line-height: 16px; }
-
-.donut__min-label, .donut__max-label {
-  position: absolute;
-  bottom: 0px;
-  color: #777;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429; }
-
-.donut__min-label {
-  left: 12px; }
-
-.donut__max-label {
-  right: 12px; }
-
-.donut__legend {
-  margin: 24px 0 0; }
-
-@media screen and (min-width: 45em) {
-  .donut--landscape {
-    white-space: nowrap; }
-    .donut--landscape .donut__graphic-container, .donut--landscape .donut__legend {
-      display: inline-block;
-      vertical-align: middle; }
-    .donut--landscape .donut__legend {
-      margin: 0 0 0 24px; } }
-
-.donut--portrait .donut__graphic-container {
-  display: block; }
-
-.donut--portrait .donut__legend {
-  margin: 24px 0 0; }
-
-.donut--partial .donut__graphic-container {
-  height: 168px; }
-
-.donut--small .donut__graphic-container {
-  width: 144px;
-  height: 144px; }
-
-.donut--small .donut__active {
-  margin-top: 48px; }
-
-@media screen and (min-width: 45em) {
-  .donut--small .donut__legend {
-    display: none; } }
+  .distribution--full {
+    height: 100%; }
+    .distribution--full .distribution__graphic {
+      height: 100%;
+      max-height: 100%; }
 
 .drop {
   position: fixed;
@@ -2658,6 +2674,8 @@ button:not(.button) {
       flex-direction: row; }
       .form fieldset > .form-fields .form-field {
         margin-bottom: -1px; }
+      .form fieldset > .form-fields > .button {
+        flex: 0 0 auto; }
   .form--fill {
     min-width: 0px; }
   .form--compact {
@@ -2751,6 +2769,8 @@ button:not(.button) {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAABGdBTUEAALGPC/xhBQAAATdJREFUOBGlUjFqw0AQ1AWBCWpd+A1pXOYHJk38BZeSOkPS5BERaWRJTcCNH2A3xj9waRf+hGsJAoLLjNk77iLFIXhB7NzO3OjuGBUEgaqqaos+wXdL7eI4frqDg27bdoZ+vsHtLB5aGZOyLJ+VUmut9Rdmj0mSHAzX16EfY77HngH2TKHfUMcTXooDEAsKMFhlWXYvVKcJtxKzhTGj0Bpy0TTNK0xPED5EUfTOWV+Ro4Za7nE19spm+NtVHP7q03gn5Ca+Hf78RoxTfOZ5PiJmEXNGTA21xG51DEmmafqBtsM3DMNwic6bKMFDcqIB9Cv0l3Z1iRIMjphMiqKYC8Os2ohYtQM6b+hwwY8o8Qm8iLhag3uvbEiJQ0EjMfMiYnRuv2pIYV3XL4xHX0Rco39hRkni9Oe+bw49m1YsR5tyAAAAAElFTkSuQmCC);
       background-position: center right 18px;
       padding-left: 22px; }
+      html.rtl .form-field__contents > select {
+        background-position: center left 18px; }
       [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__contents > select {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAABGdBTUEAALGPC/xhBQAAATtJREFUOBGdkk1KxEAQhdNiEPdZeIEk4MalNwhu9ApeQdCNhxBc6U5w4wHGjcwBAi4VMpDkCCYHkEDi+4bp0JNp/6ag6ErVey9VRZkgCExVVS/GmEzx1jYMwzxJkpMdKQxd150r8bGtGlw00DJWpK7rU8UzFT/lx2mavtma7y3L8khTvcr3VD+L4/gZHB0ujUTf93cA5E95nu/b2vSlBgYsHCsGbhTko23bK3W3EPAwiqIbcj6jBgYsHBczjmyT341i67+tZq1DSOxOf78mVgcPRVEcEGPE5IjB+Pa8IQhYO7kVcS5SFIbhI3ycmBw1MGCntjtNrL6XpySBdwlkGvNilc8kNp6Ij7uxQxfk7ou8xNdOxMXa2DuyLXIO6ugeIXx6Ihbnvj8KAmya5lKiC3x6Iq7Qv2JOCf8L6QsuVKvxz0iZVQAAAABJRU5ErkJggg==); }
     .form-field__contents > select:-moz-focusring {
@@ -2792,9 +2812,18 @@ button:not(.button) {
         right: 6px;
         transform: none;
         bottom: -6px; }
+        html.rtl .form-field__contents > .search-input .search-input__control, html.rtl
+        .form-field__contents > .search-input .calendar__control, html.rtl
+        .form-field__contents > .calendar .search-input__control, html.rtl
+        .form-field__contents > .calendar .calendar__control {
+          right: auto;
+          left: 6px; }
     .form-field__contents > .number-input {
       display: flex;
       padding-right: 6px; }
+      html.rtl .form-field__contents > .number-input {
+        padding-right: 0;
+        padding-left: 6px; }
       .form-field__contents > .number-input input[type=number] {
         display: inline-block;
         flex: 1;
@@ -2834,6 +2863,8 @@ button:not(.button) {
     float: right;
     color: #FF856B;
     line-height: 24px; }
+    html.rtl .form-field__error {
+      float: left; }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) .form-field__error {
       color: #dbdbdb; }
   .form-field--text {
@@ -3045,6 +3076,10 @@ div.header--flush .header__wrapper {
     stroke: #555555; }
   .control-icon.color-index-grey-4, .control-icon.color-index-grey-8 {
     stroke: #666666; }
+  .control-icon.color-index-accent-1, .control-icon.color-index-accent-3 {
+    stroke: #c3a4fe; }
+  .control-icon.color-index-accent-2, .control-icon.color-index-accent-4 {
+    stroke: #a577ff; }
   .control-icon.color-index-light-1, .control-icon.color-index-light-3 {
     stroke: #ffffff; }
   .control-icon.color-index-light-2, .control-icon.color-index-light-4 {
@@ -3075,6 +3110,10 @@ div.header--flush .header__wrapper {
     fill: #7026ff; }
   .control-icon.color-index-graph-5, .control-icon.color-index-graph-10 {
     fill: #767676; }
+  .control-icon.color-index-accent-1, .control-icon.color-index-accent-3 {
+    fill: #c3a4fe; }
+  .control-icon.color-index-accent-2, .control-icon.color-index-accent-4 {
+    fill: #a577ff; }
   .control-icon.color-index-grey-1, .control-icon.color-index-grey-5 {
     fill: #333333; }
   .control-icon.color-index-grey-2, .control-icon.color-index-grey-6 {
@@ -3222,6 +3261,10 @@ div.header--flush .header__wrapper {
     stroke: #555555; }
   .logo-icon.color-index-grey-4, .logo-icon.color-index-grey-8 {
     stroke: #666666; }
+  .logo-icon.color-index-accent-1, .logo-icon.color-index-accent-3 {
+    stroke: #c3a4fe; }
+  .logo-icon.color-index-accent-2, .logo-icon.color-index-accent-4 {
+    stroke: #a577ff; }
   .logo-icon.color-index-light-1, .logo-icon.color-index-light-3 {
     stroke: #ffffff; }
   .logo-icon.color-index-light-2, .logo-icon.color-index-light-4 {
@@ -3232,6 +3275,15 @@ div.header--flush .header__wrapper {
   .logo-icon--large {
     width: 96px;
     height: 96px; }
+
+.right-left-icon--left {
+  display: none; }
+
+html.rtl .right-left-icon--left {
+  display: inline; }
+
+html.rtl .right-left-icon--right {
+  display: none; }
 
 .image--medium {
   width: 576px; }
@@ -3298,6 +3350,9 @@ a.active > .label .label__icon.control-icon svg {
     top: 0px;
     right: 0px;
     z-index: 1; }
+    html.rtl .layer__closer {
+      right: auto;
+      left: 0px; }
   .layer--flush .layer__container {
     padding: 0px; }
   @media screen and (min-width: 45em) {
@@ -3315,11 +3370,24 @@ a.active > .label .label__icon.control-icon svg {
   .layer--align-left:not(.layer--hidden) .layer__container {
     top: 0px;
     bottom: 0px;
-    left: 0px; }
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     @media screen and (min-width: 45em) {
       .layer--align-left:not(.layer--hidden) .layer__container {
         -webkit-animation: slide-right 0.2s ease-in-out forwards;
         animation: slide-right 0.2s ease-in-out forwards; } }
+  @media screen and (min-width: 45em) {
+    html.rtl .layer--align-left:not(.layer--hidden) {
+      background-image: radial-gradient(circle at right, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); } }
+  html.rtl .layer--align-left:not(.layer--hidden) .layer__container {
+    left: auto;
+    right: 0px; }
+    @media screen and (min-width: 45em) {
+      html.rtl .layer--align-left:not(.layer--hidden) .layer__container {
+        -webkit-animation: slide-left 0.2s ease-in-out forwards;
+        animation: slide-left 0.2s ease-in-out forwards; } }
   @media screen and (min-width: 45em) {
     .layer--align-right:not(.layer--hidden) {
       background-image: radial-gradient(circle at right, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); } }
@@ -3334,6 +3402,16 @@ a.active > .label .label__icon.control-icon svg {
       .layer--align-right:not(.layer--hidden) .layer__container {
         -webkit-animation: slide-left 0.2s ease-in-out forwards;
         animation: slide-left 0.2s ease-in-out forwards; } }
+  @media screen and (min-width: 45em) {
+    html.rtl .layer--align-right:not(.layer--hidden) {
+      background-image: radial-gradient(circle at left, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); } }
+  html.rtl .layer--align-right:not(.layer--hidden) .layer__container {
+    right: auto;
+    left: 0px; }
+    @media screen and (min-width: 45em) {
+      html.rtl .layer--align-right:not(.layer--hidden) .layer__container {
+        -webkit-animation: slide-right 0.2s ease-in-out forwards;
+        animation: slide-right 0.2s ease-in-out forwards; } }
   @media screen and (min-width: 45em) {
     .layer--align-top:not(.layer--hidden) {
       background-image: radial-gradient(circle at top, #fff, #fff 20%, rgba(128, 128, 128, 0.6)); }
@@ -3484,6 +3562,8 @@ a.active > .label .label__icon.control-icon svg {
   white-space: normal;
   display: inline-block;
   margin: 0px; }
+  html.rtl .legend {
+    text-align: right; }
   .legend__item, .legend__total {
     color: #777; }
     .legend__item > *, .legend__total > * {
@@ -3495,9 +3575,14 @@ a.active > .label .label__icon.control-icon svg {
       display: inline-block;
       width: 72px;
       text-align: right; }
+      html.rtl .legend__item-value, html.rtl .legend__total-value {
+        text-align: left; }
     .legend__item-units, .legend__total-units {
       display: inline-block;
       margin-left: 6px; }
+      html.rtl .legend__item-units, html.rtl .legend__total-units {
+        margin-left: 0;
+        margin-right: 6px; }
   .legend__item--clickable {
     cursor: pointer; }
   .legend__item svg.legend__item-swatch {
@@ -3544,10 +3629,17 @@ a.active > .label .label__icon.control-icon svg {
       stroke: #555555; }
     .legend__item svg.legend__item-swatch.color-index-grey-4, .legend__item svg.legend__item-swatch.color-index-grey-8 {
       stroke: #666666; }
+    .legend__item svg.legend__item-swatch.color-index-accent-1, .legend__item svg.legend__item-swatch.color-index-accent-3 {
+      stroke: #c3a4fe; }
+    .legend__item svg.legend__item-swatch.color-index-accent-2, .legend__item svg.legend__item-swatch.color-index-accent-4 {
+      stroke: #a577ff; }
     .legend__item svg.legend__item-swatch.color-index-light-1, .legend__item svg.legend__item-swatch.color-index-light-3 {
       stroke: #ffffff; }
     .legend__item svg.legend__item-swatch.color-index-light-2, .legend__item svg.legend__item-swatch.color-index-light-4 {
       stroke: #f5f5f5; }
+    html.rtl .legend__item svg.legend__item-swatch {
+      margin-right: 0;
+      margin-left: 12px; }
     .legend__item svg.legend__item-swatch path {
       stroke-width: 12px;
       transition-property: stroke-width;
@@ -3559,6 +3651,9 @@ a.active > .label .label__icon.control-icon svg {
       stroke-width: 12px; }
   .legend__total {
     margin-left: 24px; }
+    html.rtl .legend__total {
+      margin-left: 0;
+      margin-right: 24px; }
     .legend__total > * {
       margin-top: 6px;
       padding-top: 6px;
@@ -3576,6 +3671,9 @@ a.active > .label .label__icon.control-icon svg {
     margin-left: 6px;
     color: #777;
     font-weight: normal; }
+    html.rtl .legend--single .legend__item-units {
+      margin-left: 0;
+      margin-right: 6px; }
 
 .login {
   position: absolute;
@@ -3762,8 +3860,12 @@ a.active > .label .label__icon.control-icon svg {
       margin-bottom: 12px; }
     .menu__drop--align-right {
       text-align: right; }
+      html.rtl .menu__drop--align-right {
+        text-align: left; }
       .menu__drop--align-right .menu__contents {
         text-align: left; }
+        html.rtl .menu__drop--align-right .menu__contents {
+          text-align: right; }
     .menu__drop--large .menu__control {
       line-height: 96px; }
   .menu--controlled {
@@ -3775,17 +3877,29 @@ a.active > .label .label__icon.control-icon svg {
       height: 24px; }
   .menu--inline.menu--row.box--justify-end > *:not(.control-icon) {
     margin-left: 24px;
-    margin-right: 0px; }
+    margin-right: 0; }
     .menu--inline.menu--row.box--justify-end > *:not(.control-icon):first-child {
-      margin-left: 0px; }
+      margin-left: 0; }
+    html.rtl .menu--inline.menu--row.box--justify-end > *:not(.control-icon) {
+      margin-right: 24px;
+      margin-left: 0; }
+      html.rtl .menu--inline.menu--row.box--justify-end > *:not(.control-icon):first-child {
+        margin-right: 0; }
   .menu--inline.menu--row > *:not(.control-icon):not(.button) {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 24px; }
     .menu--inline.menu--row > *:not(.control-icon):not(.button):last-child {
-      margin-right: 0px; }
+      margin-right: 0; }
+    html.rtl .menu--inline.menu--row > *:not(.control-icon):not(.button) {
+      margin-right: 0;
+      margin-left: 24px; }
+      html.rtl .menu--inline.menu--row > *:not(.control-icon):not(.button):last-child {
+        margin-left: 0; }
   @media screen and (max-width: 44.9375em) {
     .menu--inline.menu.box--direction-row.box--responsive > * {
-      margin-right: 0; } }
+      margin-right: 0; }
+      html.rtl .menu--inline.menu.box--direction-row.box--responsive > * {
+        margin-left: 0; } }
   .menu--inline.menu.box--direction-column a:not(.button) {
     margin-bottom: 6px; }
   .menu--small {
@@ -3794,6 +3908,9 @@ a.active > .label .label__icon.control-icon svg {
     line-height: 1.5; }
     .menu--small .menu__control-drop-icon {
       margin-left: 6px; }
+      html.rtl .menu--small .menu__control-drop-icon {
+        margin-left: 0;
+        margin-right: 6px; }
     .menu--small .menu__control-icon svg {
       width: 18px;
       height: 18px; }
@@ -3801,9 +3918,14 @@ a.active > .label .label__icon.control-icon svg {
     width: 100%; }
   .menu--primary > a:not(.button) {
     padding: 6px 24px;
-    border-right: 6px solid transparent;
     margin-bottom: 0px;
-    width: 100%; }
+    width: 100%;
+    border-width: 6px;
+    border-color: transparent;
+    border-right-style: solid; }
+    html.rtl .menu--primary > a:not(.button) {
+      border-right-style: none;
+      border-left-style: solid; }
     .menu--primary > a:not(.button):hover {
       text-decoration: none; }
       .menu--primary > a:not(.button):hover:not(.active) {
@@ -3921,6 +4043,8 @@ a.active > .label .label__icon.control-icon svg {
     white-space: normal; }
     .meter__graphic-container > a {
       text-decoration: none; }
+  .meter__graphic:focus {
+    outline: #c3a4fe solid 1px; }
   .meter__value {
     white-space: normal;
     pointer-events: none; }
@@ -3939,6 +4063,9 @@ a.active > .label .label__icon.control-icon svg {
       margin-left: 6px;
       color: #777;
       font-weight: normal; }
+      html.rtl .meter__value-units {
+        margin-left: 0;
+        margin-right: 6px; }
     .meter__value-label {
       display: block; }
   .meter__minmax-container {
@@ -3963,6 +4090,9 @@ a.active > .label .label__icon.control-icon svg {
     .meter--legend-right .meter__legend {
       vertical-align: top;
       margin-left: 24px; }
+      html.rtl .meter--legend-right .meter__legend {
+        margin-left: 0;
+        margin-right: 24px; }
     .meter--legend-right:not(.meter--tall-legend) .meter__legend {
       position: relative;
       -webkit-transform: translateY(-50%);
@@ -4072,6 +4202,10 @@ a.active > .label .label__icon.control-icon svg {
     stroke: #555555; }
   .meter--bar .meter__values .meter__slice.color-index-grey-4, .meter--bar .meter__values .meter__slice.color-index-grey-8 {
     stroke: #666666; }
+  .meter--bar .meter__values .meter__slice.color-index-accent-1, .meter--bar .meter__values .meter__slice.color-index-accent-3 {
+    stroke: #c3a4fe; }
+  .meter--bar .meter__values .meter__slice.color-index-accent-2, .meter--bar .meter__values .meter__slice.color-index-accent-4 {
+    stroke: #a577ff; }
   .meter--bar .meter__values .meter__slice.color-index-light-1, .meter--bar .meter__values .meter__slice.color-index-light-3 {
     stroke: #ffffff; }
   .meter--bar .meter__values .meter__slice.color-index-light-2, .meter--bar .meter__values .meter__slice.color-index-light-4 {
@@ -4083,32 +4217,58 @@ a.active > .label .label__icon.control-icon svg {
       transition: stroke-width 0.2s;
       -webkit-animation: draw-meter 1.5s linear;
       animation: draw-meter 1.5s linear; } }
-  .meter--bar .meter__thresholds .meter__slice.color-index-unset {
+  .meter--bar .meter__thresholds .meter__slice.color-index-unset,
+  .meter--bar .meter__tracks .meter__slice.color-index-unset {
     stroke: rgba(221, 221, 221, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-brand {
+  .meter--bar .meter__thresholds .meter__slice.color-index-brand,
+  .meter--bar .meter__tracks .meter__slice.color-index-brand {
     stroke: rgba(140, 80, 255, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-critical {
+  .meter--bar .meter__thresholds .meter__slice.color-index-critical,
+  .meter--bar .meter__tracks .meter__slice.color-index-critical {
     stroke: rgba(255, 133, 107, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-error {
+  .meter--bar .meter__thresholds .meter__slice.color-index-error,
+  .meter--bar .meter__tracks .meter__slice.color-index-error {
     stroke: rgba(255, 133, 107, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-warning {
+  .meter--bar .meter__thresholds .meter__slice.color-index-warning,
+  .meter--bar .meter__tracks .meter__slice.color-index-warning {
     stroke: rgba(255, 184, 107, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-ok {
+  .meter--bar .meter__thresholds .meter__slice.color-index-ok,
+  .meter--bar .meter__tracks .meter__slice.color-index-ok {
     stroke: rgba(78, 185, 118, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-unknown {
+  .meter--bar .meter__thresholds .meter__slice.color-index-unknown,
+  .meter--bar .meter__tracks .meter__slice.color-index-unknown {
     stroke: rgba(168, 168, 168, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-disabled {
+  .meter--bar .meter__thresholds .meter__slice.color-index-disabled,
+  .meter--bar .meter__tracks .meter__slice.color-index-disabled {
     stroke: rgba(168, 168, 168, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-graph-1, .meter--bar .meter__thresholds .meter__slice.color-index-graph-6 {
+  .meter--bar .meter__thresholds .meter__slice.color-index-graph-1, .meter--bar .meter__thresholds .meter__slice.color-index-graph-6,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-1,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-6 {
     stroke: rgba(195, 164, 254, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-graph-2, .meter--bar .meter__thresholds .meter__slice.color-index-graph-7 {
+  .meter--bar .meter__thresholds .meter__slice.color-index-graph-2, .meter--bar .meter__thresholds .meter__slice.color-index-graph-7,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-2,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-7 {
     stroke: rgba(165, 119, 255, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-graph-3, .meter--bar .meter__thresholds .meter__slice.color-index-graph-8 {
+  .meter--bar .meter__thresholds .meter__slice.color-index-graph-3, .meter--bar .meter__thresholds .meter__slice.color-index-graph-8,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-3,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-8 {
     stroke: rgba(93, 12, 251, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-graph-4, .meter--bar .meter__thresholds .meter__slice.color-index-graph-9 {
+  .meter--bar .meter__thresholds .meter__slice.color-index-graph-4, .meter--bar .meter__thresholds .meter__slice.color-index-graph-9,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-4,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-9 {
     stroke: rgba(112, 38, 255, 0.5); }
-  .meter--bar .meter__thresholds .meter__slice.color-index-graph-5, .meter--bar .meter__thresholds .meter__slice.color-index-graph-10 {
+  .meter--bar .meter__thresholds .meter__slice.color-index-graph-5, .meter--bar .meter__thresholds .meter__slice.color-index-graph-10,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-5,
+  .meter--bar .meter__tracks .meter__slice.color-index-graph-10 {
     stroke: rgba(118, 118, 118, 0.5); }
+  .meter--bar .meter__thresholds .meter__slice.color-index-accent-1, .meter--bar .meter__thresholds .meter__slice.color-index-accent-3,
+  .meter--bar .meter__tracks .meter__slice.color-index-accent-1,
+  .meter--bar .meter__tracks .meter__slice.color-index-accent-3 {
+    stroke: rgba(195, 164, 254, 0.5); }
+  .meter--bar .meter__thresholds .meter__slice.color-index-accent-2, .meter--bar .meter__thresholds .meter__slice.color-index-accent-4,
+  .meter--bar .meter__tracks .meter__slice.color-index-accent-2,
+  .meter--bar .meter__tracks .meter__slice.color-index-accent-4 {
+    stroke: rgba(165, 119, 255, 0.5); }
   .meter--bar .meter__value {
     text-align: left; }
     .meter--bar .meter__value-label {
@@ -4125,6 +4285,9 @@ a.active > .label .label__icon.control-icon svg {
     display: inline-block;
     vertical-align: top;
     margin-left: 12px; }
+    html.rtl .meter--bar:not(.meter--vertical) .meter__value {
+      margin-left: 0;
+      margin-right: 12px; }
     .meter--bar:not(.meter--vertical) .meter__value-value {
       font-size: 24px;
       font-size: 1.5rem;
@@ -4136,6 +4299,9 @@ a.active > .label .label__icon.control-icon svg {
   .meter--bar:not(.meter--vertical).meter--single .meter__value-label, .meter--bar:not(.meter--vertical).meter--stacked .meter__value-label {
     display: inline-block;
     margin-left: 4px; }
+    html.rtl .meter--bar:not(.meter--vertical).meter--single .meter__value-label, html.rtl .meter--bar:not(.meter--vertical).meter--stacked .meter__value-label {
+      margin-left: 0;
+      margin-right: 4px; }
   .meter--bar:not(.meter--vertical).meter--single.meter--legend-right .meter__value, .meter--bar:not(.meter--vertical).meter--stacked.meter--legend-right .meter__value {
     min-width: 84px; }
   .meter--bar:not(.meter--vertical).meter--legend-right .meter__legend {
@@ -4159,6 +4325,9 @@ a.active > .label .label__icon.control-icon svg {
     width: 288px; }
   .meter--bar:not(.meter--vertical).meter--large .meter__value {
     margin-left: 16px; }
+    html.rtl .meter--bar:not(.meter--vertical).meter--large .meter__value {
+      margin-left: 0;
+      margin-right: 16px; }
     .meter--bar:not(.meter--vertical).meter--large .meter__value-value, .meter--bar:not(.meter--vertical).meter--large .meter__value-units {
       font-size: 26px;
       font-size: 1.625rem;
@@ -4210,11 +4379,11 @@ a.active > .label .label__icon.control-icon svg {
     stroke-dasharray: 768px 768px;
     stroke-dashoffset: 0;
     fill: none;
-    stroke: #b2b2b2; }
+    stroke: rgba(51, 51, 51, 0.2); }
     .meter--circle .meter__slice-indicator, .meter--arc .meter__slice-indicator, .meter--spiral .meter__slice-indicator {
       stroke-linecap: square;
       stroke-width: 4px;
-      stroke: #000; }
+      stroke: rgba(51, 51, 51, 0.2); }
   .meter--circle .meter__values .meter__slice.color-index-loading, .meter--arc .meter__values .meter__slice.color-index-loading, .meter--spiral .meter__values .meter__slice.color-index-loading {
     stroke: #ddd;
     stroke-dasharray: 1px 10px;
@@ -4253,6 +4422,10 @@ a.active > .label .label__icon.control-icon svg {
     stroke: #555555; }
   .meter--circle .meter__values .meter__slice.color-index-grey-4, .meter--circle .meter__values .meter__slice.color-index-grey-8, .meter--arc .meter__values .meter__slice.color-index-grey-4, .meter--arc .meter__values .meter__slice.color-index-grey-8, .meter--spiral .meter__values .meter__slice.color-index-grey-4, .meter--spiral .meter__values .meter__slice.color-index-grey-8 {
     stroke: #666666; }
+  .meter--circle .meter__values .meter__slice.color-index-accent-1, .meter--circle .meter__values .meter__slice.color-index-accent-3, .meter--arc .meter__values .meter__slice.color-index-accent-1, .meter--arc .meter__values .meter__slice.color-index-accent-3, .meter--spiral .meter__values .meter__slice.color-index-accent-1, .meter--spiral .meter__values .meter__slice.color-index-accent-3 {
+    stroke: #c3a4fe; }
+  .meter--circle .meter__values .meter__slice.color-index-accent-2, .meter--circle .meter__values .meter__slice.color-index-accent-4, .meter--arc .meter__values .meter__slice.color-index-accent-2, .meter--arc .meter__values .meter__slice.color-index-accent-4, .meter--spiral .meter__values .meter__slice.color-index-accent-2, .meter--spiral .meter__values .meter__slice.color-index-accent-4 {
+    stroke: #a577ff; }
   .meter--circle .meter__values .meter__slice.color-index-light-1, .meter--circle .meter__values .meter__slice.color-index-light-3, .meter--arc .meter__values .meter__slice.color-index-light-1, .meter--arc .meter__values .meter__slice.color-index-light-3, .meter--spiral .meter__values .meter__slice.color-index-light-1, .meter--spiral .meter__values .meter__slice.color-index-light-3 {
     stroke: #ffffff; }
   .meter--circle .meter__values .meter__slice.color-index-light-2, .meter--circle .meter__values .meter__slice.color-index-light-4, .meter--arc .meter__values .meter__slice.color-index-light-2, .meter--arc .meter__values .meter__slice.color-index-light-4, .meter--spiral .meter__values .meter__slice.color-index-light-2, .meter--spiral .meter__values .meter__slice.color-index-light-4 {
@@ -4264,32 +4437,102 @@ a.active > .label .label__icon.control-icon svg {
       transition: stroke-width 0.2s;
       -webkit-animation: draw-arc 1.5s linear;
       animation: draw-arc 1.5s linear; } }
-  .meter--circle .meter__thresholds .meter__slice.color-index-unset, .meter--arc .meter__thresholds .meter__slice.color-index-unset, .meter--spiral .meter__thresholds .meter__slice.color-index-unset {
+  .meter--circle .meter__thresholds .meter__slice.color-index-unset,
+  .meter--circle .meter__tracks .meter__slice.color-index-unset, .meter--arc .meter__thresholds .meter__slice.color-index-unset,
+  .meter--arc .meter__tracks .meter__slice.color-index-unset, .meter--spiral .meter__thresholds .meter__slice.color-index-unset,
+  .meter--spiral .meter__tracks .meter__slice.color-index-unset {
     stroke: rgba(221, 221, 221, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-brand, .meter--arc .meter__thresholds .meter__slice.color-index-brand, .meter--spiral .meter__thresholds .meter__slice.color-index-brand {
+  .meter--circle .meter__thresholds .meter__slice.color-index-brand,
+  .meter--circle .meter__tracks .meter__slice.color-index-brand, .meter--arc .meter__thresholds .meter__slice.color-index-brand,
+  .meter--arc .meter__tracks .meter__slice.color-index-brand, .meter--spiral .meter__thresholds .meter__slice.color-index-brand,
+  .meter--spiral .meter__tracks .meter__slice.color-index-brand {
     stroke: rgba(140, 80, 255, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-critical, .meter--arc .meter__thresholds .meter__slice.color-index-critical, .meter--spiral .meter__thresholds .meter__slice.color-index-critical {
+  .meter--circle .meter__thresholds .meter__slice.color-index-critical,
+  .meter--circle .meter__tracks .meter__slice.color-index-critical, .meter--arc .meter__thresholds .meter__slice.color-index-critical,
+  .meter--arc .meter__tracks .meter__slice.color-index-critical, .meter--spiral .meter__thresholds .meter__slice.color-index-critical,
+  .meter--spiral .meter__tracks .meter__slice.color-index-critical {
     stroke: rgba(255, 133, 107, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-error, .meter--arc .meter__thresholds .meter__slice.color-index-error, .meter--spiral .meter__thresholds .meter__slice.color-index-error {
+  .meter--circle .meter__thresholds .meter__slice.color-index-error,
+  .meter--circle .meter__tracks .meter__slice.color-index-error, .meter--arc .meter__thresholds .meter__slice.color-index-error,
+  .meter--arc .meter__tracks .meter__slice.color-index-error, .meter--spiral .meter__thresholds .meter__slice.color-index-error,
+  .meter--spiral .meter__tracks .meter__slice.color-index-error {
     stroke: rgba(255, 133, 107, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-warning, .meter--arc .meter__thresholds .meter__slice.color-index-warning, .meter--spiral .meter__thresholds .meter__slice.color-index-warning {
+  .meter--circle .meter__thresholds .meter__slice.color-index-warning,
+  .meter--circle .meter__tracks .meter__slice.color-index-warning, .meter--arc .meter__thresholds .meter__slice.color-index-warning,
+  .meter--arc .meter__tracks .meter__slice.color-index-warning, .meter--spiral .meter__thresholds .meter__slice.color-index-warning,
+  .meter--spiral .meter__tracks .meter__slice.color-index-warning {
     stroke: rgba(255, 184, 107, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-ok, .meter--arc .meter__thresholds .meter__slice.color-index-ok, .meter--spiral .meter__thresholds .meter__slice.color-index-ok {
+  .meter--circle .meter__thresholds .meter__slice.color-index-ok,
+  .meter--circle .meter__tracks .meter__slice.color-index-ok, .meter--arc .meter__thresholds .meter__slice.color-index-ok,
+  .meter--arc .meter__tracks .meter__slice.color-index-ok, .meter--spiral .meter__thresholds .meter__slice.color-index-ok,
+  .meter--spiral .meter__tracks .meter__slice.color-index-ok {
     stroke: rgba(78, 185, 118, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-unknown, .meter--arc .meter__thresholds .meter__slice.color-index-unknown, .meter--spiral .meter__thresholds .meter__slice.color-index-unknown {
+  .meter--circle .meter__thresholds .meter__slice.color-index-unknown,
+  .meter--circle .meter__tracks .meter__slice.color-index-unknown, .meter--arc .meter__thresholds .meter__slice.color-index-unknown,
+  .meter--arc .meter__tracks .meter__slice.color-index-unknown, .meter--spiral .meter__thresholds .meter__slice.color-index-unknown,
+  .meter--spiral .meter__tracks .meter__slice.color-index-unknown {
     stroke: rgba(168, 168, 168, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-disabled, .meter--arc .meter__thresholds .meter__slice.color-index-disabled, .meter--spiral .meter__thresholds .meter__slice.color-index-disabled {
+  .meter--circle .meter__thresholds .meter__slice.color-index-disabled,
+  .meter--circle .meter__tracks .meter__slice.color-index-disabled, .meter--arc .meter__thresholds .meter__slice.color-index-disabled,
+  .meter--arc .meter__tracks .meter__slice.color-index-disabled, .meter--spiral .meter__thresholds .meter__slice.color-index-disabled,
+  .meter--spiral .meter__tracks .meter__slice.color-index-disabled {
     stroke: rgba(168, 168, 168, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-graph-1, .meter--circle .meter__thresholds .meter__slice.color-index-graph-6, .meter--arc .meter__thresholds .meter__slice.color-index-graph-1, .meter--arc .meter__thresholds .meter__slice.color-index-graph-6, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-1, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-6 {
+  .meter--circle .meter__thresholds .meter__slice.color-index-graph-1, .meter--circle .meter__thresholds .meter__slice.color-index-graph-6,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-1,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-6, .meter--arc .meter__thresholds .meter__slice.color-index-graph-1, .meter--arc .meter__thresholds .meter__slice.color-index-graph-6,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-1,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-6, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-1, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-6,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-1,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-6 {
     stroke: rgba(195, 164, 254, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-graph-2, .meter--circle .meter__thresholds .meter__slice.color-index-graph-7, .meter--arc .meter__thresholds .meter__slice.color-index-graph-2, .meter--arc .meter__thresholds .meter__slice.color-index-graph-7, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-2, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-7 {
+  .meter--circle .meter__thresholds .meter__slice.color-index-graph-2, .meter--circle .meter__thresholds .meter__slice.color-index-graph-7,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-2,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-7, .meter--arc .meter__thresholds .meter__slice.color-index-graph-2, .meter--arc .meter__thresholds .meter__slice.color-index-graph-7,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-2,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-7, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-2, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-7,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-2,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-7 {
     stroke: rgba(165, 119, 255, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-graph-3, .meter--circle .meter__thresholds .meter__slice.color-index-graph-8, .meter--arc .meter__thresholds .meter__slice.color-index-graph-3, .meter--arc .meter__thresholds .meter__slice.color-index-graph-8, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-3, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-8 {
+  .meter--circle .meter__thresholds .meter__slice.color-index-graph-3, .meter--circle .meter__thresholds .meter__slice.color-index-graph-8,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-3,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-8, .meter--arc .meter__thresholds .meter__slice.color-index-graph-3, .meter--arc .meter__thresholds .meter__slice.color-index-graph-8,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-3,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-8, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-3, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-8,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-3,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-8 {
     stroke: rgba(93, 12, 251, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-graph-4, .meter--circle .meter__thresholds .meter__slice.color-index-graph-9, .meter--arc .meter__thresholds .meter__slice.color-index-graph-4, .meter--arc .meter__thresholds .meter__slice.color-index-graph-9, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-4, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-9 {
+  .meter--circle .meter__thresholds .meter__slice.color-index-graph-4, .meter--circle .meter__thresholds .meter__slice.color-index-graph-9,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-4,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-9, .meter--arc .meter__thresholds .meter__slice.color-index-graph-4, .meter--arc .meter__thresholds .meter__slice.color-index-graph-9,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-4,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-9, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-4, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-9,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-4,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-9 {
     stroke: rgba(112, 38, 255, 0.5); }
-  .meter--circle .meter__thresholds .meter__slice.color-index-graph-5, .meter--circle .meter__thresholds .meter__slice.color-index-graph-10, .meter--arc .meter__thresholds .meter__slice.color-index-graph-5, .meter--arc .meter__thresholds .meter__slice.color-index-graph-10, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-5, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-10 {
+  .meter--circle .meter__thresholds .meter__slice.color-index-graph-5, .meter--circle .meter__thresholds .meter__slice.color-index-graph-10,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-5,
+  .meter--circle .meter__tracks .meter__slice.color-index-graph-10, .meter--arc .meter__thresholds .meter__slice.color-index-graph-5, .meter--arc .meter__thresholds .meter__slice.color-index-graph-10,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-5,
+  .meter--arc .meter__tracks .meter__slice.color-index-graph-10, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-5, .meter--spiral .meter__thresholds .meter__slice.color-index-graph-10,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-5,
+  .meter--spiral .meter__tracks .meter__slice.color-index-graph-10 {
     stroke: rgba(118, 118, 118, 0.5); }
+  .meter--circle .meter__thresholds .meter__slice.color-index-accent-1, .meter--circle .meter__thresholds .meter__slice.color-index-accent-3,
+  .meter--circle .meter__tracks .meter__slice.color-index-accent-1,
+  .meter--circle .meter__tracks .meter__slice.color-index-accent-3, .meter--arc .meter__thresholds .meter__slice.color-index-accent-1, .meter--arc .meter__thresholds .meter__slice.color-index-accent-3,
+  .meter--arc .meter__tracks .meter__slice.color-index-accent-1,
+  .meter--arc .meter__tracks .meter__slice.color-index-accent-3, .meter--spiral .meter__thresholds .meter__slice.color-index-accent-1, .meter--spiral .meter__thresholds .meter__slice.color-index-accent-3,
+  .meter--spiral .meter__tracks .meter__slice.color-index-accent-1,
+  .meter--spiral .meter__tracks .meter__slice.color-index-accent-3 {
+    stroke: rgba(195, 164, 254, 0.5); }
+  .meter--circle .meter__thresholds .meter__slice.color-index-accent-2, .meter--circle .meter__thresholds .meter__slice.color-index-accent-4,
+  .meter--circle .meter__tracks .meter__slice.color-index-accent-2,
+  .meter--circle .meter__tracks .meter__slice.color-index-accent-4, .meter--arc .meter__thresholds .meter__slice.color-index-accent-2, .meter--arc .meter__thresholds .meter__slice.color-index-accent-4,
+  .meter--arc .meter__tracks .meter__slice.color-index-accent-2,
+  .meter--arc .meter__tracks .meter__slice.color-index-accent-4, .meter--spiral .meter__thresholds .meter__slice.color-index-accent-2, .meter--spiral .meter__thresholds .meter__slice.color-index-accent-4,
+  .meter--spiral .meter__tracks .meter__slice.color-index-accent-2,
+  .meter--spiral .meter__tracks .meter__slice.color-index-accent-4 {
+    stroke: rgba(165, 119, 255, 0.5); }
   .meter--circle .meter__threshold, .meter--arc .meter__threshold, .meter--spiral .meter__threshold {
     stroke-linecap: butt; }
   .meter--circle .meter__value-label, .meter--arc .meter__value-label, .meter--spiral .meter__value-label {
@@ -4378,18 +4621,27 @@ a.active > .label .label__icon.control-icon svg {
     display: inline-block;
     margin-left: -24px;
     vertical-align: top; }
+    html.rtl .meter--arc.meter--vertical .meter__value {
+      margin-left: 0;
+      margin-right: -24px; }
   .meter--arc.meter--vertical .meter__minmax-container {
     display: inline-block;
     vertical-align: top;
     margin-left: 12px;
     padding-top: 12px;
     padding-bottom: 12px; }
+    html.rtl .meter--arc.meter--vertical .meter__minmax-container {
+      margin-left: 0;
+      margin-right: 12px; }
   .meter--arc.meter--vertical.meter--small svg.meter__graphic {
     width: 72px;
     height: 96px; }
   .meter--arc.meter--vertical.meter--small .meter__value {
     top: 48px;
     margin-left: -12px; }
+    html.rtl .meter--arc.meter--vertical.meter--small .meter__value {
+      margin-left: 0;
+      margin-right: -12px; }
   .meter--arc.meter--vertical.meter--small .meter__minmax-container {
     padding-top: 0px;
     padding-bottom: 0px; }
@@ -4399,10 +4651,19 @@ a.active > .label .label__icon.control-icon svg {
   .meter--arc.meter--vertical.meter--large .meter__value {
     top: 144px;
     margin-left: -48px; }
+    html.rtl .meter--arc.meter--vertical.meter--large .meter__value {
+      margin-left: 0;
+      margin-right: -48px; }
   .meter--arc.meter--vertical.meter--minmax .meter__value {
     margin-left: -72px; }
+    html.rtl .meter--arc.meter--vertical.meter--minmax .meter__value {
+      margin-left: 0;
+      margin-right: -72px; }
   .meter--arc.meter--vertical.meter--minmax.meter--small .meter__value {
     margin-left: -60px; }
+    html.rtl .meter--arc.meter--vertical.meter--minmax.meter--small .meter__value {
+      margin-left: 0;
+      margin-right: -60px; }
   .meter--arc.meter--vertical.meter--legend-right.meter--small .meter__value {
     min-width: 78px; }
   .meter--arc.meter--vertical.meter--legend-right .meter__value {
@@ -4425,6 +4686,9 @@ a.active > .label .label__icon.control-icon svg {
       line-height: 1.2;
       color: #777;
       margin-left: 0.2em; }
+      html.rtl .meter--spiral .meter__value-units {
+        margin-left: 0;
+        margin-right: 0.2em; }
     .meter--spiral .meter__value-label {
       display: block;
       font-size: 14px;
@@ -4445,69 +4709,63 @@ a.active > .label .label__icon.control-icon svg {
     .notification__message + * {
       margin-top: 24px; }
   .notification__status {
-    margin-right: 24px;
-    flex: 0 0 auto; }
-  .notification--critical {
-    background-color: #FF856B; }
-    .notification--critical .notification__status .status-icon__base {
-      fill: #fff; }
-    .notification--critical .notification__status .status-icon__detail {
-      stroke: #FF856B;
-      fill: #FF856B; }
-    .notification--critical .notification__status.status-icon-unknown .status-icon__detail {
-      stroke: #fff;
-      fill: #fff; }
-  .notification--error {
-    background-color: #FF856B; }
-    .notification--error .notification__status .status-icon__base {
-      fill: #fff; }
-    .notification--error .notification__status .status-icon__detail {
-      stroke: #FF856B;
-      fill: #FF856B; }
-    .notification--error .notification__status.status-icon-unknown .status-icon__detail {
-      stroke: #fff;
-      fill: #fff; }
-  .notification--warning {
-    background-color: #FFB86B; }
-    .notification--warning .notification__status .status-icon__base {
-      fill: #fff; }
-    .notification--warning .notification__status .status-icon__detail {
-      stroke: #FFB86B;
-      fill: #FFB86B; }
-    .notification--warning .notification__status.status-icon-unknown .status-icon__detail {
-      stroke: #fff;
-      fill: #fff; }
-  .notification--ok {
-    background-color: #4EB976;
-    color: #fff; }
-    .notification--ok .notification__status .status-icon__base {
-      fill: #fff; }
-    .notification--ok .notification__status .status-icon__detail {
-      stroke: #4EB976;
-      fill: #4EB976; }
-    .notification--ok .notification__status.status-icon-unknown .status-icon__detail {
-      stroke: #fff;
-      fill: #fff; }
-  .notification--unknown {
-    background-color: #a8a8a8; }
-    .notification--unknown .notification__status .status-icon__base {
-      fill: #fff; }
-    .notification--unknown .notification__status .status-icon__detail {
-      stroke: #a8a8a8;
-      fill: #a8a8a8; }
-    .notification--unknown .notification__status.status-icon-unknown .status-icon__detail {
-      stroke: #fff;
-      fill: #fff; }
-  .notification--disabled {
-    background-color: #a8a8a8; }
-    .notification--disabled .notification__status .status-icon__base {
-      fill: #fff; }
-    .notification--disabled .notification__status .status-icon__detail {
-      stroke: #a8a8a8;
-      fill: #a8a8a8; }
-    .notification--disabled .notification__status.status-icon-unknown .status-icon__detail {
-      stroke: #fff;
-      fill: #fff; }
+    flex: 0 0 auto;
+    margin-right: 24px; }
+    html.rtl .notification__status {
+      margin-right: 0;
+      margin-left: 24px; }
+  .notification--small .notification__message {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 24px; }
+  .notification--critical .notification__status .status-icon__base {
+    fill: #fff; }
+  .notification--critical .notification__status .status-icon__detail {
+    stroke: #FF856B;
+    fill: #FF856B; }
+  .notification--critical .notification__status.status-icon-unknown .status-icon__detail {
+    stroke: #fff;
+    fill: #fff; }
+  .notification--error .notification__status .status-icon__base {
+    fill: #fff; }
+  .notification--error .notification__status .status-icon__detail {
+    stroke: #FF856B;
+    fill: #FF856B; }
+  .notification--error .notification__status.status-icon-unknown .status-icon__detail {
+    stroke: #fff;
+    fill: #fff; }
+  .notification--warning .notification__status .status-icon__base {
+    fill: #fff; }
+  .notification--warning .notification__status .status-icon__detail {
+    stroke: #FFB86B;
+    fill: #FFB86B; }
+  .notification--warning .notification__status.status-icon-unknown .status-icon__detail {
+    stroke: #fff;
+    fill: #fff; }
+  .notification--ok .notification__status .status-icon__base {
+    fill: #fff; }
+  .notification--ok .notification__status .status-icon__detail {
+    stroke: #4EB976;
+    fill: #4EB976; }
+  .notification--ok .notification__status.status-icon-unknown .status-icon__detail {
+    stroke: #fff;
+    fill: #fff; }
+  .notification--unknown .notification__status .status-icon__base {
+    fill: #fff; }
+  .notification--unknown .notification__status .status-icon__detail {
+    stroke: #a8a8a8;
+    fill: #a8a8a8; }
+  .notification--unknown .notification__status.status-icon-unknown .status-icon__detail {
+    stroke: #fff;
+    fill: #fff; }
+  .notification--disabled .notification__status .status-icon__base {
+    fill: #fff; }
+  .notification--disabled .notification__status .status-icon__detail {
+    stroke: #a8a8a8;
+    fill: #a8a8a8; }
+  .notification--disabled .notification__status.status-icon-unknown .status-icon__detail {
+    stroke: #fff;
+    fill: #fff; }
 
 .notifications-control__icon {
   width: 48px;
@@ -4658,6 +4916,9 @@ a.active > .label .label__icon.control-icon svg {
     color: #6e22ff;
     border: 2px solid #999;
     border-radius: 24px; }
+    html.rtl .radio-button__control {
+      margin-right: 0;
+      margin-left: 12px; }
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) .radio-button__control {
       border-color: #dbdbdb; }
   .radio-button__label {
@@ -4715,10 +4976,16 @@ a.active > .label .label__icon.control-icon svg {
     position: relative; }
     .search--inline .search__input {
       width: 100%;
-      padding-right: 47px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      padding-right: 47px; }
       .search--inline .search__input:focus {
         padding-right: 46px; }
+      html.rtl .search--inline .search__input {
+        padding-right: 23px;
+        padding-left: 47px; }
+        html.rtl .search--inline .search__input:focus {
+          padding-right: 22px;
+          padding-left: 46px; }
       .header .search--inline .search__input:not(:focus) {
         border-color: transparent; }
     .search--inline .control-icon-search {
@@ -4727,6 +4994,9 @@ a.active > .label .label__icon.control-icon svg {
       top: 50%;
       transform: translateY(-50%);
       pointer-events: none; }
+      html.rtl .search--inline .control-icon-search {
+        right: auto;
+        left: 12px; }
   .search--small {
     line-height: 24px; }
     .search--small .search__input {
@@ -4959,6 +5229,8 @@ section > dl > dd {
   padding: 12px; }
   .tab a {
     text-decoration: none; }
+    .tab a:hover, .tab a:visited, .tab a:link, .tab a:active {
+      text-decoration: none; }
     .tab a:focus .tab__label {
       border-bottom: 4px solid; }
   .tab__label {
@@ -5044,6 +5316,15 @@ section > dl > dd {
     [class*="background-color-index-"]:not([class*="background-color-index-light"]) .table--selectable tbody tr:hover:not(.table-row--selected) td {
       color: #fff; }
 
+.tag {
+  background-color: rgba(128, 128, 128, 0.6);
+  padding: 3px 6px;
+  position: relative;
+  margin: 0 12px 12px 0; }
+  .tag .tag--label {
+    color: #fff;
+    text-decoration: none; }
+
 .tbd {
   text-align: center;
   padding: 96px;
@@ -5059,13 +5340,15 @@ section > dl > dd {
   padding: 12px; }
   @media screen and (min-width: 45em) {
     .tiles.box--direction-row > .tile {
-      flex: 0 0 192px;
-      margin: 12px; }
+      flex: 0 0 192px; }
       .tiles.box--direction-row > .tile > * {
         box-sizing: border-box; }
       .tiles.box--direction-row > .tile--wide {
-        flex-basis: calc(100% - 24px);
-        box-sizing: border-box; } }
+        box-sizing: border-box; }
+    .tiles.box--direction-row:not(.tiles--flush) > .tile {
+      margin: 12px; }
+      .tiles.box--direction-row:not(.tiles--flush) > .tile--wide {
+        flex-basis: calc(100% - 24px); } }
   .tiles__container {
     display: flex;
     flex-direction: row;
@@ -5116,11 +5399,16 @@ section > dl > dd {
   @media screen and (max-width: 44.9375em) {
     .tiles--large > .tile {
       flex-basis: 100%; } }
+  .tiles:focus {
+    outline: #c3a4fe solid 1px; }
 
 .tile {
   overflow: hidden; }
   .tile .status-icon {
     margin-right: 6px; }
+    html.rtl .tile .status-icon {
+      margin-right: 0;
+      margin-left: 6px; }
   .tile > .chart {
     width: 100%; }
   .tile--selectable {
@@ -5149,6 +5437,9 @@ section > dl > dd {
       font-weight: 600; } }
   .title > *:not(:last-child) {
     margin-right: 12px; }
+    html.rtl .title > *:not(:last-child) {
+      margin-right: 0px;
+      margin-left: 12px; }
   .title a {
     color: inherit;
     text-decoration: none; }
