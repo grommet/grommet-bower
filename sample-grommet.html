@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <title>Todo App</title>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700' rel='stylesheet' type='text/css'>
-    <link href='css/grommet-hpe.min.css' rel='stylesheet' type='text/css'>
-    <script src="../react/react.js"></script>
-    <script src="../react/JSXTransformer.js"></script>
-    <script src="grommet.min.js"></script>
+  <link href='css/grommet.min.css' rel='stylesheet' type='text/css'>
+  <script src="../react/react.js"></script>
+  <script src="../react/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script src="grommet.min.js"></script>
 </head>
 <body>
   <div id="content"></div>
-  <script type="text/jsx">
+  <script type="text/babel">
 
     function getLabel(label, count, colorIndex) {
       return {
@@ -22,56 +23,54 @@
       };
     }
 
-    var TodoAppDashboard = React.createClass({
+    const TodoAppDashboard = (props) => {
+      const tasksMap = {
+        critical: 0,
+        ok: 0,
+        warning: 0
+      };
 
-      render: function () {
+      const items = props.tasks.map((task) => {
 
-        var tasksMap = {
-          error: 0,
-          ok: 0,
-          warning: 0
-        };
-
-        var items = this.props.tasks.map(function(task) {
-
-          tasksMap[task.type] += 1;
-
-          return (
-            <tr>
-              <td><Grommet.Icons.Status value={task.type} small={true} /></td>
-              <td>{task.item}</td>
-            </tr>
-          );
-        });
+        tasksMap[task.type] += 1;
 
         return (
-          <Grommet.Tiles fill={true} flush={false}>
-            <Grommet.Tile align="center">
-              <Grommet.Meter series={[
-                getLabel('Fix Now', tasksMap.error, 'error'),
-                getLabel('Remember', tasksMap.warning, 'warning'),
-                getLabel('Enjoy', tasksMap.ok, 'ok')
-              ]} type="circle" />
-            </Grommet.Tile>
-            <Grommet.Tile>
-              <Grommet.Header><h3>My Tasks:</h3></Grommet.Header>
-              <Grommet.Table>
-                <tbody>
-                  {items}
-                </tbody>
-              </Grommet.Table>
-            </Grommet.Tile>
-          </Grommet.Tiles>
+          <tr>
+            <td><Grommet.Icons.Status value={task.type} small={true} /></td>
+            <td>{task.item}</td>
+          </tr>
         );
-      }
-    });
+      });
 
-    var App = React.createClass({
-      getInitialState: function() {
-        return {
+      return (
+        <Grommet.Tiles fill={true} flush={false}>
+          <Grommet.Tile align="center">
+            <Grommet.Meter series={[
+              getLabel('Fix Now', tasksMap.critical, 'critical'),
+              getLabel('Remember', tasksMap.warning, 'warning'),
+              getLabel('Enjoy', tasksMap.ok, 'ok')
+            ]} type="circle" />
+          </Grommet.Tile>
+          <Grommet.Tile>
+            <Grommet.Header><h3>My Tasks:</h3></Grommet.Header>
+            <Grommet.Table>
+              <tbody>
+                {items}
+              </tbody>
+            </Grommet.Table>
+          </Grommet.Tile>
+        </Grommet.Tiles>
+      );
+    };
+
+    class App extends React.Component {
+      constructor () {
+        super();
+
+        this.state = {
           tasks: [
             {
-              type: 'error',
+              type: 'critical',
               item: 'The coffee pot needs to be cleaned.'
             },
             {
@@ -96,21 +95,23 @@
             }
           ]
         };
-      },
-      render: function() {
+      }
+
+      render () {
         return (
           <Grommet.App centered={false}>
-            <Grommet.Header direction="row" justify="between" large={true} pad={{horizontal: 'medium'}}>
+            <Grommet.Header direction="row" justify="between"
+              large={true} pad={{horizontal: 'medium'}}>
               <Grommet.Title>Todo App</Grommet.Title>
             </Grommet.Header>
             <TodoAppDashboard tasks={this.state.tasks} />
           </Grommet.App>
         );
       }
-    });
+    };
 
-    var element = document.getElementById('content');
-    React.render(React.createElement(App), element);
+    const element = document.getElementById('content');
+    ReactDOM.render(React.createElement(App), element);
   </script>
 </body>
 </html>
