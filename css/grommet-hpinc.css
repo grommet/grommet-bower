@@ -581,7 +581,7 @@ img[height] {
     line-height: 1.125; }
   .grommet h2 {
     font-size: 36px;
-    line-height: 1.39; }
+    line-height: 1.23; }
   .grommet h3 {
     font-size: 24px;
     line-height: 1.333; }
@@ -935,12 +935,8 @@ img[height] {
   .anchor--primary:hover:not(.anchor--disabled) .control-icon,
   .anchor--icon-label:hover:not(.anchor--disabled) .control-icon {
     fill: #0096D6;
-    stroke: #0096D6; }
-    .anchor--primary:hover:not(.anchor--disabled) .control-icon path,
-    .anchor--primary:hover:not(.anchor--disabled) .control-icon polyline,
-    .anchor--icon-label:hover:not(.anchor--disabled) .control-icon path,
-    .anchor--icon-label:hover:not(.anchor--disabled) .control-icon polyline {
-      stroke-width: 3px; }
+    stroke: #0096D6;
+    transform: scale(1.1); }
 
 .anchor--reverse .control-icon {
   margin-right: 0;
@@ -1348,7 +1344,7 @@ img[height] {
   cursor: pointer; }
 
 .box--size {
-  max-width: calc(100% - 48px); }
+  max-width: 100%; }
   .box--size .paragraph {
     width: 100%;
     max-width: 100%; }
@@ -1797,20 +1793,16 @@ img[height] {
     stroke: #848484; }
   .chart__values-line.color-index-disabled {
     stroke: #848484; }
-  .chart__values-line.color-index-graph-1, .chart__values-line.color-index-graph-8 {
-    stroke: #E6734B; }
-  .chart__values-line.color-index-graph-2, .chart__values-line.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .chart__values-line.color-index-graph-3, .chart__values-line.color-index-graph-10 {
-    stroke: #915591; }
-  .chart__values-line.color-index-graph-4, .chart__values-line.color-index-graph-11 {
-    stroke: #006996; }
-  .chart__values-line.color-index-graph-5, .chart__values-line.color-index-graph-12 {
-    stroke: #A65336; }
-  .chart__values-line.color-index-graph-6, .chart__values-line.color-index-graph-13 {
-    stroke: #A69136; }
-  .chart__values-line.color-index-graph-7, .chart__values-line.color-index-graph-14 {
-    stroke: #774677; }
+  .chart__values-line.color-index-graph-1, .chart__values-line.color-index-graph-6 {
+    stroke: #0096D6; }
+  .chart__values-line.color-index-graph-2, .chart__values-line.color-index-graph-7 {
+    stroke: #C094bf; }
+  .chart__values-line.color-index-graph-3, .chart__values-line.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .chart__values-line.color-index-graph-4, .chart__values-line.color-index-graph-9 {
+    stroke: #87898b; }
+  .chart__values-line.color-index-graph-5, .chart__values-line.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .chart__values-line.color-index-grey-1, .chart__values-line.color-index-grey-5 {
     stroke: #676767; }
   .chart__values-line.color-index-grey-2, .chart__values-line.color-index-grey-6 {
@@ -1837,6 +1829,8 @@ img[height] {
     stroke: #ffffff; }
   .chart__values-line.color-index-light-2, .chart__values-line.color-index-light-4 {
     stroke: #f5f5f5; }
+  .chart__values-line--active {
+    cursor: pointer; }
 
 .chart__values-area.color-index-critical {
   fill: rgba(240, 75, 55, 0.7); }
@@ -1853,88 +1847,79 @@ img[height] {
 .chart__values-area.color-index-disabled {
   fill: rgba(132, 132, 132, 0.7); }
 
-.chart__values-area.color-index-graph-1, .chart__values-area.color-index-graph-8 {
-  fill: rgba(230, 115, 75, 0.7); }
+.chart__values-area.color-index-graph-1, .chart__values-area.color-index-graph-6 {
+  fill: rgba(0, 150, 214, 0.7); }
 
-.chart__values-area.color-index-graph-2, .chart__values-area.color-index-graph-9 {
-  fill: rgba(230, 200, 75, 0.7); }
+.chart__values-area.color-index-graph-2, .chart__values-area.color-index-graph-7 {
+  fill: rgba(192, 148, 191, 0.7); }
 
-.chart__values-area.color-index-graph-3, .chart__values-area.color-index-graph-10 {
-  fill: rgba(145, 85, 145, 0.7); }
+.chart__values-area.color-index-graph-3, .chart__values-area.color-index-graph-8 {
+  fill: rgba(153, 213, 239, 0.7); }
 
-.chart__values-area.color-index-graph-4, .chart__values-area.color-index-graph-11 {
-  fill: rgba(0, 105, 150, 0.7); }
+.chart__values-area.color-index-graph-4, .chart__values-area.color-index-graph-9 {
+  fill: rgba(135, 137, 139, 0.7); }
 
-.chart__values-area.color-index-graph-5, .chart__values-area.color-index-graph-12 {
-  fill: rgba(166, 83, 54, 0.7); }
+.chart__values-area.color-index-graph-5, .chart__values-area.color-index-graph-10 {
+  fill: rgba(185, 184, 187, 0.7); }
 
-.chart__values-area.color-index-graph-6, .chart__values-area.color-index-graph-13 {
-  fill: rgba(166, 145, 54, 0.7); }
+.chart__values-area--active {
+  cursor: pointer; }
 
-.chart__values-area.color-index-graph-7, .chart__values-area.color-index-graph-14 {
-  fill: rgba(119, 70, 119, 0.7); }
-
-.chart__values-area--active.color-index-unset {
+.chart__values-area--highlight.color-index-unset {
   fill: #ddd; }
 
-.chart__values-area--active.color-index-brand {
+.chart__values-area--highlight.color-index-brand {
   fill: #0096D6; }
 
-.chart__values-area--active.color-index-critical {
+.chart__values-area--highlight.color-index-critical {
   fill: #F04B37; }
 
-.chart__values-area--active.color-index-warning {
+.chart__values-area--highlight.color-index-warning {
   fill: #F0AA3C; }
 
-.chart__values-area--active.color-index-ok {
+.chart__values-area--highlight.color-index-ok {
   fill: #509137; }
 
-.chart__values-area--active.color-index-unknown {
+.chart__values-area--highlight.color-index-unknown {
   fill: #848484; }
 
-.chart__values-area--active.color-index-disabled {
+.chart__values-area--highlight.color-index-disabled {
   fill: #848484; }
 
-.chart__values-area--active.color-index-graph-1, .chart__values-area--active.color-index-graph-8 {
+.chart__values-area--highlight.color-index-graph-1, .chart__values-area--highlight.color-index-graph-6 {
+  fill: #0096D6; }
+
+.chart__values-area--highlight.color-index-graph-2, .chart__values-area--highlight.color-index-graph-7 {
+  fill: #C094bf; }
+
+.chart__values-area--highlight.color-index-graph-3, .chart__values-area--highlight.color-index-graph-8 {
+  fill: #99d5ef; }
+
+.chart__values-area--highlight.color-index-graph-4, .chart__values-area--highlight.color-index-graph-9 {
+  fill: #87898b; }
+
+.chart__values-area--highlight.color-index-graph-5, .chart__values-area--highlight.color-index-graph-10 {
+  fill: #b9b8bb; }
+
+.chart__values-area--highlight.color-index-accent-1, .chart__values-area--highlight.color-index-accent-4 {
   fill: #E6734B; }
 
-.chart__values-area--active.color-index-graph-2, .chart__values-area--active.color-index-graph-9 {
+.chart__values-area--highlight.color-index-accent-2, .chart__values-area--highlight.color-index-accent-5 {
   fill: #E6C84B; }
 
-.chart__values-area--active.color-index-graph-3, .chart__values-area--active.color-index-graph-10 {
+.chart__values-area--highlight.color-index-accent-3, .chart__values-area--highlight.color-index-accent-6 {
   fill: #915591; }
 
-.chart__values-area--active.color-index-graph-4, .chart__values-area--active.color-index-graph-11 {
-  fill: #006996; }
-
-.chart__values-area--active.color-index-graph-5, .chart__values-area--active.color-index-graph-12 {
-  fill: #A65336; }
-
-.chart__values-area--active.color-index-graph-6, .chart__values-area--active.color-index-graph-13 {
-  fill: #A69136; }
-
-.chart__values-area--active.color-index-graph-7, .chart__values-area--active.color-index-graph-14 {
-  fill: #774677; }
-
-.chart__values-area--active.color-index-accent-1, .chart__values-area--active.color-index-accent-4 {
-  fill: #E6734B; }
-
-.chart__values-area--active.color-index-accent-2, .chart__values-area--active.color-index-accent-5 {
-  fill: #E6C84B; }
-
-.chart__values-area--active.color-index-accent-3, .chart__values-area--active.color-index-accent-6 {
-  fill: #915591; }
-
-.chart__values-area--active.color-index-grey-1, .chart__values-area--active.color-index-grey-5 {
+.chart__values-area--highlight.color-index-grey-1, .chart__values-area--highlight.color-index-grey-5 {
   fill: #676767; }
 
-.chart__values-area--active.color-index-grey-2, .chart__values-area--active.color-index-grey-6 {
+.chart__values-area--highlight.color-index-grey-2, .chart__values-area--highlight.color-index-grey-6 {
   fill: #CCCCCC; }
 
-.chart__values-area--active.color-index-grey-3, .chart__values-area--active.color-index-grey-7 {
+.chart__values-area--highlight.color-index-grey-3, .chart__values-area--highlight.color-index-grey-7 {
   fill: #E8E8E8; }
 
-.chart__values-area--active.color-index-grey-4, .chart__values-area--active.color-index-grey-8 {
+.chart__values-area--highlight.color-index-grey-4, .chart__values-area--highlight.color-index-grey-8 {
   fill: #F2F2F2; }
 
 .chart__values-bar.color-index-unset {
@@ -1958,26 +1943,20 @@ img[height] {
 .chart__values-bar.color-index-disabled {
   stroke: rgba(132, 132, 132, 0.7); }
 
-.chart__values-bar.color-index-graph-1, .chart__values-bar.color-index-graph-8 {
-  stroke: rgba(230, 115, 75, 0.7); }
+.chart__values-bar.color-index-graph-1, .chart__values-bar.color-index-graph-6 {
+  stroke: rgba(0, 150, 214, 0.7); }
 
-.chart__values-bar.color-index-graph-2, .chart__values-bar.color-index-graph-9 {
-  stroke: rgba(230, 200, 75, 0.7); }
+.chart__values-bar.color-index-graph-2, .chart__values-bar.color-index-graph-7 {
+  stroke: rgba(192, 148, 191, 0.7); }
 
-.chart__values-bar.color-index-graph-3, .chart__values-bar.color-index-graph-10 {
-  stroke: rgba(145, 85, 145, 0.7); }
+.chart__values-bar.color-index-graph-3, .chart__values-bar.color-index-graph-8 {
+  stroke: rgba(153, 213, 239, 0.7); }
 
-.chart__values-bar.color-index-graph-4, .chart__values-bar.color-index-graph-11 {
-  stroke: rgba(0, 105, 150, 0.7); }
+.chart__values-bar.color-index-graph-4, .chart__values-bar.color-index-graph-9 {
+  stroke: rgba(135, 137, 139, 0.7); }
 
-.chart__values-bar.color-index-graph-5, .chart__values-bar.color-index-graph-12 {
-  stroke: rgba(166, 83, 54, 0.7); }
-
-.chart__values-bar.color-index-graph-6, .chart__values-bar.color-index-graph-13 {
-  stroke: rgba(166, 145, 54, 0.7); }
-
-.chart__values-bar.color-index-graph-7, .chart__values-bar.color-index-graph-14 {
-  stroke: rgba(119, 70, 119, 0.7); }
+.chart__values-bar.color-index-graph-5, .chart__values-bar.color-index-graph-10 {
+  stroke: rgba(185, 184, 187, 0.7); }
 
 .chart__values-bar.color-index-accent-1, .chart__values-bar.color-index-accent-4 {
   stroke: rgba(230, 115, 75, 0.7); }
@@ -1988,91 +1967,88 @@ img[height] {
 .chart__values-bar.color-index-accent-3, .chart__values-bar.color-index-accent-6 {
   stroke: rgba(145, 85, 145, 0.7); }
 
-.chart__values-bar--active.color-index-loading {
+.chart__values-bar--highlight.color-index-loading {
   stroke: #ddd;
   stroke-dasharray: 1px 10px;
   stroke-dashoffset: 0; }
 
-.chart__values-bar--active.color-index-unset {
+.chart__values-bar--highlight.color-index-unset {
   stroke: #ddd; }
 
-.chart__values-bar--active.color-index-brand {
+.chart__values-bar--highlight.color-index-brand {
   stroke: #0096D6; }
 
-.chart__values-bar--active.color-index-critical {
+.chart__values-bar--highlight.color-index-critical {
   stroke: #F04B37; }
 
-.chart__values-bar--active.color-index-warning {
+.chart__values-bar--highlight.color-index-warning {
   stroke: #F0AA3C; }
 
-.chart__values-bar--active.color-index-ok {
+.chart__values-bar--highlight.color-index-ok {
   stroke: #509137; }
 
-.chart__values-bar--active.color-index-unknown {
+.chart__values-bar--highlight.color-index-unknown {
   stroke: #848484; }
 
-.chart__values-bar--active.color-index-disabled {
+.chart__values-bar--highlight.color-index-disabled {
   stroke: #848484; }
 
-.chart__values-bar--active.color-index-graph-1, .chart__values-bar--active.color-index-graph-8 {
-  stroke: #E6734B; }
+.chart__values-bar--highlight.color-index-graph-1, .chart__values-bar--highlight.color-index-graph-6 {
+  stroke: #0096D6; }
 
-.chart__values-bar--active.color-index-graph-2, .chart__values-bar--active.color-index-graph-9 {
-  stroke: #E6C84B; }
+.chart__values-bar--highlight.color-index-graph-2, .chart__values-bar--highlight.color-index-graph-7 {
+  stroke: #C094bf; }
 
-.chart__values-bar--active.color-index-graph-3, .chart__values-bar--active.color-index-graph-10 {
-  stroke: #915591; }
+.chart__values-bar--highlight.color-index-graph-3, .chart__values-bar--highlight.color-index-graph-8 {
+  stroke: #99d5ef; }
 
-.chart__values-bar--active.color-index-graph-4, .chart__values-bar--active.color-index-graph-11 {
-  stroke: #006996; }
+.chart__values-bar--highlight.color-index-graph-4, .chart__values-bar--highlight.color-index-graph-9 {
+  stroke: #87898b; }
 
-.chart__values-bar--active.color-index-graph-5, .chart__values-bar--active.color-index-graph-12 {
-  stroke: #A65336; }
+.chart__values-bar--highlight.color-index-graph-5, .chart__values-bar--highlight.color-index-graph-10 {
+  stroke: #b9b8bb; }
 
-.chart__values-bar--active.color-index-graph-6, .chart__values-bar--active.color-index-graph-13 {
-  stroke: #A69136; }
-
-.chart__values-bar--active.color-index-graph-7, .chart__values-bar--active.color-index-graph-14 {
-  stroke: #774677; }
-
-.chart__values-bar--active.color-index-grey-1, .chart__values-bar--active.color-index-grey-5 {
+.chart__values-bar--highlight.color-index-grey-1, .chart__values-bar--highlight.color-index-grey-5 {
   stroke: #676767; }
 
-.chart__values-bar--active.color-index-grey-2, .chart__values-bar--active.color-index-grey-6 {
+.chart__values-bar--highlight.color-index-grey-2, .chart__values-bar--highlight.color-index-grey-6 {
   stroke: #CCCCCC; }
 
-.chart__values-bar--active.color-index-grey-3, .chart__values-bar--active.color-index-grey-7 {
+.chart__values-bar--highlight.color-index-grey-3, .chart__values-bar--highlight.color-index-grey-7 {
   stroke: #E8E8E8; }
 
-.chart__values-bar--active.color-index-grey-4, .chart__values-bar--active.color-index-grey-8 {
+.chart__values-bar--highlight.color-index-grey-4, .chart__values-bar--highlight.color-index-grey-8 {
   stroke: #F2F2F2; }
 
-.chart__values-bar--active.color-index-accent-1, .chart__values-bar--active.color-index-accent-4 {
+.chart__values-bar--highlight.color-index-accent-1, .chart__values-bar--highlight.color-index-accent-4 {
   stroke: #E6734B; }
 
-.chart__values-bar--active.color-index-accent-2, .chart__values-bar--active.color-index-accent-5 {
+.chart__values-bar--highlight.color-index-accent-2, .chart__values-bar--highlight.color-index-accent-5 {
   stroke: #E6C84B; }
 
-.chart__values-bar--active.color-index-accent-3, .chart__values-bar--active.color-index-accent-6 {
+.chart__values-bar--highlight.color-index-accent-3, .chart__values-bar--highlight.color-index-accent-6 {
   stroke: #915591; }
 
-.chart__values-bar--active.color-index-neutral-1, .chart__values-bar--active.color-index-neutral-5 {
+.chart__values-bar--highlight.color-index-neutral-1, .chart__values-bar--highlight.color-index-neutral-5 {
   stroke: #006996; }
 
-.chart__values-bar--active.color-index-neutral-2, .chart__values-bar--active.color-index-neutral-6 {
+.chart__values-bar--highlight.color-index-neutral-2, .chart__values-bar--highlight.color-index-neutral-6 {
   stroke: #A65336; }
 
-.chart__values-bar--active.color-index-neutral-3, .chart__values-bar--active.color-index-neutral-7 {
+.chart__values-bar--highlight.color-index-neutral-3, .chart__values-bar--highlight.color-index-neutral-7 {
   stroke: #A69136; }
 
-.chart__values-bar--active.color-index-neutral-4, .chart__values-bar--active.color-index-neutral-8 {
+.chart__values-bar--highlight.color-index-neutral-4, .chart__values-bar--highlight.color-index-neutral-8 {
   stroke: #774677; }
 
-.chart__values-bar--active.color-index-light-1, .chart__values-bar--active.color-index-light-3 {
+.chart__values-bar--highlight.color-index-light-1, .chart__values-bar--highlight.color-index-light-3 {
   stroke: #ffffff; }
 
-.chart__values-bar--active.color-index-light-2, .chart__values-bar--active.color-index-light-4 {
+.chart__values-bar--highlight.color-index-light-2, .chart__values-bar--highlight.color-index-light-4 {
   stroke: #f5f5f5; }
+
+.chart__values-bar--active {
+  cursor: pointer; }
 
 .chart--segmented .chart__values-bar {
   stroke-dasharray: 12 6; }
@@ -2098,20 +2074,16 @@ img[height] {
     stroke: #848484; }
   .chart__values-point.color-index-disabled {
     stroke: #848484; }
-  .chart__values-point.color-index-graph-1, .chart__values-point.color-index-graph-8 {
-    stroke: #E6734B; }
-  .chart__values-point.color-index-graph-2, .chart__values-point.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .chart__values-point.color-index-graph-3, .chart__values-point.color-index-graph-10 {
-    stroke: #915591; }
-  .chart__values-point.color-index-graph-4, .chart__values-point.color-index-graph-11 {
-    stroke: #006996; }
-  .chart__values-point.color-index-graph-5, .chart__values-point.color-index-graph-12 {
-    stroke: #A65336; }
-  .chart__values-point.color-index-graph-6, .chart__values-point.color-index-graph-13 {
-    stroke: #A69136; }
-  .chart__values-point.color-index-graph-7, .chart__values-point.color-index-graph-14 {
-    stroke: #774677; }
+  .chart__values-point.color-index-graph-1, .chart__values-point.color-index-graph-6 {
+    stroke: #0096D6; }
+  .chart__values-point.color-index-graph-2, .chart__values-point.color-index-graph-7 {
+    stroke: #C094bf; }
+  .chart__values-point.color-index-graph-3, .chart__values-point.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .chart__values-point.color-index-graph-4, .chart__values-point.color-index-graph-9 {
+    stroke: #87898b; }
+  .chart__values-point.color-index-graph-5, .chart__values-point.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .chart__values-point.color-index-grey-1, .chart__values-point.color-index-grey-5 {
     stroke: #676767; }
   .chart__values-point.color-index-grey-2, .chart__values-point.color-index-grey-6 {
@@ -2159,20 +2131,16 @@ img[height] {
     stroke: #848484; }
   .chart__values--loading.color-index-disabled {
     stroke: #848484; }
-  .chart__values--loading.color-index-graph-1, .chart__values--loading.color-index-graph-8 {
-    stroke: #E6734B; }
-  .chart__values--loading.color-index-graph-2, .chart__values--loading.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .chart__values--loading.color-index-graph-3, .chart__values--loading.color-index-graph-10 {
-    stroke: #915591; }
-  .chart__values--loading.color-index-graph-4, .chart__values--loading.color-index-graph-11 {
-    stroke: #006996; }
-  .chart__values--loading.color-index-graph-5, .chart__values--loading.color-index-graph-12 {
-    stroke: #A65336; }
-  .chart__values--loading.color-index-graph-6, .chart__values--loading.color-index-graph-13 {
-    stroke: #A69136; }
-  .chart__values--loading.color-index-graph-7, .chart__values--loading.color-index-graph-14 {
-    stroke: #774677; }
+  .chart__values--loading.color-index-graph-1, .chart__values--loading.color-index-graph-6 {
+    stroke: #0096D6; }
+  .chart__values--loading.color-index-graph-2, .chart__values--loading.color-index-graph-7 {
+    stroke: #C094bf; }
+  .chart__values--loading.color-index-graph-3, .chart__values--loading.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .chart__values--loading.color-index-graph-4, .chart__values--loading.color-index-graph-9 {
+    stroke: #87898b; }
+  .chart__values--loading.color-index-graph-5, .chart__values--loading.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .chart__values--loading.color-index-grey-1, .chart__values--loading.color-index-grey-5 {
     stroke: #676767; }
   .chart__values--loading.color-index-grey-2, .chart__values--loading.color-index-grey-6 {
@@ -2220,26 +2188,20 @@ img[height] {
 .chart__yaxis .chart__bar.color-index-disabled {
   fill: rgba(132, 132, 132, 0.5); }
 
-.chart__yaxis .chart__bar.color-index-graph-1, .chart__yaxis .chart__bar.color-index-graph-8 {
-  fill: rgba(230, 115, 75, 0.5); }
+.chart__yaxis .chart__bar.color-index-graph-1, .chart__yaxis .chart__bar.color-index-graph-6 {
+  fill: rgba(0, 150, 214, 0.5); }
 
-.chart__yaxis .chart__bar.color-index-graph-2, .chart__yaxis .chart__bar.color-index-graph-9 {
-  fill: rgba(230, 200, 75, 0.5); }
+.chart__yaxis .chart__bar.color-index-graph-2, .chart__yaxis .chart__bar.color-index-graph-7 {
+  fill: rgba(192, 148, 191, 0.5); }
 
-.chart__yaxis .chart__bar.color-index-graph-3, .chart__yaxis .chart__bar.color-index-graph-10 {
-  fill: rgba(145, 85, 145, 0.5); }
+.chart__yaxis .chart__bar.color-index-graph-3, .chart__yaxis .chart__bar.color-index-graph-8 {
+  fill: rgba(153, 213, 239, 0.5); }
 
-.chart__yaxis .chart__bar.color-index-graph-4, .chart__yaxis .chart__bar.color-index-graph-11 {
-  fill: rgba(0, 105, 150, 0.5); }
+.chart__yaxis .chart__bar.color-index-graph-4, .chart__yaxis .chart__bar.color-index-graph-9 {
+  fill: rgba(135, 137, 139, 0.5); }
 
-.chart__yaxis .chart__bar.color-index-graph-5, .chart__yaxis .chart__bar.color-index-graph-12 {
-  fill: rgba(166, 83, 54, 0.5); }
-
-.chart__yaxis .chart__bar.color-index-graph-6, .chart__yaxis .chart__bar.color-index-graph-13 {
-  fill: rgba(166, 145, 54, 0.5); }
-
-.chart__yaxis .chart__bar.color-index-graph-7, .chart__yaxis .chart__bar.color-index-graph-14 {
-  fill: rgba(119, 70, 119, 0.5); }
+.chart__yaxis .chart__bar.color-index-graph-5, .chart__yaxis .chart__bar.color-index-graph-10 {
+  fill: rgba(185, 184, 187, 0.5); }
 
 .chart__xaxis-index text {
   fill: #666; }
@@ -2247,7 +2209,7 @@ img[height] {
 .chart__xaxis-index--eclipse text {
   fill: transparent; }
 
-.chart__xaxis-index--active text {
+.chart__xaxis-index--highlight text {
   fill: #333; }
 
 .chart__front-xband-background {
@@ -2274,20 +2236,16 @@ img[height] {
     fill: #848484; }
   .chart__cursor-point.color-index-disabled {
     fill: #848484; }
-  .chart__cursor-point.color-index-graph-1, .chart__cursor-point.color-index-graph-8 {
-    fill: #E6734B; }
-  .chart__cursor-point.color-index-graph-2, .chart__cursor-point.color-index-graph-9 {
-    fill: #E6C84B; }
-  .chart__cursor-point.color-index-graph-3, .chart__cursor-point.color-index-graph-10 {
-    fill: #915591; }
-  .chart__cursor-point.color-index-graph-4, .chart__cursor-point.color-index-graph-11 {
-    fill: #006996; }
-  .chart__cursor-point.color-index-graph-5, .chart__cursor-point.color-index-graph-12 {
-    fill: #A65336; }
-  .chart__cursor-point.color-index-graph-6, .chart__cursor-point.color-index-graph-13 {
-    fill: #A69136; }
-  .chart__cursor-point.color-index-graph-7, .chart__cursor-point.color-index-graph-14 {
-    fill: #774677; }
+  .chart__cursor-point.color-index-graph-1, .chart__cursor-point.color-index-graph-6 {
+    fill: #0096D6; }
+  .chart__cursor-point.color-index-graph-2, .chart__cursor-point.color-index-graph-7 {
+    fill: #C094bf; }
+  .chart__cursor-point.color-index-graph-3, .chart__cursor-point.color-index-graph-8 {
+    fill: #99d5ef; }
+  .chart__cursor-point.color-index-graph-4, .chart__cursor-point.color-index-graph-9 {
+    fill: #87898b; }
+  .chart__cursor-point.color-index-graph-5, .chart__cursor-point.color-index-graph-10 {
+    fill: #b9b8bb; }
   .chart__cursor-point.color-index-accent-1, .chart__cursor-point.color-index-accent-4 {
     fill: #E6734B; }
   .chart__cursor-point.color-index-accent-2, .chart__cursor-point.color-index-accent-5 {
@@ -2386,123 +2344,89 @@ img[height] {
   stop-color: #848484;
   stop-opacity: 0; }
 
-.chart--area .chart__gradient.color-index-graph-1 .begin, .chart--area .chart__gradient.color-index-graph-8 .begin,
+.chart--area .chart__gradient.color-index-graph-1 .begin, .chart--area .chart__gradient.color-index-graph-6 .begin,
 .chart--bar .chart__gradient.color-index-graph-1 .begin,
-.chart--bar .chart__gradient.color-index-graph-8 .begin {
-  stop-color: #E6734B; }
+.chart--bar .chart__gradient.color-index-graph-6 .begin {
+  stop-color: #0096D6; }
 
-.chart--area .chart__gradient.color-index-graph-1 .mid, .chart--area .chart__gradient.color-index-graph-8 .mid,
+.chart--area .chart__gradient.color-index-graph-1 .mid, .chart--area .chart__gradient.color-index-graph-6 .mid,
 .chart--bar .chart__gradient.color-index-graph-1 .mid,
-.chart--bar .chart__gradient.color-index-graph-8 .mid {
-  stop-color: #E6734B;
+.chart--bar .chart__gradient.color-index-graph-6 .mid {
+  stop-color: #0096D6;
   stop-opacity: 0.5; }
 
-.chart--area .chart__gradient.color-index-graph-1 .end, .chart--area .chart__gradient.color-index-graph-8 .end,
+.chart--area .chart__gradient.color-index-graph-1 .end, .chart--area .chart__gradient.color-index-graph-6 .end,
 .chart--bar .chart__gradient.color-index-graph-1 .end,
-.chart--bar .chart__gradient.color-index-graph-8 .end {
-  stop-color: #E6734B;
+.chart--bar .chart__gradient.color-index-graph-6 .end {
+  stop-color: #0096D6;
   stop-opacity: 0; }
 
-.chart--area .chart__gradient.color-index-graph-2 .begin, .chart--area .chart__gradient.color-index-graph-9 .begin,
+.chart--area .chart__gradient.color-index-graph-2 .begin, .chart--area .chart__gradient.color-index-graph-7 .begin,
 .chart--bar .chart__gradient.color-index-graph-2 .begin,
-.chart--bar .chart__gradient.color-index-graph-9 .begin {
-  stop-color: #E6C84B; }
+.chart--bar .chart__gradient.color-index-graph-7 .begin {
+  stop-color: #C094bf; }
 
-.chart--area .chart__gradient.color-index-graph-2 .mid, .chart--area .chart__gradient.color-index-graph-9 .mid,
+.chart--area .chart__gradient.color-index-graph-2 .mid, .chart--area .chart__gradient.color-index-graph-7 .mid,
 .chart--bar .chart__gradient.color-index-graph-2 .mid,
-.chart--bar .chart__gradient.color-index-graph-9 .mid {
-  stop-color: #E6C84B;
+.chart--bar .chart__gradient.color-index-graph-7 .mid {
+  stop-color: #C094bf;
   stop-opacity: 0.5; }
 
-.chart--area .chart__gradient.color-index-graph-2 .end, .chart--area .chart__gradient.color-index-graph-9 .end,
+.chart--area .chart__gradient.color-index-graph-2 .end, .chart--area .chart__gradient.color-index-graph-7 .end,
 .chart--bar .chart__gradient.color-index-graph-2 .end,
-.chart--bar .chart__gradient.color-index-graph-9 .end {
-  stop-color: #E6C84B;
+.chart--bar .chart__gradient.color-index-graph-7 .end {
+  stop-color: #C094bf;
   stop-opacity: 0; }
 
-.chart--area .chart__gradient.color-index-graph-3 .begin, .chart--area .chart__gradient.color-index-graph-10 .begin,
+.chart--area .chart__gradient.color-index-graph-3 .begin, .chart--area .chart__gradient.color-index-graph-8 .begin,
 .chart--bar .chart__gradient.color-index-graph-3 .begin,
-.chart--bar .chart__gradient.color-index-graph-10 .begin {
-  stop-color: #915591; }
+.chart--bar .chart__gradient.color-index-graph-8 .begin {
+  stop-color: #99d5ef; }
 
-.chart--area .chart__gradient.color-index-graph-3 .mid, .chart--area .chart__gradient.color-index-graph-10 .mid,
+.chart--area .chart__gradient.color-index-graph-3 .mid, .chart--area .chart__gradient.color-index-graph-8 .mid,
 .chart--bar .chart__gradient.color-index-graph-3 .mid,
-.chart--bar .chart__gradient.color-index-graph-10 .mid {
-  stop-color: #915591;
+.chart--bar .chart__gradient.color-index-graph-8 .mid {
+  stop-color: #99d5ef;
   stop-opacity: 0.5; }
 
-.chart--area .chart__gradient.color-index-graph-3 .end, .chart--area .chart__gradient.color-index-graph-10 .end,
+.chart--area .chart__gradient.color-index-graph-3 .end, .chart--area .chart__gradient.color-index-graph-8 .end,
 .chart--bar .chart__gradient.color-index-graph-3 .end,
-.chart--bar .chart__gradient.color-index-graph-10 .end {
-  stop-color: #915591;
+.chart--bar .chart__gradient.color-index-graph-8 .end {
+  stop-color: #99d5ef;
   stop-opacity: 0; }
 
-.chart--area .chart__gradient.color-index-graph-4 .begin, .chart--area .chart__gradient.color-index-graph-11 .begin,
+.chart--area .chart__gradient.color-index-graph-4 .begin, .chart--area .chart__gradient.color-index-graph-9 .begin,
 .chart--bar .chart__gradient.color-index-graph-4 .begin,
-.chart--bar .chart__gradient.color-index-graph-11 .begin {
-  stop-color: #006996; }
+.chart--bar .chart__gradient.color-index-graph-9 .begin {
+  stop-color: #87898b; }
 
-.chart--area .chart__gradient.color-index-graph-4 .mid, .chart--area .chart__gradient.color-index-graph-11 .mid,
+.chart--area .chart__gradient.color-index-graph-4 .mid, .chart--area .chart__gradient.color-index-graph-9 .mid,
 .chart--bar .chart__gradient.color-index-graph-4 .mid,
-.chart--bar .chart__gradient.color-index-graph-11 .mid {
-  stop-color: #006996;
+.chart--bar .chart__gradient.color-index-graph-9 .mid {
+  stop-color: #87898b;
   stop-opacity: 0.5; }
 
-.chart--area .chart__gradient.color-index-graph-4 .end, .chart--area .chart__gradient.color-index-graph-11 .end,
+.chart--area .chart__gradient.color-index-graph-4 .end, .chart--area .chart__gradient.color-index-graph-9 .end,
 .chart--bar .chart__gradient.color-index-graph-4 .end,
-.chart--bar .chart__gradient.color-index-graph-11 .end {
-  stop-color: #006996;
+.chart--bar .chart__gradient.color-index-graph-9 .end {
+  stop-color: #87898b;
   stop-opacity: 0; }
 
-.chart--area .chart__gradient.color-index-graph-5 .begin, .chart--area .chart__gradient.color-index-graph-12 .begin,
+.chart--area .chart__gradient.color-index-graph-5 .begin, .chart--area .chart__gradient.color-index-graph-10 .begin,
 .chart--bar .chart__gradient.color-index-graph-5 .begin,
-.chart--bar .chart__gradient.color-index-graph-12 .begin {
-  stop-color: #A65336; }
+.chart--bar .chart__gradient.color-index-graph-10 .begin {
+  stop-color: #b9b8bb; }
 
-.chart--area .chart__gradient.color-index-graph-5 .mid, .chart--area .chart__gradient.color-index-graph-12 .mid,
+.chart--area .chart__gradient.color-index-graph-5 .mid, .chart--area .chart__gradient.color-index-graph-10 .mid,
 .chart--bar .chart__gradient.color-index-graph-5 .mid,
-.chart--bar .chart__gradient.color-index-graph-12 .mid {
-  stop-color: #A65336;
+.chart--bar .chart__gradient.color-index-graph-10 .mid {
+  stop-color: #b9b8bb;
   stop-opacity: 0.5; }
 
-.chart--area .chart__gradient.color-index-graph-5 .end, .chart--area .chart__gradient.color-index-graph-12 .end,
+.chart--area .chart__gradient.color-index-graph-5 .end, .chart--area .chart__gradient.color-index-graph-10 .end,
 .chart--bar .chart__gradient.color-index-graph-5 .end,
-.chart--bar .chart__gradient.color-index-graph-12 .end {
-  stop-color: #A65336;
-  stop-opacity: 0; }
-
-.chart--area .chart__gradient.color-index-graph-6 .begin, .chart--area .chart__gradient.color-index-graph-13 .begin,
-.chart--bar .chart__gradient.color-index-graph-6 .begin,
-.chart--bar .chart__gradient.color-index-graph-13 .begin {
-  stop-color: #A69136; }
-
-.chart--area .chart__gradient.color-index-graph-6 .mid, .chart--area .chart__gradient.color-index-graph-13 .mid,
-.chart--bar .chart__gradient.color-index-graph-6 .mid,
-.chart--bar .chart__gradient.color-index-graph-13 .mid {
-  stop-color: #A69136;
-  stop-opacity: 0.5; }
-
-.chart--area .chart__gradient.color-index-graph-6 .end, .chart--area .chart__gradient.color-index-graph-13 .end,
-.chart--bar .chart__gradient.color-index-graph-6 .end,
-.chart--bar .chart__gradient.color-index-graph-13 .end {
-  stop-color: #A69136;
-  stop-opacity: 0; }
-
-.chart--area .chart__gradient.color-index-graph-7 .begin, .chart--area .chart__gradient.color-index-graph-14 .begin,
-.chart--bar .chart__gradient.color-index-graph-7 .begin,
-.chart--bar .chart__gradient.color-index-graph-14 .begin {
-  stop-color: #774677; }
-
-.chart--area .chart__gradient.color-index-graph-7 .mid, .chart--area .chart__gradient.color-index-graph-14 .mid,
-.chart--bar .chart__gradient.color-index-graph-7 .mid,
-.chart--bar .chart__gradient.color-index-graph-14 .mid {
-  stop-color: #774677;
-  stop-opacity: 0.5; }
-
-.chart--area .chart__gradient.color-index-graph-7 .end, .chart--area .chart__gradient.color-index-graph-14 .end,
-.chart--bar .chart__gradient.color-index-graph-7 .end,
-.chart--bar .chart__gradient.color-index-graph-14 .end {
-  stop-color: #774677;
+.chart--bar .chart__gradient.color-index-graph-10 .end {
+  stop-color: #b9b8bb;
   stop-opacity: 0; }
 
 .chart--small .chart__graphic {
@@ -2538,34 +2462,26 @@ img[height] {
   .chart--sparkline .chart__values-bar.color-index-disabled,
   .chart--sparkline .chart__values-area.color-index-disabled {
     fill: #848484; }
-  .chart--sparkline .chart__values-bar.color-index-graph-1, .chart--sparkline .chart__values-bar.color-index-graph-8,
+  .chart--sparkline .chart__values-bar.color-index-graph-1, .chart--sparkline .chart__values-bar.color-index-graph-6,
   .chart--sparkline .chart__values-area.color-index-graph-1,
-  .chart--sparkline .chart__values-area.color-index-graph-8 {
-    fill: #E6734B; }
-  .chart--sparkline .chart__values-bar.color-index-graph-2, .chart--sparkline .chart__values-bar.color-index-graph-9,
+  .chart--sparkline .chart__values-area.color-index-graph-6 {
+    fill: #0096D6; }
+  .chart--sparkline .chart__values-bar.color-index-graph-2, .chart--sparkline .chart__values-bar.color-index-graph-7,
   .chart--sparkline .chart__values-area.color-index-graph-2,
-  .chart--sparkline .chart__values-area.color-index-graph-9 {
-    fill: #E6C84B; }
-  .chart--sparkline .chart__values-bar.color-index-graph-3, .chart--sparkline .chart__values-bar.color-index-graph-10,
+  .chart--sparkline .chart__values-area.color-index-graph-7 {
+    fill: #C094bf; }
+  .chart--sparkline .chart__values-bar.color-index-graph-3, .chart--sparkline .chart__values-bar.color-index-graph-8,
   .chart--sparkline .chart__values-area.color-index-graph-3,
-  .chart--sparkline .chart__values-area.color-index-graph-10 {
-    fill: #915591; }
-  .chart--sparkline .chart__values-bar.color-index-graph-4, .chart--sparkline .chart__values-bar.color-index-graph-11,
+  .chart--sparkline .chart__values-area.color-index-graph-8 {
+    fill: #99d5ef; }
+  .chart--sparkline .chart__values-bar.color-index-graph-4, .chart--sparkline .chart__values-bar.color-index-graph-9,
   .chart--sparkline .chart__values-area.color-index-graph-4,
-  .chart--sparkline .chart__values-area.color-index-graph-11 {
-    fill: #006996; }
-  .chart--sparkline .chart__values-bar.color-index-graph-5, .chart--sparkline .chart__values-bar.color-index-graph-12,
+  .chart--sparkline .chart__values-area.color-index-graph-9 {
+    fill: #87898b; }
+  .chart--sparkline .chart__values-bar.color-index-graph-5, .chart--sparkline .chart__values-bar.color-index-graph-10,
   .chart--sparkline .chart__values-area.color-index-graph-5,
-  .chart--sparkline .chart__values-area.color-index-graph-12 {
-    fill: #A65336; }
-  .chart--sparkline .chart__values-bar.color-index-graph-6, .chart--sparkline .chart__values-bar.color-index-graph-13,
-  .chart--sparkline .chart__values-area.color-index-graph-6,
-  .chart--sparkline .chart__values-area.color-index-graph-13 {
-    fill: #A69136; }
-  .chart--sparkline .chart__values-bar.color-index-graph-7, .chart--sparkline .chart__values-bar.color-index-graph-14,
-  .chart--sparkline .chart__values-area.color-index-graph-7,
-  .chart--sparkline .chart__values-area.color-index-graph-14 {
-    fill: #774677; }
+  .chart--sparkline .chart__values-area.color-index-graph-10 {
+    fill: #b9b8bb; }
   .chart--sparkline .chart__values-bar.color-index-accent-1, .chart--sparkline .chart__values-bar.color-index-accent-4,
   .chart--sparkline .chart__values-area.color-index-accent-1,
   .chart--sparkline .chart__values-area.color-index-accent-4 {
@@ -2762,6 +2678,22 @@ img[height] {
 .color-index-neutral-5-t {
   color: #0d719b; }
 
+.background-hover-color-index-neutral-1:hover,
+.background-hover-color-index-neutral-5:hover {
+  background-color: rgba(0, 105, 150, 0.3); }
+
+.border-small-hover-color-index-neutral-1:hover,
+.border-small-hover-color-index-neutral-5:hover {
+  box-shadow: 0 0 0 1px #006996; }
+
+.border-medium-hover-color-index-neutral-1:hover,
+.border-medium-hover-color-index-neutral-5:hover {
+  box-shadow: 0 0 0 12px #006996; }
+
+.border-large-hover-color-index-neutral-1:hover,
+.border-large-hover-color-index-neutral-5:hover {
+  box-shadow: 0 0 0 24px #006996; }
+
 .background-color-index-neutral-2,
 .background-color-index-neutral-6 {
   background-color: #A65336; }
@@ -2789,6 +2721,22 @@ img[height] {
 .color-index-neutral-2-t,
 .color-index-neutral-6-t {
   color: #aa5c40; }
+
+.background-hover-color-index-neutral-2:hover,
+.background-hover-color-index-neutral-6:hover {
+  background-color: rgba(166, 83, 54, 0.3); }
+
+.border-small-hover-color-index-neutral-2:hover,
+.border-small-hover-color-index-neutral-6:hover {
+  box-shadow: 0 0 0 1px #A65336; }
+
+.border-medium-hover-color-index-neutral-2:hover,
+.border-medium-hover-color-index-neutral-6:hover {
+  box-shadow: 0 0 0 12px #A65336; }
+
+.border-large-hover-color-index-neutral-2:hover,
+.border-large-hover-color-index-neutral-6:hover {
+  box-shadow: 0 0 0 24px #A65336; }
 
 .background-color-index-neutral-3,
 .background-color-index-neutral-7 {
@@ -2818,6 +2766,22 @@ img[height] {
 .color-index-neutral-7-t {
   color: #aa9740; }
 
+.background-hover-color-index-neutral-3:hover,
+.background-hover-color-index-neutral-7:hover {
+  background-color: rgba(166, 145, 54, 0.3); }
+
+.border-small-hover-color-index-neutral-3:hover,
+.border-small-hover-color-index-neutral-7:hover {
+  box-shadow: 0 0 0 1px #A69136; }
+
+.border-medium-hover-color-index-neutral-3:hover,
+.border-medium-hover-color-index-neutral-7:hover {
+  box-shadow: 0 0 0 12px #A69136; }
+
+.border-large-hover-color-index-neutral-3:hover,
+.border-large-hover-color-index-neutral-7:hover {
+  box-shadow: 0 0 0 24px #A69136; }
+
 .background-color-index-neutral-4,
 .background-color-index-neutral-8 {
   background-color: #774677; }
@@ -2845,6 +2809,22 @@ img[height] {
 .color-index-neutral-4-t,
 .color-index-neutral-8-t {
   color: #7e4f7e; }
+
+.background-hover-color-index-neutral-4:hover,
+.background-hover-color-index-neutral-8:hover {
+  background-color: rgba(119, 70, 119, 0.3); }
+
+.border-small-hover-color-index-neutral-4:hover,
+.border-small-hover-color-index-neutral-8:hover {
+  box-shadow: 0 0 0 1px #774677; }
+
+.border-medium-hover-color-index-neutral-4:hover,
+.border-medium-hover-color-index-neutral-8:hover {
+  box-shadow: 0 0 0 12px #774677; }
+
+.border-large-hover-color-index-neutral-4:hover,
+.border-large-hover-color-index-neutral-8:hover {
+  box-shadow: 0 0 0 24px #774677; }
 
 .background-color-index-accent-1,
 .background-color-index-accent-4 {
@@ -2874,6 +2854,22 @@ img[height] {
 .color-index-accent-4-t {
   color: #e77a54; }
 
+.background-hover-color-index-accent-1:hover,
+.background-hover-color-index-accent-4:hover {
+  background-color: rgba(230, 115, 75, 0.3); }
+
+.border-small-hover-color-index-accent-1:hover,
+.border-small-hover-color-index-accent-4:hover {
+  box-shadow: 0 0 0 1px #E6734B; }
+
+.border-medium-hover-color-index-accent-1:hover,
+.border-medium-hover-color-index-accent-4:hover {
+  box-shadow: 0 0 0 12px #E6734B; }
+
+.border-large-hover-color-index-accent-1:hover,
+.border-large-hover-color-index-accent-4:hover {
+  box-shadow: 0 0 0 24px #E6734B; }
+
 .background-color-index-accent-2,
 .background-color-index-accent-5 {
   background-color: #E6C84B; }
@@ -2901,6 +2897,22 @@ img[height] {
 .color-index-accent-2-t,
 .color-index-accent-5-t {
   color: #e7cb54; }
+
+.background-hover-color-index-accent-2:hover,
+.background-hover-color-index-accent-5:hover {
+  background-color: rgba(230, 200, 75, 0.3); }
+
+.border-small-hover-color-index-accent-2:hover,
+.border-small-hover-color-index-accent-5:hover {
+  box-shadow: 0 0 0 1px #E6C84B; }
+
+.border-medium-hover-color-index-accent-2:hover,
+.border-medium-hover-color-index-accent-5:hover {
+  box-shadow: 0 0 0 12px #E6C84B; }
+
+.border-large-hover-color-index-accent-2:hover,
+.border-large-hover-color-index-accent-5:hover {
+  box-shadow: 0 0 0 24px #E6C84B; }
 
 .background-color-index-accent-3,
 .background-color-index-accent-6 {
@@ -2930,6 +2942,22 @@ img[height] {
 .color-index-accent-6-t {
   color: #975e97; }
 
+.background-hover-color-index-accent-3:hover,
+.background-hover-color-index-accent-6:hover {
+  background-color: rgba(145, 85, 145, 0.3); }
+
+.border-small-hover-color-index-accent-3:hover,
+.border-small-hover-color-index-accent-6:hover {
+  box-shadow: 0 0 0 1px #915591; }
+
+.border-medium-hover-color-index-accent-3:hover,
+.border-medium-hover-color-index-accent-6:hover {
+  box-shadow: 0 0 0 12px #915591; }
+
+.border-large-hover-color-index-accent-3:hover,
+.border-large-hover-color-index-accent-6:hover {
+  box-shadow: 0 0 0 24px #915591; }
+
 .background-color-index-grey-1,
 .background-color-index-grey-5 {
   background-color: #676767; }
@@ -2941,6 +2969,22 @@ img[height] {
 .border-color-index-grey-1,
 .border-color-index-grey-5 {
   border-color: #676767; }
+
+.background-hover-color-index-grey-1:hover,
+.background-hover-color-index-grey-5:hover {
+  background-color: rgba(103, 103, 103, 0.3); }
+
+.border-small-hover-color-index-grey-1:hover,
+.border-small-hover-color-index-grey-5:hover {
+  box-shadow: 0 0 0 1px #676767; }
+
+.border-medium-hover-color-index-grey-1:hover,
+.border-medium-hover-color-index-grey-5:hover {
+  box-shadow: 0 0 0 12px #676767; }
+
+.border-large-hover-color-index-grey-1:hover,
+.border-large-hover-color-index-grey-5:hover {
+  box-shadow: 0 0 0 24px #676767; }
 
 .background-color-index-grey-2,
 .background-color-index-grey-6 {
@@ -2954,6 +2998,22 @@ img[height] {
 .border-color-index-grey-6 {
   border-color: #CCCCCC; }
 
+.background-hover-color-index-grey-2:hover,
+.background-hover-color-index-grey-6:hover {
+  background-color: rgba(204, 204, 204, 0.3); }
+
+.border-small-hover-color-index-grey-2:hover,
+.border-small-hover-color-index-grey-6:hover {
+  box-shadow: 0 0 0 1px #CCCCCC; }
+
+.border-medium-hover-color-index-grey-2:hover,
+.border-medium-hover-color-index-grey-6:hover {
+  box-shadow: 0 0 0 12px #CCCCCC; }
+
+.border-large-hover-color-index-grey-2:hover,
+.border-large-hover-color-index-grey-6:hover {
+  box-shadow: 0 0 0 24px #CCCCCC; }
+
 .background-color-index-grey-3,
 .background-color-index-grey-7 {
   background-color: #E8E8E8; }
@@ -2965,6 +3025,22 @@ img[height] {
 .border-color-index-grey-3,
 .border-color-index-grey-7 {
   border-color: #E8E8E8; }
+
+.background-hover-color-index-grey-3:hover,
+.background-hover-color-index-grey-7:hover {
+  background-color: rgba(232, 232, 232, 0.3); }
+
+.border-small-hover-color-index-grey-3:hover,
+.border-small-hover-color-index-grey-7:hover {
+  box-shadow: 0 0 0 1px #E8E8E8; }
+
+.border-medium-hover-color-index-grey-3:hover,
+.border-medium-hover-color-index-grey-7:hover {
+  box-shadow: 0 0 0 12px #E8E8E8; }
+
+.border-large-hover-color-index-grey-3:hover,
+.border-large-hover-color-index-grey-7:hover {
+  box-shadow: 0 0 0 24px #E8E8E8; }
 
 .background-color-index-grey-4,
 .background-color-index-grey-8 {
@@ -2978,61 +3054,61 @@ img[height] {
 .border-color-index-grey-8 {
   border-color: #F2F2F2; }
 
+.background-hover-color-index-grey-4:hover,
+.background-hover-color-index-grey-8:hover {
+  background-color: rgba(242, 242, 242, 0.3); }
+
+.border-small-hover-color-index-grey-4:hover,
+.border-small-hover-color-index-grey-8:hover {
+  box-shadow: 0 0 0 1px #F2F2F2; }
+
+.border-medium-hover-color-index-grey-4:hover,
+.border-medium-hover-color-index-grey-8:hover {
+  box-shadow: 0 0 0 12px #F2F2F2; }
+
+.border-large-hover-color-index-grey-4:hover,
+.border-large-hover-color-index-grey-8:hover {
+  box-shadow: 0 0 0 24px #F2F2F2; }
+
 .background-color-index-graph-1,
-.background-color-index-graph-8 {
-  background-color: #E6734B; }
+.background-color-index-graph-6 {
+  background-color: #0096D6; }
 
 .border-color-index-graph-1,
-.border-color-index-graph-8 {
-  border-color: #E6734B; }
+.border-color-index-graph-6 {
+  border-color: #0096D6; }
 
 .background-color-index-graph-2,
-.background-color-index-graph-9 {
-  background-color: #E6C84B; }
+.background-color-index-graph-7 {
+  background-color: #C094bf; }
 
 .border-color-index-graph-2,
-.border-color-index-graph-9 {
-  border-color: #E6C84B; }
+.border-color-index-graph-7 {
+  border-color: #C094bf; }
 
 .background-color-index-graph-3,
-.background-color-index-graph-10 {
-  background-color: #915591; }
+.background-color-index-graph-8 {
+  background-color: #99d5ef; }
 
 .border-color-index-graph-3,
-.border-color-index-graph-10 {
-  border-color: #915591; }
+.border-color-index-graph-8 {
+  border-color: #99d5ef; }
 
 .background-color-index-graph-4,
-.background-color-index-graph-11 {
-  background-color: #006996; }
+.background-color-index-graph-9 {
+  background-color: #87898b; }
 
 .border-color-index-graph-4,
-.border-color-index-graph-11 {
-  border-color: #006996; }
+.border-color-index-graph-9 {
+  border-color: #87898b; }
 
 .background-color-index-graph-5,
-.background-color-index-graph-12 {
-  background-color: #A65336; }
+.background-color-index-graph-10 {
+  background-color: #b9b8bb; }
 
 .border-color-index-graph-5,
-.border-color-index-graph-12 {
-  border-color: #A65336; }
-
-.background-color-index-graph-6,
-.background-color-index-graph-13 {
-  background-color: #A69136; }
-
-.border-color-index-graph-6,
-.border-color-index-graph-13 {
-  border-color: #A69136; }
-
-.background-color-index-graph-7,
-.background-color-index-graph-14 {
-  background-color: #774677; }
-
-.border-color-index-graph-7,
-.border-color-index-graph-14 {
-  border-color: #774677; }
+.border-color-index-graph-10 {
+  border-color: #b9b8bb; }
 
 .background-color-index-critical {
   background-color: #F04B37; }
@@ -3043,6 +3119,18 @@ img[height] {
 .color-index-critical {
   color: #F04B37; }
 
+.background-hover-color-index-critical:hover {
+  background-color: rgba(240, 75, 55, 0.3); }
+
+.border-small-hover-color-index-critical:hover {
+  box-shadow: 0 0 0 1px #F04B37; }
+
+.border-medium-hover-color-index-critical:hover {
+  box-shadow: 0 0 0 12px #F04B37; }
+
+.border-large-hover-color-index-critical:hover {
+  box-shadow: 0 0 0 24px #F04B37; }
+
 .background-color-index-warning {
   background-color: #F0AA3C; }
 
@@ -3051,6 +3139,18 @@ img[height] {
 
 .color-index-warning {
   color: #F0AA3C; }
+
+.background-hover-color-index-warning:hover {
+  background-color: rgba(240, 170, 60, 0.3); }
+
+.border-small-hover-color-index-warning:hover {
+  box-shadow: 0 0 0 1px #F0AA3C; }
+
+.border-medium-hover-color-index-warning:hover {
+  box-shadow: 0 0 0 12px #F0AA3C; }
+
+.border-large-hover-color-index-warning:hover {
+  box-shadow: 0 0 0 24px #F0AA3C; }
 
 .background-color-index-ok {
   background-color: #509137; }
@@ -3061,6 +3161,18 @@ img[height] {
 .color-index-ok {
   color: #509137; }
 
+.background-hover-color-index-ok:hover {
+  background-color: rgba(80, 145, 55, 0.3); }
+
+.border-small-hover-color-index-ok:hover {
+  box-shadow: 0 0 0 1px #509137; }
+
+.border-medium-hover-color-index-ok:hover {
+  box-shadow: 0 0 0 12px #509137; }
+
+.border-large-hover-color-index-ok:hover {
+  box-shadow: 0 0 0 24px #509137; }
+
 .background-color-index-unknown {
   background-color: #848484; }
 
@@ -3070,6 +3182,18 @@ img[height] {
 .color-index-unknown {
   color: #848484; }
 
+.background-hover-color-index-unknown:hover {
+  background-color: rgba(132, 132, 132, 0.3); }
+
+.border-small-hover-color-index-unknown:hover {
+  box-shadow: 0 0 0 1px #848484; }
+
+.border-medium-hover-color-index-unknown:hover {
+  box-shadow: 0 0 0 12px #848484; }
+
+.border-large-hover-color-index-unknown:hover {
+  box-shadow: 0 0 0 24px #848484; }
+
 .background-color-index-disabled {
   background-color: #848484; }
 
@@ -3078,6 +3202,18 @@ img[height] {
 
 .color-index-disabled {
   color: #848484; }
+
+.background-hover-color-index-disabled:hover {
+  background-color: rgba(132, 132, 132, 0.3); }
+
+.border-small-hover-color-index-disabled:hover {
+  box-shadow: 0 0 0 1px #848484; }
+
+.border-medium-hover-color-index-disabled:hover {
+  box-shadow: 0 0 0 12px #848484; }
+
+.border-large-hover-color-index-disabled:hover {
+  box-shadow: 0 0 0 24px #848484; }
 
 .background-color-index-light-1,
 .background-color-index-light-3 {
@@ -3091,6 +3227,22 @@ img[height] {
 .border-color-index-light-3 {
   border-color: #ffffff; }
 
+.background-hover-color-index-light-1:hover,
+.background-hover-color-index-light-3:hover {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.border-small-hover-color-index-light-1:hover,
+.border-small-hover-color-index-light-3:hover {
+  box-shadow: 0 0 0 1px #ffffff; }
+
+.border-medium-hover-color-index-light-1:hover,
+.border-medium-hover-color-index-light-3:hover {
+  box-shadow: 0 0 0 12px #ffffff; }
+
+.border-large-hover-color-index-light-1:hover,
+.border-large-hover-color-index-light-3:hover {
+  box-shadow: 0 0 0 24px #ffffff; }
+
 .background-color-index-light-2,
 .background-color-index-light-4 {
   background-color: #f5f5f5; }
@@ -3102,6 +3254,22 @@ img[height] {
 .border-color-index-light-2,
 .border-color-index-light-4 {
   border-color: #f5f5f5; }
+
+.background-hover-color-index-light-2:hover,
+.background-hover-color-index-light-4:hover {
+  background-color: rgba(245, 245, 245, 0.3); }
+
+.border-small-hover-color-index-light-2:hover,
+.border-small-hover-color-index-light-4:hover {
+  box-shadow: 0 0 0 1px #f5f5f5; }
+
+.border-medium-hover-color-index-light-2:hover,
+.border-medium-hover-color-index-light-4:hover {
+  box-shadow: 0 0 0 12px #f5f5f5; }
+
+.border-large-hover-color-index-light-2:hover,
+.border-large-hover-color-index-light-4:hover {
+  box-shadow: 0 0 0 24px #f5f5f5; }
 
 .center-column {
   padding-left: 24px;
@@ -3238,26 +3406,20 @@ img[height] {
 .distribution__item-box.color-index-disabled {
   fill: #848484; }
 
-.distribution__item-box.color-index-graph-1, .distribution__item-box.color-index-graph-8 {
-  fill: #E6734B; }
+.distribution__item-box.color-index-graph-1, .distribution__item-box.color-index-graph-6 {
+  fill: #0096D6; }
 
-.distribution__item-box.color-index-graph-2, .distribution__item-box.color-index-graph-9 {
-  fill: #E6C84B; }
+.distribution__item-box.color-index-graph-2, .distribution__item-box.color-index-graph-7 {
+  fill: #C094bf; }
 
-.distribution__item-box.color-index-graph-3, .distribution__item-box.color-index-graph-10 {
-  fill: #915591; }
+.distribution__item-box.color-index-graph-3, .distribution__item-box.color-index-graph-8 {
+  fill: #99d5ef; }
 
-.distribution__item-box.color-index-graph-4, .distribution__item-box.color-index-graph-11 {
-  fill: #006996; }
+.distribution__item-box.color-index-graph-4, .distribution__item-box.color-index-graph-9 {
+  fill: #87898b; }
 
-.distribution__item-box.color-index-graph-5, .distribution__item-box.color-index-graph-12 {
-  fill: #A65336; }
-
-.distribution__item-box.color-index-graph-6, .distribution__item-box.color-index-graph-13 {
-  fill: #A69136; }
-
-.distribution__item-box.color-index-graph-7, .distribution__item-box.color-index-graph-14 {
-  fill: #774677; }
+.distribution__item-box.color-index-graph-5, .distribution__item-box.color-index-graph-10 {
+  fill: #b9b8bb; }
 
 .distribution__item-box.color-index-accent-1, .distribution__item-box.color-index-accent-4 {
   fill: #E6734B; }
@@ -3306,26 +3468,20 @@ img[height] {
 .distribution__item-icons.color-index-disabled {
   stroke: #848484; }
 
-.distribution__item-icons.color-index-graph-1, .distribution__item-icons.color-index-graph-8 {
-  stroke: #E6734B; }
+.distribution__item-icons.color-index-graph-1, .distribution__item-icons.color-index-graph-6 {
+  stroke: #0096D6; }
 
-.distribution__item-icons.color-index-graph-2, .distribution__item-icons.color-index-graph-9 {
-  stroke: #E6C84B; }
+.distribution__item-icons.color-index-graph-2, .distribution__item-icons.color-index-graph-7 {
+  stroke: #C094bf; }
 
-.distribution__item-icons.color-index-graph-3, .distribution__item-icons.color-index-graph-10 {
-  stroke: #915591; }
+.distribution__item-icons.color-index-graph-3, .distribution__item-icons.color-index-graph-8 {
+  stroke: #99d5ef; }
 
-.distribution__item-icons.color-index-graph-4, .distribution__item-icons.color-index-graph-11 {
-  stroke: #006996; }
+.distribution__item-icons.color-index-graph-4, .distribution__item-icons.color-index-graph-9 {
+  stroke: #87898b; }
 
-.distribution__item-icons.color-index-graph-5, .distribution__item-icons.color-index-graph-12 {
-  stroke: #A65336; }
-
-.distribution__item-icons.color-index-graph-6, .distribution__item-icons.color-index-graph-13 {
-  stroke: #A69136; }
-
-.distribution__item-icons.color-index-graph-7, .distribution__item-icons.color-index-graph-14 {
-  stroke: #774677; }
+.distribution__item-icons.color-index-graph-5, .distribution__item-icons.color-index-graph-10 {
+  stroke: #b9b8bb; }
 
 .distribution__item-icons.color-index-grey-1, .distribution__item-icons.color-index-grey-5 {
   stroke: #676767; }
@@ -3392,19 +3548,9 @@ img[height] {
     color: #fff; }
   .distribution__label.color-index-neutral-4, .distribution__label.color-index-neutral-8 {
     color: #fff; }
-  .distribution__label.color-index-graph-1, .distribution__label.color-index-graph-8 {
+  .distribution__label.color-index-graph-1, .distribution__label.color-index-graph-6 {
     color: #fff; }
-  .distribution__label.color-index-graph-2, .distribution__label.color-index-graph-9 {
-    color: #fff; }
-  .distribution__label.color-index-graph-3, .distribution__label.color-index-graph-10 {
-    color: #fff; }
-  .distribution__label.color-index-graph-4, .distribution__label.color-index-graph-11 {
-    color: #fff; }
-  .distribution__label.color-index-graph-5, .distribution__label.color-index-graph-12 {
-    color: #fff; }
-  .distribution__label.color-index-graph-6, .distribution__label.color-index-graph-13 {
-    color: #fff; }
-  .distribution__label.color-index-graph-7, .distribution__label.color-index-graph-14 {
+  .distribution__label.color-index-graph-4, .distribution__label.color-index-graph-9 {
     color: #fff; }
   .distribution__label.color-index-accent-1, .distribution__label.color-index-accent-4 {
     color: #fff; }
@@ -3477,20 +3623,16 @@ img[height] {
     stroke: #848484; }
   .distribution__loading-indicator.color-index-disabled {
     stroke: #848484; }
-  .distribution__loading-indicator.color-index-graph-1, .distribution__loading-indicator.color-index-graph-8 {
-    stroke: #E6734B; }
-  .distribution__loading-indicator.color-index-graph-2, .distribution__loading-indicator.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .distribution__loading-indicator.color-index-graph-3, .distribution__loading-indicator.color-index-graph-10 {
-    stroke: #915591; }
-  .distribution__loading-indicator.color-index-graph-4, .distribution__loading-indicator.color-index-graph-11 {
-    stroke: #006996; }
-  .distribution__loading-indicator.color-index-graph-5, .distribution__loading-indicator.color-index-graph-12 {
-    stroke: #A65336; }
-  .distribution__loading-indicator.color-index-graph-6, .distribution__loading-indicator.color-index-graph-13 {
-    stroke: #A69136; }
-  .distribution__loading-indicator.color-index-graph-7, .distribution__loading-indicator.color-index-graph-14 {
-    stroke: #774677; }
+  .distribution__loading-indicator.color-index-graph-1, .distribution__loading-indicator.color-index-graph-6 {
+    stroke: #0096D6; }
+  .distribution__loading-indicator.color-index-graph-2, .distribution__loading-indicator.color-index-graph-7 {
+    stroke: #C094bf; }
+  .distribution__loading-indicator.color-index-graph-3, .distribution__loading-indicator.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .distribution__loading-indicator.color-index-graph-4, .distribution__loading-indicator.color-index-graph-9 {
+    stroke: #87898b; }
+  .distribution__loading-indicator.color-index-graph-5, .distribution__loading-indicator.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .distribution__loading-indicator.color-index-grey-1, .distribution__loading-indicator.color-index-grey-5 {
     stroke: #676767; }
   .distribution__loading-indicator.color-index-grey-2, .distribution__loading-indicator.color-index-grey-6 {
@@ -4257,20 +4399,16 @@ h6.heading {
     stroke: #848484; }
   .control-icon.color-index-disabled {
     stroke: #848484; }
-  .control-icon.color-index-graph-1, .control-icon.color-index-graph-8 {
-    stroke: #E6734B; }
-  .control-icon.color-index-graph-2, .control-icon.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .control-icon.color-index-graph-3, .control-icon.color-index-graph-10 {
-    stroke: #915591; }
-  .control-icon.color-index-graph-4, .control-icon.color-index-graph-11 {
-    stroke: #006996; }
-  .control-icon.color-index-graph-5, .control-icon.color-index-graph-12 {
-    stroke: #A65336; }
-  .control-icon.color-index-graph-6, .control-icon.color-index-graph-13 {
-    stroke: #A69136; }
-  .control-icon.color-index-graph-7, .control-icon.color-index-graph-14 {
-    stroke: #774677; }
+  .control-icon.color-index-graph-1, .control-icon.color-index-graph-6 {
+    stroke: #0096D6; }
+  .control-icon.color-index-graph-2, .control-icon.color-index-graph-7 {
+    stroke: #C094bf; }
+  .control-icon.color-index-graph-3, .control-icon.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .control-icon.color-index-graph-4, .control-icon.color-index-graph-9 {
+    stroke: #87898b; }
+  .control-icon.color-index-graph-5, .control-icon.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .control-icon.color-index-grey-1, .control-icon.color-index-grey-5 {
     stroke: #676767; }
   .control-icon.color-index-grey-2, .control-icon.color-index-grey-6 {
@@ -4311,20 +4449,16 @@ h6.heading {
     fill: #848484; }
   .control-icon.color-index-disabled {
     fill: #848484; }
-  .control-icon.color-index-graph-1, .control-icon.color-index-graph-8 {
-    fill: #E6734B; }
-  .control-icon.color-index-graph-2, .control-icon.color-index-graph-9 {
-    fill: #E6C84B; }
-  .control-icon.color-index-graph-3, .control-icon.color-index-graph-10 {
-    fill: #915591; }
-  .control-icon.color-index-graph-4, .control-icon.color-index-graph-11 {
-    fill: #006996; }
-  .control-icon.color-index-graph-5, .control-icon.color-index-graph-12 {
-    fill: #A65336; }
-  .control-icon.color-index-graph-6, .control-icon.color-index-graph-13 {
-    fill: #A69136; }
-  .control-icon.color-index-graph-7, .control-icon.color-index-graph-14 {
-    fill: #774677; }
+  .control-icon.color-index-graph-1, .control-icon.color-index-graph-6 {
+    fill: #0096D6; }
+  .control-icon.color-index-graph-2, .control-icon.color-index-graph-7 {
+    fill: #C094bf; }
+  .control-icon.color-index-graph-3, .control-icon.color-index-graph-8 {
+    fill: #99d5ef; }
+  .control-icon.color-index-graph-4, .control-icon.color-index-graph-9 {
+    fill: #87898b; }
+  .control-icon.color-index-graph-5, .control-icon.color-index-graph-10 {
+    fill: #b9b8bb; }
   .control-icon.color-index-accent-1, .control-icon.color-index-accent-4 {
     fill: #E6734B; }
   .control-icon.color-index-accent-2, .control-icon.color-index-accent-5 {
@@ -4459,20 +4593,16 @@ h6.heading {
     stroke: #848484; }
   .logo-icon.color-index-disabled {
     stroke: #848484; }
-  .logo-icon.color-index-graph-1, .logo-icon.color-index-graph-8 {
-    stroke: #E6734B; }
-  .logo-icon.color-index-graph-2, .logo-icon.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .logo-icon.color-index-graph-3, .logo-icon.color-index-graph-10 {
-    stroke: #915591; }
-  .logo-icon.color-index-graph-4, .logo-icon.color-index-graph-11 {
-    stroke: #006996; }
-  .logo-icon.color-index-graph-5, .logo-icon.color-index-graph-12 {
-    stroke: #A65336; }
-  .logo-icon.color-index-graph-6, .logo-icon.color-index-graph-13 {
-    stroke: #A69136; }
-  .logo-icon.color-index-graph-7, .logo-icon.color-index-graph-14 {
-    stroke: #774677; }
+  .logo-icon.color-index-graph-1, .logo-icon.color-index-graph-6 {
+    stroke: #0096D6; }
+  .logo-icon.color-index-graph-2, .logo-icon.color-index-graph-7 {
+    stroke: #C094bf; }
+  .logo-icon.color-index-graph-3, .logo-icon.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .logo-icon.color-index-graph-4, .logo-icon.color-index-graph-9 {
+    stroke: #87898b; }
+  .logo-icon.color-index-graph-5, .logo-icon.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .logo-icon.color-index-grey-1, .logo-icon.color-index-grey-5 {
     stroke: #676767; }
   .logo-icon.color-index-grey-2, .logo-icon.color-index-grey-6 {
@@ -4523,35 +4653,49 @@ html.rtl .right-left-icon--right {
 
 .image {
   max-width: 100%; }
-  .image--medium {
-    width: 576px; }
-  .image--large {
-    width: 960px; }
-  .image--small {
-    width: 240px; }
-  .image--thumb {
-    width: 48px;
-    height: 48px;
-    flex: 0 0 auto;
-    object-fit: cover; }
-  .image--full {
-    width: 100%; }
-  .image--full-horizontal {
-    width: 100%; }
-  .image--full-vertical {
-    height: 100%; }
-  .image__container {
-    display: flex;
-    flex-direction: column; }
-  .image__caption {
-    text-align: center;
-    padding: 12px; }
-    .image__caption--medium {
-      max-width: 576px; }
-    .image__caption--large {
-      max-width: 960px; }
-    .image__caption--small {
-      max-width: 240px; }
+
+.image--medium {
+  width: 576px; }
+
+.image--large {
+  width: 960px; }
+
+.image--small {
+  width: 240px; }
+
+.image--thumb {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  object-fit: cover; }
+  .image--thumb.image--mask {
+    border-radius: 24px; }
+
+.image--full {
+  width: 100%; }
+
+.image--full-horizontal {
+  width: 100%; }
+
+.image--full-vertical {
+  height: 100%; }
+
+.image__container {
+  display: flex;
+  flex-direction: column; }
+
+.image__caption {
+  text-align: center;
+  padding: 12px; }
+
+.image__caption--medium {
+  max-width: 576px; }
+
+.image__caption--large {
+  max-width: 960px; }
+
+.image__caption--small {
+  max-width: 240px; }
 
 .label {
   font-size: 19px;
@@ -4600,6 +4744,9 @@ html.rtl .right-left-icon--right {
       visibility: hidden;
       width: 0px;
       height: 0px; } }
+  @media screen and (max-width: 44.9375em) and (-ms-high-contrast: active), screen and (max-width: 44.9375em) and (-ms-high-contrast: none) {
+    .grommet.layer:not(.layer--hidden) + .app {
+      display: none; } }
   .grommet.layer .layer__container {
     background-color: #fff; }
     @media screen and (max-width: 44.9375em) {
@@ -4870,20 +5017,16 @@ html.rtl .right-left-icon--right {
     stroke: #848484; }
   .legend__item svg.legend__item-swatch.color-index-disabled {
     stroke: #848484; }
-  .legend__item svg.legend__item-swatch.color-index-graph-1, .legend__item svg.legend__item-swatch.color-index-graph-8 {
-    stroke: #E6734B; }
-  .legend__item svg.legend__item-swatch.color-index-graph-2, .legend__item svg.legend__item-swatch.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .legend__item svg.legend__item-swatch.color-index-graph-3, .legend__item svg.legend__item-swatch.color-index-graph-10 {
-    stroke: #915591; }
-  .legend__item svg.legend__item-swatch.color-index-graph-4, .legend__item svg.legend__item-swatch.color-index-graph-11 {
-    stroke: #006996; }
-  .legend__item svg.legend__item-swatch.color-index-graph-5, .legend__item svg.legend__item-swatch.color-index-graph-12 {
-    stroke: #A65336; }
-  .legend__item svg.legend__item-swatch.color-index-graph-6, .legend__item svg.legend__item-swatch.color-index-graph-13 {
-    stroke: #A69136; }
-  .legend__item svg.legend__item-swatch.color-index-graph-7, .legend__item svg.legend__item-swatch.color-index-graph-14 {
-    stroke: #774677; }
+  .legend__item svg.legend__item-swatch.color-index-graph-1, .legend__item svg.legend__item-swatch.color-index-graph-6 {
+    stroke: #0096D6; }
+  .legend__item svg.legend__item-swatch.color-index-graph-2, .legend__item svg.legend__item-swatch.color-index-graph-7 {
+    stroke: #C094bf; }
+  .legend__item svg.legend__item-swatch.color-index-graph-3, .legend__item svg.legend__item-swatch.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .legend__item svg.legend__item-swatch.color-index-graph-4, .legend__item svg.legend__item-swatch.color-index-graph-9 {
+    stroke: #87898b; }
+  .legend__item svg.legend__item-swatch.color-index-graph-5, .legend__item svg.legend__item-swatch.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .legend__item svg.legend__item-swatch.color-index-grey-1, .legend__item svg.legend__item-swatch.color-index-grey-5 {
     stroke: #676767; }
   .legend__item svg.legend__item-swatch.color-index-grey-2, .legend__item svg.legend__item-swatch.color-index-grey-6 {
@@ -5455,6 +5598,9 @@ li.legend__total {
 .meter:not(.meter--vertical).meter--large .meter__minmax-container {
   width: 288px; }
 
+.meter:not(.meter--vertical).meter--xlarge .meter__minmax-container {
+  width: 384px; }
+
 .meter--vertical .meter__graphic-container {
   display: inline-block;
   white-space: nowrap; }
@@ -5492,6 +5638,9 @@ li.legend__total {
 .meter--vertical.meter--large .meter__minmax-container {
   height: 288px; }
 
+.meter--vertical.meter--xlarge .meter__minmax-container {
+  height: 384px; }
+
 .meter--small .meter__slice {
   stroke-width: 8px; }
 
@@ -5517,6 +5666,16 @@ li.legend__total {
   font-size: 48px;
   font-size: 3rem;
   line-height: 1; }
+
+.meter--xlarge .meter__value-value {
+  font-size: 84px;
+  font-size: 5.25rem;
+  line-height: 1.14286; }
+
+.meter--xlarge .meter__value-units {
+  font-size: 60px;
+  font-size: 3.75rem;
+  line-height: 1.2; }
 
 .meter--active .meter__values .meter__slice:hover {
   stroke-width: 12px; }
@@ -5555,26 +5714,20 @@ li.legend__total {
 .meter--bar .meter__values .meter__slice.color-index-disabled {
   stroke: #848484; }
 
-.meter--bar .meter__values .meter__slice.color-index-graph-1, .meter--bar .meter__values .meter__slice.color-index-graph-8 {
-  stroke: #E6734B; }
+.meter--bar .meter__values .meter__slice.color-index-graph-1, .meter--bar .meter__values .meter__slice.color-index-graph-6 {
+  stroke: #0096D6; }
 
-.meter--bar .meter__values .meter__slice.color-index-graph-2, .meter--bar .meter__values .meter__slice.color-index-graph-9 {
-  stroke: #E6C84B; }
+.meter--bar .meter__values .meter__slice.color-index-graph-2, .meter--bar .meter__values .meter__slice.color-index-graph-7 {
+  stroke: #C094bf; }
 
-.meter--bar .meter__values .meter__slice.color-index-graph-3, .meter--bar .meter__values .meter__slice.color-index-graph-10 {
-  stroke: #915591; }
+.meter--bar .meter__values .meter__slice.color-index-graph-3, .meter--bar .meter__values .meter__slice.color-index-graph-8 {
+  stroke: #99d5ef; }
 
-.meter--bar .meter__values .meter__slice.color-index-graph-4, .meter--bar .meter__values .meter__slice.color-index-graph-11 {
-  stroke: #006996; }
+.meter--bar .meter__values .meter__slice.color-index-graph-4, .meter--bar .meter__values .meter__slice.color-index-graph-9 {
+  stroke: #87898b; }
 
-.meter--bar .meter__values .meter__slice.color-index-graph-5, .meter--bar .meter__values .meter__slice.color-index-graph-12 {
-  stroke: #A65336; }
-
-.meter--bar .meter__values .meter__slice.color-index-graph-6, .meter--bar .meter__values .meter__slice.color-index-graph-13 {
-  stroke: #A69136; }
-
-.meter--bar .meter__values .meter__slice.color-index-graph-7, .meter--bar .meter__values .meter__slice.color-index-graph-14 {
-  stroke: #774677; }
+.meter--bar .meter__values .meter__slice.color-index-graph-5, .meter--bar .meter__values .meter__slice.color-index-graph-10 {
+  stroke: #b9b8bb; }
 
 .meter--bar .meter__values .meter__slice.color-index-grey-1, .meter--bar .meter__values .meter__slice.color-index-grey-5 {
   stroke: #676767; }
@@ -5652,40 +5805,30 @@ li.legend__total {
 .meter--bar .meter__tracks .meter__slice.color-index-disabled {
   stroke: rgba(132, 132, 132, 0.5); }
 
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-1, .meter--bar .meter__thresholds .meter__slice.color-index-graph-8,
+.meter--bar .meter__thresholds .meter__slice.color-index-graph-1, .meter--bar .meter__thresholds .meter__slice.color-index-graph-6,
 .meter--bar .meter__tracks .meter__slice.color-index-graph-1,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-8 {
-  stroke: rgba(230, 115, 75, 0.5); }
+.meter--bar .meter__tracks .meter__slice.color-index-graph-6 {
+  stroke: rgba(0, 150, 214, 0.5); }
 
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-2, .meter--bar .meter__thresholds .meter__slice.color-index-graph-9,
+.meter--bar .meter__thresholds .meter__slice.color-index-graph-2, .meter--bar .meter__thresholds .meter__slice.color-index-graph-7,
 .meter--bar .meter__tracks .meter__slice.color-index-graph-2,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-9 {
-  stroke: rgba(230, 200, 75, 0.5); }
+.meter--bar .meter__tracks .meter__slice.color-index-graph-7 {
+  stroke: rgba(192, 148, 191, 0.5); }
 
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-3, .meter--bar .meter__thresholds .meter__slice.color-index-graph-10,
+.meter--bar .meter__thresholds .meter__slice.color-index-graph-3, .meter--bar .meter__thresholds .meter__slice.color-index-graph-8,
 .meter--bar .meter__tracks .meter__slice.color-index-graph-3,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-10 {
-  stroke: rgba(145, 85, 145, 0.5); }
+.meter--bar .meter__tracks .meter__slice.color-index-graph-8 {
+  stroke: rgba(153, 213, 239, 0.5); }
 
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-4, .meter--bar .meter__thresholds .meter__slice.color-index-graph-11,
+.meter--bar .meter__thresholds .meter__slice.color-index-graph-4, .meter--bar .meter__thresholds .meter__slice.color-index-graph-9,
 .meter--bar .meter__tracks .meter__slice.color-index-graph-4,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-11 {
-  stroke: rgba(0, 105, 150, 0.5); }
+.meter--bar .meter__tracks .meter__slice.color-index-graph-9 {
+  stroke: rgba(135, 137, 139, 0.5); }
 
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-5, .meter--bar .meter__thresholds .meter__slice.color-index-graph-12,
+.meter--bar .meter__thresholds .meter__slice.color-index-graph-5, .meter--bar .meter__thresholds .meter__slice.color-index-graph-10,
 .meter--bar .meter__tracks .meter__slice.color-index-graph-5,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-12 {
-  stroke: rgba(166, 83, 54, 0.5); }
-
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-6, .meter--bar .meter__thresholds .meter__slice.color-index-graph-13,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-6,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-13 {
-  stroke: rgba(166, 145, 54, 0.5); }
-
-.meter--bar .meter__thresholds .meter__slice.color-index-graph-7, .meter--bar .meter__thresholds .meter__slice.color-index-graph-14,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-7,
-.meter--bar .meter__tracks .meter__slice.color-index-graph-14 {
-  stroke: rgba(119, 70, 119, 0.5); }
+.meter--bar .meter__tracks .meter__slice.color-index-graph-10 {
+  stroke: rgba(185, 184, 187, 0.5); }
 
 .meter--bar .meter__thresholds .meter__slice.color-index-accent-1, .meter--bar .meter__thresholds .meter__slice.color-index-accent-4,
 .meter--bar .meter__tracks .meter__slice.color-index-accent-1,
@@ -5758,6 +5901,19 @@ li.legend__total {
     top: 144px; }
   .meter--bar.meter--vertical.meter--large.meter--legend-right .meter__legend {
     top: 144px; }
+  .meter--bar.meter--vertical.meter--xlarge svg.meter__graphic {
+    height: 384px;
+    width: 48px; }
+  .meter--bar.meter--vertical.meter--xlarge:not(.meter--stacked).meter--count-2 .meter__graphic {
+    width: 96px; }
+  .meter--bar.meter--vertical.meter--xlarge:not(.meter--stacked).meter--count-3 .meter__graphic {
+    width: 144px; }
+  .meter--bar.meter--vertical.meter--xlarge:not(.meter--stacked).meter--count-4 .meter__graphic {
+    width: 192px; }
+  .meter--bar.meter--vertical.meter--xlarge .meter__value {
+    top: 192px; }
+  .meter--bar.meter--vertical.meter--xlarge.meter--legend-right .meter__legend {
+    top: 192px; }
 
 .meter--bar:not(.meter--vertical) .meter__minmax-container > a {
   vertical-align: top;
@@ -5851,6 +6007,27 @@ li.legend__total {
       font-size: 1.625rem;
       line-height: inherit; }
 
+.meter--bar:not(.meter--vertical).meter--xlarge {
+  line-height: 48px; }
+  .meter--bar:not(.meter--vertical).meter--xlarge svg.meter__graphic {
+    width: 384px;
+    height: 48px; }
+  .meter--bar:not(.meter--vertical).meter--xlarge:not(.meter--stacked).meter--count-2 .meter__graphic {
+    height: 96px; }
+  .meter--bar:not(.meter--vertical).meter--xlarge:not(.meter--stacked).meter--count-3 .meter__graphic {
+    height: 144px; }
+  .meter--bar:not(.meter--vertical).meter--xlarge:not(.meter--stacked).meter--count-4 .meter__graphic {
+    height: 192px; }
+  .meter--bar:not(.meter--vertical).meter--xlarge .meter__value {
+    margin-left: 24px; }
+    html.rtl .meter--bar:not(.meter--vertical).meter--xlarge .meter__value {
+      margin-left: 0;
+      margin-right: 24px; }
+    .meter--bar:not(.meter--vertical).meter--xlarge .meter__value-value, .meter--bar:not(.meter--vertical).meter--xlarge .meter__value-units {
+      font-size: 30px;
+      font-size: 1.875rem;
+      line-height: inherit; }
+
 @media screen and (max-width: 44.9375em) {
   .meter--circle,
   .meter--arc,
@@ -5925,54 +6102,40 @@ li.legend__total {
 .meter--spiral .meter__values .meter__slice.color-index-disabled {
   stroke: #848484; }
 
-.meter--circle .meter__values .meter__slice.color-index-graph-1, .meter--circle .meter__values .meter__slice.color-index-graph-8,
+.meter--circle .meter__values .meter__slice.color-index-graph-1, .meter--circle .meter__values .meter__slice.color-index-graph-6,
 .meter--arc .meter__values .meter__slice.color-index-graph-1,
-.meter--arc .meter__values .meter__slice.color-index-graph-8,
-.meter--spiral .meter__values .meter__slice.color-index-graph-1,
-.meter--spiral .meter__values .meter__slice.color-index-graph-8 {
-  stroke: #E6734B; }
-
-.meter--circle .meter__values .meter__slice.color-index-graph-2, .meter--circle .meter__values .meter__slice.color-index-graph-9,
-.meter--arc .meter__values .meter__slice.color-index-graph-2,
-.meter--arc .meter__values .meter__slice.color-index-graph-9,
-.meter--spiral .meter__values .meter__slice.color-index-graph-2,
-.meter--spiral .meter__values .meter__slice.color-index-graph-9 {
-  stroke: #E6C84B; }
-
-.meter--circle .meter__values .meter__slice.color-index-graph-3, .meter--circle .meter__values .meter__slice.color-index-graph-10,
-.meter--arc .meter__values .meter__slice.color-index-graph-3,
-.meter--arc .meter__values .meter__slice.color-index-graph-10,
-.meter--spiral .meter__values .meter__slice.color-index-graph-3,
-.meter--spiral .meter__values .meter__slice.color-index-graph-10 {
-  stroke: #915591; }
-
-.meter--circle .meter__values .meter__slice.color-index-graph-4, .meter--circle .meter__values .meter__slice.color-index-graph-11,
-.meter--arc .meter__values .meter__slice.color-index-graph-4,
-.meter--arc .meter__values .meter__slice.color-index-graph-11,
-.meter--spiral .meter__values .meter__slice.color-index-graph-4,
-.meter--spiral .meter__values .meter__slice.color-index-graph-11 {
-  stroke: #006996; }
-
-.meter--circle .meter__values .meter__slice.color-index-graph-5, .meter--circle .meter__values .meter__slice.color-index-graph-12,
-.meter--arc .meter__values .meter__slice.color-index-graph-5,
-.meter--arc .meter__values .meter__slice.color-index-graph-12,
-.meter--spiral .meter__values .meter__slice.color-index-graph-5,
-.meter--spiral .meter__values .meter__slice.color-index-graph-12 {
-  stroke: #A65336; }
-
-.meter--circle .meter__values .meter__slice.color-index-graph-6, .meter--circle .meter__values .meter__slice.color-index-graph-13,
 .meter--arc .meter__values .meter__slice.color-index-graph-6,
-.meter--arc .meter__values .meter__slice.color-index-graph-13,
-.meter--spiral .meter__values .meter__slice.color-index-graph-6,
-.meter--spiral .meter__values .meter__slice.color-index-graph-13 {
-  stroke: #A69136; }
+.meter--spiral .meter__values .meter__slice.color-index-graph-1,
+.meter--spiral .meter__values .meter__slice.color-index-graph-6 {
+  stroke: #0096D6; }
 
-.meter--circle .meter__values .meter__slice.color-index-graph-7, .meter--circle .meter__values .meter__slice.color-index-graph-14,
+.meter--circle .meter__values .meter__slice.color-index-graph-2, .meter--circle .meter__values .meter__slice.color-index-graph-7,
+.meter--arc .meter__values .meter__slice.color-index-graph-2,
 .meter--arc .meter__values .meter__slice.color-index-graph-7,
-.meter--arc .meter__values .meter__slice.color-index-graph-14,
-.meter--spiral .meter__values .meter__slice.color-index-graph-7,
-.meter--spiral .meter__values .meter__slice.color-index-graph-14 {
-  stroke: #774677; }
+.meter--spiral .meter__values .meter__slice.color-index-graph-2,
+.meter--spiral .meter__values .meter__slice.color-index-graph-7 {
+  stroke: #C094bf; }
+
+.meter--circle .meter__values .meter__slice.color-index-graph-3, .meter--circle .meter__values .meter__slice.color-index-graph-8,
+.meter--arc .meter__values .meter__slice.color-index-graph-3,
+.meter--arc .meter__values .meter__slice.color-index-graph-8,
+.meter--spiral .meter__values .meter__slice.color-index-graph-3,
+.meter--spiral .meter__values .meter__slice.color-index-graph-8 {
+  stroke: #99d5ef; }
+
+.meter--circle .meter__values .meter__slice.color-index-graph-4, .meter--circle .meter__values .meter__slice.color-index-graph-9,
+.meter--arc .meter__values .meter__slice.color-index-graph-4,
+.meter--arc .meter__values .meter__slice.color-index-graph-9,
+.meter--spiral .meter__values .meter__slice.color-index-graph-4,
+.meter--spiral .meter__values .meter__slice.color-index-graph-9 {
+  stroke: #87898b; }
+
+.meter--circle .meter__values .meter__slice.color-index-graph-5, .meter--circle .meter__values .meter__slice.color-index-graph-10,
+.meter--arc .meter__values .meter__slice.color-index-graph-5,
+.meter--arc .meter__values .meter__slice.color-index-graph-10,
+.meter--spiral .meter__values .meter__slice.color-index-graph-5,
+.meter--spiral .meter__values .meter__slice.color-index-graph-10 {
+  stroke: #b9b8bb; }
 
 .meter--circle .meter__values .meter__slice.color-index-grey-1, .meter--circle .meter__values .meter__slice.color-index-grey-5,
 .meter--arc .meter__values .meter__slice.color-index-grey-1,
@@ -6134,96 +6297,70 @@ li.legend__total {
 .meter--spiral .meter__tracks .meter__slice.color-index-disabled {
   stroke: rgba(132, 132, 132, 0.5); }
 
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-1, .meter--circle .meter__thresholds .meter__slice.color-index-graph-8,
+.meter--circle .meter__thresholds .meter__slice.color-index-graph-1, .meter--circle .meter__thresholds .meter__slice.color-index-graph-6,
 .meter--circle .meter__tracks .meter__slice.color-index-graph-1,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-8,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-1,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-8,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-1,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-8,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-1,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-8,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-1,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-8 {
-  stroke: rgba(230, 115, 75, 0.5); }
-
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-2, .meter--circle .meter__thresholds .meter__slice.color-index-graph-9,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-2,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-9,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-2,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-9,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-2,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-9,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-2,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-9,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-2,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-9 {
-  stroke: rgba(230, 200, 75, 0.5); }
-
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-3, .meter--circle .meter__thresholds .meter__slice.color-index-graph-10,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-3,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-10,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-3,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-10,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-3,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-10,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-3,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-10,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-3,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-10 {
-  stroke: rgba(145, 85, 145, 0.5); }
-
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-4, .meter--circle .meter__thresholds .meter__slice.color-index-graph-11,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-4,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-11,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-4,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-11,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-4,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-11,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-4,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-11,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-4,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-11 {
-  stroke: rgba(0, 105, 150, 0.5); }
-
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-5, .meter--circle .meter__thresholds .meter__slice.color-index-graph-12,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-5,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-12,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-5,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-12,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-5,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-12,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-5,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-12,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-5,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-12 {
-  stroke: rgba(166, 83, 54, 0.5); }
-
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-6, .meter--circle .meter__thresholds .meter__slice.color-index-graph-13,
 .meter--circle .meter__tracks .meter__slice.color-index-graph-6,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-13,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-1,
 .meter--arc .meter__thresholds .meter__slice.color-index-graph-6,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-13,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-1,
 .meter--arc .meter__tracks .meter__slice.color-index-graph-6,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-13,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-1,
 .meter--spiral .meter__thresholds .meter__slice.color-index-graph-6,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-13,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-6,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-13 {
-  stroke: rgba(166, 145, 54, 0.5); }
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-1,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-6 {
+  stroke: rgba(0, 150, 214, 0.5); }
 
-.meter--circle .meter__thresholds .meter__slice.color-index-graph-7, .meter--circle .meter__thresholds .meter__slice.color-index-graph-14,
+.meter--circle .meter__thresholds .meter__slice.color-index-graph-2, .meter--circle .meter__thresholds .meter__slice.color-index-graph-7,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-2,
 .meter--circle .meter__tracks .meter__slice.color-index-graph-7,
-.meter--circle .meter__tracks .meter__slice.color-index-graph-14,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-2,
 .meter--arc .meter__thresholds .meter__slice.color-index-graph-7,
-.meter--arc .meter__thresholds .meter__slice.color-index-graph-14,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-2,
 .meter--arc .meter__tracks .meter__slice.color-index-graph-7,
-.meter--arc .meter__tracks .meter__slice.color-index-graph-14,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-2,
 .meter--spiral .meter__thresholds .meter__slice.color-index-graph-7,
-.meter--spiral .meter__thresholds .meter__slice.color-index-graph-14,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-7,
-.meter--spiral .meter__tracks .meter__slice.color-index-graph-14 {
-  stroke: rgba(119, 70, 119, 0.5); }
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-2,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-7 {
+  stroke: rgba(192, 148, 191, 0.5); }
+
+.meter--circle .meter__thresholds .meter__slice.color-index-graph-3, .meter--circle .meter__thresholds .meter__slice.color-index-graph-8,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-3,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-8,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-3,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-8,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-3,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-8,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-3,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-8,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-3,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-8 {
+  stroke: rgba(153, 213, 239, 0.5); }
+
+.meter--circle .meter__thresholds .meter__slice.color-index-graph-4, .meter--circle .meter__thresholds .meter__slice.color-index-graph-9,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-4,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-9,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-4,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-9,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-4,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-9,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-4,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-9,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-4,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-9 {
+  stroke: rgba(135, 137, 139, 0.5); }
+
+.meter--circle .meter__thresholds .meter__slice.color-index-graph-5, .meter--circle .meter__thresholds .meter__slice.color-index-graph-10,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-5,
+.meter--circle .meter__tracks .meter__slice.color-index-graph-10,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-5,
+.meter--arc .meter__thresholds .meter__slice.color-index-graph-10,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-5,
+.meter--arc .meter__tracks .meter__slice.color-index-graph-10,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-5,
+.meter--spiral .meter__thresholds .meter__slice.color-index-graph-10,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-5,
+.meter--spiral .meter__tracks .meter__slice.color-index-graph-10 {
+  stroke: rgba(185, 184, 187, 0.5); }
 
 .meter--circle .meter__thresholds .meter__slice.color-index-accent-1, .meter--circle .meter__thresholds .meter__slice.color-index-accent-4,
 .meter--circle .meter__tracks .meter__slice.color-index-accent-1,
@@ -6302,6 +6439,10 @@ li.legend__total {
 .meter--arc:not(.meter--vertical).meter--large .meter__minmax-container {
   width: 288px; }
 
+.meter--circle.meter--xlarge .meter__minmax-container,
+.meter--arc:not(.meter--vertical).meter--xlarge .meter__minmax-container {
+  width: 384px; }
+
 .meter--circle.meter--legend-right .meter__legend,
 .meter--arc.meter--vertical.meter--legend-right .meter__legend {
   top: 96px; }
@@ -6313,6 +6454,10 @@ li.legend__total {
 .meter--circle.meter--legend-right.meter--large .meter__legend,
 .meter--arc.meter--vertical.meter--legend-right.meter--large .meter__legend {
   top: 144px; }
+
+.meter--circle.meter--legend-right.meter--xlarge .meter__legend,
+.meter--arc.meter--vertical.meter--legend-right.meter--xlarge .meter__legend {
+  top: 192px; }
 
 .meter--circle svg.meter__graphic {
   width: 192px;
@@ -6339,6 +6484,14 @@ li.legend__total {
 .meter--circle.meter--large .meter__value {
   top: 144px;
   max-width: 216px; }
+
+.meter--circle.meter--xlarge svg.meter__graphic {
+  width: 384px;
+  height: 384px; }
+
+.meter--circle.meter--xlarge .meter__value {
+  top: 192px;
+  max-width: 288px; }
 
 .meter--circle:not(.meter--stacked):not(.meter--single) .meter__value {
   position: static;
@@ -6374,6 +6527,14 @@ li.legend__total {
 .meter--arc:not(.meter--vertical).meter--large .meter__value {
   top: 156px;
   max-width: 180px; }
+
+.meter--arc:not(.meter--vertical).meter--xlarge svg.meter__graphic {
+  width: 384px;
+  height: 288px; }
+
+.meter--arc:not(.meter--vertical).meter--xlarge .meter__value {
+  top: 204px;
+  max-width: 240px; }
 
 .meter--arc.meter--vertical svg.meter__graphic {
   display: inline;
@@ -6427,6 +6588,17 @@ li.legend__total {
   html.rtl .meter--arc.meter--vertical.meter--large .meter__value {
     margin-left: 0;
     margin-right: -48px; }
+
+.meter--arc.meter--vertical.meter--xlarge svg.meter__graphic {
+  width: 288px;
+  height: 384px; }
+
+.meter--arc.meter--vertical.meter--xlarge .meter__value {
+  top: 192px;
+  margin-left: -72px; }
+  html.rtl .meter--arc.meter--vertical.meter--xlarge .meter__value {
+    margin-left: 0;
+    margin-right: -72px; }
 
 .meter--arc.meter--vertical.meter--minmax .meter__value {
   margin-left: -72px; }
@@ -6696,7 +6868,7 @@ li.legend__total {
 .quote {
   border-width: 24px;
   border-style: solid;
-  max-width: calc(100vw - 48px); }
+  max-width: 100%; }
   .quote--small {
     width: 480px; }
   .quote--medium {
@@ -7103,14 +7275,6 @@ section > dl > dd {
 .split {
   position: relative;
   overflow: visible; }
-  .split:after {
-    position: absolute;
-    left: 0px;
-    content: ' ';
-    display: block;
-    width: 45em;
-    height: 0px;
-    z-index: -10; }
   @media screen and (min-width: 45em) {
     .split {
       display: flex; }
@@ -7415,8 +7579,21 @@ section > dl > dd {
         flex-basis: 192px; } }
   .tiles:not(.tiles--flush) > .tile {
     margin: 12px; }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .tiles:not(.tiles--flush) > .tile {
+        margin: 24px; } }
     .tiles:not(.tiles--flush) > .tile--wide {
       flex-basis: calc(100% - 24px); }
+    .tiles:not(.tiles--flush) > .tile.tile--hover-border-medium {
+      margin: 6px; }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .tiles:not(.tiles--flush) > .tile.tile--hover-border-medium {
+          margin: 12px; } }
+    .tiles:not(.tiles--flush) > .tile.tile--hover-border-large {
+      margin: 12px; }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .tiles:not(.tiles--flush) > .tile.tile--hover-border-large {
+          margin: 24px; } }
   .tiles--fill.box--wrap {
     justify-content: space-around; }
     .tiles--fill.box--wrap > .tile {
@@ -7438,11 +7615,11 @@ section > dl > dd {
       transform: translateX(-50%); }
   .tiles--selectable .tile {
     cursor: pointer;
-    transition: background-color 0.2s; }
+    transition: all 0.2s; }
     .tiles--selectable .tile--selected {
       background-color: #daf1fb;
       color: #333; }
-    .tiles--selectable .tile:hover:not(.tile--selected) {
+    .tiles--selectable .tile:hover:not(.tile--selected):not([class*="background-hover-color-index-"]) {
       background-color: rgba(221, 221, 221, 0.5);
       color: #000; }
   @media screen and (min-width: 45em) {
@@ -7455,7 +7632,8 @@ section > dl > dd {
     outline: #99d5ef solid 1px; }
 
 .tile {
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.2s; }
   .tile .status-icon {
     margin-right: 6px; }
     html.rtl .tile .status-icon {
@@ -7474,6 +7652,13 @@ section > dl > dd {
       color: #000; }
   .tile--eclipsed {
     opacity: 0.2; }
+
+.timestamp--right {
+  text-align: right; }
+
+.timestamp__time {
+  text-transform: lowercase;
+  white-space: nowrap; }
 
 .title {
   max-height: 100%;
@@ -7716,7 +7901,11 @@ section > dl > dd {
       max-width: 100%;
       width: 100vw; }
       .video__title {
-        visibility: hidden; } }
+        visibility: hidden; }
+      .video__timeline {
+        visibility: hidden; }
+      .video__progress, .video--has-timeline {
+        bottom: 0px; } }
   @media screen and (min-width: 45em) {
     .video--small {
       width: 240px; }
@@ -7725,11 +7914,14 @@ section > dl > dd {
         height: 48px;
         border-radius: 24px; }
     .video--large {
-      width: 960px; } }
+      width: 960px; }
+    .video--has-timeline {
+      bottom: 72px; } }
   .video--full {
     width: 100%; }
   .video video {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   .video__summary {
     position: absolute;
     top: 0;
@@ -7763,8 +7955,6 @@ section > dl > dd {
     .video__timeline-chapter, .video__timeline-active {
       position: absolute;
       height: 100%;
-      padding-left: 6px;
-      border-left: 2px solid rgba(255, 255, 255, 0.7);
       text-align: left;
       cursor: pointer; }
       .video__timeline-chapter:hover, .video__timeline-active:hover {
@@ -7775,19 +7965,41 @@ section > dl > dd {
         font-size: 14px;
         font-size: 0.875rem;
         line-height: 24px; }
+      .video__timeline-chapter label, .video__timeline-active label {
+        font-weight: 600; }
     .video__timeline-active {
       color: #915591;
       border-color: #915591; }
   .video__progress {
     position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
     left: 0px;
     right: 0px;
-    bottom: 0px;
     height: 6px;
     text-align: left; }
     .video__progress-meter {
       height: 100%;
       background-color: #0096D6; }
+    .video__progress:not(.video--has-timeline) {
+      bottom: 0px; }
+  .video__progress-ticks {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 6px;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(103, 103, 103, 0.7); }
+    .video__progress-ticks-chapter, .video__progress-ticks-active {
+      position: absolute;
+      height: 6px;
+      border-left: 2px solid rgba(255, 255, 255, 0.7);
+      text-align: left;
+      cursor: pointer; }
+      .video__progress-ticks-chapter:hover, .video__progress-ticks-active:hover {
+        color: #fff;
+        border-color: #fff; }
+    .video__progress-ticks-active {
+      border-color: #915591; }
   .video--titled .video__summary {
     background-color: rgba(103, 103, 103, 0.7);
     color: rgba(255, 255, 255, 0.85);
@@ -7796,12 +8008,19 @@ section > dl > dd {
     font-size: 1.1875rem;
     line-height: 1.26316; }
   .video--playing:not(.video--interacting) .video__control,
-  .video--playing:not(.video--interacting) .video__timeline,
-  .video--playing:not(.video--interacting) .video__progress {
+  .video--playing:not(.video--interacting) .video__timeline {
     opacity: 0;
     transition: opacity 1s; }
+  .video--playing:not(.video--interacting) .video__progress {
+    bottom: 0px;
+    transition: ease 1s; }
+  .video--playing:not(.video--interacting) .video__progress-ticks {
+    bottom: 6px;
+    transition: ease 1s; }
   .video--playing .video__title {
     visibility: hidden; }
+  .video--playing--interacting .video--has-timeline {
+    bottom: 72px; }
 
 .world-map {
   width: 100%; }
@@ -7828,20 +8047,16 @@ section > dl > dd {
     stroke: #848484; }
   .world-map__continent.color-index-disabled {
     stroke: #848484; }
-  .world-map__continent.color-index-graph-1, .world-map__continent.color-index-graph-8 {
-    stroke: #E6734B; }
-  .world-map__continent.color-index-graph-2, .world-map__continent.color-index-graph-9 {
-    stroke: #E6C84B; }
-  .world-map__continent.color-index-graph-3, .world-map__continent.color-index-graph-10 {
-    stroke: #915591; }
-  .world-map__continent.color-index-graph-4, .world-map__continent.color-index-graph-11 {
-    stroke: #006996; }
-  .world-map__continent.color-index-graph-5, .world-map__continent.color-index-graph-12 {
-    stroke: #A65336; }
-  .world-map__continent.color-index-graph-6, .world-map__continent.color-index-graph-13 {
-    stroke: #A69136; }
-  .world-map__continent.color-index-graph-7, .world-map__continent.color-index-graph-14 {
-    stroke: #774677; }
+  .world-map__continent.color-index-graph-1, .world-map__continent.color-index-graph-6 {
+    stroke: #0096D6; }
+  .world-map__continent.color-index-graph-2, .world-map__continent.color-index-graph-7 {
+    stroke: #C094bf; }
+  .world-map__continent.color-index-graph-3, .world-map__continent.color-index-graph-8 {
+    stroke: #99d5ef; }
+  .world-map__continent.color-index-graph-4, .world-map__continent.color-index-graph-9 {
+    stroke: #87898b; }
+  .world-map__continent.color-index-graph-5, .world-map__continent.color-index-graph-10 {
+    stroke: #b9b8bb; }
   .world-map__continent.color-index-grey-1, .world-map__continent.color-index-grey-5 {
     stroke: #676767; }
   .world-map__continent.color-index-grey-2, .world-map__continent.color-index-grey-6 {
