@@ -5129,6 +5129,7 @@ var Grommet =
 	  area: 'area',
 	  Bar: 'Bar',
 	  bar: 'bar',
+	  Blank: 'Blank',
 	  Box: 'Box',
 	  Category: 'Category',
 	  Circle: 'Circle',
@@ -5535,6 +5536,7 @@ var Grommet =
 	  area: 'Área',
 	  Bar: 'Bar',
 	  bar: 'bar',
+	  Blank: 'Em branco',
 	  Box: 'Box',
 	  camera: 'Câmera',
 	  Category: 'Categoria',
@@ -56885,7 +56887,7 @@ var Grommet =
 	        className += ' ' + this.props.className;
 	      }
 	      if (typeof this.props.a11yTitle === "undefined") {
-	        // this.props.a11yTitle emplty string is an acceptable value. Only if undefined
+	        // this.props.a11yTitle empty string is an acceptable value. Only if undefined
 	        // should use the default title value.
 	        a11yTitle = 'Blank';
 	      }
