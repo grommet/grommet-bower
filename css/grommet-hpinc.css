@@ -4259,6 +4259,14 @@ h6.heading {
   h5.heading--strong,
   h6.heading--strong {
     font-weight: 600; }
+  h1.heading--uppercase,
+  h2.heading--uppercase,
+  h3.heading--uppercase,
+  h4.heading--uppercase,
+  h5.heading--uppercase,
+  h6.heading--uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
   h1.heading--align-start,
   h2.heading--align-start,
   h3.heading--align-start,
@@ -7147,6 +7155,11 @@ section:not(.section) {
     margin-top: 0px;
     padding-top: 0px; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .layer .section, .layer
+  section {
+    height: 100%; } }
+
 .section > img,
 section > img {
   margin-top: 24px;
@@ -7594,6 +7607,9 @@ section > dl > dd {
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .tiles:not(.tiles--flush) > .tile.tile--hover-border-large {
           margin: 24px; } }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .tiles--fill {
+      height: 100%; } }
   .tiles--fill.box--wrap {
     justify-content: space-around; }
     .tiles--fill.box--wrap > .tile {
