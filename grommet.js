@@ -73,7 +73,7 @@ var Grommet =
 	  Headline: __webpack_require__(197),
 	  Image: __webpack_require__(198),
 	  ImageField: __webpack_require__(200),
-	  Gromet: __webpack_require__(202),
+	  Grommet: __webpack_require__(202),
 	  Label: __webpack_require__(199),
 	  Layer: __webpack_require__(47),
 	  Legend: __webpack_require__(183),
