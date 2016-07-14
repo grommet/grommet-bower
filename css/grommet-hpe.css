@@ -983,7 +983,9 @@ img[height] {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    overflow: auto; } }
+    height: 100%;
+    width: 100%;
+    overflow: visible; } }
 
 .grommet.grommetux-app--inline {
   position: relative; }
@@ -3912,8 +3914,10 @@ img[height] {
 .grommetux-header {
   min-height: 72px;
   width: 100%;
-  margin-bottom: 0px;
-  height: 71px; }
+  margin-bottom: 0px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .grommetux-header {
+      height: 71px; } }
   .grommetux-header a:not(.grommetux-button) {
     color: inherit;
     text-decoration: none; }
@@ -3924,14 +3928,18 @@ img[height] {
     flex-shrink: 0; }
 
 .grommetux-header--large {
-  min-height: 96px;
-  height: 95px; }
+  min-height: 96px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .grommetux-header--large {
+      height: 95px; } }
   .grommetux-header--large .grommetux-header__content {
     line-height: 96px; }
 
 .grommetux-header--small {
-  min-height: 48px;
-  height: 47px; }
+  min-height: 48px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .grommetux-header--small {
+      height: 47px; } }
   .grommetux-header--small .grommetux-header__content {
     line-height: 48px; }
 
@@ -4304,18 +4312,6 @@ h6.grommetux-heading {
   flex: 0 0 auto; }
   .grommetux-status-icon .grommetux-status-icon__base {
     fill: #CCCCCC; }
-  .grommetux-status-icon-critical .grommetux-status-icon__base {
-    fill: #F04953; }
-  .grommetux-status-icon-error .grommetux-status-icon__base {
-    fill: #F04953; }
-  .grommetux-status-icon-warning .grommetux-status-icon__base {
-    fill: #FFD144; }
-  .grommetux-status-icon-ok .grommetux-status-icon__base {
-    fill: #01a982; }
-  .grommetux-status-icon-unknown .grommetux-status-icon__base {
-    fill: #CCCCCC; }
-  .grommetux-status-icon-disabled .grommetux-status-icon__base {
-    fill: #CCCCCC; }
   .grommetux-status-icon-label .grommetux-status-icon__base {
     fill: #CCCCCC; }
   .grommetux-status-icon__detail {
@@ -4340,6 +4336,24 @@ h6.grommetux-heading {
     margin-bottom: 6px; }
     .grommetux-status-icon--small .grommetux-status-icon__detail {
       display: none; }
+
+.grommetux-status-icon-critical .grommetux-status-icon__base {
+  fill: #F04953; }
+
+.grommetux-status-icon-error .grommetux-status-icon__base {
+  fill: #F04953; }
+
+.grommetux-status-icon-warning .grommetux-status-icon__base {
+  fill: #FFD144; }
+
+.grommetux-status-icon-ok .grommetux-status-icon__base {
+  fill: #01a982; }
+
+.grommetux-status-icon-unknown .grommetux-status-icon__base {
+  fill: #CCCCCC; }
+
+.grommetux-status-icon-disabled .grommetux-status-icon__base {
+  fill: #CCCCCC; }
 
 @-webkit-keyframes rotate {
   100% {
@@ -4569,6 +4583,8 @@ html.rtl .right-left-icon--right {
     .grommet.grommetux-layer:not(.grommetux-layer--hidden) + .grommetux-app {
       display: none; } }
   .grommet.grommetux-layer .grommetux-layer__container {
+    display: flex;
+    flex-direction: column;
     background-color: #fff; }
     @media screen and (max-width: 44.9375em) {
       .grommet.grommetux-layer .grommetux-layer__container {
@@ -6758,10 +6774,13 @@ li.grommetux-legend__total {
   .grommetux-search__drop input {
     margin-right: 0px;
     box-sizing: border-box;
-    width: 100%; }
+    width: 100%;
+    padding: 12px; }
     @media screen and (max-width: 44.9375em) {
       .grommetux-search__drop input {
         width: calc(100vw - 72px); } }
+    .grommetux-search__drop input:focus {
+      padding: 11px; }
   .grommetux-search__drop .grommetux-search__suggestion {
     padding: 6px 24px;
     cursor: pointer; }
@@ -6788,11 +6807,15 @@ li.grommetux-legend__total {
     box-sizing: border-box;
     padding-left: 11px;
     padding-right: 47px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 0;
     -webkit-appearance: none; }
     .grommetux-search--inline .grommetux-search__input:focus {
       padding-left: 10px;
-      padding-right: 46px; }
+      padding-right: 46px;
+      padding-top: 11px;
+      padding-bottom: 11px; }
     html.rtl .grommetux-search--inline .grommetux-search__input {
       padding-right: 11px;
       padding-left: 47px; }
@@ -7027,64 +7050,64 @@ section:not(.grommetux-section) {
     vertical-align: top; }
 
 @media screen and (max-width: 44.9375em) {
-  .grommet .grommetux-sidebar {
+  .grommetux-sidebar {
     max-width: 100%;
     width: 100vw; } }
 
 @media screen and (min-width: 45em) {
-  .grommet .grommetux-sidebar {
+  .grommetux-sidebar {
     width: 336px; } }
 
-.grommet .grommetux-sidebar--fixed {
+.grommetux-sidebar--fixed {
   display: flex;
   flex-direction: column; }
-  .grommet .grommetux-sidebar--fixed > * {
+  .grommetux-sidebar--fixed > * {
     flex: 1 1 auto;
     overflow: auto; }
-    .grommet .grommetux-sidebar--fixed > *.grommetux-header, .grommet .grommetux-sidebar--fixed > *.grommetux-footer {
+    .grommetux-sidebar--fixed > *.grommetux-header, .grommetux-sidebar--fixed > *.grommetux-footer {
       flex: 0 0 auto; }
 
 @media screen and (min-width: 45em) {
-  .grommet .grommetux-sidebar--small {
+  .grommetux-sidebar--small {
     width: 240px; } }
 
 @media screen and (min-width: 45em) {
-  .grommet .grommetux-sidebar--large {
+  .grommetux-sidebar--large {
     width: 480px; } }
 
-.grommet .grommetux-sidebar--full {
+.grommetux-sidebar--full {
   min-height: 100vh; }
 
-.grommet .grommetux-split {
+.grommetux-split {
   position: relative;
   overflow: visible; }
   @media screen and (min-width: 45em) {
-    .grommet .grommetux-split {
+    .grommetux-split {
       display: flex; }
-      .grommet .grommetux-split--fixed > * {
+      .grommetux-split--fixed > * {
         position: relative;
         height: 100vh;
         overflow: auto;
         -ms-overflow-style: -ms-autohiding-scrollbar; }
-      .grommet .grommetux-split--flex-right > *:first-child:not(:last-child) {
+      .grommetux-split--flex-right > *:first-child:not(:last-child) {
         flex: 0 0 auto; }
-      .grommet .grommetux-split--flex-right > *:last-child {
+      .grommetux-split--flex-right > *:last-child {
         flex: 1; }
-      .grommet .grommetux-split--flex-left > *:last-child:not(:first-child),
-      .grommet .grommetux-split--flex-left > .object {
+      .grommetux-split--flex-left > *:last-child:not(:first-child),
+      .grommetux-split--flex-left > .object {
         flex: 0 0 auto; }
-      .grommet .grommetux-split--flex-left > *:first-child {
+      .grommetux-split--flex-left > *:first-child {
         flex: 1; }
-      .grommet .grommetux-split--flex-both > * {
+      .grommetux-split--flex-both > * {
         flex: 1; }
-      .grommet .grommetux-split--separator > * {
+      .grommetux-split--separator > * {
         border-right: 1px solid #000; }
-        .grommet .grommetux-split--separator > *:last-child {
+        .grommetux-split--separator > *:last-child {
           border-right: none; } }
   @media screen and (max-width: 44.9375em) {
-    .grommet .grommetux-split--separator > * {
+    .grommetux-split--separator > * {
       border-bottom: 1px solid #000; }
-      .grommet .grommetux-split--separator > *:last-child {
+      .grommetux-split--separator > *:last-child {
         border-bottom: none; } }
 
 .grommetux-skip-link-anchor {
