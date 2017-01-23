@@ -4764,7 +4764,6 @@ _::-webkit-:not(:root:root),
 
 .grommetux-form {
   position: relative;
-  width: 480px;
   max-width: 100%; }
   @media screen and (min-width: 45em) {
     .grommetux-form .grommetux-form-field .grommetux-tiles__container {
@@ -4850,6 +4849,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form > .grommetux-header .grommetux-header__wrapper {
     background-color: inherit; }
   .grommetux-form fieldset {
+    min-width: 0;
     border: none;
     margin: 0px;
     margin-bottom: 2rem;
@@ -4876,6 +4876,9 @@ _::-webkit-:not(:root:root),
       .grommetux-form fieldset > .grommetux-form-fields > .grommetux-button {
         flex: 0 0 auto; }
 
+.grommetux-form:not(.grommetux-form--plain) {
+  width: 480px; }
+
 .grommetux-form--fill {
   min-width: 0px; }
 
@@ -4892,7 +4895,8 @@ _::-webkit-:not(:root:root),
   opacity: 1; }
   @media screen and (min-width: 45em) {
     .grommetux-form-field {
-      width: 100%;
+      max-width: 100%;
+      width: 480px;
       overflow: auto;
       transition: all 0.4s, padding-top 0.3s 0.1s, padding-bottom 0.3s 0.1s; } }
   @media screen and (max-width: 44.9375em) {
@@ -8616,9 +8620,8 @@ section:not(.grommetux-section) {
     width: 480px; } }
 
 .grommetux-sidebar--full {
-  min-height: 100vh; }
-  .grommetux-sidebar--full .grommetux-sidebar--fixed {
-    height: 100vh; }
+  height: 100vh;
+  overflow: auto; }
 
 .grommetux-split {
   position: relative;
