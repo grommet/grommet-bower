@@ -5599,6 +5599,8 @@ h6.grommetux-heading {
     stroke: inherit; }
   .grommetux-control-icon:not([class*="color-index-plain"]) *[fill*="#"] {
     fill: inherit; }
+  .grommetux-control-icon:not([class*="color-index-plain"]) *[fill-rule] {
+    stroke: none; }
   .grommetux-background-color-index--dark .grommetux-control-icon, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-control-icon {
     fill: rgba(255, 255, 255, 0.7);
     stroke: rgba(255, 255, 255, 0.7); }
@@ -6801,15 +6803,6 @@ html.rtl .right-left-icon--right {
       text-decoration: none;
       color: #000;
       background-color: rgba(221, 221, 221, 0.5); }
-    .grommetux-background-color-index--dark .grommetux-menu__drop .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-menu__drop .grommetux-anchor.active {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.15); }
-    .grommetux-background-color-index--dark .grommetux-menu__drop .grommetux-anchor:hover, .grommetux-background-color-index--dark .grommetux-menu__drop .grommetux-anchor:focus, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-menu__drop .grommetux-anchor:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-menu__drop .grommetux-anchor:focus {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.1); }
-    .grommetux-background-color-index--light .grommetux-menu__drop .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-menu__drop .grommetux-anchor:hover, .grommetux-background-color-index--light .grommetux-menu__drop .grommetux-anchor:focus, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-menu__drop .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-menu__drop .grommetux-anchor:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-menu__drop .grommetux-anchor:focus {
-      color: #000;
-      background-color: rgba(221, 221, 221, 0.5); }
   .grommetux-menu__drop .grommetux-menu__control {
     text-align: left; }
     .grommet.rtl .grommetux-menu__drop .grommetux-menu__control {
@@ -6846,6 +6839,15 @@ html.rtl .right-left-icon--right {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1; }
+  .grommetux-menu__drop.grommetux-background-color-index--dark .grommetux-anchor.active, .grommetux-background-color-index--light .grommetux-menu__drop.grommetux-background-color-index--dark .grommetux-anchor.active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.15); }
+  .grommetux-menu__drop.grommetux-background-color-index--dark .grommetux-anchor:hover, .grommetux-menu__drop.grommetux-background-color-index--dark .grommetux-anchor:focus, .grommetux-background-color-index--light .grommetux-menu__drop.grommetux-background-color-index--dark .grommetux-anchor:hover, .grommetux-background-color-index--light .grommetux-menu__drop.grommetux-background-color-index--dark .grommetux-anchor:focus {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:hover, .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:focus, .grommetux-background-color-index--dark .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor.active, .grommetux-background-color-index--dark .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:hover, .grommetux-background-color-index--dark .grommetux-menu__drop.grommetux-background-color-index--light .grommetux-anchor:focus {
+    color: #000;
+    background-color: rgba(221, 221, 221, 0.5); }
 
 .grommetux-menu--inline.grommetux-menu--row {
   line-height: 48px; }
