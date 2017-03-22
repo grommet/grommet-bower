@@ -898,8 +898,7 @@ ul, ol, dd {
     stroke: #666; }
   .grommetux-anchor__icon:hover .grommetux-control-icon {
     fill: #000;
-    stroke: #000;
-    transform: scale(1.1); }
+    stroke: #000; }
   .grommetux-background-color-index--dark .grommetux-anchor__icon, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor__icon {
     color: rgba(255, 255, 255, 0.85); }
     .grommetux-background-color-index--dark .grommetux-anchor__icon:visited, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor__icon:visited {
@@ -929,6 +928,9 @@ ul, ol, dd {
     fill: #000;
     stroke: #000; }
 
+.grommetux-anchor--animate-icon:hover .grommetux-control-icon {
+  transform: scale(1.1); }
+
 .grommetux-anchor--icon {
   flex: 0 0 auto; }
 
@@ -950,9 +952,6 @@ ul, ol, dd {
   .grommetux-anchor--primary > span,
   .grommetux-anchor--icon-label > span {
     vertical-align: middle; }
-  .grommetux-anchor--primary:hover:not(.grommetux-anchor--disabled) .grommetux-control-icon,
-  .grommetux-anchor--icon-label:hover:not(.grommetux-anchor--disabled) .grommetux-control-icon {
-    transform: scale(1.1); }
 
 .grommetux-anchor--reverse .grommetux-control-icon {
   margin-right: 0;
@@ -968,8 +967,6 @@ ul, ol, dd {
   .grommetux-anchor--icon-label:not(.grommetux-anchor--primary):hover:not(.grommetux-anchor--disabled) {
     color: #000;
     text-decoration: none; }
-    .grommetux-anchor--icon-label:not(.grommetux-anchor--primary):hover:not(.grommetux-anchor--disabled) .grommetux-control-icon {
-      transform: scale(1.1); }
   .grommetux-background-color-index--dark .grommetux-anchor--icon-label:not(.grommetux-anchor--primary), .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor--icon-label:not(.grommetux-anchor--primary) {
     color: rgba(255, 255, 255, 0.85); }
     .grommetux-background-color-index--dark .grommetux-anchor--icon-label:not(.grommetux-anchor--primary):visited, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-anchor--icon-label:not(.grommetux-anchor--primary):visited {
