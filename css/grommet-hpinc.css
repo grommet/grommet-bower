@@ -861,6 +861,25 @@ ul, ol, dd {
     .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
       color: transparent; }
 
+.grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button) {
+  color: rgba(255, 255, 255, 0.85); }
+  .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):visited {
+    color: rgba(255, 255, 255, 0.85); }
+  .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):hover {
+    color: #fff; }
+
+.grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button) {
+  color: #2883d7; }
+  .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited {
+    color: #2883d7; }
+  .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover {
+    color: #0076a8; }
+
+.grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button) {
+  color: transparent; }
+  .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button):hover {
+    color: transparent; }
+
 .grommetux-anchor {
   color: #2883d7;
   text-decoration: none;
@@ -2023,7 +2042,6 @@ ul, ol, dd {
 .grommet input[type="button"],
 .grommet input[type="submit"],
 .grommet button:not(.grommetux-button) {
-  padding: 6px 22px;
   background-color: transparent;
   border: 2px solid #0096D6;
   border-radius: 0px 5px;
@@ -2037,6 +2055,10 @@ ul, ol, dd {
   outline: none;
   min-width: 120px;
   max-width: 384px; }
+  .grommet input[type="button"]:not(.grommetux-button--box),
+  .grommet input[type="submit"]:not(.grommetux-button--box),
+  .grommet button:not(.grommetux-button):not(.grommetux-button--box) {
+    padding: 6px 22px; }
   @media screen and (min-width: 45em) {
     .grommet input[type="button"],
     .grommet input[type="submit"],
@@ -2066,7 +2088,6 @@ ul, ol, dd {
     text-decoration: none; }
 
 .grommetux-button {
-  padding: 6px 22px;
   background-color: transparent;
   border: 2px solid #0096D6;
   border-radius: 0px 5px;
@@ -2080,6 +2101,8 @@ ul, ol, dd {
   outline: none;
   min-width: 120px;
   max-width: 384px; }
+  .grommetux-button:not(.grommetux-button--box) {
+    padding: 6px 22px; }
   @media screen and (min-width: 45em) {
     .grommetux-button {
       transition: 0.1s ease-in-out; } }
@@ -2088,7 +2111,7 @@ ul, ol, dd {
   .grommetux-background-color-index--light .grommetux-button, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button {
     border-color: #0096D6; }
   .grommetux-button--focus {
-    border-color: #99d5ef;
+    border: 2px solid #99d5ef;
     box-shadow: 0 0 1px 1px #99d5ef; }
   .grommetux-background-color-index--dark .grommetux-button, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button {
     color: rgba(255, 255, 255, 0.85); }
@@ -2106,6 +2129,16 @@ ul, ol, dd {
     color: transparent; }
     .grommetux-background-color-index--pending .grommetux-button:visited, .grommetux-background-color-index--pending .grommetux-button.active, .grommetux-background-color-index--pending .grommetux-button:hover {
       color: transparent; }
+
+.grommetux-button--hover-background:hover {
+  background-color: rgba(221, 221, 221, 0.5);
+  color: #000; }
+  .grommetux-background-color-index--dark .grommetux-button--hover-background:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button--hover-background:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff; }
+  .grommetux-background-color-index--light .grommetux-button--hover-background:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button--hover-background:hover {
+    background-color: rgba(221, 221, 221, 0.5);
+    color: #000; }
 
 .grommetux-button:hover .grommetux-control-icon {
   fill: #000;
@@ -2131,14 +2164,18 @@ ul, ol, dd {
 .grommetux-button--accent:not(.grommetux-button--focus) {
   border-color: #E6734B; }
 
+.grommetux-button--critical:not(.grommetux-button--focus) {
+  border-color: #F04B37; }
+
 .grommetux-button--align-start {
   text-align: left; }
   html.rtl .grommetux-button--align-start {
     text-align: right; }
 
+.grommetux-button--plain:not(.grommetux-button--box) {
+  padding: 0; }
+
 .grommetux-button--plain {
-  border: none;
-  padding: 0;
   width: auto;
   height: auto;
   min-width: 0;
@@ -2151,6 +2188,9 @@ ul, ol, dd {
     padding: 12px; }
     .grommetux-button--plain .grommetux-button__icon + .grommetux-button__label {
       margin-left: 0; }
+
+.grommetux-button--plain:not(.grommetux-button--focus) {
+  border: 2px solid transparent; }
 
 .grommetux-button:not(.grommetux-button--plain) .grommetux-button__icon + .grommetux-button__label {
   margin-left: 12px; }
@@ -4286,7 +4326,8 @@ _::-webkit-:not(:root:root),
   font-weight: 700; }
 
 .grommetux-distribution {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .grommetux-distribution__graphic {
   position: absolute;
@@ -5095,8 +5136,8 @@ _::-webkit-:not(:root:root),
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     margin-left: 24px;
     margin-right: 24px; }
   .grommetux-form-field__contents > .grommetux-search-input,
@@ -7002,11 +7043,12 @@ html.rtl .right-left-icon--right {
   .grommetux-meter__graphic-container > a {
     text-decoration: none; }
 
-.grommetux-meter__graphic:focus {
-  outline: #99d5ef solid 1px; }
-
-.grommetux-meter__graphic text {
-  fill: #666; }
+.grommetux-meter__graphic {
+  max-width: 100%; }
+  .grommetux-meter__graphic:focus {
+    outline: #99d5ef solid 1px; }
+  .grommetux-meter__graphic text {
+    fill: #666; }
 
 .grommetux-meter:not(.grommetux-meter--vertical) .grommetux-meter__graphic-container {
   display: inline-block; }
@@ -9493,7 +9535,8 @@ section:not(.grommetux-section) {
 
 .grommetux-toast--closing {
   -webkit-animation: toast-raise 1s;
-  animation: toast-raise 1s; }
+  animation: toast-raise 1s;
+  animation-fill-mode: forwards; }
 
 .grommetux-toast__closer {
   flex: 0 0 auto; }
@@ -10290,6 +10333,12 @@ section:not(.grommetux-section) {
 .grommetux-button:not(.grommetux-button--disabled).grommetux-button--secondary:active {
   border-color: rgba(0, 0, 0, 0.6); }
 
+.grommetux-button:not(.grommetux-button--disabled).grommetux-button--critical:hover {
+  border-color: #cb240f; }
+
+.grommetux-button:not(.grommetux-button--disabled).grommetux-button--critical:active {
+  border-color: #b41f0d; }
+
 .grommetux-button:not(.grommetux-button--disabled).grommetux-button--accent:hover {
   border-color: #c9481c;
   background-color: #c9481c; }
@@ -10307,3 +10356,6 @@ section:not(.grommetux-section) {
 
 .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled).grommetux-button--accent:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled).grommetux-button--accent:hover {
   border-color: #c9481c; }
+
+.grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled).grommetux-button--critical:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled).grommetux-button--critical:hover {
+  border-color: #cb240f; }

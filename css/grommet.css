@@ -860,6 +860,25 @@ ul, ol, dd {
     .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--pending .grommet a:not(.grommetux-anchor):not(.grommetux-button):hover {
       color: transparent; }
 
+.grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button) {
+  color: rgba(255, 255, 255, 0.85); }
+  .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):visited {
+    color: rgba(255, 255, 255, 0.85); }
+  .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light .grommetux-background-color-index--dark a:not(.grommetux-anchor):not(.grommetux-button):hover {
+    color: #fff; }
+
+.grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button), .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button) {
+  color: #865CD6; }
+  .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):visited {
+    color: #865CD6; }
+  .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--dark .grommetux-background-color-index--light a:not(.grommetux-anchor):not(.grommetux-button):hover {
+    color: #6b37cd; }
+
+.grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button) {
+  color: transparent; }
+  .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button):visited, .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button).active, .grommetux-background-color-index--pending a:not(.grommetux-anchor):not(.grommetux-button):hover {
+    color: transparent; }
+
 .grommetux-anchor {
   color: #865CD6;
   text-decoration: none;
@@ -2022,7 +2041,6 @@ ul, ol, dd {
 .grommet input[type="button"],
 .grommet input[type="submit"],
 .grommet button:not(.grommetux-button) {
-  padding: 6px 22px;
   background-color: transparent;
   border: 2px solid #865CD6;
   border-radius: 4px;
@@ -2036,6 +2054,10 @@ ul, ol, dd {
   outline: none;
   min-width: 120px;
   max-width: 384px; }
+  .grommet input[type="button"]:not(.grommetux-button--box),
+  .grommet input[type="submit"]:not(.grommetux-button--box),
+  .grommet button:not(.grommetux-button):not(.grommetux-button--box) {
+    padding: 6px 22px; }
   @media screen and (min-width: 45em) {
     .grommet input[type="button"],
     .grommet input[type="submit"],
@@ -2065,7 +2087,6 @@ ul, ol, dd {
     text-decoration: none; }
 
 .grommetux-button {
-  padding: 6px 22px;
   background-color: transparent;
   border: 2px solid #865CD6;
   border-radius: 4px;
@@ -2079,6 +2100,8 @@ ul, ol, dd {
   outline: none;
   min-width: 120px;
   max-width: 384px; }
+  .grommetux-button:not(.grommetux-button--box) {
+    padding: 6px 22px; }
   @media screen and (min-width: 45em) {
     .grommetux-button {
       transition: 0.1s ease-in-out; } }
@@ -2087,7 +2110,7 @@ ul, ol, dd {
   .grommetux-background-color-index--light .grommetux-button, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button {
     border-color: #865CD6; }
   .grommetux-button--focus {
-    border-color: #00CCEB;
+    border: 2px solid #00CCEB;
     box-shadow: 0 0 1px 1px #00CCEB; }
   .grommetux-background-color-index--dark .grommetux-button, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button {
     color: rgba(255, 255, 255, 0.85); }
@@ -2105,6 +2128,16 @@ ul, ol, dd {
     color: transparent; }
     .grommetux-background-color-index--pending .grommetux-button:visited, .grommetux-background-color-index--pending .grommetux-button.active, .grommetux-background-color-index--pending .grommetux-button:hover {
       color: transparent; }
+
+.grommetux-button--hover-background:hover {
+  background-color: rgba(221, 221, 221, 0.5);
+  color: #000; }
+  .grommetux-background-color-index--dark .grommetux-button--hover-background:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button--hover-background:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff; }
+  .grommetux-background-color-index--light .grommetux-button--hover-background:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button--hover-background:hover {
+    background-color: rgba(221, 221, 221, 0.5);
+    color: #000; }
 
 .grommetux-button:hover .grommetux-control-icon {
   fill: #000;
@@ -2130,14 +2163,18 @@ ul, ol, dd {
 .grommetux-button--accent:not(.grommetux-button--focus) {
   border-color: #00CCEB; }
 
+.grommetux-button--critical:not(.grommetux-button--focus) {
+  border-color: #FF324D; }
+
 .grommetux-button--align-start {
   text-align: left; }
   html.rtl .grommetux-button--align-start {
     text-align: right; }
 
+.grommetux-button--plain:not(.grommetux-button--box) {
+  padding: 0; }
+
 .grommetux-button--plain {
-  border: none;
-  padding: 0;
   width: auto;
   height: auto;
   min-width: 0;
@@ -2150,6 +2187,9 @@ ul, ol, dd {
     padding: 12px; }
     .grommetux-button--plain .grommetux-button__icon + .grommetux-button__label {
       margin-left: 0; }
+
+.grommetux-button--plain:not(.grommetux-button--focus) {
+  border: 2px solid transparent; }
 
 .grommetux-button:not(.grommetux-button--plain) .grommetux-button__icon + .grommetux-button__label {
   margin-left: 12px; }
@@ -4238,7 +4278,8 @@ _::-webkit-:not(:root:root),
   font-weight: 700; }
 
 .grommetux-distribution {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .grommetux-distribution__graphic {
   position: absolute;
@@ -5045,8 +5086,8 @@ _::-webkit-:not(:root:root),
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     margin-left: 24px;
     margin-right: 24px; }
   .grommetux-form-field__contents > .grommetux-search-input,
@@ -6945,11 +6986,12 @@ html.rtl .right-left-icon--right {
   .grommetux-meter__graphic-container > a {
     text-decoration: none; }
 
-.grommetux-meter__graphic:focus {
-  outline: #00CCEB solid 1px; }
-
-.grommetux-meter__graphic text {
-  fill: #666; }
+.grommetux-meter__graphic {
+  max-width: 100%; }
+  .grommetux-meter__graphic:focus {
+    outline: #00CCEB solid 1px; }
+  .grommetux-meter__graphic text {
+    fill: #666; }
 
 .grommetux-meter:not(.grommetux-meter--vertical) .grommetux-meter__graphic-container {
   display: inline-block; }
@@ -9405,7 +9447,8 @@ section:not(.grommetux-section) {
 
 .grommetux-toast--closing {
   -webkit-animation: toast-raise 1s;
-  animation: toast-raise 1s; }
+  animation: toast-raise 1s;
+  animation-fill-mode: forwards; }
 
 .grommetux-toast__closer {
   flex: 0 0 auto; }
@@ -10184,6 +10227,8 @@ section:not(.grommetux-section) {
     box-shadow: 0px 0px 0px 2px #DC2878; }
   .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--accent:hover {
     box-shadow: 0px 0px 0px 2px #00CCEB; }
+  .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical:hover {
+    box-shadow: 0px 0px 0px 2px #FF324D; }
   .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill):hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill):hover {
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7); }
   .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--primary:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--primary:hover {
@@ -10192,6 +10237,10 @@ section:not(.grommetux-section) {
     box-shadow: 0px 0px 0px 2px #DC2878; }
   .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--accent:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--accent:hover {
     box-shadow: 0px 0px 0px 2px #00CCEB; }
+  .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical {
+    border-color: #FF324D; }
+    .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical:hover, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical:hover {
+      box-shadow: 0px 0px 0px 2px #FF324D; }
   .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill):hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill):hover {
     box-shadow: 0px 0px 0px 2px #865CD6; }
   .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--primary:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--primary:hover {
@@ -10200,6 +10249,8 @@ section:not(.grommetux-section) {
     box-shadow: 0px 0px 0px 2px #DC2878; }
   .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--accent:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--accent:hover {
     box-shadow: 0px 0px 0px 2px #00CCEB; }
+  .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical:hover, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-button:not(.grommetux-button--disabled):not(.grommetux-button--plain):not(.grommetux-button--fill).grommetux-button--critical:hover {
+    box-shadow: 0px 0px 0px 2px #FF324D; }
   .grommetux-button--fill:not(.grommetux-button--disabled):not(.grommetux-button--plain):hover {
     padding: 4px 20px;
     border-width: 4px; }
