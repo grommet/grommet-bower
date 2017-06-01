@@ -1710,31 +1710,27 @@ ul, ol, dd {
 .grommetux-box--full {
   position: relative;
   max-width: 100%;
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  overflow: auto; }
   @media screen and (max-width: 44.9375em) {
-    .grommetux-box--full {
+    .grommetux-box--full.grommetux-box--full-responsive {
       min-height: 100vh;
       height: 100%; } }
-  @media screen and (min-width: 45em) {
-    .grommetux-box--full {
-      height: 100vh;
-      max-height: 100%;
-      overflow: auto; } }
 
 .grommetux-box--full-horizontal {
   max-width: 100%;
   width: 100vw; }
 
-@media screen and (max-width: 44.9375em) {
-  .grommetux-box--full-vertical {
-    min-height: 100vh;
-    height: 100%; } }
-
-@media screen and (min-width: 45em) {
-  .grommetux-box--full-vertical {
-    height: 100vh;
-    max-height: 100%;
-    overflow: auto; } }
+.grommetux-box--full-vertical {
+  height: 100vh;
+  max-height: 100%;
+  overflow: auto; }
+  @media screen and (max-width: 44.9375em) {
+    .grommetux-box--full-vertical.grommetux-box--full-responsive {
+      min-height: 100vh;
+      height: 100%; } }
 
 .grommetux-box--size {
   max-width: 100%;
