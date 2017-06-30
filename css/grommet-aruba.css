@@ -1749,6 +1749,12 @@ ul, ol, dd {
 .grommetux-box--size-large {
   width: 576px; }
 
+.grommetux-box--size-xlarge {
+  width: 720px; }
+
+.grommetux-box--size-xxlarge {
+  width: 960px; }
+
 .grommetux-box--size-auto {
   width: auto; }
 
@@ -2394,7 +2400,9 @@ ul, ol, dd {
 
 .grommetux-carousel__track {
   display: flex;
-  max-width: none;
+  max-width: none; }
+
+.grommetux-carousel__track--animate {
   transition: all 0.8s; }
 
 .grommetux-carousel__arrow {
@@ -3446,9 +3454,21 @@ _::-webkit-:not(:root:root),
 
 .grommetux-background-color-index--dark, .grommetux-background-color-index--light .grommetux-background-color-index--dark {
   color: #fff; }
+  .grommetux-background-color-index--dark input::-webkit-input-placeholder, .grommetux-background-color-index--light .grommetux-background-color-index--dark input::-webkit-input-placeholder {
+    color: #fff; }
+  .grommetux-background-color-index--dark input::-moz-placeholder, .grommetux-background-color-index--light .grommetux-background-color-index--dark input::-moz-placeholder {
+    color: #fff; }
+  .grommetux-background-color-index--dark input:-ms-input-placeholder, .grommetux-background-color-index--light .grommetux-background-color-index--dark input:-ms-input-placeholder {
+    color: #fff; }
 
 .grommetux-background-color-index--light, .grommetux-background-color-index--dark .grommetux-background-color-index--light {
   color: #333; }
+  .grommetux-background-color-index--light input::-webkit-input-placeholder, .grommetux-background-color-index--dark .grommetux-background-color-index--light input::-webkit-input-placeholder {
+    color: #333; }
+  .grommetux-background-color-index--light input::-moz-placeholder, .grommetux-background-color-index--dark .grommetux-background-color-index--light input::-moz-placeholder {
+    color: #333; }
+  .grommetux-background-color-index--light input:-ms-input-placeholder, .grommetux-background-color-index--dark .grommetux-background-color-index--light input:-ms-input-placeholder {
+    color: #333; }
 
 .grommetux-background-color-index-brand {
   background-color: #ED6F00; }
@@ -4494,7 +4514,7 @@ _::-webkit-:not(:root:root),
     max-width: 100%; }
 
 .grommet.grommetux-drop {
-  position: absolute;
+  position: fixed;
   z-index: 20;
   border-radius: 4px;
   overflow: auto; }
@@ -5149,7 +5169,7 @@ header.grommetux-header--primary .grommetux-header__wrapper {
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 3; }
+    z-index: 50; }
     @media screen and (min-width: 45em) {
       .grommetux-header__container--fixed .grommetux-header__wrapper .grommetux-header {
         position: fixed; } }
@@ -7711,7 +7731,8 @@ html.rtl .right-left-icon--right {
   font-size: 19px;
   font-size: 1.1875rem;
   line-height: 24px; }
-  .grommetux-notification--status-critical .grommetux-notification__status .grommetux-status-icon__base {
+  .grommetux-notification--status-critical .grommetux-notification__status .grommetux-status-icon__base,
+  .grommetux-notification--status-critical .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
     fill: #fff; }
   .grommetux-notification--status-critical .grommetux-notification__status .grommetux-status-icon__detail {
     stroke: #dd3000;
@@ -7722,7 +7743,8 @@ html.rtl .right-left-icon--right {
   .grommetux-notification--status-critical .grommetux-notification__close {
     stroke: #fff;
     fill: #fff; }
-  .grommetux-notification--status-error .grommetux-notification__status .grommetux-status-icon__base {
+  .grommetux-notification--status-error .grommetux-notification__status .grommetux-status-icon__base,
+  .grommetux-notification--status-error .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
     fill: #fff; }
   .grommetux-notification--status-error .grommetux-notification__status .grommetux-status-icon__detail {
     stroke: #dd3000;
@@ -7733,7 +7755,8 @@ html.rtl .right-left-icon--right {
   .grommetux-notification--status-error .grommetux-notification__close {
     stroke: #fff;
     fill: #fff; }
-  .grommetux-notification--status-warning .grommetux-notification__status .grommetux-status-icon__base {
+  .grommetux-notification--status-warning .grommetux-notification__status .grommetux-status-icon__base,
+  .grommetux-notification--status-warning .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
     fill: #fff; }
   .grommetux-notification--status-warning .grommetux-notification__status .grommetux-status-icon__detail {
     stroke: #f0c954;
@@ -7744,7 +7767,8 @@ html.rtl .right-left-icon--right {
   .grommetux-notification--status-warning .grommetux-notification__close {
     stroke: #fff;
     fill: #fff; }
-  .grommetux-notification--status-ok .grommetux-notification__status .grommetux-status-icon__base {
+  .grommetux-notification--status-ok .grommetux-notification__status .grommetux-status-icon__base,
+  .grommetux-notification--status-ok .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
     fill: #fff; }
   .grommetux-notification--status-ok .grommetux-notification__status .grommetux-status-icon__detail {
     stroke: #008375;
@@ -7755,7 +7779,8 @@ html.rtl .right-left-icon--right {
   .grommetux-notification--status-ok .grommetux-notification__close {
     stroke: #fff;
     fill: #fff; }
-  .grommetux-notification--status-unknown .grommetux-notification__status .grommetux-status-icon__base {
+  .grommetux-notification--status-unknown .grommetux-notification__status .grommetux-status-icon__base,
+  .grommetux-notification--status-unknown .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
     fill: #fff; }
   .grommetux-notification--status-unknown .grommetux-notification__status .grommetux-status-icon__detail {
     stroke: #C3C5C8;
@@ -7766,7 +7791,8 @@ html.rtl .right-left-icon--right {
   .grommetux-notification--status-unknown .grommetux-notification__close {
     stroke: #fff;
     fill: #fff; }
-  .grommetux-notification--status-disabled .grommetux-notification__status .grommetux-status-icon__base {
+  .grommetux-notification--status-disabled .grommetux-notification__status .grommetux-status-icon__base,
+  .grommetux-notification--status-disabled .grommetux-notification__status .grommetux-status-icon__base .grommetux-status-icon__small {
     fill: #fff; }
   .grommetux-notification--status-disabled .grommetux-notification__status .grommetux-status-icon__detail {
     stroke: #C3C5C8;
@@ -9964,62 +9990,111 @@ section:not(.grommetux-section) {
 .grommetux-world-map {
   width: 100%; }
 
-.grommetux-world-map__continent {
-  stroke-width: 6px;
+.grommetux-world-map__continent,
+.grommetux-world-map__place {
   stroke-linecap: round;
   transition: stroke-width 0.3s;
   outline: none; }
-  .grommetux-world-map__continent.grommetux-color-index-loading {
+  .grommetux-world-map__continent.grommetux-color-index-loading,
+  .grommetux-world-map__place.grommetux-color-index-loading {
     stroke: #ddd;
     stroke-dasharray: 1px 10px;
     stroke-dashoffset: 0; }
-  .grommetux-world-map__continent.grommetux-color-index-unset {
+  .grommetux-world-map__continent.grommetux-color-index-unset,
+  .grommetux-world-map__place.grommetux-color-index-unset {
     stroke: #ddd; }
-  .grommetux-world-map__continent.grommetux-color-index-brand {
+  .grommetux-world-map__continent.grommetux-color-index-brand,
+  .grommetux-world-map__place.grommetux-color-index-brand {
     stroke: #ED6F00; }
-  .grommetux-world-map__continent.grommetux-color-index-critical {
+  .grommetux-world-map__continent.grommetux-color-index-critical,
+  .grommetux-world-map__place.grommetux-color-index-critical {
     stroke: #dd3000; }
-  .grommetux-world-map__continent.grommetux-color-index-error {
+  .grommetux-world-map__continent.grommetux-color-index-error,
+  .grommetux-world-map__place.grommetux-color-index-error {
     stroke: #dd3000; }
-  .grommetux-world-map__continent.grommetux-color-index-warning {
+  .grommetux-world-map__continent.grommetux-color-index-warning,
+  .grommetux-world-map__place.grommetux-color-index-warning {
     stroke: #f0c954; }
-  .grommetux-world-map__continent.grommetux-color-index-ok {
+  .grommetux-world-map__continent.grommetux-color-index-ok,
+  .grommetux-world-map__place.grommetux-color-index-ok {
     stroke: #008375; }
-  .grommetux-world-map__continent.grommetux-color-index-unknown {
+  .grommetux-world-map__continent.grommetux-color-index-unknown,
+  .grommetux-world-map__place.grommetux-color-index-unknown {
     stroke: #C3C5C8; }
-  .grommetux-world-map__continent.grommetux-color-index-disabled {
+  .grommetux-world-map__continent.grommetux-color-index-disabled,
+  .grommetux-world-map__place.grommetux-color-index-disabled {
     stroke: #C3C5C8; }
-  .grommetux-world-map__continent.grommetux-color-index-graph-1, .grommetux-world-map__continent.grommetux-color-index-graph-5 {
+  .grommetux-world-map__continent.grommetux-color-index-graph-1, .grommetux-world-map__continent.grommetux-color-index-graph-5,
+  .grommetux-world-map__place.grommetux-color-index-graph-1,
+  .grommetux-world-map__place.grommetux-color-index-graph-5 {
     stroke: #2E7CBE; }
-  .grommetux-world-map__continent.grommetux-color-index-graph-2, .grommetux-world-map__continent.grommetux-color-index-graph-6 {
+  .grommetux-world-map__continent.grommetux-color-index-graph-2, .grommetux-world-map__continent.grommetux-color-index-graph-6,
+  .grommetux-world-map__place.grommetux-color-index-graph-2,
+  .grommetux-world-map__place.grommetux-color-index-graph-6 {
     stroke: #99DAF8; }
-  .grommetux-world-map__continent.grommetux-color-index-graph-3, .grommetux-world-map__continent.grommetux-color-index-graph-7 {
+  .grommetux-world-map__continent.grommetux-color-index-graph-3, .grommetux-world-map__continent.grommetux-color-index-graph-7,
+  .grommetux-world-map__place.grommetux-color-index-graph-3,
+  .grommetux-world-map__place.grommetux-color-index-graph-7 {
     stroke: #F1F9F7; }
-  .grommetux-world-map__continent.grommetux-color-index-graph-4, .grommetux-world-map__continent.grommetux-color-index-graph-8 {
+  .grommetux-world-map__continent.grommetux-color-index-graph-4, .grommetux-world-map__continent.grommetux-color-index-graph-8,
+  .grommetux-world-map__place.grommetux-color-index-graph-4,
+  .grommetux-world-map__place.grommetux-color-index-graph-8 {
     stroke: #F9F9EC; }
-  .grommetux-world-map__continent.grommetux-color-index-grey-1, .grommetux-world-map__continent.grommetux-color-index-grey-5 {
+  .grommetux-world-map__continent.grommetux-color-index-grey-1, .grommetux-world-map__continent.grommetux-color-index-grey-5,
+  .grommetux-world-map__place.grommetux-color-index-grey-1,
+  .grommetux-world-map__place.grommetux-color-index-grey-5 {
     stroke: #000001; }
-  .grommetux-world-map__continent.grommetux-color-index-grey-2, .grommetux-world-map__continent.grommetux-color-index-grey-6 {
+  .grommetux-world-map__continent.grommetux-color-index-grey-2, .grommetux-world-map__continent.grommetux-color-index-grey-6,
+  .grommetux-world-map__place.grommetux-color-index-grey-2,
+  .grommetux-world-map__place.grommetux-color-index-grey-6 {
     stroke: #646569; }
-  .grommetux-world-map__continent.grommetux-color-index-grey-3, .grommetux-world-map__continent.grommetux-color-index-grey-7 {
+  .grommetux-world-map__continent.grommetux-color-index-grey-3, .grommetux-world-map__continent.grommetux-color-index-grey-7,
+  .grommetux-world-map__place.grommetux-color-index-grey-3,
+  .grommetux-world-map__place.grommetux-color-index-grey-7 {
     stroke: #C3C5C8; }
-  .grommetux-world-map__continent.grommetux-color-index-grey-4, .grommetux-world-map__continent.grommetux-color-index-grey-8 {
+  .grommetux-world-map__continent.grommetux-color-index-grey-4, .grommetux-world-map__continent.grommetux-color-index-grey-8,
+  .grommetux-world-map__place.grommetux-color-index-grey-4,
+  .grommetux-world-map__place.grommetux-color-index-grey-8 {
     stroke: #F6F6F7; }
-  .grommetux-world-map__continent.grommetux-color-index-accent-1, .grommetux-world-map__continent.grommetux-color-index-accent-3 {
+  .grommetux-world-map__continent.grommetux-color-index-accent-1, .grommetux-world-map__continent.grommetux-color-index-accent-3,
+  .grommetux-world-map__place.grommetux-color-index-accent-1,
+  .grommetux-world-map__place.grommetux-color-index-accent-3 {
     stroke: #9fd4c9; }
-  .grommetux-world-map__continent.grommetux-color-index-accent-2, .grommetux-world-map__continent.grommetux-color-index-accent-4 {
+  .grommetux-world-map__continent.grommetux-color-index-accent-2, .grommetux-world-map__continent.grommetux-color-index-accent-4,
+  .grommetux-world-map__place.grommetux-color-index-accent-2,
+  .grommetux-world-map__place.grommetux-color-index-accent-4 {
     stroke: #d5d848; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-1, .grommetux-world-map__continent.grommetux-color-index-neutral-4 {
+  .grommetux-world-map__continent.grommetux-color-index-neutral-1, .grommetux-world-map__continent.grommetux-color-index-neutral-4,
+  .grommetux-world-map__place.grommetux-color-index-neutral-1,
+  .grommetux-world-map__place.grommetux-color-index-neutral-4 {
     stroke: #646569; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-2, .grommetux-world-map__continent.grommetux-color-index-neutral-5 {
+  .grommetux-world-map__continent.grommetux-color-index-neutral-2, .grommetux-world-map__continent.grommetux-color-index-neutral-5,
+  .grommetux-world-map__place.grommetux-color-index-neutral-2,
+  .grommetux-world-map__place.grommetux-color-index-neutral-5 {
     stroke: #004876; }
-  .grommetux-world-map__continent.grommetux-color-index-neutral-3, .grommetux-world-map__continent.grommetux-color-index-neutral-6 {
+  .grommetux-world-map__continent.grommetux-color-index-neutral-3, .grommetux-world-map__continent.grommetux-color-index-neutral-6,
+  .grommetux-world-map__place.grommetux-color-index-neutral-3,
+  .grommetux-world-map__place.grommetux-color-index-neutral-6 {
     stroke: #004876; }
-  .grommetux-world-map__continent.grommetux-color-index-light-1, .grommetux-world-map__continent.grommetux-color-index-light-3 {
+  .grommetux-world-map__continent.grommetux-color-index-light-1, .grommetux-world-map__continent.grommetux-color-index-light-3,
+  .grommetux-world-map__place.grommetux-color-index-light-1,
+  .grommetux-world-map__place.grommetux-color-index-light-3 {
     stroke: #ffffff; }
-  .grommetux-world-map__continent.grommetux-color-index-light-2, .grommetux-world-map__continent.grommetux-color-index-light-4 {
+  .grommetux-world-map__continent.grommetux-color-index-light-2, .grommetux-world-map__continent.grommetux-color-index-light-4,
+  .grommetux-world-map__place.grommetux-color-index-light-2,
+  .grommetux-world-map__place.grommetux-color-index-light-4 {
     stroke: #f5f5f5; }
+
+.grommetux-world-map__continent {
+  stroke-width: 6px; }
+
+.grommetux-world-map__place {
+  stroke-width: 8px; }
 
 .grommetux-world-map__continent--active {
   stroke-width: 8px;
+  cursor: pointer; }
+
+.grommetux-world-map__place--active {
+  stroke-width: 20px;
   cursor: pointer; }
