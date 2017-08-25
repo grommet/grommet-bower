@@ -1808,6 +1808,9 @@ ul, ol, dd {
 .grommetux-box--justify-between {
   justify-content: space-between; }
 
+.grommetux-box--justify-around {
+  justify-content: space-around; }
+
 .grommetux-box--justify-end {
   justify-content: flex-end; }
 
@@ -4800,6 +4803,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-box .grommetux-anchor {
     color: #ED6F00;
     text-decoration: none; }
+  .grommetux-form-field__contents > input:not([type]),
   .grommetux-form-field__contents > input[type=text],
   .grommetux-form-field__contents > input[type=range],
   .grommetux-form-field__contents > input[type=email],
@@ -4823,7 +4827,9 @@ _::-webkit-:not(:root:root),
     font-size: 1rem;
     line-height: 1.5;
     padding-left: 22px; }
-    .grommetux-background-color-index--dark .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark
+    .grommetux-background-color-index--dark .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--dark
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light .grommetux-background-color-index--dark
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark
     .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--light .grommetux-background-color-index--dark
     .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--dark
     .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--light .grommetux-background-color-index--dark
@@ -4853,7 +4859,9 @@ _::-webkit-:not(:root:root),
     .grommetux-form-field__contents > textarea, .grommetux-background-color-index--light .grommetux-background-color-index--dark
     .grommetux-form-field__contents > textarea {
       color: #fff; }
-    .grommetux-background-color-index--light .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light
+    .grommetux-background-color-index--light .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--light
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark .grommetux-background-color-index--light
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light
     .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--dark .grommetux-background-color-index--light
     .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--light
     .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--dark .grommetux-background-color-index--light
@@ -4889,6 +4897,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-select input,
   .grommetux-form-field__contents > .grommetux-password-input input {
     padding-left: 24px; }
+  .grommetux-form-field__contents > input:not([type]),
   .grommetux-form-field__contents > input[type=text],
   .grommetux-form-field__contents > input[type=email],
   .grommetux-form-field__contents > input[type=password],
@@ -4898,6 +4907,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > select,
   .grommetux-form-field__contents > textarea {
     padding: 0 24px; }
+    .grommetux-form-field__contents > input:not([type]):focus,
     .grommetux-form-field__contents > input[type=text]:focus,
     .grommetux-form-field__contents > input[type=email]:focus,
     .grommetux-form-field__contents > input[type=password]:focus,
@@ -4907,6 +4917,7 @@ _::-webkit-:not(:root:root),
     .grommetux-form-field__contents > select:focus,
     .grommetux-form-field__contents > textarea:focus {
       padding: 0 24px; }
+  .grommetux-form-field__contents > input:not([type]),
   .grommetux-form-field__contents > input[type=text],
   .grommetux-form-field__contents > input[type=range],
   .grommetux-form-field__contents > input[type=email],
@@ -4923,6 +4934,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-password-input input {
     height: 36px; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .grommetux-form-field__contents > input:not([type]),
       .grommetux-form-field__contents > input[type=text],
       .grommetux-form-field__contents > input[type=range],
       .grommetux-form-field__contents > input[type=email],
@@ -5126,10 +5138,12 @@ _::-webkit-:not(:root:root),
 
 .grommetux-form-field--size-large {
   font-size: 24px; }
+  .grommetux-form-field--size-large input:not([type]),
   .grommetux-form-field--size-large input[type="text"] {
     font-size: 24px;
     height: auto; }
 
+.grommetux-form-field--strong input:not([type]),
 .grommetux-form-field--strong input[type="text"] {
   font-weight: 600; }
 
@@ -8545,6 +8559,8 @@ section:not(.grommetux-section) {
   top: 50%;
   transform: translateY(-50%);
   right: 6px; }
+  .grommetux-select__control svg {
+    background-color: #fff; }
 
 .grommetux-select__search {
   width: 100%; }
@@ -10041,6 +10057,15 @@ section:not(.grommetux-section) {
 
 .grommetux-world-map {
   width: 100%; }
+
+.grommetux-world-map__container {
+  position: relative;
+  width: 100%; }
+
+.grommetux-world-map__flag {
+  position: absolute;
+  top: 0px;
+  left: 0px; }
 
 .grommetux-world-map__continent,
 .grommetux-world-map__place {
