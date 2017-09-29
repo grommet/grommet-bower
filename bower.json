@@ -1,6 +1,6 @@
 {
   "name": "grommet",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "main": "grommet.js",
   "description": "The most advanced UX framework for enterprise applications.",
   "authors": [
@@ -20,9 +20,13 @@
   "engines": {
     "node": ">= 4.4.0"
   },
+  "peerDependencies": {
+    "react": ">= 15.3.0 < 16 || 16.x",
+    "react-dom": ">= 15.3.0 < 16 || 16.x"
+  },
   "dependencies": {
     "react": "^15.0.2",
-    "grommet": "^1.7.0"
+    "grommet": "^1.8.0"
   },
   "ignore": []
 }
