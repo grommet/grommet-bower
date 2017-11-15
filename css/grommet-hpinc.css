@@ -4990,7 +4990,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-calendar input,
   .grommetux-form-field__contents > .grommetux-date-time input,
   .grommetux-form-field__contents > .grommetux-text-input,
-  .grommetux-form-field__contents > .grommetux-select input,
+  .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input,
   .grommetux-form-field__contents > .grommetux-password-input input,
   .grommetux-form-field__contents > textarea {
     display: block;
@@ -5030,8 +5030,8 @@ _::-webkit-:not(:root:root),
     .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--dark
     .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
     .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-select input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-select input, .grommetux-background-color-index--dark
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--dark
     .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
     .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--dark
     .grommetux-form-field__contents > textarea, .grommetux-background-color-index--light .grommetux-background-color-index--dark
@@ -5066,8 +5066,8 @@ _::-webkit-:not(:root:root),
     .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--light
     .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
     .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-select input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-select input, .grommetux-background-color-index--light
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--light
     .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
     .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--light
     .grommetux-form-field__contents > textarea, .grommetux-background-color-index--dark .grommetux-background-color-index--light
@@ -5118,7 +5118,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-calendar input,
   .grommetux-form-field__contents > .grommetux-date-time input,
   .grommetux-form-field__contents > .grommetux-text-input,
-  .grommetux-form-field__contents > .grommetux-select input,
+  .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input,
   .grommetux-form-field__contents > .grommetux-password-input input {
     height: 36px; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -5137,7 +5137,7 @@ _::-webkit-:not(:root:root),
       .grommetux-form-field__contents > .grommetux-calendar input,
       .grommetux-form-field__contents > .grommetux-date-time input,
       .grommetux-form-field__contents > .grommetux-text-input,
-      .grommetux-form-field__contents > .grommetux-select input,
+      .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input,
       .grommetux-form-field__contents > .grommetux-password-input input {
         line-height: normal; } }
   .grommetux-form-field__contents > input[type=range] {
@@ -5843,8 +5843,7 @@ h6.grommetux-heading {
   .grommetux-status-icon .grommetux-status-icon__base {
     fill: #848484; }
     .grommetux-background-color-index--dark .grommetux-status-icon .grommetux-status-icon__base, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-status-icon .grommetux-status-icon__base {
-      fill: rgba(255, 255, 255, 0.9);
-      stroke: rgba(255, 255, 255, 0.9); }
+      fill: icon-color(rgba(255, 255, 255, 0.9)); }
   .grommetux-status-icon .grommetux-status-icon__detail {
     fill: #fff;
     stroke: #fff; }
