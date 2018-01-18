@@ -605,8 +605,7 @@ ul, ol, dd {
   .grommet .grommetux-background-color-index--light .error, .grommet .grommetux-background-color-index--dark .grommetux-background-color-index--light .error {
     color: #FF324D; }
 
-.grommet input:not(.grommetux-input),
-.grommet input:not(.grommetux-check-box__input),
+.grommet input:not(.grommetux-input):not(.grommetux-check-box__input),
 .grommet select,
 .grommet textarea {
   font-size: 16px;
@@ -620,36 +619,30 @@ ul, ol, dd {
   color: inherit;
   font: inherit;
   margin: 0; }
-  .grommet input:not(.grommetux-input):focus,
-  .grommet input:not(.grommetux-check-box__input):focus,
+  .grommet input:not(.grommetux-input):not(.grommetux-check-box__input):focus,
   .grommet select:focus,
   .grommet textarea:focus {
     border-width: 2px;
     border-color: #00CCEB;
     padding: 10px 22px; }
-  .grommet input:not(.grommetux-input)::-moz-focus-inner,
-  .grommet input:not(.grommetux-check-box__input)::-moz-focus-inner,
+  .grommet input:not(.grommetux-input):not(.grommetux-check-box__input)::-moz-focus-inner,
   .grommet select::-moz-focus-inner,
   .grommet textarea::-moz-focus-inner {
     border: none;
     outline: none; }
-  .grommet input:not(.grommetux-input)::-webkit-input-placeholder,
-  .grommet input:not(.grommetux-check-box__input)::-webkit-input-placeholder,
+  .grommet input:not(.grommetux-input):not(.grommetux-check-box__input)::-webkit-input-placeholder,
   .grommet select::-webkit-input-placeholder,
   .grommet textarea::-webkit-input-placeholder {
     color: #aaa; }
-  .grommet input:not(.grommetux-input)::-moz-placeholder,
-  .grommet input:not(.grommetux-check-box__input)::-moz-placeholder,
+  .grommet input:not(.grommetux-input):not(.grommetux-check-box__input)::-moz-placeholder,
   .grommet select::-moz-placeholder,
   .grommet textarea::-moz-placeholder {
     color: #aaa; }
-  .grommet input:not(.grommetux-input):-ms-input-placeholder,
-  .grommet input:not(.grommetux-check-box__input):-ms-input-placeholder,
+  .grommet input:not(.grommetux-input):not(.grommetux-check-box__input):-ms-input-placeholder,
   .grommet select:-ms-input-placeholder,
   .grommet textarea:-ms-input-placeholder {
     color: #aaa; }
-  .grommet input:not(.grommetux-input).error,
-  .grommet input:not(.grommetux-check-box__input).error,
+  .grommet input:not(.grommetux-input):not(.grommetux-check-box__input).error,
   .grommet select.error,
   .grommet textarea.error {
     border-color: #FF324D; }
@@ -737,6 +730,8 @@ ul, ol, dd {
     height: 24px;
     width: 24px;
     overflow: visible;
+    position: relative;
+    top: 6px;
     border: 2px solid #666;
     height: 20px;
     width: 20px;
@@ -2196,7 +2191,7 @@ ul, ol, dd {
   .grommetux-button--plain .grommetux-button__label {
     margin: 0 12px; }
   .grommetux-button--plain .grommetux-button__icon {
-    padding: 12px; }
+    padding: 10px; }
     .grommetux-button--plain .grommetux-button__icon + .grommetux-button__label {
       margin-left: 0; }
 
@@ -4878,7 +4873,7 @@ _::-webkit-:not(:root:root),
 
 .grommetux-form-field {
   position: relative;
-  padding: 6px 24px;
+  padding: 5px 24px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   margin-bottom: -1px;
   background-color: #fff;
@@ -4926,23 +4921,17 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-box .grommetux-anchor {
     color: #865CD6;
     text-decoration: none; }
-  .grommetux-form-field__contents > input:not([type]),
-  .grommetux-form-field__contents > input[type=text],
-  .grommetux-form-field__contents > input[type=range],
-  .grommetux-form-field__contents > input[type=email],
-  .grommetux-form-field__contents > input[type=tel],
-  .grommetux-form-field__contents > input[type=url],
-  .grommetux-form-field__contents > input[type=password],
-  .grommetux-form-field__contents > input[type=number],
-  .grommetux-form-field__contents > input[type=file],
-  .grommetux-form-field__contents > input[type=color],
-  .grommetux-form-field__contents > select,
-  .grommetux-form-field__contents > .grommetux-search-input input,
-  .grommetux-form-field__contents > .grommetux-calendar input,
-  .grommetux-form-field__contents > .grommetux-date-time input,
-  .grommetux-form-field__contents > .grommetux-text-input,
-  .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input,
-  .grommetux-form-field__contents > .grommetux-password-input input,
+  .grommet .grommetux-form-field__contents > input:not([type]), .grommet
+  .grommetux-form-field__contents > input[type=text], .grommet
+  .grommetux-form-field__contents > input[type=range], .grommet
+  .grommetux-form-field__contents > input[type=email], .grommet
+  .grommetux-form-field__contents > input[type=tel], .grommet
+  .grommetux-form-field__contents > input[type=url], .grommet
+  .grommetux-form-field__contents > input[type=password], .grommet
+  .grommetux-form-field__contents > input[type=number], .grommet
+  .grommetux-form-field__contents > input[type=file], .grommet
+  .grommetux-form-field__contents > input[type=color], .grommet
+  .grommetux-form-field__contents > select, .grommet
   .grommetux-form-field__contents > textarea {
     display: block;
     width: 100%;
@@ -4951,109 +4940,117 @@ _::-webkit-:not(:root:root),
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
-    padding-left: 22px; }
-    .grommetux-background-color-index--dark .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > select, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > select, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--light .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--dark
-    .grommetux-form-field__contents > textarea, .grommetux-background-color-index--light .grommetux-background-color-index--dark
+    padding: 6px 24px 11px;
+    margin-bottom: -5px; }
+    .grommet .grommetux-form-field__contents > input:not([type]):focus, .grommet
+    .grommetux-form-field__contents > input[type=text]:focus, .grommet
+    .grommetux-form-field__contents > input[type=range]:focus, .grommet
+    .grommetux-form-field__contents > input[type=email]:focus, .grommet
+    .grommetux-form-field__contents > input[type=tel]:focus, .grommet
+    .grommetux-form-field__contents > input[type=url]:focus, .grommet
+    .grommetux-form-field__contents > input[type=password]:focus, .grommet
+    .grommetux-form-field__contents > input[type=number]:focus, .grommet
+    .grommetux-form-field__contents > input[type=file]:focus, .grommet
+    .grommetux-form-field__contents > input[type=color]:focus, .grommet
+    .grommetux-form-field__contents > select:focus, .grommet
+    .grommetux-form-field__contents > textarea:focus {
+      padding: 6px 24px 11px; }
+    .grommetux-background-color-index--dark .grommet .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > select, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > select, .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > textarea, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
     .grommetux-form-field__contents > textarea {
       color: #fff; }
-    .grommetux-background-color-index--light .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--light
-    .grommetux-form-field__contents > select, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > select, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-text-input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--dark .grommetux-background-color-index--light
-    .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--light
-    .grommetux-form-field__contents > textarea, .grommetux-background-color-index--dark .grommetux-background-color-index--light
+    .grommetux-background-color-index--light .grommet .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet .grommetux-form-field__contents > input:not([type]), .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=text], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=range], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=email], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=tel], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=url], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=password], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=number], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=file], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > input[type=color], .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > select, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > select, .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > textarea, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
     .grommetux-form-field__contents > textarea {
       color: #333; }
-  .grommetux-form-field__contents > .grommetux-search-input input,
-  .grommetux-form-field__contents > .grommetux-calendar input,
-  .grommetux-form-field__contents > .grommetux-date-time input,
-  .grommetux-form-field__contents > .grommetux-select input,
+  .grommet .grommetux-form-field__contents > .grommetux-search-input input, .grommet
+  .grommetux-form-field__contents > .grommetux-calendar input, .grommet
+  .grommetux-form-field__contents > .grommetux-date-time input, .grommet
+  .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommet
   .grommetux-form-field__contents > .grommetux-password-input input {
-    padding-left: 24px; }
-  .grommetux-form-field__contents > input:not([type]),
-  .grommetux-form-field__contents > input[type=text],
-  .grommetux-form-field__contents > input[type=email],
-  .grommetux-form-field__contents > input[type=tel],
-  .grommetux-form-field__contents > input[type=url],
-  .grommetux-form-field__contents > input[type=password],
-  .grommetux-form-field__contents > input[type=number],
-  .grommetux-form-field__contents > input[type=file],
-  .grommetux-form-field__contents > input[type=color],
-  .grommetux-form-field__contents > select,
-  .grommetux-form-field__contents > textarea {
-    padding: 0 24px; }
-    .grommetux-form-field__contents > input:not([type]):focus,
-    .grommetux-form-field__contents > input[type=text]:focus,
-    .grommetux-form-field__contents > input[type=email]:focus,
-    .grommetux-form-field__contents > input[type=tel]:focus,
-    .grommetux-form-field__contents > input[type=url]:focus,
-    .grommetux-form-field__contents > input[type=password]:focus,
-    .grommetux-form-field__contents > input[type=number]:focus,
-    .grommetux-form-field__contents > input[type=file]:focus,
-    .grommetux-form-field__contents > input[type=color]:focus,
-    .grommetux-form-field__contents > select:focus,
-    .grommetux-form-field__contents > textarea:focus {
-      padding: 0 24px; }
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 6px 24px 11px;
+    margin-bottom: -5px;
+    padding-left: 24px;
+    padding-bottom: 11px; }
+    .grommet .grommetux-form-field__contents > .grommetux-search-input input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-calendar input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-date-time input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-password-input input:focus {
+      padding: 6px 24px 11px; }
+    .grommetux-background-color-index--dark .grommet .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--light .grommetux-background-color-index--dark .grommet
+    .grommetux-form-field__contents > .grommetux-password-input input {
+      color: #fff; }
+    .grommetux-background-color-index--light .grommet .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet .grommetux-form-field__contents > .grommetux-search-input input, .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-calendar input, .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-date-time input, .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input, .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-password-input input, .grommetux-background-color-index--dark .grommetux-background-color-index--light .grommet
+    .grommetux-form-field__contents > .grommetux-password-input input {
+      color: #333; }
+    .grommet .grommetux-form-field__contents > .grommetux-search-input input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-calendar input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-date-time input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input:focus, .grommet
+    .grommetux-form-field__contents > .grommetux-password-input input:focus {
+      padding-bottom: 11px; }
   .grommetux-form-field__contents > input:not([type]),
   .grommetux-form-field__contents > input[type=text],
   .grommetux-form-field__contents > input[type=range],
@@ -5071,7 +5068,7 @@ _::-webkit-:not(:root:root),
   .grommetux-form-field__contents > .grommetux-text-input,
   .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input,
   .grommetux-form-field__contents > .grommetux-password-input input {
-    height: 36px; }
+    height: 41px; }
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .grommetux-form-field__contents > input:not([type]),
       .grommetux-form-field__contents > input[type=text],
@@ -5142,8 +5139,8 @@ _::-webkit-:not(:root:root),
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 24px;
     margin-right: 24px; }
   .grommetux-form-field__contents > .grommetux-search-input,
@@ -5167,7 +5164,7 @@ _::-webkit-:not(:root:root),
       top: auto;
       right: 6px;
       transform: none;
-      bottom: -6px; }
+      bottom: 0; }
       html.rtl .grommetux-form-field__contents > .grommetux-search-input .grommetux-search-input__control, html.rtl
       .grommetux-form-field__contents > .grommetux-search-input .grommetux-calendar__control, html.rtl
       .grommetux-form-field__contents > .grommetux-search-input .grommetux-date-time__control, html.rtl
@@ -5179,6 +5176,16 @@ _::-webkit-:not(:root:root),
       .grommetux-form-field__contents > .grommetux-date-time .grommetux-date-time__control {
         right: auto;
         left: 6px; }
+      .grommetux-form-field__contents > .grommetux-search-input .grommetux-search-input__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-search-input .grommetux-calendar__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-search-input .grommetux-date-time__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-calendar .grommetux-search-input__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-calendar .grommetux-calendar__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-calendar .grommetux-date-time__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-date-time .grommetux-search-input__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-date-time .grommetux-calendar__control > .grommetux-button__icon,
+      .grommetux-form-field__contents > .grommetux-date-time .grommetux-date-time__control > .grommetux-button__icon {
+        padding: 9px; }
   .grommetux-form-field__contents > .grommetux-number-input {
     display: flex;
     padding-right: 6px; }
@@ -5213,7 +5220,7 @@ _::-webkit-:not(:root:root),
     border: none; }
     .grommetux-form-field__contents > .grommetux-form-field > .grommetux-form-field__label {
       border-top: 1px solid rgba(0, 0, 0, 0.15);
-      padding-top: 6px; }
+      padding-top: 5px; }
 
 .grommetux-form-field__contents--hidden {
   margin-top: 0px; }
@@ -9581,7 +9588,7 @@ section:not(.grommetux-section) {
 
 .grommetux-toast__status {
   flex: 0 0 auto;
-  padding-left: 24px; }
+  margin-left: 24px; }
 
 .grommetux-toast__contents {
   flex: 1;
@@ -10278,6 +10285,10 @@ section:not(.grommetux-section) {
 
 .grommetux-world-map {
   width: 100%; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .grommetux-world-map {
+      padding-bottom: 49%;
+      height: 1px; } }
 
 .grommetux-world-map__container {
   position: relative;
