@@ -5051,6 +5051,8 @@ _::-webkit-:not(:root:root),
     .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) input:focus, .grommet
     .grommetux-form-field__contents > .grommetux-password-input input:focus {
       padding-bottom: 11px; }
+  .grommetux-form-field__contents > .grommetux-select:not(.grommetux-select--inline) .grommetux-select__value {
+    border: none; }
   .grommetux-form-field__contents > input:not([type]),
   .grommetux-form-field__contents > input[type=text],
   .grommetux-form-field__contents > input[type=range],
@@ -8774,6 +8776,11 @@ section:not(.grommetux-section) {
 .grommetux-select__input::-ms-clear {
   display: none; }
 
+.grommetux-select__value {
+  padding: 6px 48px 6px 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px; }
+
 .grommetux-select__control {
   position: absolute;
   top: 50%;
@@ -8804,6 +8811,8 @@ section:not(.grommetux-section) {
     color: #666;
     color: #333;
     padding: 6px 24px; }
+    .grommetux-select__drop .grommetux-select__option.grommetux-select__option--element {
+      padding: 6px 0; }
     .grommetux-select__drop .grommetux-select__option:hover, .grommetux-select__drop .grommetux-select__option--active {
       background-color: rgba(221, 221, 221, 0.5); }
     .grommetux-select__drop .grommetux-select__option--selected {
